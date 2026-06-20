@@ -1,2 +1,4 @@
-# Empty C Example
-This example project shows an empty configuration that can be used as a starting point to add components and functionality.
+# Better sensor
+
+
+git add .; git commit -m "update"; git push
