@@ -1,0 +1,921 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:35
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_letimer.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_letimer.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_letimer.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_letimer.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_letimer.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir\sl_hal_letimer.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_letimer.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_letimer.c
+      1          /***************************************************************************//**
+      2           * @file  sl_hal_letimer.c
+      3           *
+      4           * @brief Low Energy Timer (LETIMER) peripheral API
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "sl_hal_letimer.h"
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_letimer_enable(LETIMER_TypeDef *)
+   \                     sl_hal_letimer_enable: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0x8   0xD003             BEQ.N    ??sl_hal_letimer_enable_1
+   \        0xA   0x21CA             MOVS     R1,#+202
+   \        0xC   0x4805             LDR.N    R0,??sl_hal_letimer_enable_0
+   \        0xE   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_letimer_enable_1: (+1)
+   \       0x12   0x6860             LDR      R0,[R4, #+4]
+   \       0x14   0x07C2             LSLS     R2,R0,#+31
+   \       0x16   0xD403             BMI.N    ??sl_hal_letimer_enable_2
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0xF241 0x0104      MOVW     R1,#+4100
+   \       0x1E   0x5060             STR      R0,[R4, R1]
+   \                     ??sl_hal_letimer_enable_2: (+1)
+   \       0x20   0xBD10             POP      {R4,PC}
+   \       0x22   0xBF00             Nop
+   \                     ??sl_hal_letimer_enable_0:
+   \       0x24   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_letimer_disable(LETIMER_TypeDef *)
+   \                     sl_hal_letimer_disable: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0x8   0xD003             BEQ.N    ??sl_hal_letimer_disable_1
+   \        0xA   0x21DD             MOVS     R1,#+221
+   \        0xC   0x4805             LDR.N    R0,??sl_hal_letimer_disable_0
+   \        0xE   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_letimer_disable_1: (+1)
+   \       0x12   0x6860             LDR      R0,[R4, #+4]
+   \       0x14   0x07C2             LSLS     R2,R0,#+31
+   \       0x16   0xD503             BPL.N    ??sl_hal_letimer_disable_2
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0xF242 0x0104      MOVW     R1,#+8196
+   \       0x1E   0x5060             STR      R0,[R4, R1]
+   \                     ??sl_hal_letimer_disable_2: (+1)
+   \       0x20   0xBD10             POP      {R4,PC}
+   \       0x22   0xBF00             Nop
+   \                     ??sl_hal_letimer_disable_0:
+   \       0x24   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_letimer_wait_sync(LETIMER_TypeDef *)
+   \                     sl_hal_letimer_wait_sync: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0x8   0xD004             BEQ.N    ??sl_hal_letimer_wait_sync_1
+   \        0xA   0xF240 0x1109      MOVW     R1,#+265
+   \        0xE   0x4804             LDR.N    R0,??sl_hal_letimer_wait_sync_0
+   \       0x10   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_letimer_wait_sync_1: (+1)
+   \       0x14   0x6C20             LDR      R0,[R4, #+64]
+   \       0x16   0xF240 0x31FD      MOVW     R1,#+1021
+   \       0x1A   0x4208             TST      R0,R1
+   \       0x1C   0xD1FA             BNE.N    ??sl_hal_letimer_wait_sync_1
+   \       0x1E   0xBD10             POP      {R4,PC}
+   \                     ??sl_hal_letimer_wait_sync_0:
+   \       0x20   0x....'....        DC32     ?_0
+     33          #if defined(LETIMER_COUNT) && (LETIMER_COUNT > 0)
+     34          
+     35          /***************************************************************************//**
+     36           * @addtogroup letimer LETIMER - Low Energy Timer
+     37           * @brief Low Energy Timer (LETIMER) Peripheral API
+     38           * @details
+     39           *  This module contains functions to control the LETIMER peripheral of Silicon
+     40           *  Labs 32-bit MCUs and SoCs. The LETIMER is a down-counter that can keep track
+     41           *  of time and output configurable waveforms.
+     42           * @{
+     43           ******************************************************************************/
+     44          
+     45          /*******************************************************************************
+     46           **************************   GLOBAL FUNCTIONS   *******************************
+     47           ******************************************************************************/
+     48          extern __INLINE void sl_hal_letimer_enable(LETIMER_TypeDef *letimer);
+     49          extern __INLINE void sl_hal_letimer_disable(LETIMER_TypeDef *letimer);
+     50          extern __INLINE void sl_hal_letimer_wait_ready(LETIMER_TypeDef *letimer);
+     51          extern __INLINE void sl_hal_letimer_wait_sync(LETIMER_TypeDef *letimer);
+     52          extern __INLINE uint32_t sl_hal_letimer_get_status(LETIMER_TypeDef *letimer);
+     53          extern __INLINE void sl_hal_letimer_enable_interrupts(LETIMER_TypeDef *letimer,
+     54                                                                uint32_t flags);
+     55          extern __INLINE void sl_hal_letimer_disable_interrupts(LETIMER_TypeDef *letimer,
+     56                                                                 uint32_t flags);
+     57          extern __INLINE void sl_hal_letimer_clear_interrupts(LETIMER_TypeDef *letimer,
+     58                                                               uint32_t flags);
+     59          extern __INLINE void sl_hal_letimer_set_interrupts(LETIMER_TypeDef *letimer,
+     60                                                             uint32_t flags);
+     61          extern __INLINE uint32_t sl_hal_letimer_get_pending_interrupts(LETIMER_TypeDef *letimer);
+     62          extern __INLINE uint32_t sl_hal_letimer_get_enabled_pending_interrupts(LETIMER_TypeDef *letimer);
+     63          #if defined(_LETIMER_LOCK_MASK)
+     64          extern __INLINE void sl_hal_letimer_lock(LETIMER_TypeDef *letimer);
+     65          extern __INLINE void sl_hal_letimer_unlock(LETIMER_TypeDef *letimer);
+     66          #endif
+     67          extern __INLINE void sl_hal_letimer_start(LETIMER_TypeDef *letimer);
+     68          extern __INLINE void sl_hal_letimer_stop(LETIMER_TypeDef *letimer);
+     69          extern __INLINE void sl_hal_letimer_set_counter(LETIMER_TypeDef *letimer,
+     70                                                          uint32_t value);
+     71          extern __INLINE uint32_t sl_hal_letimer_get_counter(LETIMER_TypeDef *letimer);
+     72          extern __INLINE void sl_hal_letimer_set_top(LETIMER_TypeDef *letimer,
+     73                                                      uint32_t value);
+     74          extern __INLINE uint32_t sl_hal_letimer_get_top(LETIMER_TypeDef *letimer);
+     75          extern __INLINE void sl_hal_letimer_set_top_buffer(LETIMER_TypeDef *letimer,
+     76                                                             uint32_t value);
+     77          extern __INLINE uint32_t sl_hal_letimer_get_top_buffer(LETIMER_TypeDef *letimer);
+     78          
+     79          /***************************************************************************//**
+     80           * @brief
+     81           *   Initialize LETIMER.
+     82           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     83          void sl_hal_letimer_init(LETIMER_TypeDef *letimer,
+     84                                   const sl_hal_letimer_init_t *init)
+     85          {
+   \                     sl_hal_letimer_init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+     86            // Make sure the module exists on the selected chip.
+     87            EFM_ASSERT(SL_HAL_LETIMER_REF_VALID(letimer));
+   \        0x6   0x....             LDR.N    R6,??DataTable3
+   \        0x8   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0xC   0xD004             BEQ.N    ??sl_hal_letimer_init_0
+   \        0xE   0x2157             MOVS     R1,#+87
+   \       0x10   0xF106 0x0088      ADD      R0,R6,#+136
+   \       0x14   0x.... 0x....      BL       assertEFM
+     88          
+     89            sl_hal_letimer_enable(letimer);
+   \                     ??sl_hal_letimer_init_0: (+1)
+   \       0x18   0x4620             MOV      R0,R4
+   \       0x1A   0x.... 0x....      BL       sl_hal_letimer_enable
+     90            sl_hal_letimer_wait_sync(letimer);
+   \       0x1E   0x.... 0x....      BL       ?Subroutine1
+     91          
+     92            // Write the CTRL register with the configurations.
+     93            letimer->CTRL = (letimer->CTRL & ~(_LETIMER_CTRL_CNTPRESC_MASK | _LETIMER_CTRL_REPMODE_MASK
+     94                                               | _LETIMER_CTRL_UFOA0_MASK | _LETIMER_CTRL_UFOA1_MASK
+     95                                               | _LETIMER_CTRL_DEBUGRUN_MASK | _LETIMER_CTRL_CNTTOPEN_MASK
+     96                                               | _LETIMER_CTRL_BUFTOP_MASK | _LETIMER_CTRL_OPOL0_MASK
+     97                                               | _LETIMER_CTRL_OPOL1_MASK))
+     98                            | (((uint32_t)init->prescaler) << _LETIMER_CTRL_CNTPRESC_SHIFT)
+     99                            | (((uint32_t)init->repeat_mode) << _LETIMER_CTRL_REPMODE_SHIFT)
+    100                            | (((uint32_t)init->underflow_output0_action) << _LETIMER_CTRL_UFOA0_SHIFT)
+    101                            | (((uint32_t)init->underflow_output1_action) << _LETIMER_CTRL_UFOA1_SHIFT)
+    102                            | (((uint32_t)init->debug_run) << _LETIMER_CTRL_DEBUGRUN_SHIFT)
+    103                            | (((uint32_t)init->enable_top) << _LETIMER_CTRL_CNTTOPEN_SHIFT)
+    104                            | (((uint32_t)init->buffered_top) << _LETIMER_CTRL_BUFTOP_SHIFT)
+    105                            | (((uint32_t)init->output0_polarity) << _LETIMER_CTRL_OPOL0_SHIFT)
+    106                            | (((uint32_t)init->output1_polarity) << _LETIMER_CTRL_OPOL1_SHIFT);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x22   0x68A1             LDR      R1,[R4, #+8]
+   \       0x24   0x782A             LDRB     R2,[R5, #+0]
+   \       0x26   0x....             LDR.N    R0,??DataTable3_1
+   \       0x28   0x4001             ANDS     R1,R0,R1
+   \       0x2A   0xEA41 0x4102      ORR      R1,R1,R2, LSL #+16
+   \       0x2E   0x7868             LDRB     R0,[R5, #+1]
+   \       0x30   0x78AA             LDRB     R2,[R5, #+2]
+   \       0x32   0x4301             ORRS     R1,R0,R1
+   \       0x34   0x78E8             LDRB     R0,[R5, #+3]
+   \       0x36   0xEA41 0x0182      ORR      R1,R1,R2, LSL #+2
+   \       0x3A   0x792A             LDRB     R2,[R5, #+4]
+   \       0x3C   0xEA41 0x1100      ORR      R1,R1,R0, LSL #+4
+   \       0x40   0x7968             LDRB     R0,[R5, #+5]
+   \       0x42   0xEA41 0x3102      ORR      R1,R1,R2, LSL #+12
+   \       0x46   0x79AA             LDRB     R2,[R5, #+6]
+   \       0x48   0xEA41 0x2140      ORR      R1,R1,R0, LSL #+9
+   \       0x4C   0x79E8             LDRB     R0,[R5, #+7]
+   \       0x4E   0xEA41 0x2102      ORR      R1,R1,R2, LSL #+8
+   \       0x52   0x7A2A             LDRB     R2,[R5, #+8]
+   \       0x54   0xEA41 0x1180      ORR      R1,R1,R0, LSL #+6
+    107          
+    108            sl_hal_letimer_disable(letimer);
+   \       0x58   0x4620             MOV      R0,R4
+   \       0x5A   0xEA41 0x11C2      ORR      R1,R1,R2, LSL #+7
+   \       0x5E   0x60A1             STR      R1,[R4, #+8]
+   \       0x60   0x.... 0x....      BL       sl_hal_letimer_disable
+    109            sl_hal_letimer_wait_ready(letimer);
+   \       0x64   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \       0x68   0xD005             BEQ.N    ??sl_hal_letimer_init_1
+   \       0x6A   0x4630             MOV      R0,R6
+   \       0x6C   0x21F0             MOVS     R1,#+240
+   \       0x6E   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x72   0x.... 0x....      B.W      assertEFM
+    110          }
+   \                     ??sl_hal_letimer_init_1: (+1)
+   \       0x76   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4620             MOV      R0,R4
+   \        0x2   0x.... 0x....      B.W      sl_hal_letimer_wait_sync
+    111          
+    112          /***************************************************************************//**
+    113           * @brief
+    114           *   Reset the LETIMER to the same state that it was in after a hardware reset.
+    115           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    116          void sl_hal_letimer_reset(LETIMER_TypeDef *letimer)
+    117          {
+   \                     sl_hal_letimer_reset: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    118            // Make sure the module exists on the selected chip.
+    119            EFM_ASSERT(SL_HAL_LETIMER_REF_VALID(letimer));
+   \        0x4   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0x8   0xD003             BEQ.N    ??sl_hal_letimer_reset_0
+   \        0xA   0x2177             MOVS     R1,#+119
+   \        0xC   0x....             LDR.N    R0,??DataTable3_2
+   \        0xE   0x.... 0x....      BL       assertEFM
+    120          
+    121          #if defined(_LETIMER_SWRST_MASK)
+    122            letimer->SWRST_SET = LETIMER_SWRST_SWRST;
+    123          #else
+    124            sl_hal_letimer_enable(letimer);
+   \                     ??sl_hal_letimer_reset_0: (+1)
+   \       0x12   0x4620             MOV      R0,R4
+   \       0x14   0x.... 0x....      BL       sl_hal_letimer_enable
+    125            sl_hal_letimer_wait_sync(letimer);
+   \       0x18   0x.... 0x....      BL       ?Subroutine1
+    126          
+    127            // Make sure stopped first, before resetting other registers.
+    128            letimer->CMD     = LETIMER_CMD_STOP | LETIMER_CMD_CLEAR
+    129                               | LETIMER_CMD_CTO0 | LETIMER_CMD_CTO1;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x1C   0x201E             MOVS     R0,#+30
+   \       0x1E   0x60E0             STR      R0,[R4, #+12]
+    130            sl_hal_letimer_wait_sync(letimer);
+   \       0x20   0x.... 0x....      BL       ?Subroutine1
+    131            letimer->CTRL    = _LETIMER_CTRL_RESETVALUE;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x60A0             STR      R0,[R4, #+8]
+    132            letimer->CNT     = _LETIMER_CNT_RESETVALUE;
+   \       0x28   0x2100             MOVS     R1,#+0
+   \       0x2A   0x61A1             STR      R1,[R4, #+24]
+    133            letimer->COMP0   = _LETIMER_COMP0_RESETVALUE;
+   \       0x2C   0x61E0             STR      R0,[R4, #+28]
+    134            letimer->COMP1   = _LETIMER_COMP1_RESETVALUE;
+   \       0x2E   0x6221             STR      R1,[R4, #+32]
+    135            letimer->REP0    = _LETIMER_REP0_RESETVALUE;
+   \       0x30   0x62E0             STR      R0,[R4, #+44]
+    136            letimer->REP1    = _LETIMER_REP1_RESETVALUE;
+   \       0x32   0x6321             STR      R1,[R4, #+48]
+    137            letimer->TOP     = _LETIMER_TOP_RESETVALUE;
+   \       0x34   0x6260             STR      R0,[R4, #+36]
+    138            letimer->TOPBUFF = _LETIMER_TOPBUFF_RESETVALUE;
+   \       0x36   0x62A1             STR      R1,[R4, #+40]
+    139            letimer->IF      = _LETIMER_IF_RESETVALUE;
+   \       0x38   0x6360             STR      R0,[R4, #+52]
+    140            letimer->IEN     = _LETIMER_IEN_RESETVALUE;
+   \       0x3A   0x63A1             STR      R1,[R4, #+56]
+    141            letimer->PRSMODE = _LETIMER_PRSMODE_RESETVALUE;
+   \       0x3C   0x6520             STR      R0,[R4, #+80]
+    142          
+    143            sl_hal_letimer_wait_sync(letimer);
+   \       0x3E   0x.... 0x....      BL       ?Subroutine1
+    144            sl_hal_letimer_disable(letimer);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x42   0x4620             MOV      R0,R4
+   \       0x44   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x48   0x.... 0x....      B.W      sl_hal_letimer_disable
+    145          #endif
+    146          }
+    147          
+    148          /***************************************************************************//**
+    149           * @brief
+    150           *   Set the LETIMER compare register value.
+    151           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    152          void sl_hal_letimer_set_compare(LETIMER_TypeDef *letimer,
+    153                                          uint8_t channel,
+    154                                          uint32_t value)
+    155          {
+   \                     sl_hal_letimer_set_compare: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine3
+    156            // Make sure the module exists on the selected chip.
+    157            EFM_ASSERT(SL_HAL_LETIMER_REF_VALID(letimer));
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \        0x6   0xD004             BEQ.N    ??sl_hal_letimer_set_compare_0
+   \        0x8   0x219D             MOVS     R1,#+157
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xE001             B.N      ??sl_hal_letimer_set_compare_1
+   \                     ??sl_hal_letimer_set_compare_0: (+1)
+   \       0x12   0xF06F 0x407F      MVN      R0,#+4278190080
+   \                     ??sl_hal_letimer_set_compare_1: (+1)
+   \       0x16   0x42B0             CMP      R0,R6
+   \       0x18   0xD202             BCS.N    ??CrossCallReturnLabel_10
+   \       0x1A   0x219F             MOVS     R1,#+159
+   \       0x1C   0x.... 0x....      BL       ?Subroutine2
+    158            // Make sure compare value is valid.
+    159            EFM_ASSERT(value <= SL_HAL_LETIMER_MAX_COUNT(letimer));
+    160            // Make sure module is enabled.
+    161            EFM_ASSERT(letimer->EN & _LETIMER_EN_EN_MASK);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x20   0x6860             LDR      R0,[R4, #+4]
+   \       0x22   0x07C1             LSLS     R1,R0,#+31
+   \       0x24   0xD402             BMI.N    ??CrossCallReturnLabel_9
+   \       0x26   0x21A1             MOVS     R1,#+161
+   \       0x28   0x.... 0x....      BL       ?Subroutine2
+    162          
+    163            sl_hal_letimer_wait_sync(letimer);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x2C   0x.... 0x....      BL       ?Subroutine1
+    164          
+    165            switch (channel) {
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x30   0xB115             CBZ.N    R5,??sl_hal_letimer_set_compare_2
+   \       0x32   0x2D01             CMP      R5,#+1
+   \       0x34   0xD002             BEQ.N    ??sl_hal_letimer_set_compare_3
+   \       0x36   0xE003             B.N      ??sl_hal_letimer_set_compare_4
+    166              case 0:
+    167                letimer->COMP0 = value;
+   \                     ??sl_hal_letimer_set_compare_2: (+1)
+   \       0x38   0x61E6             STR      R6,[R4, #+28]
+    168                break;
+   \       0x3A   0xBDF1             POP      {R0,R4-R7,PC}
+    169              case 1:
+    170                letimer->COMP1 = value;
+   \                     ??sl_hal_letimer_set_compare_3: (+1)
+   \       0x3C   0x6226             STR      R6,[R4, #+32]
+    171                break;
+   \       0x3E   0xBDF1             POP      {R0,R4-R7,PC}
+    172              default:
+    173                // Asserts if the channel doesn't exist
+    174                EFM_ASSERT(false);
+   \                     ??sl_hal_letimer_set_compare_4: (+1)
+   \       0x40   0x4638             MOV      R0,R7
+   \       0x42   0x21AE             MOVS     R1,#+174
+   \       0x44   0x....             B.N      ?Subroutine0
+    175            }
+    176          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xE8BD 0x40F4      POP      {R2,R4-R7,LR}
+   \        0x4   0x.... 0x....      B.W      assertEFM
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x460D             MOV      R5,R1
+   \        0x4   0x4616             MOV      R6,R2
+   \        0x6   0x....             LDR.N    R7,??DataTable3_2
+   \        0x8   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x4638             MOV      R0,R7
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    177          
+    178          /***************************************************************************//**
+    179           * @brief
+    180           *   Get the LETIMER compare register value.
+    181           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    182          uint32_t sl_hal_letimer_get_compare(LETIMER_TypeDef *letimer,
+    183                                              uint8_t channel)
+    184          {
+   \                     sl_hal_letimer_get_compare: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine4
+    185            // Make sure the module exists on the selected chip.
+    186            EFM_ASSERT(SL_HAL_LETIMER_REF_VALID(letimer));
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \        0x6   0xD002             BEQ.N    ??CrossCallReturnLabel_19
+   \        0x8   0x21BA             MOVS     R1,#+186
+   \        0xA   0x.... 0x....      BL       ?Subroutine5
+    187          
+    188            uint32_t return_value = 0;
+    189          
+    190            sl_hal_letimer_wait_sync(letimer);
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \        0xE   0x4620             MOV      R0,R4
+   \       0x10   0x2700             MOVS     R7,#+0
+   \       0x12   0x.... 0x....      BL       sl_hal_letimer_wait_sync
+    191          
+    192            switch (channel) {
+   \       0x16   0xB115             CBZ.N    R5,??sl_hal_letimer_get_compare_0
+   \       0x18   0x2D01             CMP      R5,#+1
+   \       0x1A   0xD002             BEQ.N    ??sl_hal_letimer_get_compare_1
+   \       0x1C   0xE003             B.N      ??sl_hal_letimer_get_compare_2
+    193              case 0:
+    194                return_value = letimer->COMP0;
+   \                     ??sl_hal_letimer_get_compare_0: (+1)
+   \       0x1E   0x69E7             LDR      R7,[R4, #+28]
+    195                break;
+   \       0x20   0xE004             B.N      ??CrossCallReturnLabel_18
+    196              case 1:
+    197                return_value = letimer->COMP1;
+   \                     ??sl_hal_letimer_get_compare_1: (+1)
+   \       0x22   0x6A27             LDR      R7,[R4, #+32]
+    198                break;
+   \       0x24   0xE002             B.N      ??CrossCallReturnLabel_18
+    199              default:
+    200                // Asserts if the channel doesn't exist
+    201                EFM_ASSERT(false);
+   \                     ??sl_hal_letimer_get_compare_2: (+1)
+   \       0x26   0x21C9             MOVS     R1,#+201
+   \       0x28   0x.... 0x....      BL       ?Subroutine5
+    202            }
+    203            return return_value;
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x2C   0x4638             MOV      R0,R7
+   \       0x2E   0xBDF2             POP      {R1,R4-R7,PC}
+    204          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x4630             MOV      R0,R6
+   \        0x2   0x.... 0x....      B.W      assertEFM
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x460D             MOV      R5,R1
+   \        0x4   0x....             LDR.N    R6,??DataTable3_2
+   \        0x6   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0xA   0x4770             BX       LR
+    205          
+    206          /***************************************************************************//**
+    207           * @brief
+    208           *   Set the LETIMER repeat register value.
+    209           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    210          void sl_hal_letimer_set_repeat(LETIMER_TypeDef *letimer,
+    211                                         uint8_t channel,
+    212                                         uint32_t value)
+    213          {
+   \                     sl_hal_letimer_set_repeat: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine3
+    214            // Make sure the module exists on the selected chip.
+    215            EFM_ASSERT(SL_HAL_LETIMER_REF_VALID(letimer));
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \        0x6   0xD002             BEQ.N    ??CrossCallReturnLabel_8
+   \        0x8   0x21D7             MOVS     R1,#+215
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    216            // Make sure repeat value is valid.
+    217            EFM_ASSERT((value & ~(_LETIMER_REP0_REP0_MASK >> _LETIMER_REP0_REP0_SHIFT)) == 0);
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \        0xE   0x0A30             LSRS     R0,R6,#+8
+   \       0x10   0x0200             LSLS     R0,R0,#+8
+   \       0x12   0xD002             BEQ.N    ??CrossCallReturnLabel_7
+   \       0x14   0x21D9             MOVS     R1,#+217
+   \       0x16   0x.... 0x....      BL       ?Subroutine2
+    218            // Make sure module is enabled.
+    219            EFM_ASSERT(letimer->EN & _LETIMER_EN_EN_MASK);
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x1A   0x6860             LDR      R0,[R4, #+4]
+   \       0x1C   0x07C1             LSLS     R1,R0,#+31
+   \       0x1E   0xD402             BMI.N    ??CrossCallReturnLabel_6
+   \       0x20   0x21DB             MOVS     R1,#+219
+   \       0x22   0x.... 0x....      BL       ?Subroutine2
+    220          
+    221            sl_hal_letimer_wait_sync(letimer);
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x26   0x.... 0x....      BL       ?Subroutine1
+    222          
+    223            switch (channel) {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x2A   0xB115             CBZ.N    R5,??sl_hal_letimer_set_repeat_0
+   \       0x2C   0x2D01             CMP      R5,#+1
+   \       0x2E   0xD002             BEQ.N    ??sl_hal_letimer_set_repeat_1
+   \       0x30   0xE003             B.N      ??sl_hal_letimer_set_repeat_2
+    224              case 0:
+    225                letimer->REP0 = value;
+   \                     ??sl_hal_letimer_set_repeat_0: (+1)
+   \       0x32   0x62E6             STR      R6,[R4, #+44]
+    226                break;
+   \       0x34   0xBDF1             POP      {R0,R4-R7,PC}
+    227              case 1:
+    228                letimer->REP1 = value;
+   \                     ??sl_hal_letimer_set_repeat_1: (+1)
+   \       0x36   0x6326             STR      R6,[R4, #+48]
+    229                break;
+   \       0x38   0xBDF1             POP      {R0,R4-R7,PC}
+    230              default:
+    231                // Asserts if the channel doesn't exist
+    232                EFM_ASSERT(false);
+   \                     ??sl_hal_letimer_set_repeat_2: (+1)
+   \       0x3A   0x4638             MOV      R0,R7
+   \       0x3C   0x21E8             MOVS     R1,#+232
+   \       0x3E                      REQUIRE ?Subroutine0
+   \       0x3E                      ; // Fall through to label ?Subroutine0
+    233            }
+    234          }
+    235          
+    236          /***************************************************************************//**
+    237           * @brief
+    238           *   Get the LETIMER repeat register value.
+    239           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    240          uint32_t sl_hal_letimer_get_repeat(LETIMER_TypeDef *letimer,
+    241                                             uint8_t channel)
+    242          {
+   \                     sl_hal_letimer_get_repeat: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine4
+    243            // Make sure the module exists on the selected chip.
+    244            EFM_ASSERT(SL_HAL_LETIMER_REF_VALID(letimer));
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \        0x6   0xD002             BEQ.N    ??CrossCallReturnLabel_17
+   \        0x8   0x21F4             MOVS     R1,#+244
+   \        0xA   0x.... 0x....      BL       ?Subroutine5
+    245          
+    246            uint32_t return_value = 0;
+    247          
+    248            sl_hal_letimer_wait_sync(letimer);
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \        0xE   0x4620             MOV      R0,R4
+   \       0x10   0x2700             MOVS     R7,#+0
+   \       0x12   0x.... 0x....      BL       sl_hal_letimer_wait_sync
+    249          
+    250            switch (channel) {
+   \       0x16   0xB115             CBZ.N    R5,??sl_hal_letimer_get_repeat_0
+   \       0x18   0x2D01             CMP      R5,#+1
+   \       0x1A   0xD002             BEQ.N    ??sl_hal_letimer_get_repeat_1
+   \       0x1C   0xE003             B.N      ??sl_hal_letimer_get_repeat_2
+    251              case 0:
+    252                return_value = letimer->REP0;
+   \                     ??sl_hal_letimer_get_repeat_0: (+1)
+   \       0x1E   0x6AE7             LDR      R7,[R4, #+44]
+    253                break;
+   \       0x20   0xE005             B.N      ??CrossCallReturnLabel_16
+    254              case 1:
+    255                return_value = letimer->REP1;
+   \                     ??sl_hal_letimer_get_repeat_1: (+1)
+   \       0x22   0x6B27             LDR      R7,[R4, #+48]
+    256                break;
+   \       0x24   0xE003             B.N      ??CrossCallReturnLabel_16
+    257              default:
+    258                // Asserts if the channel doesn't exist
+    259                EFM_ASSERT(false);
+   \                     ??sl_hal_letimer_get_repeat_2: (+1)
+   \       0x26   0xF240 0x1103      MOVW     R1,#+259
+   \       0x2A   0x.... 0x....      BL       ?Subroutine5
+    260            }
+    261            return return_value;
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x2E   0x4638             MOV      R0,R7
+   \       0x30   0xBDF2             POP      {R1,R4-R7,PC}
+    262          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0xFFF0'EC00        DC32     0xfff0ec00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     ?_0+136
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0x68   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0x70   0x5C 0x69          DC8 0x5C, 0x69, 0x6E, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x6E 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0x78   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x6C, 0x65, 0x74, 0x69
+   \              0x6C 0x5F    
+   \              0x6C 0x65    
+   \              0x74 0x69
+   \       0x80   0x6D 0x65          DC8 0x6D, 0x65, 0x72, 0x2E, 0x68, 0
+   \              0x72 0x2E    
+   \              0x68 0x00
+   \       0x86                      DS8 2
+   \       0x88   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x90   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x98   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0xA0   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0xA8   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0xB0   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0xB8   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0xC0   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0xC8   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0xD0   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0xD8   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0xE0   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0xE8   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0xF0   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0xF8   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x72 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \      0x100   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x6C, 0x65, 0x74, 0x69
+   \              0x6C 0x5F    
+   \              0x6C 0x65    
+   \              0x74 0x69
+   \      0x108   0x6D 0x65          DC8 0x6D, 0x65, 0x72, 0x2E, 0x63, 0
+   \              0x72 0x2E    
+   \              0x63 0x00
+   \      0x10E                      DS8 2
+    263          
+    264          /// @} (end addtogroup letimer)
+    265          #endif /// defined(LETIMER_COUNT) && (LETIMER_COUNT > 0)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sl_hal_letimer_disable
+         8   -> assertEFM
+       8   sl_hal_letimer_enable
+         8   -> assertEFM
+      24   sl_hal_letimer_get_compare
+        24   -> assertEFM
+        24   -> sl_hal_letimer_wait_sync
+      24   sl_hal_letimer_get_repeat
+        24   -> assertEFM
+        24   -> sl_hal_letimer_wait_sync
+      16   sl_hal_letimer_init
+         0   -> assertEFM
+        16   -> assertEFM
+        16   -> sl_hal_letimer_disable
+        16   -> sl_hal_letimer_enable
+        16   -> sl_hal_letimer_wait_sync
+       8   sl_hal_letimer_reset
+         8   -> assertEFM
+         0   -> sl_hal_letimer_disable
+         8   -> sl_hal_letimer_enable
+         8   -> sl_hal_letimer_wait_sync
+      24   sl_hal_letimer_set_compare
+         0   -> assertEFM
+        24   -> assertEFM
+        24   -> sl_hal_letimer_wait_sync
+      24   sl_hal_letimer_set_repeat
+         0   -> assertEFM
+        24   -> assertEFM
+        24   -> sl_hal_letimer_wait_sync
+       8   sl_hal_letimer_wait_sync
+         8   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       8  ?Subroutine0
+       6  ?Subroutine1
+       6  ?Subroutine2
+      14  ?Subroutine3
+      12  ?Subroutine4
+       6  ?Subroutine5
+     272  ?_0
+      40  sl_hal_letimer_disable
+      40  sl_hal_letimer_enable
+      48  sl_hal_letimer_get_compare
+      50  sl_hal_letimer_get_repeat
+     120  sl_hal_letimer_init
+      76  sl_hal_letimer_reset
+      70  sl_hal_letimer_set_compare
+      62  sl_hal_letimer_set_repeat
+      36  sl_hal_letimer_wait_sync
+
+ 
+ 272 bytes in section .rodata
+ 606 bytes in section .text
+ 
+ 490 bytes of CODE  memory (+ 116 bytes shared)
+ 272 bytes of CONST memory
+
+Errors: none
+Warnings: none

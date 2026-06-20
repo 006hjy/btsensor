@@ -1,0 +1,586 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:34
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\src\sl_slist.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1886637026122781458.dir\sl_slist.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\src\sl_slist.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_1886637026122781458.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1886637026122781458.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1886637026122781458.dir\sl_slist.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1886637026122781458.dir\sl_slist.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_1886637026122781458.dir\sl_slist.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1886637026122781458.dir\sl_slist.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\src\sl_slist.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Single Link List
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_assert.h"
+     32          #include "sl_slist.h"
+     33          #include <stdbool.h>
+     34          #include <stdlib.h>
+     35          #include <stdint.h>
+     36          
+     37          /*******************************************************************************
+     38           **************************   GLOBAL FUNCTIONS   *******************************
+     39           ******************************************************************************/
+     40          
+     41          /***************************************************************************//**
+     42           * Initializes a singly-linked list.
+     43           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     44          void sl_slist_init(sl_slist_node_t **head)
+     45          {
+     46            *head = 0;
+   \                     sl_slist_init: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+     47          }
+   \        0x4   0x4770             BX       LR
+     48          
+     49          /***************************************************************************//**
+     50           * Add given item at beginning of list.
+     51           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     52          void sl_slist_push(sl_slist_node_t **head,
+     53                             sl_slist_node_t *item)
+     54          {
+   \                     sl_slist_push: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+     55            EFM_ASSERT((item != NULL) && (head != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD102             BNE.N    ??CrossCallReturnLabel_6
+   \        0xC   0x2137             MOVS     R1,#+55
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+     56          
+     57            item->node = *head;
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x12   0x6821             LDR      R1,[R4, #+0]
+   \       0x14   0x6029             STR      R1,[R5, #+0]
+     58            *head = item;
+   \       0x16   0x6025             STR      R5,[R4, #+0]
+     59          }
+   \       0x18   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable1
+   \        0x2   0x.... 0x....      B.W      assertEFM
+     60          
+     61          /***************************************************************************//**
+     62           * Add item at end of list.
+     63           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     64          void sl_slist_push_back(sl_slist_node_t **head,
+     65                                  sl_slist_node_t *item)
+     66          {
+   \                     sl_slist_push_back: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x000C             MOVS     R4,R1
+     67            sl_slist_node_t **node_ptr = head;
+   \        0x4   0x4605             MOV      R5,R0
+     68          
+     69            EFM_ASSERT((item != NULL) && (head != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2800             CMPNE    R0,#+0
+   \        0xA   0xD104             BNE.N    ??sl_slist_push_back_0
+   \        0xC   0x2145             MOVS     R1,#+69
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x12   0xE000             B.N      ??sl_slist_push_back_0
+     70          
+     71            while (*node_ptr != NULL) {
+     72              node_ptr = &((*node_ptr)->node);
+   \                     ??sl_slist_push_back_1: (+1)
+   \       0x14   0x4605             MOV      R5,R0
+     73            }
+   \                     ??sl_slist_push_back_0: (+1)
+   \       0x16   0x6828             LDR      R0,[R5, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD1FB             BNE.N    ??sl_slist_push_back_1
+     74          
+     75            item->node = NULL;
+   \       0x1C   0x6020             STR      R0,[R4, #+0]
+     76            *node_ptr = item;
+   \       0x1E   0x602C             STR      R4,[R5, #+0]
+     77          }
+   \       0x20   0xBD31             POP      {R0,R4,R5,PC}
+     78          
+     79          /***************************************************************************//**
+     80           * Removes and returns first element of list.
+     81           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     82          sl_slist_node_t *sl_slist_pop(sl_slist_node_t **head)
+     83          {
+   \                     sl_slist_pop: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     84            sl_slist_node_t *item;
+     85          
+     86            EFM_ASSERT(head != NULL);
+   \        0x4   0xD102             BNE.N    ??CrossCallReturnLabel_4
+   \        0x6   0x2156             MOVS     R1,#+86
+   \        0x8   0x.... 0x....      BL       ?Subroutine0
+     87          
+     88            item = *head;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+     89            if (item == NULL) {
+   \        0xE   0xB118             CBZ.N    R0,??sl_slist_pop_0
+     90              return NULL;
+     91            }
+     92          
+     93            *head = item->node;
+   \       0x10   0x6801             LDR      R1,[R0, #+0]
+     94          
+     95            item->node = NULL;
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0x6021             STR      R1,[R4, #+0]
+   \       0x16   0x6002             STR      R2,[R0, #+0]
+     96          
+     97            return item;
+   \                     ??sl_slist_pop_0: (+1)
+   \       0x18   0xBD10             POP      {R4,PC}
+     98          }
+     99          
+    100          /***************************************************************************//**
+    101           * Insert item after given item.
+    102           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    103          void sl_slist_insert(sl_slist_node_t *item,
+    104                               sl_slist_node_t *pos)
+    105          {
+   \                     sl_slist_insert: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    106            EFM_ASSERT((item != NULL) && (pos != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2D00             CMPNE    R5,#+0
+   \        0xA   0xD102             BNE.N    ??CrossCallReturnLabel_3
+   \        0xC   0x216A             MOVS     R1,#+106
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+    107          
+    108            item->node = pos->node;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x12   0x6829             LDR      R1,[R5, #+0]
+   \       0x14   0x6021             STR      R1,[R4, #+0]
+    109            pos->node = item;
+   \       0x16   0x602C             STR      R4,[R5, #+0]
+    110          }
+   \       0x18   0xBD31             POP      {R0,R4,R5,PC}
+    111          
+    112          /***************************************************************************//**
+    113           * Add item at end of list.
+    114           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    115          void sl_slist_join(sl_slist_node_t **head_list_1,
+    116                             sl_slist_node_t **head_list_2)
+    117          {
+   \                     sl_slist_join: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x000C             MOVS     R4,R1
+    118            sl_slist_node_t **node_ptr = head_list_1;
+   \        0x4   0x4605             MOV      R5,R0
+    119          
+    120            EFM_ASSERT((head_list_2 != NULL)
+    121                       && (head_list_1 != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2800             CMPNE    R0,#+0
+   \        0xA   0xD104             BNE.N    ??sl_slist_join_0
+   \        0xC   0x2179             MOVS     R1,#+121
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x12   0xE000             B.N      ??sl_slist_join_0
+    122          
+    123            while (*node_ptr != NULL) {
+    124              node_ptr = &((*node_ptr)->node);
+   \                     ??sl_slist_join_1: (+1)
+   \       0x14   0x4605             MOV      R5,R0
+    125            }
+   \                     ??sl_slist_join_0: (+1)
+   \       0x16   0x6828             LDR      R0,[R5, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD1FB             BNE.N    ??sl_slist_join_1
+    126          
+    127            *node_ptr = *head_list_2;
+   \       0x1C   0x6820             LDR      R0,[R4, #+0]
+    128            *head_list_2 = NULL;
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0x6028             STR      R0,[R5, #+0]
+   \       0x22   0x6021             STR      R1,[R4, #+0]
+    129          }
+   \       0x24   0xBD31             POP      {R0,R4,R5,PC}
+    130          
+    131          /***************************************************************************//**
+    132           * Remove item from list.
+    133           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    134          void sl_slist_remove(sl_slist_node_t **head,
+    135                               sl_slist_node_t *item)
+    136          {
+   \                     sl_slist_remove: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    137            EFM_ASSERT((item != NULL) && (head != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD104             BNE.N    ??sl_slist_remove_0
+   \        0xC   0x2189             MOVS     R1,#+137
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+    138          
+    139            for (sl_slist_node_t **node_ptr = head; *node_ptr != NULL; node_ptr = &((*node_ptr)->node)) {
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x12   0xE000             B.N      ??sl_slist_remove_0
+   \                     ??sl_slist_remove_1: (+1)
+   \       0x14   0x4604             MOV      R4,R0
+   \                     ??sl_slist_remove_0: (+1)
+   \       0x16   0x6820             LDR      R0,[R4, #+0]
+   \       0x18   0xB128             CBZ.N    R0,??sl_slist_remove_2
+    140              if (*node_ptr == item) {
+   \       0x1A   0x42A8             CMP      R0,R5
+   \       0x1C   0xD1FA             BNE.N    ??sl_slist_remove_1
+    141                *node_ptr = item->node;
+   \       0x1E   0x6828             LDR      R0,[R5, #+0]
+    142                item->node = NULL;
+   \       0x20   0x2100             MOVS     R1,#+0
+   \       0x22   0x6020             STR      R0,[R4, #+0]
+   \       0x24   0x6029             STR      R1,[R5, #+0]
+    143                return;
+   \                     ??sl_slist_remove_2: (+1)
+   \       0x26   0xBD31             POP      {R0,R4,R5,PC}
+    144              }
+    145            }
+    146          }
+    147          
+    148          /***************************************************************************//**
+    149           * Sorts list items.
+    150           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    151          void sl_slist_sort(sl_slist_node_t **head,
+    152                             bool (*cmp_fnct)(sl_slist_node_t *item_l,
+    153                                              sl_slist_node_t *item_r))
+    154          {
+   \                     sl_slist_sort: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x4688             MOV      R8,R1
+    155            bool  swapped;
+    156            sl_slist_node_t **pp_item_l;
+    157          
+    158            EFM_ASSERT((head != NULL) && (cmp_fnct != NULL));
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0xEA5F 0x0008      MOVSNE   R0,R8
+   \        0xE   0xD102             BNE.N    ??CrossCallReturnLabel_0
+   \       0x10   0x219E             MOVS     R1,#+158
+   \       0x12   0x.... 0x....      BL       ?Subroutine0
+    159          
+    160            do {
+    161              swapped = false;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x16   0x2700             MOVS     R7,#+0
+    162          
+    163              pp_item_l = head;
+   \       0x18   0x462E             MOV      R6,R5
+   \       0x1A   0xE007             B.N      ??sl_slist_sort_0
+    164              // Loop until end of list is found.
+    165              while ((*pp_item_l != NULL) && ((*pp_item_l)->node != NULL)) {
+    166                sl_slist_node_t *p_item_r = (*pp_item_l)->node;
+    167                bool  ordered;
+    168          
+    169                // Call provided compare fnct.
+    170                ordered = cmp_fnct(*pp_item_l, p_item_r);
+    171                if (ordered == false) {
+    172                  // If order is not correct, swap items.
+    173                  sl_slist_node_t *p_tmp = p_item_r->node;
+    174          
+    175                  // Swap the two items.
+    176                  p_item_r->node = *pp_item_l;
+   \                     ??sl_slist_sort_1: (+1)
+   \       0x1C   0x6831             LDR      R1,[R6, #+0]
+   \       0x1E   0x6820             LDR      R0,[R4, #+0]
+    177                  (*pp_item_l)->node = p_tmp;
+    178                  *pp_item_l = p_item_r;
+    179                  pp_item_l = &(p_item_r->node);
+    180                  // Indicate a swap has been done.
+    181                  swapped = true;
+   \       0x20   0x2701             MOVS     R7,#+1
+   \       0x22   0x6021             STR      R1,[R4, #+0]
+   \       0x24   0x6832             LDR      R2,[R6, #+0]
+   \       0x26   0x6010             STR      R0,[R2, #+0]
+   \       0x28   0x6034             STR      R4,[R6, #+0]
+   \       0x2A   0x4626             MOV      R6,R4
+    182                } else {
+   \                     ??sl_slist_sort_0: (+1)
+   \       0x2C   0x6830             LDR      R0,[R6, #+0]
+   \       0x2E   0xB138             CBZ.N    R0,??sl_slist_sort_2
+   \       0x30   0x6804             LDR      R4,[R0, #+0]
+   \       0x32   0xB12C             CBZ.N    R4,??sl_slist_sort_2
+   \       0x34   0x4621             MOV      R1,R4
+   \       0x36   0x47C0             BLX      R8
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD0EF             BEQ.N    ??sl_slist_sort_1
+    183                  pp_item_l = &((*pp_item_l)->node);
+   \       0x3C   0x6836             LDR      R6,[R6, #+0]
+   \       0x3E   0xE7F5             B.N      ??sl_slist_sort_0
+    184                }
+    185              }
+    186              // Re-loop until no items have been swapped.
+    187            } while (swapped == true);
+   \                     ??sl_slist_sort_2: (+1)
+   \       0x40   0x2F00             CMP      R7,#+0
+   \       0x42   0xD1E8             BNE.N    ??CrossCallReturnLabel_0
+    188          }
+   \       0x44   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x6D, 0x6D, 0x6F, 0x6E, 0x5C, 0x70
+   \              0x6D 0x6D    
+   \              0x6F 0x6E    
+   \              0x5C 0x70
+   \       0x60   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5C
+   \       0x68   0x63 0x6F          DC8 0x63, 0x6F, 0x6D, 0x6D, 0x6F, 0x6E, 0x5C, 0x73
+   \              0x6D 0x6D    
+   \              0x6F 0x6E    
+   \              0x5C 0x73
+   \       0x70   0x72 0x63          DC8 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F, 0x73, 0x6C
+   \              0x5C 0x73    
+   \              0x6C 0x5F    
+   \              0x73 0x6C
+   \       0x78   0x69 0x73          DC8 0x69, 0x73, 0x74, 0x2E, 0x63, 0
+   \              0x74 0x2E    
+   \              0x63 0x00
+   \       0x7E                      DS8 2
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_slist_init
+      16   sl_slist_insert
+        16   -> assertEFM
+      16   sl_slist_join
+        16   -> assertEFM
+       8   sl_slist_pop
+         8   -> assertEFM
+      16   sl_slist_push
+        16   -> assertEFM
+      16   sl_slist_push_back
+        16   -> assertEFM
+      16   sl_slist_remove
+        16   -> assertEFM
+      24   sl_slist_sort
+        24   -- Indirect call
+        24   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       6  ?Subroutine0
+     128  ?_0
+       6  sl_slist_init
+      26  sl_slist_insert
+      38  sl_slist_join
+      26  sl_slist_pop
+      26  sl_slist_push
+      34  sl_slist_push_back
+      40  sl_slist_remove
+      72  sl_slist_sort
+
+ 
+ 128 bytes in section .rodata
+ 278 bytes in section .text
+ 
+ 278 bytes of CODE  memory
+ 128 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,19 @@
+D:\iar\ewarm-9.70.4\arm\bin\armproc.dll
+
+ D:\iar\ewarm-9.70.4\arm\bin\armjlink.dll
+
+ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\exe\btsensor.out
+
+ --plugin=D:\iar\ewarm-9.70.4\arm\bin\armLibSupportUniversal.dll
+
+ --device_macro=D:\iar\ewarm-9.70.4\arm/config/debugger/SiliconLaboratories/Gecko_RESET.dmac
+
+ --device_macro=D:\iar\ewarm-9.70.4\arm/config/debugger/SiliconLaboratories/Gecko_SE.dmac
+
+ --device_macro=D:\iar\ewarm-9.70.4\arm/config/debugger/SiliconLaboratories/Trace_xG22.dmac
+
+ --flash_loader=D:\iar\ewarm-9.70.4\arm/config/flashloader/SiliconLaboratories/FlashGECKOS2C2.board
+
+ 
+
+

@@ -1,0 +1,586 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\sl_main_init.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_17388944447247332128.dir\sl_main_init.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\sl_main_init.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_17388944447247332128.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_17388944447247332128.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_17388944447247332128.dir\sl_main_init.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_17388944447247332128.dir\sl_main_init.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_17388944447247332128.dir\sl_main_init.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_17388944447247332128.dir\sl_main_init.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\sl_main_init.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Main Initialization.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          #include <stdbool.h>
+     31          #include "sl_common.h"
+     32          #include "sl_event_handler.h"
+     33          #include "sl_assert.h"
+     34          #include "sl_event_handler.h"
+     35          #include "sl_main_init.h"
+     36          
+     37          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     38          #include "sl_component_catalog.h"
+     39          #endif
+     40          
+     41          #if defined(SL_CATALOG_HAL_SYSTEM_PRESENT)
+     42          #include "sl_hal_system.h"
+     43          #endif
+     44          
+     45          #if defined(SL_CATALOG_DEVICE_INIT_DCDC_PRESENT)
+     46          #include "sl_device_init_dcdc.h"
+     47          #endif
+     48          
+     49          #if defined(SL_CATALOG_DEVICE_INIT_LFXO_PRESENT)
+     50          #include "sl_device_init_lfxo.h"
+     51          #endif
+     52          
+     53          #if defined(SL_CATALOG_DEVICE_INIT_HFRCO_PRESENT)
+     54          #include "sl_device_init_hfrco.h"
+     55          #endif
+     56          
+     57          #if defined(SL_CATALOG_DEVICE_INIT_HFXO_PRESENT)
+     58          #include "sl_device_init_hfxo.h"
+     59          #endif
+     60          
+     61          #if defined(SL_CATALOG_DEVICE_INIT_LFRCO_PRESENT)
+     62          #include "sl_device_init_lfrco.h"
+     63          #endif
+     64          
+     65          #if defined(SL_CATALOG_DEVICE_INIT_DPLL_PRESENT)
+     66          #include "sl_device_init_dpll.h"
+     67          #endif
+     68          
+     69          #if defined(SL_CATALOG_DEVICE_INIT_USBPLL_PRESENT)
+     70          #include "sl_device_init_usbpll.h"
+     71          #endif
+     72          
+     73          #if defined(SL_CATALOG_DEVICE_INIT_CLOCKS_PRESENT)
+     74          #include "sl_device_init_clocks.h"
+     75          #endif
+     76          
+     77          #if defined(SL_CATALOG_DEVICE_INIT_RFFPLL_PRESENT)
+     78          #include "sl_device_init_rffpll.h"
+     79          #endif
+     80          
+     81          #if defined(SL_CATALOG_DEVICE_INIT_EMU_PRESENT)
+     82          #include "sl_device_init_emu.h"
+     83          #endif
+     84          
+     85          #if defined(SL_CATALOG_MPA_MANAGER_PRESENT)
+     86          #include "sl_mpa_manager.h"
+     87          #endif
+     88          
+     89          #if defined(SL_CATALOG_MPU_PRESENT)
+     90          #include "sl_mpu.h"
+     91          #endif
+     92          
+     93          #include "sli_main_init_memory.h"
+     94          
+     95          #if defined(SL_CATALOG_INTERRUPT_MANAGER_PRESENT)
+     96          #include "sl_interrupt_manager.h"
+     97          #endif
+     98          
+     99          #if defined(SL_CATALOG_SLEEPTIMER_PRESENT)
+    100          #include "sl_sleeptimer.h"
+    101          #endif
+    102          
+    103          #if (defined(SL_CATALOG_MEMORY_MANAGER_PRESENT) && !defined(SL_CATALOG_CPP_SUPPORT_PRESENT)) \
+    104            || defined(SL_CATALOG_MEMORY_MANAGER_DTCM_PRESENT) || defined(SL_CATALOG_MEMORY_MANAGER_PSRAM_PRESENT)
+    105          #include "sl_memory_manager.h"
+    106          #endif
+    107          
+    108          #if defined(SL_CATALOG_CLOCK_MANAGER_PRESENT)
+    109          #include "sl_clock_manager_init.h"
+    110          #endif
+    111          
+    112          #if defined(SL_SI91X_SOC_MODE)
+    113          #include "system_si91x.h"
+    114          #endif
+    115          
+    116          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    117          #include "sl_power_manager.h"
+    118          #endif
+    119          
+    120          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    121          #include "sl_main_start_task_config.h"
+    122          #include "cmsis_os2.h"
+    123          #include "sli_main_kernel.h"
+    124          #endif
+    125          
+    126          #ifdef SL_CATALOG_LEGACY_HAL_SOC_PRESENT
+    127          #include "hal.h"
+    128          #endif
+    129          
+    130          #if defined(SL_CATALOG_METRIC_EVENT_HANDLER_PRESENT)
+    131          #include "sli_metric_event_handler.h"
+    132          #else
+    133          #define SLI_METRIC_EVENT_HANDLER_START()
+    134          #define SLI_METRIC_EVENT_HANDLER_SAVE(func)
+    135          #endif
+    136          
+    137          /******************************************************************************
+    138           * @brief User-defined function for pre-clock app initialization.
+    139           *
+    140           * @details This function is called from sli_main_init():
+    141           * - Before essential infrastructure components are initialized
+    142           * (memory management, clock, oscillators, interrupt management, etc.).
+    143           *****************************************************************************/
+
+   \                                 In section .text, align 2
+    144          SL_WEAK void app_init_pre_clock(void)
+    145          {
+    146            // User defined.
+    147          }
+   \                     app_init_pre_clock: (+1)
+   \        0x0   0x4770             BX       LR
+    148          
+    149          /******************************************************************************
+    150           * @brief User-defined function for early app initialization.
+    151           *
+    152           * @details This function is called from sli_main_init():
+    153           * - After essential infrastructure components are initialized
+    154           * (memory management, clock, oscillators, interrupt management, etc.).
+    155           * - Before initializing the kernel (if RTOS-based application)
+    156           * - Before the call to sl_main_second_stage_init() doing the other SiSDK
+    157           * modules initilization (e.g. drivers, services, stacks)
+    158           * This function allows the user to perform early initialization required by
+    159           * his application before other SiSDK modules initializations.
+    160           *****************************************************************************/
+
+   \                                 In section .text, align 2
+    161          SL_WEAK void app_init_early(void)
+    162          {
+    163            // User defined.
+    164          }
+   \                     app_init_early: (+1)
+   \        0x0   0x4770             BX       LR
+    165          
+    166          /******************************************************************************
+    167           * @brief User-defined function for application initialization after platform 
+    168           * and initialization.
+    169           *
+    170           * @details This function is called from sl_main_second_stage_init():
+    171           * - After sl_platform_init(), sl_driver_init(), and sl_service_init() complete
+    172           * - Before sl_stack_init() is called
+    173           * This function allows the user to perform initialization that depends on
+    174           * platform components, drivers, and services being ready, but needs to run
+    175           * before stacks are initialized.
+    176           *****************************************************************************/
+
+   \                                 In section .text, align 2
+    177          SL_WEAK void app_init_post_platform(void)
+    178          {
+    179            // User defined.
+    180          }
+   \                     app_init_post_platform: (+1)
+   \        0x0   0x4770             BX       LR
+    181          
+    182          #if !defined(SL_CATALOG_SL_SYSTEM_COMPATIBILITY_PRESENT)
+    183          /******************************************************************************
+    184           * @brief User-defined function for app initialization.
+    185           *
+    186           * @details This function is called from main():
+    187           * - After all SiSDKs modules have been initialized (e.g. memory management,
+    188           * clock, oscillators, interrupt management, drivers, services, stacks).
+    189           * - After initializing and starting the kernel (if RTOS-based application)
+    190           * This function allows the user to perform any initialization required by his
+    191           * application after all SiSDK modules initializations.
+    192           *****************************************************************************/
+
+   \                                 In section .text, align 2
+    193          SL_WEAK void app_init(void)
+    194          {
+    195            // User defined.
+    196          }
+   \                     app_init: (+1)
+   \        0x0   0x4770             BX       LR
+    197          #endif
+    198          
+    199          #if !defined(SL_CATALOG_SL_SYSTEM_COMPATIBILITY_PRESENT)
+    200          /******************************************************************************
+    201           * @brief User-defined function to process a baremetal action periodically.
+    202           *
+    203           * @details Only used when the firmware type is baremetal.
+    204           * This function will be called every iteration of the main loop.
+    205           *****************************************************************************/
+
+   \                                 In section .text, align 2
+    206          SL_WEAK void app_process_action(void)
+    207          {
+    208            // User defined.
+    209          }
+   \                     app_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+    210          #endif
+    211          
+    212          /******************************************************************************
+    213           * @brief Internal function used to aggregate driver, services stacks and internal apps
+    214           * initialization function.
+    215           *
+    216           * @details If a kernel is present, these components init functions will be
+    217           * executed in the start task.
+    218           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    219          void sl_main_second_stage_init(void)
+    220          {
+   \                     sl_main_second_stage_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    221            sl_platform_init();
+   \        0x2   0x.... 0x....      BL       sl_platform_init
+    222            sl_driver_init();
+   \        0x6   0x.... 0x....      BL       sl_driver_init
+    223            sl_service_init();
+   \        0xA   0x.... 0x....      BL       sl_service_init
+    224            app_init_post_platform();
+   \        0xE   0x.... 0x....      BL       app_init_post_platform
+    225            sl_stack_init();
+   \       0x12   0x.... 0x....      BL       sl_stack_init
+    226            sl_internal_app_init();
+   \       0x16   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x1A   0x.... 0x....      B.W      sl_internal_app_init
+    227          #if defined(SL_CATALOG_KERNEL_PRESENT) && (SL_MAIN_ENABLE_START_TASK_PRIORITY_CHANGE == 1)
+    228            osThreadSetPriority(osThreadGetId(), SL_MAIN_START_TASK_PRIORITY);
+    229          #endif
+    230          }
+    231          
+    232          /******************************************************************************
+    233           * @brief Core system components initialization.
+    234           *
+    235           * @details MCU and software components initialization  will be executed in
+    236           * order to have a working system after exit. If an operating system is
+    237           * selected, software components will be initialized just after the kernel
+    238           * is started and before any other tasks are able to execute.
+    239           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    240          void sl_main_init(void)
+    241          {
+   \                     sl_main_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    242            SLI_METRIC_EVENT_HANDLER_START();
+    243          
+    244          #if defined(SL_CATALOG_MEMORY_MANAGER_PRESENT) && !defined(SL_CATALOG_CPP_SUPPORT_PRESENT)
+    245            sl_memory_init();
+    246            SLI_METRIC_EVENT_HANDLER_SAVE("sl_memory_init");
+    247          #endif
+    248          
+    249          #if defined(SL_CATALOG_MEMORY_MANAGER_PSRAM_PRESENT)
+    250            sl_memory_init_psram();
+    251            SLI_METRIC_EVENT_HANDLER_SAVE("sl_memory_init_psram");
+    252          #endif
+    253          
+    254          #if defined(SL_CATALOG_MEMORY_MANAGER_DTCM_PRESENT)
+    255            sl_memory_init_dtcm();
+    256            SLI_METRIC_EVENT_HANDLER_SAVE("sl_memory_init_dtcm");
+    257          #endif
+    258          
+    259          #if defined(SL_CATALOG_HAL_SYSTEM_PRESENT)
+    260            sl_hal_system_init();
+   \        0x2   0x.... 0x....      BL       sl_hal_system_init
+    261            SLI_METRIC_EVENT_HANDLER_SAVE("sl_hal_system_init");
+    262          #endif
+    263          
+    264            // Pre-clock application initialization.
+    265            app_init_pre_clock();
+   \        0x6   0x.... 0x....      BL       app_init_pre_clock
+    266            SLI_METRIC_EVENT_HANDLER_SAVE("app_init_pre_clock");
+    267          
+    268          #if defined(SL_CATALOG_INTERRUPT_MANAGER_PRESENT)
+    269            sl_interrupt_manager_init();
+   \        0xA   0x.... 0x....      BL       sl_interrupt_manager_init
+    270            SLI_METRIC_EVENT_HANDLER_SAVE("sl_interrupt_manager_init");
+    271          #endif
+    272          
+    273          #if defined(SL_CATALOG_DEVICE_INIT_DCDC_PRESENT)
+    274            sl_device_init_dcdc();
+   \        0xE   0x.... 0x....      BL       sl_device_init_dcdc
+    275            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_dcdc");
+    276          #endif
+    277          
+    278          #if defined(SL_CATALOG_DEVICE_INIT_LFXO_PRESENT)
+    279            sl_device_init_lfxo();
+    280            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_lfxo");
+    281          #endif
+    282          
+    283          #if defined(SL_CATALOG_DEVICE_INIT_HFRCO_PRESENT)
+    284            sl_device_init_hfrco();
+    285            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_hfrco");
+    286          #endif
+    287          
+    288          #if defined(SL_CATALOG_DEVICE_INIT_HFXO_PRESENT)
+    289            sl_device_init_hfxo();
+    290            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_hfxo");
+    291          #endif
+    292          
+    293          #if defined(SL_CATALOG_DEVICE_INIT_LFRCO_PRESENT)
+    294            sl_device_init_lfrco();
+    295            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_lfrco");
+    296          #endif
+    297          
+    298          #if defined(SL_CATALOG_DEVICE_INIT_DPLL_PRESENT)
+    299            sl_device_init_dpll();
+    300            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_dpll");
+    301          #endif
+    302          
+    303          #if defined(SL_CATALOG_DEVICE_INIT_USBPLL_PRESENT)
+    304            sl_device_init_usbpll();
+    305            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_usbpll");
+    306          #endif
+    307          
+    308          #if defined(SL_CATALOG_DEVICE_INIT_CLOCKS_PRESENT)
+    309            sl_device_init_clocks();
+    310            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_clocks");
+    311          #endif
+    312          
+    313          #if defined(SL_CATALOG_DEVICE_INIT_RFFPLL_PRESENT)
+    314            sl_device_init_rffpll();
+    315            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_rffpll");
+    316          #endif
+    317          
+    318          #if defined(SL_CATALOG_CLOCK_MANAGER_PRESENT)
+    319            sl_clock_manager_init();
+   \       0x12   0x.... 0x....      BL       sl_clock_manager_init
+    320            SLI_METRIC_EVENT_HANDLER_SAVE("sl_clock_manager_init");
+    321          #endif
+    322          
+    323          #if defined(SL_SI91X_SOC_MODE)
+    324            SystemCoreClockUpdate();
+    325          #endif
+    326          
+    327          #if defined(SL_CATALOG_DEVICE_INIT_EMU_PRESENT)
+    328            sl_device_init_emu();
+    329            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_emu");
+    330          #endif
+    331          
+    332          #if defined(SL_CATALOG_SLEEPTIMER_PRESENT)
+    333            sl_sleeptimer_init();
+   \       0x16   0x.... 0x....      BL       sl_sleeptimer_init
+    334            SLI_METRIC_EVENT_HANDLER_SAVE("sl_sleeptimer_init");
+    335          #endif
+    336          
+    337          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    338            sl_power_manager_init();
+   \       0x1A   0x.... 0x....      BL       sl_power_manager_init
+    339            SLI_METRIC_EVENT_HANDLER_SAVE("sl_power_manager_init");
+    340          #endif
+    341          
+    342          #if defined(SL_CATALOG_MPA_MANAGER_PRESENT)
+    343            sl_mpa_manager_init();
+    344            SLI_METRIC_EVENT_HANDLER_SAVE("sl_mpa_manager_init");
+    345          #endif
+    346          
+    347          #if defined(SL_CATALOG_MPU_PRESENT)
+    348            sl_mpu_disable_execute_from_ram();
+    349            SLI_METRIC_EVENT_HANDLER_SAVE("sl_mpu_disable_execute_from_ram");
+    350          #endif
+    351          
+    352            // Early application initialization (post-system init).
+    353            app_init_early();
+   \       0x1E   0x.... 0x....      BL       app_init_early
+    354            SLI_METRIC_EVENT_HANDLER_SAVE("app_init_early");
+    355          
+    356          #ifdef SL_CATALOG_LEGACY_HAL_SOC_PRESENT
+    357            halInit();
+    358            SLI_METRIC_EVENT_HANDLER_SAVE("halInit");
+    359          #endif
+    360          
+    361          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    362            osKernelInitialize();
+    363            SLI_METRIC_EVENT_HANDLER_SAVE("osKernelInitialize");
+    364          #endif
+    365          
+    366            sli_allocate_permanent_memory();
+   \       0x22   0x.... 0x....      BL       sli_allocate_permanent_memory
+    367            SLI_METRIC_EVENT_HANDLER_SAVE("sli_allocate_permanent_memory");
+    368          
+    369            // Internal early init event.
+    370            sli_internal_init_early();
+   \       0x26   0x.... 0x....      BL       sli_internal_init_early
+    371            SLI_METRIC_EVENT_HANDLER_SAVE("sli_internal_init_early");
+    372          
+    373          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    374            sli_main_kernel_start_task_initialize();
+    375            SLI_METRIC_EVENT_HANDLER_SAVE("sli_main_kernel_start_task_initialize");
+    376          #endif
+    377          
+    378          #if !defined(SL_CATALOG_KERNEL_PRESENT)
+    379            sl_main_second_stage_init();
+   \       0x2A   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x2E   0x....             B.N      sl_main_second_stage_init
+    380          #endif
+    381          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   app_init
+       0   app_init_early
+       0   app_init_post_platform
+       0   app_init_pre_clock
+       0   app_process_action
+       8   sl_main_init
+         8   -> app_init_early
+         8   -> app_init_pre_clock
+         8   -> sl_clock_manager_init
+         8   -> sl_device_init_dcdc
+         8   -> sl_hal_system_init
+         8   -> sl_interrupt_manager_init
+         0   -> sl_main_second_stage_init
+         8   -> sl_power_manager_init
+         8   -> sl_sleeptimer_init
+         8   -> sli_allocate_permanent_memory
+         8   -> sli_internal_init_early
+       8   sl_main_second_stage_init
+         8   -> app_init_post_platform
+         8   -> sl_driver_init
+         0   -> sl_internal_app_init
+         8   -> sl_platform_init
+         8   -> sl_service_init
+         8   -> sl_stack_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  app_init
+       2  app_init_early
+       2  app_init_post_platform
+       2  app_init_pre_clock
+       2  app_process_action
+      48  sl_main_init
+      30  sl_main_second_stage_init
+
+ 
+ 88 bytes in section .text
+ 
+ 78 bytes of CODE memory (+ 10 bytes shared)
+
+Errors: none
+Warnings: none

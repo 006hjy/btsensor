@@ -1,0 +1,1203 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:35
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager_init_hal_s2.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager_init_hal_s2.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager_init_hal_s2.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16363187299548398533.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager_init_hal_s2.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager_init_hal_s2.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16363187299548398533.dir\sl_clock_manager_init_hal_s2.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager_init_hal_s2.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager_init_hal_s2.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Clock Manager Init HAL API implementations.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2023 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_clock_manager_oscillator_config.h"
+     32          #include "sl_clock_manager_tree_config.h"
+     33          #include "sli_clock_manager_init_hal.h"
+     34          #include "sl_clock_manager.h"
+     35          #include "sl_status.h"
+     36          #include "sl_assert.h"
+     37          #include "em_device.h"
+     38          #include "em_cmu.h"
+     39          #include "sl_gpio.h"
+     40          
+     41          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION)
+     42          #include "sli_clock_manager_runtime_configuration.h"
+     43          #endif
+     44          
+     45          #if defined(RFFPLL_PRESENT)
+     46          #if defined(SL_CLOCK_MANAGER_RFFPLL_BAND) && (SL_CLOCK_MANAGER_RFFPLL_BAND == 7)
+     47          #ifdef SL_CLOCK_MANAGER_AUTO_BAND_VALID
+     48          #include "rail_config.h"
+     49          #endif
+     50          #endif
+     51          #endif
+     52          
+     53          /*******************************************************************************
+     54           *******************************   DEFINES   ***********************************
+     55           ******************************************************************************/
+     56          
+     57          // Fetch HFXO CTUNE value from USERDATA page as a manufacturing token
+     58          #define MFG_CTUNE_HFXO_ADDR 0x0FE00100UL
+     59          #define MFG_CTUNE_HFXO_VAL  (*((uint16_t *) (MFG_CTUNE_HFXO_ADDR)))
+     60          
+     61          // Fetch LFXO CTUNE value from USERDATA page as a manufacturing token
+     62          #define MFG_CTUNE_LFXO_ADDR 0x0FE0009CUL
+     63          #define MFG_CTUNE_LFXO_VAL  (*((uint8_t *) (MFG_CTUNE_LFXO_ADDR)))
+     64          
+     65          #if defined(RFFPLL_PRESENT)
+     66          // If RADIO_CONFIG_RFFPLL_CONFIG_PRESENT is not defined, either there is no
+     67          // radio configuration in the project or the radio configuration that is
+     68          // present does not include an RFFPLL configuration.
+     69          // In either case, the Auto-Band feature cannot work, so fall back to the
+     70          // default band (Band 9xx).
+     71          #if defined(SL_CLOCK_MANAGER_RFFPLL_BAND) && (SL_CLOCK_MANAGER_RFFPLL_BAND == 7)
+     72          #ifndef RADIO_CONFIG_RFFPLL_CONFIG_PRESENT
+     73          #undef SL_CLOCK_MANAGER_RFFPLL_BAND
+     74          #define SL_CLOCK_MANAGER_RFFPLL_BAND  6
+     75          #endif
+     76          #endif
+     77          #endif
+     78          
+     79          // Allocated PRS channel for crystal sharing
+     80          #if defined(_HFXO_CTRL_PRSSTATUSSEL0_MASK)
+     81          #define HFXO_CRYSTSAL_SHARING_PRS_CHANNEL 0
+     82          #endif
+     83          
+     84          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION)
+     85          #define FUNCTION_SCOPE
+     86          #else
+     87          #define FUNCTION_SCOPE static
+     88          #endif
+     89          
+     90          /*******************************************************************************
+     91           ******************************   TYPEDEFS   ***********************************
+     92           ******************************************************************************/
+     93          
+     94          #if defined(RFFPLL_PRESENT)
+     95          typedef struct {
+     96            uint32_t frequency;  // Host target frequency.
+     97            uint8_t divider_y;   // Divider Y for digital.
+     98            uint8_t divider_x;   // Divider X for Radio.
+     99            uint8_t divider_n;   // Feedback divider N.
+    100          } clock_manager_rffpll_config_t;
+    101          #endif
+    102          
+    103          /*******************************************************************************
+    104           **************************   LOCAL VARIABLES   ********************************
+    105           ******************************************************************************/
+    106          
+    107          #if defined(RFFPLL_PRESENT)                                               \
+    108            && defined(SL_CLOCK_MANAGER_HFXO_EN) && (SL_CLOCK_MANAGER_HFXO_EN == 1) \
+    109            && (SL_CLOCK_MANAGER_RFFPLL_CUSTOM_BAND == 0)                           \
+    110            && !((SL_CLOCK_MANAGER_RFFPLL_BAND == 7) && defined(RADIO_CONFIG_RFFPLL_CONFIG_PRESENT))
+    111          // Table of possible radio frequency bands and their associated settings.
+    112          static clock_manager_rffpll_config_t rffpll_band_config_39MHz[] = {
+    113            { 97500000, 23, 7, 115 }, // Band 450 MHz
+    114            { 98380000, 22, 7, 111 }, // Band 470 MHz
+    115            { 97500000, 23, 7, 115 }, // Band 780 MHz
+    116            { 97500000, 20, 6, 100 }, // Band 863 MHz
+    117            { 97500000, 23, 7, 115 }, // Band 896 MHz
+    118            { 96520000, 20, 6, 99 },  // Band 928 MHz
+    119            { 97500000, 20, 6, 100 }  // Band 9xx MHz (covers from 901 to 928 MHz)
+    120          };
+    121          #endif
+    122          
+    123          /*******************************************************************************
+    124           **************************   GLOBAL VARIABLES   *******************************
+    125           ******************************************************************************/
+    126          
+    127          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION)
+    128          uint32_t SLI_CLOCK_MANAGER_HFXO_MODE = SL_CLOCK_MANAGER_HFXO_MODE;
+    129          uint32_t SLI_CLOCK_MANAGER_HFXO_FREQ = SL_CLOCK_MANAGER_HFXO_FREQ;
+    130          uint32_t SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY = SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY_DEFAULT;
+    131          
+    132          uint32_t SLI_CLOCK_MANAGER_HFRCO_BAND     = SL_CLOCK_MANAGER_HFRCO_BAND;
+    133          bool     SLI_CLOCK_MANAGER_HFRCO_DPLL_EN  = SL_CLOCK_MANAGER_HFRCO_DPLL_EN;
+    134          uint32_t SLI_CLOCK_MANAGER_DPLL_FREQ      = SL_CLOCK_MANAGER_DPLL_FREQ;
+    135          uint32_t SLI_CLOCK_MANAGER_DPLL_N         = SL_CLOCK_MANAGER_DPLL_N;
+    136          uint32_t SLI_CLOCK_MANAGER_DPLL_M         = SL_CLOCK_MANAGER_DPLL_M;
+    137          #endif
+    138          
+    139          /*******************************************************************************
+    140           ***************************   LOCAL FUNCTIONS   *******************************
+    141           ******************************************************************************/
+    142          
+    143          #if defined(HFXO_PRESENT) \
+    144            && defined(SL_CLOCK_MANAGER_HFXO_EN) && SL_CLOCK_MANAGER_HFXO_EN == 1
+    145          /***************************************************************************//**
+    146           * Initializes HFXO Oscillator.
+    147           ******************************************************************************/
+    148          FUNCTION_SCOPE void init_hfxo(void)
+    149          {
+    150            CMU_HFXOInit_TypeDef clock_manager_hfxo_init = CMU_HFXOINIT_DEFAULT;
+    151            clock_manager_hfxo_init.mode = SLI_CLOCK_MANAGER_HFXO_MODE >> _HFXO_CFG_MODE_SHIFT;
+    152          
+    153            if (SLI_CLOCK_MANAGER_HFXO_MODE == cmuHfxoOscMode_ExternalSine) {
+    154              clock_manager_hfxo_init = (CMU_HFXOInit_TypeDef)CMU_HFXOINIT_EXTERNAL_SINE;
+    155          #if defined(_HFXO_CFG_MODE_EXTCLKPKDET)
+    156            } else if (SLI_CLOCK_MANAGER_HFXO_MODE == cmuHfxoOscMode_ExternalSinePkDet) {
+    157              clock_manager_hfxo_init = (CMU_HFXOInit_TypeDef)CMU_HFXOINIT_EXTERNAL_SINEPKDET;
+    158          #endif
+    159            }
+    160          #if defined (SL_CLOCK_MANAGER_HFXO_ENXIDCBIASANA)
+    161            clock_manager_hfxo_init.enXiDcBiasAna = SL_CLOCK_MANAGER_HFXO_ENXIDCBIASANA;
+    162          #endif
+    163          
+    164            int ctune = -1;
+    165          
+    166          #if defined(SL_CLOCK_MANAGER_HFXO_SEPARATE_CTUNEXIANA_CTUNEXOANA_EN) && (SL_CLOCK_MANAGER_HFXO_SEPARATE_CTUNEXIANA_CTUNEXOANA_EN == 1)
+    167            ctune = SL_CLOCK_MANAGER_HFXO_CTUNEXIANA;
+    168            CMU_HFXOCTuneDeltaSet(SL_CLOCK_MANAGER_HFXO_CTUNEXOANA - SL_CLOCK_MANAGER_HFXO_CTUNEXIANA);
+    169          #endif
+    170          
+    171          #if defined(_DEVINFO_MODXOCAL_HFXOCTUNEXIANA_MASK)
+    172            // Use HFXO tuning value from DEVINFO if available (PCB modules)
+    173            if ((ctune == -1) && ((DEVINFO->MODULEINFO & _DEVINFO_MODULEINFO_HFXOCALVAL_MASK) == 0)) {
+    174              ctune = DEVINFO->MODXOCAL & _DEVINFO_MODXOCAL_HFXOCTUNEXIANA_MASK;
+    175            }
+    176          #endif
+    177          
+    178            // Use HFXO tuning value from MFG token in UD page if not already set
+    179            if ((ctune == -1)
+    180          #if defined(SL_CLOCK_MANAGER_CTUNE_MFG_HFXO_EN)
+    181                && (SL_CLOCK_MANAGER_CTUNE_MFG_HFXO_EN == 1)
+    182          #endif
+    183                && (MFG_CTUNE_HFXO_VAL <= (_HFXO_XTALCTRL_CTUNEXIANA_MASK >> _HFXO_XTALCTRL_CTUNEXIANA_SHIFT))) {
+    184              ctune = MFG_CTUNE_HFXO_VAL;
+    185            }
+    186          
+    187            // Use HFXO tuning value from configurations as fallback
+    188            if (ctune == -1) {
+    189              ctune = SL_CLOCK_MANAGER_HFXO_CTUNE;
+    190            }
+    191          
+    192            // Configure CTUNE XI and XO.
+    193            if (ctune != -1) {
+    194              clock_manager_hfxo_init.ctuneXiAna = (uint8_t)ctune;
+    195          
+    196              // Ensure CTUNE XO plus a delta is within the correct range. The delta accounts for internal chip
+    197              // load imbalance on some series 2 chips.
+    198              ctune += CMU_HFXOCTuneDeltaGet();
+    199              if (ctune < 0) {
+    200                ctune = 0;
+    201              } else if (ctune > ((int)(_HFXO_XTALCTRL_CTUNEXOANA_MASK >> _HFXO_XTALCTRL_CTUNEXOANA_SHIFT))) {
+    202                ctune = (int)(_HFXO_XTALCTRL_CTUNEXOANA_MASK >> _HFXO_XTALCTRL_CTUNEXOANA_SHIFT);
+    203              }
+    204              clock_manager_hfxo_init.ctuneXoAna = ctune;
+    205            }
+    206          
+    207          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION)
+    208            if (SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY != SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY_DEFAULT) {
+    209              clock_manager_hfxo_init.ctuneFixAna = SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY;
+    210            }
+    211          #endif
+    212          
+    213          #if defined(SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_EN) && (SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_EN == 1)
+    214            // Set port and pin.
+    215            sl_status_t status;
+    216            GPIO_Port_TypeDef port = SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_GPIO_PORT;
+    217            unsigned int pin = SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_GPIO_PIN;
+    218          
+    219            // Enable HFXO and GPIO bus clocks.
+    220            status = sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_HFXO0);
+    221            EFM_ASSERT(status == SL_STATUS_OK);
+    222            status = sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_GPIO);
+    223            EFM_ASSERT(status == SL_STATUS_OK);
+    224          #if defined(SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_FOLLOWER_EN) && (SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_FOLLOWER_EN == 1)
+    225            // Initialize Crystal sharing follower.
+    226            status = sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_PRS);
+    227            EFM_ASSERT(status == SL_STATUS_OK);
+    228          
+    229            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+    230          
+    231            uint32_t mask = 0U, value = 0U;
+    232          
+    233            bool was_locked = HFXO0->STATUS & HFXO_STATUS_LOCK_LOCKED ? true : false;
+    234          
+    235            // Unlock register interface.
+    236            HFXO0->LOCK = HFXO_LOCK_LOCKKEY_UNLOCK;
+    237            HFXO0->IEN_SET = HFXO_IEN_BUFOUTRDY;
+    238          
+    239            BUS_RegMaskedWrite(&HFXO0->CTRL, _HFXO_CTRL_PRSSTATUSSEL0_MASK, (_HFXO_CTRL_PRSSTATUSSEL0_ENS << _HFXO_CTRL_PRSSTATUSSEL0_SHIFT));
+    240          
+    241            if (was_locked) {
+    242              HFXO0->LOCK = ~HFXO_LOCK_LOCKKEY_UNLOCK;
+    243            }
+    244          
+    245            value = _PRS_ASYNC_CH_CTRL_AUXSEL_DEFAULT     << _PRS_ASYNC_CH_CTRL_AUXSEL_SHIFT
+    246                    | _PRS_ASYNC_CH_CTRL_FNSEL_A          << _PRS_ASYNC_CH_CTRL_FNSEL_SHIFT
+    247                    | _PRS_ASYNC_CH_CTRL_SOURCESEL_HFXO0L << _PRS_ASYNC_CH_CTRL_SOURCESEL_SHIFT
+    248                    | _PRS_ASYNC_CH_CTRL_SIGSEL_HFXO0LSTATUS << _PRS_ASYNC_CH_CTRL_SIGSEL_SHIFT;
+    249          
+    250            mask = _PRS_ASYNC_CH_CTRL_AUXSEL_MASK
+    251                   | _PRS_ASYNC_CH_CTRL_FNSEL_MASK
+    252                   | _PRS_ASYNC_CH_CTRL_SOURCESEL_MASK
+    253                   | _PRS_ASYNC_CH_CTRL_SIGSEL_MASK;
+    254          
+    255            BUS_RegMaskedWrite(&(PRS->ASYNC_CH[HFXO_CRYSTSAL_SHARING_PRS_CHANNEL].CTRL), mask, value);
+    256          
+    257            GPIO_PinModeSet(port, pin, gpioModeWiredOrPullDown, 0U);
+    258          
+    259            (&(GPIO->PRSROUTE[0].ASYNCH0ROUTE))[HFXO_CRYSTSAL_SHARING_PRS_CHANNEL] = pin << _GPIO_PRS_ASYNCH0ROUTE_PIN_SHIFT
+    260                                                                                     | port << _GPIO_PRS_ASYNCH0ROUTE_PORT_SHIFT;
+    261            GPIO->PRSROUTE[0].ROUTEEN = 1U << (_GPIO_PRS_ROUTEEN_ASYNCH0PEN_SHIFT + HFXO_CRYSTSAL_SHARING_PRS_CHANNEL);
+    262          
+    263            //sl_clock_manager_disable_bus_clock(SL_BUS_CLOCK_PRS);
+    264          #elif defined(SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_LEADER_EN) && (SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_LEADER_EN == 1)
+    265            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+    266          
+    267            // Configure Bufout request GPIO.
+    268            GPIO_PinModeSet(port, pin, gpioModeInput, 0U);
+    269          
+    270            GPIO->SYXOROUTE[0].BUFOUTREQINASYNCROUTE = pin << _GPIO_SYXO_BUFOUTREQINASYNCROUTE_PIN_SHIFT
+    271                                                       | port << _GPIO_SYXO_BUFOUTREQINASYNCROUTE_PORT_SHIFT;
+    272          
+    273            bool was_locked = HFXO0->STATUS & HFXO_STATUS_LOCK_LOCKED ? true : false;
+    274          
+    275            // Unlock register interface.
+    276            HFXO0->LOCK = HFXO_LOCK_LOCKKEY_UNLOCK;
+    277          
+    278            HFXO0->CTRL_CLR = _HFXO_CTRL_BUFOUTFREEZE_MASK | _HFXO_CTRL_DISONDEMANDBUFOUT_MASK;
+    279          
+    280            BUS_RegMaskedWrite(&HFXO0->BUFOUTCTRL,
+    281                               _HFXO_BUFOUTCTRL_MINIMUMSTARTUPDELAY_MASK
+    282                               | _HFXO_BUFOUTCTRL_TIMEOUTSTARTUP_MASK,
+    283                               ((uint32_t)SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_LEADER_MIN_STARTUP_DELAY_EN)  << _HFXO_BUFOUTCTRL_MINIMUMSTARTUPDELAY_SHIFT
+    284                               | SL_CLOCK_MANAGER_HFXO_CRYSTAL_SHARING_LEADER_TIMEOUT_STARTUP);
+    285          
+    286            if (was_locked) {
+    287              HFXO0->LOCK = ~HFXO_LOCK_LOCKKEY_UNLOCK;
+    288            }
+    289          #endif
+    290          #endif
+    291          
+    292            SystemHFXOClockSet(SLI_CLOCK_MANAGER_HFXO_FREQ);
+    293            CMU_HFXOInit(&clock_manager_hfxo_init);
+    294            CMU_HFXOPrecisionSet(SL_CLOCK_MANAGER_HFXO_PRECISION);
+    295          
+    296          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION)
+    297            if (SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY == SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY_DEFAULT) {
+    298              SLI_CLOCK_MANAGER_HFXO_CTUNE_FIXED_STEADY = (HFXO0->XTALCTRL & _HFXO_XTALCTRL_CTUNEFIXANA_MASK) >> _HFXO_XTALCTRL_CTUNEFIXANA_SHIFT;
+    299            }
+    300          #endif
+    301          }
+    302          #endif
+    303          
+    304          #if defined(LFXO_PRESENT) \
+    305            && defined(SL_CLOCK_MANAGER_LFXO_EN) && SL_CLOCK_MANAGER_LFXO_EN == 1
+    306          /***************************************************************************//**
+    307           * Initializes LFXO Oscillator.
+    308           ******************************************************************************/
+    309          FUNCTION_SCOPE void init_lfxo(void)
+    310          {
+    311            CMU_LFXOInit_TypeDef clock_manager_lfxo_init = CMU_LFXOINIT_DEFAULT;
+    312          #ifdef SL_CLOCK_MANAGER_LFXO_GAIN
+    313            clock_manager_lfxo_init.gain = SL_CLOCK_MANAGER_LFXO_GAIN;
+    314          #endif
+    315          
+    316            clock_manager_lfxo_init.mode = SL_CLOCK_MANAGER_LFXO_MODE >> _LFXO_CFG_MODE_SHIFT;
+    317            clock_manager_lfxo_init.timeout = SL_CLOCK_MANAGER_LFXO_TIMEOUT >> _LFXO_CFG_TIMEOUT_SHIFT;
+    318            clock_manager_lfxo_init.capTune = 0xFF;
+    319          
+    320          #ifndef _SILICON_LABS_32B_SERIES_2_CONFIG_9
+    321          #if defined(_DEVINFO_MODXOCAL_LFXOCAPTUNE_MASK)
+    322            // Use LFXO tuning value from DEVINFO if available (PCB modules)
+    323            if ((DEVINFO->MODULEINFO & _DEVINFO_MODULEINFO_LFXOCALVAL_MASK) == _DEVINFO_MODULEINFO_LFXOCALVAL_VALID) {
+    324              clock_manager_lfxo_init.capTune = DEVINFO->MODXOCAL & _DEVINFO_MODXOCAL_LFXOCAPTUNE_MASK;
+    325            }
+    326          #endif
+    327          #endif
+    328          
+    329            if ((clock_manager_lfxo_init.capTune == 0xFF)
+    330          #if defined(SL_CLOCK_MANAGER_CTUNE_MFG_LFXO_EN)
+    331                && (SL_CLOCK_MANAGER_CTUNE_MFG_LFXO_EN == 1)
+    332          #endif
+    333                && (MFG_CTUNE_LFXO_VAL <= (_LFXO_CAL_CAPTUNE_MASK >> _LFXO_CAL_CAPTUNE_SHIFT))) {
+    334              clock_manager_lfxo_init.capTune = MFG_CTUNE_LFXO_VAL;
+    335            }
+    336          
+    337            if (clock_manager_lfxo_init.capTune == 0xFF) {
+    338              clock_manager_lfxo_init.capTune = SL_CLOCK_MANAGER_LFXO_CTUNE;
+    339            }
+    340          
+    341            CMU_LFXOInit(&clock_manager_lfxo_init);
+    342            CMU_LFXOPrecisionSet(SL_CLOCK_MANAGER_LFXO_PRECISION);
+    343          }
+    344          #endif
+    345          
+    346          /***************************************************************************//**
+    347           * Initializes Clock Input CLKIN0.
+    348           ******************************************************************************/
+    349          static void init_clkin0(void)
+    350          {
+    351          #if (defined(SL_CLOCK_MANAGER_SYSCLK_SOURCE) && (SL_CLOCK_MANAGER_SYSCLK_SOURCE == CMU_SYSCLKCTRL_CLKSEL_CLKIN0))  \
+    352            || (defined(SL_CLOCK_MANAGER_DPLL_REFCLK) && (SL_CLOCK_MANAGER_DPLL_REFCLK == CMU_DPLLREFCLKCTRL_CLKSEL_CLKIN0)) \
+    353            || (defined(SL_CLOCK_MANAGER_EM01GRPBCLK_SOURCE) && (SL_CLOCK_MANAGER_EM01GRPBCLK_SOURCE == CMU_EM01GRPBCLKCTRL_CLKSEL_CLKIN0))
+    354          
+    355          #if !defined(SL_CLOCK_MANAGER_CLKIN0_PORT) || !defined(SL_CLOCK_MANAGER_CLKIN0_PIN)
+    356          #error "Invalid configuration: CLKIN0 reference can't be use without configuring SL_CLOCK_MANAGER_CLKIN0 with a valid port and pin."
+    357          #endif
+    358          
+    359            sl_status_t status;
+    360            sl_gpio_t clkin0_gpio = { SL_CLOCK_MANAGER_CLKIN0_PORT, SL_CLOCK_MANAGER_CLKIN0_PIN };
+    361          
+    362            status = sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_GPIO);
+    363            EFM_ASSERT(status == SL_STATUS_OK);
+    364          
+    365            status = sl_gpio_set_pin_mode(&clkin0_gpio, SL_GPIO_MODE_INPUT, false);
+    366            EFM_ASSERT(status == SL_STATUS_OK);
+    367            GPIO->CMUROUTE.CLKIN0ROUTE = (clkin0_gpio.port << _GPIO_CMU_CLKIN0ROUTE_PORT_SHIFT)
+    368                                         | (clkin0_gpio.pin << _GPIO_CMU_CLKIN0ROUTE_PIN_SHIFT);
+    369          #endif
+    370          }
+    371          
+    372          #if defined(HFRCO_PRESENT)
+    373          /***************************************************************************//**
+    374           * Initializes HFRCODPLL Oscillator.
+    375           ******************************************************************************/
+    376          FUNCTION_SCOPE void init_hfrcodpll(void)
+    377          {
+    378          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION) \
+    379            || (defined(SL_CLOCK_MANAGER_HFRCO_DPLL_EN) && (SL_CLOCK_MANAGER_HFRCO_DPLL_EN == 1))
+    380          
+    381          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION)
+    382            if (SLI_CLOCK_MANAGER_HFRCO_DPLL_EN)
+    383          #endif
+    384            {
+    385              sl_status_t status;
+    386          
+    387              CMU_DPLLInit_TypeDef clock_manager_dpll_init = {
+    388                .frequency = SLI_CLOCK_MANAGER_DPLL_FREQ,
+    389                .n = SLI_CLOCK_MANAGER_DPLL_N,
+    390                .m = SLI_CLOCK_MANAGER_DPLL_M,
+    391                .edgeSel = SL_CLOCK_MANAGER_DPLL_EDGE,
+    392                .lockMode = SL_CLOCK_MANAGER_DPLL_LOCKMODE,
+    393                .autoRecover = SL_CLOCK_MANAGER_DPLL_AUTORECOVER,
+    394                .ditherEn = SL_CLOCK_MANAGER_DPLL_DITHER
+    395              };
+    396          
+    397              // Convert the DPLL Reference clock configuration to emlib CMU_Select_TypeDef type.
+    398              switch (SL_CLOCK_MANAGER_DPLL_REFCLK) {
+    399                case CMU_DPLLREFCLKCTRL_CLKSEL_HFXO:
+    400                  clock_manager_dpll_init.refClk = cmuSelect_HFXO;
+    401                  break;
+    402                case CMU_DPLLREFCLKCTRL_CLKSEL_LFXO:
+    403                  clock_manager_dpll_init.refClk = cmuSelect_LFXO;
+    404                  break;
+    405                case CMU_DPLLREFCLKCTRL_CLKSEL_CLKIN0:
+    406                  clock_manager_dpll_init.refClk = cmuSelect_CLKIN0;
+    407                  break;
+    408                default:
+    409                  EFM_ASSERT(false);
+    410                  break;
+    411              }
+    412          
+    413              CMU_Select_TypeDef selected_sysclk = CMU_ClockSelectGet(cmuClock_SYSCLK);
+    414          
+    415              if (selected_sysclk == cmuSelect_HFRCODPLL) {
+    416                // The CMU should not be running from the HFRCO. If necessary, the CMU
+    417                // should switch to the FSRCO until after the DPLL has locked to avoid
+    418                // over-clocking due to overshoot.
+    419                CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~_CMU_SYSCLKCTRL_CLKSEL_MASK) | CMU_SYSCLKCTRL_CLKSEL_FSRCO;
+    420              }
+    421          
+    422              status = sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_DPLL0);
+    423              EFM_ASSERT(status == SL_STATUS_OK);
+    424          
+    425              bool success = CMU_DPLLLock(&clock_manager_dpll_init);
+    426          
+    427              // If CMU was initially running from HFRCO switch back from FSRCO.
+    428              if (selected_sysclk == cmuSelect_HFRCODPLL) {
+    429                CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~_CMU_SYSCLKCTRL_CLKSEL_MASK) | CMU_SYSCLKCTRL_CLKSEL_HFRCODPLL;
+    430              }
+    431          
+    432              // Assert if DPLL lock was unsuccessful.
+    433              EFM_ASSERT(success == true);
+    434            }
+    435          #endif
+    436          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION) \
+    437            || (defined(SL_CLOCK_MANAGER_HFRCO_DPLL_EN) && (SL_CLOCK_MANAGER_HFRCO_DPLL_EN == 0))
+    438          
+    439          #if defined(SLI_CLOCK_MANAGER_RUNTIME_CONFIGURATION)
+    440            else
+    441          #else
+    442            if (true)
+    443          #endif
+    444            {
+    445              CMU_HFRCODPLLBandSet(SLI_CLOCK_MANAGER_HFRCO_BAND);
+    446            }
+    447          #endif
+    448          }
+    449          #endif
+    450          
+    451          #if defined(HFRCOEM23_PRESENT)
+    452          /***************************************************************************//**
+    453           * Initializes HFRCOEM23 Oscillator.
+    454           ******************************************************************************/
+    455          FUNCTION_SCOPE void init_hfrcoem23(void)
+    456          {
+    457            CMU_HFRCOEM23BandSet(SL_CLOCK_MANAGER_HFRCOEM23_BAND);
+    458          }
+    459          #endif
+    460          
+    461          #if defined(LFRCO_PRESENT)
+    462          /***************************************************************************//**
+    463           * Initializes LFRCO Oscillator.
+    464           ******************************************************************************/
+    465          FUNCTION_SCOPE void init_lfrco(void)
+    466          {
+    467            sl_status_t status;
+    468          
+    469            status = sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_LFRCO);
+    470            EFM_ASSERT(status == SL_STATUS_OK);
+    471          
+    472          #if defined(PLFRCO_PRESENT)
+    473          #if !(defined(SL_CLOCK_MANAGER_HFXO_EN) && (SL_CLOCK_MANAGER_HFXO_EN == 1))
+    474            EFM_ASSERT(SL_CLOCK_MANAGER_LFRCO_PRECISION != cmuPrecisionHigh);
+    475          #endif
+    476            CMU_LFRCOSetPrecision(SL_CLOCK_MANAGER_LFRCO_PRECISION);
+    477          #endif
+    478          }
+    479          #endif
+    480          
+    481          #if defined(RFFPLL_PRESENT) \
+    482            && defined(SL_CLOCK_MANAGER_HFXO_EN) && (SL_CLOCK_MANAGER_HFXO_EN == 1)
+    483          /***************************************************************************//**
+    484           * Initializes RFFPLL Oscillator.
+    485           ******************************************************************************/
+    486          FUNCTION_SCOPE void init_rffpll(void)
+    487          {
+    488            CMU_RFFPLL_Init_TypeDef rffpll_init = CMU_RFFPLL_DEFAULT;
+    489          
+    490            // Overwrite default configurations.
+    491          #if (SL_CLOCK_MANAGER_RFFPLL_CUSTOM_BAND == 1)
+    492            // Custom settings provided by the user.
+    493            rffpll_init.frequency = SL_CLOCK_MANAGER_RFFPLL_FREQ;
+    494            rffpll_init.dividerY = SL_CLOCK_MANAGER_RFFPLL_DIV_Y;
+    495            rffpll_init.dividerX = SL_CLOCK_MANAGER_RFFPLL_DIV_X;
+    496            rffpll_init.dividerN = SL_CLOCK_MANAGER_RFFPLL_DIV_N;
+    497          #elif (SL_CLOCK_MANAGER_RFFPLL_BAND == 7) && defined(RADIO_CONFIG_RFFPLL_CONFIG_PRESENT)
+    498            // Settings from the RAIL lib.
+    499            rffpll_init.frequency = radioConfigRffpllConfig->sysclkFreqHz;
+    500            rffpll_init.dividerY = ((radioConfigRffpllConfig->dividers & RAIL_RFFPLL_DIVIDERY_MASK) >> RAIL_RFFPLL_DIVIDERY_SHIFT);
+    501            rffpll_init.dividerX = ((radioConfigRffpllConfig->dividers & RAIL_RFFPLL_DIVIDERX_MASK) >> RAIL_RFFPLL_DIVIDERX_SHIFT);
+    502            rffpll_init.dividerN = ((radioConfigRffpllConfig->dividers & RAIL_RFFPLL_DIVIDERN_MASK) >> RAIL_RFFPLL_DIVIDERN_SHIFT);
+    503          #else
+    504            // Pre-determined settings.
+    505            rffpll_init.frequency = rffpll_band_config_39MHz[SL_CLOCK_MANAGER_RFFPLL_BAND].frequency;
+    506            rffpll_init.dividerY = rffpll_band_config_39MHz[SL_CLOCK_MANAGER_RFFPLL_BAND].divider_y;
+    507            rffpll_init.dividerX = rffpll_band_config_39MHz[SL_CLOCK_MANAGER_RFFPLL_BAND].divider_x;
+    508            rffpll_init.dividerN = rffpll_band_config_39MHz[SL_CLOCK_MANAGER_RFFPLL_BAND].divider_n;
+    509          #endif
+    510          
+    511            // Initialize RFFPLL.
+    512            CMU_RFFPLLInit(&rffpll_init);
+    513          
+    514            // Update RFFPLL frequency in System file
+    515            SystemRFFPLLClockSet(rffpll_init.frequency);
+    516          
+    517            // At this point, RFFPLL has been initialized. The clock source for SYSCLK can be
+    518            // RFFPLLSYS input clock. If you want RFFPLLSYS, configure SL_CLOCK_MANAGER_SYSCLK_SOURCE
+    519            // to CMU_SYSCLKCTRL_CLKSEL_RFFPLL0SYS.
+    520          }
+    521          #endif
+    522          
+    523          #if defined(USBPLL_PRESENT) \
+    524            && defined(SL_CLOCK_MANAGER_HFXO_EN) && (SL_CLOCK_MANAGER_HFXO_EN == 1)
+    525          /***************************************************************************//**
+    526           * Initializes USBPLL Oscillator.
+    527           ******************************************************************************/
+    528          FUNCTION_SCOPE void init_usbpll(void)
+    529          {
+    530            CMU_USBPLL_Init_TypeDef usbpll_config;
+    531            uint32_t hfxo_freq = SystemHFXOClockGet();
+    532          
+    533            // Validate that HFXO frequency is adequate for USB PLL and set the right frequency.
+    534            switch (hfxo_freq) {
+    535              case 38000000:
+    536                usbpll_config.hfxoRefFreq = cmuHFXORefFreq_38M0Hz;
+    537                break;
+    538          
+    539              case 38400000:
+    540                usbpll_config.hfxoRefFreq = cmuHFXORefFreq_38M4Hz;
+    541                break;
+    542          
+    543              case 39000000:
+    544                usbpll_config.hfxoRefFreq = cmuHFXORefFreq_39M0Hz;
+    545                break;
+    546          
+    547              case 40000000:
+    548                usbpll_config.hfxoRefFreq = cmuHFXORefFreq_40M0Hz;
+    549                break;
+    550          
+    551              default:
+    552                EFM_ASSERT(false);
+    553                break;
+    554            }
+    555          
+    556            // Set additional configurations.
+    557            usbpll_config.shuntRegEn = false;
+    558            usbpll_config.disOnDemand = false;
+    559            usbpll_config.regLock = true;
+    560          
+    561            // Set Force Enable feature at first to force the PLL to start and validate it works.
+    562            usbpll_config.forceEn = true;
+    563          
+    564            // Initialize USB PLL and wait for it to be ready.
+    565            CMU_USBPLLInit(&usbpll_config);
+    566          
+    567            // Remove the Force Enable feature to let PLL module on-demand.
+    568            usbpll_config.forceEn = false;
+    569          
+    570            // Re-initialized without the Force Enable feature.
+    571            CMU_USBPLLInit(&usbpll_config);
+    572          }
+    573          #endif
+    574          
+    575          /***************************************************************************//**
+    576           * Initializes Clock branches.
+    577           ******************************************************************************/
+    578          FUNCTION_SCOPE void init_clock_branches(void)
+    579          {
+    580            // Initialize SYSCLK clock branch.
+    581          #if defined(SL_CLOCK_MANAGER_SYSCLK_SOURCE)
+    582            sli_em_cmu_SYSCLKInitPreClockSelect();
+    583          #if (SL_CLOCK_MANAGER_SYSCLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE)
+    584            CLOCK_MANAGER_CLOCK_SELECT_SET(SYSCLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(SYSCLK, SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_CONCATENATION));
+    585          #else
+    586            CLOCK_MANAGER_CLOCK_SELECT_SET(SYSCLK, SL_CLOCK_MANAGER_SYSCLK_SOURCE);
+    587          #endif
+    588            sli_em_cmu_SYSCLKInitPostClockSelect(false);
+    589          
+    590            // Set HCLK and PCLK dividers
+    591            CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~(_CMU_SYSCLKCTRL_HCLKPRESC_MASK | _CMU_SYSCLKCTRL_PCLKPRESC_MASK))
+    592                              | SL_CLOCK_MANAGER_HCLK_DIVIDER
+    593                              | SL_CLOCK_MANAGER_PCLK_DIVIDER;
+    594          #else
+    595            EFM_ASSERT(false);
+    596          #endif
+    597          
+    598            // Initialize TRACECLK clock branch.
+    599          #if defined(CoreDebug_DEMCR_TRCENA_Msk)
+    600            // Disable the Core Debug module if already enabled
+    601            bool trace_on = CoreDebug->DEMCR & CoreDebug_DEMCR_TRCENA_Msk;
+    602            if (trace_on) {
+    603              CoreDebug->DEMCR &= ~CoreDebug_DEMCR_TRCENA_Msk;
+    604            }
+    605          #endif
+    606          #if defined(SL_CLOCK_MANAGER_TRACECLK_SOURCE)
+    607            CLOCK_MANAGER_CLOCK_SELECT_SET(TRACECLK, SL_CLOCK_MANAGER_TRACECLK_SOURCE);
+    608          #endif
+    609          #if defined(SL_CLOCK_MANAGER_TRACECLK_DIVIDER)
+    610            CMU->TRACECLKCTRL_SET = SL_CLOCK_MANAGER_TRACECLK_DIVIDER;
+    611          #endif
+    612          #if defined(CoreDebug_DEMCR_TRCENA_Msk)
+    613            // Enable back the Core Debug module if it was already enabled
+    614            if (trace_on) {
+    615              CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    616            }
+    617          #endif
+    618            // Ensure TraceClk configs are defined if TraceClk is present.
+    619          #if defined(_CMU_TRACECLKCTRL_MASK) && !(defined(SL_CLOCK_MANAGER_TRACECLK_SOURCE) || defined(SL_CLOCK_MANAGER_TRACECLK_DIVIDER))
+    620            EFM_ASSERT(false);
+    621          #endif
+    622          
+    623            // Initialize EM01GRPACLK clock branch.
+    624          #if defined(SL_CLOCK_MANAGER_EM01GRPACLK_SOURCE)
+    625          #if (SL_CLOCK_MANAGER_EM01GRPACLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE)
+    626            CLOCK_MANAGER_CLOCK_SELECT_SET(EM01GRPACLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(EM01GRPACLK, SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_CONCATENATION));
+    627          #else
+    628            CLOCK_MANAGER_CLOCK_SELECT_SET(EM01GRPACLK, SL_CLOCK_MANAGER_EM01GRPACLK_SOURCE);
+    629          #endif
+    630          #else
+    631            EFM_ASSERT(false);
+    632          #endif
+    633          
+    634            // Initialize EM01GRPBCLK clock branch.
+    635          #if defined(_CMU_EM01GRPBCLKCTRL_MASK)
+    636          #if defined(SL_CLOCK_MANAGER_EM01GRPBCLK_SOURCE)
+    637          #if (SL_CLOCK_MANAGER_EM01GRPBCLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE)
+    638            CLOCK_MANAGER_CLOCK_SELECT_SET(EM01GRPBCLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(EM01GRPBCLK, SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_CONCATENATION));
+    639          #else
+    640            CLOCK_MANAGER_CLOCK_SELECT_SET(EM01GRPBCLK, SL_CLOCK_MANAGER_EM01GRPBCLK_SOURCE);
+    641          #endif
+    642          #else
+    643            EFM_ASSERT(false);
+    644          #endif
+    645          #endif
+    646          
+    647            // Initialize EM01GRPCCLK clock branch.
+    648          #if defined(_CMU_EM01GRPCCLKCTRL_MASK)
+    649          #if defined(SL_CLOCK_MANAGER_EM01GRPCCLK_SOURCE)
+    650          #if (SL_CLOCK_MANAGER_EM01GRPCCLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE)
+    651            CLOCK_MANAGER_CLOCK_SELECT_SET(EM01GRPCCLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(EM01GRPCCLK, SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_CONCATENATION));
+    652          #else
+    653            CLOCK_MANAGER_CLOCK_SELECT_SET(EM01GRPCCLK, SL_CLOCK_MANAGER_EM01GRPCCLK_SOURCE);
+    654          #endif
+    655          #else
+    656            EFM_ASSERT(false);
+    657          #endif
+    658          #endif
+    659          
+    660            // Initialize IADCCLK clock branch.
+    661          #if defined(_CMU_IADCCLKCTRL_MASK)
+    662          #if defined(SL_CLOCK_MANAGER_IADCCLK_SOURCE)
+    663            CLOCK_MANAGER_CLOCK_SELECT_SET(IADCCLK, SL_CLOCK_MANAGER_IADCCLK_SOURCE);
+    664          #else
+    665            EFM_ASSERT(false);
+    666          #endif
+    667          #endif
+    668          
+    669            // Initialize LESENSEHFCLK clock branch.
+    670          #if defined(LESENSE_PRESENT)
+    671          #if defined(SL_CLOCK_MANAGER_LESENSEHFCLK_SOURCE)
+    672            CLOCK_MANAGER_CLOCK_SELECT_SET(LESENSEHFCLK, SL_CLOCK_MANAGER_LESENSEHFCLK_SOURCE);
+    673          #else
+    674            EFM_ASSERT(false);
+    675          #endif
+    676          #endif
+    677          
+    678            // Initialize EM23GRPACLK clock branch.
+    679          #if defined(SL_CLOCK_MANAGER_EM23GRPACLK_SOURCE)
+    680          #if (SL_CLOCK_MANAGER_EM23GRPACLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    681            CLOCK_MANAGER_CLOCK_SELECT_SET(EM23GRPACLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(EM23GRPACLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    682          #else
+    683            CLOCK_MANAGER_CLOCK_SELECT_SET(EM23GRPACLK, SL_CLOCK_MANAGER_EM23GRPACLK_SOURCE);
+    684          #endif
+    685          #else
+    686            EFM_ASSERT(false);
+    687          #endif
+    688          
+    689            // Initialize EM4GRPACLK clock branch.
+    690          #if defined(SL_CLOCK_MANAGER_EM4GRPACLK_SOURCE)
+    691          #if (SL_CLOCK_MANAGER_EM4GRPACLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    692            CLOCK_MANAGER_CLOCK_SELECT_SET(EM4GRPACLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(EM4GRPACLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    693          #else
+    694            CLOCK_MANAGER_CLOCK_SELECT_SET(EM4GRPACLK, SL_CLOCK_MANAGER_EM4GRPACLK_SOURCE);
+    695          #endif
+    696          #else
+    697            EFM_ASSERT(false);
+    698          #endif
+    699          
+    700            // Initialize RTCC clock branch.
+    701          #if defined(RTCC_PRESENT)
+    702          #if defined(SL_CLOCK_MANAGER_RTCCCLK_SOURCE)
+    703          #if (SL_CLOCK_MANAGER_RTCCCLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    704            CLOCK_MANAGER_CLOCK_SELECT_SET(RTCCCLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(RTCCCLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    705          #else
+    706            CLOCK_MANAGER_CLOCK_SELECT_SET(RTCCCLK, SL_CLOCK_MANAGER_RTCCCLK_SOURCE);
+    707          #endif
+    708          #else
+    709            EFM_ASSERT(false);
+    710          #endif
+    711          #endif
+    712          
+    713            // Initialize SYSRTC clock branch.
+    714          #if defined(SYSRTC_PRESENT)
+    715          #if defined(SL_CLOCK_MANAGER_SYSRTCCLK_SOURCE)
+    716          #if (SL_CLOCK_MANAGER_SYSRTCCLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    717            CLOCK_MANAGER_CLOCK_SELECT_SET(SYSRTC0CLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(SYSRTC0CLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    718          #else
+    719            CLOCK_MANAGER_CLOCK_SELECT_SET(SYSRTC0CLK, SL_CLOCK_MANAGER_SYSRTCCLK_SOURCE);
+    720          #endif
+    721          #else
+    722            EFM_ASSERT(false);
+    723          #endif
+    724          #endif
+    725          
+    726            // Initialize WDOG0 clock branch.
+    727          #if defined(SL_CLOCK_MANAGER_WDOG0CLK_SOURCE)
+    728          #if (SL_CLOCK_MANAGER_WDOG0CLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    729            CLOCK_MANAGER_CLOCK_SELECT_SET(WDOG0CLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(WDOG0CLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    730          #else
+    731            CLOCK_MANAGER_CLOCK_SELECT_SET(WDOG0CLK, SL_CLOCK_MANAGER_WDOG0CLK_SOURCE);
+    732          #endif
+    733          #else
+    734            EFM_ASSERT(false);
+    735          #endif
+    736          
+    737            // Initialize WDOG1 clock branch.
+    738          #if WDOG_COUNT > 1
+    739          #if defined(SL_CLOCK_MANAGER_WDOG1CLK_SOURCE)
+    740          #if (SL_CLOCK_MANAGER_WDOG1CLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    741            CLOCK_MANAGER_CLOCK_SELECT_SET(WDOG1CLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(WDOG1CLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    742          #else
+    743            CLOCK_MANAGER_CLOCK_SELECT_SET(WDOG1CLK, SL_CLOCK_MANAGER_WDOG1CLK_SOURCE);
+    744          #endif
+    745          #else
+    746            EFM_ASSERT(false);
+    747          #endif
+    748          #endif
+    749          
+    750            // Initialize LCD clock branch.
+    751          #if defined(LCD_PRESENT)
+    752          #if defined(SL_CLOCK_MANAGER_LCDCLK_SOURCE)
+    753          #if (SL_CLOCK_MANAGER_LCDCLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    754            CLOCK_MANAGER_CLOCK_SELECT_SET(LCDCLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(LCDCLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    755          #else
+    756            CLOCK_MANAGER_CLOCK_SELECT_SET(LCDCLK, SL_CLOCK_MANAGER_LCDCLK_SOURCE);
+    757          #endif
+    758          #else
+    759            EFM_ASSERT(false);
+    760          #endif
+    761          #endif
+    762          
+    763            // Initialize PCNT0 clock branch.
+    764          #if defined(PCNT_PRESENT)
+    765          #if defined(SL_CLOCK_MANAGER_PCNT0CLK_SOURCE)
+    766            CLOCK_MANAGER_CLOCK_SELECT_SET(PCNT0CLK, SL_CLOCK_MANAGER_PCNT0CLK_SOURCE);
+    767          #else
+    768            EFM_ASSERT(false);
+    769          #endif
+    770          #endif
+    771          
+    772            // Initialize EUSART0
+    773          #if defined(EUSART_PRESENT)
+    774          #if defined(SL_CLOCK_MANAGER_EUSART0CLK_SOURCE)
+    775          // EUSART clock source defined as SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE
+    776          #if (SL_CLOCK_MANAGER_EUSART0CLK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_EUSART0_LF_CLOCK_SOURCE)
+    777          #if defined(CMU_EUSART0CLKCTRL_CLKSEL_EM23GRPACLK)
+    778            // EUSART0 uses EM23GRPACLK as default LF clock source
+    779            CLOCK_MANAGER_CLOCK_SELECT_SET(EUSART0CLK, CMU_EUSART0CLKCTRL_CLKSEL_EM23GRPACLK);
+    780          #else
+    781          #if (SL_CLOCK_MANAGER_DEFAULT_EUSART0_LF_CLOCK_SOURCE == SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE)
+    782            // Default EUSART0 "SL_CLOCK_MANAGER_EUSART0CLK_SOURCE=SL_CLOCK_MANAGER_DEFAULT_EUSART0_LF_CLOCK_SOURCE"
+    783            CLOCK_MANAGER_CLOCK_SELECT_SET(EUSART0CLK, CLOCK_MANAGER_GET_DEFAULT_CLOCK_SOURCE(EUSART0CLK, SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_CONCATENATION));
+    784          #endif
+    785          #endif
+    786          #else
+    787            // EUSART clock source explicitly defined i.e. SL_CLOCK_MANAGER_EUSART0CLK_SOURCE = CMU_EUSART0CLKCTRL_CLKSEL_LFRCO
+    788            CLOCK_MANAGER_CLOCK_SELECT_SET(EUSART0CLK, SL_CLOCK_MANAGER_EUSART0CLK_SOURCE);
+    789          #endif
+    790          #else
+    791            EFM_ASSERT(false);
+    792          #endif
+    793          #endif
+    794          
+    795            // Initialize EUART
+    796          #if defined(EUART_PRESENT)
+    797          #if defined(SL_CLOCK_MANAGER_EUART0CLK_SOURCE)
+    798            CLOCK_MANAGER_CLOCK_SELECT_SET(EUART0CLK, SL_CLOCK_MANAGER_EUART0CLK_SOURCE);
+    799          #else
+    800            EFM_ASSERT(false);
+    801          #endif
+    802          #endif
+    803          
+    804            // Initialize SYSTICK clock branch.
+    805          #if defined(SL_CLOCK_MANAGER_SYSTICKCLK_SOURCE)
+    806          #if (SL_CLOCK_MANAGER_SYSTICKCLK_SOURCE == 1)
+    807            CMU_CLOCK_SELECT_SET(SYSTICK, EM23GRPACLK);
+    808          #elif (SL_CLOCK_MANAGER_SYSTICKCLK_SOURCE == 0)
+    809            CMU_CLOCK_SELECT_SET(SYSTICK, HCLK);
+    810          #else
+    811            EFM_ASSERT(false);
+    812          #endif
+    813          #else
+    814            EFM_ASSERT(false);
+    815          #endif
+    816          
+    817            // Initialize VDAC0 clock branch.
+    818          #if defined(VDAC_PRESENT)
+    819          #if defined(SL_CLOCK_MANAGER_VDAC0CLK_SOURCE)
+    820            CLOCK_MANAGER_CLOCK_SELECT_SET(VDAC0CLK, SL_CLOCK_MANAGER_VDAC0CLK_SOURCE);
+    821          #else
+    822            EFM_ASSERT(false);
+    823          #endif
+    824          
+    825            // Initialize VDAC1 clock branch.
+    826          #if VDAC_COUNT > 1
+    827          #if defined(SL_CLOCK_MANAGER_VDAC1CLK_SOURCE)
+    828            CLOCK_MANAGER_CLOCK_SELECT_SET(VDAC1CLK, SL_CLOCK_MANAGER_VDAC1CLK_SOURCE);
+    829          #else
+    830            EFM_ASSERT(false);
+    831          #endif
+    832          #endif
+    833          #endif
+    834          }
+    835          
+    836          /*******************************************************************************
+    837           **********************   GLOBAL INTERNAL FUNCTIONS   **************************
+    838           ******************************************************************************/
+    839          
+    840          /***************************************************************************//**
+    841           * Initializes Oscillators and Clock branches.
+    842           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    843          sl_status_t sli_clock_manager_hal_init(void)
+    844          {
+   \                     sli_clock_manager_hal_init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    845          #if defined(SYSRTC_PRESENT)
+    846            sl_status_t status;
+    847          
+    848            status =  sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_SYSRTC0);
+    849            EFM_ASSERT(status == SL_STATUS_OK);
+    850          #endif
+    851          
+    852            // Initialize Oscillators
+    853          #if defined(LFXO_PRESENT) \
+    854            && defined(SL_CLOCK_MANAGER_LFXO_EN) && (SL_CLOCK_MANAGER_LFXO_EN == 1)
+    855            init_lfxo();
+    856          #endif
+    857          
+    858          #if defined(HFXO_PRESENT) \
+    859            && defined(SL_CLOCK_MANAGER_HFXO_EN) && (SL_CLOCK_MANAGER_HFXO_EN == 1)
+    860            init_hfxo();
+    861          #endif
+    862          
+    863            init_clkin0();
+    864          
+    865          #if defined(HFRCO_PRESENT)
+    866            init_hfrcodpll();
+   \        0x2   0x482F             LDR.N    R0,??sli_clock_manager_hal_init_0
+   \        0x4   0x.... 0x....      BL       CMU_HFRCODPLLBandSet
+    867          #endif
+    868          
+    869          #if defined(HFRCOEM23_PRESENT)
+    870            init_hfrcoem23();
+    871          #endif
+    872          
+    873          #if defined(LFRCO_PRESENT)
+    874            init_lfrco();
+   \        0x8   0x482E             LDR.N    R0,??sli_clock_manager_hal_init_0+4
+   \        0xA   0x.... 0x....      BL       sl_clock_manager_enable_bus_clock
+   \        0xE   0xB120             CBZ.N    R0,??sli_clock_manager_hal_init_1
+   \       0x10   0xF44F 0x71EB      MOV      R1,#+470
+   \       0x14   0x482C             LDR.N    R0,??sli_clock_manager_hal_init_0+8
+   \       0x16   0x.... 0x....      BL       assertEFM
+   \                     ??sli_clock_manager_hal_init_1: (+1)
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x4C2B             LDR.N    R4,??sli_clock_manager_hal_init_0+12
+   \       0x1E   0x.... 0x....      BL       CMU_LFRCOSetPrecision
+    875          #endif
+    876          
+    877          #if defined(RFFPLL_PRESENT) \
+    878            && defined(SL_CLOCK_MANAGER_HFXO_EN) && (SL_CLOCK_MANAGER_HFXO_EN == 1)
+    879            init_rffpll();
+    880          #endif
+    881          
+    882          #if defined(USBPLL_PRESENT) \
+    883            && defined(SL_CLOCK_MANAGER_HFXO_EN) && (SL_CLOCK_MANAGER_HFXO_EN == 1)
+    884            init_usbpll();
+    885          #endif
+    886          
+    887            // Initialize Clock branches
+    888            init_clock_branches();
+   \       0x22   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPreClockSelect
+   \       0x26   0x6821             LDR      R1,[R4, #+0]
+   \       0x28   0x2002             MOVS     R0,#+2
+   \       0x2A   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x2E   0x6021             STR      R1,[R4, #+0]
+   \       0x30   0x2000             MOVS     R0,#+0
+   \       0x32   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPostClockSelect
+   \       0x36   0x6820             LDR      R0,[R4, #+0]
+   \       0x38   0xF420 0x4074      BIC      R0,R0,#0xF400
+   \       0x3C   0xF440 0x6080      ORR      R0,R0,#0x400
+   \       0x40   0x6020             STR      R0,[R4, #+0]
+   \       0x42   0x4823             LDR.N    R0,??sli_clock_manager_hal_init_0+16
+   \       0x44   0x6801             LDR      R1,[R0, #+0]
+   \       0x46   0x0E09             LSRS     R1,R1,#+24
+   \       0x48   0xF011 0x0101      ANDS     R1,R1,#0x1
+   \       0x4C   0xD003             BEQ.N    ??sli_clock_manager_hal_init_2
+   \       0x4E   0x6803             LDR      R3,[R0, #+0]
+   \       0x50   0xF023 0x7380      BIC      R3,R3,#0x1000000
+   \       0x54   0x6003             STR      R3,[R0, #+0]
+   \                     ??sli_clock_manager_hal_init_2: (+1)
+   \       0x56   0x2200             MOVS     R2,#+0
+   \       0x58   0x4B1E             LDR.N    R3,??sli_clock_manager_hal_init_0+20
+   \       0x5A   0x601A             STR      R2,[R3, #+0]
+   \       0x5C   0xB119             CBZ.N    R1,??sli_clock_manager_hal_init_3
+   \       0x5E   0x6801             LDR      R1,[R0, #+0]
+   \       0x60   0xF041 0x7180      ORR      R1,R1,#0x1000000
+   \       0x64   0x6001             STR      R1,[R0, #+0]
+   \                     ??sli_clock_manager_hal_init_3: (+1)
+   \       0x66   0x481C             LDR.N    R0,??sli_clock_manager_hal_init_0+24
+   \       0x68   0x6802             LDR      R2,[R0, #+0]
+   \       0x6A   0x2101             MOVS     R1,#+1
+   \       0x6C   0xF361 0x0201      BFI      R2,R1,#+0,#+2
+   \       0x70   0x6002             STR      R2,[R0, #+0]
+   \       0x72   0x6842             LDR      R2,[R0, #+4]
+   \       0x74   0xF361 0x0202      BFI      R2,R1,#+0,#+3
+   \       0x78   0x6042             STR      R2,[R0, #+4]
+   \       0x7A   0x6E02             LDR      R2,[R0, #+96]
+   \       0x7C   0xF361 0x0201      BFI      R2,R1,#+0,#+2
+   \       0x80   0x6602             STR      R2,[R0, #+96]
+   \       0x82   0x6A02             LDR      R2,[R0, #+32]
+   \       0x84   0xF361 0x0201      BFI      R2,R1,#+0,#+2
+   \       0x88   0x6202             STR      R2,[R0, #+32]
+   \       0x8A   0x6C02             LDR      R2,[R0, #+64]
+   \       0x8C   0xF361 0x0201      BFI      R2,R1,#+0,#+2
+   \       0x90   0x6402             STR      R2,[R0, #+64]
+   \       0x92   0x4812             LDR.N    R0,??sli_clock_manager_hal_init_0+28
+   \       0x94   0x6C02             LDR      R2,[R0, #+64]
+   \       0x96   0xF361 0x0201      BFI      R2,R1,#+0,#+2
+   \       0x9A   0x6402             STR      R2,[R0, #+64]
+   \       0x9C   0x6802             LDR      R2,[R0, #+0]
+   \       0x9E   0xF361 0x0202      BFI      R2,R1,#+0,#+3
+   \       0xA2   0x6002             STR      R2,[R0, #+0]
+   \       0xA4   0x6A02             LDR      R2,[R0, #+32]
+   \       0xA6   0xF361 0x0201      BFI      R2,R1,#+0,#+2
+   \       0xAA   0x6202             STR      R2,[R0, #+32]
+   \       0xAC   0x.... 0x....      BL       sli_em_cmu_SYSTICEXTCLKENClear
+   \       0xB0   0x480B             LDR.N    R0,??sli_clock_manager_hal_init_0+32
+   \       0xB2   0x6801             LDR      R1,[R0, #+0]
+   \       0xB4   0xF041 0x0104      ORR      R1,R1,#0x4
+   \       0xB8   0x6001             STR      R1,[R0, #+0]
+    889          
+    890            return SL_STATUS_OK;
+   \       0xBA   0x2000             MOVS     R0,#+0
+   \       0xBC   0xBD10             POP      {R4,PC}
+   \       0xBE   0xBF00             Nop
+   \                     ??sli_clock_manager_hal_init_0:
+   \       0xC0   0x04C4'B400        DC32     0x4c4b400
+   \       0xC4   0x....'....        DC32     SL_BUS_CLOCK_LFRCO_VALUE
+   \       0xC8   0x....'....        DC32     ?_0
+   \       0xCC   0x5000'8070        DC32     0x50008070
+   \       0xD0   0xE000'EDFC        DC32     0xe000edfc
+   \       0xD4   0x5000'9080        DC32     0x50009080
+   \       0xD8   0x5000'8120        DC32     0x50008120
+   \       0xDC   0x5000'8200        DC32     0x50008200
+   \       0xE0   0xE000'E010        DC32     0xe000e010
+    891          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x73 0x65
+   \       0x68   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x63, 0x6C
+   \              0x69 0x63    
+   \              0x65 0x5C    
+   \              0x63 0x6C
+   \       0x70   0x6F 0x63          DC8 0x6F, 0x63, 0x6B, 0x5F, 0x6D, 0x61, 0x6E, 0x61
+   \              0x6B 0x5F    
+   \              0x6D 0x61    
+   \              0x6E 0x61
+   \       0x78   0x67 0x65          DC8 0x67, 0x65, 0x72, 0x5C, 0x73, 0x72, 0x63, 0x5C
+   \              0x72 0x5C    
+   \              0x73 0x72    
+   \              0x63 0x5C
+   \       0x80   0x73 0x6C          DC8 0x73, 0x6C, 0x5F, 0x63, 0x6C, 0x6F, 0x63, 0x6B
+   \              0x5F 0x63    
+   \              0x6C 0x6F    
+   \              0x63 0x6B
+   \       0x88   0x5F 0x6D          DC8 0x5F, 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65, 0x72
+   \              0x61 0x6E    
+   \              0x61 0x67    
+   \              0x65 0x72
+   \       0x90   0x5F 0x69          DC8 0x5F, 0x69, 0x6E, 0x69, 0x74, 0x5F, 0x68, 0x61
+   \              0x6E 0x69    
+   \              0x74 0x5F    
+   \              0x68 0x61
+   \       0x98   0x6C 0x5F          DC8 0x6C, 0x5F, 0x73, 0x32, 0x2E, 0x63, 0
+   \              0x73 0x32    
+   \              0x2E 0x63    
+   \              0x00
+   \       0x9F                      DS8 1
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sli_clock_manager_hal_init
+         8   -> CMU_HFRCODPLLBandSet
+         8   -> CMU_LFRCOSetPrecision
+         8   -> assertEFM
+         8   -> sl_clock_manager_enable_bus_clock
+         8   -> sli_em_cmu_SYSCLKInitPostClockSelect
+         8   -> sli_em_cmu_SYSCLKInitPreClockSelect
+         8   -> sli_em_cmu_SYSTICEXTCLKENClear
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     160  ?_0
+     228  sli_clock_manager_hal_init
+
+ 
+ 160 bytes in section .rodata
+ 228 bytes in section .text
+ 
+ 228 bytes of CODE  memory
+ 160 bytes of CONST memory
+
+Errors: none
+Warnings: none

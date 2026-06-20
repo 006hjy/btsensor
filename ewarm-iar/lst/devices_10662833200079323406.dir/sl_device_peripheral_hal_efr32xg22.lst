@@ -1,0 +1,869 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:35
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\devices\sl_device_peripheral_hal_efr32xg22.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\devices_10662833200079323406.dir\sl_device_peripheral_hal_efr32xg22.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\devices\sl_device_peripheral_hal_efr32xg22.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\devices_10662833200079323406.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\devices_10662833200079323406.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\devices\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\devices_10662833200079323406.dir\sl_device_peripheral_hal_efr32xg22.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\devices_10662833200079323406.dir\sl_device_peripheral_hal_efr32xg22.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\devices_10662833200079323406.dir\sl_device_peripheral_hal_efr32xg22.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\devices_10662833200079323406.dir\sl_device_peripheral_hal_efr32xg22.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\devices\sl_device_peripheral_hal_efr32xg22.c
+      1          /**************************************************************************//**
+      2           * @file
+      3           * @brief Device Manager Peripheral Definition
+      4           ******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories, Inc. www.silabs.com</b>
+      7           ******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           *****************************************************************************/
+     30          
+     31          #include "em_device.h"
+     32          #include "sl_device_peripheral.h"
+     33          #include "sl_device_clock.h"
+     34          
+     35          /***************************************************************************//**
+     36           * @addtogroup device_peripheral Device Abstraction Peripheral
+     37           * @{
+     38           ******************************************************************************/
+     39          
+     40          #if defined(BURAM_BASE)
+     41          // Define peripheral BURAM.
+
+   \                                 In section .rodata, align 4
+     42          const sl_peripheral_val_t sl_peripheral_val_buram = { .base = BURAM_BASE,
+   \                     sl_peripheral_val_buram:
+   \        0x0   0x5008'0000        DC32 1'342'701'568
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_BURAM_VALUE
+     43                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     44                                                                .bus_clock = SL_BUS_CLOCK_BURAM };
+     45          #endif
+     46          
+     47          #if defined(BURTC_BASE)
+     48          // Define peripheral BURTC.
+
+   \                                 In section .rodata, align 4
+     49          const sl_peripheral_val_t sl_peripheral_val_burtc = { .base = BURTC_BASE,
+   \                     sl_peripheral_val_burtc:
+   \        0x0   0x5006'4000        DC32 1'342'586'880
+   \        0x4   0x0D               DC8 13
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_BURTC_VALUE
+     50                                                                .clk_branch = SL_CLOCK_BRANCH_EM4GRPACLK,
+     51                                                                .bus_clock = SL_BUS_CLOCK_BURTC };
+     52          #endif
+     53          
+     54          #if defined(CMU_BASE)
+     55          // Define peripheral CMU.
+
+   \                                 In section .rodata, align 4
+     56          const sl_peripheral_val_t sl_peripheral_val_cmu = { .base = CMU_BASE,
+   \                     sl_peripheral_val_cmu:
+   \        0x0   0x5000'8000        DC32 1'342'210'048
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     57                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     58                                                              .bus_clock = SL_BUS_CLOCK_INVALID };
+     59          #endif
+     60          
+     61          #if defined(CRYPTOACC_BASE)
+     62          // Define peripheral CRYPTOACC.
+
+   \                                 In section .rodata, align 4
+     63          const sl_peripheral_val_t sl_peripheral_val_cryptoacc = { .base = CRYPTOACC_BASE,
+   \                     sl_peripheral_val_cryptoacc:
+   \        0x0   0x5C02'0000        DC32 1'543'634'944
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_CRYPTOACC_VALUE
+     64                                                                    .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     65                                                                    .bus_clock = SL_BUS_CLOCK_CRYPTOACC };
+     66          #endif
+     67          
+     68          #if defined(DCDC_BASE)
+     69          // Define peripheral DCDC.
+
+   \                                 In section .rodata, align 4
+     70          const sl_peripheral_val_t sl_peripheral_val_dcdc = { .base = DCDC_BASE,
+   \                     sl_peripheral_val_dcdc:
+   \        0x0   0x5009'4000        DC32 1'342'783'488
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_DCDC_VALUE
+     71                                                               .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     72                                                               .bus_clock = SL_BUS_CLOCK_DCDC };
+     73          #endif
+     74          
+     75          #if defined(DPLL0_BASE)
+     76          // Define peripheral DPLL0.
+
+   \                                 In section .rodata, align 4
+     77          const sl_peripheral_val_t sl_peripheral_val_dpll0 = { .base = DPLL0_BASE,
+   \                     sl_peripheral_val_dpll0:
+   \        0x0   0x5001'C000        DC32 1'342'291'968
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_DPLL0_VALUE
+     78                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     79                                                                .bus_clock = SL_BUS_CLOCK_DPLL0 };
+     80          #endif
+     81          
+     82          #if defined(EMU_BASE)
+     83          // Define peripheral EMU.
+
+   \                                 In section .rodata, align 4
+     84          const sl_peripheral_val_t sl_peripheral_val_emu = { .base = EMU_BASE,
+   \                     sl_peripheral_val_emu:
+   \        0x0   0x5000'4000        DC32 1'342'193'664
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     85                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     86                                                              .bus_clock = SL_BUS_CLOCK_INVALID };
+     87          #endif
+     88          
+     89          #if defined(EUART0_BASE)
+     90          // Define peripheral EUART0.
+
+   \                                 In section .rodata, align 4
+     91          const sl_peripheral_euart_val_t sl_peripheral_val_euart0 = { .base = EUART0_BASE,
+   \                     sl_peripheral_val_euart0:
+   \        0x0   0x5A03'0000        DC32 1'510'146'048
+   \        0x4   0x14               DC8 20
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_EUART0_VALUE, SL_DMA_SIGNAL_EUART0_RXFL_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_EUART0_TXFL_VALUE
+     92                                                                       .clk_branch = SL_CLOCK_BRANCH_EUART0CLK,
+     93                                                                       .bus_clock = SL_BUS_CLOCK_EUART0,
+     94                                                                       .dma_signal_rxfl = SL_DMA_SIGNAL_EUART0_RXFL,
+     95                                                                       .dma_signal_txfl = SL_DMA_SIGNAL_EUART0_TXFL };
+     96          #endif
+     97          
+     98          #if defined(FSRCO_BASE)
+     99          // Define peripheral FSRCO.
+
+   \                                 In section .rodata, align 4
+    100          const sl_peripheral_val_t sl_peripheral_val_fsrco = { .base = FSRCO_BASE,
+   \                     sl_peripheral_val_fsrco:
+   \        0x0   0x5001'8000        DC32 1'342'275'584
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_FSRCO_VALUE
+    101                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    102                                                                .bus_clock = SL_BUS_CLOCK_FSRCO };
+    103          #endif
+    104          
+    105          #if defined(GPCRC_BASE)
+    106          // Define peripheral GPCRC0.
+
+   \                                 In section .rodata, align 4
+    107          const sl_peripheral_val_t sl_peripheral_val_gpcrc0 = { .base = GPCRC_BASE,
+   \                     sl_peripheral_val_gpcrc0:
+   \        0x0   0x5008'8000        DC32 1'342'734'336
+   \        0x4   0x03               DC8 3
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_GPCRC0_VALUE
+    108                                                                 .clk_branch = SL_CLOCK_BRANCH_PCLK,
+    109                                                                 .bus_clock = SL_BUS_CLOCK_GPCRC0 };
+    110          #endif
+    111          
+    112          #if defined(GPIO_BASE)
+    113          // Define peripheral GPIO.
+
+   \                                 In section .rodata, align 4
+    114          const sl_peripheral_val_t sl_peripheral_val_gpio = { .base = GPIO_BASE,
+   \                     sl_peripheral_val_gpio:
+   \        0x0   0x5003'C000        DC32 1'342'423'040
+   \        0x4   0x03               DC8 3
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_GPIO_VALUE
+    115                                                               .clk_branch = SL_CLOCK_BRANCH_PCLK,
+    116                                                               .bus_clock = SL_BUS_CLOCK_GPIO };
+    117          #endif
+    118          
+    119          #if defined(HFRCO0_BASE)
+    120          // Define peripheral HFRCO0.
+
+   \                                 In section .rodata, align 4
+    121          const sl_peripheral_val_t sl_peripheral_val_hfrco0 = { .base = HFRCO0_BASE,
+   \                     sl_peripheral_val_hfrco0:
+   \        0x0   0x5001'0000        DC32 1'342'242'816
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_HFRCO0_VALUE
+    122                                                                 .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    123                                                                 .bus_clock = SL_BUS_CLOCK_HFRCO0 };
+    124          #endif
+    125          
+    126          #if defined(HFXO0_BASE)
+    127          // Define peripheral HFXO0.
+
+   \                                 In section .rodata, align 4
+    128          const sl_peripheral_val_t sl_peripheral_val_hfxo0 = { .base = HFXO0_BASE,
+   \                     sl_peripheral_val_hfxo0:
+   \        0x0   0x5000'C000        DC32 1'342'226'432
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_HFXO0_VALUE
+    129                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    130                                                                .bus_clock = SL_BUS_CLOCK_HFXO0 };
+    131          #endif
+    132          
+    133          #if defined(I2C0_BASE)
+    134          // Define peripheral I2C0.
+
+   \                                 In section .rodata, align 4
+    135          const sl_peripheral_i2c_val_t sl_peripheral_val_i2c0 = { .base = I2C0_BASE,
+   \                     sl_peripheral_val_i2c0:
+   \        0x0   0x5A01'0000        DC32 1'510'014'976
+   \        0x4   0x04               DC8 4
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_I2C0_VALUE, SL_DMA_SIGNAL_I2C0_RXDATAV_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_I2C0_TXBL_VALUE
+    136                                                                   .clk_branch = SL_CLOCK_BRANCH_LSPCLK,
+    137                                                                   .bus_clock = SL_BUS_CLOCK_I2C0,
+    138                                                                   .dma_signal_rxdatav = SL_DMA_SIGNAL_I2C0_RXDATAV,
+    139                                                                   .dma_signal_txbl = SL_DMA_SIGNAL_I2C0_TXBL };
+    140          #endif
+    141          
+    142          #if defined(I2C1_BASE)
+    143          // Define peripheral I2C1.
+
+   \                                 In section .rodata, align 4
+    144          const sl_peripheral_i2c_val_t sl_peripheral_val_i2c1 = { .base = I2C1_BASE,
+   \                     sl_peripheral_val_i2c1:
+   \        0x0   0x5006'8000        DC32 1'342'603'264
+   \        0x4   0x03               DC8 3
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_I2C1_VALUE, SL_DMA_SIGNAL_I2C1_RXDATAV_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_I2C1_TXBL_VALUE
+    145                                                                   .clk_branch = SL_CLOCK_BRANCH_PCLK,
+    146                                                                   .bus_clock = SL_BUS_CLOCK_I2C1,
+    147                                                                   .dma_signal_rxdatav = SL_DMA_SIGNAL_I2C1_RXDATAV,
+    148                                                                   .dma_signal_txbl = SL_DMA_SIGNAL_I2C1_TXBL };
+    149          #endif
+    150          
+    151          #if defined(IADC0_BASE)
+    152          // Define peripheral IADC0.
+
+   \                                 In section .rodata, align 4
+    153          const sl_peripheral_iadc_val_t sl_peripheral_val_iadc0 = { .base = IADC0_BASE,
+   \                     sl_peripheral_val_iadc0:
+   \        0x0   0x5A00'4000        DC32 1'509'965'824
+   \        0x4   0x0F               DC8 15
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_IADC0_VALUE, SL_DMA_SIGNAL_IADC0_SCAN_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_IADC0_SINGLE_VALUE
+    154                                                                     .clk_branch = SL_CLOCK_BRANCH_IADCCLK,
+    155                                                                     .bus_clock = SL_BUS_CLOCK_IADC0,
+    156                                                                     .dma_signal_scan = SL_DMA_SIGNAL_IADC0_SCAN,
+    157                                                                     .dma_signal_single = SL_DMA_SIGNAL_IADC0_SINGLE };
+    158          #endif
+    159          
+    160          #if defined(ICACHE0_BASE)
+    161          // Define peripheral ICACHE0.
+
+   \                                 In section .rodata, align 4
+    162          const sl_peripheral_val_t sl_peripheral_val_icache0 = { .base = ICACHE0_BASE,
+   \                     sl_peripheral_val_icache0:
+   \        0x0   0x5003'4000        DC32 1'342'390'272
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_ICACHE0_VALUE
+    163                                                                  .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    164                                                                  .bus_clock = SL_BUS_CLOCK_ICACHE0 };
+    165          #endif
+    166          
+    167          #if defined(LDMAXBAR_BASE)
+    168          // Define peripheral LDMAXBAR0.
+
+   \                                 In section .rodata, align 4
+    169          const sl_peripheral_ldmaxbar_val_t sl_peripheral_val_ldmaxbar0 = { .base = LDMAXBAR_BASE,
+   \                     sl_peripheral_val_ldmaxbar0:
+   \        0x0   0x5004'4000        DC32 1'342'455'808
+   \        0x4   0x03               DC8 3
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_LDMAXBAR0_VALUE
+   \        0xC   0x....'....        DC32 SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0_VALUE
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1_VALUE
+    170                                                                             .clk_branch = SL_CLOCK_BRANCH_PCLK,
+    171                                                                             .bus_clock = SL_BUS_CLOCK_LDMAXBAR0,
+    172                                                                             .dma_signal_prsreq0 = SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0,
+    173                                                                             .dma_signal_prsreq1 = SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1 };
+    174          #endif
+    175          
+    176          #if defined(LETIMER0_BASE)
+    177          // Define peripheral LETIMER0.
+
+   \                                 In section .rodata, align 4
+    178          const sl_peripheral_val_t sl_peripheral_val_letimer0 = { .base = LETIMER0_BASE,
+   \                     sl_peripheral_val_letimer0:
+   \        0x0   0x5A00'0000        DC32 1'509'949'440
+   \        0x4   0x0C               DC8 12
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_LETIMER0_VALUE
+    179                                                                   .clk_branch = SL_CLOCK_BRANCH_EM23GRPACLK,
+    180                                                                   .bus_clock = SL_BUS_CLOCK_LETIMER0 };
+    181          #endif
+    182          
+    183          #if defined(LFRCO_BASE)
+    184          // Define peripheral LFRCO.
+
+   \                                 In section .rodata, align 4
+    185          const sl_peripheral_val_t sl_peripheral_val_lfrco = { .base = LFRCO_BASE,
+   \                     sl_peripheral_val_lfrco:
+   \        0x0   0x5002'4000        DC32 1'342'324'736
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_LFRCO_VALUE
+    186                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    187                                                                .bus_clock = SL_BUS_CLOCK_LFRCO };
+    188          #endif
+    189          
+    190          #if defined(LFXO_BASE)
+    191          // Define peripheral LFXO.
+
+   \                                 In section .rodata, align 4
+    192          const sl_peripheral_val_t sl_peripheral_val_lfxo = { .base = LFXO_BASE,
+   \                     sl_peripheral_val_lfxo:
+   \        0x0   0x5002'0000        DC32 1'342'308'352
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_LFXO_VALUE
+    193                                                               .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    194                                                               .bus_clock = SL_BUS_CLOCK_LFXO };
+    195          #endif
+    196          
+    197          #if defined(MSC_BASE)
+    198          // Define peripheral MSC.
+
+   \                                 In section .rodata, align 4
+    199          const sl_peripheral_msc_val_t sl_peripheral_val_msc = { .base = MSC_BASE,
+   \                     sl_peripheral_val_msc:
+   \        0x0   0x5003'0000        DC32 1'342'373'888
+   \        0x4   0x01               DC8 1
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_MSC_VALUE, SL_DMA_SIGNAL_MSC_WDATA_VALUE
+   \              0x....'....
+    200                                                                  .clk_branch = SL_CLOCK_BRANCH_HCLK,
+    201                                                                  .bus_clock = SL_BUS_CLOCK_MSC,
+    202                                                                  .dma_signal_wdata = SL_DMA_SIGNAL_MSC_WDATA };
+    203          #endif
+    204          
+    205          #if defined(PDM_BASE)
+    206          // Define peripheral PDM.
+
+   \                                 In section .rodata, align 4
+    207          const sl_peripheral_pdm_val_t sl_peripheral_val_pdm = { .base = PDM_BASE,
+   \                     sl_peripheral_val_pdm:
+   \        0x0   0x5009'8000        DC32 1'342'799'872
+   \        0x4   0x09               DC8 9
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_PDM_VALUE, SL_DMA_SIGNAL_PDM0_RXDATA_VALUE
+   \              0x....'....
+    208                                                                  .clk_branch = SL_CLOCK_BRANCH_EM01GRPBCLK,
+    209                                                                  .bus_clock = SL_BUS_CLOCK_PDM,
+    210                                                                  .dma_signal_rxdata = SL_DMA_SIGNAL_PDM0_RXDATA };
+    211          #endif
+    212          
+    213          #if defined(PRORTC_BASE)
+    214          // Define peripheral PRORTC.
+    215          const sl_peripheral_val_t sl_peripheral_val_prortc = { .base = PRORTC_BASE,
+    216                                                                 .clk_branch = SL_CLOCK_BRANCH_PRORTCCLK,
+    217                                                                 .bus_clock = SL_BUS_CLOCK_PRORTC };
+    218          #endif
+    219          
+    220          #if defined(PRS_BASE)
+    221          // Define peripheral PRS.
+
+   \                                 In section .rodata, align 4
+    222          const sl_peripheral_val_t sl_peripheral_val_prs = { .base = PRS_BASE,
+   \                     sl_peripheral_val_prs:
+   \        0x0   0x5003'8000        DC32 1'342'406'656
+   \        0x4   0x03               DC8 3
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_PRS_VALUE
+    223                                                              .clk_branch = SL_CLOCK_BRANCH_PCLK,
+    224                                                              .bus_clock = SL_BUS_CLOCK_PRS };
+    225          #endif
+    226          
+    227          #if defined(RADIOAES_BASE)
+    228          // Define peripheral RADIOAES.
+    229          const sl_peripheral_val_t sl_peripheral_val_radioaes = { .base = RADIOAES_BASE,
+    230                                                                   .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    231                                                                   .bus_clock = SL_BUS_CLOCK_RADIOAES };
+    232          #endif
+    233          
+    234          #if defined(RTCC_BASE)
+    235          // Define peripheral RTCC.
+
+   \                                 In section .rodata, align 4
+    236          const sl_peripheral_val_t sl_peripheral_val_rtcc = { .base = RTCC_BASE,
+   \                     sl_peripheral_val_rtcc:
+   \        0x0   0x5800'0000        DC32 1'476'395'008
+   \        0x4   0x12               DC8 18
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_RTCC_VALUE
+    237                                                               .clk_branch = SL_CLOCK_BRANCH_RTCCCLK,
+    238                                                               .bus_clock = SL_BUS_CLOCK_RTCC };
+    239          #endif
+    240          
+    241          #if defined(SMU_BASE)
+    242          // Define peripheral SMU.
+
+   \                                 In section .rodata, align 4
+    243          const sl_peripheral_val_t sl_peripheral_val_smu = { .base = SMU_BASE,
+   \                     sl_peripheral_val_smu:
+   \        0x0   0x4400'8000        DC32 1'140'883'456
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_SMU_VALUE
+    244                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    245                                                              .bus_clock = SL_BUS_CLOCK_SMU };
+    246          #endif
+    247          
+    248          #if defined(SYSCFG_BASE)
+    249          // Define peripheral SYSCFG.
+
+   \                                 In section .rodata, align 4
+    250          const sl_peripheral_val_t sl_peripheral_val_syscfg = { .base = SYSCFG_BASE,
+   \                     sl_peripheral_val_syscfg:
+   \        0x0   0x5007'C000        DC32 1'342'685'184
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_SYSCFG_VALUE
+    251                                                                 .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    252                                                                 .bus_clock = SL_BUS_CLOCK_SYSCFG };
+    253          #endif
+    254          
+    255          #if defined(TIMER0_BASE)
+    256          // Define peripheral TIMER0.
+
+   \                                 In section .rodata, align 4
+    257          const sl_peripheral_timer_val_t sl_peripheral_val_timer0 = { .base = TIMER0_BASE,
+   \                     sl_peripheral_val_timer0:
+   \        0x0   0x5004'8000        DC32 1'342'472'192
+   \        0x4   0x08               DC8 8
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_TIMER0_VALUE, SL_DMA_SIGNAL_TIMER0_CC0_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_TIMER0_CC1_VALUE, SL_DMA_SIGNAL_TIMER0_CC2_VALUE
+   \              0x....'....
+   \       0x18   0x....'....        DC32 SL_DMA_SIGNAL_TIMER0_UFOF_VALUE, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    258                                                                       .clk_branch = SL_CLOCK_BRANCH_EM01GRPACLK,
+    259                                                                       .bus_clock = SL_BUS_CLOCK_TIMER0,
+    260                                                                       .dma_signal_cc0 = SL_DMA_SIGNAL_TIMER0_CC0,
+    261                                                                       .dma_signal_cc1 = SL_DMA_SIGNAL_TIMER0_CC1,
+    262                                                                       .dma_signal_cc2 = SL_DMA_SIGNAL_TIMER0_CC2,
+    263                                                                       .dma_signal_ufof = SL_DMA_SIGNAL_TIMER0_UFOF,
+    264                                                                       .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    265                                                                       .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    266                                                                       .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    267                                                                       .dma_signal_cc6 = SL_DMA_SIGNAL_NONE };
+    268          #endif
+    269          
+    270          #if defined(TIMER1_BASE)
+    271          // Define peripheral TIMER1.
+
+   \                                 In section .rodata, align 4
+    272          const sl_peripheral_timer_val_t sl_peripheral_val_timer1 = { .base = TIMER1_BASE,
+   \                     sl_peripheral_val_timer1:
+   \        0x0   0x5004'C000        DC32 1'342'488'576
+   \        0x4   0x08               DC8 8
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_TIMER1_VALUE, SL_DMA_SIGNAL_TIMER1_CC0_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_TIMER1_CC1_VALUE, SL_DMA_SIGNAL_TIMER1_CC2_VALUE
+   \              0x....'....
+   \       0x18   0x....'....        DC32 SL_DMA_SIGNAL_TIMER1_UFOF_VALUE, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    273                                                                       .clk_branch = SL_CLOCK_BRANCH_EM01GRPACLK,
+    274                                                                       .bus_clock = SL_BUS_CLOCK_TIMER1,
+    275                                                                       .dma_signal_cc0 = SL_DMA_SIGNAL_TIMER1_CC0,
+    276                                                                       .dma_signal_cc1 = SL_DMA_SIGNAL_TIMER1_CC1,
+    277                                                                       .dma_signal_cc2 = SL_DMA_SIGNAL_TIMER1_CC2,
+    278                                                                       .dma_signal_ufof = SL_DMA_SIGNAL_TIMER1_UFOF,
+    279                                                                       .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    280                                                                       .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    281                                                                       .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    282                                                                       .dma_signal_cc6 = SL_DMA_SIGNAL_NONE };
+    283          #endif
+    284          
+    285          #if defined(TIMER2_BASE)
+    286          // Define peripheral TIMER2.
+
+   \                                 In section .rodata, align 4
+    287          const sl_peripheral_timer_val_t sl_peripheral_val_timer2 = { .base = TIMER2_BASE,
+   \                     sl_peripheral_val_timer2:
+   \        0x0   0x5005'0000        DC32 1'342'504'960
+   \        0x4   0x08               DC8 8
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_TIMER2_VALUE, SL_DMA_SIGNAL_TIMER2_CC0_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_TIMER2_CC1_VALUE, SL_DMA_SIGNAL_TIMER2_CC2_VALUE
+   \              0x....'....
+   \       0x18   0x....'....        DC32 SL_DMA_SIGNAL_TIMER2_UFOF_VALUE, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    288                                                                       .clk_branch = SL_CLOCK_BRANCH_EM01GRPACLK,
+    289                                                                       .bus_clock = SL_BUS_CLOCK_TIMER2,
+    290                                                                       .dma_signal_cc0 = SL_DMA_SIGNAL_TIMER2_CC0,
+    291                                                                       .dma_signal_cc1 = SL_DMA_SIGNAL_TIMER2_CC1,
+    292                                                                       .dma_signal_cc2 = SL_DMA_SIGNAL_TIMER2_CC2,
+    293                                                                       .dma_signal_ufof = SL_DMA_SIGNAL_TIMER2_UFOF,
+    294                                                                       .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    295                                                                       .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    296                                                                       .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    297                                                                       .dma_signal_cc6 = SL_DMA_SIGNAL_NONE };
+    298          #endif
+    299          
+    300          #if defined(TIMER3_BASE)
+    301          // Define peripheral TIMER3.
+
+   \                                 In section .rodata, align 4
+    302          const sl_peripheral_timer_val_t sl_peripheral_val_timer3 = { .base = TIMER3_BASE,
+   \                     sl_peripheral_val_timer3:
+   \        0x0   0x5005'4000        DC32 1'342'521'344
+   \        0x4   0x08               DC8 8
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_TIMER3_VALUE, SL_DMA_SIGNAL_TIMER3_CC0_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_TIMER3_CC1_VALUE, SL_DMA_SIGNAL_TIMER3_CC2_VALUE
+   \              0x....'....
+   \       0x18   0x....'....        DC32 SL_DMA_SIGNAL_TIMER3_UFOF_VALUE, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    303                                                                       .clk_branch = SL_CLOCK_BRANCH_EM01GRPACLK,
+    304                                                                       .bus_clock = SL_BUS_CLOCK_TIMER3,
+    305                                                                       .dma_signal_cc0 = SL_DMA_SIGNAL_TIMER3_CC0,
+    306                                                                       .dma_signal_cc1 = SL_DMA_SIGNAL_TIMER3_CC1,
+    307                                                                       .dma_signal_cc2 = SL_DMA_SIGNAL_TIMER3_CC2,
+    308                                                                       .dma_signal_ufof = SL_DMA_SIGNAL_TIMER3_UFOF,
+    309                                                                       .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    310                                                                       .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    311                                                                       .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    312                                                                       .dma_signal_cc6 = SL_DMA_SIGNAL_NONE };
+    313          #endif
+    314          
+    315          #if defined(TIMER4_BASE)
+    316          // Define peripheral TIMER4.
+
+   \                                 In section .rodata, align 4
+    317          const sl_peripheral_timer_val_t sl_peripheral_val_timer4 = { .base = TIMER4_BASE,
+   \                     sl_peripheral_val_timer4:
+   \        0x0   0x5005'8000        DC32 1'342'537'728
+   \        0x4   0x08               DC8 8
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_TIMER4_VALUE, SL_DMA_SIGNAL_TIMER4_CC0_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_TIMER4_CC1_VALUE, SL_DMA_SIGNAL_TIMER4_CC2_VALUE
+   \              0x....'....
+   \       0x18   0x....'....        DC32 SL_DMA_SIGNAL_TIMER4_UFOF_VALUE, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    318                                                                       .clk_branch = SL_CLOCK_BRANCH_EM01GRPACLK,
+    319                                                                       .bus_clock = SL_BUS_CLOCK_TIMER4,
+    320                                                                       .dma_signal_cc0 = SL_DMA_SIGNAL_TIMER4_CC0,
+    321                                                                       .dma_signal_cc1 = SL_DMA_SIGNAL_TIMER4_CC1,
+    322                                                                       .dma_signal_cc2 = SL_DMA_SIGNAL_TIMER4_CC2,
+    323                                                                       .dma_signal_ufof = SL_DMA_SIGNAL_TIMER4_UFOF,
+    324                                                                       .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    325                                                                       .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    326                                                                       .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    327                                                                       .dma_signal_cc6 = SL_DMA_SIGNAL_NONE };
+    328          #endif
+    329          
+    330          #if defined(ULFRCO_BASE)
+    331          // Define peripheral ULFRCO.
+
+   \                                 In section .rodata, align 4
+    332          const sl_peripheral_val_t sl_peripheral_val_ulfrco = { .base = ULFRCO_BASE,
+   \                     sl_peripheral_val_ulfrco:
+   \        0x0   0x5002'8000        DC32 1'342'341'120
+   \        0x4   0x24               DC8 36
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_ULFRCO_VALUE
+    333                                                                 .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    334                                                                 .bus_clock = SL_BUS_CLOCK_ULFRCO };
+    335          #endif
+    336          
+    337          #if defined(USART0_BASE)
+    338          // Define peripheral USART0.
+
+   \                                 In section .rodata, align 4
+    339          const sl_peripheral_usart_val_t sl_peripheral_val_usart0 = { .base = USART0_BASE,
+   \                     sl_peripheral_val_usart0:
+   \        0x0   0x5005'C000        DC32 1'342'554'112
+   \        0x4   0x03               DC8 3
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_USART0_VALUE, SL_DMA_SIGNAL_USART0_RXDATAV_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_USART0_RXDATAVRIGHT_VALUE
+   \       0x14   0x....'....        DC32 SL_DMA_SIGNAL_USART0_TXBL_VALUE
+   \       0x18   0x....'....        DC32 SL_DMA_SIGNAL_USART0_TXBLRIGHT_VALUE
+   \       0x1C   0x....'....        DC32 SL_DMA_SIGNAL_USART0_TXEMPTY_VALUE
+    340                                                                       .clk_branch = SL_CLOCK_BRANCH_PCLK,
+    341                                                                       .bus_clock = SL_BUS_CLOCK_USART0,
+    342                                                                       .dma_signal_rxdatav = SL_DMA_SIGNAL_USART0_RXDATAV,
+    343                                                                       .dma_signal_rxdatavright = SL_DMA_SIGNAL_USART0_RXDATAVRIGHT,
+    344                                                                       .dma_signal_txbl = SL_DMA_SIGNAL_USART0_TXBL,
+    345                                                                       .dma_signal_txblright = SL_DMA_SIGNAL_USART0_TXBLRIGHT,
+    346                                                                       .dma_signal_txempty = SL_DMA_SIGNAL_USART0_TXEMPTY };
+    347          #endif
+    348          
+    349          #if defined(USART1_BASE)
+    350          // Define peripheral USART1.
+
+   \                                 In section .rodata, align 4
+    351          const sl_peripheral_usart_val_t sl_peripheral_val_usart1 = { .base = USART1_BASE,
+   \                     sl_peripheral_val_usart1:
+   \        0x0   0x5006'0000        DC32 1'342'570'496
+   \        0x4   0x03               DC8 3
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_USART1_VALUE, SL_DMA_SIGNAL_USART1_RXDATAV_VALUE
+   \              0x....'....
+   \       0x10   0x....'....        DC32 SL_DMA_SIGNAL_USART1_RXDATAVRIGHT_VALUE
+   \       0x14   0x....'....        DC32 SL_DMA_SIGNAL_USART1_TXBL_VALUE
+   \       0x18   0x....'....        DC32 SL_DMA_SIGNAL_USART1_TXBLRIGHT_VALUE
+   \       0x1C   0x....'....        DC32 SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE
+    352                                                                       .clk_branch = SL_CLOCK_BRANCH_PCLK,
+    353                                                                       .bus_clock = SL_BUS_CLOCK_USART1,
+    354                                                                       .dma_signal_rxdatav = SL_DMA_SIGNAL_USART1_RXDATAV,
+    355                                                                       .dma_signal_rxdatavright = SL_DMA_SIGNAL_USART1_RXDATAVRIGHT,
+    356                                                                       .dma_signal_txbl = SL_DMA_SIGNAL_USART1_TXBL,
+    357                                                                       .dma_signal_txblright = SL_DMA_SIGNAL_USART1_TXBLRIGHT,
+    358                                                                       .dma_signal_txempty = SL_DMA_SIGNAL_USART1_TXEMPTY };
+    359          #endif
+    360          
+    361          #if defined(WDOG0_BASE)
+    362          // Define peripheral WDOG0.
+
+   \                                 In section .rodata, align 4
+    363          const sl_peripheral_val_t sl_peripheral_val_wdog0 = { .base = WDOG0_BASE,
+   \                     sl_peripheral_val_wdog0:
+   \        0x0   0x5A01'8000        DC32 1'510'047'744
+   \        0x4   0x10               DC8 16
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_WDOG0_VALUE
+    364                                                                .clk_branch = SL_CLOCK_BRANCH_WDOG0CLK,
+    365                                                                .bus_clock = SL_BUS_CLOCK_WDOG0 };
+    366          #endif
+    367          
+    368          /** @} (end addtogroup device_peripheral) */
+    369          
+    370          /***************************************************************************//**
+    371           * @addtogroup device_peripheral_dma Device Abstraction DMA Peripheral
+    372           * @{
+    373           ******************************************************************************/
+    374          
+    375          #if defined(LDMA_BASE)
+    376          /// Define DMA peripheral LDMA.
+
+   \                                 In section .rodata, align 4
+    377          const sl_peripheral_dma_val_t sl_peripheral_dma_val_ldma0 = { .base = LDMA_BASE,
+   \                     sl_peripheral_dma_val_ldma0:
+   \        0x0   0x5004'0000        DC32 1'342'439'424
+   \        0x4   0x01               DC8 1
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 SL_BUS_CLOCK_LDMA0_VALUE, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x14   0x08 0x08          DC8 8, 8
+   \       0x16                      DS8 2
+    378                                                                        .clk_branch = SL_CLOCK_BRANCH_HCLK,
+    379                                                                        .bus_clock = SL_BUS_CLOCK_LDMA0,
+    380                                                                        .nbr_channel = 8,
+    381                                                                        .nbr_sync = 8,
+    382                                                                        .dual_destination_map = 0,
+    383                                                                        .rule_based_interleaving_map = 0 };
+    384          #endif
+    385          
+    386          /** @} (end addtogroup device_peripheral_dma) */
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      24  sl_peripheral_dma_val_ldma0
+      12  sl_peripheral_val_buram
+      12  sl_peripheral_val_burtc
+      12  sl_peripheral_val_cmu
+      12  sl_peripheral_val_cryptoacc
+      12  sl_peripheral_val_dcdc
+      12  sl_peripheral_val_dpll0
+      12  sl_peripheral_val_emu
+      20  sl_peripheral_val_euart0
+      12  sl_peripheral_val_fsrco
+      12  sl_peripheral_val_gpcrc0
+      12  sl_peripheral_val_gpio
+      12  sl_peripheral_val_hfrco0
+      12  sl_peripheral_val_hfxo0
+      20  sl_peripheral_val_i2c0
+      20  sl_peripheral_val_i2c1
+      20  sl_peripheral_val_iadc0
+      12  sl_peripheral_val_icache0
+      20  sl_peripheral_val_ldmaxbar0
+      12  sl_peripheral_val_letimer0
+      12  sl_peripheral_val_lfrco
+      12  sl_peripheral_val_lfxo
+      16  sl_peripheral_val_msc
+      16  sl_peripheral_val_pdm
+      12  sl_peripheral_val_prs
+      12  sl_peripheral_val_rtcc
+      12  sl_peripheral_val_smu
+      12  sl_peripheral_val_syscfg
+      44  sl_peripheral_val_timer0
+      44  sl_peripheral_val_timer1
+      44  sl_peripheral_val_timer2
+      44  sl_peripheral_val_timer3
+      44  sl_peripheral_val_timer4
+      12  sl_peripheral_val_ulfrco
+      32  sl_peripheral_val_usart0
+      32  sl_peripheral_val_usart1
+      12  sl_peripheral_val_wdog0
+
+ 
+ 704 bytes in section .rodata
+ 
+ 704 bytes of CONST memory
+
+Errors: none
+Warnings: none

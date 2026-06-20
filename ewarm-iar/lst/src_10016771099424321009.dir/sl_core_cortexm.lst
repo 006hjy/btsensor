@@ -1,0 +1,717 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:34
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\src\sl_core_cortexm.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10016771099424321009.dir\sl_core_cortexm.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\src\sl_core_cortexm.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_10016771099424321009.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10016771099424321009.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10016771099424321009.dir\sl_core_cortexm.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10016771099424321009.dir\sl_core_cortexm.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_10016771099424321009.dir\sl_core_cortexm.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10016771099424321009.dir\sl_core_cortexm.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\src\sl_core_cortexm.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Core API implemented for CortexM
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_core.h"
+     32          #include "sl_core_config.h"
+     33          #include "sl_common.h"
+     34          #include "em_device.h"
+     35          
+     36          /**************************************************************************//**
+     37           * @addtogroup sl_core
+     38           * @{
+     39           *****************************************************************************/
+     40          
+     41          /*******************************************************************************
+     42           **************************   STRUCTS   ****************************************
+     43           ******************************************************************************/
+     44          /// A Cycle Counter Instance.
+     45          typedef struct {
+     46            uint32_t start;    /*!< Cycle counter at start of recording. */
+     47            uint32_t cycles;   /*!< Cycles elapsed in last recording. */
+     48            uint32_t max;      /*!< Max recorded cycles since last reset or init. */
+     49          } dwt_cycle_counter_handle_t;
+     50          
+     51          /*******************************************************************************
+     52           ***************************   LOCAL VARIABLES   *******************************
+     53           ******************************************************************************/
+     54          
+     55          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     56          
+     57          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+     58          // cycle counter to record atomic sections
+     59          dwt_cycle_counter_handle_t atomic_cycle_counter   = { 0 };
+     60          // cycle counter to record critical sections
+     61          dwt_cycle_counter_handle_t critical_cycle_counter = { 0 };
+     62          #endif
+     63          
+     64          /** @endcond */
+     65          
+     66          /*******************************************************************************
+     67           ***************************   LOCAL FUNCTIONS   *******************************
+     68           ******************************************************************************/
+     69          
+     70          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+     71          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_CORE, SL_CODE_CLASS_TIME_CRITICAL)
+     72          static void cycle_counter_start(dwt_cycle_counter_handle_t *handle);
+     73          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_CORE, SL_CODE_CLASS_TIME_CRITICAL)
+     74          static void cycle_counter_stop(dwt_cycle_counter_handle_t *handle);
+     75          #endif
+     76          
+     77          /*******************************************************************************
+     78           **************************   GLOBAL FUNCTIONS   *******************************
+     79           ******************************************************************************/
+     80          
+     81          /***************************************************************************//**
+     82           * @brief
+     83           *   Disable interrupts.
+     84           ******************************************************************************/
+
+   \                                 In section text_core_timecritical0286, align 2
+     85          SL_WEAK void CORE_CriticalDisableIrq(void)
+     86          {
+     87            __disable_irq();
+   \                     CORE_CriticalDisableIrq: (+1)
+   \        0x0   0xB672             CPSID    I
+     88          }
+   \        0x2   0x4770             BX       LR
+     89          
+     90          /***************************************************************************//**
+     91           * @brief
+     92           *   Enable interrupts.
+     93           * @note
+     94           *   __ISB() makes sure pending interrupts are executed before returning.
+     95           *   This can be a problem if the first instruction after changing the BASEPRI
+     96           *   or PRIMASK assumes that the pending interrupts have already been processed.
+     97           ******************************************************************************/
+
+   \                                 In section text_core_timecritical1295, align 2
+     98          SL_WEAK void CORE_CriticalEnableIrq(void)
+     99          {
+    100            __enable_irq();
+   \                     CORE_CriticalEnableIrq: (+1)
+   \        0x0   0xB662             CPSIE    I
+    101            __ISB();
+   \        0x2   0xF3BF 0x8F6F      ISB      SY
+    102          }
+   \        0x6   0x4770             BX       LR
+    103          
+    104          /***************************************************************************//**
+    105           * @brief
+    106           *   Enter a CRITICAL section.
+    107           ******************************************************************************/
+
+   \                                 In section text_core_timecritical4331, align 2
+    108          SL_WEAK CORE_irqState_t CORE_EnterCritical(void)
+    109          {
+    110            CORE_irqState_t irqState = __get_PRIMASK();
+   \                     CORE_EnterCritical: (+1)
+   \        0x0   0xF3EF 0x8010      MRS      R0,PRIMASK
+    111            __disable_irq();
+   \        0x4   0xB672             CPSID    I
+    112          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    113            if (irqState == 0U) {
+    114              cycle_counter_start(&critical_cycle_counter);
+    115            }
+    116          #endif
+    117            return irqState;
+   \        0x6   0x4770             BX       LR
+    118          }
+    119          
+    120          /***************************************************************************//**
+    121           * @brief
+    122           *   Exit a CRITICAL section.
+    123           * @note
+    124           *   __ISB() makes sure pending interrupts are executed before returning.
+    125           *   This can be a problem if the first instruction after changing the BASEPRI
+    126           *   or PRIMASK assumes that the pending interrupts have already been processed.
+    127           ******************************************************************************/
+
+   \                                 In section text_core_timecritical2307, align 2
+    128          SL_WEAK void CORE_ExitCritical(CORE_irqState_t irqState)
+    129          {
+    130            if (irqState == 0U) {
+   \                     CORE_ExitCritical: (+1)
+   \        0x0   0xB910             CBNZ.N   R0,??CORE_ExitCritical_0
+    131          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    132              cycle_counter_stop(&critical_cycle_counter);
+    133          #endif
+    134              __enable_irq();
+   \        0x2   0xB662             CPSIE    I
+    135              __ISB();
+   \        0x4   0xF3BF 0x8F6F      ISB      SY
+    136            }
+    137          }
+   \                     ??CORE_ExitCritical_0: (+1)
+   \        0x8   0x4770             BX       LR
+    138          
+    139          /***************************************************************************//**
+    140           * @brief
+    141           *   Brief interrupt enable/disable sequence to allow handling of
+    142           *   pending interrupts.
+    143           ******************************************************************************/
+
+   \                                 In section text_core_timecritical3318, align 2
+    144          SL_WEAK void CORE_YieldCritical(void)
+    145          {
+    146            if ((__get_PRIMASK() & 1U) != 0U) {
+   \                     CORE_YieldCritical: (+1)
+   \        0x0   0xF3EF 0x8010      MRS      R0,PRIMASK
+   \        0x4   0x07C0             LSLS     R0,R0,#+31
+   \        0x6   0xD503             BPL.N    ??CORE_YieldCritical_0
+    147              __enable_irq();
+   \        0x8   0xB662             CPSIE    I
+    148              __ISB();
+   \        0xA   0xF3BF 0x8F6F      ISB      SY
+    149              __disable_irq();
+   \        0xE   0xB672             CPSID    I
+    150            }
+    151          }
+   \                     ??CORE_YieldCritical_0: (+1)
+   \       0x10   0x4770             BX       LR
+    152          
+    153          /***************************************************************************//**
+    154           * @brief
+    155           *   Disable interrupts.
+    156           ******************************************************************************/
+
+   \                                 In section text_core_timecritical5342, align 2
+    157          SL_WEAK void CORE_AtomicDisableIrq(void)
+    158          {
+    159          #ifndef __CM0PLUS_REV
+    160            __set_BASEPRI(CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8UL - __NVIC_PRIO_BITS));
+   \                     CORE_AtomicDisableIrq: (+1)
+   \        0x0   0x2030             MOVS     R0,#+48
+   \        0x2   0xF380 0x8811      MSR      BASEPRI,R0
+    161          #else
+    162            __disable_irq();
+    163          #endif
+    164          }
+   \        0x6   0x4770             BX       LR
+    165          
+    166          /***************************************************************************//**
+    167           * @brief
+    168           *   Enable interrupts.
+    169           * @note
+    170           *   __ISB() makes sure pending interrupts are executed before returning.
+    171           *   This can be a problem if the first instruction after changing the BASEPRI
+    172           *   or PRIMASK assumes that the pending interrupts have already been processed.
+    173           ******************************************************************************/
+
+   \                                 In section text_core_timecritical6351, align 2
+    174          SL_WEAK void CORE_AtomicEnableIrq(void)
+    175          {
+    176          #ifndef __CM0PLUS_REV
+    177            __set_BASEPRI(0);
+   \                     CORE_AtomicEnableIrq: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0xF380 0x8811      MSR      BASEPRI,R0
+    178          #else
+    179            __enable_irq();
+    180          #endif
+    181            __ISB();
+   \        0x6   0xF3BF 0x8F6F      ISB      SY
+    182          }
+   \        0xA   0x4770             BX       LR
+    183          
+    184          /***************************************************************************//**
+    185           * @brief
+    186           *   Enter an ATOMIC section.
+    187           ******************************************************************************/
+
+   \                                 In section text_core_timecritical9387, align 2
+    188          SL_WEAK CORE_irqState_t CORE_EnterAtomic(void)
+    189          {
+    190          #ifndef __CM0PLUS_REV
+    191            CORE_irqState_t irqState = __get_BASEPRI();
+   \                     CORE_EnterAtomic: (+1)
+   \        0x0   0xF3EF 0x8011      MRS      R0,BASEPRI
+    192            __set_BASEPRI(CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS));
+   \        0x4   0x2130             MOVS     R1,#+48
+   \        0x6   0xF381 0x8811      MSR      BASEPRI,R1
+    193          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    194            if ((irqState & (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS)))
+    195                != (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS))) {
+    196              cycle_counter_start(&atomic_cycle_counter);
+    197            }
+    198          #endif
+    199            return irqState;
+   \        0xA   0x4770             BX       LR
+    200          #else
+    201            CORE_irqState_t irqState = __get_PRIMASK();
+    202            __disable_irq();
+    203          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    204            if (irqState == 0U) {
+    205              cycle_counter_start(&critical_cycle_counter);
+    206            }
+    207          #endif
+    208            return irqState;
+    209          #endif
+    210          }
+    211          
+    212          /***************************************************************************//**
+    213           * @brief
+    214           *   Exit an ATOMIC section.
+    215           * @note
+    216           *   __ISB() makes sure pending interrupts are executed before returning.
+    217           *   This can be a problem if the first instruction after changing the BASEPRI
+    218           *   or PRIMASK assumes that the pending interrupts have already been processed.
+    219           ******************************************************************************/
+
+   \                                 In section text_core_timecritical7363, align 2
+    220          SL_WEAK void CORE_ExitAtomic(CORE_irqState_t irqState)
+    221          {
+    222          #ifndef __CM0PLUS_REV
+    223          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    224            if ((irqState & (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS)))
+    225                != (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS))) {
+    226              cycle_counter_stop(&atomic_cycle_counter);
+    227            }
+    228          #endif
+    229            __set_BASEPRI(irqState);
+   \                     CORE_ExitAtomic: (+1)
+   \        0x0   0xF380 0x8811      MSR      BASEPRI,R0
+    230            __ISB();
+   \        0x4   0xF3BF 0x8F6F      ISB      SY
+    231          #else
+    232            if (irqState == 0U) {
+    233          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    234              cycle_counter_stop(&critical_cycle_counter);
+    235          #endif
+    236              __enable_irq();
+    237              __ISB();
+    238            }
+    239          #endif
+    240          }
+   \        0x8   0x4770             BX       LR
+    241          
+    242          /***************************************************************************//**
+    243           * @brief
+    244           *   Brief interrupt enable/disable sequence to allow handling of
+    245           *   pending interrupts.
+    246           ******************************************************************************/
+
+   \                                 In section text_core_timecritical8374, align 2
+    247          SL_WEAK void CORE_YieldAtomic(void)
+    248          {
+    249          #ifndef __CM0PLUS_REV
+    250            CORE_irqState_t basepri = __get_BASEPRI();
+   \                     CORE_YieldAtomic: (+1)
+   \        0x0   0xF3EF 0x8011      MRS      R0,BASEPRI
+    251            if (basepri >= (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS))) {
+   \        0x4   0x2830             CMP      R0,#+48
+   \        0x6   0xD306             BCC.N    ??CORE_YieldAtomic_0
+    252              __set_BASEPRI(0);
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0xF381 0x8811      MSR      BASEPRI,R1
+    253              __ISB();
+   \        0xE   0xF3BF 0x8F6F      ISB      SY
+    254              __set_BASEPRI(basepri);
+   \       0x12   0xF380 0x8811      MSR      BASEPRI,R0
+    255            }
+    256          #else
+    257            if ((__get_PRIMASK() & 1U) != 0U) {
+    258              __enable_irq();
+    259              __ISB();
+    260              __disable_irq();
+    261            }
+    262          #endif
+    263          }
+   \                     ??CORE_YieldAtomic_0: (+1)
+   \       0x16   0x4770             BX       LR
+    264          
+    265          /***************************************************************************//**
+    266           * @brief
+    267           *   Check whether the current CPU operation mode is handler mode.
+    268           ******************************************************************************/
+
+   \                                 In section text_core_timecritical10398, align 4
+    269          SL_WEAK bool CORE_InIrqContext(void)
+    270          {
+    271            return (SCB->ICSR & SCB_ICSR_VECTACTIVE_Msk) != 0U;
+   \                     CORE_InIrqContext: (+1)
+   \        0x0   0x4804             LDR.N    R0,??CORE_InIrqContext_0
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0xF3C1 0x0008      UBFX     R0,R1,#+0,#+9
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xBF18             IT       NE
+   \        0xC   0x2001             MOVNE    R0,#+1
+   \        0xE   0xB2C0             UXTB     R0,R0
+   \       0x10   0x4770             BX       LR
+   \       0x12   0xBF00             Nop
+   \                     ??CORE_InIrqContext_0:
+   \       0x14   0xE000'ED04        DC32     0xe000ed04
+    272          }
+    273          
+    274          /***************************************************************************//**
+    275           * @brief
+    276           *   Check if interrupts are disabled.
+    277           ******************************************************************************/
+
+   \                                 In section text_core_timecritical11408, align 2
+    278          SL_WEAK bool CORE_IrqIsDisabled(void)
+    279          {
+    280          #ifndef __CM0PLUS_REV
+    281            return ((__get_PRIMASK() & 1U) == 1U)
+    282                   || (__get_BASEPRI() >= (CORE_ATOMIC_BASE_PRIORITY_LEVEL
+    283                                           << (8U - __NVIC_PRIO_BITS)));
+   \                     CORE_IrqIsDisabled: (+1)
+   \        0x0   0xF3EF 0x8010      MRS      R0,PRIMASK
+   \        0x4   0x07C0             LSLS     R0,R0,#+31
+   \        0x6   0xD406             BMI.N    ??CORE_IrqIsDisabled_0
+   \        0x8   0xF3EF 0x8011      MRS      R0,BASEPRI
+   \        0xC   0x2830             CMP      R0,#+48
+   \        0xE   0x4180             SBCS     R0,R0,R0
+   \       0x10   0x43C0             MVNS     R0,R0
+   \       0x12   0x0FC0             LSRS     R0,R0,#+31
+   \       0x14   0x4770             BX       LR
+   \                     ??CORE_IrqIsDisabled_0: (+1)
+   \       0x16   0x2001             MOVS     R0,#+1
+   \       0x18   0x4770             BX       LR
+    284          #else
+    285            return (__get_PRIMASK() & 1U == 1U);
+    286          #endif
+    287          }
+    288          
+    289          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    290          /***************************************************************************//**
+    291           * @brief
+    292           *   Start a recording.
+    293           *
+    294           * @param[in] handle
+    295           *   Pointer to initialized counter handle.
+    296           *
+    297           * @note SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING must be enabled.
+    298           ******************************************************************************/
+    299          static void cycle_counter_start(dwt_cycle_counter_handle_t *handle)
+    300          {
+    301            handle->start = DWT->CYCCNT;
+    302          }
+    303          #endif //(SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    304          
+    305          #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    306          /***************************************************************************//**
+    307           * @brief
+    308           *   Stop a recording.
+    309           *
+    310           * @param[in] handle
+    311           *   Pointer to initialized counter handle.
+    312           *
+    313           * @note SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING must be enabled.
+    314           ******************************************************************************/
+    315          static void cycle_counter_stop(dwt_cycle_counter_handle_t *handle)
+    316          {
+    317            handle->cycles = DWT->CYCCNT - handle->start;
+    318          
+    319            if (handle->cycles > handle->max) {
+    320              handle->max = handle->cycles;
+    321            }
+    322          }
+    323          #endif //(SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    324          
+    325          /***************************************************************************//**
+    326           * @brief
+    327           *   Returns the max time spent in critical section.
+    328           ******************************************************************************/
+
+   \                                 In section text_core_timecritical12420, align 2, keep-with-next
+    329          uint32_t CORE_get_max_time_critical_section(void)
+    330          {
+    331            #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    332            return critical_cycle_counter.max;
+    333            #else
+    334            return 0U;
+   \                     CORE_get_max_time_critical_section: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR
+    335            #endif //(SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    336          }
+    337          
+    338          /***************************************************************************//**
+    339           * @brief
+    340           *   Returns the max time spent in atomic section.
+    341           ******************************************************************************/
+
+   \                                 In section text_core_timecritical13432, align 2, keep-with-next
+    342          uint32_t CORE_get_max_time_atomic_section(void)
+    343          {
+    344            #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    345            return atomic_cycle_counter.max;
+    346            #else
+    347            return 0U;
+   \                     CORE_get_max_time_atomic_section: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR
+    348            #endif //(SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    349          }
+    350          
+    351          /***************************************************************************//**
+    352           * @brief
+    353           *   Clears the max time spent in atomic section.
+    354           ******************************************************************************/
+
+   \                                 In section text_core_timecritical14441, align 2, keep-with-next
+    355          void CORE_clear_max_time_critical_section(void)
+    356          {
+    357            #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    358            critical_cycle_counter.max = 0;
+    359            #endif //(SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    360          }
+   \                     CORE_clear_max_time_critical_section: (+1)
+   \        0x0   0x4770             BX       LR
+    361          
+    362          /***************************************************************************//**
+    363           * @brief
+    364           *   Clears the max time spent in atomic section.
+    365           ******************************************************************************/
+
+   \                                 In section text_core_timecritical15450, align 2, keep-with-next
+    366          void CORE_clear_max_time_atomic_section(void)
+    367          {
+    368            #if (SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    369            atomic_cycle_counter.max = 0;
+    370            #endif //(SL_CORE_DEBUG_INTERRUPTS_MASKED_TIMING == 1)
+    371          }
+   \                     CORE_clear_max_time_atomic_section: (+1)
+   \        0x0   0x4770             BX       LR
+    372          
+    373          /***************************************************************************//**
+    374           * @brief
+    375           *   Reset chip routine.
+    376           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    377          void CORE_ResetSystem(void)
+    378          {
+    379            // Ensure all outstanding memory accesses including buffered writes are
+    380            // completed before reset
+    381            __DSB();
+   \                     CORE_ResetSystem: (+1)
+   \        0x0   0xF3BF 0x8F4F      DSB      SY
+    382          
+    383          #ifndef __CM0PLUS_REV
+    384            // Keep priority group unchanged
+    385            SCB->AIRCR  = (0x5FAUL << SCB_AIRCR_VECTKEY_Pos)
+    386                          | (SCB->AIRCR & SCB_AIRCR_PRIGROUP_Msk)
+    387                          | SCB_AIRCR_SYSRESETREQ_Msk;
+   \        0x4   0x4905             LDR.N    R1,??CORE_ResetSystem_0
+   \        0x6   0x680A             LDR      R2,[R1, #+0]
+   \        0x8   0x4805             LDR.N    R0,??CORE_ResetSystem_0+4
+   \        0xA   0xF402 0x62E0      AND      R2,R2,#0x700
+   \        0xE   0x4302             ORRS     R2,R0,R2
+   \       0x10   0x600A             STR      R2,[R1, #+0]
+    388          #else
+    389            SCB->AIRCR  = (0x5FAUL << SCB_AIRCR_VECTKEY_Pos)
+    390                          | SCB_AIRCR_SYSRESETREQ_Msk;
+    391          #endif
+    392          
+    393            // Ensure completion of memory access
+    394            __DSB();
+   \       0x12   0xF3BF 0x8F4F      DSB      SY
+    395          
+    396            // Wait until reset
+    397            for (;; ) {
+    398              __NOP();
+   \                     ??CORE_ResetSystem_1: (+1)
+   \       0x16   0xBF00             Nop
+   \       0x18   0xE7FD             B.N      ??CORE_ResetSystem_1
+   \       0x1A   0xBF00             Nop
+   \                     ??CORE_ResetSystem_0:
+   \       0x1C   0xE000'ED0C        DC32     0xe000ed0c
+   \       0x20   0x05FA'0004        DC32     0x5fa0004
+    399            }
+    400          }
+    401          
+    402          /** @} (end addtogroup sl_core) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   CORE_AtomicDisableIrq
+       0   CORE_AtomicEnableIrq
+       0   CORE_CriticalDisableIrq
+       0   CORE_CriticalEnableIrq
+       0   CORE_EnterAtomic
+       0   CORE_EnterCritical
+       0   CORE_ExitAtomic
+       0   CORE_ExitCritical
+       0   CORE_InIrqContext
+       0   CORE_IrqIsDisabled
+       0   CORE_ResetSystem
+       0   CORE_YieldAtomic
+       0   CORE_YieldCritical
+       0   CORE_clear_max_time_atomic_section
+       0   CORE_clear_max_time_critical_section
+       0   CORE_get_max_time_atomic_section
+       0   CORE_get_max_time_critical_section
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  CORE_AtomicDisableIrq
+      12  CORE_AtomicEnableIrq
+       4  CORE_CriticalDisableIrq
+       8  CORE_CriticalEnableIrq
+      12  CORE_EnterAtomic
+       8  CORE_EnterCritical
+      10  CORE_ExitAtomic
+      10  CORE_ExitCritical
+      24  CORE_InIrqContext
+      26  CORE_IrqIsDisabled
+      36  CORE_ResetSystem
+      24  CORE_YieldAtomic
+      18  CORE_YieldCritical
+       2  CORE_clear_max_time_atomic_section
+       2  CORE_clear_max_time_critical_section
+       4  CORE_get_max_time_atomic_section
+       4  CORE_get_max_time_critical_section
+
+ 
+ 36 bytes in section .text
+  4 bytes in section text_core_timecritical0286
+ 24 bytes in section text_core_timecritical10398
+ 26 bytes in section text_core_timecritical11408
+  4 bytes in section text_core_timecritical12420
+  8 bytes in section text_core_timecritical1295
+  4 bytes in section text_core_timecritical13432
+  2 bytes in section text_core_timecritical14441
+  2 bytes in section text_core_timecritical15450
+ 10 bytes in section text_core_timecritical2307
+ 18 bytes in section text_core_timecritical3318
+  8 bytes in section text_core_timecritical4331
+  8 bytes in section text_core_timecritical5342
+ 12 bytes in section text_core_timecritical6351
+ 10 bytes in section text_core_timecritical7363
+ 24 bytes in section text_core_timecritical8374
+ 12 bytes in section text_core_timecritical9387
+ 
+ 48 bytes of CODE memory (+ 164 bytes shared)
+
+Errors: none
+Warnings: none

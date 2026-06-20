@@ -1,0 +1,1678 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:35
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_system.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_system.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_system.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_system.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_system.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir\sl_hal_system.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_system.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_system.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief System API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2023 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_hal_system.h"
+     32          #include "sl_hal_syscfg.h"
+     33          #include "em_device.h"
+     34          #include <stdbool.h>
+     35          #if defined(_SILICON_LABS_32B_SERIES_3)
+     36          #include "sl_se_manager.h"
+     37          #include "sli_se_manager_device_data.h"
+     38          #endif
+     39          #include "sl_status.h"
+     40          #include "sl_assert.h"
+     41          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_240)
+     42          #include "em_cmu.h"
+     43          #endif
+     44          /***************************************************************************//**
+     45           * @addtogroup system SYSTEM - System Utils
+     46           * @{
+     47           ******************************************************************************/
+     48          
+     49          /*******************************************************************************
+     50           *******************************   DEFINES   ************************************
+     51           ******************************************************************************/
+     52          
+     53          #define HFRCO_DPLL_FREQUENCY_TABLE_SIZE  11
+     54          
+     55          #define DEVINFO_TEMPERATURE_CALTEMP_INTEGER_SHIFT  4
+     56          
+     57          #if defined(_SILICON_LABS_32B_SERIES_3)
+     58          #define HAL_SYSTEM_CALIBRATION_SUPPORT
+     59          #endif
+     60          
+     61          /*******************************************************************************
+     62           *******************************   TYPEDEF   ***********************************
+     63           ******************************************************************************/
+     64          
+     65          #if defined(HAL_SYSTEM_CALIBRATION_SUPPORT)
+     66          typedef struct hfrco_dpll_cal_element {
+     67            uint32_t min_freq;
+     68            uint32_t max_freq;
+     69          } hfrco_dpll_cal_element_t;
+     70          #endif
+     71          
+     72          /*******************************************************************************
+     73           ******************************   CONSTANTS   **********************************
+     74           ******************************************************************************/
+
+   \                                 In section .rodata, align 4, keep-with-next
+     75          const sl_hal_system_devinfo_adc_t SL_HAL_SYSTEM_DEVINFO_ADC_RESET_VALUES = {
+   \                     SL_HAL_SYSTEM_DEVINFO_ADC_RESET_VALUES:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00
+   \        0x7                      DS8 1
+     76            .cal_data = {
+     77              .trim_vros0 = 0,
+     78              .trim_vros1 = 0,
+     79              .trim_gain_4x = 0,
+     80              .trim_gain_0x3_int = 0
+     81            },
+     82            .offset = {
+     83              .trim_off_1x = 0,
+     84              .trim_off_2x = 0,
+     85              .trim_off_4x = 0
+     86            }
+     87          };
+     88          
+
+   \                                 In section .rodata, align 4
+     89          const sl_hal_system_devinfo_temperature_t SL_HAL_SYSTEM_DEVINFO_TEMPERATURE_RESET_VALUES = {
+   \                     SL_HAL_SYSTEM_DEVINFO_TEMPERATURE_RESET_VALUES:
+   \        0x0   0x0000 0x0000      DC16 0, 0
+     90            .emu_temp_room = 0,
+     91            .cal_temp = 0
+     92          };
+     93          
+     94          #if defined(HAL_SYSTEM_CALIBRATION_SUPPORT)
+     95          static const hfrco_dpll_cal_element_t HFRCO_DPLL_FREQUENCY_TABLE[HFRCO_DPLL_FREQUENCY_TABLE_SIZE] = {
+     96            { .min_freq = 16000000, .max_freq = 20000000 }, /// 18MHz calibration central frequency.
+     97            { .min_freq = 20000000, .max_freq = 24500000 }, /// 22MHz calibration central frequency.
+     98            { .min_freq = 24500000, .max_freq = 30000000 }, /// 27MHz calibration central frequency.
+     99            { .min_freq = 30000000, .max_freq = 36000000 }, /// 33MHz calibration central frequency.
+    100            { .min_freq = 36000000, .max_freq = 42500000 }, /// 39MHz calibration central frequency.
+    101            { .min_freq = 42500000, .max_freq = 50500000 }, /// 46MHz calibration central frequency.
+    102            { .min_freq = 50500000, .max_freq = 60000000 }, /// 55MHz calibration central frequency.
+    103            { .min_freq = 60000000, .max_freq = 70000000 }, /// 65MHz calibration central frequency.
+    104            { .min_freq = 70000000, .max_freq = 80000000 }, /// 75MHz calibration central frequency.
+    105            { .min_freq = 80000000, .max_freq = 90000000 }, /// 85MHz calibration central frequency.
+    106            { .min_freq = 90000000, .max_freq = 100000000 } /// 95MHz calibration central frequency.
+    107          };
+    108          #endif
+    109          
+    110          /*******************************************************************************
+    111           ******************************   UTILITY  *************************************
+    112           ******************************************************************************/
+    113          
+    114          #if defined(_SILICON_LABS_32B_SERIES_2)
+    115          /***************************************************************************//**
+    116           * Get the nth ASCII character of a specified number.
+    117           *
+    118           * @param[in] input_number The number where the digit will be taken.
+    119           * @param[in] position The digit position.
+    120           *
+    121           * @return The ASCII value of the specified digit.
+    122           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    123          char sli_get_n_digit(uint16_t input_number,
+    124                               uint8_t position)
+    125          {
+   \                     sli_get_n_digit: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+    126            uint32_t exp[] = { 10, 100, 1000, 10000, 100000 };
+   \        0x8   0xEA4F 0x000D      MOV.W    R0,SP
+   \        0xC   0x....             ADR.N    R1,?_1
+   \        0xE   0x2214             MOVS     R2,#+20
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy4
+    127            uint32_t number = input_number;
+    128          
+    129            if (position > 4) {
+   \       0x14   0x4628             MOV      R0,R5
+   \       0x16   0x2805             CMP      R0,#+5
+   \       0x18   0xDB05             BLT.N    ??sli_get_n_digit_0
+    130              EFM_ASSERT(false);
+   \       0x1A   0x2182             MOVS     R1,#+130
+   \       0x1C   0x....             LDR.N    R0,??DataTable19
+   \       0x1E   0x.... 0x....      BL       assertEFM
+    131              return '0';
+   \       0x22   0x2030             MOVS     R0,#+48
+   \       0x24   0xE00F             B.N      ??sli_get_n_digit_1
+    132            }
+    133          
+    134            number = (number % exp[position]);
+   \                     ??sli_get_n_digit_0: (+1)
+   \       0x26   0xF85D 0x1020      LDR      R1,[SP, R0, LSL #+2]
+   \       0x2A   0xFBB4 0xF2F1      UDIV     R2,R4,R1
+   \       0x2E   0xFB01 0x4412      MLS      R4,R1,R2,R4
+    135          
+    136            if (position != 0) {
+   \       0x32   0xB135             CBZ.N    R5,??sli_get_n_digit_2
+    137              number = number / (exp[position - 1]);
+   \       0x34   0x4669             MOV      R1,SP
+   \       0x36   0xEB01 0x0080      ADD      R0,R1,R0, LSL #+2
+   \       0x3A   0xF850 0x2C04      LDR      R2,[R0, #-4]
+   \       0x3E   0xFBB4 0xF4F2      UDIV     R4,R4,R2
+    138            }
+    139          
+    140            return (char)number + '0';
+   \                     ??sli_get_n_digit_2: (+1)
+   \       0x42   0x3430             ADDS     R4,R4,#+48
+   \       0x44   0xB2E0             UXTB     R0,R4
+   \                     ??sli_get_n_digit_1: (+1)
+   \       0x46   0xB005             ADD      SP,SP,#+20
+   \       0x48   0xBD30             POP      {R4,R5,PC}
+    141          }
+    142          #endif
+    143          
+    144          #if defined(_DEVINFO_PART0_DIECODE0_MASK) && defined(_SILICON_LABS_SECURITY_FEATURE_VAULT)
+    145          /***************************************************************************//**
+    146           * Convert hexadecimal ASCII character to integer value.
+    147           *
+    148           * @param[in] character The character to be coverted to a number.
+    149           *
+    150           * @return The uint8_t value of the character given in parameter.
+    151           ******************************************************************************/
+    152          uint8_t sli_hex_ascii_to_value(char character)
+    153          {
+    154            if (character >= '0' && character <= '9') {
+    155              return character - '0';
+    156            } else if (character >= 'A' && character <= 'F') {
+    157              return character - 'A';
+    158            }
+    159          
+    160            return 0U;
+    161          }
+    162          #endif
+    163          
+    164          /*******************************************************************************
+    165           **************************   GLOBAL FUNCTIONS   *******************************
+    166           ******************************************************************************/
+    167          
+    168          /**************************************************************************//**
+    169           * Chip initialization routine for revision errata workarounds.
+    170           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    171          void sl_hal_system_init(void)
+    172          {
+   \                     sl_hal_system_init: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_1
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0200             LSLS     R0,R0,#+8
+   \        0x6   0x0E00             LSRS     R0,R0,#+24
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD000             BEQ.N    ??sl_hal_system_init_0
+   \        0xC   0x4770             BX       LR
+   \                     ??sl_hal_system_init_0: (+1)
+   \        0xE   0xB510             PUSH     {R4,LR}
+    173          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    174            sl_hal_system_chip_revision_t chipRev;
+    175            sl_hal_system_get_chip_revision(&chipRev);
+    176          
+    177            if (chipRev.major == 0x01 && (HFXO0->STATUS & HFXO_STATUS_ENS) == 0U) {
+    178              // Change HFXO default peak detector settings.
+    179              *(volatile uint32_t*)(HFXO0_BASE + 0x34U) =
+    180                (*(volatile uint32_t*)(HFXO0_BASE + 0x34U) & 0xFF8000FFU)
+    181                | 0x00178500U;
+    182              // Change HFXO low power control settings.
+    183              *(volatile uint32_t*)(HFXO0_BASE + 0x30U) =
+    184                (*(volatile uint32_t*)(HFXO0_BASE + 0x30U) & 0xFFFF0FFFU)
+    185                | 0x0000C000U;
+    186              // Change default SQBUF bias current.
+    187              *(volatile uint32_t*)(HFXO0_BASE + 0x30U) |= 0x700;
+    188            }
+    189          
+    190            if (chipRev.major == 0x01 && chipRev.minor == 0x0) {
+    191              // Trigger RAM read for each RAM instance.
+    192              volatile uint32_t *dmem = (volatile uint32_t *) DMEM_RAM0_RAM_MEM_BASE;
+    193              for (uint32_t i = 0U; i < DMEM_NUM_BANK; i++) {
+    194                // Force memory read
+    195                *dmem;
+    196                dmem += (DMEM_BANK0_SIZE / 4U);
+    197              }
+    198            }
+    199          
+    200            // Set TRACE clock to intended reset value.
+    201            CMU->TRACECLKCTRL = (CMU->TRACECLKCTRL & ~_CMU_TRACECLKCTRL_CLKSEL_MASK)
+    202                                | CMU_TRACECLKCTRL_CLKSEL_HFRCOEM23;
+    203          #endif
+    204          
+    205          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_205)
+    206          #if defined(SL_TRUSTZONE_SECURE)
+    207          #define HFRCO_CLK_CFG_CLR_ADDR (0x40012020UL)
+    208          #else
+    209          #define HFRCO_CLK_CFG_CLR_ADDR (0x50012020UL)
+    210          #endif
+    211          #define HFRCO_CLK_CFG_CLKOUTDIS0 (0x4UL)
+    212            if (sl_hal_system_get_prod_rev() == 1) {
+    213              bool hfrcoClkIsOff = (CMU->CLKEN0 & CMU_CLKEN0_HFRCO0) == 0;
+   \       0x10   0x....             LDR.N    R0,??DataTable19_2
+   \       0x12   0x6801             LDR      R1,[R0, #+0]
+    214              CMU->CLKEN0_SET = CMU_CLKEN0_HFRCO0;
+   \       0x14   0xF44F 0x2080      MOV      R0,#+262144
+   \       0x18   0x....             LDR.N    R4,??DataTable19_3
+   \       0x1A   0x6020             STR      R0,[R4, #+0]
+    215              // Enable HFRCO CLKOUT0.
+    216              *(volatile uint32_t*)(HFRCO_CLK_CFG_CLR_ADDR) = HFRCO_CLK_CFG_CLKOUTDIS0;
+   \       0x1C   0x2204             MOVS     R2,#+4
+   \       0x1E   0x....             LDR.N    R3,??DataTable19_4
+   \       0x20   0x601A             STR      R2,[R3, #+0]
+    217              if (hfrcoClkIsOff) {
+   \       0x22   0x0349             LSLS     R1,R1,#+13
+   \       0x24   0xBF5C             ITT      PL
+   \       0x26   0x....             LDRPL.N  R2,??DataTable19_5
+   \       0x28   0x6010             STRPL    R0,[R2, #+0]
+    218                CMU->CLKEN0_CLR = CMU_CLKEN0_HFRCO0;
+    219              }
+    220            }
+    221          #endif
+    222          
+    223          // PM-3503.
+    224          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_210)
+    225            {
+    226              bool syscfgClkIsOff = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) == 0);
+    227              CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    228          
+    229              bool dcdcClkIsOff = ((CMU->CLKEN0 & CMU_CLKEN0_DCDC) == 0);
+    230              CMU->CLKEN0_SET = CMU_CLKEN0_DCDC;
+    231          
+    232              bool dcdcIsLock = ((DCDC->LOCKSTATUS & DCDC_LOCKSTATUS_LOCK_LOCKED) != 0);
+    233              DCDC->LOCK = DCDC_LOCK_LOCKKEY_UNLOCKKEY;
+    234          
+    235              while (DCDC->SYNCBUSY & DCDC_SYNCBUSY_CTRL) {
+    236                // Wait for previous synchronization to finish.
+    237              }
+    238          
+    239              DCDC->CTRL_CLR = DCDC_CTRL_MODE;
+    240              while ((DCDC->STATUS & DCDC_STATUS_BYPSW) == 0U) {
+    241                // Wait for BYPASS switch enable.
+    242              }
+    243          
+    244              if (dcdcIsLock) {
+    245                DCDC->LOCK = ~DCDC_LOCK_LOCKKEY_UNLOCKKEY;
+    246              }
+    247          
+    248              if (dcdcClkIsOff) {
+    249                CMU->CLKEN0_CLR = CMU_CLKEN0_DCDC;
+    250              }
+    251          
+    252              if (syscfgClkIsOff) {
+    253                CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    254              }
+    255            }
+    256          #endif
+    257          
+    258          // PM-5163.
+    259          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_215)    \
+    260            && defined(_SILICON_LABS_EFR32_2G4HZ_HP_PA_PRESENT) \
+    261            && (_SILICON_LABS_EFR32_2G4HZ_HP_PA_MAX_OUTPUT_DBM == 20)
+    262            sl_hal_system_chip_revision_t chipRev;
+    263            sl_hal_system_get_chip_revision(&chipRev);
+    264          
+    265            if (chipRev.major == 0x01 && chipRev.minor == 0x00) {
+    266              bool hfxo0ClkIsOff = (CMU->CLKEN0 & CMU_CLKEN0_HFXO0) == 0;
+    267              CMU->CLKEN0_SET = CMU_CLKEN0_HFXO0;
+    268          
+    269              *(volatile uint32_t*)(HFXO0_BASE + 0x0034UL) =
+    270                (*(volatile uint32_t*)(HFXO0_BASE + 0x0034UL) & 0xE3FFFFFFUL)
+    271                | 0x0C000000UL;
+    272          
+    273              if (hfxo0ClkIsOff) {
+    274                CMU->CLKEN0_CLR = CMU_CLKEN0_HFXO0;
+    275              }
+    276            }
+    277          #endif
+    278          
+    279          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_240)
+    280          
+    281            // Enable ICache out of reset.
+    282            CMU->CLKEN1_SET = _CMU_CLKEN1_ICACHE0_MASK;
+    283            ICACHE0->CTRL_CLR = _ICACHE_CTRL_CACHEDIS_MASK;
+    284            CMU->CLKEN1_CLR = _CMU_CLKEN1_ICACHE0_MASK;
+    285          
+    286            CMU->CLKEN0_SET = _CMU_CLKEN0_HFRCO0_MASK;
+    287          
+    288            if (((HFRCO0->CAL & _HFRCO_CAL_TUNING_MASK) >> _HFRCO_CAL_TUNING_SHIFT) == _HFRCO_CAL_TUNING_MASK) {
+    289              // temporary call CMU here, will be fixed when the cmu peripheral available.
+    290              CMU_HFRCODPLLBandSet(cmuHFRCODPLLFreq_19M0Hz);
+    291            }
+    292          
+    293            CMU->CLKEN0_CLR = _CMU_CLKEN0_HFRCO0_MASK;
+    294          
+    295          #endif
+    296          }
+   \       0x2A   0xBD10             POP      {R4,PC}
+    297          /***************************************************************************//**
+    298           * Get the chip revision.
+    299           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    300          void sl_hal_system_get_chip_revision(sl_hal_system_chip_revision_t *rev)
+    301          {
+   \                     sl_hal_system_get_chip_revision: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    302          #if defined(CMU_CLKEN0_SYSCFG)
+    303            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+   \        0x2   0xF44F 0x3180      MOV      R1,#+65536
+   \        0x6   0x....             LDR.N    R2,??DataTable19_3
+   \        0x8   0x6011             STR      R1,[R2, #+0]
+    304          #endif
+    305          
+    306            uint32_t chip_rev = sl_hal_syscfg_read_chip_rev();
+   \        0xA   0x....             LDR.N    R4,??DataTable19_6
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+    307          
+    308            rev->minor = (chip_rev & _SYSCFG_CHIPREV_MINOR_MASK) >> _SYSCFG_CHIPREV_MINOR_SHIFT;
+    309            rev->major = (chip_rev & _SYSCFG_CHIPREV_MAJOR_MASK) >> _SYSCFG_CHIPREV_MAJOR_SHIFT;
+    310          #if defined(_SYSCFG_CHIPREV_PARTNUMBER_MASK)
+    311            rev->part_number = ((chip_rev & SYSCFG_CHIPREV_PARTNUMBER1) >> 5) | (chip_rev & SYSCFG_CHIPREV_PARTNUMBER0);
+    312            rev->family = (uint16_t)0xFFFF;
+    313          #elif defined(_SYSCFG_CHIPREV_FAMILY_MASK)
+    314            rev->part_number = (uint16_t)0xFFFF;
+   \        0xE   0xF64F 0x74FF      MOVW     R4,#+65535
+   \       0x12   0x0B0B             LSRS     R3,R1,#+12
+   \       0x14   0x7003             STRB     R3,[R0, #+0]
+   \       0x16   0xF001 0x023F      AND      R2,R1,#0x3F
+    315            rev->family = (chip_rev & _SYSCFG_CHIPREV_FAMILY_MASK) >> _SYSCFG_CHIPREV_FAMILY_SHIFT;
+   \       0x1A   0xF3C1 0x1185      UBFX     R1,R1,#+6,#+6
+   \       0x1E   0x7042             STRB     R2,[R0, #+1]
+   \       0x20   0x8044             STRH     R4,[R0, #+2]
+   \       0x22   0x8081             STRH     R1,[R0, #+4]
+    316          #else
+    317            #error No Chip Revision Part Number or Family
+    318          #endif
+    319          }
+   \       0x24   0xBD10             POP      {R4,PC}
+    320          
+    321          /***************************************************************************//**
+    322           * Get the MCU family identifier.
+    323           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    324          sl_hal_system_part_family_t sl_hal_system_get_family(void)
+    325          {
+    326          #if defined(_DEVINFO_PART_FAMILY_MASK)
+    327            return (DEVINFO->PART & (_DEVINFO_PART_FAMILY_MASK
+    328                                     | _DEVINFO_PART_FAMILYNUM_MASK));
+   \                     sl_hal_system_get_family: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_7
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x....             LDR.N    R1,??DataTable19_8
+   \        0x6   0x4008             ANDS     R0,R1,R0
+   \        0x8   0x4770             BX       LR
+    329          #else
+    330            return (DEVINFO->PART0 & (_DEVINFO_PART0_PROTOCOL_MASK
+    331                                      | _DEVINFO_PART0_SERIES_MASK
+    332                                      | _DEVINFO_PART0_DIECODE0_MASK));
+    333          #endif
+    334          }
+    335          
+    336          /***************************************************************************//**
+    337           * Get DEVINFO revision.
+    338           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    339          uint8_t sl_hal_system_get_devinfo_rev(void)
+    340          {
+    341          #if defined(_DEVINFO_INFO_DEVINFOREV_MASK)
+    342            return (uint8_t)((DEVINFO->INFO & _DEVINFO_INFO_DEVINFOREV_MASK)
+    343                             >> _DEVINFO_INFO_DEVINFOREV_SHIFT);
+   \                     sl_hal_system_get_devinfo_rev: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_1
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0E00             LSRS     R0,R0,#+24
+   \        0x6   0x4770             BX       LR
+    344          #elif defined(_DEVINFO_REVISION_DEVINFOREV_MASK)
+    345            return (uint8_t)((DEVINFO->REVISION & _DEVINFO_REVISION_DEVINFOREV_MASK)
+    346                             >> _DEVINFO_REVISION_DEVINFOREV_SHIFT);
+    347          #else
+    348          #error (sl_hal_system.c): Location of devinfo revision is not defined.
+    349          #endif
+    350          }
+    351          
+    352          /***************************************************************************//**
+    353           * Get the default factory calibration value for HFRCO oscillator.
+    354           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    355          uint32_t sl_hal_system_get_hfrco_default_calibration(void)
+    356          {
+    357          #if defined(_DEVINFO_HFRCOCALDEFAULT_MASK)
+    358            return DEVINFO->HFRCOCALDEFAULT;
+    359          #else
+    360            return 0;
+   \                     sl_hal_system_get_hfrco_default_calibration: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR
+    361          #endif
+    362          }
+    363          
+    364          /***************************************************************************//**
+    365           * Get the speed factory calibration value for HFRCO oscillator.
+    366           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    367          uint32_t sl_hal_system_get_hfrco_speed_calibration(void)
+    368          {
+    369          #if defined(_DEVINFO_HFRCOCALSPEED_MASK)
+    370            return DEVINFO->HFRCOCALSPEED;
+    371          #else
+    372            return 0;
+   \                     sl_hal_system_get_hfrco_speed_calibration: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR
+    373          #endif
+    374          }
+    375          
+    376          /***************************************************************************//**
+    377           * Get the HFRCO calibration based on the frequency band.
+    378           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    379          uint32_t sl_hal_system_get_hfrcodpll_band_calibration(uint32_t frequency)
+    380          {
+   \                     sl_hal_system_get_hfrcodpll_band_calibration: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+    381          #if defined(HAL_SYSTEM_CALIBRATION_SUPPORT)
+    382            sl_status_t status;
+    383            uint8_t band_index = 0xFF;
+    384            sl_se_command_context_t se_command_ctx;
+    385            sli_se_device_data_t otp_section_id = (sli_se_device_data_t)(SLI_SE_DEVICE_DATA_DI0 + DEVINFO_GP_FRAGMENT_INDEX);
+    386            uint32_t offset;
+    387            uint32_t calibration_value = 0;
+    388          
+    389            for (uint8_t i = 0; i < HFRCO_DPLL_FREQUENCY_TABLE_SIZE; i++) {
+    390              if ((frequency >= HFRCO_DPLL_FREQUENCY_TABLE[i].min_freq)
+    391                  && (frequency <= HFRCO_DPLL_FREQUENCY_TABLE[i].max_freq)) {
+    392                band_index = i;
+    393                break;
+    394              }
+    395            }
+    396          
+    397            if (band_index >= HFRCO_DPLL_FREQUENCY_TABLE_SIZE) {
+    398              return 0;
+    399            }
+    400          
+    401            // Calculate memory offset based on the band index we want.
+    402            offset = (band_index * 4) + DEVINFO_GP_HFRCODPLLBAND0_OFFSET;
+    403          
+    404            // Initialize command context.
+    405            status = sl_se_init_command_context(&se_command_ctx);
+    406            if (status != SL_STATUS_OK) {
+    407              return 0;
+    408            }
+    409          
+    410            // Send the SE command to retrieve the HFRCODPLL calibration for a given band from the DEVINFO OTP section.
+    411            status = sli_se_device_data_read_word(&se_command_ctx, otp_section_id, offset, &calibration_value);
+    412            if (status != SL_STATUS_OK) {
+    413              return 0;
+    414            }
+    415          
+    416            return calibration_value;
+    417          #elif defined(_SILICON_LABS_32B_SERIES_2)
+    418            uint32_t calibration_value = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+    419            switch (frequency) {
+   \        0x4   0x....             LDR.N    R2,??DataTable19_9
+   \        0x6   0x2900             CMP      R1,#+0
+   \        0x8   0xD033             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_0
+   \        0xA   0x....             LDR.N    R3,??DataTable19_10
+   \        0xC   0x4299             CMP      R1,R3
+   \        0xE   0xBF1F             ITTTT    NE
+   \       0x10   0x....             LDRNE.N  R3,??DataTable19_11
+   \       0x12   0x4299             CMPNE    R1,R3
+   \       0x14   0x....             LDRNE.N  R3,??DataTable19_12
+   \       0x16   0x4299             CMPNE    R1,R3
+   \       0x18   0xD02A             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_1
+   \       0x1A   0x....             LDR.N    R3,??DataTable19_13
+   \       0x1C   0x4299             CMP      R1,R3
+   \       0x1E   0xD029             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_2
+   \       0x20   0x....             LDR.N    R3,??DataTable19_14
+   \       0x22   0x4299             CMP      R1,R3
+   \       0x24   0xD02C             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_3
+   \       0x26   0x....             LDR.N    R3,??DataTable19_15
+   \       0x28   0x4299             CMP      R1,R3
+   \       0x2A   0xD025             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_4
+   \       0x2C   0x....             LDR.N    R3,??DataTable19_16
+   \       0x2E   0x4299             CMP      R1,R3
+   \       0x30   0xD028             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_5
+   \       0x32   0x....             LDR.N    R3,??DataTable19_17
+   \       0x34   0x4299             CMP      R1,R3
+   \       0x36   0xD027             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_6
+   \       0x38   0x....             LDR.N    R3,??DataTable19_18
+   \       0x3A   0x4299             CMP      R1,R3
+   \       0x3C   0xD026             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_7
+   \       0x3E   0x....             LDR.N    R3,??DataTable19_19
+   \       0x40   0x4299             CMP      R1,R3
+   \       0x42   0xD01B             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_8
+   \       0x44   0x....             LDR.N    R3,??DataTable19_20
+   \       0x46   0x4299             CMP      R1,R3
+   \       0x48   0xD022             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_9
+   \       0x4A   0x....             LDR.N    R3,??DataTable19_21
+   \       0x4C   0x4299             CMP      R1,R3
+   \       0x4E   0xD021             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_10
+   \       0x50   0x....             LDR.N    R3,??DataTable19_22
+   \       0x52   0x4299             CMP      R1,R3
+   \       0x54   0xD020             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_11
+   \       0x56   0x....             LDR.N    R3,??DataTable19_23
+   \       0x58   0x4299             CMP      R1,R3
+   \       0x5A   0xD01F             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_12
+   \       0x5C   0x....             LDR.N    R3,??DataTable19_24
+   \       0x5E   0x4299             CMP      R1,R3
+   \       0x60   0xD01E             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_13
+   \       0x62   0x....             LDR.N    R3,??DataTable19_25
+   \       0x64   0x4299             CMP      R1,R3
+   \       0x66   0xD01D             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_14
+   \       0x68   0x....             LDR.N    R3,??DataTable19_26
+   \       0x6A   0x4299             CMP      R1,R3
+   \       0x6C   0xD01C             BEQ.N    ??sl_hal_system_get_hfrcodpll_band_calibration_15
+   \       0x6E   0x4770             BX       LR
+    420              // 1, 2 and 4MHz share the same calibration word.
+    421              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_1M0Hz:
+    422              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_2M0Hz:
+    423              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_4M0Hz:
+    424                calibration_value = DEVINFO->HFRCODPLLCAL[0].HFRCODPLLCAL;
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_1: (+1)
+   \       0x70   0x6810             LDR      R0,[R2, #+0]
+    425                break;
+    426          
+    427            #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_4) \
+    428                || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_7)  || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_9)
+    429              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_5M0Hz:
+    430                calibration_value = DEVINFO->HFRCODPLLCAL[1].HFRCODPLLCAL;
+    431                break;
+    432          
+    433              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_10M0Hz:
+    434                calibration_value = DEVINFO->HFRCODPLLCAL[4].HFRCODPLLCAL;
+    435                break;
+    436          
+    437              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_20M0Hz:
+    438                calibration_value = DEVINFO->HFRCODPLLCAL[9].HFRCODPLLCAL;
+    439                break;
+    440            #endif
+    441          
+    442              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_7M0Hz:
+    443                calibration_value = DEVINFO->HFRCODPLLCAL[3].HFRCODPLLCAL;
+    444                break;
+    445          
+    446              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_13M0Hz:
+    447                calibration_value = DEVINFO->HFRCODPLLCAL[6].HFRCODPLLCAL;
+    448                break;
+    449          
+    450              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_16M0Hz:
+    451                calibration_value = DEVINFO->HFRCODPLLCAL[7].HFRCODPLLCAL;
+    452                break;
+    453          
+    454              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_19M0Hz:
+    455                calibration_value = DEVINFO->HFRCODPLLCAL[8].HFRCODPLLCAL;
+    456                break;
+    457          
+    458              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_26M0Hz:
+    459                calibration_value = DEVINFO->HFRCODPLLCAL[10].HFRCODPLLCAL;
+    460                break;
+    461          
+    462              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_32M0Hz:
+    463                calibration_value = DEVINFO->HFRCODPLLCAL[11].HFRCODPLLCAL;
+    464                break;
+    465          
+    466              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_38M0Hz:
+    467                calibration_value = DEVINFO->HFRCODPLLCAL[12].HFRCODPLLCAL;
+    468                break;
+    469          
+    470              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_48M0Hz:
+    471                calibration_value = DEVINFO->HFRCODPLLCAL[13].HFRCODPLLCAL;
+    472                break;
+    473          
+    474              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_56M0Hz:
+    475                calibration_value = DEVINFO->HFRCODPLLCAL[14].HFRCODPLLCAL;
+    476                break;
+    477          
+    478              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_64M0Hz:
+    479                calibration_value = DEVINFO->HFRCODPLLCAL[15].HFRCODPLLCAL;
+    480                break;
+    481          
+    482              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_80M0Hz:
+    483                calibration_value = DEVINFO->HFRCODPLLCAL[16].HFRCODPLLCAL;
+    484                break;
+    485          
+    486          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_5)
+    487              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_100M0Hz:
+    488                calibration_value = DEVINFO->HFRCODPLLCAL[17].HFRCODPLLCAL;
+    489                break;
+    490          #endif
+    491          
+    492              case SL_HAL_SYSTEM_HFRCODPLL_FREQ_USER_DEFINED:
+    493                break;
+    494          
+    495              default:
+    496                return 0;
+    497            }
+    498            return calibration_value;
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_0: (+1)
+   \       0x72   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_2: (+1)
+   \       0x74   0x6850             LDR      R0,[R2, #+4]
+   \       0x76   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_4: (+1)
+   \       0x78   0x6910             LDR      R0,[R2, #+16]
+   \       0x7A   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_8: (+1)
+   \       0x7C   0x6A50             LDR      R0,[R2, #+36]
+   \       0x7E   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_3: (+1)
+   \       0x80   0x68D0             LDR      R0,[R2, #+12]
+   \       0x82   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_5: (+1)
+   \       0x84   0x6990             LDR      R0,[R2, #+24]
+   \       0x86   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_6: (+1)
+   \       0x88   0x69D0             LDR      R0,[R2, #+28]
+   \       0x8A   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_7: (+1)
+   \       0x8C   0x6A10             LDR      R0,[R2, #+32]
+   \       0x8E   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_9: (+1)
+   \       0x90   0x6A90             LDR      R0,[R2, #+40]
+   \       0x92   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_10: (+1)
+   \       0x94   0x6AD0             LDR      R0,[R2, #+44]
+   \       0x96   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_11: (+1)
+   \       0x98   0x6B10             LDR      R0,[R2, #+48]
+   \       0x9A   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_12: (+1)
+   \       0x9C   0x6B50             LDR      R0,[R2, #+52]
+   \       0x9E   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_13: (+1)
+   \       0xA0   0x6B90             LDR      R0,[R2, #+56]
+   \       0xA2   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_14: (+1)
+   \       0xA4   0x6BD0             LDR      R0,[R2, #+60]
+   \       0xA6   0x4770             BX       LR
+   \                     ??sl_hal_system_get_hfrcodpll_band_calibration_15: (+1)
+   \       0xA8   0x6C10             LDR      R0,[R2, #+64]
+   \       0xAA   0x4770             BX       LR
+    499          #else
+    500            (void)frequency;
+    501            return 0;
+    502          #endif
+    503          }
+    504          
+    505          /***************************************************************************//**
+    506           * Get a factory calibration value for HFRCOCEM23 oscillator.
+    507           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    508          uint32_t sl_hal_system_get_hfrcoem23_calibration(uint32_t frequency)
+    509          {
+    510          #if defined(HAL_SYSTEM_CALIBRATION_SUPPORT)
+    511            sl_status_t status;
+    512            sl_se_command_context_t se_command_ctx;
+    513            sli_se_device_data_t otp_section_id = (sli_se_device_data_t)(SLI_SE_DEVICE_DATA_DI0 + DEVINFO_GP_FRAGMENT_INDEX);
+    514            uint32_t offset;
+    515            uint32_t calibration_value = 0;
+    516          
+    517            // Determine offset based on HFRCOEM23 frequency.
+    518            if (frequency == 40000000UL) {
+    519          #if defined(DEVINFO_GP_HFRCOEM2340MHZ_OFFSET)
+    520              offset = DEVINFO_GP_HFRCOEM2340MHZ_OFFSET;
+    521          #else
+    522              // Default to 20Mhz.
+    523              offset = DEVINFO_GP_HFRCOEM23DEFAULT_OFFSET;
+    524          #endif
+    525            } else {
+    526              offset = DEVINFO_GP_HFRCOEM23DEFAULT_OFFSET;
+    527            }
+    528          
+    529            // Initialize command context.
+    530            status = sl_se_init_command_context(&se_command_ctx);
+    531            if (status != SL_STATUS_OK) {
+    532              return 0;
+    533            }
+    534          
+    535            // Send the SE command to retrieve the HFRCOEM23 calibration from the DEVINFO OTP section.
+    536            status = sli_se_device_data_read_word(&se_command_ctx, otp_section_id, offset, &calibration_value);
+    537            if (status != SL_STATUS_OK) {
+    538              return 0;
+    539            }
+    540          
+    541            return calibration_value;
+    542          #elif defined(_SILICON_LABS_32B_SERIES_2) && defined(HFRCOEM23_PRESENT)
+    543            uint32_t calibration_value = 0;
+    544            switch (frequency) {
+    545              // 1, 2 and 4MHz share the same calibration word.
+    546              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_1M0Hz:
+    547              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_2M0Hz:
+    548              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_4M0Hz:
+    549                calibration_value = DEVINFO->HFRCOEM23CAL[0].HFRCOEM23CAL;
+    550                break;
+    551          
+    552          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_3) || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_5) \
+    553                || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_8) || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_13)
+    554              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_5M0Hz:
+    555                calibration_value = DEVINFO->HFRCOEM23CAL[1].HFRCOEM23CAL;
+    556                break;
+    557              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_10M0Hz:
+    558                calibration_value = DEVINFO->HFRCOEM23CAL[4].HFRCOEM23CAL;
+    559                break;
+    560              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_20M0Hz:
+    561                calibration_value = DEVINFO->HFRCOEM23CAL[9].HFRCOEM23CAL;
+    562                break;
+    563            #endif
+    564          
+    565              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_7M0Hz:
+    566                calibration_value = DEVINFO->HFRCOEM23CAL[3].HFRCOEM23CAL;
+    567                break;
+    568          
+    569              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_13M0Hz:
+    570                calibration_value = DEVINFO->HFRCOEM23CAL[6].HFRCOEM23CAL;
+    571                break;
+    572          
+    573              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_16M0Hz:
+    574                calibration_value = DEVINFO->HFRCOEM23CAL[7].HFRCOEM23CAL;
+    575                break;
+    576          
+    577              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_19M0Hz:
+    578                calibration_value = DEVINFO->HFRCOEM23CAL[8].HFRCOEM23CAL;
+    579                break;
+    580          
+    581              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_26M0Hz:
+    582                calibration_value = DEVINFO->HFRCOEM23CAL[10].HFRCOEM23CAL;
+    583                break;
+    584          
+    585              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_32M0Hz:
+    586                calibration_value = DEVINFO->HFRCOEM23CAL[11].HFRCOEM23CAL;
+    587                break;
+    588          
+    589              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_40M0Hz:
+    590                calibration_value = DEVINFO->HFRCOEM23CAL[12].HFRCOEM23CAL;
+    591                break;
+    592          
+    593              case SL_HAL_SYSTEM_HFRCOEM23_FREQ_USER_DEFINED:
+    594                break;
+    595          
+    596              default:
+    597                return 0;
+    598            }
+    599            return calibration_value;
+    600          
+    601          #else
+    602            (void)frequency;
+    603            return 0;
+   \                     sl_hal_system_get_hfrcoem23_calibration: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR
+    604          #endif
+    605          }
+    606          
+    607          /***************************************************************************//**
+    608           * Get a factory calibration value for HFXOCAL.
+    609           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    610          uint32_t sl_hal_system_get_hfxocal(void)
+    611          {
+    612          #if defined(_DEVINFO_HFXOCAL_MASK)
+    613            return DEVINFO->HFXOCAL;
+    614          #else
+    615            return 0;
+   \                     sl_hal_system_get_hfxocal: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR
+    616          #endif
+    617          }
+    618          
+    619          /***************************************************************************//**
+    620           * Get family security capability.
+    621           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    622          sl_hal_system_security_capability_t sl_hal_system_get_security_capability(void)
+    623          {
+    624            sl_hal_system_security_capability_t sc = SL_SYSTEM_SECURITY_CAPABILITY_UNKNOWN;
+    625          
+    626            uint16_t mcu_feature_set_major;
+    627            uint16_t device_number;
+    628            device_number = sl_hal_system_get_part_number();
+   \                     sl_hal_system_get_security_capability: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_7
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+    629            mcu_feature_set_major = 'A' + (device_number / 1000);
+    630          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+    631            // override feature set since BRD4182A Rev A00 -> rev B02 are marked "A".
+    632            mcu_feature_set_major = 'C';
+    633          #endif
+    634          
+    635            switch (mcu_feature_set_major) {
+    636              case 'A':
+    637                sc = SL_SYSTEM_SECURITY_CAPABILITY_SE;
+    638                break;
+    639          
+    640              case 'B':
+    641                sc = SL_SYSTEM_SECURITY_CAPABILITY_VAULT;
+    642                break;
+    643          
+    644              case 'C':
+    645                sc = SL_SYSTEM_SECURITY_CAPABILITY_ROT;
+    646                break;
+    647          
+    648              default:
+    649                sc = SL_SYSTEM_SECURITY_CAPABILITY_UNKNOWN;
+    650                break;
+    651            }
+    652          
+    653            return sc;
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x4770             BX       LR
+    654          }
+    655          
+    656          /***************************************************************************//**
+    657           * Get the unique number for this device.
+    658           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    659          uint64_t sl_hal_system_get_unique(void)
+    660          {
+    661            uint32_t tmp = DEVINFO->EUI64L;
+   \                     sl_hal_system_get_unique: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable19_27
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+    662            return ((uint64_t)DEVINFO->EUI64H << 32) | tmp;
+   \        0x4   0x6849             LDR      R1,[R1, #+4]
+   \        0x6   0x4770             BX       LR
+    663          }
+    664          
+    665          /***************************************************************************//**
+    666           * Get the production revision for this part.
+    667           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    668          uint8_t sl_hal_system_get_prod_rev(void)
+    669          {
+    670          #if defined(_DEVINFO_INFO_PRODREV_MASK)
+    671            return (uint8_t)((DEVINFO->INFO & _DEVINFO_INFO_PRODREV_MASK)
+    672                             >> _DEVINFO_INFO_PRODREV_SHIFT);
+   \                     sl_hal_system_get_prod_rev: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_1
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0200             LSLS     R0,R0,#+8
+   \        0x6   0x0E00             LSRS     R0,R0,#+24
+   \        0x8   0x4770             BX       LR
+    673          #elif defined(_DEVINFO_REVISION_PRODREV_MASK)
+    674            return (uint8_t)((DEVINFO->REVISION & _DEVINFO_REVISION_PRODREV_MASK)
+    675                             >> _DEVINFO_REVISION_PRODREV_SHIFT);
+    676          #else
+    677          #error (sl_hal_system.c): Location of production revision is not defined.
+    678          #endif
+    679          }
+    680          
+    681          /***************************************************************************//**
+    682           * Get the SRAM Base Address.
+    683           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    684          uint32_t sl_hal_system_get_sram_base_address(void)
+    685          {
+    686            return SRAM_BASE;
+   \                     sl_hal_system_get_sram_base_address: (+1)
+   \        0x0   0xF04F 0x5000      MOV      R0,#+536870912
+   \        0x4   0x4770             BX       LR
+    687          }
+    688          
+    689          /***************************************************************************//**
+    690           * Get the SRAM size (in KB).
+    691           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    692          uint16_t sl_hal_system_get_sram_size(void)
+    693          {
+    694          #if defined(_DEVINFO_MSIZE_SRAM_MASK)
+    695            return (uint16_t)((DEVINFO->MSIZE & _DEVINFO_MSIZE_SRAM_MASK)
+    696                              >> _DEVINFO_MSIZE_SRAM_SHIFT);
+   \                     sl_hal_system_get_sram_size: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_28
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0140             LSLS     R0,R0,#+5
+   \        0x6   0x0D40             LSRS     R0,R0,#+21
+   \        0x8   0x4770             BX       LR
+    697          #elif defined(_DEVINFO_EMBSIZE_RAM_MASK)
+    698            return (uint16_t)((DEVINFO->EMBSIZE & _DEVINFO_EMBSIZE_RAM_MASK)
+    699                              >> _DEVINFO_EMBSIZE_RAM_SHIFT);
+    700          #else
+    701            #error (sl_hal_system.c): Location of SRAM Size is not defined.
+    702          #endif
+    703          }
+    704          
+    705          /***************************************************************************//**
+    706           * Get the flash size (in KB).
+    707           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    708          uint16_t sl_hal_system_get_flash_size(void)
+    709          {
+    710          #if defined(_DEVINFO_MSIZE_FLASH_MASK)
+    711            return (uint16_t)((DEVINFO->MSIZE & _DEVINFO_MSIZE_FLASH_MASK)
+    712                              >> _DEVINFO_MSIZE_FLASH_SHIFT);
+   \                     sl_hal_system_get_flash_size: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_28
+   \        0x2   0x....             B.N      ?Subroutine0
+    713          #elif defined(_DEVINFO_STACKMSIZE_FLASH_MASK)
+    714            uint16_t stacked_flach_size = (uint16_t)((DEVINFO->STACKMSIZE & _DEVINFO_STACKMSIZE_FLASH_MASK)
+    715                                                     >> _DEVINFO_STACKMSIZE_FLASH_SHIFT);
+    716          
+    717            if (stacked_flach_size == 0) {
+    718              // Defined in linker script for external flash provided by customers.
+    719              extern uint32_t __flash_size__;
+    720              // Get flash size in kB.
+    721              stacked_flach_size = (uint16_t)((uintptr_t)&__flash_size__ / 1024);
+    722            }
+    723          
+    724            return stacked_flach_size;
+    725          #endif
+    726          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xB280             UXTH     R0,R0
+   \        0x4   0x4770             BX       LR
+    727          
+    728          /***************************************************************************//**
+    729           * Get the flash page size in bytes.
+    730           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    731          uint32_t sl_hal_system_get_flash_page_size(void)
+    732          {
+    733          #if defined(_DEVINFO_MEMINFO_FLASHPAGESIZE_MASK)
+    734            uint32_t tmp;
+    735            tmp = (DEVINFO->MEMINFO & _DEVINFO_MEMINFO_FLASHPAGESIZE_MASK)
+    736                  >> _DEVINFO_MEMINFO_FLASHPAGESIZE_SHIFT;
+   \                     sl_hal_system_get_flash_page_size: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_29
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+    737            return 1UL << ((tmp + 10UL) & 0x1FUL);
+   \        0x4   0x2101             MOVS     R1,#+1
+   \        0x6   0x300A             ADDS     R0,R0,#+10
+   \        0x8   0xF000 0x001F      AND      R0,R0,#0x1F
+   \        0xC   0xFA01 0xF000      LSL      R0,R1,R0
+   \       0x10   0x4770             BX       LR
+    738          #else
+    739            // Defined in linker script for external flash provided by customers.
+    740            extern uint32_t __flash_page_size__;
+    741            return (uintptr_t)&__flash_page_size__;
+    742          #endif
+    743          }
+    744          
+    745          /***************************************************************************//**
+    746           * Get the MCU part number.
+    747           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    748          uint16_t sl_hal_system_get_part_number(void)
+    749          {
+    750          #if defined(_DEVINFO_PART_DEVICENUM_MASK)
+    751            return (uint16_t)((DEVINFO->PART & _DEVINFO_PART_DEVICENUM_MASK)
+    752                              >> _DEVINFO_PART_DEVICENUM_SHIFT);
+   \                     sl_hal_system_get_part_number: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_7
+   \        0x2                      REQUIRE ?Subroutine0
+   \        0x2                      ; // Fall through to label ?Subroutine0
+    753          #elif defined(_DEVINFO_PART0_DIECODE0_MASK) && defined(_SILICON_LABS_SECURITY_FEATURE_VAULT)
+    754            // Encode features to the series 2 format.
+    755            // Add security level vault high for SIxG301.
+    756            uint16_t device_number = 1000;
+    757            uint32_t register_value = (DEVINFO->PART1 & _DEVINFO_PART1_FEATURE1_MASK) >> _DEVINFO_PART1_FEATURE1_SHIFT;
+    758          
+    759            device_number = sli_hex_ascii_to_value((char)register_value) * 100;
+    760          
+    761            register_value = (DEVINFO->PART1 & _DEVINFO_PART1_FEATURE2_MASK) >> _DEVINFO_PART1_FEATURE2_SHIFT;
+    762            device_number += sli_hex_ascii_to_value((char)register_value) * 10;
+    763          
+    764            register_value = (DEVINFO->PART2 & _DEVINFO_PART2_FEATURE3_MASK) >> _DEVINFO_PART2_FEATURE3_SHIFT;
+    765            device_number += sli_hex_ascii_to_value((char)register_value);
+    766          
+    767            return device_number;
+    768          #else
+    769          #error (em_system.c): Location of device part number is not defined.
+    770          #endif
+    771          }
+    772          
+    773          /***************************************************************************//**
+    774           * Get the SoC or MCU features.
+    775           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    776          sl_hal_system_features_t sl_hal_system_get_part_features(void)
+    777          {
+   \                     sl_hal_system_get_part_features: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    778            sl_hal_system_features_t part_features = { .feature1 = '0', .feature2 = '0', .feature3 = '0' };
+   \        0x2   0xBF00             Nop
+   \        0x4   0x....             ADR.N    R1,?_2
+   \        0x6   0x6808             LDR      R0,[R1, #+0]
+    779          
+    780          #if defined(_SILICON_LABS_32B_SERIES_2)
+    781            uint16_t device_number = ((DEVINFO->PART & _DEVINFO_PART_DEVICENUM_MASK) >> _DEVINFO_PART_DEVICENUM_SHIFT);
+   \        0x8   0x....             LDR.N    R2,??DataTable19_7
+    782          
+    783            part_features.feature1 = sli_get_n_digit(device_number, 2);
+   \        0xA   0x2102             MOVS     R1,#+2
+   \        0xC   0x9000             STR      R0,[SP, #+0]
+   \        0xE   0x6814             LDR      R4,[R2, #+0]
+   \       0x10   0xB2A0             UXTH     R0,R4
+   \       0x12   0x.... 0x....      BL       sli_get_n_digit
+   \       0x16   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    784            part_features.feature2 = sli_get_n_digit(device_number, 1);
+   \       0x1A   0x2101             MOVS     R1,#+1
+   \       0x1C   0xB2A0             UXTH     R0,R4
+   \       0x1E   0x.... 0x....      BL       sli_get_n_digit
+   \       0x22   0xF88D 0x0001      STRB     R0,[SP, #+1]
+    785            part_features.feature3 = sli_get_n_digit(device_number, 0);
+   \       0x26   0x2100             MOVS     R1,#+0
+   \       0x28   0xB2A0             UXTH     R0,R4
+   \       0x2A   0x.... 0x....      BL       sli_get_n_digit
+   \       0x2E   0xF88D 0x0002      STRB     R0,[SP, #+2]
+    786          
+    787          #elif defined(_SILICON_LABS_32B_SERIES_3)
+    788          
+    789            part_features.feature1 = (DEVINFO->PART1 & _DEVINFO_PART1_FEATURE1_MASK) >> _DEVINFO_PART1_FEATURE1_SHIFT;
+    790            part_features.feature2 = (DEVINFO->PART1 & _DEVINFO_PART1_FEATURE2_MASK) >> _DEVINFO_PART1_FEATURE2_SHIFT;
+    791            part_features.feature3 = (DEVINFO->PART2 & _DEVINFO_PART2_FEATURE3_MASK) >> _DEVINFO_PART2_FEATURE3_SHIFT;
+    792          
+    793          #else
+    794          #error Not defined for this die.
+    795          #endif
+    796          
+    797            return part_features;
+   \       0x32   0x9800             LDR      R0,[SP, #+0]
+   \       0x34   0xBD16             POP      {R1,R2,R4,PC}
+    798          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x30 0x30          DC8 48, 48, 48
+   \              0x30
+   \        0x3                      DS8 1
+    799          
+    800          /***************************************************************************//**
+    801           * Get the temperature information.
+    802           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    803          void sl_hal_system_get_temperature_info(sl_hal_system_devinfo_temperature_t *info)
+    804          {
+    805          #if defined(_DEVINFO_CALTEMP_MASK) || defined(_DEVINFO_EMUTEMP_MASK)
+    806          #if defined(_DEVINFO_CALTEMP_TEMP_MASK)
+    807            info->cal_temp = ((DEVINFO->CALTEMP & _DEVINFO_CALTEMP_TEMP_MASK)
+    808                              >> _DEVINFO_CALTEMP_TEMP_SHIFT);
+   \                     sl_hal_system_get_temperature_info: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable19_30
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0xF002 0x02FF      AND      R2,R2,#0xFF
+   \        0x8   0x8042             STRH     R2,[R0, #+2]
+    809          #else
+    810            info->cal_temp = 0;
+    811          #endif
+    812          #if defined(_DEVINFO_EMUTEMP_EMUTEMPROOM_MASK)
+    813            info->emu_temp_room = ((DEVINFO->EMUTEMP & _DEVINFO_EMUTEMP_EMUTEMPROOM_MASK)
+    814                                   >> _DEVINFO_EMUTEMP_EMUTEMPROOM_SHIFT);
+   \        0xA   0x6849             LDR      R1,[R1, #+4]
+   \        0xC   0xF3C1 0x0188      UBFX     R1,R1,#+2,#+9
+   \       0x10   0x8001             STRH     R1,[R0, #+0]
+    815          #else
+    816            info->emu_temp_room = 0;
+    817          #endif
+    818          #elif defined(_SILICON_LABS_32B_SERIES_3)
+    819            sl_status_t status;
+    820            sl_se_command_context_t se_command_ctx;
+    821            sli_se_device_data_t otp_section_id = (sli_se_device_data_t)(SLI_SE_DEVICE_DATA_DI0 + DEVINFO_GP_FRAGMENT_INDEX);
+    822            uint32_t offset = DEVINFO_GP_TEMPERATURE_OFFSET;
+    823          
+    824            // Initialize command context.
+    825            status = sl_se_init_command_context(&se_command_ctx);
+    826            if (status != SL_STATUS_OK) {
+    827              *info = SL_HAL_SYSTEM_DEVINFO_TEMPERATURE_RESET_VALUES;
+    828              return;
+    829            }
+    830          
+    831            // Send the SE command to retrieve the temperature information from the DEVINFO OTP section.
+    832            status = sli_se_device_data_read_word(&se_command_ctx, otp_section_id, offset, (uint32_t*)info);
+    833            if (status != SL_STATUS_OK) {
+    834              *info = SL_HAL_SYSTEM_DEVINFO_TEMPERATURE_RESET_VALUES;
+    835              return;
+    836            }
+    837          
+    838            // Divide the temperature by 16 to retrieve only the integer part of the temperature value.
+    839            info->cal_temp = info->cal_temp >> DEVINFO_TEMPERATURE_CALTEMP_INTEGER_SHIFT;
+    840          #else
+    841            (void)info;
+    842          #endif
+    843          }
+   \       0x12   0x4770             BX       LR
+    844          
+    845          #if defined(__FPU_PRESENT) && (__FPU_PRESENT == 1)
+    846          /***************************************************************************//**
+    847           * Set floating point co-processor (FPU) access mode.
+    848           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    849          void sl_hal_system_fpu_set_access_mode(sl_hal_system_fpu_access_t access_mode)
+    850          {
+    851            SCB->CPACR = (SCB->CPACR & ~(0xFUL << 20)) | access_mode;
+   \                     sl_hal_system_fpu_set_access_mode: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable19_31
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0xF422 0x0270      BIC      R2,R2,#0xF00000
+   \        0x8   0x4310             ORRS     R0,R0,R2
+   \        0xA   0x6008             STR      R0,[R1, #+0]
+    852          }
+   \        0xC   0x4770             BX       LR
+    853          #endif
+    854          
+    855          /***************************************************************************//**
+    856           * Get the ADC calibration info.
+    857           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    858          void sl_hal_system_get_adc_calibration_info(sl_hal_system_devinfo_adc_t *info)
+    859          {
+    860          #if defined(HAL_SYSTEM_CALIBRATION_SUPPORT)
+    861            sl_status_t status;
+    862            sl_se_command_context_t se_command_ctx;
+    863            sli_se_device_data_t otp_section_id = (sli_se_device_data_t)(SLI_SE_DEVICE_DATA_DI0 + DEVINFO_GP_FRAGMENT_INDEX);
+    864            uint32_t offset = DEVINFO_GP_ADC0CALDATA_OFFSET;
+    865            EFM_ASSERT(info != NULL);
+    866          
+    867            // Initialize command context.
+    868            status = sl_se_init_command_context(&se_command_ctx);
+    869            if (status != SL_STATUS_OK) {
+    870              *info = SL_HAL_SYSTEM_DEVINFO_ADC_RESET_VALUES;
+    871              return;
+    872            }
+    873          
+    874            // Send the SE command to retrieve the ADC calibration from the DEVINFO OTP section.
+    875            status = sli_se_device_data_read_chunk(&se_command_ctx,
+    876                                                   otp_section_id,
+    877                                                   offset,
+    878                                                   sizeof(sl_hal_system_devinfo_adc_t),
+    879                                                   info);
+    880            if (status != SL_STATUS_OK) {
+    881              *info = SL_HAL_SYSTEM_DEVINFO_ADC_RESET_VALUES;
+    882              return;
+    883            }
+    884          #else
+    885            *info = SL_HAL_SYSTEM_DEVINFO_ADC_RESET_VALUES;
+   \                     sl_hal_system_get_adc_calibration_info: (+1)
+   \        0x0   0x2108             MOVS     R1,#+8
+   \        0x2   0x.... 0x....      B.W      __aeabi_memclr
+    886          #endif
+    887          }
+    888          
+    889          /***************************************************************************//**
+    890           * Check if a debugger is connected (and debug session activated).
+    891           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    892          bool sl_hal_system_is_debugger_connected(void)
+    893          {
+    894            return (CoreDebug->DHCSR & CoreDebug_DHCSR_C_DEBUGEN_Msk) ? true : false;
+   \                     sl_hal_system_is_debugger_connected: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable19_32
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0xF000 0x0001      AND      R0,R0,#0x1
+   \        0x8   0x4770             BX       LR
+    895          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_1:
+   \        0x0   0x0FE0'8000        DC32     0xfe08000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_2:
+   \        0x0   0x5000'8064        DC32     0x50008064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_3:
+   \        0x0   0x5000'9064        DC32     0x50009064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_4:
+   \        0x0   0x5001'2020        DC32     0x50012020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_5:
+   \        0x0   0x5000'A064        DC32     0x5000a064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_6:
+   \        0x0   0x5007'C014        DC32     0x5007c014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_7:
+   \        0x0   0x0FE0'8004        DC32     0xfe08004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_8:
+   \        0x0   0x3F3F'0000        DC32     0x3f3f0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_9:
+   \        0x0   0x0FE0'8058        DC32     0xfe08058
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_10:
+   \        0x0   0x000F'4240        DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_11:
+   \        0x0   0x001E'8480        DC32     0x1e8480
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_12:
+   \        0x0   0x003D'0900        DC32     0x3d0900
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_13:
+   \        0x0   0x004C'4B40        DC32     0x4c4b40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_14:
+   \        0x0   0x006A'CFC0        DC32     0x6acfc0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_15:
+   \        0x0   0x0098'9680        DC32     0x989680
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_16:
+   \        0x0   0x00C6'5D40        DC32     0xc65d40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_17:
+   \        0x0   0x00F4'2400        DC32     0xf42400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_18:
+   \        0x0   0x0121'EAC0        DC32     0x121eac0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_19:
+   \        0x0   0x0131'2D00        DC32     0x1312d00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_20:
+   \        0x0   0x018C'BA80        DC32     0x18cba80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_21:
+   \        0x0   0x01E8'4800        DC32     0x1e84800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_22:
+   \        0x0   0x0243'D580        DC32     0x243d580
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_23:
+   \        0x0   0x02DC'6C00        DC32     0x2dc6c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_24:
+   \        0x0   0x0356'7E00        DC32     0x3567e00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_25:
+   \        0x0   0x03D0'9000        DC32     0x3d09000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_26:
+   \        0x0   0x04C4'B400        DC32     0x4c4b400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_27:
+   \        0x0   0x0FE0'8048        DC32     0xfe08048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_28:
+   \        0x0   0x0FE0'800C        DC32     0xfe0800c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_29:
+   \        0x0   0x0FE0'8008        DC32     0xfe08008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_30:
+   \        0x0   0x0FE0'8050        DC32     0xfe08050
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_31:
+   \        0x0   0xE000'ED88        DC32     0xe000ed88
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_32:
+   \        0x0   0xE000'EDF0        DC32     0xe000edf0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0x68   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0x70   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x72 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0x78   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x73, 0x79, 0x73, 0x74
+   \              0x6C 0x5F    
+   \              0x73 0x79    
+   \              0x73 0x74
+   \       0x80   0x65 0x6D          DC8 0x65, 0x6D, 0x2E, 0x63, 0
+   \              0x2E 0x63    
+   \              0x00
+   \       0x85                      DS8 3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x0000'000A        DC32 10, 100, 1'000, 10'000, 100'000
+   \              0x0000'0064  
+   \              0x0000'03E8  
+   \              0x0000'2710  
+   \              0x0001'86A0
+    896          
+    897          /** @} (end addtogroup system) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_hal_system_fpu_set_access_mode
+       0   sl_hal_system_get_adc_calibration_info
+         0   -> __aeabi_memclr
+       8   sl_hal_system_get_chip_revision
+       0   sl_hal_system_get_devinfo_rev
+       0   sl_hal_system_get_family
+       0   sl_hal_system_get_flash_page_size
+       0   sl_hal_system_get_flash_size
+       0   sl_hal_system_get_hfrco_default_calibration
+       0   sl_hal_system_get_hfrco_speed_calibration
+       0   sl_hal_system_get_hfrcodpll_band_calibration
+       0   sl_hal_system_get_hfrcoem23_calibration
+       0   sl_hal_system_get_hfxocal
+      16   sl_hal_system_get_part_features
+        16   -> sli_get_n_digit
+       0   sl_hal_system_get_part_number
+       0   sl_hal_system_get_prod_rev
+       0   sl_hal_system_get_security_capability
+       0   sl_hal_system_get_sram_base_address
+       0   sl_hal_system_get_sram_size
+       0   sl_hal_system_get_temperature_info
+       0   sl_hal_system_get_unique
+       8   sl_hal_system_init
+       0   sl_hal_system_is_debugger_connected
+      32   sli_get_n_digit
+        32   -> __aeabi_memcpy4
+        32   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable19
+       4  ??DataTable19_1
+       4  ??DataTable19_10
+       4  ??DataTable19_11
+       4  ??DataTable19_12
+       4  ??DataTable19_13
+       4  ??DataTable19_14
+       4  ??DataTable19_15
+       4  ??DataTable19_16
+       4  ??DataTable19_17
+       4  ??DataTable19_18
+       4  ??DataTable19_19
+       4  ??DataTable19_2
+       4  ??DataTable19_20
+       4  ??DataTable19_21
+       4  ??DataTable19_22
+       4  ??DataTable19_23
+       4  ??DataTable19_24
+       4  ??DataTable19_25
+       4  ??DataTable19_26
+       4  ??DataTable19_27
+       4  ??DataTable19_28
+       4  ??DataTable19_29
+       4  ??DataTable19_3
+       4  ??DataTable19_30
+       4  ??DataTable19_31
+       4  ??DataTable19_32
+       4  ??DataTable19_4
+       4  ??DataTable19_5
+       4  ??DataTable19_6
+       4  ??DataTable19_7
+       4  ??DataTable19_8
+       4  ??DataTable19_9
+       6  ?Subroutine0
+     136  ?_0
+      20  ?_1
+       4  ?_2
+       8  SL_HAL_SYSTEM_DEVINFO_ADC_RESET_VALUES
+       4  SL_HAL_SYSTEM_DEVINFO_TEMPERATURE_RESET_VALUES
+      14  sl_hal_system_fpu_set_access_mode
+       6  sl_hal_system_get_adc_calibration_info
+      38  sl_hal_system_get_chip_revision
+       8  sl_hal_system_get_devinfo_rev
+      10  sl_hal_system_get_family
+      18  sl_hal_system_get_flash_page_size
+       4  sl_hal_system_get_flash_size
+       4  sl_hal_system_get_hfrco_default_calibration
+       4  sl_hal_system_get_hfrco_speed_calibration
+     172  sl_hal_system_get_hfrcodpll_band_calibration
+       4  sl_hal_system_get_hfrcoem23_calibration
+       4  sl_hal_system_get_hfxocal
+      54  sl_hal_system_get_part_features
+       2  sl_hal_system_get_part_number
+      10  sl_hal_system_get_prod_rev
+       8  sl_hal_system_get_security_capability
+       6  sl_hal_system_get_sram_base_address
+      10  sl_hal_system_get_sram_size
+      20  sl_hal_system_get_temperature_info
+       8  sl_hal_system_get_unique
+      44  sl_hal_system_init
+      10  sl_hal_system_is_debugger_connected
+      74  sli_get_n_digit
+
+ 
+ 148 bytes in section .rodata
+ 694 bytes in section .text
+ 
+ 694 bytes of CODE  memory
+ 148 bytes of CONST memory
+
+Errors: none
+Warnings: none

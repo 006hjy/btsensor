@@ -1,0 +1,1008 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:35
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\sl_device_clock.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_2437111286800332551.dir\sl_device_clock.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\sl_device_clock.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_2437111286800332551.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_2437111286800332551.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_2437111286800332551.dir\sl_device_clock.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_2437111286800332551.dir\sl_device_clock.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_2437111286800332551.dir\sl_device_clock.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_2437111286800332551.dir\sl_device_clock.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\sl_device_clock.c
+      1          /**************************************************************************//**
+      2           * @file
+      3           * @brief Device Manager Clock API Definition
+      4           ******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories, Inc. www.silabs.com</b>
+      7           ******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           *****************************************************************************/
+     30          
+     31          #include "sl_device_clock.h"
+     32          #include "cmsis_compiler.h"
+     33          
+     34          /***************************************************************************//**
+     35           * @addtogroup device_clock Device Manager Clock
+     36           * @{
+     37           ******************************************************************************/
+     38          
+     39          // External declaration for ACMP0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     40          __WEAK const uint32_t SL_BUS_CLOCK_ACMP0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ACMP0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     41          
+     42          // External declaration for ACMP1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     43          __WEAK const uint32_t SL_BUS_CLOCK_ACMP1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ACMP1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     44          
+     45          // External declaration for ADC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     46          __WEAK const uint32_t SL_BUS_CLOCK_ADC0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ADC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     47          
+     48          // External declaration for ADC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     49          __WEAK const uint32_t SL_BUS_CLOCK_ADC1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ADC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     50          
+     51          // External declaration for AGC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     52          __WEAK const uint32_t SL_BUS_CLOCK_AGC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_AGC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     53          
+     54          // External declaration for AMUXCP0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     55          __WEAK const uint32_t SL_BUS_CLOCK_AMUXCP0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_AMUXCP0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     56          
+     57          // External declaration for BUFC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     58          __WEAK const uint32_t SL_BUS_CLOCK_BUFC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_BUFC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     59          
+     60          // External declaration for BURAM peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     61          __WEAK const uint32_t SL_BUS_CLOCK_BURAM_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_BURAM_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     62          
+     63          // External declaration for BURTC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     64          __WEAK const uint32_t SL_BUS_CLOCK_BURTC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_BURTC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     65          
+     66          // External declaration for CRYPTOACC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     67          __WEAK const uint32_t SL_BUS_CLOCK_CRYPTOACC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_CRYPTOACC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     68          
+     69          // External declaration for DCDC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     70          __WEAK const uint32_t SL_BUS_CLOCK_DCDC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_DCDC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     71          
+     72          // External declaration for DEVINFO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     73          __WEAK const uint32_t SL_BUS_CLOCK_DEVINFO_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_DEVINFO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     74          
+     75          // External declaration for DMEM peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     76          __WEAK const uint32_t SL_BUS_CLOCK_DMEM_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_DMEM_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     77          
+     78          // External declaration for DPLL0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     79          __WEAK const uint32_t SL_BUS_CLOCK_DPLL0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_DPLL0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     80          
+     81          // External declaration for ECAIFADC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     82          __WEAK const uint32_t SL_BUS_CLOCK_ECAIFADC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ECAIFADC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     83          
+     84          // External declaration for ETAMPDET peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     85          __WEAK const uint32_t SL_BUS_CLOCK_ETAMPDET_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ETAMPDET_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     86          
+     87          // External declaration for EUART0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     88          __WEAK const uint32_t SL_BUS_CLOCK_EUART0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_EUART0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     89          
+     90          // External declaration for EUSART0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     91          __WEAK const uint32_t SL_BUS_CLOCK_EUSART0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_EUSART0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     92          
+     93          // External declaration for EUSART1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     94          __WEAK const uint32_t SL_BUS_CLOCK_EUSART1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_EUSART1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     95          
+     96          // External declaration for EUSART2 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     97          __WEAK const uint32_t SL_BUS_CLOCK_EUSART2_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_EUSART2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     98          
+     99          // External declaration for EUSART3 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    100          __WEAK const uint32_t SL_BUS_CLOCK_EUSART3_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_EUSART3_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    101          
+    102          // External declaration for EUSART4 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    103          __WEAK const uint32_t SL_BUS_CLOCK_EUSART4_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_EUSART4_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    104          
+    105          // External declaration for FRC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    106          __WEAK const uint32_t SL_BUS_CLOCK_FRC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_FRC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    107          
+    108          // External declaration for FSRCO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    109          __WEAK const uint32_t SL_BUS_CLOCK_FSRCO_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_FSRCO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    110          
+    111          // External declaration for GPCRC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    112          __WEAK const uint32_t SL_BUS_CLOCK_GPCRC0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_GPCRC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    113          
+    114          // External declaration for GPIO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    115          __WEAK const uint32_t SL_BUS_CLOCK_GPIO_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_GPIO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    116          
+    117          // External declaration for HFRCO0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    118          __WEAK const uint32_t SL_BUS_CLOCK_HFRCO0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_HFRCO0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    119          
+    120          // External declaration for HFRCOEM23 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    121          __WEAK const uint32_t SL_BUS_CLOCK_HFRCOEM23_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_HFRCOEM23_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    122          
+    123          // External declaration for HFXO0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    124          __WEAK const uint32_t SL_BUS_CLOCK_HFXO0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_HFXO0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    125          
+    126          // External declaration for HOSTMAILBOX peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    127          __WEAK const uint32_t SL_BUS_CLOCK_HOSTMAILBOX_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_HOSTMAILBOX_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    128          
+    129          // External declaration for HOSTPORTAL peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    130          __WEAK const uint32_t SL_BUS_CLOCK_HOSTPORTAL_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_HOSTPORTAL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    131          
+    132          // External declaration for I2C0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    133          __WEAK const uint32_t SL_BUS_CLOCK_I2C0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_I2C0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    134          
+    135          // External declaration for I2C1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    136          __WEAK const uint32_t SL_BUS_CLOCK_I2C1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_I2C1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    137          
+    138          // External declaration for I2C2 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    139          __WEAK const uint32_t SL_BUS_CLOCK_I2C2_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_I2C2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    140          
+    141          // External declaration for I2C3 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    142          __WEAK const uint32_t SL_BUS_CLOCK_I2C3_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_I2C3_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    143          
+    144          // External declaration for IADC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    145          __WEAK const uint32_t SL_BUS_CLOCK_IADC0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_IADC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    146          
+    147          // External declaration for ICACHE0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    148          __WEAK const uint32_t SL_BUS_CLOCK_ICACHE0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ICACHE0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    149          
+    150          // External declaration for IFADCDEBUG peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    151          __WEAK const uint32_t SL_BUS_CLOCK_IFADCDEBUG_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_IFADCDEBUG_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    152          
+    153          // External declaration for KEYSCAN peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    154          __WEAK const uint32_t SL_BUS_CLOCK_KEYSCAN_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_KEYSCAN_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    155          
+    156          // External declaration for KSU peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    157          __WEAK const uint32_t SL_BUS_CLOCK_KSU_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_KSU_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    158          
+    159          // External declaration for L2ICACHE0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    160          __WEAK const uint32_t SL_BUS_CLOCK_L2ICACHE0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_L2ICACHE0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    161          
+    162          // External declaration for LCD peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    163          __WEAK const uint32_t SL_BUS_CLOCK_LCD_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LCD_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    164          
+    165          // External declaration for LDMA0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    166          __WEAK const uint32_t SL_BUS_CLOCK_LDMA0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LDMA0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    167          
+    168          // External declaration for LDMAXBAR0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    169          __WEAK const uint32_t SL_BUS_CLOCK_LDMAXBAR0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LDMAXBAR0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    170          
+    171          // External declaration for LEDDRV0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    172          __WEAK const uint32_t SL_BUS_CLOCK_LEDDRV0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LEDDRV0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    173          
+    174          // External declaration for LEDDRV0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    175          __WEAK const uint32_t SL_BUS_CLOCK_LEDSINK0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LEDSINK0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    176          
+    177          // External declaration for LESENSE peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    178          __WEAK const uint32_t SL_BUS_CLOCK_LESENSE_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LESENSE_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    179          
+    180          // External declaration for LETIMER0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    181          __WEAK const uint32_t SL_BUS_CLOCK_LETIMER0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LETIMER0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    182          
+    183          // External declaration for LFRCO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    184          __WEAK const uint32_t SL_BUS_CLOCK_LFRCO_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LFRCO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    185          
+    186          // External declaration for LFXO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    187          __WEAK const uint32_t SL_BUS_CLOCK_LFXO_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LFXO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    188          
+    189          // External declaration for LPWAES peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    190          __WEAK const uint32_t SL_BUS_CLOCK_LPWAES_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LPWAES_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    191          
+    192          // External declaration for LPW0PORTAL peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    193          __WEAK const uint32_t SL_BUS_CLOCK_LPW0PORTAL_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_LPW0PORTAL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    194          
+    195          // External declaration for MODEM peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    196          __WEAK const uint32_t SL_BUS_CLOCK_MODEM_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_MODEM_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    197          
+    198          // External declaration for MSC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    199          __WEAK const uint32_t SL_BUS_CLOCK_MSC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_MSC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    200          
+    201          // External declaration for MVP peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    202          __WEAK const uint32_t SL_BUS_CLOCK_MVP_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_MVP_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    203          
+    204          // External declaration for PCNT0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    205          __WEAK const uint32_t SL_BUS_CLOCK_PCNT0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_PCNT0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    206          
+    207          // External declaration for PDM peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    208          __WEAK const uint32_t SL_BUS_CLOCK_PDM_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_PDM_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    209          
+    210          // External declaration for PIXELRZ0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    211          __WEAK const uint32_t SL_BUS_CLOCK_PIXELRZ0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_PIXELRZ0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    212          
+    213          // External declaration for PIXELRZ1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    214          __WEAK const uint32_t SL_BUS_CLOCK_PIXELRZ1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_PIXELRZ1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    215          
+    216          // External declaration for PRORTC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    217          __WEAK const uint32_t SL_BUS_CLOCK_PRORTC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_PRORTC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    218          
+    219          // External declaration for PROTIMER peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    220          __WEAK const uint32_t SL_BUS_CLOCK_PROTIMER_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_PROTIMER_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    221          
+    222          // External declaration for PRS peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    223          __WEAK const uint32_t SL_BUS_CLOCK_PRS_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_PRS_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    224          
+    225          // External declaration for RAC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    226          __WEAK const uint32_t SL_BUS_CLOCK_RAC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RAC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    227          
+    228          // External declaration for RADIOAES peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    229          __WEAK const uint32_t SL_BUS_CLOCK_RADIOAES_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RADIOAES_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    230          
+    231          // External declaration for RDMAILBOX0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    232          __WEAK const uint32_t SL_BUS_CLOCK_RDMAILBOX0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RDMAILBOX0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    233          
+    234          // External declaration for RDMAILBOX1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    235          __WEAK const uint32_t SL_BUS_CLOCK_RDMAILBOX1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RDMAILBOX1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    236          
+    237          // External declaration for RDSCRATCHPAD peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    238          __WEAK const uint32_t SL_BUS_CLOCK_RDSCRATCHPAD_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RDSCRATCHPAD_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    239          
+    240          // External declaration for RFCRC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    241          __WEAK const uint32_t SL_BUS_CLOCK_RFCRC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RFCRC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    242          
+    243          // External declaration for RFECA0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    244          __WEAK const uint32_t SL_BUS_CLOCK_RFECA0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RFECA0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    245          
+    246          // External declaration for RFECA1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    247          __WEAK const uint32_t SL_BUS_CLOCK_RFECA1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RFECA1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    248          
+    249          // External declaration for RFFPLL0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    250          __WEAK const uint32_t SL_BUS_CLOCK_RFFPLL0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RFFPLL0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    251          
+    252          // External declaration for RFMAILBOX peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    253          __WEAK const uint32_t SL_BUS_CLOCK_RFMAILBOX_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RFMAILBOX_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    254          
+    255          // External declaration for RFSCRATCHPAD peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    256          __WEAK const uint32_t SL_BUS_CLOCK_RFSCRATCHPAD_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RFSCRATCHPAD_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    257          
+    258          // External declaration for RFSENSE peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    259          __WEAK const uint32_t SL_BUS_CLOCK_RFSENSE_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RFSENSE_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    260          
+    261          // External declaration for RPA peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    262          __WEAK const uint32_t SL_BUS_CLOCK_RPA_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RPA_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    263          
+    264          // External declaration for RTCC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    265          __WEAK const uint32_t SL_BUS_CLOCK_RTCC_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_RTCC_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    266          
+    267          // External declaration for SCRATCHPAD peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    268          __WEAK const uint32_t SL_BUS_CLOCK_SCRATCHPAD_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SCRATCHPAD_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    269          
+    270          // External declaration for SEMAILBOX peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    271          __WEAK const uint32_t SL_BUS_CLOCK_SEMAILBOX_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SEMAILBOX_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    272          
+    273          // External declaration for SEMAPHORE0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    274          __WEAK const uint32_t SL_BUS_CLOCK_SEMAPHORE0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SEMAPHORE0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    275          
+    276          // External declaration for SEMAPHORE1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    277          __WEAK const uint32_t SL_BUS_CLOCK_SEMAPHORE1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SEMAPHORE1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    278          
+    279          // External declaration for SEPORTAL peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    280          __WEAK const uint32_t SL_BUS_CLOCK_SEPORTAL_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SEPORTAL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    281          
+    282          // External declaration for SMU peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    283          __WEAK const uint32_t SL_BUS_CLOCK_SMU_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SMU_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    284          
+    285          // External declaration for SOCPLL0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    286          __WEAK const uint32_t SL_BUS_CLOCK_SOCPLL0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SOCPLL0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    287          
+    288          // External declaration for SYMCRYPTO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    289          __WEAK const uint32_t SL_BUS_CLOCK_SYMCRYPTO_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SYMCRYPTO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    290          
+    291          // External declaration for SYNTH peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    292          __WEAK const uint32_t SL_BUS_CLOCK_SYNTH_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SYNTH_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    293          
+    294          // External declaration for SYSCFG peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    295          __WEAK const uint32_t SL_BUS_CLOCK_SYSCFG_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SYSCFG_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    296          
+    297          // External declaration for SYSRTC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    298          __WEAK const uint32_t SL_BUS_CLOCK_SYSRTC0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_SYSRTC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    299          
+    300          // External declaration for TIMER0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    301          __WEAK const uint32_t SL_BUS_CLOCK_TIMER0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    302          
+    303          // External declaration for TIMER1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    304          __WEAK const uint32_t SL_BUS_CLOCK_TIMER1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    305          
+    306          // External declaration for TIMER2 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    307          __WEAK const uint32_t SL_BUS_CLOCK_TIMER2_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    308          
+    309          // External declaration for TIMER3 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    310          __WEAK const uint32_t SL_BUS_CLOCK_TIMER3_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER3_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    311          
+    312          // External declaration for TIMER4 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    313          __WEAK const uint32_t SL_BUS_CLOCK_TIMER4_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER4_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    314          
+    315          // External declaration for TIMER5 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    316          __WEAK const uint32_t SL_BUS_CLOCK_TIMER5_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER5_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    317          
+    318          // External declaration for TIMER6 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    319          __WEAK const uint32_t SL_BUS_CLOCK_TIMER6_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER6_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    320          
+    321          // External declaration for TIMER7 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    322          __WEAK const uint32_t SL_BUS_CLOCK_TIMER7_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER7_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    323          
+    324          // External declaration for TIMER8 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    325          __WEAK const uint32_t SL_BUS_CLOCK_TIMER8_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER8_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    326          
+    327          // External declaration for TIMER9 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    328          __WEAK const uint32_t SL_BUS_CLOCK_TIMER9_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_TIMER9_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    329          
+    330          // External declaration for ULFRCO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    331          __WEAK const uint32_t SL_BUS_CLOCK_ULFRCO_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_ULFRCO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    332          
+    333          // External declaration for USART0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    334          __WEAK const uint32_t SL_BUS_CLOCK_USART0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_USART0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    335          
+    336          // External declaration for USART1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    337          __WEAK const uint32_t SL_BUS_CLOCK_USART1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_USART1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    338          
+    339          // External declaration for USART2 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    340          __WEAK const uint32_t SL_BUS_CLOCK_USART2_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_USART2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    341          
+    342          // External declaration for USB peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    343          __WEAK const uint32_t SL_BUS_CLOCK_USB_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_USB_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    344          
+    345          // External declaration for VDAC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    346          __WEAK const uint32_t SL_BUS_CLOCK_VDAC0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_VDAC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    347          
+    348          // External declaration for VDAC1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    349          __WEAK const uint32_t SL_BUS_CLOCK_VDAC1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_VDAC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    350          
+    351          // External declaration for WDOG0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    352          __WEAK const uint32_t SL_BUS_CLOCK_WDOG0_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_WDOG0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    353          
+    354          // External declaration for WDOG1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    355          __WEAK const uint32_t SL_BUS_CLOCK_WDOG1_VALUE = 0xFFFFFFFF;
+   \                     SL_BUS_CLOCK_WDOG1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    356          
+    357          /** @} (end addtogroup device_clock) */
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  SL_BUS_CLOCK_ACMP0_VALUE
+       4  SL_BUS_CLOCK_ACMP1_VALUE
+       4  SL_BUS_CLOCK_ADC0_VALUE
+       4  SL_BUS_CLOCK_ADC1_VALUE
+       4  SL_BUS_CLOCK_AGC_VALUE
+       4  SL_BUS_CLOCK_AMUXCP0_VALUE
+       4  SL_BUS_CLOCK_BUFC_VALUE
+       4  SL_BUS_CLOCK_BURAM_VALUE
+       4  SL_BUS_CLOCK_BURTC_VALUE
+       4  SL_BUS_CLOCK_CRYPTOACC_VALUE
+       4  SL_BUS_CLOCK_DCDC_VALUE
+       4  SL_BUS_CLOCK_DEVINFO_VALUE
+       4  SL_BUS_CLOCK_DMEM_VALUE
+       4  SL_BUS_CLOCK_DPLL0_VALUE
+       4  SL_BUS_CLOCK_ECAIFADC_VALUE
+       4  SL_BUS_CLOCK_ETAMPDET_VALUE
+       4  SL_BUS_CLOCK_EUART0_VALUE
+       4  SL_BUS_CLOCK_EUSART0_VALUE
+       4  SL_BUS_CLOCK_EUSART1_VALUE
+       4  SL_BUS_CLOCK_EUSART2_VALUE
+       4  SL_BUS_CLOCK_EUSART3_VALUE
+       4  SL_BUS_CLOCK_EUSART4_VALUE
+       4  SL_BUS_CLOCK_FRC_VALUE
+       4  SL_BUS_CLOCK_FSRCO_VALUE
+       4  SL_BUS_CLOCK_GPCRC0_VALUE
+       4  SL_BUS_CLOCK_GPIO_VALUE
+       4  SL_BUS_CLOCK_HFRCO0_VALUE
+       4  SL_BUS_CLOCK_HFRCOEM23_VALUE
+       4  SL_BUS_CLOCK_HFXO0_VALUE
+       4  SL_BUS_CLOCK_HOSTMAILBOX_VALUE
+       4  SL_BUS_CLOCK_HOSTPORTAL_VALUE
+       4  SL_BUS_CLOCK_I2C0_VALUE
+       4  SL_BUS_CLOCK_I2C1_VALUE
+       4  SL_BUS_CLOCK_I2C2_VALUE
+       4  SL_BUS_CLOCK_I2C3_VALUE
+       4  SL_BUS_CLOCK_IADC0_VALUE
+       4  SL_BUS_CLOCK_ICACHE0_VALUE
+       4  SL_BUS_CLOCK_IFADCDEBUG_VALUE
+       4  SL_BUS_CLOCK_KEYSCAN_VALUE
+       4  SL_BUS_CLOCK_KSU_VALUE
+       4  SL_BUS_CLOCK_L2ICACHE0_VALUE
+       4  SL_BUS_CLOCK_LCD_VALUE
+       4  SL_BUS_CLOCK_LDMA0_VALUE
+       4  SL_BUS_CLOCK_LDMAXBAR0_VALUE
+       4  SL_BUS_CLOCK_LEDDRV0_VALUE
+       4  SL_BUS_CLOCK_LEDSINK0_VALUE
+       4  SL_BUS_CLOCK_LESENSE_VALUE
+       4  SL_BUS_CLOCK_LETIMER0_VALUE
+       4  SL_BUS_CLOCK_LFRCO_VALUE
+       4  SL_BUS_CLOCK_LFXO_VALUE
+       4  SL_BUS_CLOCK_LPW0PORTAL_VALUE
+       4  SL_BUS_CLOCK_LPWAES_VALUE
+       4  SL_BUS_CLOCK_MODEM_VALUE
+       4  SL_BUS_CLOCK_MSC_VALUE
+       4  SL_BUS_CLOCK_MVP_VALUE
+       4  SL_BUS_CLOCK_PCNT0_VALUE
+       4  SL_BUS_CLOCK_PDM_VALUE
+       4  SL_BUS_CLOCK_PIXELRZ0_VALUE
+       4  SL_BUS_CLOCK_PIXELRZ1_VALUE
+       4  SL_BUS_CLOCK_PRORTC_VALUE
+       4  SL_BUS_CLOCK_PROTIMER_VALUE
+       4  SL_BUS_CLOCK_PRS_VALUE
+       4  SL_BUS_CLOCK_RAC_VALUE
+       4  SL_BUS_CLOCK_RADIOAES_VALUE
+       4  SL_BUS_CLOCK_RDMAILBOX0_VALUE
+       4  SL_BUS_CLOCK_RDMAILBOX1_VALUE
+       4  SL_BUS_CLOCK_RDSCRATCHPAD_VALUE
+       4  SL_BUS_CLOCK_RFCRC_VALUE
+       4  SL_BUS_CLOCK_RFECA0_VALUE
+       4  SL_BUS_CLOCK_RFECA1_VALUE
+       4  SL_BUS_CLOCK_RFFPLL0_VALUE
+       4  SL_BUS_CLOCK_RFMAILBOX_VALUE
+       4  SL_BUS_CLOCK_RFSCRATCHPAD_VALUE
+       4  SL_BUS_CLOCK_RFSENSE_VALUE
+       4  SL_BUS_CLOCK_RPA_VALUE
+       4  SL_BUS_CLOCK_RTCC_VALUE
+       4  SL_BUS_CLOCK_SCRATCHPAD_VALUE
+       4  SL_BUS_CLOCK_SEMAILBOX_VALUE
+       4  SL_BUS_CLOCK_SEMAPHORE0_VALUE
+       4  SL_BUS_CLOCK_SEMAPHORE1_VALUE
+       4  SL_BUS_CLOCK_SEPORTAL_VALUE
+       4  SL_BUS_CLOCK_SMU_VALUE
+       4  SL_BUS_CLOCK_SOCPLL0_VALUE
+       4  SL_BUS_CLOCK_SYMCRYPTO_VALUE
+       4  SL_BUS_CLOCK_SYNTH_VALUE
+       4  SL_BUS_CLOCK_SYSCFG_VALUE
+       4  SL_BUS_CLOCK_SYSRTC0_VALUE
+       4  SL_BUS_CLOCK_TIMER0_VALUE
+       4  SL_BUS_CLOCK_TIMER1_VALUE
+       4  SL_BUS_CLOCK_TIMER2_VALUE
+       4  SL_BUS_CLOCK_TIMER3_VALUE
+       4  SL_BUS_CLOCK_TIMER4_VALUE
+       4  SL_BUS_CLOCK_TIMER5_VALUE
+       4  SL_BUS_CLOCK_TIMER6_VALUE
+       4  SL_BUS_CLOCK_TIMER7_VALUE
+       4  SL_BUS_CLOCK_TIMER8_VALUE
+       4  SL_BUS_CLOCK_TIMER9_VALUE
+       4  SL_BUS_CLOCK_ULFRCO_VALUE
+       4  SL_BUS_CLOCK_USART0_VALUE
+       4  SL_BUS_CLOCK_USART1_VALUE
+       4  SL_BUS_CLOCK_USART2_VALUE
+       4  SL_BUS_CLOCK_USB_VALUE
+       4  SL_BUS_CLOCK_VDAC0_VALUE
+       4  SL_BUS_CLOCK_VDAC1_VALUE
+       4  SL_BUS_CLOCK_WDOG0_VALUE
+       4  SL_BUS_CLOCK_WDOG1_VALUE
+
+ 
+ 424 bytes in section .rodata
+ 
+ 0 bytes of CONST memory (+ 424 bytes shared)
+
+Errors: none
+Warnings: none

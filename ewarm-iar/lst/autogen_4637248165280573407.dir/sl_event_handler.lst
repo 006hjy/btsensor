@@ -1,0 +1,282 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:34
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_event_handler.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_event_handler.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_event_handler.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_event_handler.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_event_handler.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir\sl_event_handler.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_event_handler.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_event_handler.c
+      1          #include "sl_event_handler.h"
+      2          
+      3          #include "sl_clock_manager.h"
+      4          #include "sl_gpio.h"
+      5          #include "sl_uartdrv_instances.h"
+      6          
+
+   \                                 In section .text, align 2, keep-with-next
+      7          void sli_driver_permanent_allocation(void)
+      8          {
+      9          }
+   \                     sli_driver_permanent_allocation: (+1)
+   \        0x0   0x4770             BX       LR
+     10          
+
+   \                                 In section .text, align 2, keep-with-next
+     11          void sli_service_permanent_allocation(void)
+     12          {
+     13          }
+   \                     sli_service_permanent_allocation: (+1)
+   \        0x0   0x4770             BX       LR
+     14          
+
+   \                                 In section .text, align 2, keep-with-next
+     15          void sli_stack_permanent_allocation(void)
+     16          {
+     17          }
+   \                     sli_stack_permanent_allocation: (+1)
+   \        0x0   0x4770             BX       LR
+     18          
+
+   \                                 In section .text, align 2, keep-with-next
+     19          void sli_internal_permanent_allocation(void)
+     20          {
+     21          }
+   \                     sli_internal_permanent_allocation: (+1)
+   \        0x0   0x4770             BX       LR
+     22          
+
+   \                                 In section .text, align 2, keep-with-next
+     23          void sl_platform_init(void)
+     24          {
+     25            sl_clock_manager_runtime_init();
+   \                     sl_platform_init: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_clock_manager_runtime_init
+     26          }
+     27          
+
+   \                                 In section .text, align 2, keep-with-next
+     28          void sli_internal_init_early(void)
+     29          {
+     30          }
+   \                     sli_internal_init_early: (+1)
+   \        0x0   0x4770             BX       LR
+     31          
+
+   \                                 In section .text, align 2, keep-with-next
+     32          void sl_driver_init(void)
+     33          {
+   \                     sl_driver_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     34            sl_gpio_init();
+   \        0x2   0x.... 0x....      BL       sl_gpio_init
+     35            sl_uartdrv_init_instances();
+   \        0x6   0xE8BD 0x4001      POP      {R0,LR}
+   \        0xA   0x.... 0x....      B.W      sl_uartdrv_init_instances
+     36          }
+     37          
+
+   \                                 In section .text, align 2, keep-with-next
+     38          void sl_service_init(void)
+     39          {
+     40          }
+   \                     sl_service_init: (+1)
+   \        0x0   0x4770             BX       LR
+     41          
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void sl_stack_init(void)
+     43          {
+     44          }
+   \                     sl_stack_init: (+1)
+   \        0x0   0x4770             BX       LR
+     45          
+
+   \                                 In section .text, align 2, keep-with-next
+     46          void sl_internal_app_init(void)
+     47          {
+     48          }
+   \                     sl_internal_app_init: (+1)
+   \        0x0   0x4770             BX       LR
+     49          
+
+   \                                 In section .text, align 2, keep-with-next
+     50          void sli_platform_process_action(void)
+     51          {
+     52          }
+   \                     sli_platform_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+     53          
+
+   \                                 In section .text, align 2, keep-with-next
+     54          void sli_service_process_action(void)
+     55          {
+     56          }
+   \                     sli_service_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+     57          
+
+   \                                 In section .text, align 2, keep-with-next
+     58          void sli_stack_process_action(void)
+     59          {
+     60          }
+   \                     sli_stack_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+     61          
+
+   \                                 In section .text, align 2, keep-with-next
+     62          void sli_internal_app_process_action(void)
+     63          {
+     64          }
+   \                     sli_internal_app_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+     65          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sl_driver_init
+         8   -> sl_gpio_init
+         0   -> sl_uartdrv_init_instances
+       0   sl_internal_app_init
+       0   sl_platform_init
+         0   -> sl_clock_manager_runtime_init
+       0   sl_service_init
+       0   sl_stack_init
+       0   sli_driver_permanent_allocation
+       0   sli_internal_app_process_action
+       0   sli_internal_init_early
+       0   sli_internal_permanent_allocation
+       0   sli_platform_process_action
+       0   sli_service_permanent_allocation
+       0   sli_service_process_action
+       0   sli_stack_permanent_allocation
+       0   sli_stack_process_action
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      14  sl_driver_init
+       2  sl_internal_app_init
+       4  sl_platform_init
+       2  sl_service_init
+       2  sl_stack_init
+       2  sli_driver_permanent_allocation
+       2  sli_internal_app_process_action
+       2  sli_internal_init_early
+       2  sli_internal_permanent_allocation
+       2  sli_platform_process_action
+       2  sli_service_permanent_allocation
+       2  sli_service_process_action
+       2  sli_stack_permanent_allocation
+       2  sli_stack_process_action
+
+ 
+ 42 bytes in section .text
+ 
+ 42 bytes of CODE memory
+
+Errors: none
+Warnings: none

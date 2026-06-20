@@ -1,0 +1,379 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_region.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_region.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_region.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_region.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_region.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir\sl_memory_manager_region.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_region.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_region.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Getters for Heap and stack
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          #include <stdint.h>
+     31          #include "em_device.h"
+     32          #include "sl_memory_manager_region.h"
+     33          #include "sl_memory_manager_region_config.h"
+     34          #include "sl_component_catalog.h"
+     35          
+     36          // Prevent's compilation errors when building in simulation.
+     37          #ifndef   __USED
+     38            #define __USED
+     39          #endif
+     40          
+     41          #if defined(__GNUC__)
+     42          // Declare stack object used with GCC.
+     43          static char sl_stack[SL_STACK_SIZE] __attribute__ ((aligned(8), used, section(".stack")));
+     44          
+     45          /*
+     46           * Declare the base and limit of the full heap region used with GCC to make
+     47           * use of otherwise unused memory.
+     48           */
+     49          extern char __HeapBase[];
+     50          extern char __HeapLimit[];
+     51          
+     52          #elif defined(__ICCARM__)
+     53          #define IAR_HEAP_BLOCK_NAME      "MEMORY_MANAGER_HEAP"
+     54          
+     55          // Declare stack object used with IAR.
+
+   \                                 In section .stack, align 4, root
+     56          __root char sl_stack[SL_STACK_SIZE] @ ".stack";
+   \                     sl_stack:
+   \        0x0                      DS8 4'096
+     57          
+     58            #pragma section=IAR_HEAP_BLOCK_NAME
+     59          
+     60          #endif
+     61          
+     62          /***************************************************************************//**
+     63           * Gets size and location of the stack.
+     64           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     65          sl_memory_region_t sl_memory_get_stack_region(void)
+     66          {
+   \                     sl_memory_get_stack_region: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     67            sl_memory_region_t region;
+     68          
+     69            region.addr = &sl_stack;
+   \        0x2   0x....             LDR.N    R1,??DataTable1
+     70            region.size = SL_STACK_SIZE;
+   \        0x4   0xF44F 0x5480      MOV      R4,#+4096
+     71            return region;
+   \        0x8   0x....             B.N      ?Subroutine0
+     72          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xE9C0 0x1400      STRD     R1,R4,[R0, #+0]
+   \        0x4   0xBD10             POP      {R4,PC}
+     73          
+     74          /***************************************************************************//**
+     75           * Gets size and location of the heap.
+     76           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     77          sl_memory_region_t sl_memory_get_heap_region(void)
+     78          {
+   \                     sl_memory_get_heap_region: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     79            sl_memory_region_t region;
+     80          
+     81            // Report the actual heap region.
+     82          #if defined(__GNUC__)
+     83            region.addr = __HeapBase;
+     84            region.size = (uintptr_t) __HeapLimit - (uintptr_t) __HeapBase;
+     85          
+     86          #elif defined(__ICCARM__)
+     87            region.addr = __section_begin(IAR_HEAP_BLOCK_NAME);
+   \        0x2   0x....             LDR.N    R1,??DataTable1_1
+     88            region.size = __section_size(IAR_HEAP_BLOCK_NAME);
+   \        0x4   0x....             LDR.N    R4,??DataTable1_2
+     89          #endif
+     90          
+     91            return region;
+   \        0x6                      REQUIRE ?Subroutine0
+   \        0x6                      ; // Fall through to label ?Subroutine0
+     92          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     sl_stack
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     SFB(MEMORY_MANAGER_HEAP)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     SIZEOF(MEMORY_MANAGER_HEAP)
+     93          
+     94          #if defined(SL_CATALOG_MEMORY_MANAGER_PSRAM_PRESENT)
+     95          
+     96          #if defined(__ICCARM__)
+     97          #define IAR_PSRAM_BLOCK_NAME "PSRAM_HEAP"
+     98          #pragma section=IAR_PSRAM_BLOCK_NAME
+     99          #endif
+    100          
+    101          /***************************************************************************//**
+    102           * Gets size and location of the PSRAM heap.
+    103           ******************************************************************************/
+    104          sl_memory_region_t sl_memory_get_psram_heap_region(void)
+    105          {
+    106            sl_memory_region_t region;
+    107          
+    108            // Report the actual PSRAM heap region.
+    109          #if defined(__GNUC__)
+    110            extern char __HeapPsramBase[];
+    111            extern char __HeapPsramLimit[];
+    112          
+    113            region.addr = __HeapPsramBase;
+    114            region.size = (uintptr_t) __HeapPsramLimit - (uintptr_t) __HeapPsramBase;
+    115          
+    116          #elif defined(__ICCARM__)
+    117            region.addr = __section_begin(IAR_PSRAM_BLOCK_NAME);
+    118            region.size = __section_size(IAR_PSRAM_BLOCK_NAME);
+    119          #endif
+    120          
+    121            return region;
+    122          }
+    123          #endif
+    124          
+    125          #if defined(SL_CATALOG_MEMORY_MANAGER_DTCM_PRESENT)
+    126          
+    127          #if defined(__ICCARM__)
+    128          #define IAR_DTCM_BLOCK_NAME "DTCM_HEAP"
+    129          #pragma section=IAR_DTCM_BLOCK_NAME
+    130          #endif
+    131          
+    132          /***************************************************************************//**
+    133           * Gets size and location of the DTCM heap.
+    134           ******************************************************************************/
+    135          sl_memory_region_t sl_memory_get_dtcm_heap_region(void)
+    136          {
+    137            sl_memory_region_t region;
+    138          
+    139            // Report the actual DTCM heap region.
+    140          #if defined(__GNUC__)
+    141            extern char __HeapDtcmBase[];
+    142            extern char __HeapDtcmLimit[];
+    143          
+    144            region.addr = __HeapDtcmBase;
+    145            region.size = (uintptr_t) __HeapDtcmLimit - (uintptr_t) __HeapDtcmBase;
+    146          
+    147          #elif defined(__ICCARM__)
+    148            region.addr = __section_begin(IAR_DTCM_BLOCK_NAME);
+    149            region.size = __section_size(IAR_DTCM_BLOCK_NAME);
+    150          #endif
+    151          
+    152            return region;
+    153          }
+    154          #endif
+    155          
+    156          #if defined(__GNUC__)
+    157          /***************************************************************************//**
+    158           * Extends the process data space.
+    159           *
+    160           * @param[in]  incr   Number of bytes to increment/decrement
+    161           *
+    162           * @return Start of the new space allocated if successful. -1 if error.
+    163           *
+    164           * @note (1) This is a helper function called by the standard C library
+    165           *           function malloc(). _sbrk() is used to dynamically change the
+    166           *           amount of space allocated for the calling process data segment.
+    167           *           The change is made by allocating the appropriate amount of space
+    168           *           from the end of heap.
+    169           *           _sbrk() adds 'incr' bytes to the end of heap and changes
+    170           *           the allocated space accordingly. 'incr' can be negative, in which
+    171           *           case the amount of allocated space is decreased.
+    172           *
+    173           * @note (2) When the Memory Manager (MM) is used, there is no need for
+    174           *           _sbrk() as there is no possible extension with the MM controlling
+    175           *           the entire heap size.
+    176           *           If _sbrk() is called by the standard C library, then the project
+    177           *           may have used the standard C malloc() function implementation.
+    178           *           In that case, the MM retarget, wrapping the GCC malloc() to the
+    179           *           MM sl_malloc(), may have not worked. You may want to double-check
+    180           *           your project settings.
+    181           ******************************************************************************/
+    182          __USED __WEAK void * _sbrk(int incr)
+    183          {
+    184          #if defined(SL_CATALOG_MEMORY_MANAGER_PRESENT)
+    185            (void)incr;
+    186          
+    187            // This means there is an issue with the setup of C standard library. See Note #2.
+    188            while (1) {
+    189              // infinite loop
+    190            }
+    191          #else
+    192            static char *heap_end = __HeapBase;
+    193            char *prev_heap_end;
+    194          
+    195            if ((heap_end + incr) > __HeapLimit) {
+    196              // Not enough heap
+    197              return (void *) -1;
+    198            }
+    199          
+    200            prev_heap_end = heap_end;
+    201            heap_end += incr;
+    202          
+    203            return prev_heap_end;
+    204          #endif
+    205          }
+    206          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sl_memory_get_heap_region
+       8   sl_memory_get_stack_region
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       6  ?Subroutine0
+       6  sl_memory_get_heap_region
+      10  sl_memory_get_stack_region
+   4'096  sl_stack
+
+ 
+ 4'096 bytes in section .stack
+    34 bytes in section .text
+ 
+    34 bytes of CODE memory
+ 4'096 bytes of DATA memory
+
+Errors: none
+Warnings: none

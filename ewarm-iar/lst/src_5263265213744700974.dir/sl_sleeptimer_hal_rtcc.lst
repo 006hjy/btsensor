@@ -1,0 +1,1088 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_rtcc.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5263265213744700974.dir\sl_sleeptimer_hal_rtcc.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_rtcc.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5263265213744700974.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5263265213744700974.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5263265213744700974.dir\sl_sleeptimer_hal_rtcc.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5263265213744700974.dir\sl_sleeptimer_hal_rtcc.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5263265213744700974.dir\sl_sleeptimer_hal_rtcc.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5263265213744700974.dir\sl_sleeptimer_hal_rtcc.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_rtcc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief SLEEPTIMER hardware abstraction implementation for RTCC.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          // Define module name for Power Manager debug feature
+     32          #define CURRENT_MODULE_NAME    "SLEEPTIMER_RTCC"
+     33          
+     34          #include "em_rtcc.h"
+     35          #include "sl_sleeptimer.h"
+     36          #include "sli_sleeptimer_hal.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t sleeptimer_hal_presc_to_log2(uint32_t)
+   \                     sleeptimer_hal_presc_to_log2: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x....             LDR.N    R5,??DataTable4
+   \        0x6   0xF105 0x0680      ADD      R6,R5,#+128
+   \        0xA   0xF5B4 0x4F00      CMP      R4,#+32768
+   \        0xE   0xD303             BCC.N    ??sleeptimer_hal_presc_to_log2_0
+   \       0x10   0x21AD             MOVS     R1,#+173
+   \       0x12   0x4630             MOV      R0,R6
+   \       0x14   0x.... 0x....      BL       assertEFM
+   \                     ??sleeptimer_hal_presc_to_log2_0: (+1)
+   \       0x18   0x1C64             ADDS     R4,R4,#+1
+   \       0x1A   0xFAB4 0xF784      CLZ      R7,R4
+   \       0x1E   0xF1C7 0x071F      RSB      R7,R7,#+31
+   \       0x22   0x2F20             CMP      R7,#+32
+   \       0x24   0xD304             BCC.N    ??sleeptimer_hal_presc_to_log2_1
+   \       0x26   0xF44F 0x71CF      MOV      R1,#+414
+   \       0x2A   0x4628             MOV      R0,R5
+   \       0x2C   0x.... 0x....      BL       assertEFM
+   \                     ??sleeptimer_hal_presc_to_log2_1: (+1)
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x40B8             LSLS     R0,R0,R7
+   \       0x34   0x4284             CMP      R4,R0
+   \       0x36   0xD003             BEQ.N    ??sleeptimer_hal_presc_to_log2_2
+   \       0x38   0x21B4             MOVS     R1,#+180
+   \       0x3A   0x4630             MOV      R0,R6
+   \       0x3C   0x.... 0x....      BL       assertEFM
+   \                     ??sleeptimer_hal_presc_to_log2_2: (+1)
+   \       0x40   0x4638             MOV      R0,R7
+   \       0x42   0xBDF2             POP      {R1,R4-R7,PC}
+     37          #include "sl_core.h"
+     38          #include "sl_clock_manager.h"
+     39          #include "sl_interrupt_manager.h"
+     40          #include "sl_device_peripheral.h"
+
+   \                                 In section text_device_peripheral_timecritical751840, align 2
+   \   __vfp uint8_t sl_device_peripheral_get_clock_branch(sl_peripheral_t const)
+   \                     sl_device_peripheral_get_clock_branch: (+1)
+   \        0x0   0x7900             LDRB     R0,[R0, #+4]
+   \        0x2   0x4770             BX       LR
+     41          
+     42          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+     43          #include "sl_power_manager.h"
+     44          #endif
+     45          
+     46          #if SL_SLEEPTIMER_PERIPHERAL == SL_SLEEPTIMER_PERIPHERAL_RTCC
+     47          
+     48          // Minimum difference between current count value and what the comparator of the timer can be set to.
+     49          // 1 tick is added to the minimum diff for the algorithm of compensation for the IRQ handler that
+     50          // triggers when CNT == compare_value + 1. For more details refer to sleeptimer_hal_set_compare() function's header.
+     51          #define SLEEPTIMER_COMPARE_MIN_DIFF  (2 + 1)
+     52          
+     53          #define SLEEPTIMER_TMR_WIDTH (_RTCC_CNT_MASK)
+     54          
+
+   \                                 In section .data, align 1
+     55          static bool cc_disabled = true;
+   \                     cc_disabled:
+   \        0x0   0x01               DC8 1
+     56          
+     57          __STATIC_INLINE uint32_t get_time_diff(uint32_t a,
+     58                                                 uint32_t b);
+     59          
+     60          /******************************************************************************
+     61           * Initializes RTCC sleep timer.
+     62           *****************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     63          void sleeptimer_hal_init_timer(void)
+     64          {
+   \                     sleeptimer_hal_init_timer: (+1)
+   \        0x0   0xB51F             PUSH     {R0-R4,LR}
+     65            RTCC_Init_TypeDef rtcc_init   = RTCC_INIT_DEFAULT;
+   \        0x2   0xBF00             Nop
+   \        0x4   0x....             ADR.N    R2,?_3
+   \        0x6   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+     66            RTCC_CCChConf_TypeDef channel = RTCC_CH_INIT_COMPARE_DEFAULT;
+   \        0xA   0xBF00             Nop
+   \        0xC   0x....             ADR.N    R4,?_4
+   \        0xE   0xE9D4 0x2300      LDRD     R2,R3,[R4, #+0]
+   \       0x12   0xE9CD 0x0100      STRD     R0,R1,[SP, #+0]
+     67          
+     68            sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_RTCC);
+   \       0x16   0x....             LDR.N    R0,??DataTable4_1
+   \       0x18   0xE9CD 0x2302      STRD     R2,R3,[SP, #+8]
+   \       0x1C   0x.... 0x....      BL       sl_clock_manager_enable_bus_clock
+     69          
+     70            rtcc_init.enable = false;
+   \       0x20   0x2100             MOVS     R1,#+0
+   \       0x22   0xF88D 0x1000      STRB     R1,[SP, #+0]
+     71            rtcc_init.presc = (RTCC_CntPresc_TypeDef)(sleeptimer_hal_presc_to_log2(SL_SLEEPTIMER_FREQ_DIVIDER - 1));
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x.... 0x....      BL       sleeptimer_hal_presc_to_log2
+   \       0x2C   0xF88D 0x0004      STRB     R0,[SP, #+4]
+     72          #if (SL_SLEEPTIMER_DEBUGRUN == 1)
+     73            rtcc_init.debugRun = true;
+     74          #endif
+     75          
+     76            RTCC_Init(&rtcc_init);
+   \       0x30   0x4668             MOV      R0,SP
+   \       0x32   0x.... 0x....      BL       RTCC_Init
+     77          
+     78            // Compare channel starts disabled and is enabled only when compare match interrupt is enabled.
+     79            channel.chMode = rtccCapComChModeOff;
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0xF88D 0x0008      STRB     R0,[SP, #+8]
+     80            RTCC_ChannelInit(1u, &channel);
+   \       0x3C   0xA902             ADD      R1,SP,#+8
+   \       0x3E   0x2001             MOVS     R0,#+1
+   \       0x40   0x.... 0x....      BL       RTCC_ChannelInit
+     81          
+     82            RTCC_IntDisable(_RTCC_IEN_MASK);
+   \       0x44   0x....             LDR.N    R0,??DataTable4_2
+   \       0x46   0xF240 0x31FF      MOVW     R1,#+1023
+   \       0x4A   0x6041             STR      R1,[R0, #+4]
+     83            RTCC_IntClear(_RTCC_IF_MASK);
+   \       0x4C   0x6001             STR      R1,[R0, #+0]
+   \       0x4E   0x....             LDR.N    R0,??DataTable4_3
+     84            RTCC_CounterSet(0u);
+   \                     ??sleeptimer_hal_init_timer_0: (+1)
+   \       0x50   0x6881             LDR      R1,[R0, #+8]
+   \       0x52   0x070A             LSLS     R2,R1,#+28
+   \       0x54   0xD4FC             BMI.N    ??sleeptimer_hal_init_timer_0
+   \       0x56   0x2100             MOVS     R1,#+0
+   \       0x58   0x6001             STR      R1,[R0, #+0]
+     85          
+     86            RTCC_Enable(true);
+   \       0x5A   0x2001             MOVS     R0,#+1
+   \       0x5C   0x.... 0x....      BL       RTCC_Enable
+     87          
+     88            sl_interrupt_manager_clear_irq_pending(RTCC_IRQn);
+   \       0x60   0x200C             MOVS     R0,#+12
+   \       0x62   0x.... 0x....      BL       sl_interrupt_manager_clear_irq_pending
+     89            sl_interrupt_manager_enable_irq(RTCC_IRQn);
+   \       0x66   0x200C             MOVS     R0,#+12
+   \       0x68   0x.... 0x....      BL       sl_interrupt_manager_enable_irq
+     90          }
+   \       0x6C   0xBD1F             POP      {R0-R4,PC}
+     91          
+     92          /******************************************************************************
+     93           * Gets RTCC counter value.
+     94           *****************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical5554, align 4, keep-with-next
+     95          uint32_t sleeptimer_hal_get_counter(void)
+     96          {
+   \                     sleeptimer_hal_get_counter: (+1)
+   \        0x0   0x4802             LDR.N    R0,??sleeptimer_hal_get_counter_0
+     97            return RTCC_CounterGet();
+   \                     ??sleeptimer_hal_get_counter_1: (+1)
+   \        0x2   0x6881             LDR      R1,[R0, #+8]
+   \        0x4   0x070A             LSLS     R2,R1,#+28
+   \        0x6   0xD4FC             BMI.N    ??sleeptimer_hal_get_counter_1
+   \        0x8   0x6800             LDR      R0,[R0, #+0]
+   \        0xA   0x4770             BX       LR
+   \                     ??sleeptimer_hal_get_counter_0:
+   \        0xC   0x5800'0020        DC32     0x58000020
+     98          }
+     99          
+    100          /******************************************************************************
+    101           * Gets RTCC compare value.
+    102           *****************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical5662, align 4, keep-with-next
+    103          uint32_t sleeptimer_hal_get_compare(void)
+    104          {
+    105            return RTCC_ChannelCCVGet(1u);
+   \                     sleeptimer_hal_get_compare: (+1)
+   \        0x0   0x4801             LDR.N    R0,??sleeptimer_hal_get_compare_0
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+   \        0x6   0xBF00             Nop
+   \                     ??sleeptimer_hal_get_compare_0:
+   \        0x8   0x5800'0040        DC32     0x58000040
+    106          }
+    107          
+    108          /******************************************************************************
+    109           * Sets RTCC compare value.
+    110           *
+    111           * @note Compare match value is set to the requested value - 1. This is done
+    112           * to compensate for the fact that the RTCC compare match interrupt always
+    113           * triggers at the end of the requested ticks and that the IRQ handler is
+    114           * executed when current tick count == compare_value + 1.
+    115           *****************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical5770, align 4, keep-with-next
+    116          void sleeptimer_hal_set_compare(uint32_t value)
+    117          {
+   \                     sleeptimer_hal_set_compare: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    118            CORE_DECLARE_IRQ_STATE;
+    119            uint32_t counter;
+    120            uint32_t compare;
+    121            uint32_t compare_value = value;
+    122          
+    123            CORE_ENTER_CRITICAL();
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x4606             MOV      R6,R0
+    124            counter = sleeptimer_hal_get_counter();
+   \        0xA   0x.... 0x....      BL       sleeptimer_hal_get_counter
+   \        0xE   0x4607             MOV      R7,R0
+    125            compare = sleeptimer_hal_get_compare();
+   \       0x10   0x.... 0x....      BL       sleeptimer_hal_get_compare
+    126            if (((RTCC_IntGet() & RTCC_IEN_CC1) != 0)
+    127                || get_time_diff(compare, counter) > SLEEPTIMER_COMPARE_MIN_DIFF
+    128                || compare == counter) {
+   \       0x14   0x4C12             LDR.N    R4,??sleeptimer_hal_set_compare_0
+   \       0x16   0x6821             LDR      R1,[R4, #+0]
+   \       0x18   0x0649             LSLS     R1,R1,#+25
+   \       0x1A   0xD404             BMI.N    ??sleeptimer_hal_set_compare_1
+   \       0x1C   0x1BC1             SUBS     R1,R0,R7
+   \       0x1E   0x2903             CMP      R1,#+3
+   \       0x20   0xD801             BHI.N    ??sleeptimer_hal_set_compare_1
+   \       0x22   0x42B8             CMP      R0,R7
+   \       0x24   0xD10F             BNE.N    ??sleeptimer_hal_set_compare_2
+    129              // Add margin if necessary
+    130              if (get_time_diff(compare_value, counter) < SLEEPTIMER_COMPARE_MIN_DIFF) {
+   \                     ??sleeptimer_hal_set_compare_1: (+1)
+   \       0x26   0x1BE8             SUBS     R0,R5,R7
+   \       0x28   0x2803             CMP      R0,#+3
+   \       0x2A   0xBF38             IT       CC
+   \       0x2C   0x1CFD             ADDCC    R5,R7,#+3
+    131                compare_value = counter + SLEEPTIMER_COMPARE_MIN_DIFF;
+    132              }
+    133              compare_value %= SLEEPTIMER_TMR_WIDTH;
+    134          
+    135              RTCC_ChannelCCVSet(1u, compare_value - 1u);
+   \       0x2E   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x32   0xFBB5 0xF0F0      UDIV     R0,R5,R0
+   \       0x36   0xEBA0 0x0040      SUB      R0,R0,R0, LSL #+1
+   \       0x3A   0x1A2D             SUBS     R5,R5,R0
+   \       0x3C   0x1E6D             SUBS     R5,R5,#+1
+   \       0x3E   0x62E5             STR      R5,[R4, #+44]
+    136              sleeptimer_hal_enable_int(SLEEPTIMER_EVENT_COMP);
+   \       0x40   0x2002             MOVS     R0,#+2
+   \       0x42   0x.... 0x....      BL       sleeptimer_hal_enable_int
+    137            }
+    138            CORE_EXIT_CRITICAL();
+   \                     ??sleeptimer_hal_set_compare_2: (+1)
+   \       0x46   0x4630             MOV      R0,R6
+   \       0x48   0x.... 0x....      BL       CORE_ExitCritical
+    139          
+    140            if (cc_disabled) {
+   \       0x4C   0x4905             LDR.N    R1,??sleeptimer_hal_set_compare_0+4
+   \       0x4E   0x7808             LDRB     R0,[R1, #+0]
+   \       0x50   0xB128             CBZ.N    R0,??sleeptimer_hal_set_compare_3
+    141              RTCC->CC[1].CTRL |= RTCC_CC_CTRL_MODE_OUTPUTCOMPARE;
+   \       0x52   0x6AA0             LDR      R0,[R4, #+40]
+    142              cc_disabled = false;
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xF040 0x0002      ORR      R0,R0,#0x2
+   \       0x5A   0x62A0             STR      R0,[R4, #+40]
+   \       0x5C   0x700A             STRB     R2,[R1, #+0]
+    143            }
+    144          }
+   \                     ??sleeptimer_hal_set_compare_3: (+1)
+   \       0x5E   0xBDF1             POP      {R0,R4-R7,PC}
+   \                     ??sleeptimer_hal_set_compare_0:
+   \       0x60   0x5800'0014        DC32     0x58000014
+   \       0x64   0x....'....        DC32     cc_disabled
+    145          
+    146          /******************************************************************************
+    147           * Enables RTCC interrupts.
+    148           *****************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical6093, align 4, keep-with-next
+    149          void sleeptimer_hal_enable_int(uint8_t local_flag)
+    150          {
+    151            uint32_t rtcc_ien = 0u;
+   \                     sleeptimer_hal_enable_int: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+    152          
+    153            if (local_flag & SLEEPTIMER_EVENT_OF) {
+   \        0x2   0x07C2             LSLS     R2,R0,#+31
+   \        0x4   0xBF48             IT       MI
+   \        0x6   0x2101             MOVMI    R1,#+1
+    154              rtcc_ien |= RTCC_IEN_OF;
+    155            }
+    156          
+    157            if (local_flag & SLEEPTIMER_EVENT_COMP) {
+   \        0x8   0x0780             LSLS     R0,R0,#+30
+   \        0xA   0xBF48             IT       MI
+   \        0xC   0xF041 0x0140      ORRMI    R1,R1,#0x40
+    158              rtcc_ien |= RTCC_IEN_CC1;
+    159            }
+    160          
+    161            RTCC_IntEnable(rtcc_ien);
+   \       0x10   0x4801             LDR.N    R0,??sleeptimer_hal_enable_int_0
+   \       0x12   0x6001             STR      R1,[R0, #+0]
+    162          }
+   \       0x14   0x4770             BX       LR
+   \       0x16   0xBF00             Nop
+   \                     ??sleeptimer_hal_enable_int_0:
+   \       0x18   0x5800'1018        DC32     0x58001018
+    163          
+    164          /******************************************************************************
+    165           * Disables RTCC interrupts.
+    166           *****************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical61101, align 4, keep-with-next
+    167          void sleeptimer_hal_disable_int(uint8_t local_flag)
+    168          {
+    169            uint32_t rtcc_int_dis = 0u;
+   \                     sleeptimer_hal_disable_int: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+    170          
+    171            if (local_flag & SLEEPTIMER_EVENT_OF) {
+   \        0x2   0x07C2             LSLS     R2,R0,#+31
+   \        0x4   0xBF48             IT       MI
+   \        0x6   0x2101             MOVMI    R1,#+1
+    172              rtcc_int_dis |= RTCC_IEN_OF;
+    173            }
+    174          
+    175            if (local_flag & SLEEPTIMER_EVENT_COMP) {
+   \        0x8   0x0782             LSLS     R2,R0,#+30
+   \        0xA   0xD509             BPL.N    ??sleeptimer_hal_disable_int_1
+    176              rtcc_int_dis |= RTCC_IEN_CC1;
+    177          
+    178              cc_disabled = true;
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x4A06             LDR.N    R2,??sleeptimer_hal_disable_int_0
+   \       0x10   0x7010             STRB     R0,[R2, #+0]
+    179              RTCC->CC[1].CTRL &= ~_RTCC_CC_CTRL_MODE_MASK;
+   \       0x12   0x4806             LDR.N    R0,??sleeptimer_hal_disable_int_0+4
+   \       0x14   0x6803             LDR      R3,[R0, #+0]
+   \       0x16   0xF041 0x0140      ORR      R1,R1,#0x40
+   \       0x1A   0x089B             LSRS     R3,R3,#+2
+   \       0x1C   0x009B             LSLS     R3,R3,#+2
+   \       0x1E   0x6003             STR      R3,[R0, #+0]
+    180            }
+    181          
+    182            RTCC_IntDisable(rtcc_int_dis);
+   \                     ??sleeptimer_hal_disable_int_1: (+1)
+   \       0x20   0x4803             LDR.N    R0,??sleeptimer_hal_disable_int_0+8
+   \       0x22   0x6001             STR      R1,[R0, #+0]
+    183          }
+   \       0x24   0x4770             BX       LR
+   \       0x26   0xBF00             Nop
+   \                     ??sleeptimer_hal_disable_int_0:
+   \       0x28   0x....'....        DC32     cc_disabled
+   \       0x2C   0x5800'003C        DC32     0x5800003c
+   \       0x30   0x5800'2018        DC32     0x58002018
+    184          
+    185          /*******************************************************************************
+    186           * Hardware Abstraction Layer to set timer interrupts.
+    187           ******************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical62109, align 4, keep-with-next
+    188          void sleeptimer_hal_set_int(uint8_t local_flag)
+    189          {
+    190            if (local_flag & SLEEPTIMER_EVENT_COMP) {
+   \                     sleeptimer_hal_set_int: (+1)
+   \        0x0   0x0782             LSLS     R2,R0,#+30
+   \        0x2   0xD502             BPL.N    ??sleeptimer_hal_set_int_1
+    191              RTCC_IntSet(RTCC_IF_CC1);
+   \        0x4   0x2040             MOVS     R0,#+64
+   \        0x6   0x4901             LDR.N    R1,??sleeptimer_hal_set_int_0
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+    192            }
+    193          }
+   \                     ??sleeptimer_hal_set_int_1: (+1)
+   \        0xA   0x4770             BX       LR
+   \                     ??sleeptimer_hal_set_int_0:
+   \        0xC   0x5800'1014        DC32     0x58001014
+    194          
+    195          /******************************************************************************
+    196           * Gets status of specified interrupt.
+    197           *
+    198           * Note: This function must be called with interrupts disabled.
+    199           *****************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical4891, align 4, keep-with-next
+    200          bool sli_sleeptimer_hal_is_int_status_set(uint8_t local_flag)
+    201          {
+   \                     sli_sleeptimer_hal_is_int_status_set: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+    202            bool int_is_set = false;
+   \        0x2   0x2000             MOVS     R0,#+0
+    203            uint32_t irq_flag = RTCC_IntGet();
+   \        0x4   0x4A06             LDR.N    R2,??sli_sleeptimer_hal_is_int_status_set_0
+   \        0x6   0x6812             LDR      R2,[R2, #+0]
+    204          
+    205            switch (local_flag) {
+   \        0x8   0x2901             CMP      R1,#+1
+   \        0xA   0xD005             BEQ.N    ??sli_sleeptimer_hal_is_int_status_set_1
+   \        0xC   0x2902             CMP      R1,#+2
+   \        0xE   0xD105             BNE.N    ??sli_sleeptimer_hal_is_int_status_set_2
+    206              case SLEEPTIMER_EVENT_COMP:
+    207                int_is_set = ((irq_flag & RTCC_IF_CC1) == RTCC_IF_CC1);
+   \       0x10   0x0990             LSRS     R0,R2,#+6
+   \       0x12   0xF000 0x0001      AND      R0,R0,#0x1
+    208                break;
+   \       0x16   0x4770             BX       LR
+    209          
+    210              case SLEEPTIMER_EVENT_OF:
+    211                int_is_set = ((irq_flag & RTCC_IF_OF) == RTCC_IF_OF);
+   \                     ??sli_sleeptimer_hal_is_int_status_set_1: (+1)
+   \       0x18   0xF002 0x0001      AND      R0,R2,#0x1
+    212                break;
+    213          
+    214              default:
+    215                break;
+    216            }
+    217          
+    218            return int_is_set;
+   \                     ??sli_sleeptimer_hal_is_int_status_set_2: (+1)
+   \       0x1C   0x4770             BX       LR
+   \       0x1E   0xBF00             Nop
+   \                     ??sli_sleeptimer_hal_is_int_status_set_0:
+   \       0x20   0x5800'0014        DC32     0x58000014
+    219          }
+    220          
+    221          /*******************************************************************************
+    222           * RTCC interrupt handler.
+    223           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    224          void RTCC_IRQHandler(void)
+    225          {
+   \                     RTCC_IRQHandler: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    226            CORE_DECLARE_IRQ_STATE;
+    227            uint8_t local_flag = 0;
+    228            uint32_t irq_flag;
+    229          
+    230            CORE_ENTER_ATOMIC();
+   \        0x2   0x.... 0x....      BL       CORE_EnterAtomic
+   \        0x6   0x4605             MOV      R5,R0
+    231            irq_flag = RTCC_IntGet();
+   \        0x8   0x....             LDR.N    R0,??DataTable4_4
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0x2400             MOVS     R4,#+0
+    232          
+    233            if (irq_flag & RTCC_IF_OF) {
+   \        0xE   0x07C1             LSLS     R1,R0,#+31
+   \       0x10   0xBF48             IT       MI
+   \       0x12   0x2401             MOVMI    R4,#+1
+    234              local_flag |= SLEEPTIMER_EVENT_OF;
+    235            }
+    236            if (irq_flag & RTCC_IF_CC1) {
+   \       0x14   0x0641             LSLS     R1,R0,#+25
+   \       0x16   0xBF48             IT       MI
+   \       0x18   0xF044 0x0402      ORRMI    R4,R4,#0x2
+    237              local_flag |= SLEEPTIMER_EVENT_COMP;
+    238            }
+    239            RTCC_IntClear(irq_flag & (RTCC_IF_OF | RTCC_IF_CC1 | RTCC_IF_CC0));
+   \       0x1C   0xF000 0x0051      AND      R0,R0,#0x51
+   \       0x20   0x....             LDR.N    R1,??DataTable4_2
+   \       0x22   0x6008             STR      R0,[R1, #+0]
+    240          
+    241            process_timer_irq(local_flag);
+   \       0x24   0x4620             MOV      R0,R4
+   \       0x26   0x.... 0x....      BL       process_timer_irq
+    242          
+    243            CORE_EXIT_ATOMIC();
+   \       0x2A   0x4628             MOV      R0,R5
+   \       0x2C   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \       0x30   0x.... 0x....      B.W      CORE_ExitAtomic
+    244          }
+    245          
+    246          /*******************************************************************************
+    247           * Gets RTCC timer frequency.
+    248           ******************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical5985, align 4, keep-with-next
+    249          uint32_t sleeptimer_hal_get_timer_frequency(void)
+    250          {
+   \                     sleeptimer_hal_get_timer_frequency: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    251            uint32_t frequency;
+    252            sl_clock_branch_t clock_branch;
+    253          
+    254            clock_branch = sl_device_peripheral_get_clock_branch(SL_PERIPHERAL_RTCC);
+   \        0x2   0x4806             LDR.N    R0,??sleeptimer_hal_get_timer_frequency_0
+   \        0x4   0x.... 0x....      BL       sl_device_peripheral_get_clock_branch
+    255            sl_clock_manager_get_clock_branch_frequency(clock_branch, &frequency);
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x.... 0x....      BL       sl_clock_manager_get_clock_branch_frequency
+    256            return (frequency >> (sleeptimer_hal_presc_to_log2(SL_SLEEPTIMER_FREQ_DIVIDER - 1)));
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x.... 0x....      BL       sleeptimer_hal_presc_to_log2
+   \       0x14   0x4601             MOV      R1,R0
+   \       0x16   0x9800             LDR      R0,[SP, #+0]
+   \       0x18   0x40C8             LSRS     R0,R0,R1
+   \       0x1A   0xBD02             POP      {R1,PC}
+   \                     ??sleeptimer_hal_get_timer_frequency_0:
+   \       0x1C   0x....'....        DC32     sl_peripheral_val_rtcc
+    257          }
+    258          
+    259          /*******************************************************************************
+    260           * Computes difference between two times taking into account timer wrap-around.
+    261           *
+    262           * @param a Time.
+    263           * @param b Time to substract from a.
+    264           *
+    265           * @return Time difference.
+    266           ******************************************************************************/
+    267          __STATIC_INLINE uint32_t get_time_diff(uint32_t a,
+    268                                                 uint32_t b)
+    269          {
+    270            return (a - b);
+    271          }
+    272          
+    273          /*******************************************************************************
+    274           * @brief
+    275           *   Gets the precision (in PPM) of the sleeptimer's clock.
+    276           *
+    277           * @return
+    278           *   Clock accuracy, in PPM.
+    279           *
+    280           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    281          uint16_t sleeptimer_hal_get_clock_accuracy(void)
+    282          {
+   \                     sleeptimer_hal_get_clock_accuracy: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    283            uint16_t precision;
+    284            sl_clock_manager_get_clock_branch_precision(SL_CLOCK_BRANCH_RTCCCLK, &precision);
+   \        0x2   0x4669             MOV      R1,SP
+   \        0x4   0x2012             MOVS     R0,#+18
+   \        0x6   0x.... 0x....      BL       sl_clock_manager_get_clock_branch_precision
+    285            return precision;
+   \        0xA   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \        0xE   0xBD02             POP      {R1,PC}
+    286          }
+    287          
+    288          /*******************************************************************************
+    289           * Hardware Abstraction Layer to get the capture channel value.
+    290           ******************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical63126, align 4, keep-with-next
+    291          uint32_t sleeptimer_hal_get_capture(void)
+    292          {
+   \                     sleeptimer_hal_get_capture: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    293            // Invalid for RTCC peripheral
+    294            EFM_ASSERT(0);
+   \        0x2   0xF44F 0x7193      MOV      R1,#+294
+   \        0x6   0x4802             LDR.N    R0,??sleeptimer_hal_get_capture_0
+   \        0x8   0x.... 0x....      BL       assertEFM
+    295            return 0;
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0xBD02             POP      {R1,PC}
+   \                     ??sleeptimer_hal_get_capture_0:
+   \       0x10   0x....'....        DC32     ?_2
+    296          }
+    297          
+    298          /*******************************************************************************
+    299           * Hardware Abstraction Layer to reset PRS signal triggered by the associated
+    300           * peripheral.
+    301           ******************************************************************************/
+
+   \                                 In section text_sleeptimer_timecritical64135, align 4, keep-with-next
+    302          void sleeptimer_hal_reset_prs_signal(void)
+    303          {
+    304            // Invalid for RTCC peripheral
+    305            EFM_ASSERT(0);
+   \                     sleeptimer_hal_reset_prs_signal: (+1)
+   \        0x0   0xF240 0x1131      MOVW     R1,#+305
+   \        0x4   0x4801             LDR.N    R0,??sleeptimer_hal_reset_prs_signal_0
+   \        0x6   0x.... 0x....      B.W      assertEFM
+   \        0xA   0xBF00             Nop
+   \                     ??sleeptimer_hal_reset_prs_signal_0:
+   \        0xC   0x....'....        DC32     ?_2
+    306          }
+    307          
+    308          /***************************************************************************//**
+    309           * Set lowest energy mode based on a project's configurations and clock source
+    310           *
+    311           * @note If power_manager_no_deepsleep component is included in a project, the
+    312           *       lowest possible energy mode is EM1, else lowest energy mode is
+    313           *       determined by peripheral used.
+    314           ******************************************************************************/
+    315          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+
+   \                                 In section text_sleeptimer_timecritical50112, align 2, keep-with-next
+    316          void sli_sleeptimer_set_pm_em_requirement(void)
+    317          {
+    318            // No EM requirement to add for LF peripherals that continue to work in
+    319            // Deep Sleep.
+    320          }
+   \                     sli_sleeptimer_set_pm_em_requirement: (+1)
+   \        0x0   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     SL_BUS_CLOCK_RTCC_VALUE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x5800'2014        DC32     0x58002014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x5800'0020        DC32     0x58000020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x5800'0014        DC32     0x58000014
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x6D, 0x6D, 0x6F, 0x6E, 0x5C, 0x70
+   \              0x6D 0x6D    
+   \              0x6F 0x6E    
+   \              0x5C 0x70
+   \       0x60   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5C
+   \       0x68   0x63 0x6F          DC8 0x63, 0x6F, 0x6D, 0x6D, 0x6F, 0x6E, 0x5C, 0x69
+   \              0x6D 0x6D    
+   \              0x6F 0x6E    
+   \              0x5C 0x69
+   \       0x70   0x6E 0x63          DC8 0x6E, 0x63, 0x5C, 0x73, 0x6C, 0x5F, 0x63, 0x6F
+   \              0x5C 0x73    
+   \              0x6C 0x5F    
+   \              0x63 0x6F
+   \       0x78   0x6D 0x6D          DC8 0x6D, 0x6D, 0x6F, 0x6E, 0x2E, 0x68, 0
+   \              0x6F 0x6E    
+   \              0x2E 0x68    
+   \              0x00
+   \       0x7F                      DS8 1
+   \       0x80   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x88   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x90   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x98   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0xA0   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0xA8   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0xB0   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0xB8   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0xC0   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0xC8   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0xD0   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0xD8   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0xE0   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x73 0x65
+   \       0xE8   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x73, 0x6C
+   \              0x69 0x63    
+   \              0x65 0x5C    
+   \              0x73 0x6C
+   \       0xF0   0x65 0x65          DC8 0x65, 0x65, 0x70, 0x74, 0x69, 0x6D, 0x65, 0x72
+   \              0x70 0x74    
+   \              0x69 0x6D    
+   \              0x65 0x72
+   \       0xF8   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x69
+   \              0x72 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x69
+   \      0x100   0x5F 0x73          DC8 0x5F, 0x73, 0x6C, 0x65, 0x65, 0x70, 0x74, 0x69
+   \              0x6C 0x65    
+   \              0x65 0x70    
+   \              0x74 0x69
+   \      0x108   0x6D 0x65          DC8 0x6D, 0x65, 0x72, 0x5F, 0x68, 0x61, 0x6C, 0x2E
+   \              0x72 0x5F    
+   \              0x68 0x61    
+   \              0x6C 0x2E
+   \      0x110   0x68 0x00          DC8 0x68, 0
+   \      0x112                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x73 0x65
+   \       0x68   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x73, 0x6C
+   \              0x69 0x63    
+   \              0x65 0x5C    
+   \              0x73 0x6C
+   \       0x70   0x65 0x65          DC8 0x65, 0x65, 0x70, 0x74, 0x69, 0x6D, 0x65, 0x72
+   \              0x70 0x74    
+   \              0x69 0x6D    
+   \              0x65 0x72
+   \       0x78   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x72 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0x80   0x73 0x6C          DC8 0x73, 0x6C, 0x65, 0x65, 0x70, 0x74, 0x69, 0x6D
+   \              0x65 0x65    
+   \              0x70 0x74    
+   \              0x69 0x6D
+   \       0x88   0x65 0x72          DC8 0x65, 0x72, 0x5F, 0x68, 0x61, 0x6C, 0x5F, 0x72
+   \              0x5F 0x68    
+   \              0x61 0x6C    
+   \              0x5F 0x72
+   \       0x90   0x74 0x63          DC8 0x74, 0x63, 0x63, 0x2E, 0x63, 0
+   \              0x63 0x2E    
+   \              0x63 0x00
+   \       0x96                      DS8 2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x01 0x00          DC8 1, 0, 0, 0, 5, 0
+   \              0x00 0x00    
+   \              0x05 0x00
+   \        0x6                      DS8 2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \        0x0   0x02 0x00          DC8 2, 0, 0, 3, 0
+   \              0x00 0x03    
+   \              0x00
+   \        0x5                      DS8 3
+    321          #endif
+    322          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   RTCC_IRQHandler
+        16   -> CORE_EnterAtomic
+         0   -> CORE_ExitAtomic
+        16   -> process_timer_irq
+       0   sl_device_peripheral_get_clock_branch
+       0   sleeptimer_hal_disable_int
+       0   sleeptimer_hal_enable_int
+       8   sleeptimer_hal_get_capture
+         8   -> assertEFM
+       8   sleeptimer_hal_get_clock_accuracy
+         8   -> sl_clock_manager_get_clock_branch_precision
+       0   sleeptimer_hal_get_compare
+       0   sleeptimer_hal_get_counter
+       8   sleeptimer_hal_get_timer_frequency
+         8   -> sl_clock_manager_get_clock_branch_frequency
+         8   -> sl_device_peripheral_get_clock_branch
+         8   -> sleeptimer_hal_presc_to_log2
+      24   sleeptimer_hal_init_timer
+        24   -> RTCC_ChannelInit
+        24   -> RTCC_Enable
+        24   -> RTCC_Init
+        24   -> sl_clock_manager_enable_bus_clock
+        24   -> sl_interrupt_manager_clear_irq_pending
+        24   -> sl_interrupt_manager_enable_irq
+        24   -> sleeptimer_hal_presc_to_log2
+      24   sleeptimer_hal_presc_to_log2
+        24   -> assertEFM
+       0   sleeptimer_hal_reset_prs_signal
+         0   -> assertEFM
+      24   sleeptimer_hal_set_compare
+        24   -> CORE_EnterCritical
+        24   -> CORE_ExitCritical
+        24   -> sleeptimer_hal_enable_int
+        24   -> sleeptimer_hal_get_compare
+        24   -> sleeptimer_hal_get_counter
+       0   sleeptimer_hal_set_int
+       0   sli_sleeptimer_hal_is_int_status_set
+       0   sli_sleeptimer_set_pm_em_requirement
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+     276  ?_0
+     152  ?_2
+       8  ?_3
+       8  ?_4
+      52  RTCC_IRQHandler
+       1  cc_disabled
+       4  sl_device_peripheral_get_clock_branch
+      52  sleeptimer_hal_disable_int
+      28  sleeptimer_hal_enable_int
+      20  sleeptimer_hal_get_capture
+      16  sleeptimer_hal_get_clock_accuracy
+      12  sleeptimer_hal_get_compare
+      16  sleeptimer_hal_get_counter
+      32  sleeptimer_hal_get_timer_frequency
+     110  sleeptimer_hal_init_timer
+      68  sleeptimer_hal_presc_to_log2
+      16  sleeptimer_hal_reset_prs_signal
+     104  sleeptimer_hal_set_compare
+      16  sleeptimer_hal_set_int
+      36  sli_sleeptimer_hal_is_int_status_set
+       2  sli_sleeptimer_set_pm_em_requirement
+
+ 
+   1 byte  in section .data
+ 428 bytes in section .rodata
+ 282 bytes in section .text
+   4 bytes in section text_device_peripheral_timecritical751840
+  36 bytes in section text_sleeptimer_timecritical4891
+   2 bytes in section text_sleeptimer_timecritical50112
+  16 bytes in section text_sleeptimer_timecritical5554
+  12 bytes in section text_sleeptimer_timecritical5662
+ 104 bytes in section text_sleeptimer_timecritical5770
+  32 bytes in section text_sleeptimer_timecritical5985
+  28 bytes in section text_sleeptimer_timecritical6093
+  52 bytes in section text_sleeptimer_timecritical61101
+  16 bytes in section text_sleeptimer_timecritical62109
+  20 bytes in section text_sleeptimer_timecritical63126
+  16 bytes in section text_sleeptimer_timecritical64135
+ 
+ 616 bytes of CODE  memory (+ 4 bytes shared)
+ 428 bytes of CONST memory
+   1 byte  of DATA  memory
+
+Errors: none
+Warnings: none

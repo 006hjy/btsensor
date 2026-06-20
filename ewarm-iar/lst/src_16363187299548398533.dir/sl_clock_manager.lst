@@ -1,0 +1,821 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:35
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16363187299548398533.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16363187299548398533.dir\sl_clock_manager.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16363187299548398533.dir\sl_clock_manager.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Clock Manager API implementations.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2023 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_clock_manager.h"
+     32          #include "sli_clock_manager.h"
+     33          #include "sli_clock_manager_hal.h"
+     34          #include "sl_assert.h"
+     35          #include "cmsis_compiler.h"
+     36          
+     37          /***************************************************************************//**
+     38           * Performs Clock Manager runtime initialization.
+     39           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     40          sl_status_t sl_clock_manager_runtime_init(void)
+     41          {
+     42            return sli_clock_manager_hal_runtime_init();
+   \                     sl_clock_manager_runtime_init: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_runtime_init
+     43          }
+     44          
+     45          /***************************************************************************//**
+     46           * Gets frequency of given oscillator.
+     47           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical0325, align 2, keep-with-next
+     48          sl_status_t sl_clock_manager_get_oscillator_frequency(sl_oscillator_t oscillator,
+     49                                                                uint32_t        *frequency)
+     50          {
+     51            if (frequency == NULL) {
+   \                     sl_clock_manager_get_oscillator_frequency: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF18             IT       NE
+     52              return SL_STATUS_NULL_POINTER;
+     53            }
+     54          
+     55            return sli_clock_manager_hal_get_oscillator_frequency(oscillator, frequency);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_oscillator_frequency
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+     56          }
+     57          
+     58          /***************************************************************************//**
+     59           * Gets precision of given oscillator.
+     60           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     61          sl_status_t sl_clock_manager_get_oscillator_precision(sl_oscillator_t oscillator,
+     62                                                                uint16_t        *precision)
+     63          {
+     64            if (precision == NULL) {
+   \                     sl_clock_manager_get_oscillator_precision: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF18             IT       NE
+     65              return SL_STATUS_NULL_POINTER;
+     66            }
+     67          
+     68            return sli_clock_manager_hal_get_oscillator_precision(oscillator, precision);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_oscillator_precision
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+     69          }
+     70          
+     71          /***************************************************************************//**
+     72           * Gets frequency of given clock branch.
+     73           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical1352, align 2, keep-with-next
+     74          sl_status_t sl_clock_manager_get_clock_branch_frequency(sl_clock_branch_t clock_branch,
+     75                                                                  uint32_t          *frequency)
+     76          {
+     77            if (frequency == NULL) {
+   \                     sl_clock_manager_get_clock_branch_frequency: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF18             IT       NE
+     78              return SL_STATUS_NULL_POINTER;
+     79            }
+     80          
+     81            return sli_clock_manager_hal_get_clock_branch_frequency(clock_branch, frequency);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_clock_branch_frequency
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+     82          }
+     83          
+     84          /***************************************************************************//**
+     85           * Gets precision of given clock branch.
+     86           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     87          sl_status_t sl_clock_manager_get_clock_branch_precision(sl_clock_branch_t clock_branch,
+     88                                                                  uint16_t          *precision)
+     89          {
+     90            if (precision == NULL) {
+   \                     sl_clock_manager_get_clock_branch_precision: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF18             IT       NE
+     91              return SL_STATUS_NULL_POINTER;
+     92            }
+     93          
+     94            return sli_clock_manager_hal_get_clock_branch_precision(clock_branch, precision);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_clock_branch_precision
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+     95          }
+     96          
+     97          /***************************************************************************//**
+     98           * Enables the given module's bus clock.
+     99           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical2380, align 2, keep-with-next
+    100          sl_status_t sl_clock_manager_enable_bus_clock(sl_bus_clock_t module_bus_clock)
+    101          {
+    102            return sli_clock_manager_hal_enable_bus_clock(module_bus_clock, true);
+   \                     sl_clock_manager_enable_bus_clock: (+1)
+   \        0x0   0x2101             MOVS     R1,#+1
+   \        0x2   0x.... 0x....      B.W      sli_clock_manager_hal_enable_bus_clock
+    103          }
+    104          
+    105          /***************************************************************************//**
+    106           * Disables the given module's bus clock.
+    107           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical3394, align 2, keep-with-next
+    108          sl_status_t sl_clock_manager_disable_bus_clock(sl_bus_clock_t module_bus_clock)
+    109          {
+    110            return sli_clock_manager_hal_enable_bus_clock(module_bus_clock, false);
+   \                     sl_clock_manager_disable_bus_clock: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x.... 0x....      B.W      sli_clock_manager_hal_enable_bus_clock
+    111          }
+    112          
+    113          /***************************************************************************//**
+    114           * Configures one clock export output with specified clock source.
+    115           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    116          sl_status_t sl_clock_manager_set_gpio_clock_output(sl_clock_manager_export_clock_source_t export_clock_source,
+    117                                                             sl_clock_manager_export_clock_output_select_t output_select,
+    118                                                             uint16_t hfexp_divider,
+    119                                                             uint32_t port,
+    120                                                             uint32_t pin)
+    121          {
+   \                     sl_clock_manager_set_gpio_clock_output: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    122            return sli_clock_manager_hal_set_gpio_clock_output(export_clock_source, output_select, hfexp_divider, port, pin);
+   \        0x2   0x9C04             LDR      R4,[SP, #+16]
+   \        0x4   0x9400             STR      R4,[SP, #+0]
+   \        0x6   0x.... 0x....      BL       sli_clock_manager_hal_set_gpio_clock_output
+   \        0xA   0xBD16             POP      {R1,R2,R4,PC}
+    123          }
+    124          
+    125          /***************************************************************************//**
+    126           * Sets the RC oscillator frequency tuning control.
+    127           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    128          sl_status_t sl_clock_manager_set_rc_oscillator_calibration(sl_oscillator_t oscillator,
+    129                                                                     uint32_t        val)
+    130          {
+    131            return sli_clock_manager_hal_set_rc_oscillator_calibration(oscillator, val);
+   \                     sl_clock_manager_set_rc_oscillator_calibration: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_set_rc_oscillator_calibration
+    132          }
+    133          
+    134          /***************************************************************************//**
+    135           * Gets the RC oscillator frequency tuning setting.
+    136           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    137          sl_status_t sl_clock_manager_get_rc_oscillator_calibration(sl_oscillator_t oscillator,
+    138                                                                     uint32_t        *val)
+    139          {
+    140            if (val == NULL) {
+   \                     sl_clock_manager_get_rc_oscillator_calibration: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF18             IT       NE
+    141              return SL_STATUS_NULL_POINTER;
+    142            }
+    143            return sli_clock_manager_hal_get_rc_oscillator_calibration(oscillator, val);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_rc_oscillator_calibration
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+    144          }
+    145          
+    146          /***************************************************************************//**
+    147           * Sets the HFXO calibration value.
+    148           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    149          sl_status_t sl_clock_manager_set_hfxo_calibration(uint32_t val)
+    150          {
+    151            return sli_clock_manager_hal_set_hfxo_calibration(val);
+   \                     sl_clock_manager_set_hfxo_calibration: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_set_hfxo_calibration
+    152          }
+    153          
+    154          /***************************************************************************//**
+    155           * Gets the HFXO calibration value.
+    156           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    157          sl_status_t sl_clock_manager_get_hfxo_calibration(uint32_t *val)
+    158          {
+    159            if (val == NULL) {
+   \                     sl_clock_manager_get_hfxo_calibration: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE
+    160              return SL_STATUS_NULL_POINTER;
+    161            }
+    162            return sli_clock_manager_hal_get_hfxo_calibration(val);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_hfxo_calibration
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+    163          }
+    164          
+    165          /***************************************************************************//**
+    166           * Sets the HFXO CTUNE setting.
+    167           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    168          sl_status_t slx_clock_manager_hfxo_set_ctune(uint32_t ctune)
+    169          {
+    170            return sli_clock_manager_hal_hfxo_set_ctune(ctune);
+   \                     slx_clock_manager_hfxo_set_ctune: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_hfxo_set_ctune
+    171          }
+    172          
+    173          /***************************************************************************//**
+    174           * Gets the HFXO CTUNE setting.
+    175           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    176          sl_status_t slx_clock_manager_hfxo_get_ctune(uint32_t *ctune)
+    177          {
+    178            if (ctune == NULL) {
+   \                     slx_clock_manager_hfxo_get_ctune: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE
+    179              return SL_STATUS_NULL_POINTER;
+    180            }
+    181            return sli_clock_manager_hal_hfxo_get_ctune(ctune);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_hfxo_get_ctune
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+    182          }
+    183          
+    184          /***************************************************************************//**
+    185           * Updates the tuning capacitances and calibrate the Core Bias Current.
+    186           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    187          sl_status_t slx_clock_manager_hfxo_calibrate_ctune(uint32_t ctune)
+    188          {
+    189            return sli_clock_manager_hal_hfxo_calibrate_ctune(ctune);
+   \                     slx_clock_manager_hfxo_calibrate_ctune: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_hfxo_calibrate_ctune
+    190          }
+    191          
+    192          /***************************************************************************//**
+    193           * Gets the HFXO's average startup time.
+    194           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    195          sl_status_t sli_clock_manager_get_hfxo_average_startup_time(uint32_t *val)
+    196          {
+    197            if (val == NULL) {
+   \                     sli_clock_manager_get_hfxo_average_startup_time: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE
+    198              return SL_STATUS_NULL_POINTER;
+    199            }
+    200            return sli_clock_manager_hal_get_hfxo_average_startup_time(val);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_hfxo_average_startup_time
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+    201          }
+    202          
+    203          /***************************************************************************//**
+    204           * Sets the LFXO frequency tuning control.
+    205           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    206          sl_status_t sl_clock_manager_set_lfxo_calibration(uint32_t val)
+    207          {
+    208            return sli_clock_manager_hal_set_lfxo_calibration(val);
+   \                     sl_clock_manager_set_lfxo_calibration: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_set_lfxo_calibration
+    209          }
+    210          
+    211          /***************************************************************************//**
+    212           * Gets the LFXO frequency tuning setting.
+    213           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    214          sl_status_t sl_clock_manager_get_lfxo_calibration(uint32_t *val)
+    215          {
+    216            if (val == NULL) {
+   \                     sl_clock_manager_get_lfxo_calibration: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE
+    217              return SL_STATUS_NULL_POINTER;
+    218            }
+    219            return sli_clock_manager_hal_get_lfxo_calibration(val);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_lfxo_calibration
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+    220          }
+    221          
+    222          /***************************************************************************//**
+    223           * Configures the RCO calibration.
+    224           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    225          sl_status_t sl_clock_manager_configure_rco_calibration(uint32_t cycles,
+    226                                                                 sl_clock_manager_clock_calibration_t down_counter_selection,
+    227                                                                 sl_clock_manager_clock_calibration_t up_counter_selection,
+    228                                                                 bool continuous_calibration)
+    229          {
+    230            return sli_clock_manager_hal_configure_rco_calibration(cycles, down_counter_selection, up_counter_selection, continuous_calibration);
+   \                     sl_clock_manager_configure_rco_calibration: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_configure_rco_calibration
+    231          }
+    232          
+    233          /***************************************************************************//**
+    234           * Starts the RCO calibration.
+    235           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    236          void sl_clock_manager_start_rco_calibration(void)
+    237          {
+    238            sli_clock_manager_hal_start_rco_calibration();
+   \                     sl_clock_manager_start_rco_calibration: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_start_rco_calibration
+    239          }
+    240          
+    241          /***************************************************************************//**
+    242           * Stops the RCO calibration.
+    243           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    244          void sl_clock_manager_stop_rco_calibration(void)
+    245          {
+    246            sli_clock_manager_hal_stop_rco_calibration();
+   \                     sl_clock_manager_stop_rco_calibration: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_stop_rco_calibration
+    247          }
+    248          
+    249          /***************************************************************************//**
+    250           * Waits for the RCO calibration to finish.
+    251           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    252          void sl_clock_manager_wait_rco_calibration(void)
+    253          {
+    254            sli_clock_manager_hal_wait_rco_calibration();
+   \                     sl_clock_manager_wait_rco_calibration: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_wait_rco_calibration
+    255          }
+    256          
+    257          /***************************************************************************//**
+    258           * Gets calibration count value.
+    259           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    260          sl_status_t sl_clock_manager_get_rco_calibration_count(uint32_t *count)
+    261          {
+    262            if (count == NULL) {
+   \                     sl_clock_manager_get_rco_calibration_count: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE
+    263              return SL_STATUS_NULL_POINTER;
+    264            }
+    265          
+    266            return sli_clock_manager_hal_get_rco_calibration_count(count);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_rco_calibration_count
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+    267          }
+    268          
+    269          /***************************************************************************//**
+    270           * Sets SYSCLK clock source.
+    271           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical6670, align 2, keep-with-next
+    272          sl_status_t slx_clock_manager_set_sysclk_source(sl_oscillator_t oscillator)
+    273          {
+    274            return sli_clock_manager_hal_set_sysclk_source(oscillator);
+   \                     slx_clock_manager_set_sysclk_source: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_set_sysclk_source
+    275          }
+    276          
+    277          /***************************************************************************//**
+    278           * Gets SYSCLK clock source.
+    279           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical7681, align 2, keep-with-next
+    280          sl_status_t sl_clock_manager_get_sysclk_source(sl_oscillator_t *oscillator)
+    281          {
+    282            if (oscillator == NULL) {
+   \                     sl_clock_manager_get_sysclk_source: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE
+    283              return SL_STATUS_NULL_POINTER;
+    284            }
+    285          
+    286            return sli_clock_manager_hal_get_sysclk_source(oscillator);
+   \        0x4   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_sysclk_source
+   \        0x8   0x2022             MOVS     R0,#+34
+   \        0xA   0x4770             BX       LR
+    287          }
+    288          
+    289          /***************************************************************************//**
+    290           * Waits for USBPLL clock to be ready.
+    291           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    292          sl_status_t sl_clock_manager_wait_usbpll(void)
+    293          {
+    294            return sli_clock_manager_hal_wait_usbpll();
+   \                     sl_clock_manager_wait_usbpll: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_wait_usbpll
+    295          }
+    296          
+    297          /***************************************************************************//**
+    298           * When this callback function is called, it means that HFXO failed twice in
+    299           * a row to start with normal configurations. This may mean that there is a
+    300           * bad crystal. When getting this callback, HFXO is running but its properties
+    301           * (frequency, precision) are not guaranteed. This should be considered as an
+    302           * error situation.
+    303           ******************************************************************************/
+
+   \                                 In section .text, align 4
+    304          __WEAK void sl_clock_manager_hfxo_notify_consecutive_failed_startups(void)
+    305          {
+    306            EFM_ASSERT(false);
+   \                     sl_clock_manager_hfxo_notify_consecutive_failed_startups: (+1)
+   \        0x0   0xF44F 0x7199      MOV      R1,#+306
+   \        0x4   0x4801             LDR.N    R0,??sl_clock_manager_hfxo_notify_consecutive_fail_0
+   \        0x6   0x.... 0x....      B.W      assertEFM
+   \        0xA   0xBF00             Nop
+   \                     ??sl_clock_manager_hfxo_notify_consecutive_fail_0:
+   \        0xC   0x....'....        DC32     ?_0
+    307          }
+    308          
+    309          /***************************************************************************//**
+    310           * Sets the external FLASH reference clock.
+    311           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical4643, align 2, keep-with-next
+    312          sl_status_t sl_clock_manager_set_ext_flash_clk(sl_oscillator_t oscillator)
+    313          {
+    314            return sli_clock_manager_hal_set_ext_flash_clk(oscillator);
+   \                     sl_clock_manager_set_ext_flash_clk: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_set_ext_flash_clk
+    315          }
+    316          
+    317          /***************************************************************************//**
+    318           * Gets the external FLASH clock source.
+    319           ******************************************************************************/
+
+   \                                 In section text_clock_manager_timecritical5654, align 2, keep-with-next
+    320          sl_status_t sl_clock_manager_get_ext_flash_clk(sl_oscillator_t *oscillator)
+    321          {
+    322            return sli_clock_manager_hal_get_ext_flash_clk(oscillator);
+   \                     sl_clock_manager_get_ext_flash_clk: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_clock_manager_hal_get_ext_flash_clk
+    323          }
+    324          
+    325          /***************************************************************************//**
+    326           * Retrieves the FREQPLAN NWP SOCPLL config.
+    327           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    328          sl_status_t sli_clock_manager_get_nwp_socpll_freqplan_config(const uint16_t **socpll_freqplan_config,
+    329                                                                       uint8_t *target_frequency_index)
+    330          {
+    331            if (socpll_freqplan_config == NULL || target_frequency_index == NULL) {
+   \                     sli_clock_manager_get_nwp_socpll_freqplan_config: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF1C             ITT      NE
+   \        0x4   0x2900             CMPNE    R1,#+0
+    332              return SL_STATUS_NULL_POINTER;
+    333            }
+    334            return sli_clock_manager_hal_get_nwp_socpll_freqplan_config(socpll_freqplan_config, target_frequency_index);
+   \        0x6   0x.... 0x....      BNE.W    sli_clock_manager_hal_get_nwp_socpll_freqplan_config
+   \        0xA   0x2022             MOVS     R0,#+34
+   \        0xC   0x4770             BX       LR
+    335          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x73 0x65
+   \       0x68   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x63, 0x6C
+   \              0x69 0x63    
+   \              0x65 0x5C    
+   \              0x63 0x6C
+   \       0x70   0x6F 0x63          DC8 0x6F, 0x63, 0x6B, 0x5F, 0x6D, 0x61, 0x6E, 0x61
+   \              0x6B 0x5F    
+   \              0x6D 0x61    
+   \              0x6E 0x61
+   \       0x78   0x67 0x65          DC8 0x67, 0x65, 0x72, 0x5C, 0x73, 0x72, 0x63, 0x5C
+   \              0x72 0x5C    
+   \              0x73 0x72    
+   \              0x63 0x5C
+   \       0x80   0x73 0x6C          DC8 0x73, 0x6C, 0x5F, 0x63, 0x6C, 0x6F, 0x63, 0x6B
+   \              0x5F 0x63    
+   \              0x6C 0x6F    
+   \              0x63 0x6B
+   \       0x88   0x5F 0x6D          DC8 0x5F, 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65, 0x72
+   \              0x61 0x6E    
+   \              0x61 0x67    
+   \              0x65 0x72
+   \       0x90   0x2E 0x63          DC8 0x2E, 0x63, 0
+   \              0x00
+   \       0x93                      DS8 1
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_clock_manager_configure_rco_calibration
+         0   -> sli_clock_manager_hal_configure_rco_calibration
+       0   sl_clock_manager_disable_bus_clock
+         0   -> sli_clock_manager_hal_enable_bus_clock
+       0   sl_clock_manager_enable_bus_clock
+         0   -> sli_clock_manager_hal_enable_bus_clock
+       0   sl_clock_manager_get_clock_branch_frequency
+         0   -> sli_clock_manager_hal_get_clock_branch_frequency
+       0   sl_clock_manager_get_clock_branch_precision
+         0   -> sli_clock_manager_hal_get_clock_branch_precision
+       0   sl_clock_manager_get_ext_flash_clk
+         0   -> sli_clock_manager_hal_get_ext_flash_clk
+       0   sl_clock_manager_get_hfxo_calibration
+         0   -> sli_clock_manager_hal_get_hfxo_calibration
+       0   sl_clock_manager_get_lfxo_calibration
+         0   -> sli_clock_manager_hal_get_lfxo_calibration
+       0   sl_clock_manager_get_oscillator_frequency
+         0   -> sli_clock_manager_hal_get_oscillator_frequency
+       0   sl_clock_manager_get_oscillator_precision
+         0   -> sli_clock_manager_hal_get_oscillator_precision
+       0   sl_clock_manager_get_rc_oscillator_calibration
+         0   -> sli_clock_manager_hal_get_rc_oscillator_calibration
+       0   sl_clock_manager_get_rco_calibration_count
+         0   -> sli_clock_manager_hal_get_rco_calibration_count
+       0   sl_clock_manager_get_sysclk_source
+         0   -> sli_clock_manager_hal_get_sysclk_source
+       0   sl_clock_manager_hfxo_notify_consecutive_failed_startups
+         0   -> assertEFM
+       0   sl_clock_manager_runtime_init
+         0   -> sli_clock_manager_hal_runtime_init
+       0   sl_clock_manager_set_ext_flash_clk
+         0   -> sli_clock_manager_hal_set_ext_flash_clk
+      16   sl_clock_manager_set_gpio_clock_output
+        16   -> sli_clock_manager_hal_set_gpio_clock_output
+       0   sl_clock_manager_set_hfxo_calibration
+         0   -> sli_clock_manager_hal_set_hfxo_calibration
+       0   sl_clock_manager_set_lfxo_calibration
+         0   -> sli_clock_manager_hal_set_lfxo_calibration
+       0   sl_clock_manager_set_rc_oscillator_calibration
+         0   -> sli_clock_manager_hal_set_rc_oscillator_calibration
+       0   sl_clock_manager_start_rco_calibration
+         0   -> sli_clock_manager_hal_start_rco_calibration
+       0   sl_clock_manager_stop_rco_calibration
+         0   -> sli_clock_manager_hal_stop_rco_calibration
+       0   sl_clock_manager_wait_rco_calibration
+         0   -> sli_clock_manager_hal_wait_rco_calibration
+       0   sl_clock_manager_wait_usbpll
+         0   -> sli_clock_manager_hal_wait_usbpll
+       0   sli_clock_manager_get_hfxo_average_startup_time
+         0   -> sli_clock_manager_hal_get_hfxo_average_startup_time
+       0   sli_clock_manager_get_nwp_socpll_freqplan_config
+         0   -> sli_clock_manager_hal_get_nwp_socpll_freqplan_config
+       0   slx_clock_manager_hfxo_calibrate_ctune
+         0   -> sli_clock_manager_hal_hfxo_calibrate_ctune
+       0   slx_clock_manager_hfxo_get_ctune
+         0   -> sli_clock_manager_hal_hfxo_get_ctune
+       0   slx_clock_manager_hfxo_set_ctune
+         0   -> sli_clock_manager_hal_hfxo_set_ctune
+       0   slx_clock_manager_set_sysclk_source
+         0   -> sli_clock_manager_hal_set_sysclk_source
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     148  ?_0
+       4  sl_clock_manager_configure_rco_calibration
+       6  sl_clock_manager_disable_bus_clock
+       6  sl_clock_manager_enable_bus_clock
+      12  sl_clock_manager_get_clock_branch_frequency
+      12  sl_clock_manager_get_clock_branch_precision
+       4  sl_clock_manager_get_ext_flash_clk
+      12  sl_clock_manager_get_hfxo_calibration
+      12  sl_clock_manager_get_lfxo_calibration
+      12  sl_clock_manager_get_oscillator_frequency
+      12  sl_clock_manager_get_oscillator_precision
+      12  sl_clock_manager_get_rc_oscillator_calibration
+      12  sl_clock_manager_get_rco_calibration_count
+      12  sl_clock_manager_get_sysclk_source
+      16  sl_clock_manager_hfxo_notify_consecutive_failed_startups
+       4  sl_clock_manager_runtime_init
+       4  sl_clock_manager_set_ext_flash_clk
+      12  sl_clock_manager_set_gpio_clock_output
+       4  sl_clock_manager_set_hfxo_calibration
+       4  sl_clock_manager_set_lfxo_calibration
+       4  sl_clock_manager_set_rc_oscillator_calibration
+       4  sl_clock_manager_start_rco_calibration
+       4  sl_clock_manager_stop_rco_calibration
+       4  sl_clock_manager_wait_rco_calibration
+       4  sl_clock_manager_wait_usbpll
+      12  sli_clock_manager_get_hfxo_average_startup_time
+      14  sli_clock_manager_get_nwp_socpll_freqplan_config
+       4  slx_clock_manager_hfxo_calibrate_ctune
+      12  slx_clock_manager_hfxo_get_ctune
+       4  slx_clock_manager_hfxo_set_ctune
+       4  slx_clock_manager_set_sysclk_source
+
+ 
+ 148 bytes in section .rodata
+ 182 bytes in section .text
+  12 bytes in section text_clock_manager_timecritical0325
+  12 bytes in section text_clock_manager_timecritical1352
+   6 bytes in section text_clock_manager_timecritical2380
+   6 bytes in section text_clock_manager_timecritical3394
+   4 bytes in section text_clock_manager_timecritical4643
+   4 bytes in section text_clock_manager_timecritical5654
+   4 bytes in section text_clock_manager_timecritical6670
+  12 bytes in section text_clock_manager_timecritical7681
+ 
+ 226 bytes of CODE  memory (+ 16 bytes shared)
+ 148 bytes of CONST memory
+
+Errors: none
+Warnings: none

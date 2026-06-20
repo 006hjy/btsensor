@@ -1,0 +1,295 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:34
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_manager_handler.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_power_manager_handler.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_manager_handler.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_power_manager_handler.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_power_manager_handler.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir\sl_power_manager_handler.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_power_manager_handler.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_manager_handler.c
+      1          #include <stdbool.h>
+      2          #include "sl_core.h"
+      3          #include "sl_power_manager.h"
+      4          #include "sl_sleeptimer.h"
+      5          #include "uartdrv.h"
+      6          
+      7          /***************************************************************************//**
+      8           * Check if the MCU can sleep at that time. This function is called when the system
+      9           * is about to go sleeping, with the interrupts disabled. It allows the software to
+     10           * cancel going to sleep in case of a last-minute event occurred (window between the
+     11           * function call and interrupt disable).
+     12           *
+     13           * @return  True, if the system can go to sleep.
+     14           *          False, otherwise.
+     15           *
+     16           * @note  This function is called with the interrupt disabled and it MUST NOT be
+     17           *        re-enabled.
+     18           ******************************************************************************/
+     19            SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+
+   \                                 In section text_power_manager_timecritical7019, align 2
+     20          __WEAK bool app_is_ok_to_sleep(void)
+     21          {
+     22            return true;
+   \                     app_is_ok_to_sleep: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x4770             BX       LR
+     23          }
+     24          
+     25          /***************************************************************************//**
+     26           * Check if the MCU can sleep after an interrupt. This function is called after an
+     27           * interrupt occured and was processed. It allows the power manger to know if it must
+     28           * go back to sleep or wakeup.
+     29           *
+     30           * @return  SL_POWER_MANAGER_IGNORE, if the module did not trigger an ISR and it
+     31           *          won't to contribute to the decision.
+     32           *
+     33           *          SL_POWER_MANAGER_SLEEP, The module was the one that caused the system
+     34           *          wakeup and the system SHOULD go back to sleep.
+     35           *
+     36           *          SL_POWER_MANAGER_WAKEUP, The module was the one that caused the system
+     37           *          wakeup and the system MUST NOT go back to sleep.
+     38           *
+     39           * @note  This function must not have any side effects. It is not guaranteed to be
+     40           *        called for every ISR. If a prior hook function requires to wakeup, such
+     41           *        as a wireless stack, the application hook function won't be called.
+     42           ******************************************************************************/
+     43           SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+
+   \                                 In section text_power_manager_timecritical7143, align 2
+     44          __WEAK sl_power_manager_on_isr_exit_t app_sleep_on_isr_exit(void)
+     45          {
+     46            return SL_POWER_MANAGER_IGNORE;
+   \                     app_sleep_on_isr_exit: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x4770             BX       LR
+     47          }
+     48          
+     49          /***************************************************************************//**
+     50           * Mandatory callback that allows to cancel sleeping action. This function is called
+     51           * when the system is about to go sleeping, with the interrupts disabled. It allows
+     52           * the software to cancel going to sleep in case of a last-minute event occurred
+     53           * (window between the function call and interrupt disable).
+     54           ******************************************************************************/
+     55           SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+
+   \                                 In section text_power_manager_timecritical7255, align 2, keep-with-next
+     56          bool sl_power_manager_is_ok_to_sleep(void)
+     57          {
+   \                     sl_power_manager_is_ok_to_sleep: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     58            bool ok_to_sleep = true;
+   \        0x2   0x2401             MOVS     R4,#+1
+     59            // Application hook
+     60            if (app_is_ok_to_sleep() == false) {
+   \        0x4   0x.... 0x....      BL       app_is_ok_to_sleep
+   \        0x8   0xB900             CBNZ.N   R0,??sl_power_manager_is_ok_to_sleep_0
+     61              ok_to_sleep = false;
+   \        0xA   0x2400             MOVS     R4,#+0
+     62            }
+     63          
+     64            return ok_to_sleep;
+   \                     ??sl_power_manager_is_ok_to_sleep_0: (+1)
+   \        0xC   0x4620             MOV      R0,R4
+   \        0xE   0xBD10             POP      {R4,PC}
+     65          }
+     66          
+     67          /***************************************************************************//**
+     68           * Mandatory callback that must validate if the MCU can sleep after having
+     69           * processed an interrupt when the system was sleeping.
+     70           ******************************************************************************/
+     71           SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+
+   \                                 In section text_power_manager_timecritical7371, align 2, keep-with-next
+     72          bool sl_power_manager_sleep_on_isr_exit(void)
+     73          {
+   \                     sl_power_manager_sleep_on_isr_exit: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+     74            sl_power_manager_on_isr_exit_t answer;
+     75            bool sleep = false;
+     76            bool force_wakeup = false;
+     77             
+     78            // This function allow the power manager to return into sleep, if the latest timer 
+     79            // to expire was power manager's internal one used to restore HFXO on time or 
+     80            // the HFXO interrupt. 
+     81            // Most of the time we want to get back to sleep until the next event occurs.
+     82            sleep = sl_power_manager_is_latest_wakeup_internal();
+   \        0x2   0x.... 0x....      BL       sl_power_manager_is_latest_wakeup_internal
+   \        0x6   0x4605             MOV      R5,R0
+   \        0x8   0x2400             MOVS     R4,#+0
+     83          
+     84            answer = sl_uartdrv_sleep_on_isr_exit();
+   \        0xA   0x.... 0x....      BL       sl_uartdrv_sleep_on_isr_exit
+     85            if (answer == SL_POWER_MANAGER_WAKEUP) {
+   \        0xE   0x2804             CMP      R0,#+4
+   \       0x10   0xBF08             IT       EQ
+   \       0x12   0x2401             MOVEQ    R4,#+1
+     86              force_wakeup = true;
+   \       0x14   0xD002             BEQ.N    ??sl_power_manager_sleep_on_isr_exit_0
+     87            } else if (answer == SL_POWER_MANAGER_SLEEP) {
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xBF08             IT       EQ
+   \       0x1A   0x2501             MOVEQ    R5,#+1
+     88              sleep = true;
+     89            }
+     90          
+     91            // Application hook
+     92            answer = app_sleep_on_isr_exit();
+   \                     ??sl_power_manager_sleep_on_isr_exit_0: (+1)
+   \       0x1C   0x.... 0x....      BL       app_sleep_on_isr_exit
+     93            if (answer == SL_POWER_MANAGER_WAKEUP) {
+   \       0x20   0x2804             CMP      R0,#+4
+   \       0x22   0xD003             BEQ.N    ??sl_power_manager_sleep_on_isr_exit_1
+     94              force_wakeup = true;
+     95            } else if (answer == SL_POWER_MANAGER_SLEEP) {
+   \       0x24   0x2802             CMP      R0,#+2
+   \       0x26   0xBF08             IT       EQ
+   \       0x28   0x2501             MOVEQ    R5,#+1
+     96              sleep = true;
+     97            }
+     98            
+     99            if (force_wakeup) {
+   \       0x2A   0xB104             CBZ.N    R4,??sl_power_manager_sleep_on_isr_exit_2
+    100              sleep = false;
+   \                     ??sl_power_manager_sleep_on_isr_exit_1: (+1)
+   \       0x2C   0x2500             MOVS     R5,#+0
+    101            }
+    102          
+    103            return sleep;
+   \                     ??sl_power_manager_sleep_on_isr_exit_2: (+1)
+   \       0x2E   0x4628             MOV      R0,R5
+   \       0x30   0xBD32             POP      {R1,R4,R5,PC}
+    104          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   app_is_ok_to_sleep
+       0   app_sleep_on_isr_exit
+       8   sl_power_manager_is_ok_to_sleep
+         8   -> app_is_ok_to_sleep
+      16   sl_power_manager_sleep_on_isr_exit
+        16   -> app_sleep_on_isr_exit
+        16   -> sl_power_manager_is_latest_wakeup_internal
+        16   -> sl_uartdrv_sleep_on_isr_exit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  app_is_ok_to_sleep
+       4  app_sleep_on_isr_exit
+      16  sl_power_manager_is_ok_to_sleep
+      50  sl_power_manager_sleep_on_isr_exit
+
+ 
+  4 bytes in section text_power_manager_timecritical7019
+  4 bytes in section text_power_manager_timecritical7143
+ 16 bytes in section text_power_manager_timecritical7255
+ 50 bytes in section text_power_manager_timecritical7371
+ 
+ 66 bytes of CODE memory (+ 8 bytes shared)
+
+Errors: none
+Warnings: none

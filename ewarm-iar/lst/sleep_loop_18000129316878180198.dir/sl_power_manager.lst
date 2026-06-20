@@ -1,0 +1,2242 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_18000129316878180198.dir\sl_power_manager.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\sleep_loop_18000129316878180198.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_18000129316878180198.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_18000129316878180198.dir\sl_power_manager.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_18000129316878180198.dir\sl_power_manager.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\sleep_loop_18000129316878180198.dir\sl_power_manager.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_18000129316878180198.dir\sl_power_manager.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Power Manager API implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_power_manager.h"
+     32          #include "sl_power_manager_config.h"
+     33          #include "sli_power_manager_private.h"
+     34          #include "sli_power_manager.h"
+     35          #include "sli_sleeptimer.h"
+     36          #include "sli_clock_manager.h"
+     37          #include "sl_assert.h"
+     38          #include "sl_atomic.h"
+     39          #include "sl_clock_manager.h"
+     40          
+     41          #if defined(SL_POWER_MANAGER_EXECUTION_MODES_FEATURE_EN) && (SL_POWER_MANAGER_EXECUTION_MODES_FEATURE_EN == 1)
+     42          #include "sl_power_manager_execution_modes.h"
+     43          #endif
+     44          
+     45          #include "em_device.h"
+     46          #if !defined(_SILICON_LABS_32B_SERIES_3)
+     47          #include "em_emu.h"
+     48          #endif
+     49          
+     50          #include <stdlib.h>
+     51          #include <stdint.h>
+     52          #include <string.h>
+     53          
+     54          /*******************************************************************************
+     55           *********************************   DEFINES   *********************************
+     56           ******************************************************************************/
+     57          
+     58          // Default overhead value for the wake-up time used for the schedule wake-up
+     59          // functionality.
+     60          #define SCHEDULE_WAKEUP_DEFAULT_RESTORE_TIME_OVERHEAD_TICK  0
+     61          
+     62          // Determine if the device supports EM1P
+     63          #if !defined(SLI_DEVICE_SUPPORTS_EM1P) && defined(_SILICON_LABS_32B_SERIES_2_CONFIG) && (_SILICON_LABS_32B_SERIES_2_CONFIG >= 2)
+     64          #define SLI_DEVICE_SUPPORTS_EM1P
+     65          #endif
+     66          
+     67          /*******************************************************************************
+     68           ***************************  LOCAL VARIABLES   ********************************
+     69           ******************************************************************************/
+     70          
+     71          // Initialization flag.
+
+   \                                 In section .bss, align 4
+     72          static bool is_initialized = false;
+   \                     is_initialized:
+   \        0x0                      DS8 1
+   \        0x1                      DS8 1
+   \        0x2                      DS8 1
+     73          
+     74          // Current active energy mode.
+     75          static sl_power_manager_em_t current_em = SL_POWER_MANAGER_EM0;
+     76          
+     77          // Counter indicating the presence (not zero) or absence (zero) of requirements on EM1.
+     78          static uint8_t requirement_em1 = 0;
+     79          
+     80          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+     81          // Store the sleeptimer module clock frequency for conversion calculation
+     82          static uint32_t sleeptimer_frequency;
+     83          
+     84          // Counter variable to save the number of High Accuracy HF clock requirements requested.
+     85          uint8_t requirement_high_accuracy_hf_clock_counter = 0;
+   \                     requirement_high_accuracy_hf_clock_counter:
+   \        0x3                      DS8 1
+     86          
+     87          #ifdef SLI_DEVICE_SUPPORTS_EM1P
+     88          // Variable to indicate if the High Accuracy HF clock requirements count is back to zero.
+     89          bool requirement_high_accuracy_hf_clock_back_to_zero = false;
+   \                     requirement_high_accuracy_hf_clock_back_to_zero:
+   \        0x4                      DS8 1
+   \        0x5                      DS8 1
+   \        0x6                      DS8 1
+   \        0x7                      DS8 1
+     90          #endif
+     91          
+     92          // Saved energy mode we are coming from when waiting for HFXO ready.
+     93          static sl_power_manager_em_t waiting_clock_restore_from_em = SL_POWER_MANAGER_EM0;
+     94          
+     95          // Flag indicating if we are sleeping, waiting for the HF clock restore
+     96          static volatile bool is_sleeping_waiting_for_clock_restore = false;
+     97          
+     98          // Flag indicating if the system states (clocks) are saved and should be restored
+     99          static volatile bool is_states_saved = false;
+    100          
+    101          // Timer that it is used for enabling the clock for the scheduled wakeup
+    102          static sl_sleeptimer_timer_handle_t clock_wakeup_timer_handle = { 0 };
+    103          
+    104          // Store if requirement on EM1 has been added before sleeping;
+    105          // i.e. only possible if sleeping for less than minimum off time
+    106          bool requirement_on_em1_added = false;
+   \                     requirement_on_em1_added:
+   \        0x8                      DS8 1
+   \        0x9                      DS8 1
+   \        0xA                      DS8 1
+   \        0xB                      DS8 1
+   \        0xC                      DS8 1
+   \        0xD                      DS8 3
+   \       0x10                      DS8 4
+    107          
+    108          // Threshold delay in sleeptimer ticks indicating the minimum time required
+    109          // to make the shut down of external high frequency oscillator worthwhile before
+    110          // the next synchronous high frequency oscillator requirement. Shorter than this
+    111          // delay, the power gain of shutting down is invalidated.
+    112          uint32_t high_frequency_min_offtime_tick = 0;
+   \                     high_frequency_min_offtime_tick:
+   \       0x14                      DS8 4
+    113          
+    114          // Store the configuration overhead value in sleeptimer tick to add/remove to the wake-up time.
+    115          int32_t wakeup_time_config_overhead_tick = 0;
+   \                     wakeup_time_config_overhead_tick:
+   \       0x18                      DS8 4
+   \       0x1C                      DS8 32
+    116          
+    117          static bool is_hf_x_oscillator_not_preserved;
+    118          
+    119          // Store if we are currently waiting for HF clock restoration to finish
+    120          static bool is_actively_waiting_for_clock_restore = false;
+    121          
+    122          // Indicates if the clock restore was completed from the HFXO ISR
+    123          static volatile bool is_restored_from_hfxo_isr = false;
+    124          static volatile bool is_restored_from_hfxo_isr_internal = false;
+    125          #else
+    126          // Store if we are currently sleeping in EM1HCLKDIV
+    127          static volatile bool em1hclkdiv_sleep_in_progress = false;
+    128          #endif
+    129          
+    130          /*******************************************************************************
+    131           **************************   LOCAL FUNCTIONS   ********************************
+    132           ******************************************************************************/
+    133          
+    134          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    135          static sl_power_manager_em_t get_lowest_em(void);
+    136          
+    137          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    138          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    139          static void evaluate_wakeup(sl_power_manager_em_t to);
+    140          
+    141          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    142          static void update_em1_requirement(bool add);
+    143          
+    144          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    145          static void on_clock_wakeup_timeout(sl_sleeptimer_timer_handle_t *handle,
+    146                                              void *data);
+    147          
+    148          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    149          static void clock_restore_and_wait(void);
+    150          
+    151          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    152          static void clock_restore(void);
+    153          #endif
+    154          
+    155          // Use PriMask to enter critical section by disabling interrupts.
+    156          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    157          static CORE_irqState_t enter_critical_with_primask();
+    158          
+    159          // Exit critical section by re-enabling interrupts in PriMask.
+    160          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    161          static void exit_critical_with_primask(CORE_irqState_t primask_state);
+    162          
+    163          // Exit critical section and re-enter by using two funtion above.
+    164          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+    165          static CORE_irqState_t yield_critical_with_primask(CORE_irqState_t primask_state);
+    166          
+    167          /*******************************************************************************
+    168           **************************   GLOBAL FUNCTIONS   *******************************
+    169           ******************************************************************************/
+    170          
+    171          /***************************************************************************//**
+    172           * Initialize Power Manager module.
+    173           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    174          sl_status_t sl_power_manager_init(void)
+    175          {
+   \                     sl_power_manager_init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    176            CORE_DECLARE_IRQ_STATE;
+    177          
+    178            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x6   0x4604             MOV      R4,R0
+    179          
+    180            // Initialize GPIO bus clock module if it hasn't been initialized
+    181            sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_GPIO);
+   \        0x8   0x....             LDR.N    R0,??DataTable10
+   \        0xA   0x.... 0x....      BL       sl_clock_manager_enable_bus_clock
+    182          
+    183            if (!is_initialized) {
+   \        0xE   0x....             LDR.N    R5,??DataTable10_1
+   \       0x10   0x7828             LDRB     R0,[R5, #+0]
+   \       0x12   0xB978             CBNZ.N   R0,??sl_power_manager_init_0
+    184          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT) \
+    185              && !defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    186              // Additional Sleeptimer HW configuration if the "power_manager_deepsleep" component is used
+    187              sli_sleeptimer_hal_power_manager_integration_init();
+    188          #endif
+    189          
+    190            #if (SL_POWER_MANAGER_DEBUG == 1)
+    191              sli_power_manager_debug_init();
+    192            #endif
+    193              sli_power_manager_em_transition_event_list_init();
+   \       0x14   0x.... 0x....      BL       sli_power_manager_em_transition_event_list_init
+    194          
+    195          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    196              // If lowest energy mode is not restricted to EM1, determine and set lowest energy mode
+    197              sli_sleeptimer_set_pm_em_requirement();
+   \       0x18   0x.... 0x....      BL       sli_sleeptimer_set_pm_em_requirement
+    198              // Set the default wake-up overhead value
+    199              wakeup_time_config_overhead_tick = SCHEDULE_WAKEUP_DEFAULT_RESTORE_TIME_OVERHEAD_TICK;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x61A8             STR      R0,[R5, #+24]
+    200          
+    201              // Get the sleeptimer frequency
+    202              sleeptimer_frequency = sl_sleeptimer_get_timer_frequency();
+   \       0x20   0x.... 0x....      BL       sl_sleeptimer_get_timer_frequency
+   \       0x24   0x6128             STR      R0,[R5, #+16]
+    203          #endif
+    204          
+    205          #if defined(_EMU_CTRL_EM2DBGEN_MASK) && defined(SL_POWER_MANAGER_INIT_EMU_EM2_DEBUG_ENABLE)
+    206              // EM2 set debug enable
+    207              EMU->CTRL = (EMU->CTRL & ~_EMU_CTRL_EM2DBGEN_MASK)
+    208                          | (SL_POWER_MANAGER_INIT_EMU_EM2_DEBUG_ENABLE << _EMU_CTRL_EM2DBGEN_SHIFT);
+   \       0x26   0x....             LDR.N    R0,??DataTable10_2
+   \       0x28   0x6801             LDR      R1,[R0, #+0]
+   \       0x2A   0xF041 0x0101      ORR      R1,R1,#0x1
+   \       0x2E   0x6001             STR      R1,[R0, #+0]
+    209          #endif
+    210          
+    211              // Initialize EM4
+    212              sli_power_manager_init_em4();
+   \       0x30   0x.... 0x....      BL       sli_power_manager_init_em4
+    213          
+    214          #if defined(SL_POWER_MANAGER_EXECUTION_MODES_FEATURE_EN) && (SL_POWER_MANAGER_EXECUTION_MODES_FEATURE_EN == 1)
+    215              // Initialize execution mode feature
+    216              sli_power_manager_executions_modes_init();
+    217          #endif
+    218            }
+    219          
+    220            // Do all necessary hardware initialization.
+    221            sli_power_manager_init_hardware();
+   \                     ??sl_power_manager_init_0: (+1)
+   \       0x34   0x.... 0x....      BL       sli_power_manager_init_hardware
+    222          
+    223          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    224            // Set the HF minimum offtime in sleeptimer ticks
+    225            high_frequency_min_offtime_tick = sli_power_manager_get_default_high_frequency_minimum_offtime();
+   \       0x38   0x.... 0x....      BL       sli_power_manager_get_default_high_frequency_minimum_offtime
+   \       0x3C   0x6168             STR      R0,[R5, #+20]
+    226          #endif
+    227          
+    228            is_initialized = true;
+   \       0x3E   0x2001             MOVS     R0,#+1
+   \       0x40   0x7028             STRB     R0,[R5, #+0]
+    229            CORE_EXIT_CRITICAL();
+   \       0x42   0x4620             MOV      R0,R4
+   \       0x44   0x.... 0x....      BL       CORE_ExitCritical
+    230          
+    231            return SL_STATUS_OK;
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0xBD32             POP      {R1,R4,R5,PC}
+    232          }
+    233          
+    234          /***************************************************************************//**
+    235           * Updates the clocks information used by the Power Manager to evaluate the
+    236           * EM2/3 wake-up time.
+    237           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical41417, align 2, keep-with-next
+    238          void slx_power_manager_update_clock_info(void)
+    239          {
+    240            sli_power_manager_save_oscillators_usage();
+   \                     slx_power_manager_update_clock_info: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_power_manager_save_oscillators_usage
+    241          }
+    242          
+    243          /***************************************************************************//**
+    244           * Sleep at the lowest allowed energy mode.
+    245           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical37173, align 4, keep-with-next
+    246          __NO_INLINE void sl_power_manager_sleep(void)
+    247          {
+   \                     sl_power_manager_sleep: (+1)
+   \        0x0   0xB5B0             PUSH     {R4,R5,R7,LR}
+    248            CORE_irqState_t primask_state;
+    249            sl_power_manager_em_t lowest_em;
+    250          
+    251            primask_state = enter_critical_with_primask();
+   \        0x2   0x.... 0x....      BL       enter_critical_with_primask
+   \        0x6   0x4604             MOV      R4,R0
+    252          
+    253            sli_power_manager_suspend_log_transmission();
+   \        0x8   0x.... 0x....      BL       sli_power_manager_suspend_log_transmission
+    254          
+    255            if (sl_power_manager_is_ok_to_sleep() != true) {
+   \        0xC   0x.... 0x....      BL       sl_power_manager_is_ok_to_sleep
+   \       0x10   0x2801             CMP      R0,#+1
+   \       0x12   0x4D45             LDR.N    R5,??sl_power_manager_sleep_0
+   \       0x14   0xF040 0x8081      BNE.W    ??sl_power_manager_sleep_1
+    256              sli_power_manager_resume_log_transmission();
+    257              exit_critical_with_primask(primask_state);
+    258              return;
+    259            }
+    260          
+    261          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    262            // Go to another energy mode (same, higher to lower or lower to higher)
+    263            do {
+    264              // Remove any previous EM1 requirement added internally by the power manager itself
+    265              if (requirement_on_em1_added) {
+   \                     ??sl_power_manager_sleep_2: (+1)
+   \       0x18   0x7A28             LDRB     R0,[R5, #+8]
+   \       0x1A   0xB120             CBZ.N    R0,??sl_power_manager_sleep_3
+    266                update_em1_requirement(false);
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x.... 0x....      BL       update_em1_requirement
+    267                requirement_on_em1_added = false;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x7228             STRB     R0,[R5, #+8]
+    268              }
+    269          
+    270              lowest_em = get_lowest_em();
+   \                     ??sl_power_manager_sleep_3: (+1)
+   \       0x26   0x.... 0x....      BL       get_lowest_em
+    271              evaluate_wakeup(lowest_em);
+   \       0x2A   0x.... 0x....      BL       evaluate_wakeup
+    272              lowest_em = get_lowest_em();  // Reevaluate as a requirement can be added from evaluate_wakeup()
+   \       0x2E   0x.... 0x....      BL       get_lowest_em
+   \       0x32   0x4607             MOV      R7,R0
+    273          
+    274              if ((lowest_em >= SL_POWER_MANAGER_EM2)
+    275                  && (is_states_saved == false)) {
+   \       0x34   0x2F01             CMP      R7,#+1
+   \       0x36   0xDD03             BLE.N    ??sl_power_manager_sleep_4
+   \       0x38   0x79E8             LDRB     R0,[R5, #+7]
+   \       0x3A   0xB908             CBNZ.N   R0,??sl_power_manager_sleep_4
+    276                sli_power_manager_save_states();
+   \       0x3C   0x.... 0x....      BL       sli_power_manager_save_states
+    277              }
+    278          
+    279              // Notify listeners if transition to another energy mode
+    280              if (lowest_em != current_em) {
+   \                     ??sl_power_manager_sleep_4: (+1)
+   \       0x40   0x786A             LDRB     R2,[R5, #+1]
+   \       0x42   0x4297             CMP      R7,R2
+   \       0x44   0xD00A             BEQ.N    ??sl_power_manager_sleep_5
+    281          #ifdef SLI_DEVICE_SUPPORTS_EM1P
+    282                requirement_high_accuracy_hf_clock_back_to_zero = false;
+   \       0x46   0x2300             MOVS     R3,#+0
+   \       0x48   0x712B             STRB     R3,[R5, #+4]
+    283          #endif
+    284                if (is_sleeping_waiting_for_clock_restore == false) {
+   \       0x4A   0x79A8             LDRB     R0,[R5, #+6]
+   \       0x4C   0xB108             CBZ.N    R0,??sl_power_manager_sleep_6
+   \       0x4E   0x706F             STRB     R7,[R5, #+1]
+   \       0x50   0xE00D             B.N      ??sl_power_manager_sleep_7
+    285                  // But only notify if we are not in the process of waiting for the HF oscillators restore.
+    286                  sli_power_manager_notify_em_transition(current_em, lowest_em);
+   \                     ??sl_power_manager_sleep_6: (+1)
+   \       0x52   0x4639             MOV      R1,R7
+   \       0x54   0x4610             MOV      R0,R2
+   \       0x56   0x.... 0x....      BL       sli_power_manager_notify_em_transition
+    287                }
+    288                current_em = lowest_em;           // Keep new active energy mode
+   \       0x5A   0x706F             STRB     R7,[R5, #+1]
+    289              }
+    290          
+    291          #ifdef SLI_DEVICE_SUPPORTS_EM1P
+    292              // Notification for possible transition from EM1P to EM2
+    293              // For internal Silicon Labs use only
+    294              if (requirement_high_accuracy_hf_clock_back_to_zero
+    295                  && current_em == SL_POWER_MANAGER_EM2) {
+   \                     ??sl_power_manager_sleep_5: (+1)
+   \       0x5C   0x7928             LDRB     R0,[R5, #+4]
+   \       0x5E   0xB130             CBZ.N    R0,??sl_power_manager_sleep_7
+   \       0x60   0x7868             LDRB     R0,[R5, #+1]
+   \       0x62   0x2802             CMP      R0,#+2
+   \       0x64   0xD103             BNE.N    ??sl_power_manager_sleep_7
+    296                requirement_high_accuracy_hf_clock_back_to_zero = false;
+   \       0x66   0x2100             MOVS     R1,#+0
+   \       0x68   0x7129             STRB     R1,[R5, #+4]
+    297                sli_power_manager_em1p_to_em2_notification();
+   \       0x6A   0x.... 0x....      BL       sli_power_manager_em1p_to_em2_notification
+    298              }
+    299          #endif
+    300          
+    301              // Pre-sleep operations if any are necessary
+    302              if ((lowest_em >= SL_POWER_MANAGER_EM2)
+    303                  && (is_states_saved == false)) {
+   \                     ??sl_power_manager_sleep_7: (+1)
+   \       0x6E   0x2F01             CMP      R7,#+1
+   \       0x70   0xDD09             BLE.N    ??sl_power_manager_sleep_8
+   \       0x72   0x79E8             LDRB     R0,[R5, #+7]
+   \       0x74   0xB938             CBNZ.N   R0,??sl_power_manager_sleep_8
+    304                // Only do pre-sleep operations if there is no requirement on High Accuracy Clock.
+    305                // Else we must not touch the clock tree.
+    306                if (requirement_high_accuracy_hf_clock_counter == 0) {
+   \       0x76   0x78E8             LDRB     R0,[R5, #+3]
+   \       0x78   0xB918             CBNZ.N   R0,??sl_power_manager_sleep_9
+    307                  sli_power_manager_handle_pre_deepsleep_operations();
+   \       0x7A   0x.... 0x....      BL       sli_power_manager_handle_pre_deepsleep_operations
+    308                  is_hf_x_oscillator_not_preserved = true;
+   \       0x7E   0x2001             MOVS     R0,#+1
+   \       0x80   0x7268             STRB     R0,[R5, #+9]
+    309                }
+    310                is_states_saved = true;
+   \                     ??sl_power_manager_sleep_9: (+1)
+   \       0x82   0x2101             MOVS     R1,#+1
+   \       0x84   0x71E9             STRB     R1,[R5, #+7]
+    311              }
+    312          
+    313              // Apply lowest reachable energy mode
+    314              sli_power_manager_apply_em(current_em);
+   \                     ??sl_power_manager_sleep_8: (+1)
+   \       0x86   0x7868             LDRB     R0,[R5, #+1]
+   \       0x88   0x.... 0x....      BL       sli_power_manager_apply_em
+    315          
+    316              // In case we are waiting for the restore from an early wake-up,
+    317              // we put back the current EM to the one before the early wake-up to do the next notification correctly.
+    318              if (is_sleeping_waiting_for_clock_restore == true) {
+   \       0x8C   0x79A8             LDRB     R0,[R5, #+6]
+   \       0x8E   0x2801             CMP      R0,#+1
+   \       0x90   0xBF04             ITT      EQ
+   \       0x92   0x7968             LDRBEQ   R0,[R5, #+5]
+   \       0x94   0x7068             STRBEQ   R0,[R5, #+1]
+    319                current_em = waiting_clock_restore_from_em;
+    320              }
+    321          
+    322              // Notify consumer of wakeup while interrupts are still off
+    323              // For internal Silicon Labs use only
+    324              sli_power_manager_on_wakeup();
+   \       0x96   0x.... 0x....      BL       sli_power_manager_on_wakeup
+    325          
+    326              primask_state = yield_critical_with_primask(primask_state);
+   \       0x9A   0x4620             MOV      R0,R4
+   \       0x9C   0x.... 0x....      BL       yield_critical_with_primask
+   \       0xA0   0x4604             MOV      R4,R0
+    327          
+    328              // In case the HF restore was completed from the HFXO ISR,
+    329              // and notification not done elsewhere, do it here
+    330              if (is_restored_from_hfxo_isr_internal == true) {
+   \       0xA2   0x7B28             LDRB     R0,[R5, #+12]
+   \       0xA4   0x2801             CMP      R0,#+1
+   \       0xA6   0xD10A             BNE.N    ??sl_power_manager_sleep_10
+    331                is_restored_from_hfxo_isr_internal = false;
+   \       0xA8   0x2100             MOVS     R1,#+0
+   \       0xAA   0x7329             STRB     R1,[R5, #+12]
+    332                if (current_em == waiting_clock_restore_from_em) {
+   \       0xAC   0x7968             LDRB     R0,[R5, #+5]
+   \       0xAE   0x7869             LDRB     R1,[R5, #+1]
+   \       0xB0   0x4281             CMP      R1,R0
+   \       0xB2   0xD104             BNE.N    ??sl_power_manager_sleep_10
+    333                  current_em = SL_POWER_MANAGER_EM1;
+   \       0xB4   0x2201             MOVS     R2,#+1
+   \       0xB6   0x706A             STRB     R2,[R5, #+1]
+    334                  sli_power_manager_notify_em_transition(waiting_clock_restore_from_em, SL_POWER_MANAGER_EM1);
+   \       0xB8   0x2101             MOVS     R1,#+1
+   \       0xBA   0x.... 0x....      BL       sli_power_manager_notify_em_transition
+    335                }
+    336              }
+    337          
+    338              // Stop the internal power manager sleeptimer.
+    339              sl_sleeptimer_stop_timer(&clock_wakeup_timer_handle);
+   \                     ??sl_power_manager_sleep_10: (+1)
+   \       0xBE   0xF105 0x001C      ADD      R0,R5,#+28
+   \       0xC2   0x.... 0x....      BL       sl_sleeptimer_stop_timer
+    340            } while (sl_power_manager_sleep_on_isr_exit() == true);
+   \       0xC6   0x.... 0x....      BL       sl_power_manager_sleep_on_isr_exit
+   \       0xCA   0x2801             CMP      R0,#+1
+   \       0xCC   0xD0A4             BEQ.N    ??sl_power_manager_sleep_2
+    341          
+    342          #ifdef SLI_DEVICE_SUPPORTS_EM1P
+    343            requirement_high_accuracy_hf_clock_back_to_zero = false;
+   \       0xCE   0x2000             MOVS     R0,#+0
+   \       0xD0   0x7128             STRB     R0,[R5, #+4]
+    344          #endif
+    345          
+    346            if (is_states_saved == true) {
+   \       0xD2   0x79E9             LDRB     R1,[R5, #+7]
+   \       0xD4   0x2901             CMP      R1,#+1
+   \       0xD6   0xD118             BNE.N    ??sl_power_manager_sleep_11
+    347              is_sleeping_waiting_for_clock_restore = false;
+   \       0xD8   0x2200             MOVS     R2,#+0
+   \       0xDA   0x71AA             STRB     R2,[R5, #+6]
+    348              // Restore clocks
+    349              if (is_hf_x_oscillator_not_preserved) {
+   \       0xDC   0x7A68             LDRB     R0,[R5, #+9]
+   \       0xDE   0xB158             CBZ.N    R0,??sl_power_manager_sleep_12
+    350                sli_power_manager_restore_high_freq_accuracy_clk();
+   \       0xE0   0x.... 0x....      BL       sli_power_manager_restore_high_freq_accuracy_clk
+    351                is_hf_x_oscillator_not_preserved = false;
+   \       0xE4   0x2000             MOVS     R0,#+0
+   \       0xE6   0x7268             STRB     R0,[R5, #+9]
+   \       0xE8   0xE006             B.N      ??sl_power_manager_sleep_12
+    352              }
+    353              // If possible, go back to sleep in EM1 while waiting for HF accuracy restore
+    354              while (!sli_power_manager_is_high_freq_accuracy_clk_ready(false)) {
+    355                sli_power_manager_apply_em(SL_POWER_MANAGER_EM1);
+   \                     ??sl_power_manager_sleep_13: (+1)
+   \       0xEA   0x2001             MOVS     R0,#+1
+   \       0xEC   0x.... 0x....      BL       sli_power_manager_apply_em
+    356                primask_state = yield_critical_with_primask(primask_state);
+   \       0xF0   0x4620             MOV      R0,R4
+   \       0xF2   0x.... 0x....      BL       yield_critical_with_primask
+   \       0xF6   0x4604             MOV      R4,R0
+    357              }
+   \                     ??sl_power_manager_sleep_12: (+1)
+   \       0xF8   0x2000             MOVS     R0,#+0
+   \       0xFA   0x.... 0x....      BL       sli_power_manager_is_high_freq_accuracy_clk_ready
+   \       0xFE   0x2800             CMP      R0,#+0
+   \      0x100   0xD0F3             BEQ.N    ??sl_power_manager_sleep_13
+    358              sli_power_manager_restore_states();
+   \      0x102   0x.... 0x....      BL       sli_power_manager_restore_states
+    359              is_states_saved = false;
+   \      0x106   0x2000             MOVS     R0,#+0
+   \      0x108   0x71E8             STRB     R0,[R5, #+7]
+    360            }
+    361          
+    362            evaluate_wakeup(SL_POWER_MANAGER_EM0);
+   \                     ??sl_power_manager_sleep_11: (+1)
+   \      0x10A   0x.... 0x....      BL       evaluate_wakeup
+    363          #else
+    364            current_em = SL_POWER_MANAGER_EM1;
+    365          
+    366            // Notify listeners of transition to EM1
+    367            sli_power_manager_notify_em_transition(SL_POWER_MANAGER_EM0, SL_POWER_MANAGER_EM1);
+    368          
+    369            do {
+    370              // Get lowest EM
+    371              lowest_em = get_lowest_em();
+    372          
+    373              if (em1hclkdiv_sleep_in_progress == false && lowest_em > SL_POWER_MANAGER_EM1) {
+    374                // Hook function for specific operations when we enter sleep with no EM1 requirement.
+    375                // Even though deepsleep is not entered, additional operations to reduce power can be perfomed.
+    376                sli_power_manager_em1hclkdiv_presleep_operations();
+    377                em1hclkdiv_sleep_in_progress = true;
+    378              }
+    379          
+    380              // Apply EM1 energy mode
+    381              // Lowest EM is passed so that further actions can be taking by the HAL based on the EM requirements
+    382              // but only EM1 sleep will be entered.
+    383              sli_power_manager_apply_em(lowest_em);
+    384          
+    385              primask_state = yield_critical_with_primask(primask_state);
+    386            } while (sl_power_manager_sleep_on_isr_exit() == true);
+    387          
+    388            if (em1hclkdiv_sleep_in_progress == true) {
+    389              sli_power_manager_em1hclkdiv_postsleep_operations();
+    390              em1hclkdiv_sleep_in_progress = false;
+    391            }
+    392          #endif
+    393          
+    394          #if defined(SL_POWER_MANAGER_EXECUTION_MODES_FEATURE_EN) && (SL_POWER_MANAGER_EXECUTION_MODES_FEATURE_EN == 1)
+    395            sli_power_manager_implement_execution_mode_on_wakeup();
+    396          #endif
+    397          
+    398            // Indicate back to EM0
+    399            sli_power_manager_notify_em_transition(current_em, SL_POWER_MANAGER_EM0);
+   \      0x10E   0x7868             LDRB     R0,[R5, #+1]
+   \      0x110   0x2100             MOVS     R1,#+0
+   \      0x112   0x.... 0x....      BL       sli_power_manager_notify_em_transition
+    400            current_em = SL_POWER_MANAGER_EM0;
+   \      0x116   0x2000             MOVS     R0,#+0
+   \      0x118   0x7068             STRB     R0,[R5, #+1]
+    401          
+    402            sli_power_manager_resume_log_transmission();
+   \                     ??sl_power_manager_sleep_1: (+1)
+   \      0x11A   0x.... 0x....      BL       sli_power_manager_resume_log_transmission
+    403          
+    404            exit_critical_with_primask(primask_state);
+   \      0x11E   0x4620             MOV      R0,R4
+   \      0x120   0xE8BD 0x40B0      POP      {R4,R5,R7,LR}
+   \      0x124   0x.... 0x....      B.W      exit_critical_with_primask
+   \                     ??sl_power_manager_sleep_0:
+   \      0x128   0x....'....        DC32     is_initialized
+    405          }
+    406          
+    407          /***************************************************************************//**
+    408           * Updates requirement on the given energy mode.
+    409           *
+    410           * @param   em    Energy mode. Possible values are:
+    411           *                SL_POWER_MANAGER_EM1
+    412           *
+    413           * @param   add   Flag indicating if requirement is added (true) or removed
+    414           *                (false).
+    415           *
+    416           * @note Need to be call inside a critical section.
+    417           *
+    418           * @note This function will do nothing when a project contains the
+    419           *       power_manager_no_deepsleep component, which configures the
+    420           *       lowest energy mode as EM1.
+    421           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical36118, align 4, keep-with-next
+    422          void sli_power_manager_update_em_requirement(sl_power_manager_em_t em,
+    423                                                       bool add)
+    424          {
+   \                     sli_power_manager_update_em_requirement: (+1)
+   \        0x0   0xB5B0             PUSH     {R4,R5,R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    425            // EM0 and EM3 aren't allowed.
+    426            EFM_ASSERT((em > SL_POWER_MANAGER_EM0) && (em < SL_POWER_MANAGER_EM3));
+   \        0x6   0x4F22             LDR.N    R7,??sli_power_manager_update_em_requirement_0
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0xD001             BEQ.N    ??sli_power_manager_update_em_requirement_1
+   \        0xC   0x2C02             CMP      R4,#+2
+   \        0xE   0xDD04             BLE.N    ??sli_power_manager_update_em_requirement_2
+   \                     ??sli_power_manager_update_em_requirement_1: (+1)
+   \       0x10   0xF44F 0x71D5      MOV      R1,#+426
+   \       0x14   0x4638             MOV      R0,R7
+   \       0x16   0x.... 0x....      BL       assertEFM
+    427          
+    428            if (em == SL_POWER_MANAGER_EM2) {
+   \                     ??sli_power_manager_update_em_requirement_2: (+1)
+   \       0x1A   0x2C02             CMP      R4,#+2
+   \       0x1C   0xD036             BEQ.N    ??sli_power_manager_update_em_requirement_3
+    429              // Do nothing when adding a requirement on EM2.
+    430              return;
+    431            }
+    432          
+    433            // Cannot increment above 255 (wraparound not allowed)
+    434            EFM_ASSERT(!((requirement_em1 == UINT8_MAX) && (add == true)));
+   \       0x1E   0x4C1D             LDR.N    R4,??sli_power_manager_update_em_requirement_0+4
+   \       0x20   0x78A0             LDRB     R0,[R4, #+2]
+   \       0x22   0x28FF             CMP      R0,#+255
+   \       0x24   0xD106             BNE.N    ??sli_power_manager_update_em_requirement_4
+   \       0x26   0x2D01             CMP      R5,#+1
+   \       0x28   0xD107             BNE.N    ??sli_power_manager_update_em_requirement_5
+   \       0x2A   0xF44F 0x71D9      MOV      R1,#+434
+   \       0x2E   0x4638             MOV      R0,R7
+   \       0x30   0x.... 0x....      BL       assertEFM
+    435            if ((requirement_em1 == UINT8_MAX) && (add == true)) {
+   \                     ??sli_power_manager_update_em_requirement_4: (+1)
+   \       0x34   0x78A0             LDRB     R0,[R4, #+2]
+   \       0x36   0x28FF             CMP      R0,#+255
+   \       0x38   0xD102             BNE.N    ??sli_power_manager_update_em_requirement_6
+   \                     ??sli_power_manager_update_em_requirement_5: (+1)
+   \       0x3A   0x2D01             CMP      R5,#+1
+   \       0x3C   0xD108             BNE.N    ??sli_power_manager_update_em_requirement_7
+    436              return;
+   \       0x3E   0xBDB0             POP      {R4,R5,R7,PC}
+    437            }
+    438            // Cannot decrement below 0 (wraparound not allowed)
+    439            EFM_ASSERT(!((requirement_em1 == 0) && (add == false)));
+   \                     ??sli_power_manager_update_em_requirement_6: (+1)
+   \       0x40   0xB930             CBNZ.N   R0,??sli_power_manager_update_em_requirement_7
+   \       0x42   0x0028             MOVS     R0,R5
+   \       0x44   0xD106             BNE.N    ??sli_power_manager_update_em_requirement_8
+   \       0x46   0xF240 0x11B7      MOVW     R1,#+439
+   \       0x4A   0x4638             MOV      R0,R7
+   \       0x4C   0x.... 0x....      BL       assertEFM
+    440            if ((requirement_em1 == 0) && (add == false)) {
+   \                     ??sli_power_manager_update_em_requirement_7: (+1)
+   \       0x50   0x78A0             LDRB     R0,[R4, #+2]
+   \       0x52   0xB908             CBNZ.N   R0,??sli_power_manager_update_em_requirement_9
+   \                     ??sli_power_manager_update_em_requirement_8: (+1)
+   \       0x54   0x0028             MOVS     R0,R5
+   \       0x56   0xD019             BEQ.N    ??sli_power_manager_update_em_requirement_3
+    441              return;
+    442            }
+    443          
+    444            // Increment (add) or decrement (remove) energy mode counter.
+    445            requirement_em1 += add ? 1 : -1;
+   \                     ??sli_power_manager_update_em_requirement_9: (+1)
+   \       0x58   0x2D00             CMP      R5,#+0
+   \       0x5A   0xBF14             ITE      NE
+   \       0x5C   0x2001             MOVNE    R0,#+1
+   \       0x5E   0x20FF             MOVEQ    R0,#+255
+   \       0x60   0x78A1             LDRB     R1,[R4, #+2]
+   \       0x62   0x1840             ADDS     R0,R0,R1
+   \       0x64   0x70A0             STRB     R0,[R4, #+2]
+    446          
+    447          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    448            if (add == true
+    449                && current_em >= SL_POWER_MANAGER_EM2) {  // if currently sleeping at a level that can require a clock restore; i.e. called from ISR
+   \       0x66   0x2D01             CMP      R5,#+1
+   \       0x68   0xD110             BNE.N    ??sli_power_manager_update_em_requirement_3
+   \       0x6A   0x7860             LDRB     R0,[R4, #+1]
+   \       0x6C   0x2802             CMP      R0,#+2
+   \       0x6E   0xDB0D             BLT.N    ??sli_power_manager_update_em_requirement_3
+    450              sl_power_manager_em_t lowest_em;
+    451              // If requirement added when sleeping, restore the clock before continuing the processing.
+    452              // Retrieve lowest reachable energy mode
+    453              lowest_em = get_lowest_em();
+   \       0x70   0x.... 0x....      BL       get_lowest_em
+   \       0x74   0x4605             MOV      R5,R0
+    454          
+    455              if (lowest_em <= SL_POWER_MANAGER_EM1) {
+   \       0x76   0x2802             CMP      R0,#+2
+   \       0x78   0xBFB8             IT       LT
+    456                // If new lowest requirement is greater than the current
+    457                // Restore clock; Everything is restored (HF and LF Clocks), the sleep loop will
+    458                // shutdown the clocks when returning sleeping
+    459                clock_restore_and_wait();
+   \       0x7A   0x.... 0x....      BLLT     clock_restore_and_wait
+    460              }
+    461          
+    462              if (current_em != lowest_em) {
+   \       0x7E   0x7860             LDRB     R0,[R4, #+1]
+   \       0x80   0x42A8             CMP      R0,R5
+   \       0x82   0xD003             BEQ.N    ??sli_power_manager_update_em_requirement_3
+    463                sli_power_manager_notify_em_transition(current_em, lowest_em);
+   \       0x84   0x4629             MOV      R1,R5
+   \       0x86   0x.... 0x....      BL       sli_power_manager_notify_em_transition
+    464                current_em = lowest_em;           // Keep new active energy mode
+   \       0x8A   0x7065             STRB     R5,[R4, #+1]
+    465              }
+    466            }
+    467          #else
+    468            (void)em;
+    469            if (add == true && em1hclkdiv_sleep_in_progress == true) {
+    470              // If we are coming from EM1HCLKDIV and adding an EM1 requirement, we need to perform
+    471              // the post-sleep operations.
+    472              sli_power_manager_em1hclkdiv_postsleep_operations();
+    473              em1hclkdiv_sleep_in_progress = false;
+    474            }
+    475          #endif
+    476          }
+   \                     ??sli_power_manager_update_em_requirement_3: (+1)
+   \       0x8C   0xBDB0             POP      {R4,R5,R7,PC}
+   \       0x8E   0xBF00             Nop
+   \                     ??sli_power_manager_update_em_requirement_0:
+   \       0x90   0x....'....        DC32     ?_0
+   \       0x94   0x....'....        DC32     is_initialized
+    477          
+    478          /***************************************************************************//**
+    479           * Updates requirement on preservation of High Frequency Clocks settings.
+    480           *
+    481           * @param   add   Flag indicating if requirement is added (true) or removed
+    482           *                (false).
+    483           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    484          void sli_power_manager_update_hf_clock_settings_preservation_requirement(bool add)
+    485          {
+   \                     sli_power_manager_update_hf_clock_settings_preservation_requirement: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    486          #if (defined(SLI_DEVICE_SUPPORTS_EM1P) && !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT))
+    487            CORE_DECLARE_IRQ_STATE;
+    488          
+    489            CORE_ENTER_CRITICAL();
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x4605             MOV      R5,R0
+    490            // Cannot increment above 255 (wraparound not allowed)
+    491            EFM_ASSERT(!((requirement_high_accuracy_hf_clock_counter == UINT8_MAX) && (add == true)));
+   \        0xA   0x....             LDR.N    R7,??DataTable10_1
+   \        0xC   0x78F8             LDRB     R0,[R7, #+3]
+   \        0xE   0x....             LDR.N    R6,??DataTable10_3
+   \       0x10   0x28FF             CMP      R0,#+255
+   \       0x12   0xD106             BNE.N    ??sli_power_manager_update_hf_clock_settings_pr_0
+   \       0x14   0x2C01             CMP      R4,#+1
+   \       0x16   0xD107             BNE.N    ??sli_power_manager_update_hf_clock_settings_pr_1
+   \       0x18   0xF240 0x11EB      MOVW     R1,#+491
+   \       0x1C   0x4630             MOV      R0,R6
+   \       0x1E   0x.... 0x....      BL       assertEFM
+    492            if ((requirement_high_accuracy_hf_clock_counter == UINT8_MAX) && (add == true)) {
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_0: (+1)
+   \       0x22   0x78F8             LDRB     R0,[R7, #+3]
+   \       0x24   0x28FF             CMP      R0,#+255
+   \       0x26   0xD102             BNE.N    ??sli_power_manager_update_hf_clock_settings_pr_2
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_1: (+1)
+   \       0x28   0x2C01             CMP      R4,#+1
+   \       0x2A   0xD108             BNE.N    ??sli_power_manager_update_hf_clock_settings_pr_3
+   \       0x2C   0xE00B             B.N      ??sli_power_manager_update_hf_clock_settings_pr_4
+    493              CORE_EXIT_CRITICAL();
+    494              return;
+    495            }
+    496            // Cannot decrement below 0 (wraparound not allowed)
+    497            EFM_ASSERT(!((requirement_high_accuracy_hf_clock_counter == 0) && (add == false)));
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_2: (+1)
+   \       0x2E   0xB930             CBNZ.N   R0,??sli_power_manager_update_hf_clock_settings_pr_3
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0xD106             BNE.N    ??sli_power_manager_update_hf_clock_settings_pr_5
+   \       0x34   0xF240 0x11F1      MOVW     R1,#+497
+   \       0x38   0x4630             MOV      R0,R6
+   \       0x3A   0x.... 0x....      BL       assertEFM
+    498            if ((requirement_high_accuracy_hf_clock_counter == 0) && (add == false)) {
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_3: (+1)
+   \       0x3E   0x78F8             LDRB     R0,[R7, #+3]
+   \       0x40   0xB930             CBNZ.N   R0,??sli_power_manager_update_hf_clock_settings_pr_6
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_5: (+1)
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0xD104             BNE.N    ??sli_power_manager_update_hf_clock_settings_pr_6
+    499              CORE_EXIT_CRITICAL();
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_4: (+1)
+   \       0x46   0x4628             MOV      R0,R5
+   \       0x48   0xE8BD 0x40F2      POP      {R1,R4-R7,LR}
+   \       0x4C   0x.... 0x....      B.W      CORE_ExitCritical
+    500              return;
+    501            }
+    502            // Cannot add requirement if the "normal" clock settings are not currently applied
+    503            EFM_ASSERT(!((current_em > SL_POWER_MANAGER_EM2) && (add == true)));
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_6: (+1)
+   \       0x50   0x7878             LDRB     R0,[R7, #+1]
+   \       0x52   0x2803             CMP      R0,#+3
+   \       0x54   0xDB06             BLT.N    ??sli_power_manager_update_hf_clock_settings_pr_7
+   \       0x56   0x2C01             CMP      R4,#+1
+   \       0x58   0xD104             BNE.N    ??sli_power_manager_update_hf_clock_settings_pr_7
+   \       0x5A   0xF240 0x11F7      MOVW     R1,#+503
+   \       0x5E   0x4630             MOV      R0,R6
+   \       0x60   0x.... 0x....      BL       assertEFM
+    504          
+    505            // Increment (add) or decrement (remove) energy mode counter.
+    506            requirement_high_accuracy_hf_clock_counter += add ? 1 : -1;
+   \                     ??sli_power_manager_update_hf_clock_settings_pr_7: (+1)
+   \       0x64   0x2C00             CMP      R4,#+0
+   \       0x66   0xBF14             ITE      NE
+   \       0x68   0x2001             MOVNE    R0,#+1
+   \       0x6A   0x20FF             MOVEQ    R0,#+255
+   \       0x6C   0x78F9             LDRB     R1,[R7, #+3]
+   \       0x6E   0x1840             ADDS     R0,R0,R1
+    507          
+    508            // Save if the requirement is back to zero.
+    509            requirement_high_accuracy_hf_clock_back_to_zero = (requirement_high_accuracy_hf_clock_counter == 0) ? true : false;
+   \       0x70   0xB2C1             UXTB     R1,R0
+   \       0x72   0x1E49             SUBS     R1,R1,#+1
+   \       0x74   0x4189             SBCS     R1,R1,R1
+   \       0x76   0x0FC9             LSRS     R1,R1,#+31
+   \       0x78   0x70F8             STRB     R0,[R7, #+3]
+   \       0x7A   0x7139             STRB     R1,[R7, #+4]
+   \       0x7C   0xE7E3             B.N      ??sli_power_manager_update_hf_clock_settings_pr_4
+    510          
+    511            CORE_EXIT_CRITICAL();
+    512          #else
+    513            (void)add;
+    514          #endif
+    515          }
+    516          
+    517          /***************************************************************************//**
+    518           * Adds requirement on the preservation of the High Frequency Clocks settings.
+    519           *
+    520           * @note FOR INTERNAL USE ONLY.
+    521           *
+    522           * @note Must be used together with adding an EM2 requirement.
+    523           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    524          void sli_power_manager_add_hf_clock_settings_preservation_requirement(void)
+    525          {
+    526          #if defined(SLI_DEVICE_SUPPORTS_EM1P)
+    527            sli_power_manager_update_hf_clock_settings_preservation_requirement(true);
+   \                     sli_power_manager_add_hf_clock_settings_preservation_requirement: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x....             B.N      sli_power_manager_update_hf_clock_settings_preservation_requirement
+    528          #else
+    529            sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM1);
+    530          #endif
+    531          }
+    532          
+    533          /***************************************************************************//**
+    534           * Removes requirement on the preservation of the High Frequency Clocks settings.
+    535           *
+    536           * @note FOR INTERNAL USE ONLY.
+    537           *
+    538           * @note Must be used together with removing an EM2 requirement.
+    539           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    540          void sli_power_manager_remove_hf_clock_settings_preservation_requirement(void)
+    541          {
+    542          #if defined(SLI_DEVICE_SUPPORTS_EM1P)
+    543            sli_power_manager_update_hf_clock_settings_preservation_requirement(false);
+   \                     sli_power_manager_remove_hf_clock_settings_preservation_requirement: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....             B.N      sli_power_manager_update_hf_clock_settings_preservation_requirement
+    544          #else
+    545            sl_power_manager_remove_em_requirement(SL_POWER_MANAGER_EM1);
+    546          #endif
+    547          }
+    548          
+    549          /***************************************************************************//**
+    550           * Gets the wake-up restore process time.
+    551           * If we are not in the context of a deepsleep and therefore don't need to
+    552           * do a restore, the return value is 0.
+    553           *
+    554           * @return   Wake-up restore process time.
+    555           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical69126, align 4, keep-with-next
+    556          uint32_t sli_power_manager_get_restore_delay(void)
+    557          {
+   \                     sli_power_manager_get_restore_delay: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    558          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    559            uint32_t wakeup_delay = 0;
+    560            CORE_DECLARE_IRQ_STATE;
+    561          
+    562            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x6   0x4604             MOV      R4,R0
+    563          
+    564            // If we are not currently in deepsleep, not need for any clock restore
+    565            if (current_em <= SL_POWER_MANAGER_EM1) {
+   \        0x8   0x4808             LDR.N    R0,??sli_power_manager_get_restore_delay_0
+   \        0xA   0x7841             LDRB     R1,[R0, #+1]
+   \        0xC   0x2901             CMP      R1,#+1
+   \        0xE   0xDC04             BGT.N    ??sli_power_manager_get_restore_delay_1
+    566              CORE_EXIT_CRITICAL();
+   \       0x10   0x4620             MOV      R0,R4
+   \       0x12   0x.... 0x....      BL       CORE_ExitCritical
+    567              return wakeup_delay;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0xBD70             POP      {R4-R6,PC}
+    568            }
+    569          
+    570            // Get the clock restore delay
+    571            wakeup_delay = sl_power_manager_schedule_wakeup_get_restore_overhead_tick();
+   \                     ??sli_power_manager_get_restore_delay_1: (+1)
+   \       0x1A   0x6985             LDR      R5,[R0, #+24]
+    572            wakeup_delay += sli_power_manager_get_wakeup_process_time_overhead();
+   \       0x1C   0x.... 0x....      BL       sli_power_manager_get_wakeup_process_time_overhead
+   \       0x20   0x4606             MOV      R6,R0
+    573          
+    574            CORE_EXIT_CRITICAL();
+   \       0x22   0x4620             MOV      R0,R4
+   \       0x24   0x.... 0x....      BL       CORE_ExitCritical
+    575          
+    576            return wakeup_delay;
+   \       0x28   0x1970             ADDS     R0,R6,R5
+   \       0x2A   0xBD70             POP      {R4-R6,PC}
+   \                     ??sli_power_manager_get_restore_delay_0:
+   \       0x2C   0x....'....        DC32     is_initialized
+    577          #else
+    578            return 0;
+    579          #endif
+    580          }
+    581          
+    582          /***************************************************************************//**
+    583           * Initiates the wake-up restore process.
+    584           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    585          void sli_power_manager_initiate_restore(void)
+    586          {
+   \                     sli_power_manager_initiate_restore: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    587          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    588            CORE_DECLARE_IRQ_STATE;
+    589          
+    590            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x6   0x4604             MOV      R4,R0
+    591          
+    592            // Start restore process
+    593            clock_restore();
+   \        0x8   0x.... 0x....      BL       clock_restore
+    594          
+    595            CORE_EXIT_CRITICAL();
+   \        0xC   0x4620             MOV      R0,R4
+   \        0xE   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x12   0x.... 0x....      B.W      CORE_ExitCritical
+    596          #endif
+    597          }
+    598          
+    599          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    600          /*******************************************************************************
+    601           * Gets the status of power manager variable is_sleeping_waiting_for_clock_restore.
+    602           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    603          bool sli_power_manager_get_clock_restore_status(void)
+    604          {
+    605            return is_sleeping_waiting_for_clock_restore;
+   \                     sli_power_manager_get_clock_restore_status: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_1
+   \        0x2   0x7980             LDRB     R0,[R0, #+6]
+   \        0x4   0x4770             BX       LR
+    606          }
+    607          #endif
+    608          
+    609          /***************************************************************************//**
+    610           * Get configurable overhead value for early restore time in Sleeptimer ticks
+    611           * when a schedule wake-up is set.
+    612           *
+    613           * @return  Current overhead value for early wake-up time.
+    614           *
+    615           * @note This function will do nothing when a project contains the
+    616           *       power_manager_no_deepsleep component, which configures the
+    617           *       lowest energy mode as EM1.
+    618           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    619          int32_t sl_power_manager_schedule_wakeup_get_restore_overhead_tick(void)
+    620          {
+    621          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    622            int32_t overhead_tick;
+    623          
+    624            sl_atomic_load(overhead_tick, wakeup_time_config_overhead_tick);
+    625            return overhead_tick;
+   \                     sl_power_manager_schedule_wakeup_get_restore_overhead_tick: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_1
+   \        0x2   0x6980             LDR      R0,[R0, #+24]
+   \        0x4   0x4770             BX       LR
+    626          #else
+    627            return 0;
+    628          #endif
+    629          }
+    630          
+    631          /***************************************************************************//**
+    632           * Set configurable overhead value for early restore time in Sleeptimer ticks
+    633           * used for schedule wake-up.
+    634           * Must be called after initialization else the value will be overwritten.
+    635           *
+    636           * @param overhead_tick Overhead value to set for early restore time.
+    637           *
+    638           * @note The overhead value can also be negative to remove time from the restore
+    639           *       process.
+    640           *
+    641           * @note This function will do nothing when a project contains the
+    642           *       power_manager_no_deepsleep component, which configures the
+    643           *       lowest energy mode as EM1.
+    644           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    645          void sl_power_manager_schedule_wakeup_set_restore_overhead_tick(int32_t overhead_tick)
+    646          {
+    647          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    648            sl_atomic_store(wakeup_time_config_overhead_tick, overhead_tick);
+   \                     sl_power_manager_schedule_wakeup_set_restore_overhead_tick: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable10_1
+   \        0x2   0x6188             STR      R0,[R1, #+24]
+    649          #else
+    650            (void)overhead_tick;
+    651          #endif
+    652          }
+   \        0x4   0x4770             BX       LR
+    653          
+    654          /***************************************************************************//**
+    655           * Get configurable minimum off-time value for schedule wake-up in Sleeptimer
+    656           * ticks.
+    657           *
+    658           * @return  Current minimum off-time value for schedule wake-up.
+    659           *
+    660           * @note  Turning on external high frequency oscillator, such as HFXO, requires
+    661           *        more energy since we must supply higher current for the wake-up.
+    662           *        Therefore, when an 'external high frequency oscillator enable' is
+    663           *        scheduled in 'x' time, there is a threshold 'x' value where turning
+    664           *        off the oscillator is not worthwhile since the energy consumed by
+    665           *        taking into account the wake-up will be greater than if we just keep
+    666           *        the oscillator on until the next scheduled oscillator enabled. This
+    667           *        threshold value is what we refer as the minimum off-time.
+    668           *
+    669           * @note This function will do nothing when a project contains the
+    670           *       power_manager_no_deepsleep component, which configures the
+    671           *       lowest energy mode as EM1.
+    672           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    673          uint32_t sl_power_manager_schedule_wakeup_get_minimum_offtime_tick(void)
+    674          {
+    675          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    676            uint32_t offtime_tick;
+    677          
+    678            sl_atomic_load(offtime_tick, high_frequency_min_offtime_tick);
+    679            return offtime_tick;
+   \                     sl_power_manager_schedule_wakeup_get_minimum_offtime_tick: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_1
+   \        0x2   0x6940             LDR      R0,[R0, #+20]
+   \        0x4   0x4770             BX       LR
+    680          #else
+    681            return 0;
+    682          #endif
+    683          }
+    684          
+    685          /***************************************************************************//**
+    686           * Set configurable minimum off-time value for schedule wake-up in Sleeptimer
+    687           * ticks.
+    688           *
+    689           * @param minimum_offtime_tick  minimum off-time value to set for schedule
+    690           *                              wake-up.
+    691           *
+    692           * @note  Turning on external high frequency oscillator, such as HFXO, requires
+    693           *        more energy since we must supply higher current for the wake-up.
+    694           *        Therefore, when an 'external high frequency oscillator enable' is
+    695           *        scheduled in 'x' time, there is a threshold 'x' value where turning
+    696           *        off the oscillator is not worthwhile since the energy consumed by
+    697           *        taking into account the wake-up will be greater than if we just keep
+    698           *        the oscillator on until the next scheduled oscillator enabled. This
+    699           *        threshold value is what we refer as the minimum off-time.
+    700           *
+    701           * @note This function will do nothing when a project contains the
+    702           *       power_manager_no_deepsleep component, which configures the
+    703           *       lowest energy mode as EM1.
+    704           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    705          void sl_power_manager_schedule_wakeup_set_minimum_offtime_tick(uint32_t minimum_offtime_tick)
+    706          {
+    707          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    708            sl_atomic_store(high_frequency_min_offtime_tick, minimum_offtime_tick);
+   \                     sl_power_manager_schedule_wakeup_set_minimum_offtime_tick: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable10_1
+   \        0x2   0x6148             STR      R0,[R1, #+20]
+    709          #else
+    710            (void)minimum_offtime_tick;
+    711          #endif
+    712          }
+   \        0x4   0x4770             BX       LR
+    713          
+    714          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    715          /*******************************************************************************
+    716           * Converts microseconds time in sleeptimer ticks.
+    717           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    718          uint32_t sli_power_manager_convert_delay_us_to_tick(uint32_t time_us)
+    719          {
+    720            return (((time_us * sleeptimer_frequency) + (1000000 - 1)) / 1000000);
+   \                     sli_power_manager_convert_delay_us_to_tick: (+1)
+   \        0x0   0x....             LDR.N    R3,??DataTable10_1
+   \        0x2   0x691A             LDR      R2,[R3, #+16]
+   \        0x4   0x....             LDR.N    R1,??DataTable10_4
+   \        0x6   0x....             LDR.N    R3,??DataTable10_5
+   \        0x8   0xFB02 0x1000      MLA      R0,R2,R0,R1
+   \        0xC   0xFBB0 0xF0F3      UDIV     R0,R0,R3
+   \       0x10   0x4770             BX       LR
+    721          }
+    722          #endif
+    723          
+    724          /**************************************************************************//**
+    725           * Determines if the HFXO interrupt was part of the last wake-up and/or if
+    726           * the HFXO early wakeup expired during the last ISR
+    727           * and if it was the only timer to expire in that period.
+    728           *
+    729           * @return true if power manager sleep can return to sleep,
+    730           *         false otherwise.
+    731           *
+    732           * @note This function will always return false in case
+    733           *       a requirement is added on  SL_POWER_MANAGER_EM1,
+    734           *       since we will never sleep at a lower level than EM1.
+    735           *****************************************************************************/
+
+   \                                 In section text_power_manager_timecritical40364, align 4, keep-with-next
+    736          bool sl_power_manager_is_latest_wakeup_internal(void)
+    737          {
+   \                     sl_power_manager_is_latest_wakeup_internal: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    738          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    739            CORE_DECLARE_IRQ_STATE;
+    740            bool sleep;
+    741          
+    742            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+    743            sleep = is_restored_from_hfxo_isr;
+   \        0x6   0x4906             LDR.N    R1,??sl_power_manager_is_latest_wakeup_internal_0
+   \        0x8   0x7ACC             LDRB     R4,[R1, #+11]
+    744            is_restored_from_hfxo_isr = false;
+   \        0xA   0x2200             MOVS     R2,#+0
+   \        0xC   0x72CA             STRB     R2,[R1, #+11]
+    745            CORE_EXIT_CRITICAL();
+   \        0xE   0x.... 0x....      BL       CORE_ExitCritical
+    746          
+    747            sleep |= sl_sleeptimer_is_power_manager_early_restore_timer_latest_to_expire();
+   \       0x12   0x.... 0x....      BL       sl_sleeptimer_is_power_manager_early_restore_timer_latest_to_expire
+   \       0x16   0x4320             ORRS     R0,R0,R4
+   \       0x18   0xBF18             IT       NE
+   \       0x1A   0x2001             MOVNE    R0,#+1
+    748            return sleep;
+   \       0x1C   0xBD10             POP      {R4,PC}
+   \       0x1E   0xBF00             Nop
+   \                     ??sl_power_manager_is_latest_wakeup_internal_0:
+   \       0x20   0x....'....        DC32     is_initialized
+    749          #else
+    750            return false;
+    751          #endif
+    752          }
+    753          
+    754          /*******************************************************************************
+    755           **************************   LOCAL FUNCTIONS   ********************************
+    756           ******************************************************************************/
+    757          
+    758          /***************************************************************************//**
+    759           * Get lowest energy mode to apply given the requirements on the different
+    760           * energy modes.
+    761           *
+    762           * @return  Lowest energy mode: EM1, or EM2
+    763           *
+    764           * @note If no requirement for any energy mode (EM1 and EM2), lowest energy mode
+    765           * is EM3.
+    766           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical86134, align 4, keep-with-next
+    767          static sl_power_manager_em_t get_lowest_em(void)
+    768          {
+    769            sl_power_manager_em_t em = SL_POWER_MANAGER_EM2;
+    770          
+    771            // Verify if there's requirements on EM1.
+    772            if (requirement_em1 != 0) {
+   \                     get_lowest_em: (+1)
+   \        0x0   0x4A02             LDR.N    R2,??get_lowest_em_0
+   \        0x2   0x7891             LDRB     R1,[R2, #+2]
+   \        0x4   0x2002             MOVS     R0,#+2
+   \        0x6   0xB101             CBZ.N    R1,??get_lowest_em_1
+    773              em = SL_POWER_MANAGER_EM1;
+   \        0x8   0x2001             MOVS     R0,#+1
+    774            }
+    775          
+    776            return em;
+   \                     ??get_lowest_em_1: (+1)
+   \        0xA   0x4770             BX       LR
+   \                     ??get_lowest_em_0:
+   \        0xC   0x....'....        DC32     is_initialized
+    777          }
+    778          
+    779          /***************************************************************************//**
+    780           * Enter critical section by disabling interrupts using PriMask.
+    781           *
+    782           * @return primask Initial primask state.
+    783           *
+    784           * @note @ref sl_power_manager_sleep() function should use PriMask to disable
+    785           *       interrupts.
+    786           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical92156, align 2, keep-with-next
+    787          static CORE_irqState_t enter_critical_with_primask(void)
+    788          {
+    789            CORE_irqState_t irqState = __get_PRIMASK();
+   \                     enter_critical_with_primask: (+1)
+   \        0x0   0xF3EF 0x8010      MRS      R0,PRIMASK
+    790            __disable_irq();
+   \        0x4   0xB672             CPSID    I
+    791          
+    792            return irqState;
+   \        0x6   0x4770             BX       LR
+    793          }
+    794          
+    795          /***************************************************************************//**
+    796           * Exit critical section by re-enabling interrupts using PriMask.
+    797           *
+    798           * @param  primask_state  Initial primask state.
+    799           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical93160, align 2, keep-with-next
+    800          static void exit_critical_with_primask(CORE_irqState_t primask_state)
+    801          {
+    802            if (primask_state == 0U) {
+   \                     exit_critical_with_primask: (+1)
+   \        0x0   0xB910             CBNZ.N   R0,??exit_critical_with_primask_0
+    803              __enable_irq();
+   \        0x2   0xB662             CPSIE    I
+    804              __ISB();
+   \        0x4   0xF3BF 0x8F6F      ISB      SY
+    805            }
+    806          }
+   \                     ??exit_critical_with_primask_0: (+1)
+   \        0x8   0x4770             BX       LR
+    807          
+    808          /***************************************************************************//**
+    809           * Exit critical section and re-enter by using PriMask.
+    810           *
+    811           * @param[in] primask_state Initial primask state.
+    812           *
+    813           * @return Initial primask state.
+    814           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical94164, align 2, keep-with-next
+    815          static CORE_irqState_t yield_critical_with_primask(CORE_irqState_t primask_state)
+    816          {
+   \                     yield_critical_with_primask: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    817            exit_critical_with_primask(primask_state);
+   \        0x2   0x.... 0x....      BL       exit_critical_with_primask
+    818            return enter_critical_with_primask();
+   \        0x6   0xE8BD 0x4001      POP      {R0,LR}
+   \        0xA   0x.... 0x....      B.W      enter_critical_with_primask
+    819          }
+    820          
+    821          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    822          /***************************************************************************//**
+    823           * Evaluates scheduled wakeup and restart timer based on the wakeup time.
+    824           * If the remaining time is shorter than the wakeup time then add a requirement
+    825           * on EM1 for avoiding the wakeup delay time.
+    826           *
+    827           * @note Must be called in a critical section.
+    828           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical87138, align 4, keep-with-next
+    829          static void evaluate_wakeup(sl_power_manager_em_t to)
+    830          {
+   \                     evaluate_wakeup: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    831            sl_status_t status;
+    832            uint32_t tick_remaining;
+    833          
+    834            switch (to) {
+   \        0x2   0x4D22             LDR.N    R5,??evaluate_wakeup_1
+   \        0x4   0x4C22             LDR.N    R4,??evaluate_wakeup_1+4
+   \        0x6   0x2803             CMP      R0,#+3
+   \        0x8   0xD839             BHI.N    ??evaluate_wakeup_2
+   \        0xA   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??evaluate_wakeup_0:
+   \        0xE   0x02 0x3D          DC8      0x2,0x3D,0xB,0xB
+   \              0x0B 0x0B
+    835              case SL_POWER_MANAGER_EM0:
+    836                // Coming back from Sleep.
+    837                if (requirement_on_em1_added) {
+   \                     ??evaluate_wakeup_3: (+1)
+   \       0x12   0x7A21             LDRB     R1,[R4, #+8]
+   \       0x14   0x2900             CMP      R1,#+0
+   \       0x16   0xD037             BEQ.N    ??evaluate_wakeup_4
+    838                  update_em1_requirement(false);
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x.... 0x....      BL       update_em1_requirement
+    839                  requirement_on_em1_added = false;
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0x7221             STRB     R1,[R4, #+8]
+   \       0x22   0xBDF7             POP      {R0-R2,R4-R7,PC}
+    840                }
+    841                break;
+    842          
+    843              case SL_POWER_MANAGER_EM1:
+    844                // External high frequency clock, such as HFXO, already enabled; No wakeup delay
+    845                break;
+    846          
+    847              case SL_POWER_MANAGER_EM2:
+    848              case SL_POWER_MANAGER_EM3:
+    849                // Get the time remaining until the next sleeptimer requiring early wake-up
+    850                status = sl_sleeptimer_get_remaining_time_of_first_timer(0, &tick_remaining);
+    851                if (status == SL_STATUS_OK) {
+   \                     ??evaluate_wakeup_5: (+1)
+   \       0x24   0xA902             ADD      R1,SP,#+8
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x.... 0x....      BL       sl_sleeptimer_get_remaining_time_of_first_timer
+   \       0x2C   0xBB60             CBNZ.N   R0,??evaluate_wakeup_4
+    852                  if (tick_remaining <= high_frequency_min_offtime_tick) {
+   \       0x2E   0x6960             LDR      R0,[R4, #+20]
+   \       0x30   0x9902             LDR      R1,[SP, #+8]
+   \       0x32   0x4288             CMP      R0,R1
+   \       0x34   0xD20C             BCS.N    ??evaluate_wakeup_6
+    853                    // Add EM1 requirement if time remaining is to short to be energy efficient
+    854                    // if going back to deepsleep.
+    855                    update_em1_requirement(true);
+    856                    requirement_on_em1_added = true;
+    857                  } else {
+    858                    int32_t wakeup_delay = 0;
+    859                    int32_t cfg_overhead_tick = 0;
+    860          
+    861                    // Calculate overall wake-up delay.
+    862                    sl_atomic_load(cfg_overhead_tick, wakeup_time_config_overhead_tick);
+   \       0x36   0x69A7             LDR      R7,[R4, #+24]
+    863                    wakeup_delay += cfg_overhead_tick;
+    864                    wakeup_delay += sli_power_manager_get_wakeup_process_time_overhead();
+   \       0x38   0x.... 0x....      BL       sli_power_manager_get_wakeup_process_time_overhead
+   \       0x3C   0x19C6             ADDS     R6,R0,R7
+    865                    EFM_ASSERT(wakeup_delay >= 0);
+   \       0x3E   0xD504             BPL.N    ??evaluate_wakeup_7
+   \       0x40   0xF240 0x3161      MOVW     R1,#+865
+   \       0x44   0x4628             MOV      R0,R5
+   \       0x46   0x.... 0x....      BL       assertEFM
+    866                    if (tick_remaining <= (uint32_t)wakeup_delay) {
+   \                     ??evaluate_wakeup_7: (+1)
+   \       0x4A   0x9802             LDR      R0,[SP, #+8]
+   \       0x4C   0x4286             CMP      R6,R0
+   \       0x4E   0xD305             BCC.N    ??evaluate_wakeup_8
+    867                      // Add EM1 requirement if time remaining is smaller than wake-up delay.
+    868                      update_em1_requirement(true);
+   \                     ??evaluate_wakeup_6: (+1)
+   \       0x50   0x2001             MOVS     R0,#+1
+   \       0x52   0x.... 0x....      BL       update_em1_requirement
+    869                      requirement_on_em1_added = true;
+   \       0x56   0x2001             MOVS     R0,#+1
+   \       0x58   0x7220             STRB     R0,[R4, #+8]
+   \       0x5A   0xBDF7             POP      {R0-R2,R4-R7,PC}
+    870                    } else {
+    871                      uint16_t hf_accuracy_clk_flag = 0;
+   \                     ??evaluate_wakeup_8: (+1)
+   \       0x5C   0x2502             MOVS     R5,#+2
+    872                      if (sli_power_manager_is_high_freq_accuracy_clk_used()) {
+   \       0x5E   0x.... 0x....      BL       sli_power_manager_is_high_freq_accuracy_clk_used
+   \       0x62   0xB100             CBZ.N    R0,??evaluate_wakeup_9
+    873                        hf_accuracy_clk_flag = SLI_SLEEPTIMER_POWER_MANAGER_HF_ACCURACY_CLK_FLAG;
+   \       0x64   0x2506             MOVS     R5,#+6
+    874                      }
+    875                      // Start internal sleeptimer to do the early wake-up.
+    876                      sl_sleeptimer_restart_timer(&clock_wakeup_timer_handle,
+    877                                                  (tick_remaining - (uint32_t)wakeup_delay),
+    878                                                  on_clock_wakeup_timeout,
+    879                                                  NULL,
+    880                                                  0,
+    881                                                  (SLI_SLEEPTIMER_POWER_MANAGER_EARLY_WAKEUP_TIMER_FLAG | hf_accuracy_clk_flag));
+   \                     ??evaluate_wakeup_9: (+1)
+   \       0x66   0x2000             MOVS     R0,#+0
+   \       0x68   0x9000             STR      R0,[SP, #+0]
+   \       0x6A   0x9802             LDR      R0,[SP, #+8]
+   \       0x6C   0x9501             STR      R5,[SP, #+4]
+   \       0x6E   0x2300             MOVS     R3,#+0
+   \       0x70   0x1B81             SUBS     R1,R0,R6
+   \       0x72   0x4A08             LDR.N    R2,??evaluate_wakeup_1+8
+   \       0x74   0xF104 0x001C      ADD      R0,R4,#+28
+   \       0x78   0x.... 0x....      BL       sl_sleeptimer_restart_timer
+   \       0x7C   0xBDF7             POP      {R0-R2,R4-R7,PC}
+    882                    }
+    883                  }
+    884                }
+    885                break;
+    886          
+    887              default:
+    888                EFM_ASSERT(false);
+   \                     ??evaluate_wakeup_2: (+1)
+   \       0x7E   0xF44F 0x715E      MOV      R1,#+888
+   \       0x82   0x4628             MOV      R0,R5
+   \       0x84   0x.... 0x....      BL       assertEFM
+    889            }
+    890          }
+   \                     ??evaluate_wakeup_4: (+1)
+   \       0x88   0xBDF7             POP      {R0-R2,R4-R7,PC}
+   \       0x8A   0xBF00             Nop
+   \                     ??evaluate_wakeup_1:
+   \       0x8C   0x....'....        DC32     ?_0
+   \       0x90   0x....'....        DC32     is_initialized
+   \       0x94   0x....'....        DC32     on_clock_wakeup_timeout
+    891          #endif
+    892          
+    893          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    894          /***************************************************************************//**
+    895           * Updates internal EM1 requirement.
+    896           * We add an internal EM1 requirement when we would usually go into EM2/EM3
+    897           * but there is not enough time before the next schedule event requiring a
+    898           * clock restore. So we just go to sleep in EM1.
+    899           * We remove this internal EM1 requirement next time we wake-up.
+    900           *
+    901           * @param   add  true, to add EM1 requirement,
+    902           *               false, to remove EM1 requirement.
+    903           *
+    904           * @note For internal use only.
+    905           *
+    906           * @note Need to be call inside a critical section.
+    907           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical88141, align 4, keep-with-next
+    908          static void update_em1_requirement(bool add)
+    909          {
+   \                     update_em1_requirement: (+1)
+   \        0x0   0xB5D0             PUSH     {R4,R6,R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    910            // Cannot increment above 255 (wraparound not allowed)
+    911            EFM_ASSERT(!((requirement_em1 == UINT8_MAX) && (add == true)));
+   \        0x4   0x4E18             LDR.N    R6,??update_em1_requirement_0
+   \        0x6   0x78B0             LDRB     R0,[R6, #+2]
+   \        0x8   0x4F18             LDR.N    R7,??update_em1_requirement_0+4
+   \        0xA   0x28FF             CMP      R0,#+255
+   \        0xC   0xD106             BNE.N    ??update_em1_requirement_1
+   \        0xE   0x2C01             CMP      R4,#+1
+   \       0x10   0xD107             BNE.N    ??update_em1_requirement_2
+   \       0x12   0xF240 0x318F      MOVW     R1,#+911
+   \       0x16   0x4638             MOV      R0,R7
+   \       0x18   0x.... 0x....      BL       assertEFM
+    912            if ((requirement_em1 == UINT8_MAX) && (add == true)) {
+   \                     ??update_em1_requirement_1: (+1)
+   \       0x1C   0x78B0             LDRB     R0,[R6, #+2]
+   \       0x1E   0x28FF             CMP      R0,#+255
+   \       0x20   0xD102             BNE.N    ??update_em1_requirement_3
+   \                     ??update_em1_requirement_2: (+1)
+   \       0x22   0x2C01             CMP      R4,#+1
+   \       0x24   0xD108             BNE.N    ??update_em1_requirement_4
+    913              return;
+   \       0x26   0xBDD0             POP      {R4,R6,R7,PC}
+    914            }
+    915            // Cannot decrement below 0 (wraparound not allowed)
+    916            EFM_ASSERT(!((requirement_em1 == 0) && (add == false)));
+   \                     ??update_em1_requirement_3: (+1)
+   \       0x28   0xB930             CBNZ.N   R0,??update_em1_requirement_4
+   \       0x2A   0x0020             MOVS     R0,R4
+   \       0x2C   0xD106             BNE.N    ??update_em1_requirement_5
+   \       0x2E   0xF44F 0x7165      MOV      R1,#+916
+   \       0x32   0x4638             MOV      R0,R7
+   \       0x34   0x.... 0x....      BL       assertEFM
+    917            if ((requirement_em1 == 0) && (add == false)) {
+   \                     ??update_em1_requirement_4: (+1)
+   \       0x38   0x78B0             LDRB     R0,[R6, #+2]
+   \       0x3A   0xB908             CBNZ.N   R0,??update_em1_requirement_6
+   \                     ??update_em1_requirement_5: (+1)
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0xD011             BEQ.N    ??update_em1_requirement_7
+    918              return;
+    919            }
+    920          #if (SL_POWER_MANAGER_DEBUG == 1)
+    921            sli_power_manager_debug_log_em_requirement(SL_POWER_MANAGER_EM1, add, "PM_INTERNAL_EM1_REQUIREMENT");
+    922          #endif
+    923          
+    924            // Increment (add) or decrement (remove) energy mode counter.
+    925            requirement_em1 += add ? 1 : -1;
+   \                     ??update_em1_requirement_6: (+1)
+   \       0x40   0x2C00             CMP      R4,#+0
+   \       0x42   0xBF14             ITE      NE
+   \       0x44   0x2001             MOVNE    R0,#+1
+   \       0x46   0x20FF             MOVEQ    R0,#+255
+   \       0x48   0x78B1             LDRB     R1,[R6, #+2]
+   \       0x4A   0x1840             ADDS     R0,R0,R1
+   \       0x4C   0x70B0             STRB     R0,[R6, #+2]
+    926          
+    927            // In rare occasions a clock restore must be started here:
+    928            // - An asynchronous event wake-up the system from deepsleep very near the early wake-up event,
+    929            //   When we re-enter the sleep loop, we delete the internal early wake-up timer, but during
+    930            //   the evaluation before sleep, it is calculated that not enough time is remains to go to
+    931            //   deepsleep. In that case, since we deleted the early wake-up timer we must start the
+    932            //   restore process here.
+    933            // - A synchronous event is added during an ISR, when we evaluate if the timeout is bigger
+    934            //   than the clock restore time, it's barely bigger, so no clock restore process is started
+    935            //   at that time. But when we do the evaluate before sleep, the remaining time is now smaller
+    936            //   than the clock restore delay. So me must start the restore process here.
+    937            if (add == true
+    938                && current_em >= SL_POWER_MANAGER_EM2
+    939                && is_sleeping_waiting_for_clock_restore == false) {
+   \       0x4E   0x2C01             CMP      R4,#+1
+   \       0x50   0xD108             BNE.N    ??update_em1_requirement_7
+   \       0x52   0x7870             LDRB     R0,[R6, #+1]
+   \       0x54   0x2802             CMP      R0,#+2
+   \       0x56   0xDB05             BLT.N    ??update_em1_requirement_7
+   \       0x58   0x79B0             LDRB     R0,[R6, #+6]
+   \       0x5A   0xB918             CBNZ.N   R0,??update_em1_requirement_7
+    940              clock_restore();
+   \       0x5C   0xE8BD 0x40D0      POP      {R4,R6,R7,LR}
+   \       0x60   0x.... 0x....      B.W      clock_restore
+    941            }
+    942          }
+   \                     ??update_em1_requirement_7: (+1)
+   \       0x64   0xBDD0             POP      {R4,R6,R7,PC}
+   \       0x66   0xBF00             Nop
+   \                     ??update_em1_requirement_0:
+   \       0x68   0x....'....        DC32     is_initialized
+   \       0x6C   0x....'....        DC32     ?_0
+    943          #endif
+    944          
+    945          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    946          /***************************************************************************//**
+    947           * Do clock restore process and wait for it to be completed.
+    948           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical90148, align 4, keep-with-next
+    949          static void clock_restore_and_wait(void)
+    950          {
+   \                     clock_restore_and_wait: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    951            CORE_DECLARE_IRQ_STATE;
+    952          
+    953            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x6   0x4604             MOV      R4,R0
+    954            if (is_states_saved == true) {
+   \        0x8   0x4D12             LDR.N    R5,??clock_restore_and_wait_0
+   \        0xA   0x79E8             LDRB     R0,[R5, #+7]
+   \        0xC   0x2801             CMP      R0,#+1
+   \        0xE   0xD11B             BNE.N    ??clock_restore_and_wait_1
+    955              if (is_actively_waiting_for_clock_restore == false) {
+   \       0x10   0x7AA8             LDRB     R0,[R5, #+10]
+   \       0x12   0xB910             CBNZ.N   R0,??clock_restore_and_wait_2
+    956                is_actively_waiting_for_clock_restore = true;
+   \       0x14   0x2101             MOVS     R1,#+1
+   \       0x16   0x72A9             STRB     R1,[R5, #+10]
+    957          
+    958                // Since we will actively wait for clock restore, we cancel any current non-active wait.
+    959                is_sleeping_waiting_for_clock_restore = false;
+   \       0x18   0x71A8             STRB     R0,[R5, #+6]
+    960              }
+    961          
+    962              if (is_hf_x_oscillator_not_preserved) {
+   \                     ??clock_restore_and_wait_2: (+1)
+   \       0x1A   0x7A68             LDRB     R0,[R5, #+9]
+   \       0x1C   0xB118             CBZ.N    R0,??clock_restore_and_wait_3
+    963                sli_power_manager_restore_high_freq_accuracy_clk();
+   \       0x1E   0x.... 0x....      BL       sli_power_manager_restore_high_freq_accuracy_clk
+    964                is_hf_x_oscillator_not_preserved = false;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x7268             STRB     R0,[R5, #+9]
+    965              }
+    966          
+    967              CORE_EXIT_CRITICAL();
+   \                     ??clock_restore_and_wait_3: (+1)
+   \       0x26   0x4620             MOV      R0,R4
+   \       0x28   0x.... 0x....      BL       CORE_ExitCritical
+    968              // We remove the critical section in case HFXO fails to startup and the HFXO Interrupt needs to run to handle the error.
+    969              sli_power_manager_is_high_freq_accuracy_clk_ready(true);
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0x.... 0x....      BL       sli_power_manager_is_high_freq_accuracy_clk_ready
+    970              CORE_ENTER_CRITICAL();
+   \       0x32   0x.... 0x....      BL       CORE_EnterCritical
+   \       0x36   0x4604             MOV      R4,R0
+    971              if (is_actively_waiting_for_clock_restore) {
+   \       0x38   0x7AA8             LDRB     R0,[R5, #+10]
+   \       0x3A   0xB118             CBZ.N    R0,??clock_restore_and_wait_4
+    972                sli_power_manager_restore_states();
+   \       0x3C   0x.... 0x....      BL       sli_power_manager_restore_states
+    973                is_actively_waiting_for_clock_restore = false;
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0x72A8             STRB     R0,[R5, #+10]
+    974              }
+    975          
+    976              is_states_saved = false;
+   \                     ??clock_restore_and_wait_4: (+1)
+   \       0x44   0x2100             MOVS     R1,#+0
+   \       0x46   0x71E9             STRB     R1,[R5, #+7]
+    977            }
+    978            CORE_EXIT_CRITICAL();
+   \                     ??clock_restore_and_wait_1: (+1)
+   \       0x48   0x4620             MOV      R0,R4
+   \       0x4A   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \       0x4E   0x.... 0x....      B.W      CORE_ExitCritical
+   \       0x52   0xBF00             Nop
+   \                     ??clock_restore_and_wait_0:
+   \       0x54   0x....'....        DC32     is_initialized
+    979          }
+    980          #endif
+    981          
+    982          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    983          /***************************************************************************//**
+    984           * Start clock restore process.
+    985           *
+    986           * @note Need to be call inside a critical section.
+    987           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical91151, align 4, keep-with-next
+    988          static void clock_restore(void)
+    989          {
+   \                     clock_restore: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    990            // Check if we need to start the clock restore process
+    991            if (is_states_saved == true) {
+   \        0x2   0x4C0F             LDR.N    R4,??clock_restore_0
+   \        0x4   0x79E0             LDRB     R0,[R4, #+7]
+   \        0x6   0x2801             CMP      R0,#+1
+   \        0x8   0xD118             BNE.N    ??clock_restore_1
+    992              if (is_hf_x_oscillator_not_preserved) {
+   \        0xA   0x7A60             LDRB     R0,[R4, #+9]
+   \        0xC   0xB118             CBZ.N    R0,??clock_restore_2
+    993                sli_power_manager_restore_high_freq_accuracy_clk();
+   \        0xE   0x.... 0x....      BL       sli_power_manager_restore_high_freq_accuracy_clk
+    994                is_hf_x_oscillator_not_preserved = false;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x7260             STRB     R0,[R4, #+9]
+    995              }
+    996              if (sli_power_manager_is_high_freq_accuracy_clk_ready(false)) {
+   \                     ??clock_restore_2: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x.... 0x....      BL       sli_power_manager_is_high_freq_accuracy_clk_ready
+   \       0x1C   0xB150             CBZ.N    R0,??clock_restore_3
+    997                // Do the clock restore if the HF oscillator is already ready
+    998                sli_power_manager_restore_states();
+   \       0x1E   0x.... 0x....      BL       sli_power_manager_restore_states
+    999                is_states_saved = false;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x71E0             STRB     R0,[R4, #+7]
+   1000          
+   1001                // We do the notification only when the restore is completed.
+   1002                sli_power_manager_notify_em_transition(current_em, SL_POWER_MANAGER_EM1);
+   \       0x26   0x7860             LDRB     R0,[R4, #+1]
+   \       0x28   0x2101             MOVS     R1,#+1
+   \       0x2A   0x.... 0x....      BL       sli_power_manager_notify_em_transition
+   1003                current_em = SL_POWER_MANAGER_EM1; // Keep new active energy mode
+   \       0x2E   0x2001             MOVS     R0,#+1
+   \       0x30   0x7060             STRB     R0,[R4, #+1]
+   \       0x32   0xBD10             POP      {R4,PC}
+   1004              } else {
+   1005                // If the HF oscillator is not yet ready, we will go back to sleep while waiting
+   1006                is_sleeping_waiting_for_clock_restore = true;
+   \                     ??clock_restore_3: (+1)
+   \       0x34   0x2101             MOVS     R1,#+1
+   \       0x36   0x71A1             STRB     R1,[R4, #+6]
+   1007          
+   1008                // Save current EM to do the right notification later
+   1009                waiting_clock_restore_from_em = current_em;
+   \       0x38   0x7860             LDRB     R0,[R4, #+1]
+   \       0x3A   0x7160             STRB     R0,[R4, #+5]
+   1010              }
+   1011            }
+   1012          }
+   \                     ??clock_restore_1: (+1)
+   \       0x3C   0xBD10             POP      {R4,PC}
+   \       0x3E   0xBF00             Nop
+   \                     ??clock_restore_0:
+   \       0x40   0x....'....        DC32     is_initialized
+   1013          #endif
+   1014          
+   1015          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+   1016          /***************************************************************************//**
+   1017           * Callback for clock enable timer.
+   1018           *
+   1019           * @param   handle  Pointer to sleeptimer handle
+   1020           *
+   1021           * @param   data    Pointer to callback data
+   1022           *
+   1023           * @note We restore the HF clocks and go to EM1 here to be ready in time for the
+   1024           *       Application sleeptimer callback. But no EM1 requirement is added
+   1025           *       here. Since the time until the Application sleeptimer times out is <=
+   1026           *       than the wake-up delay, it protects us from going back to sleep lower
+   1027           *       than EM1. After that, it's up to the Application sleeptimer callback to
+   1028           *       put a EM1 requirement if still needed.
+   1029           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical89144, align 4, keep-with-next
+   1030          static void on_clock_wakeup_timeout(sl_sleeptimer_timer_handle_t *handle,
+   1031                                              void *data)
+   1032          {
+   \                     on_clock_wakeup_timeout: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   1033            (void)handle;
+   1034            (void)data;
+   1035            CORE_DECLARE_IRQ_STATE;
+   1036          
+   1037            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x6   0x4604             MOV      R4,R0
+   1038          
+   1039            if (is_actively_waiting_for_clock_restore) {
+   \        0x8   0x4904             LDR.N    R1,??on_clock_wakeup_timeout_0
+   \        0xA   0x7A88             LDRB     R0,[R1, #+10]
+   \        0xC   0xB908             CBNZ.N   R0,??on_clock_wakeup_timeout_1
+   1040              // In case we are already actively waiting for HFXO ready in another ISR, just exit
+   1041              CORE_EXIT_CRITICAL();
+   1042              return;
+   1043            }
+   1044          
+   1045            // If needed start the clock restore process
+   1046            clock_restore();
+   \        0xE   0x.... 0x....      BL       clock_restore
+   1047          
+   1048            CORE_EXIT_CRITICAL();
+   \                     ??on_clock_wakeup_timeout_1: (+1)
+   \       0x12   0x4620             MOV      R0,R4
+   \       0x14   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x18   0x.... 0x....      B.W      CORE_ExitCritical
+   \                     ??on_clock_wakeup_timeout_0:
+   \       0x1C   0x....'....        DC32     is_initialized
+   1049          }
+   1050          #endif
+   1051          
+   1052          /***************************************************************************//**
+   1053           * HFXO ready notification callback for internal use with power manager
+   1054           *
+   1055           * @note Will only be used on series 2 devices when HFXO Manager is present.
+   1056           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1057          void sli_hfxo_manager_notify_ready_for_power_manager(void)
+   1058          {
+   \                     sli_hfxo_manager_notify_ready_for_power_manager: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   1059          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+   1060            // Complete HF restore and change current Energy mode
+   1061            // The notification will be done once back in the sleep loop
+   1062            if (current_em != SL_POWER_MANAGER_EM0
+   1063                && (is_sleeping_waiting_for_clock_restore == true)) {
+   \        0x2   0x....             LDR.N    R4,??DataTable10_1
+   \        0x4   0x7860             LDRB     R0,[R4, #+1]
+   \        0x6   0xB160             CBZ.N    R0,??sli_hfxo_manager_notify_ready_for_power_manag_0
+   \        0x8   0x79A0             LDRB     R0,[R4, #+6]
+   \        0xA   0x2801             CMP      R0,#+1
+   \        0xC   0xD109             BNE.N    ??sli_hfxo_manager_notify_ready_for_power_manag_0
+   1064              sli_power_manager_restore_states();
+   \        0xE   0x.... 0x....      BL       sli_power_manager_restore_states
+   1065              is_sleeping_waiting_for_clock_restore = false;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x71A0             STRB     R0,[R4, #+6]
+   1066              is_states_saved = false;
+   \       0x16   0x2100             MOVS     R1,#+0
+   \       0x18   0x71E1             STRB     R1,[R4, #+7]
+   1067              is_restored_from_hfxo_isr = true;
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0x72E0             STRB     R0,[R4, #+11]
+   1068              is_restored_from_hfxo_isr_internal = true;
+   \       0x1E   0x2101             MOVS     R1,#+1
+   \       0x20   0x7321             STRB     R1,[R4, #+12]
+   1069            }
+   1070          #endif
+   1071          }
+   \                     ??sli_hfxo_manager_notify_ready_for_power_manag_0: (+1)
+   \       0x22   0xBD10             POP      {R4,PC}
+   1072          
+   1073          /***************************************************************************//**
+   1074           * HFXO PRS ready notification callback for internal use with power manager
+   1075           *
+   1076           * @note Will only be used on series 2 devices when HFXO Manager and SYSRTC
+   1077           * is present.
+   1078           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1079          void sli_hfxo_notify_ready_for_power_manager_from_prs(void)
+   1080          {
+   1081          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+   1082            // Set clock restore to true to indicate that HFXO has been restored from a
+   1083            // PRS interrupt unless already in EM0 indicating HFXO didn't need to be restored.
+   1084            if (current_em != SL_POWER_MANAGER_EM0) {
+   \                     sli_hfxo_notify_ready_for_power_manager_from_prs: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable10_1
+   \        0x2   0x7848             LDRB     R0,[R1, #+1]
+   \        0x4   0xB108             CBZ.N    R0,??sli_hfxo_notify_ready_for_power_manager_from__0
+   1085              is_sleeping_waiting_for_clock_restore = true;
+   \        0x6   0x2201             MOVS     R2,#+1
+   \        0x8   0x718A             STRB     R2,[R1, #+6]
+   1086            }
+   1087          #endif
+   1088          }
+   \                     ??sli_hfxo_notify_ready_for_power_manager_from__0: (+1)
+   \        0xA   0x4770             BX       LR
+   1089          
+   1090          /***************************************************************************//**
+   1091           * Returns current energy mode.
+   1092           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1093          sl_power_manager_em_t sli_power_manager_get_current_em(void)
+   1094          {
+   1095            return current_em;
+   \                     sli_power_manager_get_current_em: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_1
+   \        0x2   0x7840             LDRB     R0,[R0, #+1]
+   \        0x4   0x4770             BX       LR
+   1096          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x....'....        DC32     SL_BUS_CLOCK_GPIO_VALUE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x....'....        DC32     is_initialized
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x5000'4074        DC32     0x50004074
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x000F'423F        DC32     0xf423f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x000F'4240        DC32     0xf4240
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x73 0x65
+   \       0x68   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x70, 0x6F
+   \              0x69 0x63    
+   \              0x65 0x5C    
+   \              0x70 0x6F
+   \       0x70   0x77 0x65          DC8 0x77, 0x65, 0x72, 0x5F, 0x6D, 0x61, 0x6E, 0x61
+   \              0x72 0x5F    
+   \              0x6D 0x61    
+   \              0x6E 0x61
+   \       0x78   0x67 0x65          DC8 0x67, 0x65, 0x72, 0x5C, 0x73, 0x72, 0x63, 0x5C
+   \              0x72 0x5C    
+   \              0x73 0x72    
+   \              0x63 0x5C
+   \       0x80   0x73 0x6C          DC8 0x73, 0x6C, 0x65, 0x65, 0x70, 0x5F, 0x6C, 0x6F
+   \              0x65 0x65    
+   \              0x70 0x5F    
+   \              0x6C 0x6F
+   \       0x88   0x6F 0x70          DC8 0x6F, 0x70, 0x5C, 0x73, 0x6C, 0x5F, 0x70, 0x6F
+   \              0x5C 0x73    
+   \              0x6C 0x5F    
+   \              0x70 0x6F
+   \       0x90   0x77 0x65          DC8 0x77, 0x65, 0x72, 0x5F, 0x6D, 0x61, 0x6E, 0x61
+   \              0x72 0x5F    
+   \              0x6D 0x61    
+   \              0x6E 0x61
+   \       0x98   0x67 0x65          DC8 0x67, 0x65, 0x72, 0x2E, 0x63, 0
+   \              0x72 0x2E    
+   \              0x63 0x00
+   \       0x9E                      DS8 2
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   clock_restore
+         8   -> sli_power_manager_is_high_freq_accuracy_clk_ready
+         8   -> sli_power_manager_notify_em_transition
+         8   -> sli_power_manager_restore_high_freq_accuracy_clk
+         8   -> sli_power_manager_restore_states
+      16   clock_restore_and_wait
+        16   -> CORE_EnterCritical
+         0   -> CORE_ExitCritical
+        16   -> CORE_ExitCritical
+        16   -> sli_power_manager_is_high_freq_accuracy_clk_ready
+        16   -> sli_power_manager_restore_high_freq_accuracy_clk
+        16   -> sli_power_manager_restore_states
+       0   enter_critical_with_primask
+      32   evaluate_wakeup
+        32   -> assertEFM
+        32   -> sl_sleeptimer_get_remaining_time_of_first_timer
+        32   -> sl_sleeptimer_restart_timer
+        32   -> sli_power_manager_get_wakeup_process_time_overhead
+        32   -> sli_power_manager_is_high_freq_accuracy_clk_used
+        32   -> update_em1_requirement
+       0   exit_critical_with_primask
+       0   get_lowest_em
+       8   on_clock_wakeup_timeout
+         8   -> CORE_EnterCritical
+         0   -> CORE_ExitCritical
+         8   -> clock_restore
+      16   sl_power_manager_init
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+        16   -> sl_clock_manager_enable_bus_clock
+        16   -> sl_sleeptimer_get_timer_frequency
+        16   -> sli_power_manager_em_transition_event_list_init
+        16   -> sli_power_manager_get_default_high_frequency_minimum_offtime
+        16   -> sli_power_manager_init_em4
+        16   -> sli_power_manager_init_hardware
+        16   -> sli_sleeptimer_set_pm_em_requirement
+       8   sl_power_manager_is_latest_wakeup_internal
+         8   -> CORE_EnterCritical
+         8   -> CORE_ExitCritical
+         8   -> sl_sleeptimer_is_power_manager_early_restore_timer_latest_to_expire
+       0   sl_power_manager_schedule_wakeup_get_minimum_offtime_tick
+       0   sl_power_manager_schedule_wakeup_get_restore_overhead_tick
+       0   sl_power_manager_schedule_wakeup_set_minimum_offtime_tick
+       0   sl_power_manager_schedule_wakeup_set_restore_overhead_tick
+      16   sl_power_manager_sleep
+        16   -> enter_critical_with_primask
+        16   -> evaluate_wakeup
+         0   -> exit_critical_with_primask
+        16   -> get_lowest_em
+        16   -> sl_power_manager_is_ok_to_sleep
+        16   -> sl_power_manager_sleep_on_isr_exit
+        16   -> sl_sleeptimer_stop_timer
+        16   -> sli_power_manager_apply_em
+        16   -> sli_power_manager_em1p_to_em2_notification
+        16   -> sli_power_manager_handle_pre_deepsleep_operations
+        16   -> sli_power_manager_is_high_freq_accuracy_clk_ready
+        16   -> sli_power_manager_notify_em_transition
+        16   -> sli_power_manager_on_wakeup
+        16   -> sli_power_manager_restore_high_freq_accuracy_clk
+        16   -> sli_power_manager_restore_states
+        16   -> sli_power_manager_resume_log_transmission
+        16   -> sli_power_manager_save_states
+        16   -> sli_power_manager_suspend_log_transmission
+        16   -> update_em1_requirement
+        16   -> yield_critical_with_primask
+       8   sli_hfxo_manager_notify_ready_for_power_manager
+         8   -> sli_power_manager_restore_states
+       0   sli_hfxo_notify_ready_for_power_manager_from_prs
+       0   sli_power_manager_add_hf_clock_settings_preservation_requirement
+         0   -> sli_power_manager_update_hf_clock_settings_preservation_requirement
+       0   sli_power_manager_convert_delay_us_to_tick
+       0   sli_power_manager_get_clock_restore_status
+       0   sli_power_manager_get_current_em
+      16   sli_power_manager_get_restore_delay
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+        16   -> sli_power_manager_get_wakeup_process_time_overhead
+       8   sli_power_manager_initiate_restore
+         8   -> CORE_EnterCritical
+         0   -> CORE_ExitCritical
+         8   -> clock_restore
+       0   sli_power_manager_remove_hf_clock_settings_preservation_requirement
+         0   -> sli_power_manager_update_hf_clock_settings_preservation_requirement
+      16   sli_power_manager_update_em_requirement
+        16   -> assertEFM
+        16   -> clock_restore_and_wait
+        16   -> get_lowest_em
+        16   -> sli_power_manager_notify_em_transition
+      24   sli_power_manager_update_hf_clock_settings_preservation_requirement
+        24   -> CORE_EnterCritical
+         0   -> CORE_ExitCritical
+        24   -> assertEFM
+       0   slx_power_manager_update_clock_info
+         0   -> sli_power_manager_save_oscillators_usage
+      16   update_em1_requirement
+        16   -> assertEFM
+         0   -> clock_restore
+       8   yield_critical_with_primask
+         0   -> enter_critical_with_primask
+         8   -> exit_critical_with_primask
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+     160  ?_0
+      68  clock_restore
+      88  clock_restore_and_wait
+       8  enter_critical_with_primask
+     152  evaluate_wakeup
+      10  exit_critical_with_primask
+      16  get_lowest_em
+      60  is_initialized
+          current_em
+          requirement_em1
+          requirement_high_accuracy_hf_clock_counter
+          requirement_high_accuracy_hf_clock_back_to_zero
+          waiting_clock_restore_from_em
+          is_sleeping_waiting_for_clock_restore
+          is_states_saved
+          requirement_on_em1_added
+          is_hf_x_oscillator_not_preserved
+          is_actively_waiting_for_clock_restore
+          is_restored_from_hfxo_isr
+          is_restored_from_hfxo_isr_internal
+          sleeptimer_frequency
+          high_frequency_min_offtime_tick
+          wakeup_time_config_overhead_tick
+          clock_wakeup_timer_handle
+      32  on_clock_wakeup_timeout
+      76  sl_power_manager_init
+      36  sl_power_manager_is_latest_wakeup_internal
+       6  sl_power_manager_schedule_wakeup_get_minimum_offtime_tick
+       6  sl_power_manager_schedule_wakeup_get_restore_overhead_tick
+       6  sl_power_manager_schedule_wakeup_set_minimum_offtime_tick
+       6  sl_power_manager_schedule_wakeup_set_restore_overhead_tick
+     300  sl_power_manager_sleep
+      36  sli_hfxo_manager_notify_ready_for_power_manager
+      12  sli_hfxo_notify_ready_for_power_manager_from_prs
+       4  sli_power_manager_add_hf_clock_settings_preservation_requirement
+      18  sli_power_manager_convert_delay_us_to_tick
+       6  sli_power_manager_get_clock_restore_status
+       6  sli_power_manager_get_current_em
+      48  sli_power_manager_get_restore_delay
+      22  sli_power_manager_initiate_restore
+       4  sli_power_manager_remove_hf_clock_settings_preservation_requirement
+     152  sli_power_manager_update_em_requirement
+     126  sli_power_manager_update_hf_clock_settings_preservation_requirement
+       4  slx_power_manager_update_clock_info
+     112  update_em1_requirement
+      14  yield_critical_with_primask
+
+ 
+  60 bytes in section .bss
+ 160 bytes in section .rodata
+ 358 bytes in section .text
+ 152 bytes in section text_power_manager_timecritical36118
+ 300 bytes in section text_power_manager_timecritical37173
+  36 bytes in section text_power_manager_timecritical40364
+   4 bytes in section text_power_manager_timecritical41417
+  48 bytes in section text_power_manager_timecritical69126
+  16 bytes in section text_power_manager_timecritical86134
+ 152 bytes in section text_power_manager_timecritical87138
+ 112 bytes in section text_power_manager_timecritical88141
+  32 bytes in section text_power_manager_timecritical89144
+  88 bytes in section text_power_manager_timecritical90148
+  68 bytes in section text_power_manager_timecritical91151
+   8 bytes in section text_power_manager_timecritical92156
+  10 bytes in section text_power_manager_timecritical93160
+  14 bytes in section text_power_manager_timecritical94164
+ 
+ 1'398 bytes of CODE  memory
+   160 bytes of CONST memory
+    60 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,613 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\adc.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\adc.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\adc.c -D
+#        DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\adc.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\adc.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\adc.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\adc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\adc.c
+      1          #include "adc.h"
+      2          #include "em_cmu.h"
+      3          #include "em_iadc.h"
+      4          
+      5          #define REF_VOLTAGE_MV 2500UL
+      6          #define SAMPLES_TO_AVERAGE 10
+      7          #define CLK_SRC_ADC_FREQ 20000000
+      8          #define CLK_ADC_FREQ 10000000
+      9          #define MAX_SIGNAL_NBR 2
+     10          
+     11          #define IADC_INPUT_0_PORT_PIN iadcPosInputPortAPin3
+     12          #define IADC_INPUT_0_BUS ABUSALLOC
+     13          #define IADC_INPUT_0_BUSALLOC GPIO_ABUSALLOC_AODD0_ADC0
+     14          
+     15          #define IADC_INPUT_1_PORT_PIN iadcPosInputPortAPin4
+     16          #define IADC_INPUT_1_BUS ABUSALLOC
+     17          #define IADC_INPUT_1_BUSALLOC GPIO_ABUSALLOC_AEVEN0_ADC0
+     18          
+
+   \                                 In section .bss, align 4
+     19          volatile uint32_t adc_pa03 = 0;
+   \                     adc_pa03:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     20          volatile uint32_t adc_pa04 = 0;
+   \                     adc_pa04:
+   \        0x0                      DS8 4
+     21          
+
+   \                                 In section .bss, align 4
+     22          static uint32_t adc_channel[MAX_SIGNAL_NBR][SAMPLES_TO_AVERAGE];
+     23          static uint32_t adc_last[MAX_SIGNAL_NBR];
+     24          static uint8_t currIdx = 0;
+   \                     currIdx:
+   \        0x0                      DS8 1
+   \        0x1                      DS8 3
+   \        0x4                      DS8 80
+   \       0x54                      DS8 8
+     25          
+
+   \                                 In section .text, align 4, keep-with-next
+     26          bool adc_init(void)
+     27          {
+   \                     adc_init: (+1)
+   \        0x0   0xB578             PUSH     {R3-R6,LR}
+   \        0x2   0xB091             SUB      SP,SP,#+68
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0xAC04             ADD      R4,SP,#+16
+   \        0x8   0x6021             STR      R1,[R4, #+0]
+   \        0xA   0x6061             STR      R1,[R4, #+4]
+   \        0xC   0x60A1             STR      R1,[R4, #+8]
+     28            // 声明初始化结构体
+     29            IADC_Init_t init = IADC_INIT_DEFAULT;
+     30            IADC_AllConfigs_t initAllConfigs = IADC_ALLCONFIGS_DEFAULT;
+   \        0xE   0xA807             ADD      R0,SP,#+28
+   \       0x10   0x....             LDR.N    R1,??DataTable7
+   \       0x12   0x2228             MOVS     R2,#+40
+   \       0x14   0x.... 0x....      BL       __aeabi_memcpy4
+     31            IADC_InitSingle_t initSingle = IADC_INITSINGLE_DEFAULT;
+     32            IADC_SingleInput_t initSingleInput = IADC_SINGLEINPUT_DEFAULT;
+   \       0x18   0x.... 0x....      ADR.W    R2,?_2
+   \       0x1C   0x....             ADR.N    R6,?_1
+   \       0x1E   0x6811             LDR      R1,[R2, #+0]
+   \       0x20   0xE9D6 0x4500      LDRD     R4,R5,[R6, #+0]
+     33          
+     34            // 使能 IADC 时钟
+     35            CMU_ClockEnable(cmuClock_IADC0, true);
+   \       0x24   0x202A             MOVS     R0,#+42
+   \       0x26   0x9101             STR      R1,[SP, #+4]
+   \       0x28   0xE9CD 0x4502      STRD     R4,R5,[SP, #+8]
+   \       0x2C   0x2101             MOVS     R1,#+1
+   \       0x2E   0x.... 0x....      BL       CMU_ClockEnable
+     36          
+     37            // 复位 IADC 以重置配置（以防被修改）
+     38            IADC_reset(IADC0);
+   \       0x32   0x....             LDR.N    R4,??DataTable7_1
+   \       0x34   0x4620             MOV      R0,R4
+   \       0x36   0x.... 0x....      BL       IADC_reset
+     39          
+     40            // 配置 IADC 时钟源以在 EM2 模式下使用
+     41            CMU_ClockSelectSet(cmuClock_IADCCLK, cmuSelect_FSRCO);
+   \       0x3A   0x2102             MOVS     R1,#+2
+   \       0x3C   0xF44F 0x60B0      MOV      R0,#+1408
+   \       0x40   0x.... 0x....      BL       CMU_ClockSelectSet
+     42            // init.timerCycles = CMU_ClockFreqGet(cmuClock_IADCCLK)/1;
+     43            // 修改初始化结构体并进行初始化
+     44            init.warmup = iadcWarmupNormal;
+   \       0x44   0x2000             MOVS     R0,#+0
+   \       0x46   0xF88D 0x0013      STRB     R0,[SP, #+19]
+     45          
+     46            // 在此设置 HFSCLK 的预分频值
+     47            init.srcClkPrescale = IADC_calcSrcClkPrescale(IADC0, CLK_SRC_ADC_FREQ, 0);
+   \       0x4A   0x2200             MOVS     R2,#+0
+   \       0x4C   0x....             LDR.N    R1,??DataTable7_2
+   \       0x4E   0x4620             MOV      R0,R4
+   \       0x50   0x.... 0x....      BL       IADC_calcSrcClkPrescale
+   \       0x54   0xF88D 0x0015      STRB     R0,[SP, #+21]
+     48          
+     49            // 默认情况下，配置 0 同时用于扫描和单次转换
+     50            // 使用内部基准（供电电压，单位 mV）作为参考
+     51            initAllConfigs.configs[0].reference = iadcCfgReferenceVddx;
+   \       0x58   0x2103             MOVS     R1,#+3
+     52            initAllConfigs.configs[0].vRef = REF_VOLTAGE_MV;
+     53          
+     54            initAllConfigs.configs[0].analogGain = iadcCfgAnalogGain1x;
+     55            initAllConfigs.configs[0].digAvg = iadcDigitalAverage1;
+     56          
+     57            // 对 CLK_SRC_ADC 进行分频，以设定 CLK_ADC 的频率，从而满足目标采样率的需求
+     58            initAllConfigs.configs[0].adcClkPrescale = IADC_calcAdcClkPrescale(IADC0, CLK_ADC_FREQ, 0, iadcCfgModeNormal, init.srcClkPrescale);
+   \       0x5A   0xF89D 0x0015      LDRB     R0,[SP, #+21]
+   \       0x5E   0xF88D 0x101F      STRB     R1,[SP, #+31]
+   \       0x62   0xF640 0x12C4      MOVW     R2,#+2500
+   \       0x66   0x920A             STR      R2,[SP, #+40]
+   \       0x68   0x2102             MOVS     R1,#+2
+   \       0x6A   0xF88D 0x101E      STRB     R1,[SP, #+30]
+   \       0x6E   0x2200             MOVS     R2,#+0
+   \       0x70   0x9000             STR      R0,[SP, #+0]
+   \       0x72   0xF88D 0x202C      STRB     R2,[SP, #+44]
+   \       0x76   0x2300             MOVS     R3,#+0
+   \       0x78   0x....             LDR.N    R1,??DataTable7_3
+   \       0x7A   0x4620             MOV      R0,R4
+   \       0x7C   0x.... 0x....      BL       IADC_calcAdcClkPrescale
+     59          
+     60            // 将过采样率设置为 32x
+     61            // 分辨率计算公式 res = 11 + log2(过采样 * 数字平均)
+     62            // 在此例中 res = 11 + log2(32*1) = 16
+     63            initAllConfigs.configs[0].osrHighSpeed = iadcCfgOsrHighSpeed32x;
+   \       0x80   0x2104             MOVS     R1,#+4
+     64          
+     65            // 单次转换初始化
+     66            initSingle.dataValidLevel = iadcFifoCfgDvl1;
+   \       0x82   0x2200             MOVS     R2,#+0
+   \       0x84   0xF88D 0x101D      STRB     R1,[SP, #+29]
+   \       0x88   0xF88D 0x200A      STRB     R2,[SP, #+10]
+     67          
+     68            // 设置转换为连续运行
+     69            initSingle.triggerAction = iadcTriggerActionOnce;
+   \       0x8C   0xF88D 0x200D      STRB     R2,[SP, #+13]
+     70          
+     71            // 设置对齐为右对齐，数据字段为 16 位
+     72            initSingle.alignment = iadcAlignRight16;
+   \       0x90   0x2201             MOVS     R2,#+1
+     73          
+     74            // 配置单端转换的输入源
+     75            initSingleInput.posInput = IADC_INPUT_0_PORT_PIN;
+   \       0x92   0x2183             MOVS     R1,#+131
+   \       0x94   0x9009             STR      R0,[SP, #+36]
+   \       0x96   0xF88D 0x2008      STRB     R2,[SP, #+8]
+   \       0x9A   0xF88D 0x1005      STRB     R1,[SP, #+5]
+     76            initSingleInput.negInput = iadcNegInputGnd;
+   \       0x9E   0xF88D 0x2004      STRB     R2,[SP, #+4]
+     77          
+     78            // 初始化 IADC
+     79            // 注意：过采样和数字平均会影响偏移校正
+     80            // emlib 中的 IADC_init() 函数会处理该问题
+     81            IADC_init(IADC0, &init, &initAllConfigs);
+   \       0xA2   0xAA07             ADD      R2,SP,#+28
+   \       0xA4   0xA904             ADD      R1,SP,#+16
+   \       0xA6   0x4620             MOV      R0,R4
+   \       0xA8   0x.... 0x....      BL       IADC_init
+     82          
+     83            // 初始化单次转换
+     84            IADC_initSingle(IADC0, &initSingle, &initSingleInput);
+   \       0xAC   0xAA01             ADD      R2,SP,#+4
+   \       0xAE   0xA902             ADD      R1,SP,#+8
+   \       0xB0   0x4620             MOV      R0,R4
+   \       0xB2   0x.... 0x....      BL       IADC_initSingle
+     85          
+     86            // IADC_command(IADC0, iadcCmdEnableTimer);
+     87            // 为 ADC0 输入分配模拟总线
+     88            GPIO->IADC_INPUT_0_BUS |= IADC_INPUT_0_BUSALLOC;
+   \       0xB6   0x....             LDR.N    R0,??DataTable7_4
+   \       0xB8   0x6801             LDR      R1,[R0, #+0]
+   \       0xBA   0xF441 0x3180      ORR      R1,R1,#0x10000
+   \       0xBE   0x6001             STR      R1,[R0, #+0]
+     89            GPIO->IADC_INPUT_1_BUS |= IADC_INPUT_1_BUSALLOC;
+   \       0xC0   0x6802             LDR      R2,[R0, #+0]
+     90            // 在单次转换完成时使能中断
+     91            IADC_enableInt(IADC0, IADC_IEN_SINGLEDONE);
+   \       0xC2   0x....             LDR.N    R1,??DataTable7_5
+   \       0xC4   0xF042 0x0201      ORR      R2,R2,#0x1
+   \       0xC8   0x6002             STR      R2,[R0, #+0]
+   \       0xCA   0xF44F 0x7000      MOV      R0,#+512
+   \       0xCE   0x6008             STR      R0,[R1, #+0]
+     92          
+     93            // 使能 ADC 中断
+     94            //  NVIC_ClearPendingIRQ(IADC_IRQn);
+     95            //  NVIC_EnableIRQ(IADC_IRQn);
+     96          
+     97            IADC_command(IADC0, iadcCmdStartSingle);
+   \       0xD0   0x2201             MOVS     R2,#+1
+   \       0xD2   0x60E2             STR      R2,[R4, #+12]
+     98          
+     99            return true;
+   \       0xD4   0x2001             MOVS     R0,#+1
+   \       0xD6   0xB012             ADD      SP,SP,#+72
+   \       0xD8   0xBD70             POP      {R4-R6,PC}
+    100          }
+    101          
+
+   \                                 In section .text, align 2, keep-with-next
+    102          void adc_close()
+    103          {
+    104            IADC_reset(IADC0);
+   \                     adc_close: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable7_1
+   \        0x2   0x.... 0x....      B.W      IADC_reset
+    105          }
+    106          
+    107          static void adc_set_channel(uint8_t chanel)
+    108          {
+    109            IADC_SingleInput_t initSingleInput = IADC_SINGLEINPUT_DEFAULT;
+    110            if (chanel == 0)
+    111            {
+    112              initSingleInput.posInput = IADC_INPUT_0_PORT_PIN;
+    113              initSingleInput.negInput = iadcNegInputGnd;
+    114              IADC_updateSingleInput(IADC0, &initSingleInput);
+    115            }
+    116            else
+    117            {
+    118              initSingleInput.posInput = IADC_INPUT_1_PORT_PIN;
+    119              initSingleInput.negInput = iadcNegInputGnd;
+    120              IADC_updateSingleInput(IADC0, &initSingleInput);
+    121            }
+    122          }
+    123          
+
+   \                                 In section .text, align 2, keep-with-next
+    124          uint32_t adc_get_rawcnts(uint8_t channel)
+    125          {
+   \                     adc_get_rawcnts: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+    126            uint32_t sum = 0;
+   \        0x2   0x2100             MOVS     R1,#+0
+    127            // ASSERT(channel < MAX_SIGNAL_NBR);
+    128            for (uint8_t i = 0; i < SAMPLES_TO_AVERAGE; i++)
+   \        0x4   0x2200             MOVS     R2,#+0
+    129            {
+    130              sum += adc_channel[channel][i];
+   \                     ??adc_get_rawcnts_0: (+1)
+   \        0x6   0x4607             MOV      R7,R0
+   \        0x8   0x2428             MOVS     R4,#+40
+   \        0xA   0x4367             MULS     R7,R4,R7
+   \        0xC   0x....             LDR.N    R3,??DataTable7_6
+   \        0xE   0xB2D5             UXTB     R5,R2
+   \       0x10   0x19DC             ADDS     R4,R3,R7
+   \       0x12   0xEB04 0x0685      ADD      R6,R4,R5, LSL #+2
+   \       0x16   0x6873             LDR      R3,[R6, #+4]
+    131            }
+   \       0x18   0x1C52             ADDS     R2,R2,#+1
+   \       0x1A   0xB2D4             UXTB     R4,R2
+   \       0x1C   0x1859             ADDS     R1,R3,R1
+   \       0x1E   0x2C0A             CMP      R4,#+10
+   \       0x20   0xDBF1             BLT.N    ??adc_get_rawcnts_0
+    132            sum /= SAMPLES_TO_AVERAGE;
+    133          
+    134            return (uint16_t)sum;
+   \       0x22   0x200A             MOVS     R0,#+10
+   \       0x24   0xFBB1 0xF0F0      UDIV     R0,R1,R0
+   \       0x28   0xB280             UXTH     R0,R0
+   \       0x2A   0xBDF0             POP      {R4-R7,PC}
+    135          }
+    136          
+
+   \                                 In section .text, align 4, keep-with-next
+    137          void adc_scan0(void) // 定义ADC扫描函数，无参数且无返回值
+    138          {
+   \                     adc_scan0: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    139            // 使用 for 循环遍历所有的ADC通道，从 0 到 MAX_SIGNAL_NBR-1
+    140            for (uint8_t channel = 0; channel < MAX_SIGNAL_NBR; channel++)
+   \        0x2   0xBF00             Nop
+   \        0x4   0x....             ADR.N    R6,?_3
+   \        0x6   0x6830             LDR      R0,[R6, #+0]
+   \        0x8   0x2400             MOVS     R4,#+0
+   \        0xA   0x....             LDR.N    R5,??DataTable7_1
+   \        0xC   0x9000             STR      R0,[SP, #+0]
+   \                     ??adc_scan0_0: (+1)
+   \        0xE   0x2183             MOVS     R1,#+131
+   \       0x10   0x2201             MOVS     R2,#+1
+   \       0x12   0xF88D 0x1001      STRB     R1,[SP, #+1]
+   \       0x16   0xF88D 0x2000      STRB     R2,[SP, #+0]
+   \       0x1A   0xE00A             B.N      ??adc_scan0_1
+    141            {
+    142              adc_set_channel(channel); // 配置并切换到当前要采集的 ADC 通道
+   \                     ??adc_scan0_2: (+1)
+   \       0x1C   0x6832             LDR      R2,[R6, #+0]
+   \       0x1E   0xB2E1             UXTB     R1,R4
+   \       0x20   0x2900             CMP      R1,#+0
+   \       0x22   0x9200             STR      R2,[SP, #+0]
+   \       0x24   0xD0F3             BEQ.N    ??adc_scan0_0
+   \       0x26   0x2084             MOVS     R0,#+132
+   \       0x28   0x2101             MOVS     R1,#+1
+   \       0x2A   0xF88D 0x0001      STRB     R0,[SP, #+1]
+   \       0x2E   0xF88D 0x1000      STRB     R1,[SP, #+0]
+   \                     ??adc_scan0_1: (+1)
+   \       0x32   0x4669             MOV      R1,SP
+   \       0x34   0x4628             MOV      R0,R5
+   \       0x36   0x.... 0x....      BL       IADC_updateSingleInput
+    143              IADC_clearInt(IADC0, IADC_IF_SINGLEDONE); // 清除 IADC0 的单次转换完成标志位，防止误判
+   \       0x3A   0xF44F 0x7000      MOV      R0,#+512
+   \       0x3E   0x....             LDR.N    R1,??DataTable7_7
+   \       0x40   0x6008             STR      R0,[R1, #+0]
+    144              IADC_command(IADC0, iadcCmdStartSingle); // 向 IADC0 发送指令，启动一次单次转换
+   \       0x42   0x2201             MOVS     R2,#+1
+   \       0x44   0x60EA             STR      R2,[R5, #+12]
+    145              // 死循环等待：只要“单次转换完成”标志位为 0，就一直等待（阻塞式等待）
+    146              while ((IADC_getInt(IADC0) & IADC_IF_SINGLEDONE) == 0x0)
+   \                     ??adc_scan0_3: (+1)
+   \       0x46   0x6A68             LDR      R0,[R5, #+36]
+   \       0x48   0x0580             LSLS     R0,R0,#+22
+   \       0x4A   0xD5FC             BPL.N    ??adc_scan0_3
+    147                ;
+    148              // 再次检查“单次转换完成”标志位是否被置 1（实际上出了上面的 while 循环，这里必定为真）
+    149              if (IADC_getInt(IADC0) & IADC_IF_SINGLEDONE)
+   \       0x4C   0x6A68             LDR      R0,[R5, #+36]
+   \       0x4E   0x....             LDR.N    R1,??DataTable7_6
+   \       0x50   0x780A             LDRB     R2,[R1, #+0]
+   \       0x52   0x0580             LSLS     R0,R0,#+22
+   \       0x54   0xD50A             BPL.N    ??adc_scan0_4
+    150              {
+    151                // 读取本次单次转换的原始数据，并保存到该通道的最新值变量中
+    152                adc_last[channel] = IADC_readSingleData(IADC0);
+   \       0x56   0x6FE8             LDR      R0,[R5, #+124]
+   \       0x58   0xEB01 0x0384      ADD      R3,R1,R4, LSL #+2
+   \       0x5C   0x6558             STR      R0,[R3, #+84]
+    153                // 将最新读取的数据存入环形缓冲区（或多维采样数组）的当前索引位置
+    154                adc_channel[channel][currIdx] = adc_last[channel];
+   \       0x5E   0x2028             MOVS     R0,#+40
+   \       0x60   0x4360             MULS     R0,R0,R4
+   \       0x62   0x1808             ADDS     R0,R1,R0
+   \       0x64   0xEB00 0x0782      ADD      R7,R0,R2, LSL #+2
+   \       0x68   0x6D58             LDR      R0,[R3, #+84]
+   \       0x6A   0x6078             STR      R0,[R7, #+4]
+    155              }
+    156              // 判断当前是否已经扫描到了最后一个通道
+    157              if (channel == MAX_SIGNAL_NBR - 1)
+   \                     ??adc_scan0_4: (+1)
+   \       0x6C   0x2C01             CMP      R4,#+1
+   \       0x6E   0xD107             BNE.N    ??adc_scan0_5
+    158              {
+    159                //currIdx环形缓冲
+    160                currIdx = (currIdx + 1) % SAMPLES_TO_AVERAGE;
+   \       0x70   0x1C52             ADDS     R2,R2,#+1
+   \       0x72   0x230A             MOVS     R3,#+10
+   \       0x74   0xFB92 0xF3F3      SDIV     R3,R2,R3
+   \       0x78   0x200A             MOVS     R0,#+10
+   \       0x7A   0xFB00 0x2213      MLS      R2,R0,R3,R2
+   \       0x7E   0x700A             STRB     R2,[R1, #+0]
+    161              }
+    162            }
+   \                     ??adc_scan0_5: (+1)
+   \       0x80   0x1C64             ADDS     R4,R4,#+1
+   \       0x82   0x2C01             CMP      R4,#+1
+   \       0x84   0xDDCA             BLE.N    ??adc_scan0_2
+    163          }
+   \       0x86   0xBDF1             POP      {R0,R4-R7,PC}
+    164          
+    165          // 低功耗scan，扫描完就关闭
+
+   \                                 In section .text, align 2, keep-with-next
+    166          void adc_scan(void)
+    167          {
+   \                     adc_scan: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    168            adc_init();
+   \        0x2   0x.... 0x....      BL       adc_init
+    169            adc_scan0();
+   \        0x6   0x.... 0x....      BL       adc_scan0
+    170            adc_close();
+   \        0xA   0x....             LDR.N    R0,??DataTable7_1
+   \        0xC   0xE8BD 0x4002      POP      {R1,LR}
+   \       0x10   0x.... 0x....      B.W      IADC_reset
+    171          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x5A00'4000        DC32     0x5a004000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x0131'2D00        DC32     0x1312d00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x0098'9680        DC32     0x989680
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x5003'C320        DC32     0x5003c320
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x5A00'5028        DC32     0x5a005028
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x....'....        DC32     currIdx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0x5A00'6024        DC32     0x5a006024
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x00 0x00          DC8 0, 0, 3, 0, 0, 0, 0, 0
+   \              0x03 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x00 0x00          DC8 0, 0, 2, 0, 0
+   \              0x02 0x00    
+   \              0x00
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0, 1'210
+   \              0x0000'04BA
+   \       0x10   0x00               DC8 0
+   \       0x11                      DS8 3
+   \       0x14   0x00 0x00          DC8 0, 0, 2, 0, 0
+   \              0x02 0x00    
+   \              0x00
+   \       0x19                      DS8 3
+   \       0x1C   0x0000'0000        DC32 0, 1'210
+   \              0x0000'04BA
+   \       0x24   0x00               DC8 0
+   \       0x25                      DS8 3
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   adc_close
+         0   -> IADC_reset
+      20   adc_get_rawcnts
+      88   adc_init
+        88   -> CMU_ClockEnable
+        88   -> CMU_ClockSelectSet
+        88   -> IADC_calcAdcClkPrescale
+        88   -> IADC_calcSrcClkPrescale
+        88   -> IADC_init
+        88   -> IADC_initSingle
+        88   -> IADC_reset
+        88   -> __aeabi_memcpy4
+       8   adc_scan
+         0   -> IADC_reset
+         8   -> adc_init
+         8   -> adc_scan0
+      24   adc_scan0
+        24   -> IADC_updateSingleInput
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+      40  ?_0
+       8  ?_1
+       4  ?_2
+       4  ?_3
+       6  adc_close
+      44  adc_get_rawcnts
+     218  adc_init
+       4  adc_pa03
+       4  adc_pa04
+      20  adc_scan
+     136  adc_scan0
+      92  currIdx
+          adc_channel
+          adc_last
+
+ 
+ 100 bytes in section .bss
+  40 bytes in section .rodata
+ 472 bytes in section .text
+ 
+ 472 bytes of CODE  memory
+  40 bytes of CONST memory
+ 100 bytes of DATA  memory
+
+Errors: none
+Warnings: none

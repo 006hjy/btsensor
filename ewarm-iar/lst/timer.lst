@@ -1,0 +1,407 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\timer.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\timer.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\timer.c -D
+#        DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\timer.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\timer.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\timer.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\timer.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\timer.c
+      1          #include "timer.h"
+      2          #include "tasks.h"
+      3          #include "sl_hal_letimer.h"
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_letimer_wait_sync(LETIMER_TypeDef *)
+   \                     sl_hal_letimer_wait_sync: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0x8   0xD004             BEQ.N    ??sl_hal_letimer_wait_sync_1
+   \        0xA   0xF240 0x1109      MOVW     R1,#+265
+   \        0xE   0x4804             LDR.N    R0,??sl_hal_letimer_wait_sync_0
+   \       0x10   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_letimer_wait_sync_1: (+1)
+   \       0x14   0x6C20             LDR      R0,[R4, #+64]
+   \       0x16   0xF240 0x31FD      MOVW     R1,#+1021
+   \       0x1A   0x4208             TST      R0,R1
+   \       0x1C   0xD1FA             BNE.N    ??sl_hal_letimer_wait_sync_1
+   \       0x1E   0xBD10             POP      {R4,PC}
+   \                     ??sl_hal_letimer_wait_sync_0:
+   \       0x20   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_letimer_clear_interrupts(LETIMER_TypeDef *, uint32_t)
+   \                     sl_hal_letimer_clear_interrupts: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0xF1B4 0x4FB4      CMP      R4,#+1509949440
+   \        0xA   0xD004             BEQ.N    ??sl_hal_letimer_clear_interrupts_1
+   \        0xC   0xF240 0x1159      MOVW     R1,#+345
+   \       0x10   0x4803             LDR.N    R0,??sl_hal_letimer_clear_interrupts_0
+   \       0x12   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_letimer_clear_interrupts_1: (+1)
+   \       0x16   0xF242 0x0134      MOVW     R1,#+8244
+   \       0x1A   0x5065             STR      R5,[R4, R1]
+   \       0x1C   0xBD31             POP      {R0,R4,R5,PC}
+   \       0x1E   0xBF00             Nop
+   \                     ??sl_hal_letimer_clear_interrupts_0:
+   \       0x20   0x....'....        DC32     ?_0
+      4          #include "sl_clock_manager.h"
+      5          #include "sl_device_clock.h"
+      6          
+      7          // 全局变量：记录 0.1 秒计数（上电后时长）
+
+   \                                 In section .bss, align 4
+      8          volatile uint32_t system_uptime_100ms = 0;
+   \                     system_uptime_100ms:
+   \        0x0                      DS8 4
+      9          
+     10          // LETIMER 使用 EM23GRPACLK（默认 LFRCO = 32768 Hz）
+     11          // 0.1 s 对应计数值：32768 / 10 = 3277（误差 < 0.1%）
+     12          #define LETIMER_TOP_VALUE   3277U
+     13          
+
+   \                                 In section .text, align 2, keep-with-next
+     14          void letimer_init(void)
+     15          {
+   \                     letimer_init: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+     16              sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_LETIMER0);
+   \        0x2   0x....             LDR.N    R0,??DataTable2
+   \        0x4   0x.... 0x....      BL       sl_clock_manager_enable_bus_clock
+     17          
+     18              sl_hal_letimer_init_t init = SL_HAL_LETIMER_INIT_DEFAULT;
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0x2200             MOVS     R2,#+0
+   \        0xE   0x2300             MOVS     R3,#+0
+   \       0x10   0xE881 0x000D      STM      R1,{R0,R2,R3}
+     19              init.repeat_mode = SL_HAL_LETIMER_REPEAT_MODE_FREE;
+     20              init.enable_top  = true;
+   \       0x14   0x2101             MOVS     R1,#+1
+   \       0x16   0xF88D 0x0001      STRB     R0,[SP, #+1]
+   \       0x1A   0xF88D 0x1005      STRB     R1,[SP, #+5]
+     21          
+     22              sl_hal_letimer_init(LETIMER0, &init);
+   \       0x1E   0x4669             MOV      R1,SP
+   \       0x20   0xF04F 0x40B4      MOV      R0,#+1509949440
+   \       0x24   0x.... 0x....      BL       sl_hal_letimer_init
+     23              sl_hal_letimer_enable(LETIMER0);
+   \       0x28   0xF04F 0x45B4      MOV      R5,#+1509949440
+   \       0x2C   0x6868             LDR      R0,[R5, #+4]
+   \       0x2E   0x....             LDR.N    R4,??DataTable2_1
+   \       0x30   0x07C1             LSLS     R1,R0,#+31
+   \       0x32   0xBF5C             ITT      PL
+   \       0x34   0x2001             MOVPL    R0,#+1
+   \       0x36   0x6020             STRPL    R0,[R4, #+0]
+     24              sl_hal_letimer_wait_ready(LETIMER0);
+     25          
+     26              sl_hal_letimer_set_top(LETIMER0, LETIMER_TOP_VALUE);
+   \       0x38   0x6868             LDR      R0,[R5, #+4]
+   \       0x3A   0x....             LDR.N    R6,??DataTable2_2
+   \       0x3C   0x07C1             LSLS     R1,R0,#+31
+   \       0x3E   0xD404             BMI.N    ??letimer_init_0
+   \       0x40   0xF240 0x2182      MOVW     R1,#+642
+   \       0x44   0x4630             MOV      R0,R6
+   \       0x46   0x.... 0x....      BL       assertEFM
+   \                     ??letimer_init_0: (+1)
+   \       0x4A   0x4628             MOV      R0,R5
+   \       0x4C   0x.... 0x....      BL       sl_hal_letimer_wait_sync
+   \       0x50   0xF640 0x40CD      MOVW     R0,#+3277
+   \       0x54   0x6268             STR      R0,[R5, #+36]
+     27          
+     28              sl_hal_letimer_clear_interrupts(LETIMER0, LETIMER_IF_UF);
+   \       0x56   0x2104             MOVS     R1,#+4
+   \       0x58   0x4628             MOV      R0,R5
+   \       0x5A   0x.... 0x....      BL       sl_hal_letimer_clear_interrupts
+     29              sl_hal_letimer_enable_interrupts(LETIMER0, LETIMER_IEN_UF);
+   \       0x5E   0x2004             MOVS     R0,#+4
+   \       0x60   0x6360             STR      R0,[R4, #+52]
+     30              NVIC_ClearPendingIRQ(LETIMER0_IRQn);
+   \       0x62   0x2013             MOVS     R0,#+19
+   \       0x64   0x.... 0x....      BL       sl_interrupt_manager_clear_irq_pending
+     31              NVIC_EnableIRQ(LETIMER0_IRQn);
+   \       0x68   0x2013             MOVS     R0,#+19
+   \       0x6A   0x.... 0x....      BL       sl_interrupt_manager_enable_irq
+     32          
+     33              sl_hal_letimer_start(LETIMER0);
+   \       0x6E   0x6868             LDR      R0,[R5, #+4]
+   \       0x70   0x07C1             LSLS     R1,R0,#+31
+   \       0x72   0xD404             BMI.N    ??letimer_init_1
+   \       0x74   0xF240 0x11DF      MOVW     R1,#+479
+   \       0x78   0x4630             MOV      R0,R6
+   \       0x7A   0x.... 0x....      BL       assertEFM
+   \                     ??letimer_init_1: (+1)
+   \       0x7E   0x4628             MOV      R0,R5
+   \       0x80   0x.... 0x....      BL       sl_hal_letimer_wait_sync
+   \       0x84   0x2001             MOVS     R0,#+1
+   \       0x86   0x60A0             STR      R0,[R4, #+8]
+     34          }
+   \       0x88   0xBD7F             POP      {R0-R6,PC}
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00
+   \        0x9                      DS8 3
+     35          
+
+   \                                 In section .text, align 2, keep-with-next
+     36          void LETIMER0_IRQHandler(void)
+     37          {
+   \                     LETIMER0_IRQHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     38              sl_hal_letimer_clear_interrupts(LETIMER0, LETIMER_IF_UF);
+   \        0x2   0x2104             MOVS     R1,#+4
+   \        0x4   0xF04F 0x40B4      MOV      R0,#+1509949440
+   \        0x8   0x.... 0x....      BL       sl_hal_letimer_clear_interrupts
+     39              system_uptime_100ms++;
+   \        0xC   0x....             LDR.N    R0,??DataTable2_3
+   \        0xE   0x6801             LDR      R1,[R0, #+0]
+   \       0x10   0x1C49             ADDS     R1,R1,#+1
+   \       0x12   0x6001             STR      R1,[R0, #+0]
+     40              tasks();
+   \       0x14   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x18   0x.... 0x....      B.W      tasks
+     41          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     SL_BUS_CLOCK_LETIMER0_VALUE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x5A00'1004        DC32     0x5a001004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x....'....        DC32     system_uptime_100ms
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0x68   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0x70   0x5C 0x69          DC8 0x5C, 0x69, 0x6E, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x6E 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0x78   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x6C, 0x65, 0x74, 0x69
+   \              0x6C 0x5F    
+   \              0x6C 0x65    
+   \              0x74 0x69
+   \       0x80   0x6D 0x65          DC8 0x6D, 0x65, 0x72, 0x2E, 0x68, 0
+   \              0x72 0x2E    
+   \              0x68 0x00
+   \       0x86                      DS8 2
+     42          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   LETIMER0_IRQHandler
+         8   -> sl_hal_letimer_clear_interrupts
+         0   -> tasks
+      32   letimer_init
+        32   -> assertEFM
+        32   -> sl_clock_manager_enable_bus_clock
+        32   -> sl_hal_letimer_clear_interrupts
+        32   -> sl_hal_letimer_init
+        32   -> sl_hal_letimer_wait_sync
+        32   -> sl_interrupt_manager_clear_irq_pending
+        32   -> sl_interrupt_manager_enable_irq
+      16   sl_hal_letimer_clear_interrupts
+        16   -> assertEFM
+       8   sl_hal_letimer_wait_sync
+         8   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+     136  ?_0
+      12  ?_1
+      28  LETIMER0_IRQHandler
+     138  letimer_init
+      36  sl_hal_letimer_clear_interrupts
+      36  sl_hal_letimer_wait_sync
+       4  system_uptime_100ms
+
+ 
+   4 bytes in section .bss
+ 148 bytes in section .rodata
+ 254 bytes in section .text
+ 
+ 182 bytes of CODE  memory (+ 72 bytes shared)
+ 148 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,937 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  10:56:19
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_prs.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_prs.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_prs.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_prs.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_prs.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir\sl_hal_prs.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_prs.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_prs.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Peripheral Reflex System (PRS) Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_hal_prs.h"
+     32          #if defined(PRS_COUNT) && (PRS_COUNT > 0)
+     33          
+     34          #include "sl_assert.h"
+     35          
+     36          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     37          
+     38          /*******************************************************************************
+     39           **************************   LOCAL FUNCTIONS   ********************************
+     40           ******************************************************************************/
+     41          
+     42          static sl_hal_prs_sync_producer_signal_t prs_get_sync_channel_signal(uint8_t channel);
+     43          static sl_hal_prs_async_producer_signal_t prs_get_async_channel_signal(uint8_t channel);
+     44          
+     45          static bool prs_is_async_channel_free(uint8_t channel);
+     46          static bool prs_find_free_channel_in_range(uint8_t start_channel,
+     47                                                     uint8_t end_channel,
+     48                                                     uint8_t *channel);
+     49          static bool prs_find_free_channel_reverse(uint8_t start_channel,
+     50                                                    uint8_t end_channel,
+     51                                                    uint8_t *channel);
+     52          /** @endcond */
+     53          
+     54          /*******************************************************************************
+     55           **************************   GLOBAL FUNCTIONS   *******************************
+     56           ******************************************************************************/
+     57          
+     58          extern __INLINE void sl_hal_prs_async_set_channel_swlevel(uint8_t channel,
+     59                                                                    bool level);
+     60          extern __INLINE bool sl_hal_prs_async_get_channel_swlevel(uint8_t channel);
+     61          extern __INLINE bool sl_hal_prs_get_channel_value(uint8_t channel,
+     62                                                            sl_hal_prs_channel_type_t channel_type);
+     63          extern __INLINE void sl_hal_prs_async_set_channel_swpulse(uint8_t channel);
+     64          extern __INLINE void sl_hal_prs_async_connect_channel_producer(uint8_t channel,
+     65                                                                         sl_hal_prs_async_producer_signal_t producer_signal);
+     66          extern __INLINE void sl_hal_prs_sync_connect_channel_producer(uint8_t channel,
+     67                                                                        sl_hal_prs_sync_producer_signal_t producer_signal);
+     68          extern __INLINE void sl_hal_prs_async_combine_signals(uint8_t channel_a,
+     69                                                                uint8_t channel_b,
+     70                                                                sl_hal_prs_logic_t logic);
+     71          
+     72          /***************************************************************************//**
+     73           * Configure Async channel.
+     74           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     75          void sl_hal_prs_async_init_channel(const sl_hal_prs_async_channel_init_t *init)
+     76          {
+   \                     sl_hal_prs_async_init_channel: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4604             MOV      R4,R0
+     77            EFM_ASSERT(init->channel < SL_HAL_PRS_ASYNC_CHAN_COUNT);
+   \        0x6   0x7820             LDRB     R0,[R4, #+0]
+   \        0x8   0x.... 0x....      LDR.W    R9,??DataTable6
+   \        0xC   0x280C             CMP      R0,#+12
+   \        0xE   0xD304             BCC.N    ??sl_hal_prs_async_init_channel_0
+   \       0x10   0x214D             MOVS     R1,#+77
+   \       0x12   0xF109 0x0084      ADD      R0,R9,#+132
+   \       0x16   0x.... 0x....      BL       assertEFM
+     78          
+     79          #if defined(_PRS_ASYNC_CH_CTRL_AUXSEL_MASK)
+     80            sl_hal_prs_async_combine_signals(init->channel, init->aux_prs, init->logic);
+   \                     ??sl_hal_prs_async_init_channel_0: (+1)
+   \       0x1A   0x7826             LDRB     R6,[R4, #+0]
+   \       0x1C   0x78A7             LDRB     R7,[R4, #+2]
+   \       0x1E   0x7865             LDRB     R5,[R4, #+1]
+   \       0x20   0x2E0C             CMP      R6,#+12
+   \       0x22   0xD304             BCC.N    ??sl_hal_prs_async_init_channel_1
+   \       0x24   0xF240 0x11D1      MOVW     R1,#+465
+   \       0x28   0x4648             MOV      R0,R9
+   \       0x2A   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_prs_async_init_channel_1: (+1)
+   \       0x2E   0x2D0C             CMP      R5,#+12
+   \       0x30   0xD304             BCC.N    ??sl_hal_prs_async_init_channel_2
+   \       0x32   0xF44F 0x71EA      MOV      R1,#+468
+   \       0x36   0x4648             MOV      R0,R9
+   \       0x38   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_prs_async_init_channel_2: (+1)
+   \       0x3C   0x.... 0x....      LDR.W    R8,??DataTable6_1
+   \       0x40   0xF858 0x1026      LDR      R1,[R8, R6, LSL #+2]
+   \       0x44   0x....             LDR.N    R0,??DataTable6_2
+   \       0x46   0x4001             ANDS     R1,R0,R1
+   \       0x48   0xEA41 0x4107      ORR      R1,R1,R7, LSL #+16
+   \       0x4C   0xEA41 0x6105      ORR      R1,R1,R5, LSL #+24
+   \       0x50   0xF848 0x1026      STR      R1,[R8, R6, LSL #+2]
+     81          #else
+     82            sl_hal_prs_async_combine_signals(init->channel, init->channel - 1, init->logic);
+     83          #endif
+     84            sl_hal_prs_async_connect_channel_producer(init->channel, init->producer_signal);
+   \       0x54   0x7825             LDRB     R5,[R4, #+0]
+   \       0x56   0x6867             LDR      R7,[R4, #+4]
+   \       0x58   0x2D0C             CMP      R5,#+12
+   \       0x5A   0xD304             BCC.N    ??sl_hal_prs_async_init_channel_3
+   \       0x5C   0xF44F 0x71CF      MOV      R1,#+414
+   \       0x60   0x4648             MOV      R0,R9
+   \       0x62   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_prs_async_init_channel_3: (+1)
+   \       0x66   0xF858 0x1025      LDR      R1,[R8, R5, LSL #+2]
+   \       0x6A   0x....             LDR.N    R0,??DataTable6_3
+   \       0x6C   0x4001             ANDS     R1,R0,R1
+   \       0x6E   0xF848 0x1025      STR      R1,[R8, R5, LSL #+2]
+   \       0x72   0xF858 0x1025      LDR      R1,[R8, R5, LSL #+2]
+   \       0x76   0x430F             ORRS     R7,R7,R1
+   \       0x78   0xF848 0x7025      STR      R7,[R8, R5, LSL #+2]
+     85            sl_hal_prs_connect_channel_consumer(init->channel, SL_HAL_PRS_TYPE_ASYNC, init->consumer_event);
+   \       0x7C   0x68A2             LDR      R2,[R4, #+8]
+   \       0x7E   0x7820             LDRB     R0,[R4, #+0]
+   \       0x80   0x2100             MOVS     R1,#+0
+   \       0x82   0xE8BD 0x43F8      POP      {R3-R9,LR}
+   \       0x86   0x....             B.N      sl_hal_prs_connect_channel_consumer
+     86          }
+     87          
+     88          /***************************************************************************//**
+     89           * Configure Sync channel.
+     90           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     91          void sl_hal_prs_sync_init_channel(const sl_hal_prs_sync_channel_init_t *init)
+     92          {
+   \                     sl_hal_prs_sync_init_channel: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     93            EFM_ASSERT(init->channel < SL_HAL_PRS_SYNC_CHAN_COUNT);
+   \        0x4   0x7820             LDRB     R0,[R4, #+0]
+   \        0x6   0x....             LDR.N    R7,??DataTable6
+   \        0x8   0x2804             CMP      R0,#+4
+   \        0xA   0xD304             BCC.N    ??sl_hal_prs_sync_init_channel_0
+   \        0xC   0x215D             MOVS     R1,#+93
+   \        0xE   0xF107 0x0084      ADD      R0,R7,#+132
+   \       0x12   0x.... 0x....      BL       assertEFM
+     94          
+     95            sl_hal_prs_sync_connect_channel_producer(init->channel, init->producer_signal);
+   \                     ??sl_hal_prs_sync_init_channel_0: (+1)
+   \       0x16   0x7826             LDRB     R6,[R4, #+0]
+   \       0x18   0x6865             LDR      R5,[R4, #+4]
+   \       0x1A   0x2E04             CMP      R6,#+4
+   \       0x1C   0xD304             BCC.N    ??sl_hal_prs_sync_init_channel_1
+   \       0x1E   0xF240 0x11B3      MOVW     R1,#+435
+   \       0x22   0x4638             MOV      R0,R7
+   \       0x24   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_prs_sync_init_channel_1: (+1)
+   \       0x28   0x....             LDR.N    R1,??DataTable6_4
+   \       0x2A   0xF851 0x2026      LDR      R2,[R1, R6, LSL #+2]
+   \       0x2E   0x....             LDR.N    R0,??DataTable6_3
+   \       0x30   0x4002             ANDS     R2,R0,R2
+   \       0x32   0xF841 0x2026      STR      R2,[R1, R6, LSL #+2]
+   \       0x36   0xF851 0x2026      LDR      R2,[R1, R6, LSL #+2]
+   \       0x3A   0x4315             ORRS     R5,R5,R2
+   \       0x3C   0xF841 0x5026      STR      R5,[R1, R6, LSL #+2]
+     96            sl_hal_prs_connect_channel_consumer(init->channel, SL_HAL_PRS_TYPE_SYNC, init->consumer_event);
+   \       0x40   0x68A2             LDR      R2,[R4, #+8]
+   \       0x42   0x7820             LDRB     R0,[R4, #+0]
+   \       0x44   0x2101             MOVS     R1,#+1
+   \       0x46   0xE8BD 0x40F8      POP      {R3-R7,LR}
+   \       0x4A   0x....             B.N      sl_hal_prs_connect_channel_consumer
+     97          }
+     98          
+     99          /***************************************************************************//**
+    100           * Search for the first free PRS channel.
+    101           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    102          sl_status_t sl_hal_prs_get_free_channel(uint8_t *channel,
+    103                                                  sl_hal_prs_channel_type_t channel_type)
+    104          {
+   \                     sl_hal_prs_get_free_channel: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    105            sl_status_t status = SL_STATUS_FAIL;
+   \        0x2   0x2201             MOVS     R2,#+1
+    106          
+    107            if (channel_type == SL_HAL_PRS_TYPE_ASYNC) {
+   \        0x4   0xF647 0x7307      MOVW     R3,#+32519
+   \        0x8   0xB971             CBNZ.N   R1,??sl_hal_prs_get_free_channel_0
+    108              sl_hal_prs_async_producer_signal_t producer_signal;
+    109          
+    110              for (uint8_t i = 0; i < SL_HAL_PRS_ASYNC_CHAN_COUNT; i++) {
+    111                producer_signal = prs_get_async_channel_signal(i);
+   \                     ??sl_hal_prs_get_free_channel_1: (+1)
+   \        0xA   0x....             LDR.N    R4,??DataTable6_1
+   \        0xC   0xB2CD             UXTB     R5,R1
+   \        0xE   0xF854 0x4025      LDR      R4,[R4, R5, LSL #+2]
+    112                if (producer_signal == SL_HAL_PRS_ASYNC_NONE) {
+   \       0x12   0x421C             TST      R4,R3
+   \       0x14   0xD004             BEQ.N    ??sl_hal_prs_get_free_channel_2
+   \       0x16   0x1C49             ADDS     R1,R1,#+1
+   \       0x18   0xB2CC             UXTB     R4,R1
+   \       0x1A   0x2C0C             CMP      R4,#+12
+   \       0x1C   0xD3F5             BCC.N    ??sl_hal_prs_get_free_channel_1
+   \       0x1E   0xE001             B.N      ??sl_hal_prs_get_free_channel_3
+    113                  *channel = i;
+   \                     ??sl_hal_prs_get_free_channel_2: (+1)
+   \       0x20   0x7001             STRB     R1,[R0, #+0]
+    114                  status = SL_STATUS_OK;
+   \       0x22   0x2200             MOVS     R2,#+0
+    115                  break;
+    116                }
+    117              }
+    118            } else {
+    119              sl_hal_prs_sync_producer_signal_t producer_signal;
+    120          
+    121              for (uint8_t i = 0; i < SL_HAL_PRS_SYNC_CHAN_COUNT; i++) {
+    122                producer_signal = prs_get_sync_channel_signal(i);
+    123                if (producer_signal == SL_HAL_PRS_SYNC_NONE) {
+    124                  *channel = i;
+    125                  status = SL_STATUS_OK;
+    126                  break;
+    127                }
+    128              }
+    129            }
+    130          
+    131            return status;
+   \                     ??sl_hal_prs_get_free_channel_3: (+1)
+   \       0x24   0x4610             MOV      R0,R2
+   \       0x26   0xBD30             POP      {R4,R5,PC}
+   \                     ??sl_hal_prs_get_free_channel_0: (+1)
+   \       0x28   0x2100             MOVS     R1,#+0
+   \                     ??sl_hal_prs_get_free_channel_4: (+1)
+   \       0x2A   0x....             LDR.N    R4,??DataTable6_4
+   \       0x2C   0xB2CD             UXTB     R5,R1
+   \       0x2E   0xF854 0x4025      LDR      R4,[R4, R5, LSL #+2]
+   \       0x32   0x421C             TST      R4,R3
+   \       0x34   0xD0F4             BEQ.N    ??sl_hal_prs_get_free_channel_2
+   \       0x36   0x1C49             ADDS     R1,R1,#+1
+   \       0x38   0xB2CC             UXTB     R4,R1
+   \       0x3A   0x2C04             CMP      R4,#+4
+   \       0x3C   0xD3F5             BCC.N    ??sl_hal_prs_get_free_channel_4
+   \       0x3E   0xE7F1             B.N      ??sl_hal_prs_get_free_channel_3
+    132          }
+    133          
+    134          /***************************************************************************//**
+    135           * Reset all PRS channels.
+    136           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    137          void sl_hal_prs_reset(void)
+    138          {
+   \                     sl_hal_prs_reset: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    139            PRS->ASYNC_SWLEVEL = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....             LDR.N    R2,??DataTable6_5
+   \        0x6   0x6010             STR      R0,[R2, #+0]
+    140            for (uint8_t i = 0; i < SL_HAL_PRS_ASYNC_CHAN_COUNT; i++) {
+   \        0x8   0xF44F 0x2140      MOV      R1,#+786432
+   \        0xC   0x....             LDR.N    R2,??DataTable6_1
+    141              PRS->ASYNC_CH[i].CTRL = _PRS_ASYNC_CH_CTRL_RESETVALUE;
+   \                     ??sl_hal_prs_reset_0: (+1)
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+    142            }
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x12   0x2C0C             CMP      R4,#+12
+   \       0x14   0xD3FB             BCC.N    ??sl_hal_prs_reset_0
+    143            for (uint8_t i = 0; i < SL_HAL_PRS_SYNC_CHAN_COUNT; i++) {
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x2100             MOVS     R1,#+0
+   \       0x1A   0x....             LDR.N    R2,??DataTable6_4
+    144              PRS->SYNC_CH[i].CTRL = _PRS_SYNC_CH_CTRL_RESETVALUE;
+   \                     ??sl_hal_prs_reset_1: (+1)
+   \       0x1C   0x.... 0x....      BL       ?Subroutine0
+    145            }
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x20   0x2C04             CMP      R4,#+4
+   \       0x22   0xD3FB             BCC.N    ??sl_hal_prs_reset_1
+    146          }
+   \       0x24   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xB2C3             UXTB     R3,R0
+   \        0x2   0x1C40             ADDS     R0,R0,#+1
+   \        0x4   0xB2C4             UXTB     R4,R0
+   \        0x6   0xF842 0x1023      STR      R1,[R2, R3, LSL #+2]
+   \        0xA   0x4770             BX       LR
+    147          
+    148          /***************************************************************************//**
+    149           * Connect a peripheral consumer to a PRS channel.
+    150           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    151          void sl_hal_prs_connect_channel_consumer(uint8_t channel,
+    152                                                   sl_hal_prs_channel_type_t channel_type,
+    153                                                   sl_hal_prs_consumer_event_t consumer_event)
+    154          {
+   \                     sl_hal_prs_connect_channel_consumer: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4614             MOV      R4,R2
+   \        0x6   0x4605             MOV      R5,R0
+   \        0x8   0x460E             MOV      R6,R1
+    155            EFM_ASSERT((uint32_t)consumer_event < PER_REG_BLOCK_SET_OFFSET);
+   \        0xA   0x.... 0x....      LDR.W    R8,??DataTable6_6
+   \        0xE   0xF5B4 0x5F80      CMP      R4,#+4096
+   \       0x12   0xD303             BCC.N    ??sl_hal_prs_connect_channel_consumer_0
+   \       0x14   0x219B             MOVS     R1,#+155
+   \       0x16   0x4640             MOV      R0,R8
+   \       0x18   0x.... 0x....      BL       assertEFM
+    156          
+    157            volatile uint32_t * addr = (volatile uint32_t *) PRS;
+    158            uint32_t offset = consumer_event;
+    159            addr = addr + offset / 4;
+   \                     ??sl_hal_prs_connect_channel_consumer_0: (+1)
+   \       0x1C   0x....             LDR.N    R2,??DataTable6_7
+   \       0x1E   0x08A0             LSRS     R0,R4,#+2
+   \       0x20   0xEB02 0x0780      ADD      R7,R2,R0, LSL #+2
+    160          
+    161            if (consumer_event != SL_HAL_PRS_CONSUMER_NONE) {
+   \       0x24   0xB18C             CBZ.N    R4,??sl_hal_prs_connect_channel_consumer_1
+    162              if (channel_type == SL_HAL_PRS_TYPE_ASYNC) {
+   \       0x26   0x462C             MOV      R4,R5
+   \       0x28   0xB93E             CBNZ.N   R6,??sl_hal_prs_connect_channel_consumer_2
+    163                EFM_ASSERT(channel < SL_HAL_PRS_ASYNC_CHAN_COUNT);
+   \       0x2A   0x2C0C             CMP      R4,#+12
+   \       0x2C   0xD303             BCC.N    ??sl_hal_prs_connect_channel_consumer_3
+   \       0x2E   0x21A3             MOVS     R1,#+163
+   \       0x30   0x4640             MOV      R0,R8
+   \       0x32   0x.... 0x....      BL       assertEFM
+    164          
+    165                *addr = channel << _PRS_CONSUMER_TIMER0_CC0_PRSSEL_SHIFT;
+   \                     ??sl_hal_prs_connect_channel_consumer_3: (+1)
+   \       0x36   0x603C             STR      R4,[R7, #+0]
+   \       0x38   0xE007             B.N      ??sl_hal_prs_connect_channel_consumer_1
+    166              } else {
+    167                EFM_ASSERT(channel < SL_HAL_PRS_SYNC_CHAN_COUNT);
+   \                     ??sl_hal_prs_connect_channel_consumer_2: (+1)
+   \       0x3A   0x2C04             CMP      R4,#+4
+   \       0x3C   0xD303             BCC.N    ??sl_hal_prs_connect_channel_consumer_4
+   \       0x3E   0x21A7             MOVS     R1,#+167
+   \       0x40   0x4640             MOV      R0,R8
+   \       0x42   0x.... 0x....      BL       assertEFM
+    168          
+    169                *addr = channel << _PRS_CONSUMER_TIMER0_CC0_SPRSSEL_SHIFT;
+   \                     ??sl_hal_prs_connect_channel_consumer_4: (+1)
+   \       0x46   0x022D             LSLS     R5,R5,#+8
+   \       0x48   0x603D             STR      R5,[R7, #+0]
+    170              }
+    171            }
+    172          }
+   \                     ??sl_hal_prs_connect_channel_consumer_1: (+1)
+   \       0x4A   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    173          
+    174          /***************************************************************************//**
+    175           * Send the output of a PRS channel to a GPIO pin.
+    176           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    177          void sl_hal_prs_pin_output(uint8_t channel,
+    178                                     sl_hal_prs_channel_type_t channel_type,
+    179                                     sl_gpio_port_t port,
+    180                                     uint8_t pin)
+    181          {
+   \                     sl_hal_prs_pin_output: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    182            volatile uint32_t *addr;
+    183          
+    184            if (channel_type == SL_HAL_PRS_TYPE_ASYNC) {
+   \        0x2   0x....             LDR.N    R4,??DataTable6_8
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0xBF0C             ITE      EQ
+   \        0x8   0x1D25             ADDEQ    R5,R4,#+4
+   \        0xA   0xF104 0x0534      ADDNE    R5,R4,#+52
+    185              addr = &GPIO->PRSROUTE[0].ASYNCH0ROUTE;
+    186            } else {
+    187              addr = &GPIO->PRSROUTE[0].SYNCH0ROUTE;
+    188            }
+    189            addr += channel;
+    190            *addr = ((uint32_t)port << _GPIO_PRS_ASYNCH0ROUTE_PORT_SHIFT)
+    191                    | ((uint32_t)pin << _GPIO_PRS_ASYNCH0ROUTE_PIN_SHIFT);
+   \        0xE   0xEA42 0x4203      ORR      R2,R2,R3, LSL #+16
+   \       0x12   0x4603             MOV      R3,R0
+   \       0x14   0xF845 0x2023      STR      R2,[R5, R3, LSL #+2]
+    192          
+    193            if (channel_type == SL_HAL_PRS_TYPE_ASYNC) {
+   \       0x18   0x2201             MOVS     R2,#+1
+   \       0x1A   0xB921             CBNZ.N   R1,??sl_hal_prs_pin_output_0
+    194              GPIO->PRSROUTE[0].ROUTEEN |= 0x1 << (channel + _GPIO_PRS_ROUTEEN_ASYNCH0PEN_SHIFT);
+   \       0x1C   0x6821             LDR      R1,[R4, #+0]
+   \       0x1E   0xFA02 0xF000      LSL      R0,R2,R0
+   \       0x22   0x4308             ORRS     R0,R0,R1
+   \       0x24   0xE004             B.N      ??sl_hal_prs_pin_output_1
+    195            } else {
+    196              GPIO->PRSROUTE[0].ROUTEEN |= 0x1 << (channel + _GPIO_PRS_ROUTEEN_SYNCH0PEN_SHIFT);
+   \                     ??sl_hal_prs_pin_output_0: (+1)
+   \       0x26   0x6823             LDR      R3,[R4, #+0]
+   \       0x28   0x300C             ADDS     R0,R0,#+12
+   \       0x2A   0xFA02 0xF000      LSL      R0,R2,R0
+   \       0x2E   0x4318             ORRS     R0,R0,R3
+   \                     ??sl_hal_prs_pin_output_1: (+1)
+   \       0x30   0x6020             STR      R0,[R4, #+0]
+    197            }
+    198          }
+   \       0x32   0xBD30             POP      {R4,R5,PC}
+    199          
+    200          /***************************************************************************//**
+    201           * Get PRS source signal for an sync channel.
+    202           ******************************************************************************/
+    203          static sl_hal_prs_sync_producer_signal_t prs_get_sync_channel_signal(uint8_t channel)
+    204          {
+    205            sl_hal_prs_sync_producer_signal_t producer_signal;
+    206          
+    207            producer_signal = (PRS->SYNC_CH[channel].CTRL
+    208                               & (_PRS_SYNC_CH_CTRL_SOURCESEL_MASK | _PRS_SYNC_CH_CTRL_SIGSEL_MASK));
+    209          
+    210            return producer_signal;
+    211          }
+    212          
+    213          /***************************************************************************//**
+    214           * Get PRS source signal for an async channel.
+    215           ******************************************************************************/
+    216          static sl_hal_prs_async_producer_signal_t prs_get_async_channel_signal(uint8_t channel)
+    217          {
+    218            sl_hal_prs_async_producer_signal_t producer_signal;
+    219          
+    220            producer_signal = (PRS->ASYNC_CH[channel].CTRL
+    221                               & (_PRS_ASYNC_CH_CTRL_SOURCESEL_MASK | _PRS_ASYNC_CH_CTRL_SIGSEL_MASK));
+    222          
+    223            return producer_signal;
+    224          }
+    225          
+    226          /***************************************************************************//**
+    227           * Check if an async PRS channel is free.
+    228           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    229          static bool prs_is_async_channel_free(uint8_t channel)
+    230          {
+    231            return ((PRS->ASYNC_CH[channel].CTRL
+    232                     & (_PRS_ASYNC_CH_CTRL_SOURCESEL_MASK | _PRS_ASYNC_CH_CTRL_SIGSEL_MASK))
+    233                    == (PRS_ASYNC_CH_CTRL_SOURCESEL_DEFAULT | PRS_ASYNC_CH_CTRL_SIGSEL_DEFAULT));
+   \                     prs_is_async_channel_free: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable6_1
+   \        0x2   0xF851 0x2020      LDR      R2,[R1, R0, LSL #+2]
+   \        0x6   0xF647 0x7007      MOVW     R0,#+32519
+   \        0xA   0x4002             ANDS     R2,R0,R2
+   \        0xC   0x1E50             SUBS     R0,R2,#+1
+   \        0xE   0x4180             SBCS     R0,R0,R0
+   \       0x10   0x0FC0             LSRS     R0,R0,#+31
+   \       0x12   0x4770             BX       LR
+    234          }
+    235          
+    236          /***************************************************************************//**
+    237           * Search for free channel in specific range.
+    238           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    239          static bool prs_find_free_channel_in_range(uint8_t start,
+    240                                                     uint8_t end,
+    241                                                     uint8_t *channel)
+    242          {
+   \                     prs_find_free_channel_in_range: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4616             MOV      R6,R2
+    243            for (uint8_t ch = start; ch <= end; ch++) {
+   \        0x8   0xE000             B.N      ??prs_find_free_channel_in_range_0
+   \                     ??prs_find_free_channel_in_range_1: (+1)
+   \        0xA   0x1C64             ADDS     R4,R4,#+1
+   \                     ??prs_find_free_channel_in_range_0: (+1)
+   \        0xC   0xB2E1             UXTB     R1,R4
+   \        0xE   0x428D             CMP      R5,R1
+   \       0x10   0xD307             BCC.N    ??prs_find_free_channel_in_range_2
+    244              if (prs_is_async_channel_free(ch)) {
+   \       0x12   0xB2E0             UXTB     R0,R4
+   \       0x14   0x.... 0x....      BL       prs_is_async_channel_free
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD0F6             BEQ.N    ??prs_find_free_channel_in_range_1
+    245                *channel = ch;
+   \       0x1C   0x7034             STRB     R4,[R6, #+0]
+    246                return true;
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \       0x20   0xBD70             POP      {R4-R6,PC}
+    247              }
+    248            }
+    249            return false;
+   \                     ??prs_find_free_channel_in_range_2: (+1)
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0xBD70             POP      {R4-R6,PC}
+    250          }
+    251          
+    252          /***************************************************************************//**
+    253           * Search for free channel from highest to lowest in specific range.
+    254           ******************************************************************************/
+    255          static bool prs_find_free_channel_reverse(uint8_t start,
+    256                                                    uint8_t end,
+    257                                                    uint8_t *channel)
+    258          {
+    259            for (uint8_t ch = end; ch >= start; ch--) {
+    260              if (prs_is_async_channel_free(ch)) {
+    261                *channel = ch;
+    262                return true;
+    263              }
+    264            }
+    265            return false;
+    266          }
+    267          
+    268          /***************************************************************************//**
+    269           * Search for a free async PRS channel with optional GPIO port filtering.
+    270           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    271          sl_status_t sl_hal_prs_get_free_async_channel_for_gpio(uint8_t *channel,
+    272                                                                 const sl_gpio_t *gpio_port_pin)
+    273          {
+   \                     sl_hal_prs_get_free_async_channel_for_gpio: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    274            if (channel == NULL) {
+   \        0x4   0xD101             BNE.N    ??sl_hal_prs_get_free_async_channel_for_gpio_0
+    275              return SL_STATUS_INVALID_PARAMETER;
+   \        0x6   0x2021             MOVS     R0,#+33
+   \        0x8   0xBD32             POP      {R1,R4,R5,PC}
+    276            }
+    277          
+    278            *channel = 0xFFU; // Initialize to invalid channel
+   \                     ??sl_hal_prs_get_free_async_channel_for_gpio_0: (+1)
+   \        0xA   0x20FF             MOVS     R0,#+255
+   \        0xC   0x7020             STRB     R0,[R4, #+0]
+    279            bool found = false;
+    280          
+    281            if (gpio_port_pin != NULL) {
+   \        0xE   0xB161             CBZ.N    R1,??sl_hal_prs_get_free_async_channel_for_gpio_1
+    282              // GPIO port is specified, use GPIO-aware allocation
+    283              if (gpio_port_pin->port < SL_GPIO_PORT_C) {
+   \       0x10   0x780A             LDRB     R2,[R1, #+0]
+   \       0x12   0x2A02             CMP      R2,#+2
+   \       0x14   0x4622             MOV      R2,R4
+   \       0x16   0xBFA7             ITTEE    GE
+   \       0x18   0x210B             MOVGE    R1,#+11
+   \       0x1A   0x2006             MOVGE    R0,#+6
+   \       0x1C   0x2105             MOVLT    R1,#+5
+   \       0x1E   0x2000             MOVLT    R0,#+0
+    284                // Get free PRS signal for GPIO Ports A and B.
+    285                found = prs_find_free_channel_in_range(SL_HAL_PRS_FIRST_ASYNC_CHANNEL_GPIO_PAB,
+    286                                                       SL_HAL_PRS_FIRST_ASYNC_CHANNEL_GPIO_PCD - 1,
+    287                                                       channel);
+    288              } else {
+    289                // Get free PRS signal for GPIO Ports C and D.
+    290                found = prs_find_free_channel_in_range(SL_HAL_PRS_FIRST_ASYNC_CHANNEL_GPIO_PCD,
+    291                                                       SL_HAL_PRS_LAST_ASYNC_CHANNEL_GPIO_PCD,
+    292                                                       channel);
+   \       0x20   0x.... 0x....      BL       prs_find_free_channel_in_range
+    293              }
+    294            } else {
+    295              // No GPIO port specified, search all channels starting from highest for better resource management
+    296              found = prs_find_free_channel_reverse(SL_HAL_PRS_FIRST_ASYNC_CHANNEL_GPIO_PAB,
+    297                                                    SL_HAL_PRS_LAST_ASYNC_CHANNEL_GPIO_PCD,
+    298                                                    channel);
+    299            }
+    300          
+    301            return found ? SL_STATUS_OK : SL_STATUS_NO_MORE_RESOURCE;
+   \       0x24   0xB158             CBZ.N    R0,??sl_hal_prs_get_free_async_channel_for_gpio_2
+   \                     ??sl_hal_prs_get_free_async_channel_for_gpio_3: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0xBD32             POP      {R1,R4,R5,PC}
+   \                     ??sl_hal_prs_get_free_async_channel_for_gpio_1: (+1)
+   \       0x2A   0x250B             MOVS     R5,#+11
+   \       0x2C   0xE000             B.N      ??sl_hal_prs_get_free_async_channel_for_gpio_4
+   \                     ??sl_hal_prs_get_free_async_channel_for_gpio_5: (+1)
+   \       0x2E   0x1E6D             SUBS     R5,R5,#+1
+   \                     ??sl_hal_prs_get_free_async_channel_for_gpio_4: (+1)
+   \       0x30   0xB2E8             UXTB     R0,R5
+   \       0x32   0x.... 0x....      BL       prs_is_async_channel_free
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD0F9             BEQ.N    ??sl_hal_prs_get_free_async_channel_for_gpio_5
+   \       0x3A   0x7025             STRB     R5,[R4, #+0]
+   \       0x3C   0xE7F3             B.N      ??sl_hal_prs_get_free_async_channel_for_gpio_3
+   \                     ??sl_hal_prs_get_free_async_channel_for_gpio_2: (+1)
+   \       0x3E   0x201A             MOVS     R0,#+26
+   \       0x40   0xBD32             POP      {R1,R4,R5,PC}
+    302          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x5003'8018        DC32     0x50038018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0xF0F0'FFFF        DC32     0xf0f0ffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0xFFFF'80F8        DC32     0xffff80f8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x5003'8048        DC32     0x50038048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x5003'800C        DC32     0x5003800c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x....'....        DC32     ?_0+132
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x5003'8000        DC32     0x50038000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x5003'C534        DC32     0x5003c534
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0x68   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0x70   0x5C 0x69          DC8 0x5C, 0x69, 0x6E, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x6E 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0x78   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x70, 0x72, 0x73, 0x2E
+   \              0x6C 0x5F    
+   \              0x70 0x72    
+   \              0x73 0x2E
+   \       0x80   0x68 0x00          DC8 0x68, 0
+   \       0x82                      DS8 2
+   \       0x84   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x8C   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x94   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x9C   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0xA4   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0xAC   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0xB4   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0xBC   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0xC4   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0xCC   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0xD4   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0xDC   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0xE4   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0xEC   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0xF4   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x72 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0xFC   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x70, 0x72, 0x73, 0x2E
+   \              0x6C 0x5F    
+   \              0x70 0x72    
+   \              0x73 0x2E
+   \      0x104   0x63 0x00          DC8 0x63, 0
+   \      0x106                      DS8 2
+    303          
+    304          #endif /* defined(PRS_COUNT) && (PRS_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   prs_find_free_channel_in_range
+        16   -> prs_is_async_channel_free
+       0   prs_is_async_channel_free
+      32   sl_hal_prs_async_init_channel
+        32   -> assertEFM
+         0   -> sl_hal_prs_connect_channel_consumer
+      24   sl_hal_prs_connect_channel_consumer
+        24   -> assertEFM
+      16   sl_hal_prs_get_free_async_channel_for_gpio
+        16   -> prs_find_free_channel_in_range
+        16   -> prs_is_async_channel_free
+      12   sl_hal_prs_get_free_channel
+      12   sl_hal_prs_pin_output
+       8   sl_hal_prs_reset
+      24   sl_hal_prs_sync_init_channel
+        24   -> assertEFM
+         0   -> sl_hal_prs_connect_channel_consumer
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+      12  ?Subroutine0
+     264  ?_0
+      38  prs_find_free_channel_in_range
+      20  prs_is_async_channel_free
+     136  sl_hal_prs_async_init_channel
+      78  sl_hal_prs_connect_channel_consumer
+      66  sl_hal_prs_get_free_async_channel_for_gpio
+      64  sl_hal_prs_get_free_channel
+      52  sl_hal_prs_pin_output
+      38  sl_hal_prs_reset
+      76  sl_hal_prs_sync_init_channel
+
+ 
+ 264 bytes in section .rodata
+ 616 bytes in section .text
+ 
+ 616 bytes of CODE  memory
+ 264 bytes of CONST memory
+
+Errors: none
+Warnings: none
