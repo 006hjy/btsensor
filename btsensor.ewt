@@ -1839,6 +1839,9 @@
                 <name>$PROJ_DIR$\config\dmadrv_config.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\config\nvm3_default_config.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\config\sl_clock_manager_oscillator_config.h</name>
             </file>
             <file>
@@ -1849,6 +1852,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\config\sl_device_init_dcdc_config.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\config\sl_memory_manager_config.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\config\sl_memory_manager_region_config.h</name>
@@ -2054,6 +2060,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_atomic.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_bit.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_code_classification.h</name>
                             </file>
                             <file>
@@ -2093,6 +2102,15 @@
                     <name>platform</name>
                     <group>
                         <name>common</name>
+                        <group>
+                            <name>errno_error_codes</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\errno_error_codes.h</name>
+                                </file>
+                            </group>
+                        </group>
                         <group>
                             <name>inc</name>
                             <file>
@@ -2153,6 +2171,78 @@
                                 <name>src</name>
                                 <file>
                                     <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\src\dmadrv.c</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>nvm3</name>
+                            <group>
+                                <name>config</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\nvm3_config.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_cache.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_default.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_generic.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_hal.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_hal_flash.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_lock.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_object.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_page.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_trace.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_utils.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_cache.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_default_common_linker.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_hal_flash.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_lock.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_object.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_page.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_utils.c</name>
                                 </file>
                             </group>
                         </group>
@@ -2303,6 +2393,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_gpio.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_iadc.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_letimer.h</name>
                             </file>
                             <file>
@@ -2319,6 +2412,9 @@
                             <name>src</name>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_gpio.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_iadc.c</name>
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_letimer.c</name>
@@ -2470,13 +2566,40 @@
                             <group>
                                 <name>inc</name>
                                 <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\sl_memory_manager.h</name>
+                                </file>
+                                <file>
                                     <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\sl_memory_manager_region.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\sli_memory_manager_retention_control.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_dynamic_reservation.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool_common.c</name>
+                                </file>
+                                <file>
                                     <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_region.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_retarget.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sli_memory_manager.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sli_memory_manager_common.c</name>
                                 </file>
                             </group>
                         </group>
@@ -2631,6 +2754,12 @@
     </file>
     <file>
         <name>$PROJ_DIR$\btsensor.ipcf</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\config.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\config.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\tasks.c</name>

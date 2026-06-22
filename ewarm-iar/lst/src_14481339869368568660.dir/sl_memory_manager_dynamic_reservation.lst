@@ -1,0 +1,1082 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:37
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_dynamic_reservation.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_dynamic_reservation.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_dynamic_reservation.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_dynamic_reservation.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_dynamic_reservation.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir\sl_memory_manager_dynamic_reservation.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_dynamic_reservation.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_dynamic_reservation.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Memory Manager Driver's Block Reservation Feature Implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2023 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stdint.h>
+     32          #include <stdbool.h>
+     33          #include <string.h>
+     34          #include <stdalign.h>
+     35          
+     36          #include "sl_memory_manager_config.h"
+     37          #include "sl_memory_manager.h"
+     38          #include "sli_memory_manager.h"
+     39          
+     40          #include "sl_assert.h"
+     41          #include "sl_bit.h"
+     42          #include "sl_common.h"
+     43          #include "sl_core.h"
+     44          
+     45          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     46          #include "sl_component_catalog.h"
+     47          #endif
+     48          
+     49          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+     50          #include "sli_memory_profiler.h"
+     51          #endif
+     52          
+     53          /*******************************************************************************
+     54           **************************   GLOBAL FUNCTIONS   *******************************
+     55           ******************************************************************************/
+     56          
+     57          /***************************************************************************//**
+     58           * Dynamically reserves a block of memory.
+     59           *
+     60           * @note (1) This function assumes the 'handle' is provided by the caller:
+     61           *           - either statically (e.g. as a global variable)
+     62           *           - or dynamically by calling sl_memory_reservation_handle_alloc().
+     63           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     64          sl_status_t sl_memory_reserve_block(size_t size,
+     65                                              size_t align,
+     66                                              sl_memory_reservation_t *handle,
+     67                                              void **block)
+     68          {
+   \                     sl_memory_reserve_block: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     69            return sl_memory_heap_reserve_block(&sli_general_purpose_heap, size, align, handle, block);
+   \        0x2   0x9300             STR      R3,[SP, #+0]
+   \        0x4   0x4613             MOV      R3,R2
+   \        0x6   0x460A             MOV      R2,R1
+   \        0x8   0x4601             MOV      R1,R0
+   \        0xA   0x....             LDR.N    R0,??DataTable1
+   \        0xC   0x.... 0x....      BL       sl_memory_heap_reserve_block
+   \       0x10   0xBD02             POP      {R1,PC}
+     70          }
+     71          
+     72          /***************************************************************************//**
+     73           * Frees a dynamically reserved block of memory.
+     74           *
+     75           * @note (1) Block reservation are not part of the double linked-list as they
+     76           *           don't have metadata next to them compared to a LT/ST block that
+     77           *           has a metadata with offset. When releasing a reserved block,
+     78           *           the previous and next blocks that are part of the double linked-list
+     79           *           need to be found to insert this new free block. The neighbours are
+     80           *           found by browsing through the linked-list from the heap start until
+     81           *           a block metadata's address is higher than the block being
+     82           *           released's address. The previous and next blocks are then saved to
+     83           *           properly update the double linked-list.
+     84           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     85          sl_status_t sl_memory_release_block(sl_memory_reservation_t *handle)
+     86          {
+   \                     sl_memory_release_block: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4604             MOV      R4,R0
+     87            sl_memory_heap_t *heap;
+     88            size_t new_free_block_length;
+     89            sli_block_metadata_t *new_free_block = NULL;
+     90            sli_block_metadata_t *prev_block = NULL;
+     91            sli_block_metadata_t *next_block = NULL;
+   \        0x6   0x2500             MOVS     R5,#+0
+     92            sli_block_metadata_t *free_lt_list_head;
+     93            sli_block_metadata_t *free_st_list_head;
+     94            sli_block_metadata_t *current_metadata;
+     95            uint16_t reserved_block_offset;
+     96          
+     97            // Verify that the handle isn't NULL.
+     98            if (handle == NULL) {
+   \        0x8   0xB90C             CBNZ.N   R4,??sl_memory_release_block_0
+     99              return SL_STATUS_NULL_POINTER;
+   \        0xA   0x2022             MOVS     R0,#+34
+   \        0xC   0xE0A6             B.N      ??sl_memory_release_block_1
+    100            }
+    101          
+    102            // Retrieve the heap where the block was allocated.
+    103            heap = sli_memory_get_heap_handle(handle->block_address);
+   \                     ??sl_memory_release_block_0: (+1)
+   \        0xE   0x6820             LDR      R0,[R4, #+0]
+   \       0x10   0x46A2             MOV      R10,R4
+   \       0x12   0x2400             MOVS     R4,#+0
+   \       0x14   0x.... 0x....      BL       sli_memory_get_heap_handle
+   \       0x18   0x4606             MOV      R6,R0
+    104          
+    105            free_lt_list_head = (sli_block_metadata_t *)heap->free_lt_list_head;
+   \       0x1A   0xF8D6 0x8014      LDR      R8,[R6, #+20]
+    106            free_st_list_head = (sli_block_metadata_t *)heap->free_st_list_head;
+   \       0x1E   0xF8D6 0x9018      LDR      R9,[R6, #+24]
+    107            current_metadata = (sli_block_metadata_t *)heap->base_addr;
+   \       0x22   0x6837             LDR      R7,[R6, #+0]
+    108          
+    109          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    110            sli_memory_profiler_track_free(sli_mm_heap_name, handle->block_address);
+    111          #endif
+    112          
+    113            CORE_DECLARE_IRQ_STATE;
+    114            CORE_ENTER_ATOMIC();
+   \       0x24   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x28   0x9000             STR      R0,[SP, #+0]
+   \       0x2A   0x4639             MOV      R1,R7
+   \       0x2C   0xF8DA 0x7000      LDR      R7,[R10, #+0]
+   \       0x30   0x463A             MOV      R2,R7
+   \       0x32   0xE001             B.N      ??sl_memory_release_block_2
+    115          
+    116            // Find neighbours by searching from the heap start. See Note #1.
+    117            while ((uintptr_t)current_metadata < (uintptr_t)handle->block_address) {
+    118              prev_block = current_metadata;
+    119          
+    120              if (sli_block_offset_next_dword_decode(current_metadata) == 0) {
+    121                break;
+    122              }
+    123          
+    124              current_metadata = (sli_block_metadata_t *)((uint64_t *)current_metadata + sli_block_offset_next_dword_decode(current_metadata));
+   \                     ??sl_memory_release_block_3: (+1)
+   \       0x34   0xEB01 0x01C0      ADD      R1,R1,R0, LSL #+3
+   \                     ??sl_memory_release_block_2: (+1)
+   \       0x38   0x4291             CMP      R1,R2
+   \       0x3A   0xD203             BCS.N    ??sl_memory_release_block_4
+    125            }
+   \       0x3C   0x88C8             LDRH     R0,[R1, #+6]
+   \       0x3E   0x460C             MOV      R4,R1
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD1F7             BNE.N    ??sl_memory_release_block_3
+    126            next_block = ((uintptr_t)current_metadata >= (uintptr_t)handle->block_address) ? current_metadata : NULL;
+   \                     ??sl_memory_release_block_4: (+1)
+   \       0x44   0x4291             CMP      R1,R2
+   \       0x46   0xBF28             IT       CS
+   \       0x48   0x460D             MOVCS    R5,R1
+    127          
+    128            new_free_block = (sli_block_metadata_t *)handle->block_address;
+    129            new_free_block_length = (uint16_t)SLI_BLOCK_LEN_BYTE_TO_DWORD(handle->block_size) - SLI_BLOCK_METADATA_SIZE_DWORD;
+   \       0x4A   0xF8DA 0x0004      LDR      R0,[R10, #+4]
+   \       0x4E   0x1DC0             ADDS     R0,R0,#+7
+   \       0x50   0x0340             LSLS     R0,R0,#+13
+   \       0x52   0x0C00             LSRS     R0,R0,#+16
+   \       0x54   0xF1A0 0x0B01      SUB      R11,R0,#+1
+    130          
+    131            // Create a new free block while trying to merge it with the previous and next free blocks if possible.
+    132            if (prev_block != NULL) {
+   \       0x58   0xB31C             CBZ.N    R4,??sl_memory_release_block_5
+    133              // Calculate offset between the reserved block and the previous block's payload address.
+    134              reserved_block_offset = (uint16_t)((uint64_t *)handle->block_address - (uint64_t *)prev_block - SLI_BLOCK_METADATA_SIZE_DWORD);
+    135              // Then calculate the difference between the above offset and the length of the previous block.
+    136              reserved_block_offset -= sli_block_len_dword_decode(prev_block);
+    137          
+    138              // Make sure there's no reserved block between the freed block and the previous block.
+    139              // Layout around the reserved block to free (aka R1) will be:
+    140              // |...|Metadata Free block|Data Free block|R1||
+    141              if ((prev_block->block_in_use == 0) && (reserved_block_offset < SLI_BLOCK_RESERVATION_MIN_SIZE_DWORD)) {
+   \       0x5A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x5C   0x07C3             LSLS     R3,R0,#+31
+   \       0x5E   0xD415             BMI.N    ??sl_memory_release_block_6
+   \       0x60   0x8860             LDRH     R0,[R4, #+2]
+   \       0x62   0x1B11             SUBS     R1,R2,R4
+   \       0x64   0x10C9             ASRS     R1,R1,#+3
+   \       0x66   0x1E4B             SUBS     R3,R1,#+1
+   \       0x68   0x1A1B             SUBS     R3,R3,R0
+   \       0x6A   0xB29B             UXTH     R3,R3
+   \       0x6C   0x2B04             CMP      R3,#+4
+   \       0x6E   0xD20D             BCS.N    ??sl_memory_release_block_6
+    142                // New freed block's previous block is free, so merge both free blocks.
+    143                new_free_block = prev_block;
+    144                prev_block = (prev_block == heap->base_addr)
+    145                             ? NULL
+    146                             : (sli_block_metadata_t *)((uint64_t *)prev_block - sli_block_offset_prev_dword_decode(prev_block));
+   \       0x70   0x6831             LDR      R1,[R6, #+0]
+   \       0x72   0x4627             MOV      R7,R4
+   \       0x74   0x428C             CMP      R4,R1
+   \       0x76   0xBF08             IT       EQ
+   \       0x78   0x2400             MOVEQ    R4,#+0
+   \       0x7A   0xD003             BEQ.N    ??sl_memory_release_block_7
+   \       0x7C   0x88A1             LDRH     R1,[R4, #+4]
+   \       0x7E   0x00C9             LSLS     R1,R1,#+3
+   \       0x80   0x4249             RSBS     R1,R1,#+0
+   \       0x82   0x1864             ADDS     R4,R4,R1
+    147          
+    148                new_free_block_length += sli_block_len_dword_decode(new_free_block) + SLI_BLOCK_METADATA_SIZE_DWORD;
+    149              } else {
+   \                     ??sl_memory_release_block_7: (+1)
+   \       0x84   0x4458             ADD      R0,R11,R0
+   \       0x86   0xF100 0x0B01      ADD      R11,R0,#+1
+   \       0x8A   0xE00A             B.N      ??sl_memory_release_block_5
+    150                // Create a new free block, because previous block is a dynamic allocation, a reserved block or the start of the heap.
+    151                // Layout around the reserved block to free (aka R1) will be:
+    152                // |...|Metadata Free block|Data Free block|R2|R1|| or |...|Metadata ST1|Data ST1|R1|| or |...|Metadata LT|Data LT|R1||
+    153                heap->free_blocks_number++;
+   \                     ??sl_memory_release_block_6: (+1)
+   \       0x8C   0x6930             LDR      R0,[R6, #+16]
+   \       0x8E   0x1C40             ADDS     R0,R0,#+1
+   \       0x90   0x6130             STR      R0,[R6, #+16]
+    154                SLI_MEMORY_STAT_HEAP_INCREASE(heap, SLI_BLOCK_METADATA_SIZE_BYTE);
+   \       0x92   0x68B0             LDR      R0,[R6, #+8]
+   \       0x94   0x68F1             LDR      R1,[R6, #+12]
+   \       0x96   0x3008             ADDS     R0,R0,#+8
+   \       0x98   0x4288             CMP      R0,R1
+   \       0x9A   0xBF28             IT       CS
+   \       0x9C   0x4601             MOVCS    R1,R0
+   \       0x9E   0x60F1             STR      R1,[R6, #+12]
+   \       0xA0   0x60B0             STR      R0,[R6, #+8]
+    155              }
+    156            }
+    157          
+    158            if (next_block != NULL) {
+   \                     ??sl_memory_release_block_5: (+1)
+   \       0xA2   0xB1FD             CBZ.N    R5,??sl_memory_release_block_8
+    159              // Calculate offset between the reserved block and the next block.
+    160              reserved_block_offset = (uint16_t)((uint64_t *)next_block - (uint64_t *)handle->block_address);
+    161              // Then calculate the difference between the above offset and the size of the block being released.
+    162              reserved_block_offset -= SLI_BLOCK_LEN_BYTE_TO_DWORD(handle->block_size);
+   \       0xA4   0xF8DA 0x0004      LDR      R0,[R10, #+4]
+   \       0xA8   0x1AAA             SUBS     R2,R5,R2
+   \       0xAA   0x10D2             ASRS     R2,R2,#+3
+   \       0xAC   0x1DC0             ADDS     R0,R0,#+7
+   \       0xAE   0xEBA2 0x02D0      SUB      R2,R2,R0, LSR #+3
+    163          
+    164              // Make sure there's no reserved block between the freed block and the next block.
+    165              if ((next_block->block_in_use == 0) && (reserved_block_offset < SLI_BLOCK_RESERVATION_MIN_SIZE_DWORD)) {
+   \       0xB2   0x7829             LDRB     R1,[R5, #+0]
+   \       0xB4   0xB292             UXTH     R2,R2
+   \       0xB6   0x07C8             LSLS     R0,R1,#+31
+   \       0xB8   0xD414             BMI.N    ??sl_memory_release_block_8
+   \       0xBA   0x2A04             CMP      R2,#+4
+   \       0xBC   0xD212             BCS.N    ??sl_memory_release_block_8
+    166                // New freed block's following block is free, so merge both free blocks.
+    167                new_free_block_length += sli_block_len_dword_decode(next_block) + reserved_block_offset + SLI_BLOCK_METADATA_SIZE_DWORD;
+    168                // Invalidate the next block metadata.
+    169                sli_block_len_dword_encode(next_block, 0);
+   \       0xBE   0x2100             MOVS     R1,#+0
+   \       0xC0   0x8868             LDRH     R0,[R5, #+2]
+   \       0xC2   0x8069             STRH     R1,[R5, #+2]
+   \       0xC4   0x4458             ADD      R0,R11,R0
+   \       0xC6   0x1812             ADDS     R2,R2,R0
+    170                // 2 free blocks have been merged, account for 1 free block only.
+    171                heap->free_blocks_number--;
+   \       0xC8   0x6930             LDR      R0,[R6, #+16]
+   \       0xCA   0xF102 0x0B01      ADD      R11,R2,#+1
+   \       0xCE   0x1E40             SUBS     R0,R0,#+1
+   \       0xD0   0x6130             STR      R0,[R6, #+16]
+    172                SLI_MEMORY_STAT_HEAP_DECREASE(heap, SLI_BLOCK_METADATA_SIZE_BYTE);
+   \       0xD2   0x68B0             LDR      R0,[R6, #+8]
+   \       0xD4   0x3808             SUBS     R0,R0,#+8
+   \       0xD6   0x60B0             STR      R0,[R6, #+8]
+    173                
+    174                if (sli_block_offset_next_dword_decode(next_block) != 0) {
+   \       0xD8   0x88E8             LDRH     R0,[R5, #+6]
+   \       0xDA   0x2800             CMP      R0,#+0
+   \       0xDC   0xBF14             ITE      NE
+   \       0xDE   0xEB05 0x05C0      ADDNE    R5,R5,R0, LSL #+3
+   \       0xE2   0x2500             MOVEQ    R5,#+0
+    175                  // Get next block following current next block.
+    176                  next_block = (sli_block_metadata_t *)((uint64_t *)next_block + sli_block_offset_next_dword_decode(next_block));
+    177                } else {
+    178                  next_block = NULL;
+    179                }
+    180              }
+    181            }
+    182          
+    183            // Update the new free metadata block accordingly.
+    184            sli_memory_metadata_init(new_free_block);
+   \                     ??sl_memory_release_block_8: (+1)
+   \       0xE4   0x4638             MOV      R0,R7
+   \       0xE6   0x.... 0x....      BL       sli_memory_metadata_init
+    185            sli_block_len_dword_encode(new_free_block, new_free_block_length);
+   \       0xEA   0xF8A7 0xB002      STRH     R11,[R7, #+2]
+    186          
+    187            if (next_block != NULL) {
+   \       0xEE   0xB125             CBZ.N    R5,??sl_memory_release_block_9
+    188              sli_block_offset_next_dword_encode(new_free_block, ((uint64_t *)next_block - (uint64_t *)new_free_block));
+   \       0xF0   0x1BE8             SUBS     R0,R5,R7
+   \       0xF2   0x10C0             ASRS     R0,R0,#+3
+    189              sli_block_offset_prev_dword_encode(next_block, sli_block_offset_next_dword_decode(new_free_block));
+   \       0xF4   0x80F8             STRH     R0,[R7, #+6]
+   \       0xF6   0x80A8             STRH     R0,[R5, #+4]
+    190            } else {
+   \       0xF8   0xE001             B.N      ??sl_memory_release_block_10
+    191              // Heap end.
+    192              sli_block_offset_next_dword_encode(new_free_block, 0);
+   \                     ??sl_memory_release_block_9: (+1)
+   \       0xFA   0x2000             MOVS     R0,#+0
+   \       0xFC   0x80F8             STRH     R0,[R7, #+6]
+    193            }
+    194          
+    195            if (prev_block != NULL) {
+   \                     ??sl_memory_release_block_10: (+1)
+   \       0xFE   0xB124             CBZ.N    R4,??sl_memory_release_block_11
+    196              sli_block_offset_prev_dword_encode(new_free_block, ((uint64_t *)new_free_block - (uint64_t *)prev_block));
+   \      0x100   0x1B38             SUBS     R0,R7,R4
+   \      0x102   0x10C0             ASRS     R0,R0,#+3
+    197              sli_block_offset_next_dword_encode(prev_block, sli_block_offset_prev_dword_decode(new_free_block));
+   \      0x104   0x80B8             STRH     R0,[R7, #+4]
+   \      0x106   0x80E0             STRH     R0,[R4, #+6]
+    198            } else {
+   \      0x108   0xE001             B.N      ??sl_memory_release_block_12
+    199              // Heap start.
+    200              sli_block_offset_prev_dword_encode(new_free_block, 0);
+   \                     ??sl_memory_release_block_11: (+1)
+   \      0x10A   0x2000             MOVS     R0,#+0
+   \      0x10C   0x80B8             STRH     R0,[R7, #+4]
+    201            }
+    202          
+    203            if (free_lt_list_head == NULL             // LT list is empty. Freed block becomes the new 1st element.
+    204                || free_lt_list_head > new_free_block // LT list not empty. Verify if freed block becomes the head.
+    205                || sli_block_len_dword_decode(free_lt_list_head) == 0) {
+   \                     ??sl_memory_release_block_12: (+1)
+   \      0x10E   0xF1B8 0x0F00      CMP      R8,#+0
+   \      0x112   0xD004             BEQ.N    ??sl_memory_release_block_13
+   \      0x114   0x4547             CMP      R7,R8
+   \      0x116   0xD302             BCC.N    ??sl_memory_release_block_13
+   \      0x118   0xF8B8 0x0002      LDRH     R0,[R8, #+2]
+   \      0x11C   0xB900             CBNZ.N   R0,??sl_memory_release_block_14
+    206              free_lt_list_head = new_free_block;
+   \                     ??sl_memory_release_block_13: (+1)
+   \      0x11E   0x46B8             MOV      R8,R7
+    207            }
+    208          
+    209            if (free_st_list_head == NULL             // ST list is empty. Freed block becomes the new 1st element.
+    210                || free_st_list_head < new_free_block // ST list not empty. Verify if freed block becomes the head.
+    211                || sli_block_len_dword_decode(free_st_list_head) == 0) {
+   \                     ??sl_memory_release_block_14: (+1)
+   \      0x120   0xF1B9 0x0F00      CMP      R9,#+0
+   \      0x124   0xD004             BEQ.N    ??sl_memory_release_block_15
+   \      0x126   0x45B9             CMP      R9,R7
+   \      0x128   0xD302             BCC.N    ??sl_memory_release_block_15
+   \      0x12A   0xF8B9 0x0002      LDRH     R0,[R9, #+2]
+   \      0x12E   0xB900             CBNZ.N   R0,??sl_memory_release_block_16
+    212              free_st_list_head = new_free_block;
+   \                     ??sl_memory_release_block_15: (+1)
+   \      0x130   0x46B9             MOV      R9,R7
+    213            }
+    214            // Update the heap's head pointers.
+    215            heap->free_lt_list_head = (void *)free_lt_list_head;
+   \                     ??sl_memory_release_block_16: (+1)
+   \      0x132   0xF8C6 0x8014      STR      R8,[R6, #+20]
+    216            heap->free_st_list_head = (void *)free_st_list_head;
+   \      0x136   0xF8C6 0x9018      STR      R9,[R6, #+24]
+    217          
+    218            // Decrease heap usage statistic.
+    219            SLI_MEMORY_STAT_HEAP_DECREASE(heap, SLI_ALIGN_ROUND_UP(handle->block_size, SLI_BLOCK_ALLOC_MIN_ALIGN));
+   \      0x13A   0xF8DA 0x1004      LDR      R1,[R10, #+4]
+   \      0x13E   0x68B0             LDR      R0,[R6, #+8]
+   \      0x140   0x1DC9             ADDS     R1,R1,#+7
+   \      0x142   0x08C9             LSRS     R1,R1,#+3
+   \      0x144   0xEBA0 0x00C1      SUB      R0,R0,R1, LSL #+3
+   \      0x148   0x60B0             STR      R0,[R6, #+8]
+    220          
+    221            // Invalidate handle.
+    222            handle->block_address = NULL;
+   \      0x14A   0x2000             MOVS     R0,#+0
+   \      0x14C   0xF8CA 0x0000      STR      R0,[R10, #+0]
+    223            handle->block_size = 0;
+   \      0x150   0xF8CA 0x0004      STR      R0,[R10, #+4]
+    224          
+    225          #if defined(SLI_MEMORY_MANAGER_ENABLE_TEST_UTILITIES)
+    226            sli_memory_remove_reservation_handle(handle);
+    227          #endif
+    228          
+    229            CORE_EXIT_ATOMIC();
+   \      0x154   0x9800             LDR      R0,[SP, #+0]
+   \      0x156   0x.... 0x....      BL       CORE_ExitAtomic
+    230          
+    231            return SL_STATUS_OK;
+   \      0x15A   0x2000             MOVS     R0,#+0
+   \                     ??sl_memory_release_block_1: (+1)
+   \      0x15C   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    232          }
+    233          
+    234          /***************************************************************************//**
+    235           * Dynamically allocates a block reservation handle.
+    236           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    237          sl_status_t sl_memory_reservation_handle_alloc(sl_memory_reservation_t **handle)
+    238          {
+   \                     sl_memory_reservation_handle_alloc: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    239          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    240            void * volatile return_address = sli_memory_profiler_get_return_address();
+    241          #endif
+    242            sl_status_t status;
+    243          
+    244            status = sl_memory_alloc(sizeof(sl_memory_reservation_t), BLOCK_TYPE_LONG_TERM, (void**)handle);
+   \        0x4   0x4622             MOV      R2,R4
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x2008             MOVS     R0,#+8
+   \        0xA   0x.... 0x....      BL       sl_memory_alloc
+    245          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    246            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE, *handle, return_address);
+    247          #endif
+    248            if (status != SL_STATUS_OK) {
+   \        0xE   0xB920             CBNZ.N   R0,??sl_memory_reservation_handle_alloc_0
+    249              return status;
+    250            }
+    251          
+    252            // Initialize handle data.
+    253            (*handle)->block_address = NULL;
+   \       0x10   0x6820             LDR      R0,[R4, #+0]
+   \       0x12   0x2100             MOVS     R1,#+0
+   \       0x14   0x6001             STR      R1,[R0, #+0]
+    254            (*handle)->block_size = 0;
+   \       0x16   0x6041             STR      R1,[R0, #+4]
+    255          
+    256            return status;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \                     ??sl_memory_reservation_handle_alloc_0: (+1)
+   \       0x1A   0xBD10             POP      {R4,PC}
+    257          }
+    258          
+    259          /***************************************************************************//**
+    260           * Frees a dynamically allocated block reservation handle.
+    261           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    262          sl_status_t sl_memory_reservation_handle_free(sl_memory_reservation_t *handle)
+    263          {
+    264            // Check that block has been released before freeing handle.
+    265            if ((handle->block_size != 0) || (handle->block_address != NULL)) {
+   \                     sl_memory_reservation_handle_free: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xBF02             ITTT     EQ
+   \        0x6   0x6802             LDREQ    R2,[R0, #+0]
+   \        0x8   0x2A00             CMPEQ    R2,#+0
+    266              return SL_STATUS_FAIL;
+    267            }
+    268          
+    269            return sl_memory_free((void *)handle);
+   \        0xA   0x.... 0x....      BEQ.W    sl_memory_free
+   \        0xE   0x2001             MOVS     R0,#+1
+   \       0x10   0x4770             BX       LR
+    270          }
+    271          
+    272          /***************************************************************************//**
+    273           * Gets the size of the memory reservation handle structure.
+    274           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    275          uint32_t sl_memory_reservation_handle_get_size(void)
+    276          {
+    277            return sizeof(sl_memory_reservation_t);
+   \                     sl_memory_reservation_handle_get_size: (+1)
+   \        0x0   0x2008             MOVS     R0,#+8
+   \        0x2   0x4770             BX       LR
+    278          }
+    279          
+    280          /***************************************************************************//**
+    281           * Dynamically reserves a block of memory from a specific heap instance.
+    282           *
+    283           * @note (1) This function assumes the 'handle' is provided by the caller:
+    284           *           - either statically (e.g. as a global variable)
+    285           *           - or dynamically by calling sl_memory_reservation_handle_alloc().
+    286           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    287          sl_status_t sl_memory_heap_reserve_block(sl_memory_heap_t *heap,
+    288                                                   size_t size,
+    289                                                   size_t align,
+    290                                                   sl_memory_reservation_t *handle,
+    291                                                   void **block)
+    292          {
+   \                     sl_memory_heap_reserve_block: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x4615             MOV      R5,R2
+   \        0x6   0x4604             MOV      R4,R0
+   \        0x8   0x460F             MOV      R7,R1
+   \        0xA   0x4699             MOV      R9,R3
+    293          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    294            void * volatile return_address = sli_memory_profiler_get_return_address();
+    295          #endif
+    296          
+    297            // Check proper alignment characteristics.
+    298            EFM_ASSERT((align == SL_MEMORY_BLOCK_ALIGN_DEFAULT)
+    299                       || (SL_MATH_IS_PWR2(align)
+    300                           && (align <= SL_MEMORY_BLOCK_ALIGN_512_BYTES)));
+   \        0xC   0x....             LDR.N    R6,??DataTable1_1
+   \        0xE   0xF115 0x0F01      CMN      R5,#+1
+   \       0x12   0xD00C             BEQ.N    ??sl_memory_heap_reserve_block_0
+   \       0x14   0xB135             CBZ.N    R5,??sl_memory_heap_reserve_block_1
+   \       0x16   0x1E68             SUBS     R0,R5,#+1
+   \       0x18   0x4205             TST      R5,R0
+   \       0x1A   0xD103             BNE.N    ??sl_memory_heap_reserve_block_1
+   \       0x1C   0xF240 0x2201      MOVW     R2,#+513
+   \       0x20   0x4295             CMP      R5,R2
+   \       0x22   0xD304             BCC.N    ??sl_memory_heap_reserve_block_0
+   \                     ??sl_memory_heap_reserve_block_1: (+1)
+   \       0x24   0xF44F 0x7196      MOV      R1,#+300
+   \       0x28   0x4630             MOV      R0,R6
+   \       0x2A   0x.... 0x....      BL       assertEFM
+    301          
+    302            // Make sure the heap handle isn't NULL.
+    303            EFM_ASSERT(heap != NULL);
+   \                     ??sl_memory_heap_reserve_block_0: (+1)
+   \       0x2E   0xB924             CBNZ.N   R4,??sl_memory_heap_reserve_block_2
+   \       0x30   0xF240 0x112F      MOVW     R1,#+303
+   \       0x34   0x4630             MOV      R0,R6
+   \       0x36   0x.... 0x....      BL       assertEFM
+    304          
+    305            sli_block_metadata_t *free_block_metadata = NULL;
+   \                     ??sl_memory_heap_reserve_block_2: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0x9002             STR      R0,[SP, #+8]
+    306            void *reserved_blk = NULL;
+    307            size_t current_block_len;
+    308            size_t size_real;
+    309            size_t size_adjusted;
+    310            size_t block_size_remaining;
+    311            size_t block_align = (align == SL_MEMORY_BLOCK_ALIGN_DEFAULT) ? SLI_BLOCK_ALLOC_MIN_ALIGN : align;
+   \       0x3E   0xF115 0x0F01      CMN      R5,#+1
+   \       0x42   0xBF0C             ITE      EQ
+   \       0x44   0x2608             MOVEQ    R6,#+8
+   \       0x46   0x462E             MOVNE    R6,R5
+    312          #if defined(DEBUG_EFM) || defined(DEBUG_EFM_USER)
+    313            reserve_no_retention_first = false;
+   \       0x48   0x....             LDR.N    R1,??DataTable1_2
+   \       0x4A   0xEA5F 0x0509      MOVS     R5,R9
+   \       0x4E   0x7008             STRB     R0,[R1, #+0]
+    314          #endif
+    315          
+    316            // Verify that the handle pointer isn't NULL. See Note #1.
+    317            if ((handle == NULL) || (block == NULL)) {
+   \       0x50   0xBF1A             ITTE     NE
+   \       0x52   0xF8DD 0x9028      LDRNE    R9,[SP, #+40]
+   \       0x56   0xF1B9 0x0F00      CMPNE    R9,#+0
+   \       0x5A   0x2022             MOVEQ    R0,#+34
+    318              return SL_STATUS_NULL_POINTER;
+   \       0x5C   0xD078             BEQ.N    ??sl_memory_heap_reserve_block_3
+    319            }
+    320          
+    321            // Check that the block does not exist yet.
+    322            if ((handle->block_size != 0) || (handle->block_address != NULL)) {
+   \       0x5E   0x6868             LDR      R0,[R5, #+4]
+   \       0x60   0x2800             CMP      R0,#+0
+   \       0x62   0xBF06             ITTE     EQ
+   \       0x64   0x6829             LDREQ    R1,[R5, #+0]
+   \       0x66   0x2900             CMPEQ    R1,#+0
+   \       0x68   0x2001             MOVNE    R0,#+1
+    323              return SL_STATUS_FAIL;
+   \       0x6A   0xD171             BNE.N    ??sl_memory_heap_reserve_block_3
+    324            }
+    325          
+    326            *block = NULL; // No block reserved yet.
+   \       0x6C   0xF8C9 0x1000      STR      R1,[R9, #+0]
+    327          
+    328            if ((size == 0) || (size >= heap->size)) {
+   \       0x70   0xB117             CBZ.N    R7,??sl_memory_heap_reserve_block_4
+   \       0x72   0x6861             LDR      R1,[R4, #+4]
+   \       0x74   0x428F             CMP      R7,R1
+   \       0x76   0xD301             BCC.N    ??sl_memory_heap_reserve_block_5
+    329              return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_memory_heap_reserve_block_4: (+1)
+   \       0x78   0x2021             MOVS     R0,#+33
+   \       0x7A   0xE069             B.N      ??sl_memory_heap_reserve_block_3
+    330            }
+    331          
+    332          #if defined(SLI_MEMORY_MANAGER_ENABLE_TEST_UTILITIES)
+    333            // Check if the reservation counter has reached its maximum limit.
+    334            if ((int)sli_get_available_reservation_handle_ix() == -1) {
+    335              return SL_STATUS_ALLOCATION_FAILED;
+    336            }
+    337          #endif
+    338          
+    339            size_real = SLI_ALIGN_ROUND_UP(size, block_align);
+   \                     ??sl_memory_heap_reserve_block_5: (+1)
+   \       0x7C   0x19F0             ADDS     R0,R6,R7
+   \       0x7E   0x1E40             SUBS     R0,R0,#+1
+   \       0x80   0x1E71             SUBS     R1,R6,#+1
+   \       0x82   0xEA20 0x0701      BIC      R7,R0,R1
+    340            // Round size to minimum reservation size if requested size is too small.
+    341            size_real = size_real < SLI_BLOCK_RESERVATION_MIN_SIZE_BYTE ? SLI_BLOCK_RESERVATION_MIN_SIZE_BYTE : size_real;
+   \       0x86   0x2F20             CMP      R7,#+32
+   \       0x88   0xBF38             IT       CC
+   \       0x8A   0x2720             MOVCC    R7,#+32
+    342          
+    343            CORE_DECLARE_IRQ_STATE;
+    344            CORE_ENTER_ATOMIC();
+   \       0x8C   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x90   0x4680             MOV      R8,R0
+    345          
+    346          // For block reservations, the size_adjusted contains the metadata.
+    347            size_adjusted = sli_memory_find_free_block(heap, size_real, block_align, BLOCK_TYPE_SHORT_TERM, true, &free_block_metadata);
+   \       0x92   0xA802             ADD      R0,SP,#+8
+   \       0x94   0x2101             MOVS     R1,#+1
+   \       0x96   0x9001             STR      R0,[SP, #+4]
+   \       0x98   0x9100             STR      R1,[SP, #+0]
+   \       0x9A   0x2301             MOVS     R3,#+1
+   \       0x9C   0x4632             MOV      R2,R6
+   \       0x9E   0x4639             MOV      R1,R7
+   \       0xA0   0x4620             MOV      R0,R4
+   \       0xA2   0x.... 0x....      BL       sli_memory_find_free_block
+    348          
+    349            if ((free_block_metadata == NULL) || (size_adjusted == 0)) {
+   \       0xA6   0x9902             LDR      R1,[SP, #+8]
+   \       0xA8   0x2900             CMP      R1,#+0
+   \       0xAA   0xBF18             IT       NE
+   \       0xAC   0x2800             CMPNE    R0,#+0
+   \       0xAE   0xD104             BNE.N    ??sl_memory_heap_reserve_block_6
+    350              CORE_EXIT_ATOMIC();
+   \       0xB0   0x4640             MOV      R0,R8
+   \       0xB2   0x.... 0x....      BL       CORE_ExitAtomic
+    351          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    352              sli_memory_profiler_track_alloc_with_ownership(sli_mm_heap_name, NULL, size, return_address);
+    353          #endif
+    354              return SL_STATUS_ALLOCATION_FAILED;
+   \       0xB6   0x2019             MOVS     R0,#+25
+   \       0xB8   0xE04A             B.N      ??sl_memory_heap_reserve_block_3
+    355            }
+    356          
+    357            current_block_len = SLI_BLOCK_LEN_DWORD_TO_BYTE(sli_block_len_dword_decode(free_block_metadata));
+    358            // SLI_BLOCK_METADATA_SIZE_BYTE is added to the free block length to get the real remaining size as size_adjusted contains the metadata size.
+    359            block_size_remaining = (current_block_len + SLI_BLOCK_METADATA_SIZE_BYTE) - size_adjusted;
+   \                     ??sl_memory_heap_reserve_block_6: (+1)
+   \       0xBA   0x8849             LDRH     R1,[R1, #+2]
+    360          
+    361            heap->free_blocks_number--;
+   \       0xBC   0x6923             LDR      R3,[R4, #+16]
+   \       0xBE   0x00CA             LSLS     R2,R1,#+3
+   \       0xC0   0x3208             ADDS     R2,R2,#+8
+   \       0xC2   0x1A12             SUBS     R2,R2,R0
+   \       0xC4   0x1E5B             SUBS     R3,R3,#+1
+   \       0xC6   0x6123             STR      R3,[R4, #+16]
+    362          
+    363            // Split free and reserved blocks if possible.
+    364            if (block_size_remaining >= SLI_BLOCK_RESERVATION_MIN_SIZE_BYTE) {
+   \       0xC8   0x2A20             CMP      R2,#+32
+   \       0xCA   0xD30B             BCC.N    ??sl_memory_heap_reserve_block_7
+    365              size_t block_len_dw = sli_block_len_dword_decode(free_block_metadata);
+    366          
+    367              // Changes size of free block.
+    368              sli_block_len_dword_encode(free_block_metadata, (block_len_dw - SLI_BLOCK_LEN_BYTE_TO_DWORD(size_adjusted)));
+   \       0xCC   0x1DC3             ADDS     R3,R0,#+7
+   \       0xCE   0xEBA1 0x01D3      SUB      R1,R1,R3, LSR #+3
+   \       0xD2   0x9B02             LDR      R3,[SP, #+8]
+   \       0xD4   0x8059             STRH     R1,[R3, #+2]
+    369          
+    370              // Create a new block = reserved block returned to requester. This new block is the nearest to the heap end.
+    371              reserved_blk = (sli_block_metadata_t *)((uint8_t *)free_block_metadata + block_size_remaining);
+   \       0xD6   0x9902             LDR      R1,[SP, #+8]
+    372          
+    373              // Update block size.
+    374              handle->block_size = size_adjusted;
+   \       0xD8   0x6068             STR      R0,[R5, #+4]
+    375          
+    376              // Account for the split block that is free.
+    377              heap->free_blocks_number++;
+   \       0xDA   0x6920             LDR      R0,[R4, #+16]
+   \       0xDC   0x188E             ADDS     R6,R1,R2
+   \       0xDE   0x1C40             ADDS     R0,R0,#+1
+   \       0xE0   0x6120             STR      R0,[R4, #+16]
+   \       0xE2   0xE026             B.N      ??sl_memory_heap_reserve_block_8
+    378            } else {
+    379              sli_block_metadata_t *neighbour_block = NULL;
+    380          
+    381              // Create a new block with size of the free block.
+    382              reserved_blk = (sli_block_metadata_t *)((uint8_t *)free_block_metadata);
+   \                     ??sl_memory_heap_reserve_block_7: (+1)
+   \       0xE4   0x9E02             LDR      R6,[SP, #+8]
+    383              // Update block size with the remaining size of the free block.
+    384              handle->block_size = size_real + block_size_remaining;
+   \       0xE6   0x19D2             ADDS     R2,R2,R7
+   \       0xE8   0x606A             STR      R2,[R5, #+4]
+    385          
+    386              // Update next neighbour.
+    387              if (sli_block_offset_next_dword_decode(free_block_metadata) != 0) {
+   \       0xEA   0x9802             LDR      R0,[SP, #+8]
+   \       0xEC   0x2100             MOVS     R1,#+0
+   \       0xEE   0x88C0             LDRH     R0,[R0, #+6]
+   \       0xF0   0xB150             CBZ.N    R0,??sl_memory_heap_reserve_block_9
+    388                neighbour_block = (sli_block_metadata_t *)((uint64_t *)free_block_metadata + sli_block_offset_next_dword_decode(free_block_metadata));
+   \       0xF2   0x9902             LDR      R1,[SP, #+8]
+   \       0xF4   0xEB01 0x01C0      ADD      R1,R1,R0, LSL #+3
+    389          
+    390                if (sli_block_offset_prev_dword_decode(free_block_metadata) != 0) {
+   \       0xF8   0x9802             LDR      R0,[SP, #+8]
+   \       0xFA   0x8880             LDRH     R0,[R0, #+4]
+   \       0xFC   0x2800             CMP      R0,#+0
+   \       0xFE   0xBF1D             ITTTE    NE
+   \      0x100   0x888A             LDRHNE   R2,[R1, #+4]
+   \      0x102   0x1880             ADDNE    R0,R0,R2
+   \      0x104   0x8088             STRHNE   R0,[R1, #+4]
+   \      0x106   0x80C8             STRHEQ   R0,[R1, #+6]
+    391                  size_t block_offset_prev_dw = sli_block_offset_prev_dword_decode(neighbour_block) + sli_block_offset_prev_dword_decode(free_block_metadata);
+    392          
+    393                  sli_block_offset_prev_dword_encode(neighbour_block, block_offset_prev_dw);
+    394                } else {
+    395                  // Heap start.
+    396                  sli_block_offset_next_dword_encode(neighbour_block, 0);
+    397                }
+    398              }
+    399          
+    400              // Update previous neighbour.
+    401              if (sli_block_offset_prev_dword_decode(free_block_metadata) != 0) {
+   \                     ??sl_memory_heap_reserve_block_9: (+1)
+   \      0x108   0x9802             LDR      R0,[SP, #+8]
+   \      0x10A   0x8880             LDRH     R0,[R0, #+4]
+   \      0x10C   0xB148             CBZ.N    R0,??sl_memory_heap_reserve_block_10
+    402                neighbour_block = (sli_block_metadata_t *)((uint64_t *)free_block_metadata - sli_block_offset_prev_dword_decode(free_block_metadata));
+   \      0x10E   0x9902             LDR      R1,[SP, #+8]
+   \      0x110   0x00C0             LSLS     R0,R0,#+3
+   \      0x112   0x4240             RSBS     R0,R0,#+0
+   \      0x114   0x1809             ADDS     R1,R1,R0
+    403          
+    404                if (sli_block_offset_next_dword_decode(free_block_metadata) != 0) {
+   \      0x116   0x9802             LDR      R0,[SP, #+8]
+   \      0x118   0x88C0             LDRH     R0,[R0, #+6]
+   \      0x11A   0xB108             CBZ.N    R0,??sl_memory_heap_reserve_block_11
+    405                  size_t block_offset_next_dw = sli_block_offset_next_dword_decode(neighbour_block) + sli_block_offset_next_dword_decode(free_block_metadata);
+    406                  sli_block_offset_next_dword_encode(neighbour_block, block_offset_next_dw);
+   \      0x11C   0x88CA             LDRH     R2,[R1, #+6]
+   \      0x11E   0x1880             ADDS     R0,R0,R2
+    407                } else {
+    408                  // Heap end.
+    409                  sli_block_offset_next_dword_encode(neighbour_block, 0);
+    410                }
+    411              }
+   \                     ??sl_memory_heap_reserve_block_11: (+1)
+   \      0x120   0x80C8             STRH     R0,[R1, #+6]
+    412          
+    413              SLI_MEMORY_STAT_HEAP_DECREASE(heap, SLI_BLOCK_METADATA_SIZE_BYTE);
+   \                     ??sl_memory_heap_reserve_block_10: (+1)
+   \      0x122   0x68A0             LDR      R0,[R4, #+8]
+    414          
+    415              // Update head pointers accordingly.
+    416              sli_update_free_list_heads(heap, neighbour_block, free_block_metadata, true);
+   \      0x124   0x2301             MOVS     R3,#+1
+   \      0x126   0x3808             SUBS     R0,R0,#+8
+   \      0x128   0x60A0             STR      R0,[R4, #+8]
+   \      0x12A   0x9A02             LDR      R2,[SP, #+8]
+   \      0x12C   0x4620             MOV      R0,R4
+   \      0x12E   0x.... 0x....      BL       sli_update_free_list_heads
+    417            }
+    418          
+    419            handle->block_address = reserved_blk;
+   \                     ??sl_memory_heap_reserve_block_8: (+1)
+   \      0x132   0x602E             STR      R6,[R5, #+0]
+    420            *block = reserved_blk;
+   \      0x134   0xF8C9 0x6000      STR      R6,[R9, #+0]
+    421          
+    422            // Heap usage size statistic.
+    423            SLI_MEMORY_STAT_HEAP_INCREASE(heap, size_real);
+   \      0x138   0x68A0             LDR      R0,[R4, #+8]
+   \      0x13A   0x183F             ADDS     R7,R7,R0
+   \      0x13C   0x68E0             LDR      R0,[R4, #+12]
+   \      0x13E   0x4287             CMP      R7,R0
+   \      0x140   0xBF28             IT       CS
+   \      0x142   0x4638             MOVCS    R0,R7
+   \      0x144   0x60E0             STR      R0,[R4, #+12]
+   \      0x146   0x60A7             STR      R7,[R4, #+8]
+    424          
+    425          #if defined(SLI_MEMORY_MANAGER_ENABLE_TEST_UTILITIES)
+    426            // Save the reservation for heap integrity check purposes.
+    427            sli_memory_save_reservation_handle(handle);
+    428          #endif
+    429          
+    430            CORE_EXIT_ATOMIC();
+   \      0x148   0x4640             MOV      R0,R8
+   \      0x14A   0x.... 0x....      BL       CORE_ExitAtomic
+    431          
+    432          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    433            sli_memory_profiler_track_alloc(sli_mm_heap_name, handle->block_address, size_real);
+    434            sli_memory_profiler_track_alloc_with_ownership(sli_mm_heap_reservation_name,
+    435                                                           handle->block_address,
+    436                                                           handle->block_size,
+    437                                                           return_address);
+    438          #endif
+    439          
+    440            return SL_STATUS_OK;
+   \      0x14E   0x2000             MOVS     R0,#+0
+   \                     ??sl_memory_heap_reserve_block_3: (+1)
+   \      0x150   0xE8BD 0x83FE      POP      {R1-R9,PC}
+    441          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     sli_general_purpose_heap
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     reserve_no_retention_first
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x73 0x65
+   \       0x68   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x6D, 0x65
+   \              0x69 0x63    
+   \              0x65 0x5C    
+   \              0x6D 0x65
+   \       0x70   0x6D 0x6F          DC8 0x6D, 0x6F, 0x72, 0x79, 0x5F, 0x6D, 0x61, 0x6E
+   \              0x72 0x79    
+   \              0x5F 0x6D    
+   \              0x61 0x6E
+   \       0x78   0x61 0x67          DC8 0x61, 0x67, 0x65, 0x72, 0x5C, 0x73, 0x72, 0x63
+   \              0x65 0x72    
+   \              0x5C 0x73    
+   \              0x72 0x63
+   \       0x80   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x6D, 0x65, 0x6D, 0x6F
+   \              0x6C 0x5F    
+   \              0x6D 0x65    
+   \              0x6D 0x6F
+   \       0x88   0x72 0x79          DC8 0x72, 0x79, 0x5F, 0x6D, 0x61, 0x6E, 0x61, 0x67
+   \              0x5F 0x6D    
+   \              0x61 0x6E    
+   \              0x61 0x67
+   \       0x90   0x65 0x72          DC8 0x65, 0x72, 0x5F, 0x64, 0x79, 0x6E, 0x61, 0x6D
+   \              0x5F 0x64    
+   \              0x79 0x6E    
+   \              0x61 0x6D
+   \       0x98   0x69 0x63          DC8 0x69, 0x63, 0x5F, 0x72, 0x65, 0x73, 0x65, 0x72
+   \              0x5F 0x72    
+   \              0x65 0x73    
+   \              0x65 0x72
+   \       0xA0   0x76 0x61          DC8 0x76, 0x61, 0x74, 0x69, 0x6F, 0x6E, 0x2E, 0x63
+   \              0x74 0x69    
+   \              0x6F 0x6E    
+   \              0x2E 0x63
+   \       0xA8   0x00               DC8 0
+   \       0xA9                      DS8 3
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   sl_memory_heap_reserve_block
+        40   -> CORE_EnterAtomic
+        40   -> CORE_ExitAtomic
+        40   -> assertEFM
+        40   -> sli_memory_find_free_block
+        40   -> sli_update_free_list_heads
+      40   sl_memory_release_block
+        40   -> CORE_EnterAtomic
+        40   -> CORE_ExitAtomic
+        40   -> sli_memory_get_heap_handle
+        40   -> sli_memory_metadata_init
+       8   sl_memory_reservation_handle_alloc
+         8   -> sl_memory_alloc
+       0   sl_memory_reservation_handle_free
+         0   -> sl_memory_free
+       0   sl_memory_reservation_handle_get_size
+       8   sl_memory_reserve_block
+         8   -> sl_memory_heap_reserve_block
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+     172  ?_0
+     340  sl_memory_heap_reserve_block
+     352  sl_memory_release_block
+      28  sl_memory_reservation_handle_alloc
+      18  sl_memory_reservation_handle_free
+       4  sl_memory_reservation_handle_get_size
+      18  sl_memory_reserve_block
+
+ 
+ 172 bytes in section .rodata
+ 772 bytes in section .text
+ 
+ 772 bytes of CODE  memory
+ 172 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -26,9 +26,9 @@ define block CSTACK with alignment = 8
 {
   section .stack
 };
-define block HEAP with expanding size, alignment = 8
+define block MEMORY_MANAGER_HEAP with expanding size, alignment = 8
 {
-  section .heap
+  section .memory_manager_heap
 };
 
 
@@ -84,14 +84,14 @@ initialize by copy { readwrite };
 
 define block application_heap with fixed order
 {
-  block HEAP
+  block MEMORY_MANAGER_HEAP
 };
 
 do not initialize
 {
  section .noinit,
  section .stack,
-  section .heap
+  section .memory_manager_heap
 };
 
 keep { section .intvec };

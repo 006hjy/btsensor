@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:38
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -22,6 +22,7 @@
 #        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
 #        CMSIS_NVIC_VIRTUAL=1 -D
 #        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
 #        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
@@ -56,6 +57,8 @@
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
 #        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
@@ -67,6 +70,12 @@
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
 #        -I
@@ -107,67 +116,84 @@
 
 C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\tasks.c
       1          #include "timer.h"
-      2          #include "em_device.h"
-      3          #include "sl_uartdrv_instances.h"
-      4          #include "adc.h"
-      5          
+      2          #include "uart.h"
+      3          #include "adc.h"
+      4          #include "config.h"
+      5          #include <stdlib.h>
+      6          #include <string.h>
+      7          
 
    \                                 In section .text, align 4, keep-with-next
-      6          void tasks(void)
-      7          {
+      8          void tasks(void)
+      9          {
    \                     tasks: (+1)
-   \        0x0   0x480C             LDR.N    R0,??tasks_0
-   \        0x2   0x6800             LDR      R0,[R0, #+0]
-   \        0x4   0x220A             MOVS     R2,#+10
-   \        0x6   0x210A             MOVS     R1,#+10
-   \        0x8   0xFBB0 0xF2F2      UDIV     R2,R0,R2
-   \        0xC   0xFB01 0x0012      MLS      R0,R1,R2,R0
-   \       0x10   0x2800             CMP      R0,#+0
-   \       0x12   0xD000             BEQ.N    ??tasks_1
-   \       0x14   0x4770             BX       LR
+   \        0x0   0x4A09             LDR.N    R2,??tasks_0
+   \        0x2   0x490A             LDR.N    R1,??tasks_0+4
+   \        0x4   0x6813             LDR      R3,[R2, #+0]
+   \        0x6   0x6808             LDR      R0,[R1, #+0]
+   \        0x8   0x1A1B             SUBS     R3,R3,R0
+   \        0xA   0x2B0A             CMP      R3,#+10
+   \        0xC   0xD200             BCS.N    ??tasks_1
+   \        0xE   0x4770             BX       LR
    \                     ??tasks_1: (+1)
-   \       0x16   0xB580             PUSH     {R7,LR}
-      8              if(system_uptime_100ms % 10 == 0) {
-      9                  adc_scan();
-   \       0x18   0x.... 0x....      BL       adc_scan
-     10                  uint8_t data = 0xAA;
-   \       0x1C   0x20AA             MOVS     R0,#+170
-   \       0x1E   0xF88D 0x0000      STRB     R0,[SP, #+0]
-     11                  UARTDRV_Transmit(sl_uartdrv_eusart_inst0_handle, &data, 1, NULL);
-   \       0x22   0x4805             LDR.N    R0,??tasks_0+4
-   \       0x24   0x6800             LDR      R0,[R0, #+0]
-   \       0x26   0x2300             MOVS     R3,#+0
-   \       0x28   0x2201             MOVS     R2,#+1
-   \       0x2A   0x4669             MOV      R1,SP
-   \       0x2C   0x.... 0x....      BL       UARTDRV_Transmit
-     12              }
-     13              //sl_power_manager_sleep();
-     14          }
-   \       0x30   0xBD01             POP      {R0,PC}
-   \       0x32   0xBF00             Nop
+   \       0x10   0xB580             PUSH     {R7,LR}
+     10              // 1. 使用 static 记录上一次成功发送的时间戳（局部静态变量，具备持久生命周期）
+     11              static uint32_t last_send_time = 0;
+     12              
+     13              // 使用减法判断时间差（天然防止定时器溢出翻转，且绝对不会重复触发或漏检）
+     14              if (system_uptime_100ms - last_send_time >= 10) {
+     15                  
+     16                  // 立刻更新时间戳，防止后续代码耗时导致重复进入
+     17                  last_send_time = system_uptime_100ms; 
+   \       0x12   0x6812             LDR      R2,[R2, #+0]
+   \       0x14   0x600A             STR      R2,[R1, #+0]
+     18          
+     19                  // 执行ADC扫描
+     20                  adc_scan();
+   \       0x16   0x.... 0x....      BL       adc_scan
+     21          
+     22                  uart_action();  // 调用 UART 发送函数
+   \       0x1A   0x.... 0x....      BL       uart_action
+     23                  
+     24                  update_and_store_config();
+   \       0x1E   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x22   0x.... 0x....      B.W      update_and_store_config
+   \       0x26   0xBF00             Nop
    \                     ??tasks_0:
-   \       0x34   0x....'....        DC32     system_uptime_100ms
-   \       0x38   0x....'....        DC32     sl_uartdrv_eusart_inst0_handle
+   \       0x28   0x....'....        DC32     system_uptime_100ms
+   \       0x2C   0x....'....        DC32     `tasks::last_send_time`
+     25          
+     26          
+     27              }
+     28          }
+
+   \                                 In section .bss, align 4
+   \                     `tasks::last_send_time`:
+   \        0x0                      DS8 4
 
    Maximum stack usage in bytes:
 
    .cstack Function
    ------- --------
        8   tasks
-         8   -> UARTDRV_Transmit
          8   -> adc_scan
+         8   -> uart_action
+         0   -> update_and_store_config
 
 
    Section sizes:
 
    Bytes  Function/Label
    -----  --------------
-      60  tasks
+       4  last_send_time
+      48  tasks
 
  
- 60 bytes in section .text
+  4 bytes in section .bss
+ 48 bytes in section .text
  
- 60 bytes of CODE memory
+ 48 bytes of CODE memory
+  4 bytes of DATA memory
 
 Errors: none
 Warnings: none

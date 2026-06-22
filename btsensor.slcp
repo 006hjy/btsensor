@@ -45,7 +45,13 @@ component:
   id: emlib_eusart
 - package: simplicity_sdk
   vendor: silabs
+  id: hal_iadc
+- package: simplicity_sdk
+  vendor: silabs
   id: hal_letimer
+- package: simplicity_sdk
+  vendor: silabs
+  id: nvm3_source
 - package: simplicity_sdk
   vendor: silabs
   id: power_manager

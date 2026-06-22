@@ -1,10 +1,12 @@
 #CRC Codes for initially generated config files -- do not modify!
 dmadrv_config.h=-2091043740
+nvm3_default_config.h=2077879080
 sl_clock_manager_oscillator_config.h=47716896
 sl_clock_manager_tree_config.h=-799805860
 sl_core_config.h=-1155159984
 sl_device_init_dcdc_config.h=-223580250
 sl_device_init_emu_config.h=1253289061
+sl_memory_manager_config.h=359220803
 sl_memory_manager_region_config.h=2120692875
 sl_power_manager_config.h=-2026360354
 sl_sleeptimer_config.h=-963322667

@@ -1,0 +1,298 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:38
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config.c
+#    Command line                 =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\config.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config.c -D
+#        DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\config.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\config.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\config.lst
+#    Object file                  =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\config.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config.c
+      1          #include <string.h>
+      2          #include <stdlib.h>
+      3          #include "nvm3.h"
+      4          #include "nvm3_default.h"
+      5          
+      6          // 1. 定义你的配置参数结构体（可以在里面放任意数量、不同类型的变量）
+      7          typedef struct
+      8          {
+      9              uint32_t boot_count;      // 启动次数 (4字节)
+     10              uint16_t alarm_threshold; // 报警阈值 (2字节)
+     11              uint8_t device_mode;      // 设备工作模式 (1字节)
+     12              uint8_t reserved;         // 预留字节，用于内存对齐 (1字节)
+     13          } Config_t;
+     14          
+     15          // 2. 定义 NVM3 键
+     16          #define STORAGE_KEY_CONFIG 0x00022
+     17          
+     18          // 3. 定义全局结构体变量，用于在内存中实时读写
+
+   \                                 In section .bss, align 4
+     19          Config_t my_config;
+   \                     my_config:
+   \        0x0                      DS8 8
+     20          
+     21          /**
+     22           * @brief 从 Flash 中读取配置到全局变量 my_config
+     23           * @note  如果是首次运行（Flash 中无此 Key），会自动赋默认值
+     24           * @return uint8_t 0: 成功, 非0: 失败
+     25           */
+
+   \                                 In section .text, align 2, keep-with-next
+     26          uint8_t read_config(void)
+     27          {
+   \                     read_config: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+     28              Ecode_t status;
+     29          
+     30              // 从 Flash 中整体读取结构体
+     31              status = nvm3_readData(nvm3_defaultHandle,
+     32                                     STORAGE_KEY_CONFIG,
+     33                                     &my_config,
+     34                                     sizeof(Config_t));
+   \        0x2   0x....             LDR.N    R5,??DataTable2
+   \        0x4   0x6828             LDR      R0,[R5, #+0]
+   \        0x6   0x....             LDR.N    R4,??DataTable2_1
+   \        0x8   0x2308             MOVS     R3,#+8
+   \        0xA   0x4622             MOV      R2,R4
+   \        0xC   0x2122             MOVS     R1,#+34
+   \        0xE   0x.... 0x....      BL       nvm3_readData
+     35          
+     36              // 如果是首次运行（Flash 里无此 Key），赋初始默认值
+     37              if (status == ECODE_NVM3_ERR_KEY_NOT_FOUND)
+   \       0x12   0x282D             CMP      R0,#+45
+   \       0x14   0xD108             BNE.N    ??read_config_0
+     38              {
+     39                  my_config.boot_count = 0;
+   \       0x16   0x2000             MOVS     R0,#+0
+     40                  my_config.alarm_threshold = 500;
+   \       0x18   0xF44F 0x71FA      MOV      R1,#+500
+     41                  my_config.device_mode = 0x01;
+   \       0x1C   0x2201             MOVS     R2,#+1
+   \       0x1E   0x6020             STR      R0,[R4, #+0]
+   \       0x20   0x80A1             STRH     R1,[R4, #+4]
+   \       0x22   0x71A2             STRB     R2,[R4, #+6]
+     42                  my_config.reserved = 0x00;
+   \       0x24   0x71E0             STRB     R0,[R4, #+7]
+     43          
+     44                  // 【可选】首次初始化时直接将默认值固化到 Flash
+     45                  // nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_CONFIG, &my_config, sizeof(Config_t));
+     46          
+     47                  return 0; // 赋予默认值后，视为读取成功
+   \       0x26   0xBD32             POP      {R1,R4,R5,PC}
+     48              }
+     49          
+     50              // NVM3 底层返回 ECODE_OK(0) 表示成功，非0表示失败
+     51              // 直接将其截断为 uint8_t 即可保持 0=成功 / 非0=失败 的语义
+     52              return (uint8_t)(status != ECODE_OK);
+   \                     ??read_config_0: (+1)
+   \       0x28   0xB100             CBZ.N    R0,??read_config_1
+   \       0x2A   0x2001             MOVS     R0,#+1
+   \                     ??read_config_1: (+1)
+   \       0x2C   0xB2C0             UXTB     R0,R0
+   \       0x2E   0xBD32             POP      {R1,R4,R5,PC}
+     53          }
+     54          
+     55          /**
+     56           * @brief 将全局变量 my_config 保存到 Flash 中
+     57           * @return uint8_t 0: 成功, 非0: 失败
+     58           */
+
+   \                                 In section .text, align 2, keep-with-next
+     59          uint8_t write_config(void)
+     60          {
+   \                     write_config: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     61              Ecode_t status;
+     62          
+     63              status = nvm3_writeData(nvm3_defaultHandle,
+     64                                      STORAGE_KEY_CONFIG,
+     65                                      &my_config,
+     66                                      sizeof(Config_t));
+     67          
+     68              return (uint8_t)(status != ECODE_OK);
+   \        0x2   0x....             LDR.N    R4,??DataTable2
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0x2308             MOVS     R3,#+8
+   \        0x8   0x....             LDR.N    R2,??DataTable2_1
+   \        0xA   0x2122             MOVS     R1,#+34
+   \        0xC   0x.... 0x....      BL       nvm3_writeData
+   \       0x10   0xB100             CBZ.N    R0,??write_config_0
+   \       0x12   0x2001             MOVS     R0,#+1
+   \                     ??write_config_0: (+1)
+   \       0x14   0xB2C0             UXTB     R0,R0
+   \       0x16   0xBD10             POP      {R4,PC}
+     69          }
+     70          
+     71          /**
+     72           * @brief 读取结构体配置，修改其中数据，然后整体写回 Flash
+     73           */
+
+   \                                 In section .text, align 2, keep-with-next
+     74          void update_and_store_config(void)
+     75          {
+   \                     update_and_store_config: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     76              // 1. 读取配置（若首次运行会自动加载默认值）
+     77              read_config();
+   \        0x2   0x.... 0x....      BL       read_config
+     78              // 2. 在内存中修改数据
+     79              my_config.boot_count++;
+   \        0x6   0x....             LDR.N    R0,??DataTable2_1
+   \        0x8   0x6801             LDR      R1,[R0, #+0]
+   \        0xA   0x1C49             ADDS     R1,R1,#+1
+   \        0xC   0x6001             STR      R1,[R0, #+0]
+     80              // 3. 保存回 Flash
+     81              write_config();
+   \        0xE   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x12   0x....             B.N      write_config
+     82          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     nvm3_defaultHandle
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     my_config
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   read_config
+        16   -> nvm3_readData
+       8   update_and_store_config
+         8   -> read_config
+         0   -> write_config
+       8   write_config
+         8   -> nvm3_writeData
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       8  my_config
+      48  read_config
+      20  update_and_store_config
+      24  write_config
+
+ 
+   8 bytes in section .bss
+ 100 bytes in section .text
+ 
+ 100 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

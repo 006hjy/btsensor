@@ -37,12 +37,12 @@
 // <h> EUSART settings
 // <o SL_UARTDRV_EUSART_INST0_BAUDRATE> Baud rate
 // <i> Default: 115200
-#define SL_UARTDRV_EUSART_INST0_BAUDRATE        115200
+#define SL_UARTDRV_EUSART_INST0_BAUDRATE        9600
 
 // <o SL_UARTDRV_EUSART_INST0_LF_MODE> Low frequency mode
 // <true=> True
 // <false=> False
-#define SL_UARTDRV_EUSART_INST0_LF_MODE         false
+#define SL_UARTDRV_EUSART_INST0_LF_MODE         true
 
 // <o SL_UARTDRV_EUSART_INST0_PARITY> Parity mode to use
 // <eusartNoParity=> No Parity
@@ -65,7 +65,7 @@
 // <uartdrvFlowControlHw=> nRTS/nCTS hardware handshake
 // <uartdrvFlowControlHwUart=> UART peripheral controls nRTS/nCTS
 // <i> Default: uartdrvFlowControlHwUart
-#define SL_UARTDRV_EUSART_INST0_FLOW_CONTROL_TYPE uartdrvFlowControlHwUart
+#define SL_UARTDRV_EUSART_INST0_FLOW_CONTROL_TYPE uartdrvFlowControlNone
 
 // <o SL_UARTDRV_EUSART_INST0_OVERSAMPLING> Oversampling selection
 // <eusartOVS16=> 16x oversampling
@@ -74,21 +74,21 @@
 // <eusartOVS4=> 4x oversampling
 // <eusartOVS0=> Oversampling disabled
 // <i> Default: eusartOVS16
-#define SL_UARTDRV_EUSART_INST0_OVERSAMPLING      eusartOVS16
+#define SL_UARTDRV_EUSART_INST0_OVERSAMPLING      eusartOVS0
 
 // <o SL_UARTDRV_EUSART_INST0_MVDIS> Majority vote disable for 16x, 8x and 6x oversampling modes
 // <eusartMajorityVoteEnable=> False
 // <eusartMajorityVoteDisable=> True
 // <i> Default: eusartMajorityVoteEnable
-#define SL_UARTDRV_EUSART_INST0_MVDIS             eusartMajorityVoteEnable
+#define SL_UARTDRV_EUSART_INST0_MVDIS             eusartMajorityVoteDisable
 
 // <o SL_UARTDRV_EUSART_INST0_RX_BUFFER_SIZE> Size of the receive operation queue
 // <i> Default: 6
-#define SL_UARTDRV_EUSART_INST0_RX_BUFFER_SIZE  6
+#define SL_UARTDRV_EUSART_INST0_RX_BUFFER_SIZE  1
 
 // <o SL_UARTDRV_EUSART_INST0_TX_BUFFER_SIZE> Size of the transmit operation queue
 // <i> Default: 6
-#define SL_UARTDRV_EUSART_INST0_TX_BUFFER_SIZE 6
+#define SL_UARTDRV_EUSART_INST0_TX_BUFFER_SIZE 1
 // </h>
 // <<< end of configuration section >>>
 

@@ -1,0 +1,2630 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:37
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_iadc.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_iadc.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_iadc.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_iadc.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_iadc.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir\sl_hal_iadc.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_iadc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_iadc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Incremental Analog to Digital Converter (IADC) Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_hal_iadc.h"
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_iadc_enable(IADC_TypeDef *)
+   \                     sl_hal_iadc_enable: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x4A06             LDR.N    R2,??sl_hal_iadc_enable_0
+   \        0x6   0x4294             CMP      R4,R2
+   \        0x8   0xD004             BEQ.N    ??sl_hal_iadc_enable_1
+   \        0xA   0xF240 0x31A7      MOVW     R1,#+935
+   \        0xE   0x4805             LDR.N    R0,??sl_hal_iadc_enable_0+4
+   \       0x10   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_iadc_enable_1: (+1)
+   \       0x14   0x2101             MOVS     R1,#+1
+   \       0x16   0xF241 0x0004      MOVW     R0,#+4100
+   \       0x1A   0x5021             STR      R1,[R4, R0]
+   \       0x1C   0xBD10             POP      {R4,PC}
+   \       0x1E   0xBF00             Nop
+   \                     ??sl_hal_iadc_enable_0:
+   \       0x20   0x5A00'4000        DC32     0x5a004000
+   \       0x24   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_iadc_disable(IADC_TypeDef *)
+   \                     sl_hal_iadc_disable: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x4A0C             LDR.N    R2,??sl_hal_iadc_disable_0
+   \        0x6   0x4294             CMP      R4,R2
+   \        0x8   0xD00A             BEQ.N    ??sl_hal_iadc_disable_1
+   \        0xA   0x4D0C             LDR.N    R5,??sl_hal_iadc_disable_0+4
+   \        0xC   0xF240 0x31DD      MOVW     R1,#+989
+   \       0x10   0x4628             MOV      R0,R5
+   \       0x12   0x.... 0x....      BL       assertEFM
+   \       0x16   0xF240 0x31B7      MOVW     R1,#+951
+   \       0x1A   0x4628             MOV      R0,R5
+   \       0x1C   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_iadc_disable_1: (+1)
+   \       0x20   0x6860             LDR      R0,[R4, #+4]
+   \       0x22   0x07C1             LSLS     R1,R0,#+31
+   \       0x24   0xD502             BPL.N    ??sl_hal_iadc_disable_2
+   \       0x26   0x6960             LDR      R0,[R4, #+20]
+   \       0x28   0x01C2             LSLS     R2,R0,#+7
+   \       0x2A   0xD4F9             BMI.N    ??sl_hal_iadc_disable_1
+   \                     ??sl_hal_iadc_disable_2: (+1)
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0xF242 0x0104      MOVW     R1,#+8196
+   \       0x32   0x5060             STR      R0,[R4, R1]
+   \       0x34   0xBD31             POP      {R0,R4,R5,PC}
+   \       0x36   0xBF00             Nop
+   \                     ??sl_hal_iadc_disable_0:
+   \       0x38   0x5A00'4000        DC32     0x5a004000
+   \       0x3C   0x....'....        DC32     ?_0
+     32          
+     33          #if defined(IADC_COUNT) && (IADC_COUNT > 0)
+     34          
+     35          #include "sl_assert.h"
+     36          #include "sl_common.h"
+     37          #include "sl_hal_system.h"
+     38          #include <stddef.h>
+     39          
+     40          /*******************************************************************************
+     41           ******************************   DEFINES   ************************************
+     42           ******************************************************************************/
+     43          // Max IADC clock rates.
+     44          #define IADC_CLK_MAX_FREQ                    40000000UL
+     45          #define IADC_ANA_CLK_HIGH_SPEED_MAX_FREQ     20000000UL
+     46          #define IADC_ANA_CLK_NORMAL_MAX_FREQ         10000000UL
+     47          #define IADC_ANA_CLK_HIGH_ACCURACY_MAX_FREQ  5000000UL
+     48          #if defined(_IADC_CFG_ADCMODE_HIGHSPEED)
+     49          #define IADC_ANA_CLK_MAX_FREQ(adc_mode) ((adc_mode) == SL_HAL_IADC_CFG_ADC_MODE_NORMAL ? IADC_ANA_CLK_NORMAL_MAX_FREQ            \
+     50                                                   : ((adc_mode) == SL_HAL_IADC_CFG_ADC_MODE_HIGH_SPEED ? IADC_ANA_CLK_HIGH_SPEED_MAX_FREQ \
+     51                                                      : IADC_ANA_CLK_HIGH_ACCURACY_MAX_FREQ))
+     52          #else
+     53          #define IADC_ANA_CLK_MAX_FREQ(adc_mode) ((adc_mode) == SL_HAL_IADC_CFG_ADC_MODE_NORMAL ? IADC_ANA_CLK_NORMAL_MAX_FREQ \
+     54                                                   : IADC_ANA_CLK_HIGH_ACCURACY_MAX_FREQ)
+     55          #endif
+     56          
+     57          #define IADC_ROUND_D2I(n) (int)((n) < 0.0f ? ((n) - 0.5f) : ((n) + 0.5f))
+     58          
+     59          #define IADC0_SCANENTRIES IADC0_ENTRIES
+     60          #define IADC0_FIFOENTRIES 0x4UL
+     61          
+     62          #define IADC1_SCANENTRIES IADC1_ENTRIES
+     63          #define IADC1_FIFOENTRIES 0x4UL
+     64          
+     65          #if defined(IADC_ENTRIES)
+     66          #define IADC_SCANENTRIES(iadc) IADC_ENTRIES(IADC_NUM(iadc))
+     67          #else
+     68          #define IADC_SCANENTRIES(iadc) ((iadc) == IADC0 ? IADC0_SCANENTRIES \
+     69                                          : 0UL)
+     70          #endif
+     71          
+     72          #if !defined(IADC_CONFIGNUM)
+     73          #define IADC_CONFIGNUM(iadc) ((iadc) == 0 ? IADC0_CONFIGNUM \
+     74                                        : 0UL)
+     75          #endif
+     76          
+     77          #define IADC_FIFOENTRIES(iadc) ((iadc) == IADC0 ? IADC0_FIFOENTRIES \
+     78                                          : 0UL)
+     79          
+     80          /*******************************************************************************
+     81           **************************   LOCAL VARIABLES   ********************************
+     82           ******************************************************************************/
+     83          
+     84          /*******************************************************************************
+     85           ***************************   LOCAL FUNCTIONS   *******************************
+     86           ******************************************************************************/
+     87          
+     88          /***************************************************************************//**
+     89           * @brief
+     90           *   Convert raw IADC data to a structured result.
+     91           *
+     92           * @details
+     93           *   This function processes the raw data from the IADC and converts
+     94           *   it into a  structured result containing the data and the ID of
+     95           *   the scan table entry or single conversion indicator.
+     96           *
+     97           * @note
+     98           *   The alignment mode determines how the raw data is processed.
+     99           *   Ensure that the alignment parameter matches the configuration of the IADC.
+    100           *
+    101           * @param[in] raw_data
+    102           *   The raw 32-bit data read from the IADC.
+    103           * @param[in] alignment
+    104           *   The alignment mode of the IADC data (e.g., right-aligned or left-aligned).
+    105           *
+    106           * @return
+    107           *   A structured result of type `sl_hal_iadc_result_t` containing:
+    108           *    - `data`: The converted IADC data.
+    109           *    - `id`: The ID of the scan table entry or single conversion indicator.
+    110           ******************************************************************************/
+    111          static sl_hal_iadc_result_t iadc_convert_raw_data_to_result(uint32_t raw_data,
+    112                                                                      sl_hal_iadc_alignment_t alignment);
+    113          
+    114          /***************************************************************************//**
+    115           * @brief
+    116           *   Get analog gain calibration value from device info.
+    117           *
+    118           * @param[in] analog_gain
+    119           *   The analog gain setting.
+    120           *
+    121           * @return
+    122           *   The calibration value for the specified analog gain.
+    123           ******************************************************************************/
+    124          static uint16_t iadc_get_analog_gain_cal_value(unsigned analog_gain);
+    125          
+    126          /***************************************************************************//**
+    127           * @brief
+    128           *   Calculate offset for normal and high-speed modes.
+    129           *
+    130           * @param analog_gain
+    131           *   Analog gain.
+    132           * @param[in] adc_mode
+    133           *   ADC mode (normal or high-speed).
+    134           * @return
+    135           *   The calculated offset.
+    136           ******************************************************************************/
+    137          static float iadc_calculate_offset(unsigned analog_gain,
+    138                                             sl_hal_iadc_config_adc_mode_t adc_mode);
+    139          
+    140          /***************************************************************************//**
+    141           * @brief
+    142           *   Calculate gain and offset for normal and high-speed modes.
+    143           *
+    144           * @param[in] iadc
+    145           *   Pointer to IADC peripheral register block.
+    146           * @param[in] init
+    147           *   Pointer to IADC initialization structure.
+    148           * @param[in] adc_mode
+    149           *   ADC mode (normal or high-speed).
+    150           * @param[in] config
+    151           *   Configuration index.
+    152           ******************************************************************************/
+    153          static void iadc_calculate_normal_highspeed_gain_offset(IADC_TypeDef *iadc,
+    154                                                                  const sl_hal_iadc_init_t *init,
+    155                                                                  sl_hal_iadc_config_adc_mode_t adc_mode,
+    156                                                                  uint8_t config);
+    157          
+    158          #if defined(_IADC_CFG_ADCMODE_HIGHACCURACY)
+    159          /***************************************************************************//**
+    160           * @brief
+    161           *   Calculate gain and offset for high accuracy mode.
+    162           *
+    163           * @param[in] iadc
+    164           *   Pointer to IADC peripheral register block.
+    165           * @param[in] init
+    166           *   Pointer to IADC initialization structure.
+    167           * @param[in] config
+    168           *   Configuration index.
+    169           ******************************************************************************/
+    170          static void iadc_calculate_high_accuracy_gain_offset(IADC_TypeDef *iadc,
+    171                                                               const sl_hal_iadc_init_t *init,
+    172                                                               uint8_t config);
+    173          #endif
+    174          
+    175          /*******************************************************************************
+    176           **************************   GLOBAL FUNCTIONS   *******************************
+    177           ******************************************************************************/
+    178          
+    179          extern __INLINE void sl_hal_iadc_enable(IADC_TypeDef *iadc);
+    180          #if defined(_IADC_STATUS_SYNCBUSY_MASK)
+    181          extern __INLINE void sl_hal_iadc_wait_sync(IADC_TypeDef *iadc);
+    182          #endif
+    183          #if defined(_IADC_EN_DISABLING_MASK)
+    184          extern __INLINE void sl_hal_iadc_wait_ready(IADC_TypeDef *iadc);
+    185          #endif
+    186          extern __INLINE void sl_hal_iadc_disable(IADC_TypeDef *iadc);
+    187          extern __INLINE void sl_hal_iadc_start_scan(IADC_TypeDef *iadc);
+    188          extern __INLINE void sl_hal_iadc_stop_scan(IADC_TypeDef *iadc);
+    189          extern __INLINE void sl_hal_iadc_start_single(IADC_TypeDef *iadc);
+    190          extern __INLINE void sl_hal_iadc_stop_single(IADC_TypeDef *iadc);
+    191          extern __INLINE void sl_hal_iadc_enable_timer(IADC_TypeDef *iadc);
+    192          extern __INLINE void sl_hal_iadc_disable_timer(IADC_TypeDef *iadc);
+    193          extern __INLINE uint32_t sl_hal_iadc_get_scan_mask(IADC_TypeDef *iadc);
+    194          extern __INLINE uint32_t sl_hal_iadc_get_status(IADC_TypeDef *iadc);
+    195          extern __INLINE void sl_hal_iadc_enable_interrupts(IADC_TypeDef *iadc,
+    196                                                             uint32_t flags);
+    197          extern __INLINE void sl_hal_iadc_disable_interrupts(IADC_TypeDef *iadc,
+    198                                                              uint32_t flags);
+    199          extern __INLINE void sl_hal_iadc_clear_interrupts(IADC_TypeDef *iadc,
+    200                                                            uint32_t flags);
+    201          extern __INLINE void sl_hal_iadc_set_pending_interrupts(IADC_TypeDef *iadc,
+    202                                                                  uint32_t flags);
+    203          extern __INLINE uint32_t sl_hal_iadc_get_pending_interrupts(IADC_TypeDef *iadc);
+    204          extern __INLINE uint32_t sl_hal_iadc_get_enable_pending_interrupts(IADC_TypeDef *iadc);
+    205          extern __INLINE uint32_t sl_hal_iadc_pull_single_fifo_data(IADC_TypeDef *iadc);
+    206          extern __INLINE uint32_t sl_hal_iadc_read_single_data(IADC_TypeDef *iadc);
+    207          extern __INLINE uint32_t sl_hal_iadc_pull_scan_fifo_data(IADC_TypeDef *iadc);
+    208          extern __INLINE uint32_t sl_hal_iadc_read_scan_data(IADC_TypeDef *iadc);
+    209          extern __INLINE void sl_hal_iadc_set_command(IADC_TypeDef *iadc,
+    210                                                       sl_hal_iadc_cmd_t cmd);
+    211          extern __INLINE uint8_t sl_hal_iadc_get_single_fifo_cnt(IADC_TypeDef *iadc);
+    212          extern __INLINE uint8_t sl_hal_iadc_get_scan_fifo_cnt(IADC_TypeDef *iadc);
+    213          extern __INLINE sl_hal_iadc_negative_port_input_t sl_hal_iadc_port_pin_to_neg_port(const sl_gpio_t *gpio);
+    214          extern __INLINE sl_hal_iadc_positive_port_input_t sl_hal_iadc_port_pin_to_pos_port(const sl_gpio_t *gpio);
+    215          
+    216          /***************************************************************************//**
+    217           * Initialize IADC.
+    218           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    219          void sl_hal_iadc_init(IADC_TypeDef *iadc,
+    220                                const sl_hal_iadc_init_t *init,
+    221                                uint32_t src_clk_freq)
+    222          {
+   \                     sl_hal_iadc_init: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4605             MOV      R5,R0
+    223            uint32_t tmp;
+    224            uint16_t wanted_prescale;
+    225            uint8_t src_clk_prescale;
+    226            uint32_t adc_clk_prescale;
+    227            uint8_t timebase;
+    228            sl_hal_iadc_config_adc_mode_t adc_mode;
+    229          
+    230            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x6   0x.... 0x....      LDR.W    R9,??DataTable14
+   \        0xA   0x460C             MOV      R4,R1
+   \        0xC   0x4690             MOV      R8,R2
+   \        0xE   0x.... 0x....      LDR.W    R6,??DataTable14_1
+   \       0x12   0x454D             CMP      R5,R9
+   \       0x14   0xD002             BEQ.N    ??CrossCallReturnLabel_7
+   \       0x16   0x21E6             MOVS     R1,#+230
+   \       0x18   0x.... 0x....      BL       ?Subroutine1
+    231            EFM_ASSERT(init != NULL);
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x1C   0xB914             CBNZ.N   R4,??CrossCallReturnLabel_6
+   \       0x1E   0x21E7             MOVS     R1,#+231
+   \       0x20   0x.... 0x....      BL       ?Subroutine1
+    232          
+    233            // Calculate min allowed SRC_CLK prescaler setting.
+    234            src_clk_prescale = sl_hal_iadc_calculate_src_clk_prescale(iadc, IADC_CLK_MAX_FREQ, src_clk_freq);
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x24   0x.... 0x....      LDR.W    R6,??DataTable14_2
+   \       0x28   0x4642             MOV      R2,R8
+   \       0x2A   0x4631             MOV      R1,R6
+   \       0x2C   0x4628             MOV      R0,R5
+   \       0x2E   0x.... 0x....      BL       sl_hal_iadc_calculate_src_clk_prescale
+   \       0x32   0x4683             MOV      R11,R0
+    235            wanted_prescale = init->src_clk_prescale;
+   \       0x34   0x7960             LDRB     R0,[R4, #+5]
+    236            // Use wanted SRC_CLK prescaler setting instead if it is high enough.
+    237            if (wanted_prescale >= src_clk_prescale) {
+   \       0x36   0x4558             CMP      R0,R11
+   \       0x38   0xBFA8             IT       GE
+   \       0x3A   0x4683             MOVGE    R11,R0
+    238              src_clk_prescale = (uint8_t)wanted_prescale;
+    239            }
+    240          
+    241            sl_hal_iadc_disable(iadc);
+   \       0x3C   0x4628             MOV      R0,R5
+   \       0x3E   0x.... 0x....      BL       sl_hal_iadc_disable
+    242          
+    243            timebase = init->timebase;
+   \       0x42   0x7920             LDRB     R0,[R4, #+4]
+    244            if (timebase == 0) {
+   \       0x44   0x0001             MOVS     R1,R0
+   \       0x46   0xD107             BNE.N    ??sl_hal_iadc_init_0
+    245              // CLK_SRC_ADC is derived from CLK_CMU_ADC, and must be no faster than 40 MHz.
+    246              // If src_clk_freq is greater than 40MHz, then divide by the prescaler HSCLKRATE to obtain valid frequency.
+    247              if (src_clk_freq >= IADC_CLK_MAX_FREQ) {
+   \       0x48   0x45B0             CMP      R8,R6
+   \       0x4A   0xBF28             IT       CS
+   \       0x4C   0xFBB8 0xF8FB      UDIVCS   R8,R8,R11
+    248                src_clk_freq = src_clk_freq / src_clk_prescale;
+    249              }
+    250          
+    251              // Calculate timebase.
+    252              timebase = sl_hal_iadc_calculate_timebase(iadc, src_clk_freq);
+   \       0x50   0x4641             MOV      R1,R8
+   \       0x52   0x4628             MOV      R0,R5
+   \       0x54   0x.... 0x....      BL       sl_hal_iadc_calculate_timebase
+    253            }
+    254          
+    255            tmp = (iadc->CTRL & ~(_IADC_CTRL_WARMUPMODE_MASK | _IADC_CTRL_TIMEBASE_MASK
+    256                                  | _IADC_CTRL_HSCLKRATE_MASK))
+    257                  | (((uint32_t) init->warmup) << _IADC_CTRL_WARMUPMODE_SHIFT)
+    258                  | (((uint32_t) timebase) << _IADC_CTRL_TIMEBASE_SHIFT)
+    259                  | (((uint32_t) src_clk_prescale) << _IADC_CTRL_HSCLKRATE_SHIFT);
+   \                     ??sl_hal_iadc_init_0: (+1)
+   \       0x58   0x68AA             LDR      R2,[R5, #+8]
+   \       0x5A   0x78E3             LDRB     R3,[R4, #+3]
+   \       0x5C   0x.... 0x....      LDR.W    R1,??DataTable14_3
+   \       0x60   0x4011             ANDS     R1,R1,R2
+   \       0x62   0xEA41 0x1103      ORR      R1,R1,R3, LSL #+4
+   \       0x66   0xEA41 0x4100      ORR      R1,R1,R0, LSL #+16
+    260          
+    261            if (init->iadc_clk_suspend0) {
+   \       0x6A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x6C   0xEA41 0x710B      ORR      R1,R1,R11, LSL #+28
+   \       0x70   0xB108             CBZ.N    R0,??sl_hal_iadc_init_1
+    262              tmp |= IADC_CTRL_ADCCLKSUSPEND0;
+   \       0x72   0xF041 0x0102      ORR      R1,R1,#0x2
+    263            }
+    264            if (init->iadc_clk_suspend1) {
+   \                     ??sl_hal_iadc_init_1: (+1)
+   \       0x76   0x7860             LDRB     R0,[R4, #+1]
+   \       0x78   0xB108             CBZ.N    R0,??sl_hal_iadc_init_2
+    265              tmp |= IADC_CTRL_ADCCLKSUSPEND1;
+   \       0x7A   0xF041 0x0104      ORR      R1,R1,#0x4
+    266            }
+    267            if (init->debug_halt) {
+   \                     ??sl_hal_iadc_init_2: (+1)
+   \       0x7E   0x78A0             LDRB     R0,[R4, #+2]
+   \       0x80   0xB108             CBZ.N    R0,??sl_hal_iadc_init_3
+    268              tmp |= IADC_CTRL_DBGHALT;
+   \       0x82   0xF041 0x0108      ORR      R1,R1,#0x8
+    269            }
+    270            iadc->CTRL = tmp;
+   \                     ??sl_hal_iadc_init_3: (+1)
+   \       0x86   0x60A9             STR      R1,[R5, #+8]
+    271          
+    272            iadc->TIMER = (iadc->TIMER & ~_IADC_TIMER_TIMER_MASK)
+    273                          | ((uint32_t) init->timer_cycles) << _IADC_TIMER_TIMER_SHIFT;
+   \       0x88   0x88E0             LDRH     R0,[R4, #+6]
+   \       0x8A   0x6929             LDR      R1,[R5, #+16]
+    274          
+    275            iadc->CMPTHR = (iadc->CMPTHR & ~(_IADC_CMPTHR_ADGT_MASK | _IADC_CMPTHR_ADLT_MASK))
+    276                           | (((uint32_t) init->greater_than_equal_thres) << _IADC_CMPTHR_ADGT_SHIFT)
+    277                           | (((uint32_t) init->less_than_equal_thres) << _IADC_CMPTHR_ADLT_SHIFT);
+    278          
+    279            // Write configurations.
+    280            for (uint8_t config = 0; config < IADC_CONFIGNUM(IADC_NUM(iadc)); config++) {
+   \       0x8C   0x2600             MOVS     R6,#+0
+   \       0x8E   0xF360 0x010F      BFI      R1,R0,#+0,#+16
+   \       0x92   0x6129             STR      R1,[R5, #+16]
+   \       0x94   0x6A29             LDR      R1,[R5, #+32]
+   \       0x96   0x8920             LDRH     R0,[R4, #+8]
+   \       0x98   0x8961             LDRH     R1,[R4, #+10]
+   \       0x9A   0xEA41 0x4100      ORR      R1,R1,R0, LSL #+16
+   \       0x9E   0x6229             STR      R1,[R5, #+32]
+   \       0xA0   0xF8CD 0x8004      STR      R8,[SP, #+4]
+   \       0xA4   0xE036             B.N      ??sl_hal_iadc_init_4
+    281              // Find min allowed ADC_CLK prescaler setting for given mode.
+    282              adc_mode = init->configs[config].adc_mode;
+   \                     ??sl_hal_iadc_init_5: (+1)
+   \       0xA6   0x2014             MOVS     R0,#+20
+   \       0xA8   0xFB10 0xF006      SMULBB   R0,R0,R6
+   \       0xAC   0x1827             ADDS     R7,R4,R0
+   \       0xAE   0xF897 0xA00C      LDRB     R10,[R7, #+12]
+    283              wanted_prescale = (uint16_t)init->configs[config].adc_clk_prescale;
+   \       0xB2   0xF8B7 0x8014      LDRH     R8,[R7, #+20]
+    284              adc_clk_prescale = sl_hal_iadc_calculate_adc_clk_prescale(iadc,
+    285                                                                        IADC_ANA_CLK_MAX_FREQ(adc_mode),
+    286                                                                        src_clk_freq,
+    287                                                                        adc_mode,
+    288                                                                        src_clk_prescale);
+   \       0xB6   0xF1BA 0x0F00      CMP      R10,#+0
+   \       0xBA   0xBF14             ITE      NE
+   \       0xBC   0x.... 0x....      LDRNE.W  R1,??DataTable14_4
+   \       0xC0   0x.... 0x....      LDREQ.W  R1,??DataTable14_5
+   \       0xC4   0x9A01             LDR      R2,[SP, #+4]
+   \       0xC6   0xF8CD 0xB000      STR      R11,[SP, #+0]
+   \       0xCA   0x4653             MOV      R3,R10
+   \       0xCC   0x4628             MOV      R0,R5
+   \       0xCE   0x.... 0x....      BL       sl_hal_iadc_calculate_adc_clk_prescale
+    289          
+    290              // Use wanted ADC_CLK prescaler setting instead if it is high enough.
+    291              adc_clk_prescale = SL_MAX(adc_clk_prescale, wanted_prescale);
+   \       0xD2   0x4540             CMP      R0,R8
+   \       0xD4   0xBF38             IT       CC
+   \       0xD6   0x4640             MOVCC    R0,R8
+    292          
+    293              tmp = iadc->CFG[config].CFG & ~(_IADC_CFG_ADCMODE_MASK | _IADC_CFG_OSRHS_MASK
+    294                                              | _IADC_CFG_ANALOGGAIN_MASK | _IADC_CFG_REFSEL_MASK
+    295          #if defined(_IADC_CFG_DIGAVG_MASK)
+    296                                              | _IADC_CFG_DIGAVG_MASK
+    297          #endif
+    298                                              | _IADC_CFG_TWOSCOMPL_MASK
+    299          #if defined(_IADC_CFG_ADCMODE_HIGHACCURACY)
+    300                                              | _IADC_CFG_OSRHA_MASK
+    301          #endif
+    302                                              );
+   \       0xD8   0xEB05 0x1106      ADD      R1,R5,R6, LSL #+4
+   \       0xDC   0x6C8A             LDR      R2,[R1, #+72]
+    303              iadc->CFG[config].CFG = tmp
+    304                                      | (((uint32_t)(adc_mode) << _IADC_CFG_ADCMODE_SHIFT) & _IADC_CFG_ADCMODE_MASK)
+    305                                      | (((uint32_t)(init->configs[config].osr_high_speed) << _IADC_CFG_OSRHS_SHIFT)
+    306                                         & _IADC_CFG_OSRHS_MASK)
+    307          #if defined(_IADC_CFG_ADCMODE_HIGHACCURACY)
+    308                                      | (((uint32_t)(init->configs[config].osr_high_accuracy) << _IADC_CFG_OSRHA_SHIFT)
+    309                                         & _IADC_CFG_OSRHA_MASK)
+    310          #endif
+    311                                      | (((uint32_t)(init->configs[config].analog_gain) << _IADC_CFG_ANALOGGAIN_SHIFT)
+    312                                         & _IADC_CFG_ANALOGGAIN_MASK)
+    313                                      | (((uint32_t)(init->configs[config].reference) << _IADC_CFG_REFSEL_SHIFT)
+    314                                         & _IADC_CFG_REFSEL_MASK)
+    315          #if defined(_IADC_CFG_DIGAVG_MASK)
+    316                                      | (((uint32_t)(init->configs[config].dig_avg) << _IADC_CFG_DIGAVG_SHIFT)
+    317                                         & _IADC_CFG_DIGAVG_MASK)
+    318          #endif
+    319                                      | (((uint32_t)(init->configs[config].twos_complement) << _IADC_CFG_TWOSCOMPL_SHIFT)
+    320                                         & _IADC_CFG_TWOSCOMPL_MASK);
+   \       0xDE   0x7B7B             LDRB     R3,[R7, #+13]
+   \       0xE0   0xF36A 0x0201      BFI      R2,R10,#+0,#+2
+   \       0xE4   0xF363 0x0284      BFI      R2,R3,#+2,#+3
+   \       0xE8   0x7BBB             LDRB     R3,[R7, #+14]
+   \       0xEA   0xF363 0x320E      BFI      R2,R3,#+12,#+3
+   \       0xEE   0x7BFB             LDRB     R3,[R7, #+15]
+   \       0xF0   0xF363 0x4212      BFI      R2,R3,#+16,#+3
+   \       0xF4   0x7F3B             LDRB     R3,[R7, #+28]
+   \       0xF6   0xF363 0x5257      BFI      R2,R3,#+21,#+3
+   \       0xFA   0x7C3B             LDRB     R3,[R7, #+16]
+   \       0xFC   0xF363 0x721D      BFI      R2,R3,#+28,#+2
+   \      0x100   0x648A             STR      R2,[R1, #+72]
+    321          
+    322              sl_hal_iadc_calculate_gain_offset(iadc, init, adc_mode, config, adc_clk_prescale);
+   \      0x102   0x9000             STR      R0,[SP, #+0]
+   \      0x104   0x4633             MOV      R3,R6
+   \      0x106   0x4652             MOV      R2,R10
+   \      0x108   0x4621             MOV      R1,R4
+   \      0x10A   0x4628             MOV      R0,R5
+   \      0x10C   0x1C76             ADDS     R6,R6,#+1
+   \      0x10E   0x.... 0x....      BL       sl_hal_iadc_calculate_gain_offset
+    323            }
+   \      0x112   0xB2F6             UXTB     R6,R6
+   \                     ??sl_hal_iadc_init_4: (+1)
+   \      0x114   0x454D             CMP      R5,R9
+   \      0x116   0xBF0C             ITE      EQ
+   \      0x118   0x2002             MOVEQ    R0,#+2
+   \      0x11A   0x2000             MOVNE    R0,#+0
+   \      0x11C   0x4286             CMP      R6,R0
+   \      0x11E   0xD3C2             BCC.N    ??sl_hal_iadc_init_5
+    324          }
+   \      0x120   0xE8BD 0x8FF7      POP      {R0-R2,R4-R11,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4630             MOV      R0,R6
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    325          
+    326          /***************************************************************************//**
+    327           * Calculate gain and offset.
+    328           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    329          void sl_hal_iadc_calculate_gain_offset(IADC_TypeDef *iadc,
+    330                                                 const sl_hal_iadc_init_t *init,
+    331                                                 sl_hal_iadc_config_adc_mode_t adc_mode,
+    332                                                 uint8_t config,
+    333                                                 uint32_t adc_clk_prescale)
+    334          {
+   \                     sl_hal_iadc_calculate_gain_offset: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4617             MOV      R7,R2
+   \        0x6   0x4606             MOV      R6,R0
+    335            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x8   0x.... 0x....      LDR.W    R2,??DataTable14
+   \        0xC   0xED2D 0x8B02      VPUSH    {D8}
+   \       0x10   0x460C             MOV      R4,R1
+   \       0x12   0x4698             MOV      R8,R3
+   \       0x14   0x.... 0x....      LDR.W    R5,??DataTable14_1
+   \       0x18   0x4296             CMP      R6,R2
+   \       0x1A   0xD003             BEQ.N    ??CrossCallReturnLabel_18
+   \       0x1C   0xF240 0x114F      MOVW     R1,#+335
+   \       0x20   0x.... 0x....      BL       ?Subroutine2
+    336            EFM_ASSERT(init != NULL);
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x24   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_17
+   \       0x26   0xF44F 0x71A8      MOV      R1,#+336
+   \       0x2A   0x.... 0x....      BL       ?Subroutine2
+    337          
+    338            // Calculate gain and offset based on ADC mode
+    339            switch (adc_mode) {
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \       0x2E   0xEB06 0x1608      ADD      R6,R6,R8, LSL #+4
+   \       0x32   0x2F00             CMP      R7,#+0
+   \       0x34   0xF040 0x80C7      BNE.W    ??sl_hal_iadc_calculate_gain_offset_1
+    340              case SL_HAL_IADC_CFG_ADC_MODE_NORMAL:
+    341          #if defined(_IADC_CFG_ADCMODE_HIGHSPEED)
+    342              case SL_HAL_IADC_CFG_ADC_MODE_HIGH_SPEED:
+    343          #endif
+    344                iadc_calculate_normal_highspeed_gain_offset(iadc, init, adc_mode, config);
+   \       0x38   0x6CB0             LDR      R0,[R6, #+72]
+   \       0x3A   0xF3C0 0x3102      UBFX     R1,R0,#+12,#+3
+   \       0x3E   0x1E4A             SUBS     R2,R1,#+1
+   \       0x40   0x.... 0x....      LDR.W    R0,??DataTable14_6
+   \       0x44   0x2A04             CMP      R2,#+4
+   \       0x46   0xD80B             BHI.N    ??sl_hal_iadc_calculate_gain_offset_2
+   \       0x48   0xE8DF 0xF002      TBB      [PC, R2]
+   \                     ??sl_hal_iadc_calculate_gain_offset_0:
+   \       0x4C   0x0A 0x0A          DC8      0xA,0xA,0x7,0x5
+   \              0x07 0x05
+   \       0x50   0x03 0x00          DC8      0x3,0x0
+   \                     ??sl_hal_iadc_calculate_gain_offset_3: (+1)
+   \       0x52   0x6845             LDR      R5,[R0, #+4]
+   \       0x54   0xE002             B.N      ??sl_hal_iadc_calculate_gain_offset_4
+   \                     ??sl_hal_iadc_calculate_gain_offset_5: (+1)
+   \       0x56   0x6845             LDR      R5,[R0, #+4]
+   \       0x58   0xE003             B.N      ??sl_hal_iadc_calculate_gain_offset_6
+   \                     ??sl_hal_iadc_calculate_gain_offset_7: (+1)
+   \       0x5A   0x6805             LDR      R5,[R0, #+0]
+   \                     ??sl_hal_iadc_calculate_gain_offset_4: (+1)
+   \       0x5C   0x0C2D             LSRS     R5,R5,#+16
+   \       0x5E   0xE000             B.N      ??sl_hal_iadc_calculate_gain_offset_6
+   \                     ??sl_hal_iadc_calculate_gain_offset_2: (+1)
+   \       0x60   0x6805             LDR      R5,[R0, #+0]
+   \                     ??sl_hal_iadc_calculate_gain_offset_6: (+1)
+   \       0x62   0xB2AD             UXTH     R5,R5
+   \       0x64   0xED9F 0x....      VLDR.W   S0,??DataTable2
+   \       0x68   0x2903             CMP      R1,#+3
+   \       0x6A   0xD102             BNE.N    ??sl_hal_iadc_calculate_gain_offset_8
+   \       0x6C   0x68C1             LDR      R1,[R0, #+12]
+   \       0x6E   0x1409             ASRS     R1,R1,#+16
+   \       0x70   0xE00B             B.N      ??sl_hal_iadc_calculate_gain_offset_9
+   \                     ??sl_hal_iadc_calculate_gain_offset_8: (+1)
+   \       0x72   0x2904             CMP      R1,#+4
+   \       0x74   0xD103             BNE.N    ??sl_hal_iadc_calculate_gain_offset_10
+   \       0x76   0x68C1             LDR      R1,[R0, #+12]
+   \       0x78   0x1409             ASRS     R1,R1,#+16
+   \       0x7A   0x0049             LSLS     R1,R1,#+1
+   \       0x7C   0xE005             B.N      ??sl_hal_iadc_calculate_gain_offset_9
+   \                     ??sl_hal_iadc_calculate_gain_offset_10: (+1)
+   \       0x7E   0x2905             CMP      R1,#+5
+   \       0x80   0xD107             BNE.N    ??sl_hal_iadc_calculate_gain_offset_11
+   \       0x82   0x68C1             LDR      R1,[R0, #+12]
+   \       0x84   0x1409             ASRS     R1,R1,#+16
+   \       0x86   0xEB01 0x0141      ADD      R1,R1,R1, LSL #+1
+   \                     ??sl_hal_iadc_calculate_gain_offset_9: (+1)
+   \       0x8A   0xEE00 0x1A10      VMOV     S0,R1
+   \       0x8E   0xEEB8 0x0AC0      VCVT.F32.S32 S0,S0
+   \                     ??sl_hal_iadc_calculate_gain_offset_11: (+1)
+   \       0x92   0xF649 0x71FF      MOVW     R1,#+40959
+   \       0x96   0x4029             ANDS     R1,R1,R5
+   \       0x98   0x048F             LSLS     R7,R1,#+18
+   \       0x9A   0x0409             LSLS     R1,R1,#+16
+   \       0x9C   0xBF48             IT       MI
+   \       0x9E   0xF047 0x4700      ORRMI    R7,R7,#0x80000000
+   \       0xA2   0x6CB2             LDR      R2,[R6, #+72]
+   \       0xA4   0x2101             MOVS     R1,#+1
+   \       0xA6   0xF3C2 0x0282      UBFX     R2,R2,#+2,#+3
+   \       0xAA   0x1C52             ADDS     R2,R2,#+1
+   \       0xAC   0x4091             LSLS     R1,R1,R2
+   \       0xAE   0xEE00 0x1A90      VMOV     S1,R1
+   \       0xB2   0xEEB8 0x8AE0      VCVT.F32.S32 S16,S1
+   \       0xB6   0x2902             CMP      R1,#+2
+   \       0xB8   0xD108             BNE.N    ??sl_hal_iadc_calculate_gain_offset_12
+   \       0xBA   0x68C0             LDR      R0,[R0, #+12]
+   \       0xBC   0xB200             SXTH     R0,R0
+   \       0xBE   0xEE00 0x0A90      VMOV     S1,R0
+   \       0xC2   0xEEF8 0x0AE0      VCVT.F32.S32 S1,S1
+   \       0xC6   0xEE70 0x8A80      VADD.F32 S17,S1,S0
+   \       0xCA   0xE015             B.N      ??sl_hal_iadc_calculate_gain_offset_13
+   \                     ??sl_hal_iadc_calculate_gain_offset_12: (+1)
+   \       0xCC   0x6901             LDR      R1,[R0, #+16]
+   \       0xCE   0xEEF6 0x0A00      VMOV.F32 S1,#0.5
+   \       0xD2   0xEE68 0x0A20      VMUL.F32 S1,S16,S1
+   \       0xD6   0xB209             SXTH     R1,R1
+   \       0xD8   0xEE01 0x1A10      VMOV     S2,R1
+   \       0xDC   0x6881             LDR      R1,[R0, #+8]
+   \       0xDE   0xEEB8 0x1AC1      VCVT.F32.S32 S2,S2
+   \       0xE2   0xEE31 0x0A40      VSUB.F32 S0,S2,S0
+   \       0xE6   0xB209             SXTH     R1,R1
+   \       0xE8   0xEE01 0x1A90      VMOV     S3,R1
+   \       0xEC   0xEEC0 0x0A20      VDIV.F32 S1,S0,S1
+   \       0xF0   0xEEF8 0x1AE1      VCVT.F32.S32 S3,S3
+   \       0xF4   0xEE70 0x8AA1      VADD.F32 S17,S1,S3
+   \                     ??sl_hal_iadc_calculate_gain_offset_13: (+1)
+   \       0xF8   0x2014             MOVS     R0,#+20
+   \       0xFA   0xFB10 0xF008      SMULBB   R0,R0,R8
+   \       0xFE   0x1821             ADDS     R1,R4,R0
+   \      0x100   0x7BC8             LDRB     R0,[R1, #+15]
+   \      0x102   0xB970             CBNZ.N   R0,??sl_hal_iadc_calculate_gain_offset_14
+   \      0x104   0x.... 0x....      BL       sl_hal_iadc_get_reference_voltage
+   \      0x108   0xEE00 0x0A10      VMOV     S0,R0
+   \      0x10C   0xEEB8 0x0A40      VCVT.F32.U32 S0,S0
+   \      0x110   0xEDDF 0x....      VLDR.W   S1,??DataTable3
+   \      0x114   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \      0x118   0xEEB7 0x1A04      VMOV.F32 S2,#1.25
+   \      0x11C   0xEE81 0x1A00      VDIV.F32 S2,S2,S0
+   \      0x120   0xE00B             B.N      ??sl_hal_iadc_calculate_gain_offset_15
+   \                     ??sl_hal_iadc_calculate_gain_offset_14: (+1)
+   \      0x122   0xED91 0x0A06      VLDR     S0,[R1, #+24]
+   \      0x126   0xEEB8 0x0A40      VCVT.F32.U32 S0,S0
+   \      0x12A   0xEDDF 0x....      VLDR.W   S1,??DataTable3
+   \      0x12E   0xEEC0 0x0A20      VDIV.F32 S1,S0,S1
+   \      0x132   0xEEB7 0x1A04      VMOV.F32 S2,#1.25
+   \      0x136   0xEE81 0x1A20      VDIV.F32 S2,S2,S1
+   \                     ??sl_hal_iadc_calculate_gain_offset_15: (+1)
+   \      0x13A   0xEE21 0x0A28      VMUL.F32 S0,S2,S17
+   \      0x13E   0xEEF1 0x1A00      VMOV.F32 S3,#4.0
+   \      0x142   0xEDDF 0x....      VLDR.W   S1,??DataTable3_1
+   \      0x146   0xEE20 0x0A21      VMUL.F32 S0,S0,S3
+   \      0x14A   0xEEC0 0x0A88      VDIV.F32 S1,S1,S16
+   \      0x14E   0xED9F 0x....      VLDR.W   S2,??DataTable3_2
+   \      0x152   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+   \      0x156   0xF1B7 0x4F00      CMP      R7,#+2147483648
+   \      0x15A   0xD00B             BEQ.N    ??sl_hal_iadc_calculate_gain_offset_16
+   \      0x15C   0xED9F 0x....      VLDR.W   S2,??DataTable3_3
+   \      0x160   0xEE00 0x5A90      VMOV     S1,R5
+   \      0x164   0xEE30 0x1A01      VADD.F32 S2,S0,S2
+   \      0x168   0xEEFB 0x0A60      VCVT.F32.U16 S1,S1,#+15
+   \      0x16C   0xED9F 0x....      VLDR.W   S0,??DataTable4
+   \      0x170   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+   \                     ??sl_hal_iadc_calculate_gain_offset_16: (+1)
+   \      0x174   0xEEF1 0x0A40      VNEG.F32 S1,S0
+   \      0x178   0xEEF5 0x0A40      VCMP.F32 S1,#0.0
+   \      0x17C   0xEEF1 0xFA10      FMSTAT
+   \      0x180   0xD508             BPL.N    ??sl_hal_iadc_calculate_gain_offset_17
+   \      0x182   0xEEFE 0x0A00      VMOV.F32 S1,#-0.5
+   \      0x186   0xEE30 0x0AC0      VSUB.F32 S0,S1,S0
+   \      0x18A   0xEEBD 0x0AC0      VCVT.S32.F32 S0,S0
+   \      0x18E   0xEE10 0x0A10      VMOV     R0,S0
+   \      0x192   0xE007             B.N      ??sl_hal_iadc_calculate_gain_offset_18
+   \                     ??sl_hal_iadc_calculate_gain_offset_17: (+1)
+   \      0x194   0xEEB6 0x1A00      VMOV.F32 S2,#0.5
+   \      0x198   0xEE31 0x1A40      VSUB.F32 S2,S2,S0
+   \      0x19C   0xEEBD 0x1AC1      VCVT.S32.F32 S2,S2
+   \      0x1A0   0xEE11 0x0A10      VMOV     R0,S2
+   \                     ??sl_hal_iadc_calculate_gain_offset_18: (+1)
+   \      0x1A4   0xF5B0 0x3F00      CMP      R0,#+131072
+   \      0x1A8   0xBFA8             IT       GE
+   \      0x1AA   0x.... 0x....      LDRGE.W  R0,??DataTable14_7
+   \      0x1AE   0xDA07             BGE.N    ??sl_hal_iadc_calculate_gain_offset_19
+   \      0x1B0   0xF510 0x3F00      CMN      R0,#+131072
+   \      0x1B4   0xBFB8             IT       LT
+   \      0x1B6   0xF447 0x3700      ORRLT    R7,R7,#0x20000
+   \      0x1BA   0xDB02             BLT.N    ??sl_hal_iadc_calculate_gain_offset_20
+   \      0x1BC   0xF3C0 0x0011      UBFX     R0,R0,#+0,#+18
+   \                     ??sl_hal_iadc_calculate_gain_offset_19: (+1)
+   \      0x1C0   0x4307             ORRS     R7,R0,R7
+   \                     ??sl_hal_iadc_calculate_gain_offset_20: (+1)
+   \      0x1C2   0x6537             STR      R7,[R6, #+80]
+    345                break;
+   \      0x1C4   0xE003             B.N      ??CrossCallReturnLabel_16
+    346          
+    347          #if defined(_IADC_CFG_ADCMODE_HIGHACCURACY)
+    348              case SL_HAL_IADC_CFG_ADC_MODE_HIGH_ACCURACY:
+    349                iadc_calculate_high_accuracy_gain_offset(iadc, init, config);
+    350                break;
+    351          #endif
+    352          
+    353              default:
+    354                // Mode not supported.
+    355                EFM_ASSERT(false);
+   \                     ??sl_hal_iadc_calculate_gain_offset_1: (+1)
+   \      0x1C6   0xF240 0x1163      MOVW     R1,#+355
+   \      0x1CA   0x.... 0x....      BL       ?Subroutine2
+    356                break;
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \      0x1CE   0x9808             LDR      R0,[SP, #+32]
+    357            }
+    358          
+    359            // Set ADC clock prescaler
+    360            iadc->CFG[config].SCHED = ((adc_clk_prescale << _IADC_SCHED_PRESCALE_SHIFT)
+    361                                       & _IADC_SCHED_PRESCALE_MASK);
+   \      0x1D0   0xF3C0 0x0009      UBFX     R0,R0,#+0,#+10
+   \      0x1D4   0x6570             STR      R0,[R6, #+84]
+    362          }
+   \      0x1D6   0xECBD 0x8B02      VPOP     {D8}
+   \      0x1DA   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x4628             MOV      R0,R5
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    363          
+    364          /***************************************************************************//**
+    365           * Reset IADC to same state as after a HW reset.
+    366           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    367          void sl_hal_iadc_reset(IADC_TypeDef *iadc)
+    368          {
+   \                     sl_hal_iadc_reset: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+    369            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x6   0x.... 0x....      LDR.W    R2,??DataTable14
+   \        0xA   0x.... 0x....      LDR.W    R5,??DataTable14_1
+   \        0xE   0x4294             CMP      R4,R2
+   \       0x10   0xD003             BEQ.N    ??CrossCallReturnLabel_15
+   \       0x12   0xF240 0x1171      MOVW     R1,#+369
+   \       0x16   0x.... 0x....      BL       ?Subroutine2
+    370          
+    371            // Write all WSYNC registers to reset value while enabled.
+    372            sl_hal_iadc_enable(iadc);
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x1A   0x4620             MOV      R0,R4
+   \       0x1C   0x.... 0x....      BL       sl_hal_iadc_enable
+    373            EFM_ASSERT((iadc->EN & _IADC_EN_EN_MASK) == _IADC_EN_EN_MASK);
+   \       0x20   0x6860             LDR      R0,[R4, #+4]
+   \       0x22   0x07C1             LSLS     R1,R0,#+31
+   \       0x24   0xD403             BMI.N    ??CrossCallReturnLabel_14
+   \       0x26   0xF240 0x1175      MOVW     R1,#+373
+   \       0x2A   0x.... 0x....      BL       ?Subroutine2
+    374          
+    375            // Stop conversions and timer, before resetting other registers.
+    376            iadc->CMD = IADC_CMD_SINGLESTOP | IADC_CMD_SCANSTOP | IADC_CMD_TIMERDIS;
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x2E   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \       0x32   0x60E0             STR      R0,[R4, #+12]
+   \       0x34   0x.... 0x....      LDR.W    R1,??DataTable14_9
+    377          
+    378            // Wait for all IADC operations to stop.
+    379            while ((iadc->STATUS & (IADC_STATUS_CONVERTING
+    380                                    | IADC_STATUS_SCANQUEUEPENDING
+    381                                    | IADC_STATUS_SINGLEQUEUEPENDING
+    382                                    | IADC_STATUS_TIMERACTIVE))
+    383                   != 0UL) {
+   \                     ??sl_hal_iadc_reset_0: (+1)
+   \       0x38   0x6960             LDR      R0,[R4, #+20]
+   \       0x3A   0x4208             TST      R0,R1
+   \       0x3C   0xD1FC             BNE.N    ??sl_hal_iadc_reset_0
+    384              // No operation is performed, the loop simply waits for the IADC to stop.
+    385            }
+    386          
+    387            // Reset all WSYNC registers.
+    388            iadc->MASKREQ = _IADC_MASKREQ_RESETVALUE;
+   \       0x3E   0x2200             MOVS     R2,#+0
+   \       0x40   0x61A2             STR      R2,[R4, #+24]
+    389            iadc->SINGLE  = _IADC_SINGLE_RESETVALUE;
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0xF104 0x0184      ADD      R1,R4,#+132
+   \       0x48   0x6148             STR      R0,[R1, #+20]
+   \       0x4A   0x.... 0x....      LDR.W    R5,??DataTable14_10
+    390          
+    391            // Wait for SINGLE and MASQREQ writes to propagate to working registers.
+    392            while ((iadc->STATUS & (IADC_STATUS_MASKREQWRITEPENDING
+    393                                    | IADC_STATUS_SINGLEWRITEPENDING))
+    394                   != 0UL) {
+   \                     ??sl_hal_iadc_reset_1: (+1)
+   \       0x4E   0x6960             LDR      R0,[R4, #+20]
+   \       0x50   0xF410 0x1F40      TST      R0,#0x300000
+   \       0x54   0xD1FB             BNE.N    ??sl_hal_iadc_reset_1
+    395              // No operation is needed here.
+    396            }
+    397          
+    398            // Pull from FIFOs until they are empty.
+    399          
+    400            // Errata IADC_E305: Check SINGLEFIFOSTAT to make sure that SINGLEFIFO is getting emptied in case.
+    401            // where STATUS register is incorrect.
+    402            while (((iadc->STATUS & IADC_STATUS_SINGLEFIFODV) != 0UL) || (iadc->SINGLEFIFOSTAT > 0)) {
+   \                     ??sl_hal_iadc_reset_2: (+1)
+   \       0x56   0x6960             LDR      R0,[R4, #+20]
+   \       0x58   0x.... 0x....      LDR.W    R8,??DataTable14
+   \       0x5C   0x05C1             LSLS     R1,R0,#+23
+   \       0x5E   0xD401             BMI.N    ??sl_hal_iadc_reset_3
+   \       0x60   0x6FA0             LDR      R0,[R4, #+120]
+   \       0x62   0xB170             CBZ.N    R0,??sl_hal_iadc_reset_4
+    403              (void) sl_hal_iadc_pull_single_fifo_data(iadc);
+   \                     ??sl_hal_iadc_reset_3: (+1)
+   \       0x64   0x4544             CMP      R4,R8
+   \       0x66   0xD003             BEQ.N    ??CrossCallReturnLabel_13
+   \       0x68   0xF240 0x5123      MOVW     R1,#+1315
+   \       0x6C   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x70   0x6F60             LDR      R0,[R4, #+116]
+    404            }
+   \       0x72   0xE7F0             B.N      ??sl_hal_iadc_reset_2
+    405          
+    406            // Errata IADC_E305: check SCANFIFOSTAT to make sure that SCANFIFO is getting emptied in case.
+    407            // where STATUS register is incorrect.
+    408            while (((iadc->STATUS & IADC_STATUS_SCANFIFODV) != 0UL) || (iadc->SCANFIFOSTAT > 0)) {
+    409              (void) sl_hal_iadc_pull_scan_fifo_data(iadc);
+   \                     ??sl_hal_iadc_reset_5: (+1)
+   \       0x74   0x4544             CMP      R4,R8
+   \       0x76   0xD003             BEQ.N    ??CrossCallReturnLabel_12
+   \       0x78   0xF44F 0x61AA      MOV      R1,#+1360
+   \       0x7C   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x80   0x6838             LDR      R0,[R7, #+0]
+    410            }
+   \                     ??sl_hal_iadc_reset_4: (+1)
+   \       0x82   0x6960             LDR      R0,[R4, #+20]
+   \       0x84   0xF104 0x0784      ADD      R7,R4,#+132
+   \       0x88   0x0581             LSLS     R1,R0,#+22
+   \       0x8A   0xD4F3             BMI.N    ??sl_hal_iadc_reset_5
+   \       0x8C   0x6878             LDR      R0,[R7, #+4]
+   \       0x8E   0x2800             CMP      R0,#+0
+   \       0x90   0xD1F0             BNE.N    ??sl_hal_iadc_reset_5
+    411          
+    412            // Read data registers to clear data valid flags.
+    413            (void) sl_hal_iadc_read_single_data(iadc);
+   \       0x92   0x4544             CMP      R4,R8
+   \       0x94   0xD003             BEQ.N    ??CrossCallReturnLabel_11
+   \       0x96   0xF240 0x513A      MOVW     R1,#+1338
+   \       0x9A   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x9E   0x6FE0             LDR      R0,[R4, #+124]
+    414            (void) sl_hal_iadc_read_scan_data(iadc);
+   \       0xA0   0x4544             CMP      R4,R8
+   \       0xA2   0xD003             BEQ.N    ??CrossCallReturnLabel_10
+   \       0xA4   0xF240 0x5167      MOVW     R1,#+1383
+   \       0xA8   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0xAC   0x68B8             LDR      R0,[R7, #+8]
+    415          
+    416            // Write all WSTATIC registers to reset value while disabled.
+    417            sl_hal_iadc_disable(iadc);
+   \       0xAE   0x4620             MOV      R0,R4
+   \       0xB0   0x.... 0x....      BL       sl_hal_iadc_disable
+    418          
+    419            // Reset all WSTATIC registers.
+    420            iadc->CTRL            = _IADC_CTRL_RESETVALUE;
+   \       0xB4   0x2100             MOVS     R1,#+0
+   \       0xB6   0x60A1             STR      R1,[R4, #+8]
+    421            iadc->TIMER           = _IADC_TIMER_RESETVALUE;
+   \       0xB8   0x2000             MOVS     R0,#+0
+   \       0xBA   0x6120             STR      R0,[R4, #+16]
+    422            iadc->TRIGGER         = _IADC_TRIGGER_RESETVALUE;
+   \       0xBC   0x62E1             STR      R1,[R4, #+44]
+    423          
+    424            iadc->CMPTHR          = _IADC_CMPTHR_RESETVALUE;
+   \       0xBE   0x6220             STR      R0,[R4, #+32]
+    425            iadc->SINGLEFIFOCFG   = _IADC_SINGLEFIFOCFG_RESETVALUE;
+   \       0xC0   0x2130             MOVS     R1,#+48
+   \       0xC2   0x6721             STR      R1,[R4, #+112]
+    426            iadc->SCANFIFOCFG     = _IADC_SCANFIFOCFG_RESETVALUE;
+   \       0xC4   0x2030             MOVS     R0,#+48
+   \       0xC6   0xF8C4 0x0080      STR      R0,[R4, #+128]
+    427          
+    428            for (uint8_t i = 0; i < IADC_CONFIGNUM(IADC_NUM(iadc)); i++) {
+   \       0xCA   0x2000             MOVS     R0,#+0
+   \       0xCC   0x.... 0x....      LDR.W    R3,??DataTable14_11
+   \       0xD0   0xE009             B.N      ??sl_hal_iadc_reset_6
+    429              iadc->CFG[i].CFG    = _IADC_CFG_RESETVALUE;
+   \                     ??sl_hal_iadc_reset_7: (+1)
+   \       0xD2   0xEB04 0x1100      ADD      R1,R4,R0, LSL #+4
+   \       0xD6   0xF242 0x0260      MOVW     R2,#+8288
+    430              iadc->CFG[i].SCALE  = _IADC_SCALE_RESETVALUE;
+    431              iadc->CFG[i].SCHED  = _IADC_SCHED_RESETVALUE;
+    432            }
+   \       0xDA   0x1C40             ADDS     R0,R0,#+1
+   \       0xDC   0x648A             STR      R2,[R1, #+72]
+   \       0xDE   0x650B             STR      R3,[R1, #+80]
+   \       0xE0   0x2200             MOVS     R2,#+0
+   \       0xE2   0x654A             STR      R2,[R1, #+84]
+   \       0xE4   0xB2C0             UXTB     R0,R0
+   \                     ??sl_hal_iadc_reset_6: (+1)
+   \       0xE6   0x4544             CMP      R4,R8
+   \       0xE8   0xBF0C             ITE      EQ
+   \       0xEA   0x2102             MOVEQ    R1,#+2
+   \       0xEC   0x2100             MOVNE    R1,#+0
+   \       0xEE   0x4288             CMP      R0,R1
+   \       0xF0   0xD3EF             BCC.N    ??sl_hal_iadc_reset_7
+    433          
+    434            for (uint8_t i = 0; i < IADC_SCANENTRIES(iadc); i++) {
+   \       0xF2   0x2000             MOVS     R0,#+0
+   \       0xF4   0xE005             B.N      ??sl_hal_iadc_reset_8
+    435              iadc->SCANTABLE[i].SCAN = _IADC_SCAN_RESETVALUE;
+   \                     ??sl_hal_iadc_reset_9: (+1)
+   \       0xF6   0x2100             MOVS     R1,#+0
+   \       0xF8   0xEB04 0x0382      ADD      R3,R4,R2, LSL #+2
+   \       0xFC   0xF8C3 0x10A0      STR      R1,[R3, #+160]
+    436            }
+   \      0x100   0x1C40             ADDS     R0,R0,#+1
+   \                     ??sl_hal_iadc_reset_8: (+1)
+   \      0x102   0x4544             CMP      R4,R8
+   \      0x104   0xBF0C             ITE      EQ
+   \      0x106   0x2110             MOVEQ    R1,#+16
+   \      0x108   0x2100             MOVNE    R1,#+0
+   \      0x10A   0xB2C2             UXTB     R2,R0
+   \      0x10C   0x428A             CMP      R2,R1
+   \      0x10E   0xD3F2             BCC.N    ??sl_hal_iadc_reset_9
+    437          
+    438            // Clear interrupt flags and disable interrupts.
+    439            sl_hal_iadc_clear_interrupts(iadc, _IADC_IF_MASK);
+   \      0x110   0x4544             CMP      R4,R8
+   \      0x112   0xD003             BEQ.N    ??CrossCallReturnLabel_9
+   \      0x114   0xF44F 0x6192      MOV      R1,#+1168
+   \      0x118   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \      0x11C   0xF242 0x0024      MOVW     R0,#+8228
+   \      0x120   0x1827             ADDS     R7,R4,R0
+   \      0x122   0x.... 0x....      LDR.W    R6,??DataTable14_12
+   \      0x126   0x603E             STR      R6,[R7, #+0]
+    440            sl_hal_iadc_disable_interrupts(iadc, _IADC_IEN_MASK);
+   \      0x128   0x4544             CMP      R4,R8
+   \      0x12A   0xD003             BEQ.N    ??CrossCallReturnLabel_8
+   \      0x12C   0xF240 0x41A6      MOVW     R1,#+1190
+   \      0x130   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \      0x134   0x607E             STR      R6,[R7, #+4]
+    441          }
+   \      0x136   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    442          
+    443          /***************************************************************************//**
+    444           * Initialize IADC scan sequence.
+    445           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    446          void sl_hal_iadc_init_scan(IADC_TypeDef *iadc,
+    447                                     const sl_hal_iadc_init_scan_t *init,
+    448                                     const sl_hal_iadc_scan_table_t *scan_table)
+    449          {
+   \                     sl_hal_iadc_init_scan: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4606             MOV      R6,R0
+    450            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x6   0x.... 0x....      LDR.W    R7,??DataTable14
+   \        0xA   0x460C             MOV      R4,R1
+   \        0xC   0x4615             MOV      R5,R2
+   \        0xE   0x.... 0x....      LDR.W    R8,??DataTable14_1
+   \       0x12   0x42BE             CMP      R6,R7
+   \       0x14   0xD003             BEQ.N    ??CrossCallReturnLabel_36
+   \       0x16   0xF44F 0x71E1      MOV      R1,#+450
+   \       0x1A   0x.... 0x....      BL       ?Subroutine5
+    451            EFM_ASSERT(init != NULL);
+   \                     ??CrossCallReturnLabel_36: (+1)
+   \       0x1E   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_35
+   \       0x20   0xF240 0x11C3      MOVW     R1,#+451
+   \       0x24   0x.... 0x....      BL       ?Subroutine5
+    452            EFM_ASSERT(scan_table != NULL);
+   \                     ??CrossCallReturnLabel_35: (+1)
+   \       0x28   0xB91D             CBNZ.N   R5,??CrossCallReturnLabel_34
+   \       0x2A   0xF44F 0x71E2      MOV      R1,#+452
+   \       0x2E   0x.... 0x....      BL       ?Subroutine5
+    453          
+    454          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_3)
+    455            // Errata IADC_E305. Makes sure that DVL is equal or less than 7 entries.
+    456            EFM_ASSERT(init->data_valid_level <= SL_HAL_IADC_DATA_VALID_7);
+    457          #endif
+    458          
+    459            sl_hal_iadc_disable(iadc);
+   \                     ??CrossCallReturnLabel_34: (+1)
+   \       0x32   0x4630             MOV      R0,R6
+   \       0x34   0x.... 0x....      BL       sl_hal_iadc_disable
+    460          
+    461            iadc->SCANFIFOCFG = (iadc->SCANFIFOCFG & ~(_IADC_SCANFIFOCFG_ALIGNMENT_MASK | _IADC_SCANFIFOCFG_SHOWID_MASK
+    462                                                       | _IADC_SCANFIFOCFG_DVL_MASK | _IADC_SCANFIFOCFG_DMAWUFIFOSCAN_MASK))
+    463                                | (((uint32_t) init->alignment) << _IADC_SCANFIFOCFG_ALIGNMENT_SHIFT)
+    464                                | (((uint32_t) init->show_id) <<  _IADC_SCANFIFOCFG_SHOWID_SHIFT)
+    465                                | (((uint32_t) init->data_valid_level) << _IADC_SCANFIFOCFG_DVL_SHIFT)
+    466                                | (((uint32_t) init->fifo_dma_wakeup) << _IADC_SCANFIFOCFG_DMAWUFIFOSCAN_SHIFT);
+   \       0x38   0xF8D6 0x2080      LDR      R2,[R6, #+128]
+   \       0x3C   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_37: (+1)
+   \       0x40   0xEA42 0x2201      ORR      R2,R2,R1, LSL #+8
+   \       0x44   0xF8C6 0x2080      STR      R2,[R6, #+128]
+    467          
+    468            // Clear bitfields for scan conversion in IADCn->TRIGGER and set new values.
+    469            iadc->TRIGGER = (iadc->TRIGGER & ~(_IADC_TRIGGER_SCANTRIGSEL_MASK | _IADC_TRIGGER_SCANTRIGACTION_MASK))
+    470                            | (((uint32_t) init->trigger_select) << _IADC_TRIGGER_SCANTRIGSEL_SHIFT)
+    471                            | (((uint32_t) init->trigger_action) << _IADC_TRIGGER_SCANTRIGACTION_SHIFT);
+   \       0x48   0x6AF1             LDR      R1,[R6, #+44]
+   \       0x4A   0x7920             LDRB     R0,[R4, #+4]
+   \       0x4C   0x7962             LDRB     R2,[R4, #+5]
+   \       0x4E   0xF021 0x0117      BIC      R1,R1,#0x17
+   \       0x52   0x4301             ORRS     R1,R0,R1
+   \       0x54   0xEA41 0x1102      ORR      R1,R1,R2, LSL #+4
+    472          
+    473            // Write scan table.
+    474            for (uint8_t entry_num = 0; entry_num < IADC_SCANENTRIES(iadc); entry_num++) {
+   \       0x58   0x2000             MOVS     R0,#+0
+   \       0x5A   0x62F1             STR      R1,[R6, #+44]
+   \       0x5C   0xE01E             B.N      ??sl_hal_iadc_init_scan_0
+    475              iadc->SCANTABLE[entry_num].SCAN = (iadc->SCANTABLE[entry_num].SCAN & ~(_IADC_SCAN_PINNEG_MASK | _IADC_SCAN_PORTNEG_MASK
+    476                                                                                     | _IADC_SCAN_PINPOS_MASK | _IADC_SCAN_PORTPOS_MASK
+    477                                                                                     | _IADC_SCAN_CFG_MASK | _IADC_SCAN_CMP_MASK))
+    478                                                |  ((uint32_t) scan_table->entries[entry_num].negative_port << _IADC_SCAN_PORTNEG_SHIFT)
+    479                                                |  ((uint32_t) scan_table->entries[entry_num].negative_pin << _IADC_SCAN_PINNEG_SHIFT)
+    480                                                |  ((uint32_t) scan_table->entries[entry_num].positive_port << _IADC_SCAN_PORTPOS_SHIFT)
+    481                                                |  ((uint32_t) scan_table->entries[entry_num].positive_pin << _IADC_SCAN_PINPOS_SHIFT)
+    482                                                |  ((uint32_t) scan_table->entries[entry_num].config_id << _IADC_SCAN_CFG_SHIFT)
+    483                                                |  (((uint32_t) scan_table->entries[entry_num].compare) << _IADC_SINGLE_CMP_SHIFT);
+   \                     ??sl_hal_iadc_init_scan_1: (+1)
+   \       0x5E   0xEB06 0x0280      ADD      R2,R6,R0, LSL #+2
+   \       0x62   0xF8D2 0xC0A0      LDR      R12,[R2, #+160]
+   \       0x66   0xEBC0 0x01C0      RSB      R1,R0,R0, LSL #+3
+   \       0x6A   0x1869             ADDS     R1,R5,R1
+   \       0x6C   0xEA4F 0x439C      LSR      R3,R12,#+18
+   \       0x70   0x049C             LSLS     R4,R3,#+18
+   \       0x72   0x794B             LDRB     R3,[R1, #+5]
+    484            }
+   \       0x74   0x1C40             ADDS     R0,R0,#+1
+   \       0x76   0xB2C0             UXTB     R0,R0
+   \       0x78   0xEA44 0x4343      ORR      R3,R4,R3, LSL #+17
+   \       0x7C   0x780C             LDRB     R4,[R1, #+0]
+   \       0x7E   0xEA43 0x1404      ORR      R4,R3,R4, LSL #+4
+   \       0x82   0x784B             LDRB     R3,[R1, #+1]
+   \       0x84   0x4323             ORRS     R3,R3,R4
+   \       0x86   0x788C             LDRB     R4,[R1, #+2]
+   \       0x88   0xEA43 0x3404      ORR      R4,R3,R4, LSL #+12
+   \       0x8C   0x78CB             LDRB     R3,[R1, #+3]
+   \       0x8E   0x7909             LDRB     R1,[R1, #+4]
+   \       0x90   0xEA44 0x2303      ORR      R3,R4,R3, LSL #+8
+   \       0x94   0xEA43 0x4C01      ORR      R12,R3,R1, LSL #+16
+   \       0x98   0xF8C2 0xC0A0      STR      R12,[R2, #+160]
+   \                     ??sl_hal_iadc_init_scan_0: (+1)
+   \       0x9C   0x42BE             CMP      R6,R7
+   \       0x9E   0xBF0C             ITE      EQ
+   \       0xA0   0x2110             MOVEQ    R1,#+16
+   \       0xA2   0x2100             MOVNE    R1,#+0
+   \       0xA4   0x4288             CMP      R0,R1
+   \       0xA6   0xD3DA             BCC.N    ??sl_hal_iadc_init_scan_1
+    485          }
+   \       0xA8   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x4640             MOV      R0,R8
+   \        0x2   0x.... 0x....      B.W      assertEFM
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x7821             LDRB     R1,[R4, #+0]
+   \        0x2   0x....             LDR.N    R0,??DataTable14_14
+   \        0x4   0x7863             LDRB     R3,[R4, #+1]
+   \        0x6   0x4002             ANDS     R2,R0,R2
+   \        0x8   0x78A0             LDRB     R0,[R4, #+2]
+   \        0xA   0x430A             ORRS     R2,R1,R2
+   \        0xC   0xEA42 0x02C3      ORR      R2,R2,R3, LSL #+3
+   \       0x10   0xEA42 0x1200      ORR      R2,R2,R0, LSL #+4
+   \       0x14   0x78E1             LDRB     R1,[R4, #+3]
+   \       0x16   0x4770             BX       LR
+    486          
+    487          /***************************************************************************//**
+    488           * Add/update entry in scan table.
+    489           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    490          void sl_hal_iadc_update_scan_entry(IADC_TypeDef *iadc,
+    491                                             uint8_t id,
+    492                                             sl_hal_iadc_scan_table_entry_t *entry)
+    493          {
+   \                     sl_hal_iadc_update_scan_entry: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4614             MOV      R4,R2
+   \        0x4   0x4605             MOV      R5,R0
+    494            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x6   0x....             LDR.N    R2,??DataTable14
+   \        0x8   0x460E             MOV      R6,R1
+   \        0xA   0x....             LDR.N    R7,??DataTable14_1
+   \        0xC   0x4295             CMP      R5,R2
+   \        0xE   0xD003             BEQ.N    ??CrossCallReturnLabel_31
+   \       0x10   0xF44F 0x71F7      MOV      R1,#+494
+   \       0x14   0x.... 0x....      BL       ?Subroutine4
+    495            EFM_ASSERT(entry != NULL);
+   \                     ??CrossCallReturnLabel_31: (+1)
+   \       0x18   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_30
+   \       0x1A   0xF240 0x11EF      MOVW     R1,#+495
+   \       0x1E   0x.... 0x....      BL       ?Subroutine4
+    496          
+    497            sl_hal_iadc_disable(iadc);
+   \                     ??CrossCallReturnLabel_30: (+1)
+   \       0x22   0x4628             MOV      R0,R5
+   \       0x24   0x.... 0x....      BL       sl_hal_iadc_disable
+    498          
+    499            // Update entry in scan table.
+    500            iadc->SCANTABLE[id].SCAN = (iadc->SCANTABLE[id].SCAN & ~(_IADC_SCAN_PINNEG_MASK | _IADC_SCAN_PORTNEG_MASK
+    501                                                                     | _IADC_SCAN_PINPOS_MASK | _IADC_SCAN_PORTPOS_MASK
+    502                                                                     | _IADC_SCAN_CFG_MASK | _IADC_SCAN_CMP_MASK))
+    503                                       |  ((uint32_t) entry->negative_port << _IADC_SCAN_PORTNEG_SHIFT)
+    504                                       |  ((uint32_t) entry->negative_pin << _IADC_SCAN_PINNEG_SHIFT)
+    505                                       |  ((uint32_t) entry->positive_port << _IADC_SCAN_PORTPOS_SHIFT)
+    506                                       |  ((uint32_t) entry->positive_pin << _IADC_SCAN_PINPOS_SHIFT)
+    507                                       |  ((uint32_t) entry->config_id << _IADC_SCAN_CFG_SHIFT)
+    508                                       |  (((uint32_t) entry->compare) << _IADC_SINGLE_CMP_SHIFT);
+   \       0x28   0xEB05 0x0186      ADD      R1,R5,R6, LSL #+2
+   \       0x2C   0xF8D1 0x20A0      LDR      R2,[R1, #+160]
+   \       0x30   0x7960             LDRB     R0,[R4, #+5]
+   \       0x32   0x7823             LDRB     R3,[R4, #+0]
+   \       0x34   0x0C92             LSRS     R2,R2,#+18
+   \       0x36   0x0492             LSLS     R2,R2,#+18
+   \       0x38   0xEA42 0x4240      ORR      R2,R2,R0, LSL #+17
+   \       0x3C   0x7860             LDRB     R0,[R4, #+1]
+    509          
+    510            sl_hal_iadc_enable(iadc);
+   \       0x3E   0xF006 0x061F      AND      R6,R6,#0x1F
+   \       0x42   0xEA42 0x1203      ORR      R2,R2,R3, LSL #+4
+   \       0x46   0x78A3             LDRB     R3,[R4, #+2]
+   \       0x48   0x4302             ORRS     R2,R0,R2
+   \       0x4A   0x78E0             LDRB     R0,[R4, #+3]
+   \       0x4C   0xEA42 0x3203      ORR      R2,R2,R3, LSL #+12
+   \       0x50   0x7923             LDRB     R3,[R4, #+4]
+   \       0x52   0xEA42 0x2200      ORR      R2,R2,R0, LSL #+8
+   \       0x56   0x4628             MOV      R0,R5
+   \       0x58   0xEA42 0x4203      ORR      R2,R2,R3, LSL #+16
+   \       0x5C   0xF8C1 0x20A0      STR      R2,[R1, #+160]
+   \       0x60   0x.... 0x....      BL       sl_hal_iadc_enable
+    511          
+    512            if (entry->include_in_scan) {
+   \       0x64   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x66   0x2101             MOVS     R1,#+1
+   \       0x68   0xFA01 0xF606      LSL      R6,R1,R6
+   \       0x6C   0xB118             CBZ.N    R0,??sl_hal_iadc_update_scan_entry_0
+    513              iadc->MASKREQ_SET = (1UL << (id & 0x1FUL)) << _IADC_MASKREQ_MASKREQ_SHIFT;
+   \       0x6E   0xF241 0x0118      MOVW     R1,#+4120
+   \       0x72   0x506E             STR      R6,[R5, R1]
+   \       0x74   0xBDF1             POP      {R0,R4-R7,PC}
+    514            } else {
+    515              iadc->MASKREQ_CLR = (1UL << (id & 0x1FUL)) << _IADC_MASKREQ_MASKREQ_SHIFT;
+   \                     ??sl_hal_iadc_update_scan_entry_0: (+1)
+   \       0x76   0xF242 0x0018      MOVW     R0,#+8216
+   \       0x7A   0x502E             STR      R6,[R5, R0]
+    516            }
+    517          }
+   \       0x7C   0xBDF1             POP      {R0,R4-R7,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4638             MOV      R0,R7
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    518          
+    519          /***************************************************************************//**
+    520           * Set mask of IADC scan table entries to include in scan.
+    521           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    522          void sl_hal_iadc_set_scan_mask(IADC_TypeDef *iadc, uint32_t mask)
+    523          {
+   \                     sl_hal_iadc_set_scan_mask: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    524            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x4   0x....             LDR.N    R2,??DataTable14
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x....             LDR.N    R6,??DataTable14_1
+   \        0xA   0x4294             CMP      R4,R2
+   \        0xC   0xD005             BEQ.N    ??sl_hal_iadc_set_scan_mask_0
+   \        0xE   0xF44F 0x7103      MOV      R1,#+524
+   \       0x12   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0xE001             B.N      ??sl_hal_iadc_set_scan_mask_1
+   \                     ??sl_hal_iadc_set_scan_mask_0: (+1)
+   \       0x1A   0xF64F 0x70FF      MOVW     R0,#+65535
+   \                     ??sl_hal_iadc_set_scan_mask_1: (+1)
+   \       0x1E   0x42A8             CMP      R0,R5
+   \       0x20   0xD203             BCS.N    ??CrossCallReturnLabel_4
+   \       0x22   0xF240 0x210D      MOVW     R1,#+525
+   \       0x26   0x.... 0x....      BL       ?Subroutine1
+    525            EFM_ASSERT(mask <= ((1UL << IADC_SCANENTRIES(iadc)) - 1UL));
+    526          
+    527            sl_hal_iadc_enable(iadc);
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x2A   0x4620             MOV      R0,R4
+   \       0x2C   0x.... 0x....      BL       sl_hal_iadc_enable
+    528          
+    529            iadc->MASKREQ = (iadc->MASKREQ & ~_IADC_MASKREQ_MASKREQ_MASK)
+    530                            | (mask << _IADC_MASKREQ_MASKREQ_SHIFT);
+   \       0x30   0x69A0             LDR      R0,[R4, #+24]
+   \       0x32   0x0C00             LSRS     R0,R0,#+16
+   \       0x34   0xEA45 0x4500      ORR      R5,R5,R0, LSL #+16
+   \       0x38   0x61A5             STR      R5,[R4, #+24]
+    531          }
+   \       0x3A   0xBD70             POP      {R4-R6,PC}
+    532          
+    533          /***************************************************************************//**
+    534           * Set mask of IADC scan table entries to include in scan using scan table.
+    535           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    536          void sl_hal_iadc_set_scan_mask_multiple_entries(IADC_TypeDef *iadc,
+    537                                                          const sl_hal_iadc_scan_table_t *scan_table)
+    538          {
+   \                     sl_hal_iadc_set_scan_mask_multiple_entries: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4605             MOV      R5,R0
+    539            uint32_t temp = 0;
+   \        0x6   0x2600             MOVS     R6,#+0
+    540          
+    541            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x8   0x....             LDR.N    R7,??DataTable14
+   \        0xA   0x460C             MOV      R4,R1
+   \        0xC   0x.... 0x....      LDR.W    R8,??DataTable14_1
+   \       0x10   0x42BD             CMP      R5,R7
+   \       0x12   0xD003             BEQ.N    ??CrossCallReturnLabel_33
+   \       0x14   0xF240 0x211D      MOVW     R1,#+541
+   \       0x18   0x.... 0x....      BL       ?Subroutine5
+    542            EFM_ASSERT(scan_table != NULL);
+   \                     ??CrossCallReturnLabel_33: (+1)
+   \       0x1C   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_32
+   \       0x1E   0xF240 0x211E      MOVW     R1,#+542
+   \       0x22   0x.... 0x....      BL       ?Subroutine5
+    543          
+    544            sl_hal_iadc_enable(iadc);
+   \                     ??CrossCallReturnLabel_32: (+1)
+   \       0x26   0x4628             MOV      R0,R5
+   \       0x28   0x.... 0x....      BL       sl_hal_iadc_enable
+    545          
+    546            iadc->MASKREQ &= ~_IADC_MASKREQ_MASKREQ_SHIFT;
+   \       0x2C   0x69A8             LDR      R0,[R5, #+24]
+    547            // Set scan mask.
+    548            for (uint8_t entry_num = 0; entry_num < IADC_SCANENTRIES(iadc); entry_num++) {
+   \       0x2E   0x2100             MOVS     R1,#+0
+   \       0x30   0x61A8             STR      R0,[R5, #+24]
+   \       0x32   0xE009             B.N      ??sl_hal_iadc_set_scan_mask_multiple_entries_0
+    549              if (scan_table->entries[entry_num].include_in_scan) {
+   \                     ??sl_hal_iadc_set_scan_mask_multiple_entries_1: (+1)
+   \       0x34   0xEBC1 0x02C1      RSB      R2,R1,R1, LSL #+3
+   \       0x38   0x18A2             ADDS     R2,R4,R2
+   \       0x3A   0x7990             LDRB     R0,[R2, #+6]
+   \       0x3C   0xB110             CBZ.N    R0,??sl_hal_iadc_set_scan_mask_multiple_entries_2
+    550                temp |= (1UL << entry_num) << _IADC_MASKREQ_MASKREQ_SHIFT;
+   \       0x3E   0x2201             MOVS     R2,#+1
+   \       0x40   0x408A             LSLS     R2,R2,R1
+   \       0x42   0x4316             ORRS     R6,R2,R6
+    551              }
+    552            }
+   \                     ??sl_hal_iadc_set_scan_mask_multiple_entries_2: (+1)
+   \       0x44   0x1C49             ADDS     R1,R1,#+1
+   \       0x46   0xB2C9             UXTB     R1,R1
+   \                     ??sl_hal_iadc_set_scan_mask_multiple_entries_0: (+1)
+   \       0x48   0x42BD             CMP      R5,R7
+   \       0x4A   0xBF0C             ITE      EQ
+   \       0x4C   0x2010             MOVEQ    R0,#+16
+   \       0x4E   0x2000             MOVNE    R0,#+0
+   \       0x50   0x4281             CMP      R1,R0
+   \       0x52   0xD3EF             BCC.N    ??sl_hal_iadc_set_scan_mask_multiple_entries_1
+    553            iadc->MASKREQ = temp;
+   \       0x54   0x61AE             STR      R6,[R5, #+24]
+    554          }
+   \       0x56   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    555          
+    556          /***************************************************************************//**
+    557           * Initialize single IADC conversion.
+    558           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    559          void sl_hal_iadc_init_single(IADC_TypeDef *iadc,
+    560                                       const sl_hal_iadc_init_single_t *init,
+    561                                       const sl_hal_iadc_single_input_t *input)
+    562          {
+   \                     sl_hal_iadc_init_single: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4615             MOV      R5,R2
+   \        0x4   0x4606             MOV      R6,R0
+    563            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x6   0x....             LDR.N    R2,??DataTable14
+   \        0x8   0x460C             MOV      R4,R1
+   \        0xA   0x....             LDR.N    R7,??DataTable14_1
+   \        0xC   0x4296             CMP      R6,R2
+   \        0xE   0xD003             BEQ.N    ??CrossCallReturnLabel_29
+   \       0x10   0xF240 0x2133      MOVW     R1,#+563
+   \       0x14   0x.... 0x....      BL       ?Subroutine4
+    564            EFM_ASSERT(init != NULL);
+   \                     ??CrossCallReturnLabel_29: (+1)
+   \       0x18   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_28
+   \       0x1A   0xF44F 0x710D      MOV      R1,#+564
+   \       0x1E   0x.... 0x....      BL       ?Subroutine4
+    565            EFM_ASSERT(input != NULL);
+   \                     ??CrossCallReturnLabel_28: (+1)
+   \       0x22   0xB91D             CBNZ.N   R5,??CrossCallReturnLabel_27
+   \       0x24   0xF240 0x2135      MOVW     R1,#+565
+   \       0x28   0x.... 0x....      BL       ?Subroutine4
+    566          
+    567          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_3)
+    568            // Errata IADC_E305. Makes sure that DVL is equal or less than 7 entries.
+    569            EFM_ASSERT(init->data_valid_level <= SL_HAL_IADC_DATA_VALID_7);
+    570          #endif
+    571          
+    572            sl_hal_iadc_disable(iadc);
+   \                     ??CrossCallReturnLabel_27: (+1)
+   \       0x2C   0x4630             MOV      R0,R6
+   \       0x2E   0x.... 0x....      BL       sl_hal_iadc_disable
+    573          
+    574            iadc->SINGLEFIFOCFG = (iadc->SINGLEFIFOCFG & ~(_IADC_SINGLEFIFOCFG_ALIGNMENT_MASK | _IADC_SINGLEFIFOCFG_DVL_MASK
+    575                                                           | _IADC_SINGLEFIFOCFG_SHOWID_MASK | _IADC_SINGLEFIFOCFG_DMAWUFIFOSINGLE_MASK))
+    576                                  | (((uint32_t) init->alignment) << _IADC_SINGLEFIFOCFG_ALIGNMENT_SHIFT)
+    577                                  | (((uint32_t) init->show_id) << _IADC_SINGLEFIFOCFG_SHOWID_SHIFT)
+    578                                  | (((uint32_t) init->data_valid_level) << _IADC_SINGLEFIFOCFG_DVL_SHIFT)
+    579                                  | (((uint32_t) init->fifo_dma_wakeup) << _IADC_SINGLEFIFOCFG_DMAWUFIFOSINGLE_SHIFT);
+   \       0x32   0x6F32             LDR      R2,[R6, #+112]
+   \       0x34   0x.... 0x....      BL       ?Subroutine6
+    580          
+    581            // Clear bitfields for single conversion in IADCn->TRIGGER and set new values.
+    582            iadc->TRIGGER = (iadc->TRIGGER & ~(_IADC_TRIGGER_SINGLETRIGSEL_MASK | _IADC_TRIGGER_SINGLETRIGACTION_MASK
+    583                                               | _IADC_TRIGGER_SINGLETAILGATE_MASK))
+    584                            | (((uint32_t) init->trigger_select) << _IADC_TRIGGER_SINGLETRIGSEL_SHIFT)
+    585                            | (((uint32_t) init->trigger_action) << _IADC_TRIGGER_SINGLETRIGACTION_SHIFT)
+    586                            | (((uint32_t) init->single_tailgate) << _IADC_TRIGGER_SINGLETAILGATE_SHIFT);
+   \                     ??CrossCallReturnLabel_38: (+1)
+   \       0x38   0x....             LDR.N    R0,??DataTable14_13
+   \       0x3A   0xEA42 0x2201      ORR      R2,R2,R1, LSL #+8
+   \       0x3E   0x6732             STR      R2,[R6, #+112]
+   \       0x40   0x6AF1             LDR      R1,[R6, #+44]
+   \       0x42   0x7922             LDRB     R2,[R4, #+4]
+   \       0x44   0x4001             ANDS     R1,R0,R1
+   \       0x46   0x7960             LDRB     R0,[R4, #+5]
+   \       0x48   0xEA41 0x2102      ORR      R1,R1,R2, LSL #+8
+   \       0x4C   0x79A2             LDRB     R2,[R4, #+6]
+   \       0x4E   0xEA41 0x3100      ORR      R1,R1,R0, LSL #+12
+    587          
+    588            sl_hal_iadc_update_single_input(iadc, input);
+   \       0x52   0x4630             MOV      R0,R6
+   \       0x54   0xEA41 0x4102      ORR      R1,R1,R2, LSL #+16
+   \       0x58   0x62F1             STR      R1,[R6, #+44]
+   \       0x5A   0x4629             MOV      R1,R5
+   \       0x5C   0x.... 0x....      BL       sl_hal_iadc_update_single_input
+    589          
+    590            sl_hal_iadc_enable(iadc);
+   \       0x60   0x4630             MOV      R0,R6
+   \       0x62   0xE8BD 0x40F2      POP      {R1,R4-R7,LR}
+   \       0x66   0x.... 0x....      B.W      sl_hal_iadc_enable
+    591          }
+    592          
+    593          /***************************************************************************//**
+    594           * Update IADC single input selection.
+    595           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    596          void sl_hal_iadc_update_single_input(IADC_TypeDef *iadc,
+    597                                               const sl_hal_iadc_single_input_t *input)
+    598          {
+   \                     sl_hal_iadc_update_single_input: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    599            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x4   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_43: (+1)
+   \        0x8   0x4295             CMP      R5,R2
+   \        0xA   0xD003             BEQ.N    ??CrossCallReturnLabel_3
+   \        0xC   0xF240 0x2157      MOVW     R1,#+599
+   \       0x10   0x.... 0x....      BL       ?Subroutine1
+    600            EFM_ASSERT(input != NULL);
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x14   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_2
+   \       0x16   0xF44F 0x7116      MOV      R1,#+600
+   \       0x1A   0x.... 0x....      BL       ?Subroutine1
+    601          
+    602            // IADCn->SINGLE has WSYNC type and can only be written while enabled.
+    603            sl_hal_iadc_enable(iadc);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x1E   0x4628             MOV      R0,R5
+   \       0x20   0x.... 0x....      BL       sl_hal_iadc_enable
+    604          
+    605            iadc->SINGLE = (iadc->SINGLE & ~(_IADC_SINGLE_PORTNEG_MASK | _IADC_SINGLE_PINNEG_MASK
+    606                                             | _IADC_SINGLE_PORTPOS_MASK | _IADC_SINGLE_PINPOS_MASK
+    607                                             | _IADC_SINGLE_CFG_MASK | _IADC_SINGLE_CMP_MASK))
+    608                           |  ((uint32_t) input->negative_port << _IADC_SINGLE_PORTNEG_SHIFT)
+    609                           |  ((uint32_t) input->negative_pin << _IADC_SINGLE_PINNEG_SHIFT)
+    610                           |  ((uint32_t) input->positive_port << _IADC_SINGLE_PORTPOS_SHIFT)
+    611                           |  ((uint32_t) input->positive_pin << _IADC_SINGLE_PINPOS_SHIFT)
+    612                           |  ((uint32_t) input->single_input_config_id << _IADC_SINGLE_CFG_SHIFT)
+    613                           |  (((uint32_t) input->compare) << _IADC_SINGLE_CMP_SHIFT);
+   \       0x24   0xF8D5 0x1098      LDR      R1,[R5, #+152]
+   \       0x28   0x7960             LDRB     R0,[R4, #+5]
+   \       0x2A   0x7822             LDRB     R2,[R4, #+0]
+   \       0x2C   0x0C89             LSRS     R1,R1,#+18
+   \       0x2E   0x0489             LSLS     R1,R1,#+18
+   \       0x30   0xEA41 0x4140      ORR      R1,R1,R0, LSL #+17
+   \       0x34   0x7860             LDRB     R0,[R4, #+1]
+   \       0x36   0xEA41 0x1102      ORR      R1,R1,R2, LSL #+4
+   \       0x3A   0x78A2             LDRB     R2,[R4, #+2]
+   \       0x3C   0x4301             ORRS     R1,R0,R1
+   \       0x3E   0x78E0             LDRB     R0,[R4, #+3]
+   \       0x40   0xEA41 0x3102      ORR      R1,R1,R2, LSL #+12
+   \       0x44   0x7922             LDRB     R2,[R4, #+4]
+   \       0x46   0xEA41 0x2100      ORR      R1,R1,R0, LSL #+8
+   \       0x4A   0xEA41 0x4102      ORR      R1,R1,R2, LSL #+16
+   \       0x4E   0xF8C5 0x1098      STR      R1,[R5, #+152]
+    614          }
+   \       0x52   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine8: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable14
+   \        0x2   0x460C             MOV      R4,R1
+   \        0x4   0x....             LDR.N    R6,??DataTable14_1
+   \        0x6   0x4770             BX       LR
+    615          /***************************************************************************//**
+    616           * Calculate prescaler for CLK_SRC_ADC high speed clock.
+    617           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    618          uint8_t sl_hal_iadc_calculate_src_clk_prescale(IADC_TypeDef *iadc,
+    619                                                         uint32_t src_clk_freq,
+    620                                                         uint32_t cmu_clk_freq)
+    621          {
+   \                     sl_hal_iadc_calculate_src_clk_prescale: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4615             MOV      R5,R2
+    622            uint32_t ret;
+    623          
+    624            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x4   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_44: (+1)
+   \        0x8   0x4290             CMP      R0,R2
+   \        0xA   0xD003             BEQ.N    ??CrossCallReturnLabel_1
+   \        0xC   0xF44F 0x711C      MOV      R1,#+624
+   \       0x10   0x.... 0x....      BL       ?Subroutine1
+    625            EFM_ASSERT(src_clk_freq);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x14   0xB924             CBNZ.N   R4,??sl_hal_iadc_calculate_src_clk_prescale_0
+   \       0x16   0xF240 0x2171      MOVW     R1,#+625
+   \       0x1A   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x1E   0xE003             B.N      ??sl_hal_iadc_calculate_src_clk_prescale_1
+    626          
+    627            // Make sure wanted CLK_SRC_ADC clock is below max allowed frequency.
+    628            src_clk_freq = SL_MIN(src_clk_freq, IADC_CLK_MAX_FREQ);
+   \                     ??sl_hal_iadc_calculate_src_clk_prescale_0: (+1)
+   \       0x20   0x....             LDR.N    R0,??DataTable14_2
+   \       0x22   0x4284             CMP      R4,R0
+   \       0x24   0xBF28             IT       CS
+   \       0x26   0x4604             MOVCS    R4,R0
+    629          
+    630            ret = (cmu_clk_freq + src_clk_freq - 1UL) / src_clk_freq;
+   \                     ??sl_hal_iadc_calculate_src_clk_prescale_1: (+1)
+   \       0x28   0x1965             ADDS     R5,R4,R5
+   \       0x2A   0x1E6D             SUBS     R5,R5,#+1
+   \       0x2C   0xFBB5 0xF0F4      UDIV     R0,R5,R4
+    631            if (ret != 0UL) {
+   \       0x30   0xB118             CBZ.N    R0,??sl_hal_iadc_calculate_src_clk_prescale_2
+    632              ret--;
+   \       0x32   0x1E40             SUBS     R0,R0,#+1
+    633            }
+    634          
+    635            // Limit to max allowed register setting.
+    636            if (ret > _IADC_CTRL_HSCLKRATE_DIV4) {
+   \       0x34   0x2804             CMP      R0,#+4
+   \       0x36   0xBF28             IT       CS
+   \       0x38   0x2003             MOVCS    R0,#+3
+    637              ret = _IADC_CTRL_HSCLKRATE_DIV4;
+    638            }
+    639          
+    640            return (uint8_t)ret;
+   \                     ??sl_hal_iadc_calculate_src_clk_prescale_2: (+1)
+   \       0x3A   0xB2C0             UXTB     R0,R0
+   \       0x3C   0xBD70             POP      {R4-R6,PC}
+    641          }
+    642          
+    643          /***************************************************************************//**
+    644           * Calculate prescaler for ADC_CLK clock.
+    645           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    646          uint32_t sl_hal_iadc_calculate_adc_clk_prescale(IADC_TypeDef *iadc,
+    647                                                          uint32_t adc_clk_freq,
+    648                                                          uint32_t cmu_clk_freq,
+    649                                                          sl_hal_iadc_config_adc_mode_t adc_mode,
+    650                                                          uint8_t scr_clk_prescaler)
+    651          {
+   \                     sl_hal_iadc_calculate_adc_clk_prescale: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4615             MOV      R5,R2
+    652            uint32_t ret;
+    653          
+    654            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x4   0x....             LDR.N    R2,??DataTable14
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0x461E             MOV      R6,R3
+   \        0xA   0x....             LDR.N    R7,??DataTable14_1
+   \        0xC   0x4290             CMP      R0,R2
+   \        0xE   0xD003             BEQ.N    ??CrossCallReturnLabel_26
+   \       0x10   0xF240 0x218E      MOVW     R1,#+654
+   \       0x14   0x.... 0x....      BL       ?Subroutine4
+    655            EFM_ASSERT(adc_clk_freq);
+   \                     ??CrossCallReturnLabel_26: (+1)
+   \       0x18   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_25
+   \       0x1A   0xF240 0x218F      MOVW     R1,#+655
+   \       0x1E   0x.... 0x....      BL       ?Subroutine4
+    656          
+    657            // Make sure wanted analog clock is below max allowed frequency for the given mode.
+    658            if (adc_clk_freq > IADC_ANA_CLK_MAX_FREQ(adc_mode)) {
+   \                     ??CrossCallReturnLabel_25: (+1)
+   \       0x22   0x2E00             CMP      R6,#+0
+   \       0x24   0xBF0C             ITE      EQ
+   \       0x26   0x....             LDREQ.N  R0,??DataTable14_5
+   \       0x28   0x....             LDRNE.N  R0,??DataTable14_4
+   \       0x2A   0x42A0             CMP      R0,R4
+   \       0x2C   0xBF38             IT       CC
+   \       0x2E   0x4604             MOVCC    R4,R0
+    659              adc_clk_freq = IADC_ANA_CLK_MAX_FREQ(adc_mode);
+   \       0x30   0x9806             LDR      R0,[SP, #+24]
+    660            }
+    661          
+    662            // Apply CLK_SRC_ADC prescaler.
+    663            cmu_clk_freq /= scr_clk_prescaler + 1UL;
+    664          
+    665            ret = (cmu_clk_freq + adc_clk_freq - 1UL) / adc_clk_freq;
+   \       0x32   0xB2C0             UXTB     R0,R0
+   \       0x34   0x1C40             ADDS     R0,R0,#+1
+   \       0x36   0xFBB5 0xF0F0      UDIV     R0,R5,R0
+   \       0x3A   0x1820             ADDS     R0,R4,R0
+   \       0x3C   0x1E40             SUBS     R0,R0,#+1
+   \       0x3E   0xFBB0 0xF0F4      UDIV     R0,R0,R4
+    666            if (ret != 0UL) {
+   \       0x42   0xB128             CBZ.N    R0,??sl_hal_iadc_calculate_adc_clk_prescale_0
+    667              ret--;
+   \       0x44   0x1E40             SUBS     R0,R0,#+1
+    668            }
+    669          
+    670            // Limit to max allowed register setting.
+    671            ret = SL_MIN(ret, (_IADC_SCHED_PRESCALE_MASK >> _IADC_SCHED_PRESCALE_SHIFT));
+   \       0x46   0xF240 0x31FF      MOVW     R1,#+1023
+   \       0x4A   0x4288             CMP      R0,R1
+   \       0x4C   0xBF28             IT       CS
+   \       0x4E   0x4608             MOVCS    R0,R1
+    672          
+    673            return ret;
+   \                     ??sl_hal_iadc_calculate_adc_clk_prescale_0: (+1)
+   \       0x50   0xBDF2             POP      {R1,R4-R7,PC}
+    674          }
+    675          
+    676          /***************************************************************************//**
+    677           * Calculate timebase value in order to get a timebase providing at least 1us.
+    678           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    679          uint8_t sl_hal_iadc_calculate_timebase(IADC_TypeDef *iadc,
+    680                                                 uint32_t src_clk_freq)
+    681          {
+   \                     sl_hal_iadc_calculate_timebase: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    682            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \        0x4   0x....             LDR.N    R0,??DataTable14
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0x4285             CMP      R5,R0
+   \        0xA   0xD003             BEQ.N    ??CrossCallReturnLabel_24
+   \        0xC   0xF240 0x21AA      MOVW     R1,#+682
+   \       0x10   0x.... 0x....      BL       ?Subroutine3
+    683          
+    684            // Make sure we get non-zero frequency for below calculation.
+    685            if (src_clk_freq == 0UL) {
+   \                     ??CrossCallReturnLabel_24: (+1)
+   \       0x14   0xB90C             CBNZ.N   R4,??sl_hal_iadc_calculate_timebase_0
+    686              src_clk_freq = 1;
+   \       0x16   0x2401             MOVS     R4,#+1
+   \       0x18   0xE008             B.N      ??sl_hal_iadc_calculate_timebase_1
+    687            }
+    688            // If src_clk_freq is greater than 40MHz, then divide by the prescaler HSCLKRATE.
+    689            if (src_clk_freq > IADC_CLK_MAX_FREQ) {
+   \                     ??sl_hal_iadc_calculate_timebase_0: (+1)
+   \       0x1A   0x....             LDR.N    R0,??DataTable14_15
+   \       0x1C   0x4284             CMP      R4,R0
+   \       0x1E   0xD305             BCC.N    ??sl_hal_iadc_calculate_timebase_1
+    690              uint32_t prescaler = (iadc->CTRL & _IADC_CTRL_HSCLKRATE_MASK) >> _IADC_CTRL_HSCLKRATE_SHIFT;
+   \       0x20   0x68A8             LDR      R0,[R5, #+8]
+    691              src_clk_freq /= (prescaler + 1);
+   \       0x22   0xF3C0 0x7002      UBFX     R0,R0,#+28,#+3
+   \       0x26   0x1C40             ADDS     R0,R0,#+1
+   \       0x28   0xFBB4 0xF4F0      UDIV     R4,R4,R0
+    692            }
+    693          
+    694            // Determine number of ADCCLK cycle >= 1us.
+    695            src_clk_freq += 999999UL;
+    696            src_clk_freq /= 1000000UL;
+    697          
+    698            // Convert to N+1 format.
+    699            src_clk_freq -= 1UL;
+   \                     ??sl_hal_iadc_calculate_timebase_1: (+1)
+   \       0x2C   0x....             LDR.N    R0,??DataTable14_16
+   \       0x2E   0x1904             ADDS     R4,R0,R4
+   \       0x30   0x....             LDR.N    R1,??DataTable14_17
+   \       0x32   0xFBB4 0xF0F1      UDIV     R0,R4,R1
+   \       0x36   0x1E40             SUBS     R0,R0,#+1
+    700          
+    701            // Limit to max allowed register setting.
+    702            src_clk_freq = SL_MIN(src_clk_freq, (_IADC_CTRL_TIMEBASE_MASK >> _IADC_CTRL_TIMEBASE_SHIFT));
+   \       0x38   0x287F             CMP      R0,#+127
+   \       0x3A   0xBF28             IT       CS
+   \       0x3C   0x207F             MOVCS    R0,#+127
+    703          
+    704            // Return timebase value.
+    705            return (uint8_t) src_clk_freq;
+   \       0x3E   0xB2C0             UXTB     R0,R0
+   \       0x40   0xBD32             POP      {R1,R4,R5,PC}
+    706          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable14_1
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    707          
+    708          /***************************************************************************//**
+    709           * Read most recent single conversion result. The result struct includes both
+    710           * the data and the ID (0x20) if show_id was set when initializing single mode.
+    711           * Calling this function will not affect the state of the single data FIFO.
+    712           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    713          sl_hal_iadc_result_t sl_hal_iadc_read_single_result(IADC_TypeDef *iadc)
+    714          {
+   \                     sl_hal_iadc_read_single_result: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine7
+    715            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \                     ??CrossCallReturnLabel_39: (+1)
+   \        0x6   0xD003             BEQ.N    ??CrossCallReturnLabel_23
+   \        0x8   0xF240 0x21CB      MOVW     R1,#+715
+   \        0xC   0x.... 0x....      BL       ?Subroutine3
+    716          
+    717            uint32_t alignment = (iadc->SINGLEFIFOCFG & _IADC_SINGLEFIFOCFG_ALIGNMENT_MASK)
+    718                                 >> _IADC_SINGLEFIFOCFG_ALIGNMENT_SHIFT;
+   \                     ??CrossCallReturnLabel_23: (+1)
+   \       0x10   0x6F2A             LDR      R2,[R5, #+112]
+    719          
+    720            return iadc_convert_raw_data_to_result(iadc->SINGLEDATA,
+    721                                                   (sl_hal_iadc_alignment_t) alignment);
+   \       0x12   0x6FE9             LDR      R1,[R5, #+124]
+   \       0x14   0x....             B.N      ?Subroutine0
+    722          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4620             MOV      R0,R4
+   \        0x2   0xF002 0x0207      AND      R2,R2,#0x7
+   \        0x6   0xE8BD 0x4038      POP      {R3-R5,LR}
+   \        0xA   0x....             B.N      iadc_convert_raw_data_to_result
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine7: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x460D             MOV      R5,R1
+   \        0x4   0x....             LDR.N    R0,??DataTable14
+   \        0x6   0x4285             CMP      R5,R0
+   \        0x8   0x4770             BX       LR
+    723          
+    724          /***************************************************************************//**
+    725           * Pull result from single data FIFO. The result struct includes both the data
+    726           * and the ID (0x20) if show_id was set when initializing single mode.
+    727           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    728          sl_hal_iadc_result_t sl_hal_iadc_read_single_fifo_result(IADC_TypeDef *iadc)
+    729          {
+   \                     sl_hal_iadc_read_single_fifo_result: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine7
+    730            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \                     ??CrossCallReturnLabel_40: (+1)
+   \        0x6   0xD003             BEQ.N    ??CrossCallReturnLabel_22
+   \        0x8   0xF240 0x21DA      MOVW     R1,#+730
+   \        0xC   0x.... 0x....      BL       ?Subroutine3
+    731          
+    732            uint32_t alignment = (iadc->SINGLEFIFOCFG & _IADC_SINGLEFIFOCFG_ALIGNMENT_MASK)
+    733                                 >> _IADC_SINGLEFIFOCFG_ALIGNMENT_SHIFT;
+   \                     ??CrossCallReturnLabel_22: (+1)
+   \       0x10   0x6F2A             LDR      R2,[R5, #+112]
+    734          
+    735            return iadc_convert_raw_data_to_result(iadc->SINGLEFIFODATA,
+    736                                                   (sl_hal_iadc_alignment_t) alignment);
+   \       0x12   0x6F69             LDR      R1,[R5, #+116]
+   \       0x14                      REQUIRE ?Subroutine0
+   \       0x14                      ; // Fall through to label ?Subroutine0
+    737          }
+    738          
+    739          /***************************************************************************//**
+    740           * Read most recent scan conversion result. The result struct includes both
+    741           * the data and the ID (0x20) if show_id was set when initializing scan entry.
+    742           * Calling this function will not affect the state of the scan data FIFO.
+    743           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    744          sl_hal_iadc_result_t sl_hal_iadc_read_scan_result(IADC_TypeDef *iadc)
+    745          {
+   \                     sl_hal_iadc_read_scan_result: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine7
+    746            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \                     ??CrossCallReturnLabel_41: (+1)
+   \        0x6   0xD003             BEQ.N    ??CrossCallReturnLabel_21
+   \        0x8   0xF240 0x21EA      MOVW     R1,#+746
+   \        0xC   0x.... 0x....      BL       ?Subroutine3
+    747          
+    748            uint32_t alignment = (iadc->SCANFIFOCFG & _IADC_SCANFIFOCFG_ALIGNMENT_MASK)
+    749                                 >> _IADC_SCANFIFOCFG_ALIGNMENT_SHIFT;
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \       0x10   0xF105 0x0080      ADD      R0,R5,#+128
+   \       0x14   0x6802             LDR      R2,[R0, #+0]
+    750          
+    751            return iadc_convert_raw_data_to_result(iadc->SCANDATA,
+    752                                                   (sl_hal_iadc_alignment_t) alignment);
+   \       0x16   0x68C1             LDR      R1,[R0, #+12]
+   \       0x18   0x....             B.N      ?Subroutine0
+    753          }
+    754          
+    755          /***************************************************************************//**
+    756           * Pull result from scan data FIFO. The result struct includes both the data
+    757           * and the ID (0x20) if show_id was set when initializing scan entry.
+    758           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    759          sl_hal_iadc_result_t sl_hal_iadc_pull_scan_fifo_result(IADC_TypeDef *iadc)
+    760          {
+   \                     sl_hal_iadc_pull_scan_fifo_result: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine7
+    761            EFM_ASSERT(SL_HAL_IADC_REF_VALID(iadc));
+   \                     ??CrossCallReturnLabel_42: (+1)
+   \        0x6   0xD003             BEQ.N    ??CrossCallReturnLabel_20
+   \        0x8   0xF240 0x21F9      MOVW     R1,#+761
+   \        0xC   0x.... 0x....      BL       ?Subroutine3
+    762          
+    763            uint32_t alignment = (iadc->SCANFIFOCFG & _IADC_SCANFIFOCFG_ALIGNMENT_MASK)
+    764                                 >> _IADC_SCANFIFOCFG_ALIGNMENT_SHIFT;
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \       0x10   0xF105 0x0080      ADD      R0,R5,#+128
+   \       0x14   0x6802             LDR      R2,[R0, #+0]
+    765          
+    766            return iadc_convert_raw_data_to_result(iadc->SCANFIFODATA,
+    767                                                   (sl_hal_iadc_alignment_t) alignment);
+   \       0x16   0x6841             LDR      R1,[R0, #+4]
+   \       0x18   0x....             B.N      ?Subroutine0
+    768          }
+    769          
+    770          /***************************************************************************//**
+    771           * Get reference voltage selection.
+    772           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    773          uint32_t sl_hal_iadc_get_reference_voltage(sl_hal_iadc_voltage_reference_t reference)
+    774          {
+   \                     sl_hal_iadc_get_reference_voltage: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    775            uint32_t ref_voltage = 0;
+    776            sl_hal_system_chip_revision_t chip_rev;
+    777            sl_hal_system_get_chip_revision(&chip_rev);
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x.... 0x....      BL       sl_hal_system_get_chip_revision
+    778          
+    779            switch (reference) {
+   \        0xC   0x2C04             CMP      R4,#+4
+   \        0xE   0xD810             BHI.N    ??sl_hal_iadc_get_reference_voltage_1
+   \       0x10   0xE8DF 0xF004      TBB      [PC, R4]
+   \                     ??sl_hal_iadc_get_reference_voltage_0:
+   \       0x14   0x03 0x06          DC8      0x3,0x6,0xF,0x9
+   \              0x0F 0x09
+   \       0x18   0x0C 0x00          DC8      0xC,0x0
+    780              case SL_HAL_IADC_REFERENCE_VREFINT_1V2:
+    781          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    782                if (chip_rev.major == 1UL) {
+    783                  ref_voltage = 1210;
+    784                } else {
+    785                  ref_voltage = 1180;
+    786                }
+    787          #else
+    788                ref_voltage = 1210;
+   \                     ??sl_hal_iadc_get_reference_voltage_2: (+1)
+   \       0x1A   0xF240 0x45BA      MOVW     R5,#+1210
+    789          #endif
+    790                break;
+   \       0x1E   0xE00C             B.N      ??CrossCallReturnLabel_19
+    791              case SL_HAL_IADC_VREF_EXT_1V25:
+    792                ref_voltage = 1250;
+   \                     ??sl_hal_iadc_get_reference_voltage_3: (+1)
+   \       0x20   0xF240 0x45E2      MOVW     R5,#+1250
+    793                break;
+   \       0x24   0xE009             B.N      ??CrossCallReturnLabel_19
+    794          #if defined(_IADC_CFG_REFSEL_VREF2P5)
+    795              case SL_HAL_IADC_VREF_EXT_2V5:
+    796                ref_voltage = 2500;
+    797                break;
+    798          #endif
+    799              case SL_HAL_IADC_VREF_VDDX:
+    800                ref_voltage = 3000;
+   \                     ??sl_hal_iadc_get_reference_voltage_4: (+1)
+   \       0x26   0xF640 0x35B8      MOVW     R5,#+3000
+    801                break;
+   \       0x2A   0xE006             B.N      ??CrossCallReturnLabel_19
+    802              case SL_HAL_IADC_VREF_VDDX0P8BUF:
+    803                ref_voltage = 2400;
+   \                     ??sl_hal_iadc_get_reference_voltage_5: (+1)
+   \       0x2C   0xF44F 0x6516      MOV      R5,#+2400
+    804                break;
+   \       0x30   0xE003             B.N      ??CrossCallReturnLabel_19
+    805          #if defined(_IADC_CFG_REFSEL_VREFBUF)
+    806              case SL_HAL_IADC_VREF_BUF:
+    807                ref_voltage = 12500;
+    808                break;
+    809          #endif
+    810          #if defined(_IADC_CFG_REFSEL_VREF0P8BUF)
+    811              case SL_HAL_IADC_VREF_0P8BUF:
+    812                ref_voltage = 1000;
+    813                break;
+    814          #endif
+    815              default:
+    816                EFM_ASSERT(false);
+   \                     ??sl_hal_iadc_get_reference_voltage_1: (+1)
+   \       0x32   0xF44F 0x714C      MOV      R1,#+816
+   \       0x36   0x.... 0x....      BL       ?Subroutine3
+    817                break;
+    818            }
+    819          
+    820            return ref_voltage;
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \       0x3A   0x4628             MOV      R0,R5
+   \       0x3C   0xBD3E             POP      {R1-R5,PC}
+    821          }
+    822          
+
+   \                                 In section .text, align 2, keep-with-next
+    823          static sl_hal_iadc_result_t iadc_convert_raw_data_to_result(uint32_t raw_data,
+    824                                                                      sl_hal_iadc_alignment_t alignment)
+    825          {
+   \                     iadc_convert_raw_data_to_result: (+1)
+   \        0x0   0xB53C             PUSH     {R2-R5,LR}
+    826            sl_hal_iadc_result_t result;
+    827          
+    828            switch (alignment) {
+   \        0x2   0xB2D2             UXTB     R2,R2
+   \        0x4   0x2A02             CMP      R2,#+2
+   \        0x6   0xD903             BLS.N    ??iadc_convert_raw_data_to_result_0
+   \        0x8   0x1ED2             SUBS     R2,R2,#+3
+   \        0xA   0x2A02             CMP      R2,#+2
+   \        0xC   0xD90B             BLS.N    ??iadc_convert_raw_data_to_result_1
+   \        0xE   0xE00F             B.N      ??iadc_convert_raw_data_to_result_2
+    829              case SL_HAL_IADC_ALIGNMENT_RIGHT_12:
+    830          #if defined(IADC_SINGLEFIFOCFG_ALIGNMENT_RIGHT16)
+    831              case SL_HAL_IADC_ALIGNMENT_RIGHT_16:
+    832          #endif
+    833          #if defined(IADC_SINGLEFIFOCFG_ALIGNMENT_RIGHT20)
+    834              case SL_HAL_IADC_ALIGNMENT_RIGHT_20:
+    835          #endif
+    836                // Mask out ID and replace with sign extension.
+    837                result.data = (raw_data & 0x00FFFFFFUL)
+    838                              | ((raw_data & 0x00800000UL) != 0x0UL ? 0xFF000000UL : 0x0UL);
+   \                     ??iadc_convert_raw_data_to_result_0: (+1)
+   \       0x10   0x020A             LSLS     R2,R1,#+8
+   \       0x12   0xBF4C             ITE      MI
+   \       0x14   0xF04F 0x427F      MOVMI    R2,#+4278190080
+   \       0x18   0x2200             MOVPL    R2,#+0
+   \       0x1A   0xF021 0x437F      BIC      R3,R1,#0xFF000000
+   \       0x1E   0x431A             ORRS     R2,R2,R3
+   \       0x20   0x9200             STR      R2,[SP, #+0]
+    839                // Mask out data and shift down.
+    840                result.id   = (uint8_t)((raw_data & 0xFF000000UL) >> 24);
+   \       0x22   0x0E09             LSRS     R1,R1,#+24
+   \       0x24   0xE002             B.N      ??iadc_convert_raw_data_to_result_3
+    841                break;
+    842          
+    843              case SL_HAL_IADC_ALIGNMENT_LEFT_12:
+    844          #if defined(IADC_SINGLEFIFOCFG_ALIGNMENT_RIGHT16)
+    845              case SL_HAL_IADC_ALIGNMENT_LEFT_16:
+    846          #endif
+    847          #if defined(IADC_SINGLEFIFOCFG_ALIGNMENT_RIGHT20)
+    848              case SL_HAL_IADC_ALIGNMENT_LEFT_20:
+    849          #endif
+    850                result.data = raw_data & 0xFFFFFF00UL;
+   \                     ??iadc_convert_raw_data_to_result_1: (+1)
+   \       0x26   0x0A0B             LSRS     R3,R1,#+8
+   \       0x28   0x021B             LSLS     R3,R3,#+8
+   \       0x2A   0x9300             STR      R3,[SP, #+0]
+    851                result.id   = (uint8_t)(raw_data & 0x000000FFUL);
+   \                     ??iadc_convert_raw_data_to_result_3: (+1)
+   \       0x2C   0xF88D 0x1004      STRB     R1,[SP, #+4]
+    852                break;
+    853              default:
+    854                break;
+    855            }
+    856          
+    857            return result;
+   \                     ??iadc_convert_raw_data_to_result_2: (+1)
+   \       0x30   0xE9DD 0x4500      LDRD     R4,R5,[SP, #+0]
+   \       0x34   0xE9C0 0x4500      STRD     R4,R5,[R0, #+0]
+   \       0x38   0xBD33             POP      {R0,R1,R4,R5,PC}
+    858          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x0000'0000        DC32     0x0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x447A'0000        DC32     0x447a0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x4380'0000        DC32     0x43800000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x4420'0000        DC32     0x44200000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x4900'0000        DC32     0x49000000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0xC900'0000        DC32     0xc9000000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \        0x0   0x5A00'4000        DC32     0x5a004000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \        0x0   0x....'....        DC32     ?_0+132
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_2:
+   \        0x0   0x0262'5A00        DC32     0x2625a00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_3:
+   \        0x0   0x8F80'FFCF        DC32     0x8f80ffcf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_4:
+   \        0x0   0x004C'4B40        DC32     0x4c4b40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_5:
+   \        0x0   0x0098'9680        DC32     0x989680
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_6:
+   \        0x0   0x0FE0'8180        DC32     0xfe08180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_7:
+   \        0x0   0x0001'FFFF        DC32     0x1ffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_8:
+   \        0x0   0x0002'0012        DC32     0x20012
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_9:
+   \        0x0   0x0001'0052        DC32     0x10052
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_10:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_11:
+   \        0x0   0x8002'C000        DC32     0x8002c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_12:
+   \        0x0   0x800F'338F        DC32     0x800f338f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_13:
+   \        0x0   0xFFFE'E8FF        DC32     0xfffee8ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_14:
+   \        0x0   0xFFFF'FEC0        DC32     0xfffffec0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_15:
+   \        0x0   0x0262'5A01        DC32     0x2625a01
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_16:
+   \        0x0   0x000F'423F        DC32     0xf423f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_17:
+   \        0x0   0x000F'4240        DC32     0xf4240
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0x68   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0x70   0x5C 0x69          DC8 0x5C, 0x69, 0x6E, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x6E 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0x78   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x69, 0x61, 0x64, 0x63
+   \              0x6C 0x5F    
+   \              0x69 0x61    
+   \              0x64 0x63
+   \       0x80   0x2E 0x68          DC8 0x2E, 0x68, 0
+   \              0x00
+   \       0x83                      DS8 1
+   \       0x84   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x8C   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x94   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x9C   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0xA4   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0xAC   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0xB4   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0xBC   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0xC4   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0xCC   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0xD4   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0xDC   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0xE4   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x70, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x70 0x65
+   \       0xEC   0x72 0x69          DC8 0x72, 0x69, 0x70, 0x68, 0x65, 0x72, 0x61, 0x6C
+   \              0x70 0x68    
+   \              0x65 0x72    
+   \              0x61 0x6C
+   \       0xF4   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x72 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0xFC   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x69, 0x61, 0x64, 0x63
+   \              0x6C 0x5F    
+   \              0x69 0x61    
+   \              0x64 0x63
+   \      0x104   0x2E 0x63          DC8 0x2E, 0x63, 0
+   \              0x00
+   \      0x107                      DS8 1
+    859          
+    860          /***************************************************************************//**
+    861           * Get analog gain calibration value from device info.
+    862           ******************************************************************************/
+    863          static uint16_t iadc_get_analog_gain_cal_value(unsigned analog_gain)
+    864          {
+    865            uint16_t calc_ana_gain;
+    866          
+    867            switch (analog_gain) {
+    868          #if defined(_IADC_CFG_ANALOGGAIN_ANAGAIN0P25)
+    869              case SL_HAL_IADC_ANALOG_GAIN_0P25:
+    870          #endif
+    871              case SL_HAL_IADC_ANALOG_GAIN_0P5:
+    872              case SL_HAL_IADC_ANALOG_GAIN_1:
+    873                calc_ana_gain = (uint16_t)((DEVINFO->IADC0GAIN0 & _DEVINFO_IADC0GAIN0_GAINCANA1_MASK) >> _DEVINFO_IADC0GAIN0_GAINCANA1_SHIFT);
+    874                break;
+    875              case SL_HAL_IADC_ANALOG_GAIN_2:
+    876                calc_ana_gain = (uint16_t)((DEVINFO->IADC0GAIN0 & _DEVINFO_IADC0GAIN0_GAINCANA2_MASK) >> _DEVINFO_IADC0GAIN0_GAINCANA2_SHIFT);
+    877                break;
+    878              case SL_HAL_IADC_ANALOG_GAIN_3:
+    879                calc_ana_gain = (uint16_t)((DEVINFO->IADC0GAIN1 & _DEVINFO_IADC0GAIN1_GAINCANA3_MASK) >> _DEVINFO_IADC0GAIN1_GAINCANA3_SHIFT);
+    880                break;
+    881              case SL_HAL_IADC_ANALOG_GAIN_4:
+    882                calc_ana_gain = (uint16_t)((DEVINFO->IADC0GAIN1 & _DEVINFO_IADC0GAIN1_GAINCANA4_MASK) >> _DEVINFO_IADC0GAIN1_GAINCANA4_SHIFT);
+    883                break;
+    884              default:
+    885                calc_ana_gain = (uint16_t)((DEVINFO->IADC0GAIN0 & _DEVINFO_IADC0GAIN0_GAINCANA1_MASK) >> _DEVINFO_IADC0GAIN0_GAINCANA1_SHIFT);
+    886                break;
+    887            }
+    888          
+    889            return calc_ana_gain;
+    890          }
+    891          
+    892          /***************************************************************************//**
+    893           * Calculate offset for normal and high-speed modes.
+    894           ******************************************************************************/
+    895          static float iadc_calculate_offset(unsigned analog_gain,
+    896                                             sl_hal_iadc_config_adc_mode_t adc_mode)
+    897          {
+    898            float offset = 0.0f;
+    899          
+    900            if (analog_gain == SL_HAL_IADC_ANALOG_GAIN_2) {
+    901              if (adc_mode == SL_HAL_IADC_CFG_ADC_MODE_NORMAL) {
+    902                offset = (int16_t)(DEVINFO->IADC0NORMALOFFSETCAL0 >> _DEVINFO_IADC0NORMALOFFSETCAL0_OFFSETANA2NORM_SHIFT);
+    903              } else {
+    904                offset = (int16_t)(DEVINFO->IADC0HISPDOFFSETCAL0 >> _DEVINFO_IADC0HISPDOFFSETCAL0_OFFSETANA2HISPD_SHIFT);
+    905              }
+    906            } else if (analog_gain == SL_HAL_IADC_ANALOG_GAIN_3) {
+    907              if (adc_mode == SL_HAL_IADC_CFG_ADC_MODE_NORMAL) {
+    908                offset = (int16_t)(DEVINFO->IADC0NORMALOFFSETCAL0 >> _DEVINFO_IADC0NORMALOFFSETCAL0_OFFSETANA2NORM_SHIFT) * 2;
+    909              } else {
+    910                offset = (int16_t)(DEVINFO->IADC0HISPDOFFSETCAL0 >> _DEVINFO_IADC0HISPDOFFSETCAL0_OFFSETANA2HISPD_SHIFT) * 2;
+    911              }
+    912            } else if (analog_gain == SL_HAL_IADC_ANALOG_GAIN_4) {
+    913              if (adc_mode == SL_HAL_IADC_CFG_ADC_MODE_NORMAL) {
+    914                offset = (int16_t)(DEVINFO->IADC0NORMALOFFSETCAL0 >> _DEVINFO_IADC0NORMALOFFSETCAL0_OFFSETANA2NORM_SHIFT) * 3;
+    915              } else {
+    916                offset = (int16_t)(DEVINFO->IADC0HISPDOFFSETCAL0 >> _DEVINFO_IADC0HISPDOFFSETCAL0_OFFSETANA2HISPD_SHIFT) * 3;
+    917              }
+    918            }
+    919          
+    920            return offset;
+    921          }
+    922          
+    923          /***************************************************************************//**
+    924           * Calculate gain and offset for normal and high-speed modes.
+    925           ******************************************************************************/
+    926          static void iadc_calculate_normal_highspeed_gain_offset(IADC_TypeDef *iadc,
+    927                                                                  const sl_hal_iadc_init_t *init,
+    928                                                                  sl_hal_iadc_config_adc_mode_t adc_mode,
+    929                                                                  uint8_t config)
+    930          {
+    931            float offset;
+    932            uint32_t scale;
+    933            int32_t i_offset;
+    934            int32_t i_osr;
+    935            uint32_t tmp;
+    936            unsigned analog_gain;
+    937            uint16_t calc_ana_gain;
+    938          
+    939            // Calculate analog gain.
+    940            analog_gain = (iadc->CFG[config].CFG & _IADC_CFG_ANALOGGAIN_MASK) >> _IADC_CFG_ANALOGGAIN_SHIFT;
+    941            calc_ana_gain = iadc_get_analog_gain_cal_value(analog_gain);
+    942          
+    943            // Calculate base offset based on analog gain.
+    944            offset = iadc_calculate_offset(analog_gain, adc_mode);
+    945          
+    946            // Set gain correction bitfields in scale variable.
+    947            tmp = (uint32_t)calc_ana_gain & 0x9FFFU;
+    948            scale = tmp << _IADC_SCALE_GAIN13LSB_SHIFT;
+    949            if ((tmp & 0x8000U) != 0U) {
+    950              scale |= IADC_SCALE_GAIN3MSB;
+    951            }
+    952          
+    953            // Adjust offset according to selected OSR.
+    954            i_osr = 1U << (((iadc->CFG[config].CFG & _IADC_CFG_OSRHS_MASK) >> _IADC_CFG_OSRHS_SHIFT) + 1U);
+    955            if (i_osr == 2) {
+    956              if (adc_mode == SL_HAL_IADC_CFG_ADC_MODE_NORMAL) {
+    957                offset += (int16_t)(DEVINFO->IADC0NORMALOFFSETCAL0 & _DEVINFO_IADC0NORMALOFFSETCAL0_OFFSETANA1NORM_MASK);
+    958              } else {
+    959                offset += (int16_t)(DEVINFO->IADC0HISPDOFFSETCAL0 & _DEVINFO_IADC0HISPDOFFSETCAL0_OFFSETANA1HISPD_MASK);
+    960              }
+    961            } else {
+    962              if (adc_mode == SL_HAL_IADC_CFG_ADC_MODE_NORMAL) {
+    963                offset = (int16_t)(DEVINFO->IADC0NORMALOFFSETCAL1 & _DEVINFO_IADC0NORMALOFFSETCAL1_OFFSETANA3NORM_MASK) - offset;
+    964              } else {
+    965                offset += (int16_t)(DEVINFO->IADC0HISPDOFFSETCAL1 & _DEVINFO_IADC0HISPDOFFSETCAL1_OFFSETANA3HISPD_MASK) - offset;
+    966              }
+    967              offset /= (float)i_osr / 2.0f;
+    968              offset += (int16_t)(DEVINFO->IADC0OFFSETCAL0 & _DEVINFO_IADC0OFFSETCAL0_OFFSETANABASE_MASK);
+    969            }
+    970          
+    971            // Compensate offset according to selected reference voltage.
+    972            if (init->configs[config].reference == SL_HAL_IADC_REFERENCE_VREFINT_1V2) {
+    973              // Internal reference voltage (VBGR) depends on the chip revision.
+    974              offset *= 1.25f / ((float)sl_hal_iadc_get_reference_voltage(init->configs[config].reference) / 1000.0f);
+    975            } else {
+    976              offset *= 1.25f / ((float)(init->configs[config].vref) / 1000.0f);
+    977            }
+    978          
+    979            // Compensate offset for systematic offset.
+    980            offset = (offset * 4.0f) + (640.0f * (256.0f / (float)i_osr));
+    981          
+    982            // Apply gain error correction.
+    983            if (scale != 0x80000000U) {
+    984              offset = (calc_ana_gain / 32768.0f) * (offset + 524288.0f) - 524288.0f;
+    985            }
+    986          
+    987            i_offset = IADC_ROUND_D2I(-offset);
+    988          
+    989            // We only have 18 bits available for OFFSET in SCALE register
+    990            // OFFSET is a 2nd complement number.
+    991            if (i_offset > 131071) {           // Positive overflow at 0x0001FFFF ?
+    992              scale |= 0x1FFFFU;
+    993            } else if (i_offset < -131072) {   // Negative overflow at 0xFFFE0000 ?
+    994              scale |= 0x20000U;
+    995            } else {
+    996              scale |= (uint32_t)i_offset & 0x3FFFFU;
+    997            }
+    998          
+    999            iadc->CFG[config].SCALE = scale;
+   1000          }
+   1001          
+   1002          #if defined(_IADC_CFG_ADCMODE_HIGHACCURACY)
+   1003          /***************************************************************************//**
+   1004           * Calculate gain and offset for high accuracy mode.
+   1005           ******************************************************************************/
+   1006          static void iadc_calculate_high_accuracy_gain_offset(IADC_TypeDef *iadc,
+   1007                                                               const sl_hal_iadc_init_t *init,
+   1008                                                               uint8_t config)
+   1009          {
+   1010            float ana_gain;
+   1011            int32_t ana_gain_round;
+   1012            float offset_ana;
+   1013            float offset_2;
+   1014            int32_t offset_long;
+   1015            int32_t offset_ana1_high_acc_int;
+   1016            uint8_t osr_value;
+   1017            float offset_ana_base;
+   1018            float gain_sys_high_acc;
+   1019            float ref_voltage;
+   1020            unsigned analog_gain;
+   1021            uint16_t calc_ana_gain;
+   1022          
+   1023            // Calculate analog gain.
+   1024            analog_gain = (iadc->CFG[config].CFG & _IADC_CFG_ANALOGGAIN_MASK) >> _IADC_CFG_ANALOGGAIN_SHIFT;
+   1025            calc_ana_gain = iadc_get_analog_gain_cal_value(analog_gain);
+   1026          
+   1027            // Over sampling ratio for high accuracy conversions.
+   1028            const float osr_high_acc[6] = { 16.0, 32.0, 64.0, 92.0, 128.0, 256.0 };
+   1029          
+   1030            // Get reference voltage in volts.
+   1031            if (init->configs[config].reference == SL_HAL_IADC_REFERENCE_VREFINT_1V2) {
+   1032              // Internal reference voltage (VBGR) depends on the chip revision.
+   1033              ref_voltage = (float)sl_hal_iadc_get_reference_voltage(init->configs[config].reference) / 1000.0f;
+   1034            } else {
+   1035              ref_voltage = (float)init->configs[config].vref / 1000.0f;
+   1036            }
+   1037          
+   1038            // Get OSR from config register.
+   1039            osr_value = (iadc->CFG[config].CFG & _IADC_CFG_OSRHA_MASK) >> _IADC_CFG_OSRHA_SHIFT;
+   1040          
+   1041            // 1. Calculate gain correction.
+   1042            if ((uint32_t)osr_high_acc[osr_value] == 92U) {
+   1043              // for OSR = 92, gain_sys_high_acc = 0.957457.
+   1044              gain_sys_high_acc = 0.957457f;
+   1045            } else {
+   1046              // for OSR != 92, gain_sys_high_acc = OSR/(OSR + 1).
+   1047              gain_sys_high_acc = osr_high_acc[osr_value] / (osr_high_acc[osr_value] + 1.0f);
+   1048            }
+   1049          
+   1050            ana_gain = (float) calc_ana_gain * gain_sys_high_acc;
+   1051            ana_gain_round = IADC_ROUND_D2I(ana_gain);
+   1052            iadc->CFG[config].SCALE &= ~_IADC_SCALE_MASK;
+   1053          
+   1054            // Write GAIN3MSB.
+   1055            if ((uint32_t)ana_gain_round & 0x8000) {
+   1056              iadc->CFG[config].SCALE |= IADC_SCALE_GAIN3MSB_GAIN100;
+   1057            } else {
+   1058              iadc->CFG[config].SCALE |= IADC_SCALE_GAIN3MSB_GAIN011;
+   1059            }
+   1060          
+   1061            // Write GAIN13LSB.
+   1062            iadc->CFG[config].SCALE |= ((uint32_t)ana_gain_round & 0x1FFF) << _IADC_SCALE_GAIN13LSB_SHIFT;
+   1063          
+   1064            // Get offset value for high accuracy mode from DEVINFO.
+   1065            offset_ana1_high_acc_int = (uint16_t)((DEVINFO->IADC0OFFSETCAL0 & _DEVINFO_IADC0OFFSETCAL0_OFFSETANA1HIACC_MASK)
+   1066                                                  >> _DEVINFO_IADC0OFFSETCAL0_OFFSETANA1HIACC_SHIFT);
+   1067          
+   1068            // 2. OSR adjustment.
+   1069            // Get offset from DEVINFO.
+   1070            offset_ana_base = (int16_t)((DEVINFO->IADC0OFFSETCAL0 & _DEVINFO_IADC0OFFSETCAL0_OFFSETANABASE_MASK)
+   1071                                        >> _DEVINFO_IADC0OFFSETCAL0_OFFSETANABASE_SHIFT);
+   1072            // 1 << osr_value is the same as pow(2, osr_value).
+   1073            offset_ana = offset_ana_base + (float)offset_ana1_high_acc_int / (float)(1 << osr_value);
+   1074          
+   1075            // 3. Reference voltage adjustment.
+   1076            offset_ana = offset_ana * (1.25f / ref_voltage);
+   1077          
+   1078            // 4. Calculate final offset.
+   1079            offset_2 = 262144.0f / osr_high_acc[osr_value] / (osr_high_acc[osr_value] + 1.0f) + offset_ana * 4.0f + 524288.0f;
+   1080            offset_2 = (calc_ana_gain / 32768.0f * (-1.0f)) * offset_2 + 524288.0f;
+   1081            offset_long = IADC_ROUND_D2I(offset_2);
+   1082          
+   1083            // 5. Write offset to scale register.
+   1084            iadc->CFG[config].SCALE |= offset_long & _IADC_SCALE_OFFSET_MASK;
+   1085          }
+   1086          #endif
+   1087          
+   1088          #endif /* defined(IADC_COUNT) && (IADC_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      20   iadc_convert_raw_data_to_result
+      24   sl_hal_iadc_calculate_adc_clk_prescale
+        24   -> assertEFM
+      32   sl_hal_iadc_calculate_gain_offset
+        32   -> assertEFM
+        32   -> sl_hal_iadc_get_reference_voltage
+      16   sl_hal_iadc_calculate_src_clk_prescale
+        16   -> assertEFM
+      16   sl_hal_iadc_calculate_timebase
+        16   -> assertEFM
+      16   sl_hal_iadc_disable
+        16   -> assertEFM
+       8   sl_hal_iadc_enable
+         8   -> assertEFM
+      24   sl_hal_iadc_get_reference_voltage
+        24   -> assertEFM
+        24   -> sl_hal_system_get_chip_revision
+      48   sl_hal_iadc_init
+        48   -> assertEFM
+        48   -> sl_hal_iadc_calculate_adc_clk_prescale
+        48   -> sl_hal_iadc_calculate_gain_offset
+        48   -> sl_hal_iadc_calculate_src_clk_prescale
+        48   -> sl_hal_iadc_calculate_timebase
+        48   -> sl_hal_iadc_disable
+      24   sl_hal_iadc_init_scan
+        24   -> assertEFM
+        24   -> sl_hal_iadc_disable
+      24   sl_hal_iadc_init_single
+        24   -> assertEFM
+        24   -> sl_hal_iadc_disable
+         0   -> sl_hal_iadc_enable
+        24   -> sl_hal_iadc_update_single_input
+      16   sl_hal_iadc_pull_scan_fifo_result
+        16   -> assertEFM
+         0   -> iadc_convert_raw_data_to_result
+      16   sl_hal_iadc_read_scan_result
+        16   -> assertEFM
+         0   -> iadc_convert_raw_data_to_result
+      16   sl_hal_iadc_read_single_fifo_result
+        16   -> assertEFM
+         0   -> iadc_convert_raw_data_to_result
+      16   sl_hal_iadc_read_single_result
+        16   -> assertEFM
+         0   -> iadc_convert_raw_data_to_result
+      24   sl_hal_iadc_reset
+        24   -> assertEFM
+        24   -> sl_hal_iadc_disable
+        24   -> sl_hal_iadc_enable
+      16   sl_hal_iadc_set_scan_mask
+        16   -> assertEFM
+        16   -> sl_hal_iadc_enable
+      24   sl_hal_iadc_set_scan_mask_multiple_entries
+        24   -> assertEFM
+        24   -> sl_hal_iadc_enable
+      24   sl_hal_iadc_update_scan_entry
+        24   -> assertEFM
+        24   -> sl_hal_iadc_disable
+        24   -> sl_hal_iadc_enable
+      16   sl_hal_iadc_update_single_input
+        16   -> assertEFM
+        16   -> sl_hal_iadc_enable
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_10
+       4  ??DataTable14_11
+       4  ??DataTable14_12
+       4  ??DataTable14_13
+       4  ??DataTable14_14
+       4  ??DataTable14_15
+       4  ??DataTable14_16
+       4  ??DataTable14_17
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+       4  ??DataTable2
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable4
+      12  ?Subroutine0
+       6  ?Subroutine1
+       6  ?Subroutine2
+       6  ?Subroutine3
+       6  ?Subroutine4
+       6  ?Subroutine5
+      24  ?Subroutine6
+      10  ?Subroutine7
+       8  ?Subroutine8
+     264  ?_0
+      58  iadc_convert_raw_data_to_result
+      82  sl_hal_iadc_calculate_adc_clk_prescale
+     478  sl_hal_iadc_calculate_gain_offset
+      62  sl_hal_iadc_calculate_src_clk_prescale
+      66  sl_hal_iadc_calculate_timebase
+      64  sl_hal_iadc_disable
+      40  sl_hal_iadc_enable
+      62  sl_hal_iadc_get_reference_voltage
+     292  sl_hal_iadc_init
+     172  sl_hal_iadc_init_scan
+     106  sl_hal_iadc_init_single
+      26  sl_hal_iadc_pull_scan_fifo_result
+      26  sl_hal_iadc_read_scan_result
+      20  sl_hal_iadc_read_single_fifo_result
+      22  sl_hal_iadc_read_single_result
+     314  sl_hal_iadc_reset
+      60  sl_hal_iadc_set_scan_mask
+      90  sl_hal_iadc_set_scan_mask_multiple_entries
+     126  sl_hal_iadc_update_scan_entry
+      84  sl_hal_iadc_update_single_input
+
+ 
+   264 bytes in section .rodata
+ 2'430 bytes in section .text
+ 
+ 2'326 bytes of CODE  memory (+ 104 bytes shared)
+   264 bytes of CONST memory
+
+Errors: none
+Warnings: none

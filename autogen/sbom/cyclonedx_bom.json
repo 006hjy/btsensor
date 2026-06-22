@@ -3,7 +3,7 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2026-06-20T03:01:33Z",
+    "timestamp" : "2026-06-21T07:00:42Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
     } ],
@@ -84,6 +84,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:nvm3_source",
+      "name" : "NVM3 Core (source)",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:power_manager",
       "name" : "Power Manager",
       "version" : "2025.12.3",
@@ -146,6 +158,18 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:emlib_iadc",
       "name" : "IADC",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:bit",
+      "name" : "Bit Operations Library",
       "version" : "2025.12.3",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -264,8 +288,32 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:nvm3_default_config",
+      "name" : "NVM3 Default Config",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:event_handler",
       "name" : "Event Handler",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:memory_manager_region",
+      "name" : "Memory Manager region",
       "version" : "2025.12.3",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -360,6 +408,30 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:memory_manager_retention_control",
+      "name" : "Memory Manager Retention Control",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:nvm3_optimization_disable",
+      "name" : "NVM3 disable optimization",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:sl_main_memory_init",
       "name" : "sl_main Setup",
       "version" : "2025.12.3",
@@ -408,6 +480,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:memory_manager",
+      "name" : "Memory Manager",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:status",
       "name" : "Status Codes Definitions",
       "version" : "2025.12.3",
@@ -444,8 +528,32 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:nvm3_default_flash_backend",
+      "name" : "NVM3 back-end for default instance in flash",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:device_clock_hal",
       "name" : "Device Manager Clock HAL",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:memory_manager_pool",
+      "name" : "Memory Manager Memory Pool",
       "version" : "2025.12.3",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -542,6 +650,18 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:emlib_burtc",
       "name" : "BURTC",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:errno_error_codes",
+      "name" : "errno error codes support",
       "version" : "2025.12.3",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -764,6 +884,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:memory_manager_retention_control_hal",
+      "name" : "Memory Manager Retention Control HAL",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:udelay",
       "name" : "Microsecond Delay",
       "version" : "2025.12.3",
@@ -778,6 +910,18 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:sl_common",
       "name" : "Common Functions",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:nvm3_default",
+      "name" : "NVM3 Default Instance",
       "version" : "2025.12.3",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -838,6 +982,18 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2025.12.3:gpio",
       "name" : "GPIO Driver",
+      "version" : "2025.12.3",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2025.12.3:hal_iadc",
+      "name" : "IADC",
       "version" : "2025.12.3",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."

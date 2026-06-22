@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:36
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:38
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -22,6 +22,7 @@
 #        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
 #        CMSIS_NVIC_VIRTUAL=1 -D
 #        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
 #        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
@@ -56,6 +57,8 @@
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
 #        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
@@ -67,6 +70,12 @@
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
 #        -I
@@ -386,6 +395,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
     243          
     244          #if defined(SL_CATALOG_MEMORY_MANAGER_PRESENT) && !defined(SL_CATALOG_CPP_SUPPORT_PRESENT)
     245            sl_memory_init();
+   \        0x2   0x.... 0x....      BL       sl_memory_init
     246            SLI_METRIC_EVENT_HANDLER_SAVE("sl_memory_init");
     247          #endif
     248          
@@ -401,24 +411,24 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
     258          
     259          #if defined(SL_CATALOG_HAL_SYSTEM_PRESENT)
     260            sl_hal_system_init();
-   \        0x2   0x.... 0x....      BL       sl_hal_system_init
+   \        0x6   0x.... 0x....      BL       sl_hal_system_init
     261            SLI_METRIC_EVENT_HANDLER_SAVE("sl_hal_system_init");
     262          #endif
     263          
     264            // Pre-clock application initialization.
     265            app_init_pre_clock();
-   \        0x6   0x.... 0x....      BL       app_init_pre_clock
+   \        0xA   0x.... 0x....      BL       app_init_pre_clock
     266            SLI_METRIC_EVENT_HANDLER_SAVE("app_init_pre_clock");
     267          
     268          #if defined(SL_CATALOG_INTERRUPT_MANAGER_PRESENT)
     269            sl_interrupt_manager_init();
-   \        0xA   0x.... 0x....      BL       sl_interrupt_manager_init
+   \        0xE   0x.... 0x....      BL       sl_interrupt_manager_init
     270            SLI_METRIC_EVENT_HANDLER_SAVE("sl_interrupt_manager_init");
     271          #endif
     272          
     273          #if defined(SL_CATALOG_DEVICE_INIT_DCDC_PRESENT)
     274            sl_device_init_dcdc();
-   \        0xE   0x.... 0x....      BL       sl_device_init_dcdc
+   \       0x12   0x.... 0x....      BL       sl_device_init_dcdc
     275            SLI_METRIC_EVENT_HANDLER_SAVE("sl_device_init_dcdc");
     276          #endif
     277          
@@ -464,7 +474,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
     317          
     318          #if defined(SL_CATALOG_CLOCK_MANAGER_PRESENT)
     319            sl_clock_manager_init();
-   \       0x12   0x.... 0x....      BL       sl_clock_manager_init
+   \       0x16   0x.... 0x....      BL       sl_clock_manager_init
     320            SLI_METRIC_EVENT_HANDLER_SAVE("sl_clock_manager_init");
     321          #endif
     322          
@@ -479,13 +489,13 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
     331          
     332          #if defined(SL_CATALOG_SLEEPTIMER_PRESENT)
     333            sl_sleeptimer_init();
-   \       0x16   0x.... 0x....      BL       sl_sleeptimer_init
+   \       0x1A   0x.... 0x....      BL       sl_sleeptimer_init
     334            SLI_METRIC_EVENT_HANDLER_SAVE("sl_sleeptimer_init");
     335          #endif
     336          
     337          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
     338            sl_power_manager_init();
-   \       0x1A   0x.... 0x....      BL       sl_power_manager_init
+   \       0x1E   0x.... 0x....      BL       sl_power_manager_init
     339            SLI_METRIC_EVENT_HANDLER_SAVE("sl_power_manager_init");
     340          #endif
     341          
@@ -501,7 +511,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
     351          
     352            // Early application initialization (post-system init).
     353            app_init_early();
-   \       0x1E   0x.... 0x....      BL       app_init_early
+   \       0x22   0x.... 0x....      BL       app_init_early
     354            SLI_METRIC_EVENT_HANDLER_SAVE("app_init_early");
     355          
     356          #ifdef SL_CATALOG_LEGACY_HAL_SOC_PRESENT
@@ -515,12 +525,12 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
     364          #endif
     365          
     366            sli_allocate_permanent_memory();
-   \       0x22   0x.... 0x....      BL       sli_allocate_permanent_memory
+   \       0x26   0x.... 0x....      BL       sli_allocate_permanent_memory
     367            SLI_METRIC_EVENT_HANDLER_SAVE("sli_allocate_permanent_memory");
     368          
     369            // Internal early init event.
     370            sli_internal_init_early();
-   \       0x26   0x.... 0x....      BL       sli_internal_init_early
+   \       0x2A   0x.... 0x....      BL       sli_internal_init_early
     371            SLI_METRIC_EVENT_HANDLER_SAVE("sli_internal_init_early");
     372          
     373          #if defined(SL_CATALOG_KERNEL_PRESENT)
@@ -530,8 +540,8 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
     377          
     378          #if !defined(SL_CATALOG_KERNEL_PRESENT)
     379            sl_main_second_stage_init();
-   \       0x2A   0xE8BD 0x4001      POP      {R0,LR}
-   \       0x2E   0x....             B.N      sl_main_second_stage_init
+   \       0x2E   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x32   0x....             B.N      sl_main_second_stage_init
     380          #endif
     381          }
 
@@ -552,6 +562,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
          8   -> sl_hal_system_init
          8   -> sl_interrupt_manager_init
          0   -> sl_main_second_stage_init
+         8   -> sl_memory_init
          8   -> sl_power_manager_init
          8   -> sl_sleeptimer_init
          8   -> sli_allocate_permanent_memory
@@ -574,13 +585,13 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
        2  app_init_post_platform
        2  app_init_pre_clock
        2  app_process_action
-      48  sl_main_init
+      52  sl_main_init
       30  sl_main_second_stage_init
 
  
- 88 bytes in section .text
+ 92 bytes in section .text
  
- 78 bytes of CODE memory (+ 10 bytes shared)
+ 82 bytes of CODE memory (+ 10 bytes shared)
 
 Errors: none
 Warnings: none

@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-#     IAR Assembler V9.70.4.588/W64 for ARM 20/Jun/2026  11:05:37             #
+#     IAR Assembler V9.70.4.588/W64 for ARM 21/Jun/2026  15:55:38             #
 #     Copyright 1999-2026 IAR Systems AB.                                     #
 #                                                                             #
 #           Source file   =  C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s#
@@ -23,6 +23,7 @@
 #                            -DSL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager #
 #                            -DCMSIS_NVIC_VIRTUAL=1                           #
 #                            -DCMSIS_NVIC_VIRTUAL_HEADER_FILE="cmsis_nvic_virtual.h" #
+#                            -DSL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager #
 #                            -DSL_CODE_COMPONENT_POWER_MANAGER=power_manager  #
 #                            -DSL_CODE_COMPONENT_CORE=core                    #
 #                            -DSL_CODE_COMPONENT_SLEEPTIMER=sleeptimer        #
@@ -44,12 +45,16 @@
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\ #
+#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\ #
+#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\ #
+#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\ #
+#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\ #
 #                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\ #

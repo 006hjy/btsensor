@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         20/Jun/2026  11:05:34
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:35
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -22,6 +22,7 @@
 #        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
 #        CMSIS_NVIC_VIRTUAL=1 -D
 #        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
 #        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
@@ -56,6 +57,8 @@
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
 #        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
@@ -67,6 +70,12 @@
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
 #        -I
 #        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
 #        -I
@@ -151,18 +160,18 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_uartdrv_init.c
      31          UARTDRV_InitEuart_t sl_uartdrv_eusart_init_inst0 = {   
    \                     sl_uartdrv_eusart_init_inst0:
    \        0x4   0x5A03'0000        DC32 0x5a03'0000
-   \        0x8   0x00               DC8 0
+   \        0x8   0x01               DC8 1
    \        0x9                      DS8 3
-   \        0xC   0x0001'C200        DC32 115'200
+   \        0xC   0x0000'2580        DC32 9'600
    \       0x10   0x00 0x00          DC8 0, 0, 5, 6, 0
    \              0x05 0x06    
    \              0x00
    \       0x15                      DS8 1
    \       0x16   0x1000 0x0000      DC16 4'096, 0
-   \       0x1A   0x00               DC8 0
+   \       0x1A   0x80               DC8 128
    \       0x1B                      DS8 1
-   \       0x1C   0x0000'0000        DC32 0
-   \       0x20   0x03 0x00          DC8 3, 0, 0, 0, 0
+   \       0x1C   0x4000'0000        DC32 1'073'741'824
+   \       0x20   0x00 0x00          DC8 0, 0, 0, 0, 0
    \              0x00 0x00    
    \              0x00
    \       0x25                      DS8 3
@@ -171,17 +180,17 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_uartdrv_init.c
 
    \                                 In section .data, align 4
    \                     sl_uartdrv_eusart_inst0_rx_buffer:
-   \        0x0   0x0000 0x0000      DC16 0, 0, 0, 6
+   \        0x0   0x0000 0x0000      DC16 0, 0, 0, 1
    \               0x0000 0x000
-   \              6
-   \        0x8                      DS8 120
+   \              1
+   \        0x8                      DS8 20
 
    \                                 In section .data, align 4
    \                     sl_uartdrv_eusart_inst0_tx_buffer:
-   \        0x0   0x0000 0x0000      DC16 0, 0, 0, 6
+   \        0x0   0x0000 0x0000      DC16 0, 0, 0, 1
    \               0x0000 0x000
-   \              6
-   \        0x8                      DS8 120
+   \              1
+   \        0x8                      DS8 20
      32            .port = SL_UARTDRV_EUSART_INST0_PERIPHERAL,
      33            .useLowFrequencyMode = SL_UARTDRV_EUSART_INST0_LF_MODE,
      34            .baudRate = SL_UARTDRV_EUSART_INST0_BAUDRATE,
@@ -283,8 +292,8 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_uartdrv_init.c
       48  sl_uartdrv_eusart_inst0_handle
           sl_uartdrv_eusart_init_inst0
      100  sl_uartdrv_eusart_inst0_handle_data
-     128  sl_uartdrv_eusart_inst0_rx_buffer
-     128  sl_uartdrv_eusart_inst0_tx_buffer
+      28  sl_uartdrv_eusart_inst0_rx_buffer
+      28  sl_uartdrv_eusart_inst0_tx_buffer
        6  sl_uartdrv_get_default
       18  sl_uartdrv_init_instances
       14  sl_uartdrv_set_default
@@ -292,11 +301,11 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\sl_uartdrv_init.c
 
  
  104 bytes in section .bss
- 304 bytes in section .data
+ 104 bytes in section .data
   46 bytes in section .text
  
   46 bytes of CODE memory
- 408 bytes of DATA memory
+ 208 bytes of DATA memory
 
 Errors: none
 Warnings: none

@@ -1,0 +1,820 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:37
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
+#    Command line      =
+#        -f
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.rsp
+#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.iar_deps
+#        --dynamic_output
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir\sl_memory_manager_pool.lst
+#    Object file       =
+#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Memory Manager Driver's Memory Pool Lightweight Feature Implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2023 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_memory_manager.h"
+     32          #include "sli_memory_manager.h"
+     33          #include "sl_memory_manager_config.h"
+     34          
+     35          #include "sl_assert.h"
+     36          #include "sl_core.h"
+     37          
+     38          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     39          #include "sl_component_catalog.h"
+     40          #endif
+     41          
+     42          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+     43          #include "sli_memory_profiler.h"
+     44          #endif
+     45          
+     46          /*******************************************************************************
+     47           *********************************   DEFINES   *********************************
+     48           ******************************************************************************/
+     49          
+     50          #define SLI_MEM_POOL_OUT_OF_MEMORY     UINTPTR_MAX
+     51          #define SLI_MEM_POOL_REQUIRED_PADDING(obj_size) (((sizeof(size_t) - ((obj_size) % sizeof(size_t))) % sizeof(size_t)))
+     52          
+     53          #if (defined(SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE) && (SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE == 1))
+     54          /***************************************************************************//**
+     55           * Checks if a value looks like a valid free list pointer.
+     56           * Used as a quick O(1) pre-check for double-free detection.
+     57           *
+     58           * A value looks like a free list pointer if it's either:
+     59           * - The end-of-list marker (SLI_MEM_POOL_OUT_OF_MEMORY), OR
+     60           * - A block-aligned address within the pool's memory range
+     61           *
+     62           * @param[in] pool_handle  Pointer to the memory pool handle.
+     63           * @param[in] value        The value to check.
+     64           *
+     65           * @return true if value looks like it could be a free list pointer.
+     66           ******************************************************************************/
+     67          static inline bool sli_looks_like_free_list_ptr(const sl_memory_pool_t *pool_handle,
+     68                                                          size_t value)
+     69          {
+     70            // Check for end-of-list marker.
+     71            if (value == SLI_MEM_POOL_OUT_OF_MEMORY) {
+     72              return true;
+     73            }
+     74          
+     75            // Check if it points within the pool's block range.
+     76            size_t pool_start = (size_t)pool_handle->block_address;
+     77            size_t pool_end = pool_start + (pool_handle->block_size * pool_handle->block_count);
+     78          
+     79            if ((value >= pool_start) && (value < pool_end)) {
+     80              // Must be aligned to a block boundary.
+     81              size_t offset = value - pool_start;
+     82              return (offset % pool_handle->block_size) == 0;
+     83            }
+     84          
+     85            return false;
+     86          }
+     87          
+     88          /***************************************************************************//**
+     89           * Checks if a block is in the free list by walking the list.
+     90           * Used as O(n) verification when the quick check is suspicious.
+     91           *
+     92           * @param[in] pool_handle  Pointer to the memory pool handle.
+     93           * @param[in] block        The block address to search for.
+     94           *
+     95           * @return true if block is found in the free list (already freed).
+     96           *
+     97           * @note Must be called within an atomic section.
+     98           ******************************************************************************/
+     99          static bool sli_block_is_in_free_list(const sl_memory_pool_t *pool_handle,
+    100                                                const void *block)
+    101          {
+    102            void *current = pool_handle->block_free;
+    103          
+    104            while ((size_t)current != SLI_MEM_POOL_OUT_OF_MEMORY) {
+    105              if (current == block) {
+    106                return true;
+    107              }
+    108              // Follow the free list to the next block.
+    109              current = (void *)*(size_t *)current;
+    110            }
+    111          
+    112            return false;
+    113          }
+    114          #endif // (defined(SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE) && (SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE == 1))
+    115          /***************************************************************************//**
+    116           * Creates a memory pool.
+    117           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    118          sl_status_t sl_memory_create_pool(size_t block_size,
+    119                                            uint32_t block_count,
+    120                                            sl_memory_pool_t *pool_handle)
+    121          {
+   \                     sl_memory_create_pool: (+1)
+   \        0x0   0x4613             MOV      R3,R2
+    122            return sl_memory_heap_create_pool(&sli_general_purpose_heap, block_size, block_count, pool_handle);
+   \        0x2   0x460A             MOV      R2,R1
+   \        0x4   0x4601             MOV      R1,R0
+   \        0x6   0x....             LDR.N    R0,??DataTable1
+   \        0x8   0x....             B.N      sl_memory_heap_create_pool
+    123          }
+    124          
+    125          /***************************************************************************//**
+    126           * Deletes a memory pool.
+    127           *
+    128           * @note The pool_handle provided is neither freed or invalidated. It can be
+    129           *       reused in a new call to sl_memory_create_pool() to create another pool.
+    130           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    131          sl_status_t sl_memory_delete_pool(sl_memory_pool_t *pool_handle)
+    132          {
+   \                     sl_memory_delete_pool: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    133            uint32_t free_block_count;
+    134            sl_status_t status;
+    135          
+    136            if (pool_handle == NULL) {
+   \        0x4   0xBF1C             ITT      NE
+   \        0x6   0x6820             LDRNE    R0,[R4, #+0]
+   \        0x8   0x2800             CMPNE    R0,#+0
+    137              return SL_STATUS_NULL_POINTER;
+    138            }
+    139          
+    140            // Verify that the pool was properly initialized.
+    141            if (pool_handle->block_address == NULL) {
+   \        0xA   0xD101             BNE.N    ??sl_memory_delete_pool_0
+    142              return SL_STATUS_NULL_POINTER;
+   \        0xC   0x2022             MOVS     R0,#+34
+   \        0xE   0xBD10             POP      {R4,PC}
+    143            }
+    144          
+    145            // Verify that no blocks are allocated.
+    146            free_block_count = sl_memory_pool_get_free_block_count(pool_handle);
+   \                     ??sl_memory_delete_pool_0: (+1)
+   \       0x10   0x4620             MOV      R0,R4
+   \       0x12   0x.... 0x....      BL       sl_memory_pool_get_free_block_count
+    147            if (free_block_count != pool_handle->block_count) {
+   \       0x16   0x68A1             LDR      R1,[R4, #+8]
+   \       0x18   0x4288             CMP      R0,R1
+   \       0x1A   0xD001             BEQ.N    ??sl_memory_delete_pool_1
+    148              return SL_STATUS_INVALID_STATE;
+   \       0x1C   0x2002             MOVS     R0,#+2
+   \       0x1E   0xBD10             POP      {R4,PC}
+    149            }
+    150          
+    151          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    152            // Delete the memory tracker
+    153            sli_memory_profiler_delete_tracker(pool_handle);
+    154          #endif
+    155          
+    156            // Free block.
+    157            status = sl_memory_free(pool_handle->block_address);
+    158          
+    159            return status;
+   \                     ??sl_memory_delete_pool_1: (+1)
+   \       0x20   0x6820             LDR      R0,[R4, #+0]
+   \       0x22   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x26   0x.... 0x....      B.W      sl_memory_free
+    160          }
+    161          
+    162          /***************************************************************************//**
+    163           * Allocates a block from a memory pool.
+    164           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    165          sl_status_t sl_memory_pool_alloc(sl_memory_pool_t *pool_handle,
+    166                                           void **block)
+    167          {
+   \                     sl_memory_pool_alloc: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    168          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    169            void * volatile return_address = sli_memory_profiler_get_return_address();
+    170          #endif
+    171            CORE_DECLARE_IRQ_STATE;
+    172          
+    173            if ((pool_handle == NULL) || (block == NULL)) {
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2D00             CMPNE    R5,#+0
+   \        0xA   0xD101             BNE.N    ??sl_memory_pool_alloc_0
+    174              return SL_STATUS_NULL_POINTER;
+   \        0xC   0x2022             MOVS     R0,#+34
+   \        0xE   0xBD70             POP      {R4-R6,PC}
+    175            }
+    176          
+    177            // No block allocated yet.
+    178            *block = NULL;
+   \                     ??sl_memory_pool_alloc_0: (+1)
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x6028             STR      R0,[R5, #+0]
+    179          
+    180            CORE_ENTER_ATOMIC();
+   \       0x14   0x.... 0x....      BL       CORE_EnterAtomic
+    181          
+    182            if ((size_t)pool_handle->block_free == SLI_MEM_POOL_OUT_OF_MEMORY) {
+   \       0x18   0x6866             LDR      R6,[R4, #+4]
+   \       0x1A   0xF116 0x0F01      CMN      R6,#+1
+   \       0x1E   0xD103             BNE.N    ??sl_memory_pool_alloc_1
+    183              CORE_EXIT_ATOMIC();
+   \       0x20   0x.... 0x....      BL       CORE_ExitAtomic
+    184          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    185              sli_memory_profiler_track_alloc_with_ownership(pool_handle, NULL, pool_handle->block_size, return_address);
+    186          #endif
+    187              return SL_STATUS_EMPTY;
+   \       0x24   0x201B             MOVS     R0,#+27
+   \       0x26   0xBD70             POP      {R4-R6,PC}
+    188            }
+    189          
+    190            // Get the next free block.
+    191            void *block_addr = pool_handle->block_free;
+    192          
+    193            // Update the next free block using the address saved in that block.
+    194            pool_handle->block_free = (void *)*(size_t *)block_addr;
+   \                     ??sl_memory_pool_alloc_1: (+1)
+   \       0x28   0x6831             LDR      R1,[R6, #+0]
+   \       0x2A   0x6061             STR      R1,[R4, #+4]
+    195          
+    196          #if defined(MEMORY_MANAGER_TEST_CONDITIONS)
+    197            // Clear the first word of the allocated block so it doesn't look like
+    198            // a free list pointer. This enables O(1) double-free detection in most cases.
+    199            // Without this, unwritten blocks would trigger the O(n) verification path
+    200            // because they still contain the old "next" pointer from the free list.
+    201            // This is only done in test conditions to avoid performance impact.
+    202            *(size_t *)block_addr = 0;
+    203          #endif
+    204          
+    205            CORE_EXIT_ATOMIC();
+   \       0x2C   0x.... 0x....      BL       CORE_ExitAtomic
+    206          
+    207          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    208            sli_memory_profiler_track_alloc_with_ownership(pool_handle, block_addr, pool_handle->block_size, return_address);
+    209          #endif
+    210          
+    211            *block = block_addr;
+   \       0x30   0x602E             STR      R6,[R5, #+0]
+    212          
+    213            return SL_STATUS_OK;
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0xBD70             POP      {R4-R6,PC}
+    214          }
+    215          
+    216          /***************************************************************************//**
+    217           * Frees a block from a memory pool.
+    218           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    219          sl_status_t sl_memory_pool_free(sl_memory_pool_t *pool_handle,
+    220                                          void *block)
+    221          {
+   \                     sl_memory_pool_free: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    222            CORE_DECLARE_IRQ_STATE;
+    223          
+    224            if ((pool_handle == NULL) || (block == NULL)) {
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2D00             CMPNE    R5,#+0
+   \        0xA   0xD101             BNE.N    ??sl_memory_pool_free_0
+    225              return SL_STATUS_NULL_POINTER;
+   \        0xC   0x2022             MOVS     R0,#+34
+   \        0xE   0xBD70             POP      {R4-R6,PC}
+    226            }
+    227          
+    228            // Validate that the provided address is in the pool payload range.
+    229            if ((block < pool_handle->block_address)
+    230                || ((size_t)block >= ((size_t)pool_handle->block_address + (pool_handle->block_size * pool_handle->block_count)))) {
+   \                     ??sl_memory_pool_free_0: (+1)
+   \       0x10   0x6821             LDR      R1,[R4, #+0]
+   \       0x12   0x428D             CMP      R5,R1
+   \       0x14   0xD324             BCC.N    ??sl_memory_pool_free_1
+   \       0x16   0x68E3             LDR      R3,[R4, #+12]
+   \       0x18   0x68A0             LDR      R0,[R4, #+8]
+   \       0x1A   0xFB00 0x1103      MLA      R1,R0,R3,R1
+   \       0x1E   0x428D             CMP      R5,R1
+   \       0x20   0xD21E             BCS.N    ??sl_memory_pool_free_1
+    231              return SL_STATUS_INVALID_PARAMETER;
+    232            }
+    233          
+    234            CORE_ENTER_ATOMIC();
+   \       0x22   0x.... 0x....      BL       CORE_EnterAtomic
+    235          
+    236          #if (defined(SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE) && (SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE == 1))
+    237            // Double-free detection using hybrid approach:
+    238            //
+    239            // O(1) check: does block content look like a free list pointer?
+    240            // After allocation, sl_memory_pool_alloc() clears the first word to 0.
+    241            // After a legitimate free, the block contains a pointer to the next free block
+    242            // (a valid block address) or the end marker. If the block was allocated and the
+    243            // user didn't overwrite the first word with a valid block address (rare), the
+    244            // content will be 0 and this check will pass quickly.
+    245            size_t stored_value = *(size_t *)block;
+    246            if (sli_looks_like_free_list_ptr(pool_handle, stored_value)) {
+   \       0x26   0x6829             LDR      R1,[R5, #+0]
+   \       0x28   0xF111 0x0F01      CMN      R1,#+1
+   \       0x2C   0xD00E             BEQ.N    ??sl_memory_pool_free_2
+   \       0x2E   0x6822             LDR      R2,[R4, #+0]
+   \       0x30   0x4291             CMP      R1,R2
+   \       0x32   0xD317             BCC.N    ??sl_memory_pool_free_3
+   \       0x34   0x68E3             LDR      R3,[R4, #+12]
+   \       0x36   0x68A6             LDR      R6,[R4, #+8]
+   \       0x38   0xFB06 0x2603      MLA      R6,R6,R3,R2
+   \       0x3C   0x42B1             CMP      R1,R6
+   \       0x3E   0xD211             BCS.N    ??sl_memory_pool_free_3
+   \       0x40   0x1A89             SUBS     R1,R1,R2
+   \       0x42   0xFBB1 0xF2F3      UDIV     R2,R1,R3
+   \       0x46   0xFB03 0x1112      MLS      R1,R3,R2,R1
+   \       0x4A   0xB959             CBNZ.N   R1,??sl_memory_pool_free_3
+    247              // Content looks suspicious - verify by walking the free list.
+    248              if (sli_block_is_in_free_list(pool_handle, block)) {
+   \                     ??sl_memory_pool_free_2: (+1)
+   \       0x4C   0x6861             LDR      R1,[R4, #+4]
+   \       0x4E   0xE000             B.N      ??sl_memory_pool_free_4
+   \                     ??sl_memory_pool_free_5: (+1)
+   \       0x50   0x6809             LDR      R1,[R1, #+0]
+   \                     ??sl_memory_pool_free_4: (+1)
+   \       0x52   0xF111 0x0F01      CMN      R1,#+1
+   \       0x56   0xD005             BEQ.N    ??sl_memory_pool_free_3
+   \       0x58   0x42A9             CMP      R1,R5
+   \       0x5A   0xD1F9             BNE.N    ??sl_memory_pool_free_5
+    249                // Block is actually in the free list - this is a double-free.
+    250                CORE_EXIT_ATOMIC();
+   \       0x5C   0x.... 0x....      BL       CORE_ExitAtomic
+    251                return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_memory_pool_free_1: (+1)
+   \       0x60   0x2021             MOVS     R0,#+33
+   \       0x62   0xBD70             POP      {R4-R6,PC}
+    252              }
+    253              // False positive: user data happened to look like a free list pointer.
+    254              // Proceed with normal free.
+    255            }
+    256          #endif // (defined(SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE) && (SL_MEMORY_MANAGER_POOL_DOUBLE_FREE_PROTECTION_ENABLE == 1))
+    257          
+    258          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    259            sli_memory_profiler_track_free(pool_handle, block);
+    260          #endif
+    261          
+    262            // Save the current free block address in this block and update free list head.
+    263            *(size_t *)block = (size_t)pool_handle->block_free;
+   \                     ??sl_memory_pool_free_3: (+1)
+   \       0x64   0x6861             LDR      R1,[R4, #+4]
+   \       0x66   0x6029             STR      R1,[R5, #+0]
+    264            pool_handle->block_free = block;
+   \       0x68   0x6065             STR      R5,[R4, #+4]
+    265          
+    266            CORE_EXIT_ATOMIC();
+   \       0x6A   0x.... 0x....      BL       CORE_ExitAtomic
+    267          
+    268            return SL_STATUS_OK;
+   \       0x6E   0x2000             MOVS     R0,#+0
+   \       0x70   0xBD70             POP      {R4-R6,PC}
+    269          }
+    270          
+    271          /***************************************************************************//**
+    272           * Gets the count of free blocks in a memory pool.
+    273           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    274          uint32_t sl_memory_pool_get_free_block_count(const sl_memory_pool_t *pool_handle)
+    275          {
+   \                     sl_memory_pool_get_free_block_count: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    276            uint32_t free_block_count = 0;
+   \        0x4   0x2500             MOVS     R5,#+0
+    277            void *free_block;
+    278          
+    279            if (pool_handle == NULL) {
+   \        0x6   0xB15C             CBZ.N    R4,??sl_memory_pool_get_free_block_count_0
+    280              return 0;
+    281            }
+    282          
+    283            CORE_DECLARE_IRQ_STATE;
+    284            CORE_ENTER_ATOMIC();
+   \        0x8   0x.... 0x....      BL       CORE_EnterAtomic
+    285          
+    286            free_block = pool_handle->block_free;
+   \        0xC   0x6861             LDR      R1,[R4, #+4]
+   \        0xE   0xE001             B.N      ??sl_memory_pool_get_free_block_count_1
+    287          
+    288            // Go through the free block list and count the number of free blocks remaining.
+    289            while ((size_t)free_block != SLI_MEM_POOL_OUT_OF_MEMORY) {
+    290              free_block = (void *)*(size_t *)free_block;
+   \                     ??sl_memory_pool_get_free_block_count_2: (+1)
+   \       0x10   0x6809             LDR      R1,[R1, #+0]
+    291              free_block_count++;
+   \       0x12   0x1C6D             ADDS     R5,R5,#+1
+    292            }
+   \                     ??sl_memory_pool_get_free_block_count_1: (+1)
+   \       0x14   0xF111 0x0F01      CMN      R1,#+1
+   \       0x18   0xD1FA             BNE.N    ??sl_memory_pool_get_free_block_count_2
+    293          
+    294            CORE_EXIT_ATOMIC();
+   \       0x1A   0x.... 0x....      BL       CORE_ExitAtomic
+    295          
+    296            return free_block_count;
+   \       0x1E   0x4628             MOV      R0,R5
+   \                     ??sl_memory_pool_get_free_block_count_0: (+1)
+   \       0x20   0xBD32             POP      {R1,R4,R5,PC}
+    297          }
+    298          
+    299          /***************************************************************************//**
+    300           * Creates a memory pool from a specific heap instance.
+    301           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    302          sl_status_t sl_memory_heap_create_pool(sl_memory_heap_t *heap,
+    303                                                 size_t block_size,
+    304                                                 uint32_t block_count,
+    305                                                 sl_memory_pool_t *pool_handle)
+    306          {
+   \                     sl_memory_heap_create_pool: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x4606             MOV      R6,R0
+    307          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    308            void * volatile return_address = sli_memory_profiler_get_return_address();
+    309          #endif
+    310            sl_status_t status = SL_STATUS_OK;
+    311            uint8_t *block = NULL;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x460F             MOV      R7,R1
+   \        0xA   0x4614             MOV      R4,R2
+   \        0xC   0x461D             MOV      R5,R3
+   \        0xE   0x9000             STR      R0,[SP, #+0]
+    312            size_t block_addr;
+    313            size_t pool_size;
+    314          
+    315            // Make sure the heap handle isn't NULL.
+    316            EFM_ASSERT(heap != NULL);
+   \       0x10   0x.... 0x....      LDR.W    R8,??DataTable1_1
+   \       0x14   0xB926             CBNZ.N   R6,??sl_memory_heap_create_pool_0
+   \       0x16   0xF44F 0x719E      MOV      R1,#+316
+   \       0x1A   0x4640             MOV      R0,R8
+   \       0x1C   0x.... 0x....      BL       assertEFM
+    317          
+    318            EFM_ASSERT(block_count > 0);
+   \                     ??sl_memory_heap_create_pool_0: (+1)
+   \       0x20   0xB924             CBNZ.N   R4,??sl_memory_heap_create_pool_1
+   \       0x22   0xF44F 0x719F      MOV      R1,#+318
+   \       0x26   0x4640             MOV      R0,R8
+   \       0x28   0x.... 0x....      BL       assertEFM
+    319            EFM_ASSERT(block_size > 0);
+   \                     ??sl_memory_heap_create_pool_1: (+1)
+   \       0x2C   0xB927             CBNZ.N   R7,??sl_memory_heap_create_pool_2
+   \       0x2E   0xF240 0x113F      MOVW     R1,#+319
+   \       0x32   0x4640             MOV      R0,R8
+   \       0x34   0x.... 0x....      BL       assertEFM
+    320          
+    321            if (pool_handle == NULL) {
+   \                     ??sl_memory_heap_create_pool_2: (+1)
+   \       0x38   0xB90D             CBNZ.N   R5,??sl_memory_heap_create_pool_3
+    322              return SL_STATUS_NULL_POINTER;
+   \       0x3A   0x2022             MOVS     R0,#+34
+   \       0x3C   0xE021             B.N      ??sl_memory_heap_create_pool_4
+    323            }
+    324          
+    325            // SLI_MEM_POOL_REQUIRED_PADDING Rounds up to the nearest platform-dependant size. On a 32-bit processor,
+    326            // it will be rounded-up to 4 bytes. E.g. 101 bytes will be rounded up to 104 bytes.
+    327            pool_handle->block_size = block_size + (uint16_t)SLI_MEM_POOL_REQUIRED_PADDING(block_size);
+   \                     ??sl_memory_heap_create_pool_3: (+1)
+   \       0x3E   0xF1C7 0x0004      RSB      R0,R7,#+4
+   \       0x42   0xF000 0x0003      AND      R0,R0,#0x3
+   \       0x46   0x1839             ADDS     R1,R7,R0
+    328            pool_handle->block_count = block_count;
+    329          
+    330            // Reserve a block in which the entire pool will reside. Uses a long term allocation to keep
+    331            // behavior similar to dynamic reservation.
+    332            pool_size = pool_handle->block_size * pool_handle->block_count;
+    333            status = sl_memory_heap_alloc(heap, pool_size, BLOCK_TYPE_LONG_TERM, (void **)&block);
+   \       0x48   0x60E9             STR      R1,[R5, #+12]
+   \       0x4A   0x4361             MULS     R1,R4,R1
+   \       0x4C   0x60AC             STR      R4,[R5, #+8]
+   \       0x4E   0x466B             MOV      R3,SP
+   \       0x50   0x2200             MOVS     R2,#+0
+   \       0x52   0x4630             MOV      R0,R6
+   \       0x54   0x.... 0x....      BL       sl_memory_heap_alloc
+    334          
+    335          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    336            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE, block, return_address);
+    337          #endif
+    338          
+    339            if (status != SL_STATUS_OK) {
+   \       0x58   0xB998             CBNZ.N   R0,??sl_memory_heap_create_pool_4
+    340              return status;
+    341            }
+    342          
+    343          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    344            // Create the tracker for the pool with no description. The code that created
+    345            // the pool can add the tracker description if relevant.
+    346            sli_memory_profiler_create_pool_tracker(pool_handle, NULL, block, pool_size);
+    347          #endif
+    348          
+    349            pool_handle->block_address = (void *)block;
+   \       0x5A   0x9800             LDR      R0,[SP, #+0]
+    350          
+    351            // Returned block pointer not used because its reference is already stored in block_address.
+    352            (void)&block;
+    353          
+    354            pool_handle->block_free = (uint32_t *)pool_handle->block_address;
+    355          
+    356            block_addr = (size_t)pool_handle->block_address;
+    357          
+    358            // Populate the list of free blocks except the last block.
+    359            for (uint16_t i = 0; i < (block_count - 1); i++) {
+   \       0x5C   0x2100             MOVS     R1,#+0
+   \       0x5E   0x1E66             SUBS     R6,R4,#+1
+   \       0x60   0x6028             STR      R0,[R5, #+0]
+   \       0x62   0x6068             STR      R0,[R5, #+4]
+   \       0x64   0xE005             B.N      ??sl_memory_heap_create_pool_5
+    360              *(size_t *)block_addr = block_addr + pool_handle->block_size;
+   \                     ??sl_memory_heap_create_pool_6: (+1)
+   \       0x66   0x68EB             LDR      R3,[R5, #+12]
+    361              block_addr += pool_handle->block_size;
+    362            }
+   \       0x68   0x1C49             ADDS     R1,R1,#+1
+   \       0x6A   0x181B             ADDS     R3,R3,R0
+   \       0x6C   0x6013             STR      R3,[R2, #+0]
+   \       0x6E   0x68EA             LDR      R2,[R5, #+12]
+   \       0x70   0x1810             ADDS     R0,R2,R0
+   \                     ??sl_memory_heap_create_pool_5: (+1)
+   \       0x72   0xB28B             UXTH     R3,R1
+   \       0x74   0x4602             MOV      R2,R0
+   \       0x76   0x42B3             CMP      R3,R6
+   \       0x78   0xD3F5             BCC.N    ??sl_memory_heap_create_pool_6
+    363          
+    364            // Last element will indicate out of memory.
+    365            *(size_t *)block_addr = SLI_MEM_POOL_OUT_OF_MEMORY;
+   \       0x7A   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x7E   0x6010             STR      R0,[R2, #+0]
+    366          
+    367            return status;
+   \       0x80   0x2000             MOVS     R0,#+0
+   \                     ??sl_memory_heap_create_pool_4: (+1)
+   \       0x82   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    368          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     sli_general_purpose_heap
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
+   \              0x65 0x78    
+   \              0x69 0x6E    
+   \              0x5C 0x53
+   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
+   \              0x70 0x6C    
+   \              0x69 0x63    
+   \              0x69 0x74
+   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
+   \              0x74 0x75    
+   \              0x64 0x69    
+   \              0x6F 0x5C
+   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
+   \              0x5F 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x73
+   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
+   \              0x63 0x65    
+   \              0x5C 0x62    
+   \              0x74 0x73
+   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
+   \              0x73 0x6F    
+   \              0x72 0x5C    
+   \              0x73 0x69
+   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
+   \              0x64 0x6B    
+   \              0x5F 0x32    
+   \              0x30 0x32
+   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
+   \              0x31 0x32    
+   \              0x2E 0x33    
+   \              0x5C 0x70
+   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
+   \              0x74 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x5F
+   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
+   \              0x72 0x65    
+   \              0x5C 0x70    
+   \              0x6C 0x61
+   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
+   \              0x6F 0x72    
+   \              0x6D 0x5C    
+   \              0x73 0x65
+   \       0x68   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x6D, 0x65
+   \              0x69 0x63    
+   \              0x65 0x5C    
+   \              0x6D 0x65
+   \       0x70   0x6D 0x6F          DC8 0x6D, 0x6F, 0x72, 0x79, 0x5F, 0x6D, 0x61, 0x6E
+   \              0x72 0x79    
+   \              0x5F 0x6D    
+   \              0x61 0x6E
+   \       0x78   0x61 0x67          DC8 0x61, 0x67, 0x65, 0x72, 0x5C, 0x73, 0x72, 0x63
+   \              0x65 0x72    
+   \              0x5C 0x73    
+   \              0x72 0x63
+   \       0x80   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x6D, 0x65, 0x6D, 0x6F
+   \              0x6C 0x5F    
+   \              0x6D 0x65    
+   \              0x6D 0x6F
+   \       0x88   0x72 0x79          DC8 0x72, 0x79, 0x5F, 0x6D, 0x61, 0x6E, 0x61, 0x67
+   \              0x5F 0x6D    
+   \              0x61 0x6E    
+   \              0x61 0x67
+   \       0x90   0x65 0x72          DC8 0x65, 0x72, 0x5F, 0x70, 0x6F, 0x6F, 0x6C, 0x2E
+   \              0x5F 0x70    
+   \              0x6F 0x6F    
+   \              0x6C 0x2E
+   \       0x98   0x63 0x00          DC8 0x63, 0
+   \       0x9A                      DS8 2
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_memory_create_pool
+         0   -> sl_memory_heap_create_pool
+       8   sl_memory_delete_pool
+         0   -> sl_memory_free
+         8   -> sl_memory_pool_get_free_block_count
+      32   sl_memory_heap_create_pool
+        32   -> assertEFM
+        32   -> sl_memory_heap_alloc
+      16   sl_memory_pool_alloc
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      16   sl_memory_pool_free
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      16   sl_memory_pool_get_free_block_count
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+     156  ?_0
+      10  sl_memory_create_pool
+      42  sl_memory_delete_pool
+     134  sl_memory_heap_create_pool
+      54  sl_memory_pool_alloc
+     114  sl_memory_pool_free
+      34  sl_memory_pool_get_free_block_count
+
+ 
+ 156 bytes in section .rodata
+ 396 bytes in section .text
+ 
+ 396 bytes of CODE  memory
+ 156 bytes of CONST memory
+
+Errors: none
+Warnings: none
