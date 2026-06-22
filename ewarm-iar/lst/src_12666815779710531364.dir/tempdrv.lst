@@ -1,0 +1,1624 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         22/Jun/2026  16:34:22
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\src\tempdrv.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12666815779710531364.dir\tempdrv.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\src\tempdrv.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_12666815779710531364.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12666815779710531364.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12666815779710531364.dir\tempdrv.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12666815779710531364.dir\tempdrv.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_12666815779710531364.dir\tempdrv.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12666815779710531364.dir\tempdrv.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\src\tempdrv.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief TEMPDRV API implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_device.h"
+     32          #if !defined (_SILICON_LABS_32B_SERIES_3)
+     33          #include "em_system.h"
+     34          #include "em_emu.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void EMU_IntClear(uint32_t)
+   \                     EMU_IntClear: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable11_4
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void EMU_IntDisable(uint32_t)
+   \                     EMU_IntDisable: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable11_5
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void EMU_IntEnable(uint32_t)
+   \                     EMU_IntEnable: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable11_6
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x4770             BX       LR
+     35          #else
+     36          #include "sl_hal_emu.h"
+     37          #endif // _SILICON_LABS_32B_SERIES_3
+     38          #include "string.h"
+     39          
+     40          #include "tempdrv.h"
+     41          
+     42          /***************************************************************************//**
+     43           * @addtogroup tempdrv
+     44           * @{
+     45           ******************************************************************************/
+     46          
+     47          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+     48          
+     49          typedef struct {
+     50            TEMPDRV_Callback_t callback;    ///< Callback function
+     51            uint16_t temp;                   ///< Limit temperature (EMU value)
+     52          } TEMPDRV_CallbackSet_t;
+     53          
+     54          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+     55          #define TEMPDRV_ERRATA_FIX
+     56          #endif
+     57          
+     58          #ifdef TEMPDRV_ERRATA_FIX
+     59          #define TEMPDRV_INT_CALLBACK_DEPTH 1
+     60          #define TEMPDRV_
+     61          #else
+     62          #define TEMPDRV_INT_CALLBACK_DEPTH 0
+     63          #endif
+     64          
+     65          #define TEMPDRV_CALLBACK_DEPTH (TEMPDRV_INT_CALLBACK_DEPTH + TEMPDRV_CUSTOM_CALLBACK_DEPTH)
+     66          #define TEMPDRV_CUSTOM_CALLBACK_INDEX TEMPDRV_INT_CALLBACK_DEPTH
+     67          
+     68          #if defined(_SILICON_LABS_32B_SERIES_1)
+     69          // On Series-1 devices the temperature code is inverted. (high value = low temperature)
+     70          #define INCREASING_TEMPERATURE_FLAG   EMU_IF_TEMPLOW
+     71          #define DECREASING_TEMPERATURE_FLAG   EMU_IF_TEMPHIGH
+     72          #else
+     73          // On Series-2/3 devices the temperature code is normal. (high value = high temperature)
+     74          #define INCREASING_TEMPERATURE_FLAG   EMU_IF_TEMPHIGH
+     75          #define DECREASING_TEMPERATURE_FLAG   EMU_IF_TEMPLOW
+     76          #endif
+     77          
+     78          // TEMPDRV use low-level drivers from platform/peripheral.
+     79          #if defined(_SILICON_LABS_32B_SERIES_3)
+     80          #define EMU_GET_INTERRUPTS   sl_hal_emu_get_pending_interrupts
+     81          #define EMU_INT_CLEAR        sl_hal_emu_clear_interrupts
+     82          #define EMU_INT_ENABLE       sl_hal_emu_enable_interrupts
+     83          #define EMU_INT_DISABLE      sl_hal_emu_disable_interrupts
+     84          #define EMU_GET_TEMPERATURE  sl_hal_emu_get_temperature
+     85          #else
+     86          #define EMU_GET_INTERRUPTS   EMU_IntGetEnabled
+     87          #define EMU_INT_CLEAR        EMU_IntClear
+     88          #define EMU_INT_ENABLE       EMU_IntEnable
+     89          #define EMU_INT_DISABLE      EMU_IntDisable
+     90          #define EMU_GET_TEMPERATURE  EMU_TemperatureGet
+     91          #endif // _SILICON_LABS_32B_SERIES_3
+     92          
+
+   \                                 In section .bss, align 4
+     93          static TEMPDRV_CallbackSet_t tempdrvHighCallbacks[TEMPDRV_CALLBACK_DEPTH];
+     94          static TEMPDRV_CallbackSet_t tempdrvLowCallbacks[TEMPDRV_CALLBACK_DEPTH];
+     95          static TEMPDRV_CallbackSet_t nullCallback = { NULL, 0 };
+     96          static TEMPDRV_CallbackSet_t *highCallback;
+     97          static TEMPDRV_CallbackSet_t *lowCallback;
+     98          
+     99          static bool TEMPDRV_InitState = false;
+   \                     TEMPDRV_InitState:
+   \        0x0                      DS8 1
+   \        0x1                      DS8 3
+   \        0x4                      DS8 40
+   \       0x2C                      DS8 40
+   \       0x54                      DS8 4
+   \       0x58                      DS8 4
+   \       0x5C                      DS8 8
+
+   \                                 In section .bss, align 1
+    100          static bool TEMPDRV_EnableState = false;
+   \                     TEMPDRV_EnableState:
+   \        0x0                      DS8 1
+    101          
+    102          static uint16_t convertToEmu(int temp);
+    103          static void updateInterrupts(void);
+    104          
+    105          #if defined(_DEVINFO_CAL_TEMP_MASK)
+    106          // Calibration values to be initialized in TEMPDRV_Init
+    107          static int calibrationEMU;
+    108          // Fallback calibration values in case DI calibration data not present
+    109          static uint8_t fallbackEMU = 0x90;
+    110          static uint8_t fallbackTEMP = 25;
+    111          #endif
+    112          
+    113          /// @endcond
+    114          #if (EMU_CUSTOM_IRQ_HANDLER == false)
+    115          /***************************************************************************//**
+    116           * @brief
+    117           *   EMU Interrupt Handler
+    118           *
+    119           * @details
+    120           *   The EMU_IRQHandler provided by TEMPDRV will call @ref TEMPDRV_IRQHandler.
+    121           *   Configure EMU_CUSTOM_IRQ_HANDLER = true if the application wants to
+    122           *   implement its own EMU_IRQHandler. This is typically needed if one of the
+    123           *   non-temperature related EMU interrupt flags are in use.
+    124           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    125          void EMU_IRQHandler(void)
+    126          {
+    127            TEMPDRV_IRQHandler();
+   \                     EMU_IRQHandler: (+1)
+   \        0x0   0xBF00             Nop
+   \        0x2                      REQUIRE TEMPDRV_IRQHandler
+   \        0x2                      ; // Fall through to label TEMPDRV_IRQHandler
+    128          }
+    129          #endif
+    130          
+    131          /*******************************************************************************
+    132           * @brief
+    133           *   TEMPDRV Interrupt Handler
+    134           *
+    135           * @details
+    136           *   This function must be called by the EMU interrupt handler in order to
+    137           *   support the TEMPDRV callback mechanism.
+    138           *
+    139           *   This function handles the @ref EMU_IF_TEMPHIGH, @ref EMU_IF_TEMPLOW
+    140           *   interrupt flags from the EMU internal temperature sensor.
+    141           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    142          void TEMPDRV_IRQHandler(void)
+    143          {
+   \                     TEMPDRV_IRQHandler: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    144            uint32_t flags = EMU_GET_INTERRUPTS();
+   \        0x2   0x....             LDR.N    R1,??DataTable11_7
+   \        0x4   0x6848             LDR      R0,[R1, #+4]
+   \        0x6   0x6809             LDR      R1,[R1, #+0]
+    145            TEMPDRV_Callback_t activeCallback;
+    146          
+    147            if (flags & DECREASING_TEMPERATURE_FLAG) {
+   \        0x8   0x....             LDR.N    R5,??DataTable11_4
+   \        0xA   0x4008             ANDS     R0,R0,R1
+   \        0xC   0x....             LDR.N    R1,??DataTable11_8
+   \        0xE   0x0042             LSLS     R2,R0,#+1
+   \       0x10   0xD50A             BPL.N    ??TEMPDRV_IRQHandler_0
+    148              if (lowCallback->callback != NULL) {
+   \       0x12   0x6D88             LDR      R0,[R1, #+88]
+   \       0x14   0x6804             LDR      R4,[R0, #+0]
+   \       0x16   0xB11C             CBZ.N    R4,??TEMPDRV_IRQHandler_1
+    149                activeCallback = lowCallback->callback;
+    150                memset(lowCallback, 0, sizeof(TEMPDRV_CallbackSet_t));
+   \       0x18   0x.... 0x....      BL       ?Subroutine0
+    151                activeCallback(TEMPDRV_GetTemp(), TEMPDRV_LIMIT_LOW);
+    152              }
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x1C   0x2100             MOVS     R1,#+0
+   \       0x1E   0x47A0             BLX      R4
+    153              EMU_INT_CLEAR(DECREASING_TEMPERATURE_FLAG);
+   \                     ??TEMPDRV_IRQHandler_1: (+1)
+   \       0x20   0xF04F 0x4180      MOV      R1,#+1073741824
+   \       0x24   0x6029             STR      R1,[R5, #+0]
+    154            } else if (flags & INCREASING_TEMPERATURE_FLAG) {
+   \       0x26   0xE00B             B.N      ??TEMPDRV_IRQHandler_2
+   \                     ??TEMPDRV_IRQHandler_0: (+1)
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD509             BPL.N    ??TEMPDRV_IRQHandler_2
+    155              if (highCallback->callback != NULL) {
+   \       0x2C   0x6D48             LDR      R0,[R1, #+84]
+   \       0x2E   0x6804             LDR      R4,[R0, #+0]
+   \       0x30   0xB11C             CBZ.N    R4,??TEMPDRV_IRQHandler_3
+    156                activeCallback = highCallback->callback;
+    157                memset(highCallback, 0, sizeof(TEMPDRV_CallbackSet_t));
+   \       0x32   0x.... 0x....      BL       ?Subroutine0
+    158                activeCallback(TEMPDRV_GetTemp(), TEMPDRV_LIMIT_HIGH);
+    159              }
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x36   0x2101             MOVS     R1,#+1
+   \       0x38   0x47A0             BLX      R4
+    160              EMU_INT_CLEAR(INCREASING_TEMPERATURE_FLAG);
+   \                     ??TEMPDRV_IRQHandler_3: (+1)
+   \       0x3A   0xF04F 0x4000      MOV      R0,#+2147483648
+   \       0x3E   0x6028             STR      R0,[R5, #+0]
+    161            }
+    162          
+    163            updateInterrupts();
+   \                     ??TEMPDRV_IRQHandler_2: (+1)
+   \       0x40   0xE8BD 0x4031      POP      {R0,R4,R5,LR}
+   \       0x44   0x....             B.N      updateInterrupts
+    164          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0xE9C0 0x1100      STRD     R1,R1,[R0, #+0]
+   \        0x6   0x....             B.N      TEMPDRV_GetTemp
+    165          
+    166          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+    167          #if defined(TEMPDRV_ERRATA_FIX)
+    168          /* Errata */
+    169          typedef enum ErrataState {
+    170            ERRATA_LOW     = 0, /**< Low temperature <65&deg;C. */
+    171            ERRATA_MID     = 1, /**< Medium temperature >65&deg;C and <80&deg;C. */
+    172            ERRATA_HIGH    = 2  /**< High temperature >80&deg;C. */
+    173          } ErrataState_t;
+    174          
+    175          // These are the temperature limits in degrees Celsius
+    176          #define ERRATA_MID_LIMIT   65
+    177          #define ERRATA_HIGH_LIMIT  80
+    178          #define ERRATA_HYSTERESIS   8
+    179          
+    180          static void errataCallback(int8_t temp, TEMPDRV_LimitType_t limit);
+    181          static void errataStateUpdate(int8_t temp);
+    182          
+    183          static TEMPDRV_CallbackSet_t errataLowTemp[3];  // Temperature decrease thresholds
+    184          static TEMPDRV_CallbackSet_t errataHighTemp[3]; // Temperature increase thresholds
+    185          
+    186          /***************************************************************************//**
+    187           * @brief
+    188           *   Errata Callback
+    189           *
+    190           * @details
+    191           *   This function is called by the TEMPDRV_IRQHandler and will change the
+    192           *   state depending on the current temperature.
+    193           ******************************************************************************/
+    194          static void errataCallback(int8_t temp, TEMPDRV_LimitType_t limit)
+    195          {
+    196            (void) limit; // unused
+    197            errataStateUpdate(temp);
+    198          }
+    199          
+    200          /***************************************************************************//**
+    201           * @brief
+    202           *   Errata State Update
+    203           *
+    204           * @details
+    205           *   Updates registers based on the current temperature
+    206           ******************************************************************************/
+    207          static void errataStateUpdate(int8_t temp)
+    208          {
+    209            ErrataState_t errataState;
+    210            bool emuLocked = (EMU->LOCK == EMU_LOCK_LOCKKEY_LOCKED);
+    211          
+    212            // Figure out the current state based on temperature
+    213            if (temp < ERRATA_MID_LIMIT) {
+    214              errataState = ERRATA_LOW;
+    215            } else if (temp < ERRATA_HIGH_LIMIT) {
+    216              errataState = ERRATA_MID;
+    217            } else {
+    218              errataState = ERRATA_HIGH;
+    219            }
+    220          
+    221            // Activate callback and thresholds for the current state
+    222            tempdrvHighCallbacks[0] = errataHighTemp[errataState];
+    223            tempdrvLowCallbacks[0] = errataLowTemp[errataState];
+    224          
+    225            if (emuLocked) {
+    226              EMU->LOCK = EMU_LOCK_LOCKKEY_UNLOCK;
+    227            }
+    228          
+    229            switch (errataState) {
+    230              case ERRATA_LOW:
+    231                EMU_SetBiasMode(emuBiasMode_1KHz);
+    232                break;
+    233              case ERRATA_MID:
+    234                EMU_SetBiasMode(emuBiasMode_4KHz);
+    235                break;
+    236              case ERRATA_HIGH:
+    237                EMU_SetBiasMode(emuBiasMode_Continuous);
+    238                break;
+    239            }
+    240          
+    241            if (emuLocked) {
+    242              EMU->LOCK = EMU_LOCK_LOCKKEY_LOCK;
+    243            }
+    244          }
+    245          
+    246          /***************************************************************************//**
+    247           * @brief
+    248           *   Errata Initialization
+    249           *
+    250           * @details
+    251           *   Initialize the temperature thresholds based on calibration values and
+    252           *   initializes the errata fix based on the current temperature.
+    253           ******************************************************************************/
+    254          static void errataInit(void)
+    255          {
+    256            SYSTEM_ChipRevision_TypeDef rev;
+    257            SYSTEM_ChipRevisionGet(&rev);
+    258          
+    259            /* Rev A temp errata handling */
+    260            if (rev.major == 0x01) {
+    261              uint16_t limitLow;
+    262              uint16_t limitHigh;
+    263          
+    264              // Initialize Low temperature state [*, 65]
+    265              limitHigh = convertToEmu(ERRATA_MID_LIMIT);
+    266              errataHighTemp[ERRATA_LOW].temp = limitHigh;
+    267              errataHighTemp[ERRATA_LOW].callback = errataCallback;
+    268          
+    269              // Initialize Mid temperature state [57, 80]
+    270              limitLow  = convertToEmu(ERRATA_MID_LIMIT - ERRATA_HYSTERESIS);
+    271              limitHigh = convertToEmu(ERRATA_HIGH_LIMIT);
+    272              errataLowTemp[ERRATA_MID].temp = limitLow;
+    273              errataLowTemp[ERRATA_MID].callback = errataCallback;
+    274              errataHighTemp[ERRATA_MID].temp = limitHigh;
+    275              errataHighTemp[ERRATA_MID].callback = errataCallback;
+    276          
+    277              // Initialize High temperature state [72, *]
+    278              limitLow = convertToEmu(ERRATA_HIGH_LIMIT - ERRATA_HYSTERESIS);
+    279              errataLowTemp[ERRATA_HIGH].temp = limitLow;
+    280              errataLowTemp[ERRATA_HIGH].callback = errataCallback;
+    281          
+    282              errataStateUpdate(TEMPDRV_GetTemp());
+    283            }
+    284          }
+    285          #else // TEMPDRV_ERRATA_FIX
+    286          
+    287          #define errataInit()
+    288          
+    289          #endif // TEMPDRV_ERRATA_FIX
+    290          
+    291          /* Internal Functions */
+    292          /***************************************************************************//**
+    293           * @brief
+    294           *   Find an empty spot for callback in set
+    295           *
+    296           * @param[in] set
+    297           *   Callback set to search
+    298           *
+    299           * @return
+    300           *   index of empty space if found, -1 if none
+    301           ******************************************************************************/
+    302          static int8_t findCallbackSpace(TEMPDRV_CallbackSet_t *set)
+    303          {
+    304            uint8_t index;
+    305            for (index = TEMPDRV_CUSTOM_CALLBACK_INDEX; index < TEMPDRV_CALLBACK_DEPTH; index++) {
+    306              if (set[index].callback == NULL) {
+    307                return index;
+    308              }
+    309            }
+    310            // no empty space, return -1
+    311            return -1;
+    312          }
+    313          
+    314          /***************************************************************************//**
+    315           * @brief
+    316           *   Attempt to add a callback to a set
+    317           *
+    318           * @param[in] set
+    319           *   Callback set to add callback to
+    320           *
+    321           * @param[in] temp
+    322           *   Temperature to register callback at
+    323           *
+    324           * @param[in] callback
+    325           *   Callback function
+    326           *
+    327           * @return
+    328           *    @li @ref ECODE_EMDRV_TEMPDRV_OK on success.
+    329           *    @li @ref ECODE_EMDRV_TEMPDRV_NO_SPACE if there is no space left for
+    330           *        callbacks.
+    331           ******************************************************************************/
+    332          static Ecode_t addCallback(TEMPDRV_CallbackSet_t *set,
+    333                                     int8_t temp,
+    334                                     TEMPDRV_Callback_t callback)
+    335          {
+    336            int8_t index = findCallbackSpace(set);
+    337            if (index < 0) {
+    338              return ECODE_EMDRV_TEMPDRV_NO_SPACE;
+    339            }
+    340            set[index].temp = convertToEmu(temp);
+    341            set[index].callback = callback;
+    342            updateInterrupts();
+    343            return ECODE_EMDRV_TEMPDRV_OK;
+    344          }
+    345          
+    346          /***************************************************************************//**
+    347           * @brief
+    348           *   Remove a callback from the set
+    349           *
+    350           * @param[in] set
+    351           *   Callback set to remove callback from
+    352           *
+    353           * @param[in] callback
+    354           *   Callback function
+    355           *
+    356           * @return
+    357           *   @c true on success and @c false if the callback was not found.
+    358           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    359          static bool removeCallback(TEMPDRV_CallbackSet_t *set,
+    360                                     TEMPDRV_Callback_t callback)
+    361          {
+   \                     removeCallback: (+1)
+   \        0x0   0xB558             PUSH     {R3,R4,R6,LR}
+    362            bool found = false;
+   \        0x2   0x2400             MOVS     R4,#+0
+    363            uint8_t index;
+    364            for (index = TEMPDRV_CUSTOM_CALLBACK_INDEX; index < TEMPDRV_CALLBACK_DEPTH; index++) {
+   \        0x4   0x2200             MOVS     R2,#+0
+   \        0x6   0x2600             MOVS     R6,#+0
+    365              if (set[index].callback == callback) {
+   \                     ??removeCallback_0: (+1)
+   \        0x8   0xF850 0x3032      LDR      R3,[R0, R2, LSL #+3]
+   \        0xC   0x428B             CMP      R3,R1
+   \        0xE   0xD105             BNE.N    ??removeCallback_1
+    366                set[index].callback = NULL;
+    367                set[index].temp = 0;
+   \       0x10   0xEB00 0x04C2      ADD      R4,R0,R2, LSL #+3
+   \       0x14   0x80A6             STRH     R6,[R4, #+4]
+   \       0x16   0xF840 0x6032      STR      R6,[R0, R2, LSL #+3]
+    368                found = true;
+   \       0x1A   0x2401             MOVS     R4,#+1
+    369              }
+    370            }
+   \                     ??removeCallback_1: (+1)
+   \       0x1C   0x1C52             ADDS     R2,R2,#+1
+   \       0x1E   0x2A04             CMP      R2,#+4
+   \       0x20   0xDDF2             BLE.N    ??removeCallback_0
+    371            updateInterrupts();
+   \       0x22   0x.... 0x....      BL       updateInterrupts
+    372            return found;
+   \       0x26   0x4620             MOV      R0,R4
+   \       0x28   0xBD52             POP      {R1,R4,R6,PC}
+    373          }
+    374          
+    375          /***************************************************************************//**
+    376           * @brief
+    377           *   Check if another callback has registered the same temperature
+    378           *
+    379           * @param[in] set
+    380           *   Callback set to search
+    381           *
+    382           * @param[in] temp
+    383           *   Temperature to match
+    384           *
+    385           * @return
+    386           *    @c true if a duplicate is found, @c false if no duplicates is found.
+    387           ******************************************************************************/
+    388          static bool checkForDuplicates(TEMPDRV_CallbackSet_t *set, int8_t temp)
+    389          {
+    390            uint8_t index;
+    391            uint16_t emu = convertToEmu(temp);
+    392            for (index = TEMPDRV_CUSTOM_CALLBACK_INDEX; index < TEMPDRV_CALLBACK_DEPTH; index++) {
+    393              // filter out only entries with valid callbacks
+    394              if (set[index].callback != NULL) {
+    395                // if duplicate temperature, return true
+    396                if (set[index].temp == emu) {
+    397                  return true;
+    398                }
+    399              }
+    400            }
+    401            // return false if no duplicate temperatures found
+    402            return false;
+    403          }
+    404          
+    405          /***************************************************************************//**
+    406           * @brief
+    407           *   Convert a temperature in &deg;C to an EMU sensor value
+    408           *
+    409           * @param[in] temp
+    410           *   Temperature to convert in degrees Celsius
+    411           *
+    412           * @return
+    413           *   EMU temperature sensor value that represents the given temperature
+    414           ******************************************************************************/
+    415          static uint16_t convertToEmu(int temp)
+    416          {
+    417          #if defined(_SILICON_LABS_32B_SERIES_2) || defined (_SILICON_LABS_32B_SERIES_3)
+    418            return (uint16_t)((temp + 273) & 0x1FF); // Convert from Celsius to Kelvin (9 bits)
+    419          #else
+    420            int32_t res = (int32_t) calibrationEMU -  ((temp * 5) >> 3);
+    421            // Cap conversion results at uint8_t bounds
+    422            if (res > 255) {
+    423              res = 255;
+    424            } else if (res < 0) {
+    425              res = 0;
+    426            }
+    427            return (uint8_t) res;
+    428          #endif
+    429          }
+    430          
+    431          /***************************************************************************//**
+    432           * @brief
+    433           *   Turn off and clear EMU temperature related interrupts
+    434           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    435          static void disableInterrupts(void)
+    436          {
+   \                     disableInterrupts: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    437            EMU_INT_CLEAR(EMU_IF_TEMPLOW | EMU_IF_TEMPHIGH);
+   \        0x2   0xF04F 0x4040      MOV      R0,#+3221225472
+   \        0x6   0x.... 0x....      BL       EMU_IntClear
+    438            EMU_INT_DISABLE(EMU_IF_TEMPLOW | EMU_IF_TEMPHIGH);
+   \        0xA   0xF04F 0x4040      MOV      R0,#+3221225472
+   \        0xE   0xE8BD 0x4002      POP      {R1,LR}
+   \       0x12   0x....             B.N      EMU_IntDisable
+    439          }
+    440          
+    441          /***************************************************************************//**
+    442           * @brief
+    443           *   Update interrupts based on active callbacks
+    444           *
+    445           * @details
+    446           *   There can only be two temperature thresholds active in the EMU sensor at a
+    447           *   single point in time. One threshold for increasing temperature and one
+    448           *   threshold for decreasing temperature. The responsibility of this function
+    449           *   is to always select which temperature thresholds that should be activated
+    450           *   in the EMU sensor at any given time.
+    451           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    452          static void updateInterrupts(void)
+    453          {
+   \                     updateInterrupts: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    454            int index;
+    455          
+    456            // Find lowest temperature active high callback
+    457            for (index = 0; index < TEMPDRV_CALLBACK_DEPTH; index++) {
+   \        0x2   0x....             LDR.N    R4,??DataTable11_8
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x6D62             LDR      R2,[R4, #+84]
+    458              // filter out only entries with valid callbacks
+    459              if (tempdrvHighCallbacks[index].callback != NULL) {
+   \                     ??updateInterrupts_0: (+1)
+   \        0x8   0x1D23             ADDS     R3,R4,#+4
+   \        0xA   0xF853 0x0031      LDR      R0,[R3, R1, LSL #+3]
+   \        0xE   0xB150             CBZ.N    R0,??updateInterrupts_1
+    460                if (highCallback->callback == NULL) {
+   \       0x10   0x6810             LDR      R0,[R2, #+0]
+   \       0x12   0xEB03 0x03C1      ADD      R3,R3,R1, LSL #+3
+   \       0x16   0xB128             CBZ.N    R0,??updateInterrupts_2
+    461                  highCallback = &tempdrvHighCallbacks[index];
+    462                } else {
+    463                  if (tempdrvHighCallbacks[index].temp > highCallback->temp) {
+   \       0x18   0xEB04 0x05C1      ADD      R5,R4,R1, LSL #+3
+   \       0x1C   0x8890             LDRH     R0,[R2, #+4]
+   \       0x1E   0x892E             LDRH     R6,[R5, #+8]
+   \       0x20   0x42B0             CMP      R0,R6
+   \       0x22   0xD200             BCS.N    ??updateInterrupts_1
+    464                    highCallback = &tempdrvHighCallbacks[index];
+   \                     ??updateInterrupts_2: (+1)
+   \       0x24   0x461A             MOV      R2,R3
+    465                  }
+    466                }
+    467              }
+    468            }
+   \                     ??updateInterrupts_1: (+1)
+   \       0x26   0x1C49             ADDS     R1,R1,#+1
+   \       0x28   0x2904             CMP      R1,#+4
+   \       0x2A   0xDDED             BLE.N    ??updateInterrupts_0
+   \       0x2C   0x6562             STR      R2,[R4, #+84]
+    469          
+    470            // Find highest temperature active low callback
+    471            for (index = 0; index < TEMPDRV_CALLBACK_DEPTH; index++) {
+   \       0x2E   0x2200             MOVS     R2,#+0
+   \       0x30   0x6DA3             LDR      R3,[R4, #+88]
+    472              // filter out only entries with valid callbacks
+    473              if (tempdrvLowCallbacks[index].callback != NULL) {
+   \                     ??updateInterrupts_3: (+1)
+   \       0x32   0xEB04 0x05C2      ADD      R5,R4,R2, LSL #+3
+   \       0x36   0x6AE8             LDR      R0,[R5, #+44]
+   \       0x38   0xB138             CBZ.N    R0,??updateInterrupts_4
+    474                if (lowCallback->callback == NULL) {
+   \       0x3A   0x6819             LDR      R1,[R3, #+0]
+   \       0x3C   0xB119             CBZ.N    R1,??updateInterrupts_5
+    475                  lowCallback = &tempdrvLowCallbacks[index];
+    476                } else {
+    477                  if (tempdrvLowCallbacks[index].temp < lowCallback->temp) {
+   \       0x3E   0x8E28             LDRH     R0,[R5, #+48]
+   \       0x40   0x8899             LDRH     R1,[R3, #+4]
+   \       0x42   0x4288             CMP      R0,R1
+   \       0x44   0xD201             BCS.N    ??updateInterrupts_4
+    478                    lowCallback = &tempdrvLowCallbacks[index];
+   \                     ??updateInterrupts_5: (+1)
+   \       0x46   0xF105 0x032C      ADD      R3,R5,#+44
+    479                  }
+    480                }
+    481              }
+    482            }
+   \                     ??updateInterrupts_4: (+1)
+   \       0x4A   0x1C52             ADDS     R2,R2,#+1
+   \       0x4C   0x2A04             CMP      R2,#+4
+   \       0x4E   0xDDF0             BLE.N    ??updateInterrupts_3
+    483          
+    484          #if defined(_SILICON_LABS_32B_SERIES_1)
+    485            // On Series-1 devices the temperature code is inverted (high value = low temperature)
+    486            if (highCallback->callback != NULL) {
+    487              EMU->TEMPLIMITS = (EMU->TEMPLIMITS & ~_EMU_TEMPLIMITS_TEMPLOW_MASK)
+    488                                | ((highCallback->temp << _EMU_TEMPLIMITS_TEMPLOW_SHIFT) & _EMU_TEMPLIMITS_TEMPLOW_MASK);
+    489              EMU_INT_ENABLE(EMU_IEN_TEMPLOW);
+    490            } else {
+    491              EMU_INT_DISABLE(EMU_IEN_TEMPLOW);
+    492            }
+    493            if (lowCallback->callback != NULL) {
+    494              EMU->TEMPLIMITS = (EMU->TEMPLIMITS & ~_EMU_TEMPLIMITS_TEMPHIGH_MASK)
+    495                                | ((lowCallback->temp << _EMU_TEMPLIMITS_TEMPHIGH_SHIFT) & _EMU_TEMPLIMITS_TEMPHIGH_MASK);
+    496              EMU_INT_ENABLE(EMU_IEN_TEMPHIGH);
+    497            } else {
+    498              EMU_INT_DISABLE(EMU_IEN_TEMPHIGH);
+    499            }
+    500          #else
+    501            // On Series-2/3 devices the temperature code is normal (high value = high temperature)
+    502            if (highCallback->callback != NULL) {
+   \       0x50   0x6D61             LDR      R1,[R4, #+84]
+   \       0x52   0x65A3             STR      R3,[R4, #+88]
+   \       0x54   0x....             LDR.N    R5,??DataTable11_9
+   \       0x56   0x6808             LDR      R0,[R1, #+0]
+   \       0x58   0xB148             CBZ.N    R0,??updateInterrupts_6
+    503              EMU->TEMPLIMITS = (EMU->TEMPLIMITS & ~_EMU_TEMPLIMITS_TEMPHIGH_MASK)
+    504                                | ((highCallback->temp << _EMU_TEMPLIMITS_TEMPHIGH_SHIFT) & _EMU_TEMPLIMITS_TEMPHIGH_MASK);
+   \       0x5A   0x8889             LDRH     R1,[R1, #+4]
+   \       0x5C   0x682A             LDR      R2,[R5, #+0]
+    505              EMU_INT_ENABLE(EMU_IEN_TEMPHIGH);
+   \       0x5E   0xF04F 0x4000      MOV      R0,#+2147483648
+   \       0x62   0xF361 0x4218      BFI      R2,R1,#+16,#+9
+   \       0x66   0x602A             STR      R2,[R5, #+0]
+   \       0x68   0x.... 0x....      BL       EMU_IntEnable
+   \       0x6C   0xE003             B.N      ??updateInterrupts_7
+    506            } else {
+    507              EMU_INT_DISABLE(EMU_IEN_TEMPHIGH);
+   \                     ??updateInterrupts_6: (+1)
+   \       0x6E   0xF04F 0x4000      MOV      R0,#+2147483648
+   \       0x72   0x.... 0x....      BL       EMU_IntDisable
+    508            }
+    509            if (lowCallback->callback != NULL) {
+   \                     ??updateInterrupts_7: (+1)
+   \       0x76   0x6DA1             LDR      R1,[R4, #+88]
+   \       0x78   0x6808             LDR      R0,[R1, #+0]
+   \       0x7A   0xB148             CBZ.N    R0,??updateInterrupts_8
+    510              EMU->TEMPLIMITS = (EMU->TEMPLIMITS & ~_EMU_TEMPLIMITS_TEMPLOW_MASK)
+    511                                | ((lowCallback->temp << _EMU_TEMPLIMITS_TEMPLOW_SHIFT) & _EMU_TEMPLIMITS_TEMPLOW_MASK);
+   \       0x7C   0x8888             LDRH     R0,[R1, #+4]
+   \       0x7E   0x6829             LDR      R1,[R5, #+0]
+   \       0x80   0xF360 0x0108      BFI      R1,R0,#+0,#+9
+   \       0x84   0x6029             STR      R1,[R5, #+0]
+    512              EMU_INT_ENABLE(EMU_IEN_TEMPLOW);
+   \       0x86   0xF04F 0x4080      MOV      R0,#+1073741824
+   \       0x8A   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x8E   0x....             B.N      EMU_IntEnable
+    513            } else {
+    514              EMU_INT_DISABLE(EMU_IEN_TEMPLOW);
+   \                     ??updateInterrupts_8: (+1)
+   \       0x90   0xF04F 0x4080      MOV      R0,#+1073741824
+   \       0x94   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x98   0x....             B.N      EMU_IntDisable
+    515            }
+    516          #endif
+    517          }
+    518          
+    519          /***************************************************************************//**
+    520           * @brief
+    521           *   Prepare calibration values for temperature conversion.
+    522           ******************************************************************************/
+    523          static void calibration(void)
+    524          {
+    525          #if defined(_DEVINFO_CAL_TEMP_MASK)
+    526            uint32_t DItemp, DIemu;
+    527          
+    528            // Retrieve calibration data from DI page
+    529            DItemp = ((DEVINFO->CAL & _DEVINFO_CAL_TEMP_MASK) >> _DEVINFO_CAL_TEMP_SHIFT);
+    530            DIemu = ((DEVINFO->EMUTEMP & _DEVINFO_EMUTEMP_EMUTEMPROOM_MASK) >> _DEVINFO_EMUTEMP_EMUTEMPROOM_SHIFT);
+    531          
+    532            if ((DItemp == (_DEVINFO_CAL_TEMP_MASK >> _DEVINFO_CAL_TEMP_SHIFT))
+    533                || (DIemu == (_DEVINFO_EMUTEMP_EMUTEMPROOM_MASK >> _DEVINFO_EMUTEMP_EMUTEMPROOM_SHIFT))) {
+    534              // Missing DI page calibration data, substitute fixed values
+    535              DItemp = fallbackTEMP;
+    536              DIemu = fallbackEMU;
+    537            }
+    538          
+    539            // calculate conversion offsets. Based on assumed slope of 5/8
+    540            calibrationEMU = (DIemu) + ((5 * (DItemp)) / 8);
+    541          #endif
+    542          }
+    543          /// @endcond
+    544          /* Official API */
+    545          /***************************************************************************//**
+    546           * @brief
+    547           *   Initialize the TEMP driver.
+    548           *
+    549           * @details
+    550           *   This will clear all the registered callbacks and enable the EMU IRQ in the
+    551           *   NVIC. Calling this function will also enable the EMU_E201 errata fix for
+    552           *   first generation Pearl, Jade and EFR32 devices.
+    553           *
+    554           * @return
+    555           *   @ref ECODE_EMDRV_TEMPDRV_OK on success.
+    556           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    557          Ecode_t TEMPDRV_Init(void)
+    558          {
+   \                     TEMPDRV_Init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    559            // Flag up
+    560            TEMPDRV_InitState = true;
+   \        0x2   0x....             LDR.N    R4,??DataTable11_8
+   \        0x4   0x2201             MOVS     R2,#+1
+   \        0x6   0x7022             STRB     R2,[R4, #+0]
+    561          
+    562            // reset stack state by erasing callbacks
+    563            memset(tempdrvHighCallbacks, 0, sizeof (TEMPDRV_CallbackSet_t) * TEMPDRV_CALLBACK_DEPTH);
+   \        0x8   0x2128             MOVS     R1,#+40
+   \        0xA   0x1D20             ADDS     R0,R4,#+4
+   \        0xC   0x.... 0x....      BL       __aeabi_memclr4
+    564            memset(tempdrvLowCallbacks, 0, sizeof (TEMPDRV_CallbackSet_t) * TEMPDRV_CALLBACK_DEPTH);
+   \       0x10   0x.... 0x....      BL       ?Subroutine1
+    565            highCallback = &nullCallback;
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x14   0xF104 0x005C      ADD      R0,R4,#+92
+    566            lowCallback = &nullCallback;
+   \       0x18   0xF104 0x015C      ADD      R1,R4,#+92
+   \       0x1C   0x6560             STR      R0,[R4, #+84]
+   \       0x1E   0x65A1             STR      R1,[R4, #+88]
+    567          
+    568            calibration();
+    569            errataInit();
+    570            disableInterrupts();
+   \       0x20   0x.... 0x....      BL       disableInterrupts
+    571            NVIC_ClearPendingIRQ(EMU_IRQn);
+   \       0x24   0x2006             MOVS     R0,#+6
+   \       0x26   0x.... 0x....      BL       sl_interrupt_manager_clear_irq_pending
+    572            NVIC_EnableIRQ(EMU_IRQn);
+   \       0x2A   0x2006             MOVS     R0,#+6
+   \       0x2C   0x.... 0x....      BL       sl_interrupt_manager_enable_irq
+    573            updateInterrupts();
+   \       0x30   0x.... 0x....      BL       updateInterrupts
+    574          
+    575            return ECODE_EMDRV_TEMPDRV_OK;
+   \       0x34   0x2000             MOVS     R0,#+0
+   \       0x36   0xBD10             POP      {R4,PC}
+    576          }
+    577          
+    578          /***************************************************************************//**
+    579           * @brief
+    580           *    De-initialize the TEMP driver.
+    581           *
+    582           * @details
+    583           *   This will clear all the registered callbacks and disable the EMU IRQ in
+    584           *   the NVIC.
+    585           *
+    586           * @return
+    587           *    @ref ECODE_EMDRV_TEMPDRV_OK on success.
+    588           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    589          Ecode_t TEMPDRV_DeInit(void)
+    590          {
+   \                     TEMPDRV_DeInit: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    591            TEMPDRV_InitState = false;
+   \        0x2   0x....             LDR.N    R4,??DataTable11_8
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x7021             STRB     R1,[R4, #+0]
+    592            NVIC_DisableIRQ(EMU_IRQn);
+   \        0x8   0x2006             MOVS     R0,#+6
+   \        0xA   0x.... 0x....      BL       sl_interrupt_manager_disable_irq
+    593            NVIC_ClearPendingIRQ(EMU_IRQn);
+   \        0xE   0x2006             MOVS     R0,#+6
+   \       0x10   0x.... 0x....      BL       sl_interrupt_manager_clear_irq_pending
+    594            disableInterrupts();
+   \       0x14   0x.... 0x....      BL       disableInterrupts
+    595            memset(tempdrvHighCallbacks, 0, sizeof (TEMPDRV_CallbackSet_t) * TEMPDRV_CALLBACK_DEPTH);
+   \       0x18   0x2128             MOVS     R1,#+40
+   \       0x1A   0x1D20             ADDS     R0,R4,#+4
+   \       0x1C   0x.... 0x....      BL       __aeabi_memclr4
+    596            memset(tempdrvLowCallbacks, 0, sizeof (TEMPDRV_CallbackSet_t) * TEMPDRV_CALLBACK_DEPTH);
+   \       0x20   0x.... 0x....      BL       ?Subroutine1
+    597            return ECODE_EMDRV_TEMPDRV_OK;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xBD10             POP      {R4,PC}
+    598          }
+    599          
+    600          /***************************************************************************//**
+    601           * @brief
+    602           *   Enable or disable the TEMP driver.
+    603           *
+    604           * @param[in] enable
+    605           *   true to enable the TEMP driver, false to disable the TEMP driver.
+    606           *
+    607           * @return
+    608           *   @ref ECODE_EMDRV_TEMPDRV_OK on success.
+    609           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    610          Ecode_t TEMPDRV_Enable(bool enable)
+    611          {
+   \                     TEMPDRV_Enable: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    612            if (TEMPDRV_EnableState != enable) {
+   \        0x2   0x....             LDR.N    R1,??DataTable11_10
+   \        0x4   0x780A             LDRB     R2,[R1, #+0]
+   \        0x6   0x4282             CMP      R2,R0
+   \        0x8   0xD006             BEQ.N    ??TEMPDRV_Enable_0
+    613              TEMPDRV_EnableState = enable;
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+    614              if (enable) {
+   \        0xC   0xB110             CBZ.N    R0,??TEMPDRV_Enable_1
+    615                updateInterrupts();
+   \        0xE   0x.... 0x....      BL       updateInterrupts
+   \       0x12   0xE001             B.N      ??TEMPDRV_Enable_0
+    616              } else {
+    617                disableInterrupts();
+   \                     ??TEMPDRV_Enable_1: (+1)
+   \       0x14   0x.... 0x....      BL       disableInterrupts
+    618              }
+    619            }
+    620            return ECODE_EMDRV_TEMPDRV_OK;
+   \                     ??TEMPDRV_Enable_0: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0xBD02             POP      {R1,PC}
+    621          }
+    622          
+    623          /***************************************************************************//**
+    624           * @brief
+    625           *   Get the number of active callbacks for a limit.
+    626           *
+    627           * @param[in] limit
+    628           *   Limit type, refer to @ref TEMPDRV_LimitType_t.
+    629           *
+    630           * @return
+    631           *   Number of active callbacks
+    632           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    633          uint8_t TEMPDRV_GetActiveCallbacks(TEMPDRV_LimitType_t limit)
+    634          {
+    635            TEMPDRV_CallbackSet_t *set;
+    636          
+    637            if (limit == TEMPDRV_LIMIT_HIGH) {
+   \                     TEMPDRV_GetActiveCallbacks: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable11_8
+   \        0x2   0x2801             CMP      R0,#+1
+   \        0x4   0xD10D             BNE.N    ??TEMPDRV_GetActiveCallbacks_0
+    638              // Define callback set
+    639              set = tempdrvHighCallbacks;
+   \        0x6   0x1D0A             ADDS     R2,R1,#+4
+    640            } else if (limit == TEMPDRV_LIMIT_LOW) {
+    641              // Define callback set
+    642              set = tempdrvLowCallbacks;
+    643            } else {
+    644              // Invalid limit
+    645              return 0;
+    646            }
+    647            uint8_t index, count = 0;
+   \                     ??TEMPDRV_GetActiveCallbacks_1: (+1)
+   \        0x8   0x2000             MOVS     R0,#+0
+    648            for (index = TEMPDRV_CUSTOM_CALLBACK_INDEX; index < TEMPDRV_CALLBACK_DEPTH; index++) {
+   \        0xA   0x2300             MOVS     R3,#+0
+    649              // filter out only entries with valid callbacks
+    650              if (set[index].callback != NULL) {
+   \                     ??TEMPDRV_GetActiveCallbacks_2: (+1)
+   \        0xC   0xB2D9             UXTB     R1,R3
+   \        0xE   0xF852 0x1031      LDR      R1,[R2, R1, LSL #+3]
+   \       0x12   0xB101             CBZ.N    R1,??TEMPDRV_GetActiveCallbacks_3
+    651                count++;
+   \       0x14   0x1C40             ADDS     R0,R0,#+1
+    652              }
+    653            }
+   \                     ??TEMPDRV_GetActiveCallbacks_3: (+1)
+   \       0x16   0x1C5B             ADDS     R3,R3,#+1
+   \       0x18   0xB2D9             UXTB     R1,R3
+   \       0x1A   0x2904             CMP      R1,#+4
+   \       0x1C   0xDDF6             BLE.N    ??TEMPDRV_GetActiveCallbacks_2
+    654            return count;
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0x4770             BX       LR
+   \                     ??TEMPDRV_GetActiveCallbacks_0: (+1)
+   \       0x22   0xB910             CBNZ.N   R0,??TEMPDRV_GetActiveCallbacks_4
+   \       0x24   0xF101 0x022C      ADD      R2,R1,#+44
+   \       0x28   0xE7EE             B.N      ??TEMPDRV_GetActiveCallbacks_1
+   \                     ??TEMPDRV_GetActiveCallbacks_4: (+1)
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \       0x2C   0x4770             BX       LR
+    655          }
+    656          
+    657          /***************************************************************************//**
+    658           * @brief
+    659           *    Get the current temperature.
+    660           *
+    661           * @return
+    662           *    Current temperature in degrees Celsius.
+    663           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    664          int8_t TEMPDRV_GetTemp(void)
+    665          {
+   \                     TEMPDRV_GetTemp: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    666            float tempCelsius;
+    667            int8_t result;
+    668          
+    669            tempCelsius = EMU_GET_TEMPERATURE();
+   \        0x2   0x.... 0x....      BL       EMU_TemperatureGet
+    670          
+    671            if (tempCelsius < INT8_MIN) {
+   \        0x6   0xEDDF 0x....      VLDR.W   S1,??DataTable11
+   \        0xA   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \        0xE   0xEEF1 0xFA10      FMSTAT
+   \       0x12   0xBF48             IT       MI
+   \       0x14   0xED9F 0x....      VLDRMI.W S0,??DataTable11
+    672              tempCelsius = INT8_MIN;
+   \       0x18   0xD408             BMI.N    ??TEMPDRV_GetTemp_0
+    673            } else if (tempCelsius > INT8_MAX) {
+   \       0x1A   0xEDDF 0x....      VLDR.W   S1,??DataTable11_1
+   \       0x1E   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \       0x22   0xEEF1 0xFA10      FMSTAT
+   \       0x26   0xBFA8             IT       GE
+   \       0x28   0xED9F 0x....      VLDRGE.W S0,??DataTable11_2
+    674              tempCelsius = INT8_MAX;
+    675            }
+    676          
+    677            // adding extra 0.5 before truncating to simulate rounding behavior
+    678            result = (((int8_t) (tempCelsius + 0.5f - INT8_MIN)) + INT8_MIN);
+    679          
+    680            return result;
+   \                     ??TEMPDRV_GetTemp_0: (+1)
+   \       0x2C   0xEEF6 0x0A00      VMOV.F32 S1,#0.5
+   \       0x30   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \       0x34   0xED9F 0x....      VLDR.W   S2,??DataTable11_3
+   \       0x38   0xEE30 0x1A01      VADD.F32 S2,S0,S2
+   \       0x3C   0xEEBD 0x1AC1      VCVT.S32.F32 S2,S2
+   \       0x40   0xEE11 0x0A10      VMOV     R0,S2
+   \       0x44   0x3880             SUBS     R0,R0,#+128
+   \       0x46   0xB240             SXTB     R0,R0
+   \       0x48   0xBD02             POP      {R1,PC}
+    681          }
+    682          
+    683          /***************************************************************************//**
+    684           * @brief
+    685           *   Register a callback in the TEMP driver
+    686           *
+    687           * @details
+    688           *   This function is used for registering an application callback when the
+    689           *   temperature changes. Note that when calling this function an application
+    690           *   must specify the direction of the temperature change, use
+    691           *   @ref TEMPDRV_LIMIT_LOW to receive a callback when the temperature drops
+    692           *   below the specified temp and use @ref TEMPDRV_LIMIT_HIGH to receive a
+    693           *   callback when the temperature increases above the specified temp.
+    694           *
+    695           * @note
+    696           *   The user registered callback will be cleared once it's called. This means
+    697           *   that the callback functions are not persistent, and have to be managed by
+    698           *   the application. This feature can be used to implement a user controlled
+    699           *   hysteresis. So for instance to register a callback at 50&deg;C with a
+    700           *   5&deg;C hysteresis you can first register a callback at 50&deg;C or above
+    701           *   using this function, and when the callback fires you can use this function
+    702           *   again to register a callback when the temperature decreases to 45&deg;C or
+    703           *   below. Each time a callback fires you only need to call the
+    704           *   @ref TEMPDRV_RegisterCallback() function, there is no need to call
+    705           *   @ref TEMPDRV_UnregisterCallback().
+    706           *
+    707           * @details
+    708           *   It's important to know the current temperature before calling this
+    709           *   function. Attempting to register a callback that would fire immediately
+    710           *   is not supported and will result in a return value of
+    711           *   @ref ECODE_EMDRV_TEMPDRV_BAD_LIMIT. Examples of an illegal scenario would
+    712           *   be to register a callback for a temperature that is higher than the current
+    713           *   temperature and with a limit set to @ref TEMPDRV_LIMIT_LOW.
+    714           *
+    715           * @param[in] temp
+    716           *   Temperature to trigger on given in number of &deg;C.
+    717           *
+    718           * @param[in] limit
+    719           *   Limit type, refer to @ref TEMPDRV_LimitType_t. Using @ref TEMPDRV_LIMIT_LOW
+    720           *   will register a callback when the EMU temperature reaches \p temp &deg;C
+    721           *   or lower, and using @ref TEMPDRV_LIMIT_HIGH will register a callback when
+    722           *   the EMU temperature reaches \p temp &deg;C or higher.
+    723           *
+    724           * @param[in] callback
+    725           *   User defined function to call when temperature threshold is reached or passed.
+    726           *
+    727           * @return
+    728           *   @li @ref ECODE_EMDRV_TEMPDRV_OK on success.
+    729           *
+    730           *   @li @ref ECODE_EMDRV_TEMPDRV_PARAM_ERROR if the callback is NULL.
+    731           *
+    732           *   @li @ref ECODE_EMDRV_TEMPDRV_NO_INIT if the user has forgot to call @ref
+    733           *     TEMPDRV_Init() before attempting to register a callback.
+    734           *
+    735           *   @li @ref ECODE_EMDRV_TEMPDRV_BAD_LIMIT is returned if \p temp is below the
+    736           *     current temperature and \p limit is @ref TEMPDRV_LIMIT_LOW. It is also
+    737           *     returned if \p temp is above the current temperature and \p limit is
+    738           *     @ref TEMPDRV_LIMIT_HIGH.
+    739           *
+    740           *   @li @ref ECODE_EMDRV_TEMPDRV_DUP_TEMP is returned if a duplicate callback
+    741           *     is detected. A duplicate callback is if you attempt to register a new
+    742           *     callback with the same \p temp and the same \p limit as some
+    743           *     already registered callback.
+    744           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    745          Ecode_t TEMPDRV_RegisterCallback(int8_t temp,
+    746                                           TEMPDRV_LimitType_t limit,
+    747                                           TEMPDRV_Callback_t callback)
+    748          {
+   \                     TEMPDRV_RegisterCallback: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    749            TEMPDRV_CallbackSet_t *set;
+    750            if (TEMPDRV_InitState == false) {
+   \        0x4   0x....             LDR.N    R6,??DataTable11_8
+   \        0x6   0x7830             LDRB     R0,[R6, #+0]
+   \        0x8   0x4615             MOV      R5,R2
+   \        0xA   0xB908             CBNZ.N   R0,??TEMPDRV_RegisterCallback_0
+    751              return ECODE_EMDRV_TEMPDRV_NO_INIT;
+   \        0xC   0x....             LDR.N    R0,??DataTable11_11
+   \        0xE   0xBD70             POP      {R4-R6,PC}
+    752            }
+    753            // cannot register null callback
+    754            if (callback == NULL) {
+   \                     ??TEMPDRV_RegisterCallback_0: (+1)
+   \       0x10   0x0028             MOVS     R0,R5
+   \       0x12   0xD02A             BEQ.N    ??TEMPDRV_RegisterCallback_1
+    755              return ECODE_EMDRV_TEMPDRV_PARAM_ERROR;
+    756            }
+    757            if (limit == TEMPDRV_LIMIT_HIGH) {
+   \       0x14   0x2901             CMP      R1,#+1
+   \       0x16   0xD11E             BNE.N    ??TEMPDRV_RegisterCallback_2
+    758              // current temperature is already higher than requested temperature
+    759              if (TEMPDRV_GetTemp() > temp) {
+   \       0x18   0x.... 0x....      BL       TEMPDRV_GetTemp
+   \       0x1C   0x4284             CMP      R4,R0
+   \       0x1E   0xDB1F             BLT.N    ??TEMPDRV_RegisterCallback_3
+    760                return ECODE_EMDRV_TEMPDRV_BAD_LIMIT;
+    761              }
+    762              // Define callback set
+    763              set = tempdrvHighCallbacks;
+   \       0x20   0x1D31             ADDS     R1,R6,#+4
+    764            } else if (limit == TEMPDRV_LIMIT_LOW) {
+    765              // current temperature is already lower than requested temperature
+    766              if (TEMPDRV_GetTemp() < temp) {
+    767                return ECODE_EMDRV_TEMPDRV_BAD_LIMIT;
+    768              }
+    769              // Define callback set
+    770              set = tempdrvLowCallbacks;
+    771            } else {
+    772              // Invalid limit
+    773              return ECODE_EMDRV_TEMPDRV_PARAM_ERROR;
+    774            }
+    775          
+    776            // Cannot register duplicate temperature callback
+    777            if (checkForDuplicates(set, temp) == true) {
+   \                     ??TEMPDRV_RegisterCallback_4: (+1)
+   \       0x22   0xF204 0x1411      ADDW     R4,R4,#+273
+   \       0x26   0xF3C4 0x0408      UBFX     R4,R4,#+0,#+9
+   \       0x2A   0x2300             MOVS     R3,#+0
+   \       0x2C   0x1D0E             ADDS     R6,R1,#+4
+   \                     ??TEMPDRV_RegisterCallback_5: (+1)
+   \       0x2E   0xF851 0x0033      LDR      R0,[R1, R3, LSL #+3]
+   \       0x32   0xB118             CBZ.N    R0,??TEMPDRV_RegisterCallback_6
+   \       0x34   0xF836 0x0033      LDRH     R0,[R6, R3, LSL #+3]
+   \       0x38   0x42A0             CMP      R0,R4
+   \       0x3A   0xD018             BEQ.N    ??TEMPDRV_RegisterCallback_7
+   \                     ??TEMPDRV_RegisterCallback_6: (+1)
+   \       0x3C   0x1C5B             ADDS     R3,R3,#+1
+   \       0x3E   0x2B04             CMP      R3,#+4
+   \       0x40   0xDDF5             BLE.N    ??TEMPDRV_RegisterCallback_5
+    778              return ECODE_EMDRV_TEMPDRV_DUP_TEMP;
+    779            }
+    780          
+    781            return addCallback(set, temp, callback);
+   \       0x42   0x2200             MOVS     R2,#+0
+   \                     ??TEMPDRV_RegisterCallback_8: (+1)
+   \       0x44   0xB2D0             UXTB     R0,R2
+   \       0x46   0xF851 0x0030      LDR      R0,[R1, R0, LSL #+3]
+   \       0x4A   0xB190             CBZ.N    R0,??TEMPDRV_RegisterCallback_9
+   \       0x4C   0x1C52             ADDS     R2,R2,#+1
+   \       0x4E   0xB2D3             UXTB     R3,R2
+   \       0x50   0x2B04             CMP      R3,#+4
+   \       0x52   0xDDF7             BLE.N    ??TEMPDRV_RegisterCallback_8
+   \       0x54   0xE010             B.N      ??TEMPDRV_RegisterCallback_10
+   \                     ??TEMPDRV_RegisterCallback_2: (+1)
+   \       0x56   0xB941             CBNZ.N   R1,??TEMPDRV_RegisterCallback_1
+   \       0x58   0x.... 0x....      BL       TEMPDRV_GetTemp
+   \       0x5C   0x42A0             CMP      R0,R4
+   \       0x5E   0xDA01             BGE.N    ??TEMPDRV_RegisterCallback_11
+   \                     ??TEMPDRV_RegisterCallback_3: (+1)
+   \       0x60   0x....             LDR.N    R0,??DataTable11_12
+   \       0x62   0xBD70             POP      {R4-R6,PC}
+   \                     ??TEMPDRV_RegisterCallback_11: (+1)
+   \       0x64   0xF106 0x012C      ADD      R1,R6,#+44
+   \       0x68   0xE7DB             B.N      ??TEMPDRV_RegisterCallback_4
+   \                     ??TEMPDRV_RegisterCallback_1: (+1)
+   \       0x6A   0x....             LDR.N    R0,??DataTable11_13
+   \       0x6C   0xBD70             POP      {R4-R6,PC}
+   \                     ??TEMPDRV_RegisterCallback_7: (+1)
+   \       0x6E   0x....             LDR.N    R0,??DataTable11_14
+   \       0x70   0xBD70             POP      {R4-R6,PC}
+   \                     ??TEMPDRV_RegisterCallback_9: (+1)
+   \       0x72   0xB252             SXTB     R2,R2
+   \       0x74   0x2A00             CMP      R2,#+0
+   \       0x76   0xD501             BPL.N    ??TEMPDRV_RegisterCallback_12
+   \                     ??TEMPDRV_RegisterCallback_10: (+1)
+   \       0x78   0x....             LDR.N    R0,??DataTable11_15
+   \       0x7A   0xBD70             POP      {R4-R6,PC}
+   \                     ??TEMPDRV_RegisterCallback_12: (+1)
+   \       0x7C   0x1D08             ADDS     R0,R1,#+4
+   \       0x7E   0xF820 0x4032      STRH     R4,[R0, R2, LSL #+3]
+   \       0x82   0xF841 0x5032      STR      R5,[R1, R2, LSL #+3]
+   \       0x86   0x.... 0x....      BL       updateInterrupts
+   \       0x8A   0x2000             MOVS     R0,#+0
+   \       0x8C   0xBD70             POP      {R4-R6,PC}
+    782          }
+    783          
+    784          /***************************************************************************//**
+    785           * @brief
+    786           *   Unregister a callback in the TEMP driver.
+    787           *
+    788           * @param[in] callback
+    789           *   Callback to unregister.
+    790           *
+    791           * @return
+    792           *   @li @ref ECODE_EMDRV_TEMPDRV_OK on success.
+    793           *
+    794           *   @li @ref ECODE_EMDRV_TEMPDRV_PARAM_ERROR if the callback is NULL.
+    795           *
+    796           *   @li @ref ECODE_EMDRV_TEMPDRV_NO_CALLBACK if the callback was not found.
+    797           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    798          Ecode_t TEMPDRV_UnregisterCallback(TEMPDRV_Callback_t callback)
+    799          {
+   \                     TEMPDRV_UnregisterCallback: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    800            // cannot register null callback
+    801            if (callback == NULL) {
+   \        0x4   0xD101             BNE.N    ??TEMPDRV_UnregisterCallback_0
+    802              return ECODE_EMDRV_TEMPDRV_PARAM_ERROR;
+   \        0x6   0x....             LDR.N    R0,??DataTable11_13
+   \        0x8   0xBD32             POP      {R1,R4,R5,PC}
+    803            }
+    804            if (removeCallback(tempdrvHighCallbacks, callback) == false
+    805                && removeCallback(tempdrvLowCallbacks, callback) == false) {
+   \                     ??TEMPDRV_UnregisterCallback_0: (+1)
+   \        0xA   0x....             LDR.N    R5,??DataTable11_8
+   \        0xC   0x4621             MOV      R1,R4
+   \        0xE   0x1D28             ADDS     R0,R5,#+4
+   \       0x10   0x.... 0x....      BL       removeCallback
+   \       0x14   0xB938             CBNZ.N   R0,??TEMPDRV_UnregisterCallback_1
+   \       0x16   0x4621             MOV      R1,R4
+   \       0x18   0xF105 0x002C      ADD      R0,R5,#+44
+   \       0x1C   0x.... 0x....      BL       removeCallback
+   \       0x20   0xB908             CBNZ.N   R0,??TEMPDRV_UnregisterCallback_1
+    806              return ECODE_EMDRV_TEMPDRV_NO_CALLBACK;
+   \       0x22   0x....             LDR.N    R0,??DataTable11_16
+   \       0x24   0xBD32             POP      {R1,R4,R5,PC}
+    807            }
+    808            return ECODE_EMDRV_TEMPDRV_OK;
+   \                     ??TEMPDRV_UnregisterCallback_1: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0xBD32             POP      {R1,R4,R5,PC}
+    809          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x2128             MOVS     R1,#+40
+   \        0x2   0xF104 0x002C      ADD      R0,R4,#+44
+   \        0x6   0x.... 0x....      B.W      __aeabi_memclr4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0xC300'0000        DC32     0xc3000000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0x42FE'0001        DC32     0x42fe0001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \        0x0   0x42FE'0000        DC32     0x42fe0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \        0x0   0x4300'0000        DC32     0x43000000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \        0x0   0x5000'6064        DC32     0x50006064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_5:
+   \        0x0   0x5000'6068        DC32     0x50006068
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_6:
+   \        0x0   0x5000'5068        DC32     0x50005068
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_7:
+   \        0x0   0x5000'4064        DC32     0x50004064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_8:
+   \        0x0   0x....'....        DC32     TEMPDRV_InitState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_9:
+   \        0x0   0x5000'4078        DC32     0x50004078
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_10:
+   \        0x0   0x....'....        DC32     TEMPDRV_EnableState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_11:
+   \        0x0   0xF000'D001        DC32     0xf000d001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_12:
+   \        0x0   0xF000'D003        DC32     0xf000d003
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_13:
+   \        0x0   0xF000'D002        DC32     0xf000d002
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_14:
+   \        0x0   0xF000'D008        DC32     0xf000d008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_15:
+   \        0x0   0xF000'D005        DC32     0xf000d005
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_16:
+   \        0x0   0xF000'D004        DC32     0xf000d004
+    810          
+    811          /* *INDENT-OFF* */
+    812          // ******** THE REST OF THE FILE IS DOCUMENTATION ONLY !***********************
+    813          /// @brief Temperature Sensor Driver
+    814          /// @{
+    815          ///
+    816          ///   @details
+    817          ///
+    818          ///   The source files for the TEMP driver library resides in the
+    819          ///   emdrv/tempdrv folder, and consists of tempdrv.c and tempdrv.h.
+    820          ///
+    821          ///
+    822          ///   @n @section tempdrv_intro_1 Introduction
+    823          ///
+    824          ///   TEMPDRV gives the user a nice interface to the EMU internal temperature sensor
+    825          ///   which is present on the EFR32 and some EFM32 devices. The TEMPDRV supports
+    826          ///   application specific callbacks at given temperature thresholds. The EMU
+    827          ///   internal temperature sensor is running in EM0-EM4H and is capable of waking
+    828          ///   up the core on temperature change. The EMU temperature sensor is running
+    829          ///   continuously and measurements are taken every 250 ms.
+    830          ///
+    831          ///   @note The TEMPDRV is using the EMU peripheral and not the ADC peripheral.
+    832          ///   The ADC contains another internal temperature sensor which is not touched
+    833          ///   by the TEMPDRV.
+    834          ///
+    835          ///   The TEMPDRV also provides an important errata fix for the EFR32 first
+    836          ///   generation devices when operating at high temperature environments (above
+    837          ///   50&deg;C). The errata document for the EFR32 describes the errata which is
+    838          ///   called "EMU_E201 - High Temperature Operation". To implement the errata fix
+    839          ///   in a user application it is enough to include the TEMPDRV and call
+    840          ///   @ref TEMPDRV_Init() at the start of the program. This will activate the errata
+    841          ///   fix code which is modifying registers based on changes in the EMU temperature.
+    842          ///
+    843          ///   @n @section tempdrv_conf Configuration Options
+    844          ///
+    845          ///   Some properties of the TEMPDRV driver are compile-time configurable. These
+    846          ///   properties are set in a file named tempdrv_config.h. A template for this
+    847          ///   file, containing default values, resides in the emdrv/tempdrv/config folder.
+    848          ///   To configure TEMPDRV for your application, provide your own configuration file.
+    849          ///   These are the available configuration parameters with default values defined.
+    850          ///   @code{.c}
+    851          ///
+    852          ///  // Callback table depth (for high and low callbacks each)
+    853          ///  #define TEMPDRV_CALLBACK_DEPTH 5
+    854          ///
+    855          ///  // Allow temperature sensor to wake the device up from EM4
+    856          ///  #define TEMPDRV_EM4WAKEUP false
+    857          ///
+    858          ///  // Allow TEMPDRV to define the EMU_IRQ_Handler. Enable if EMU_IRQ_Handler is
+    859          ///  // defined elsewhere.
+    860          ///  #define EMU_CUSTOM_IRQ_HANDLER false
+    861          ///   @endcode
+    862          ///
+    863          ///   Callback table depth determines the number of concurrent callbacks that can be
+    864          ///   registered at a single time. The depth applies to each limit, so depth of 5
+    865          ///   allows up to 5 high and 5 low callbacks to be registered.
+    866          ///   There are no run-time configuration options for TEMPDRV.
+    867          ///
+    868          ///   @n @section tempdrv_api The API
+    869          ///
+    870          ///   This section contain brief descriptions of the functions in the API. You will
+    871          ///   find detailed information on input and output parameters and return values by
+    872          ///   clicking on the function names. Most functions return an error
+    873          ///   code, @ref ECODE_EMDRV_TEMPDRV_OK is returned on success,
+    874          ///   see ecode.h and tempdrv.h for other error codes.
+    875          ///
+    876          ///   Your application code must include one header file: @em tempdrv.h.
+    877          ///
+    878          ///   @ref TEMPDRV_Init(), @ref TEMPDRV_DeInit() @n
+    879          ///    These functions initializes or deinitializes the TEMPDRV driver. This will
+    880          ///    erase any registered callbacks and disabled all interrupts. Typically
+    881          ///    TEMPDRV_Init() is called once in your startup code.
+    882          ///
+    883          ///   @ref TEMPDRV_Enable() @n
+    884          ///    Enable or disable the temperature driver without losing any registered
+    885          ///    callbacks.
+    886          ///
+    887          ///   @ref TEMPDRV_GetTemp() @n
+    888          ///    Get the current temperature in degrees Celsius. This measurement is based on
+    889          ///    a conversion from the EMU temperature sensor and calibration data that is
+    890          ///    stored in the DI page.
+    891          ///
+    892          ///   @ref TEMPDRV_RegisterCallback(), @ref TEMPDRV_UnregisterCallback() @n
+    893          ///    Callbacks can be registered for rising or falling thresholds and will called
+    894          ///    as soon as the temperature matches the specified threshold. Multiple
+    895          ///    callbacks at the same temperature are not permitted, nor are mismatches
+    896          ///    between temperature and limit (e. g temperature is lower than current but
+    897          ///    the limit is set to high). Additionally, unregistering a callback will remove
+    898          ///    all entries of matching callbacks.
+    899          ///
+    900          ///   @n @section tempdrv_example Example
+    901          ///   @code{.c}
+    902          ///#include "tempdrv.h"
+    903          ///
+    904          ///boolean flag = false;
+    905          ///
+    906          ///void callback(int8_t temp, TEMPDRV_LimitType_t limit)
+    907          ///{
+    908          ///  flag = true;
+    909          ///}
+    910          ///
+    911          ///int main(void)
+    912          ///{
+    913          ///  TEMPDRV_Init();
+    914          ///
+    915          ///  // Register a callback at 10 degrees above current temperature
+    916          ///  TEMPDRV_RegisterCallback(TEMPDRV_GetTemp()+10, TEMPDRV_LIMIT_HIGH, callback);
+    917          ///
+    918          ///  while (flag==false) {};
+    919          ///}
+    920          ///   @endcode
+    921          ///
+    922          /// @}  *******************************************************
+    923          
+    924          /** @} (end addtogroup tempdrv) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   EMU_IRQHandler
+         0   -> TEMPDRV_IRQHandler
+       0   EMU_IntClear
+       0   EMU_IntDisable
+       0   EMU_IntEnable
+       8   TEMPDRV_DeInit
+         8   -> __aeabi_memclr4
+         8   -> disableInterrupts
+         8   -> sl_interrupt_manager_clear_irq_pending
+         8   -> sl_interrupt_manager_disable_irq
+       8   TEMPDRV_Enable
+         8   -> disableInterrupts
+         8   -> updateInterrupts
+       0   TEMPDRV_GetActiveCallbacks
+       8   TEMPDRV_GetTemp
+         8   -> EMU_TemperatureGet
+      16   TEMPDRV_IRQHandler
+        16   -- Indirect call
+        16   -> TEMPDRV_GetTemp
+         0   -> updateInterrupts
+       8   TEMPDRV_Init
+         8   -> __aeabi_memclr4
+         8   -> disableInterrupts
+         8   -> sl_interrupt_manager_clear_irq_pending
+         8   -> sl_interrupt_manager_enable_irq
+         8   -> updateInterrupts
+      16   TEMPDRV_RegisterCallback
+        16   -> TEMPDRV_GetTemp
+        16   -> updateInterrupts
+      16   TEMPDRV_UnregisterCallback
+        16   -> removeCallback
+       8   disableInterrupts
+         8   -> EMU_IntClear
+         0   -> EMU_IntDisable
+      16   removeCallback
+        16   -> updateInterrupts
+      16   updateInterrupts
+         0   -> EMU_IntDisable
+        16   -> EMU_IntDisable
+         0   -> EMU_IntEnable
+        16   -> EMU_IntEnable
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_10
+       4  ??DataTable11_11
+       4  ??DataTable11_12
+       4  ??DataTable11_13
+       4  ??DataTable11_14
+       4  ??DataTable11_15
+       4  ??DataTable11_16
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+       4  ??DataTable11_7
+       4  ??DataTable11_8
+       4  ??DataTable11_9
+       8  ?Subroutine0
+      10  ?Subroutine1
+       2  EMU_IRQHandler
+       6  EMU_IntClear
+       6  EMU_IntDisable
+       6  EMU_IntEnable
+      40  TEMPDRV_DeInit
+      28  TEMPDRV_Enable
+       1  TEMPDRV_EnableState
+      46  TEMPDRV_GetActiveCallbacks
+      74  TEMPDRV_GetTemp
+      70  TEMPDRV_IRQHandler
+      56  TEMPDRV_Init
+     100  TEMPDRV_InitState
+          tempdrvHighCallbacks
+          tempdrvLowCallbacks
+          highCallback
+          lowCallback
+          nullCallback
+     142  TEMPDRV_RegisterCallback
+      42  TEMPDRV_UnregisterCallback
+      20  disableInterrupts
+      42  removeCallback
+     154  updateInterrupts
+
+ 
+ 101 bytes in section .bss
+ 820 bytes in section .text
+ 
+ 820 bytes of CODE memory
+ 101 bytes of DATA memory
+
+Errors: none
+Warnings: none

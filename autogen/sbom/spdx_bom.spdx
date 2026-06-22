@@ -13,7 +13,7 @@ DocumentNamespace: https://silabs.com
 
 ## Creation Information
 Creator: Organization: Silicon Laboratories, Inc.
-Created: 2026-06-21T07:00:42Z
+Created: 2026-06-22T07:52:04Z
 ## Relationships
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-silabs.simplicity_sdk-2025.12.3
 
@@ -29,6 +29,7 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.si
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-clock_manager
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-device_init
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_eusart
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_letimer
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-nvm3_source
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-power_manager
@@ -84,8 +85,8 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.si
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-sl_core
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_common
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_common
-Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_syscfg
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-cmsis_core
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-interrupt_manager
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_core
@@ -104,7 +105,7 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.si
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-sl_main_init
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-sl_main_process_action
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-gpio
-Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-tempdrv
 
 ## Package Information
 PackageName: EFM32PG22C200F512IM32
@@ -149,6 +150,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_eusart CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+
+## Package Information
+PackageName: IADC
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc
+PackageVersion: 2025.12.3
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
 
 ## Package Information
 PackageName: LETIMER
@@ -756,17 +768,6 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_common CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
 
 ## Package Information
-PackageName: Device Manager Peripheral HAL
-SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal
-PackageVersion: 2025.12.3
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
-
-## Package Information
 PackageName: SYSCFG
 SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_syscfg
 PackageVersion: 2025.12.3
@@ -776,6 +777,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_syscfg CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+
+## Package Information
+PackageName: Device Manager Peripheral HAL
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal
+PackageVersion: 2025.12.3
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
 
 ## Package Information
 PackageName: CMSIS-Core
@@ -991,12 +1003,12 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-gpio CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
 
 ## Package Information
-PackageName: IADC
-SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc
+PackageName: TEMPDRV
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-tempdrv
 PackageVersion: 2025.12.3
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
 PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
-Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-tempdrv CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3

@@ -1,16 +1,16 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:37
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         22/Jun/2026  16:34:25
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode          =  thumb
 #    Endian            =  little
 #    Source file       =
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
 #    Command line      =
 #        -f
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.rsp
-#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
 #        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
 #        SL_CODE_COMPONENT_SYSTEM=system -D
 #        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
@@ -26,86 +26,88 @@
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
 #        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir
 #        --diag_suppress Pa050 -o
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir
 #        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
-#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
-#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
 #        --dependencies=n
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.iar_deps
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.iar_deps
 #        --dynamic_output
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.iar_dynout
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o.iar_dynout
 #    Locale            =  C
 #    List file         =
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir\sl_memory_manager_pool.lst
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14481339869368568660.dir\sl_memory_manager_pool.lst
 #    Object file       =
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14481339869368568660.dir\sl_memory_manager_pool.o
 #    Runtime model:       
 #      __CPP_Runtime   =  1
 #      __SystemLibrary =  DLib
@@ -113,7 +115,7 @@
 #
 ###############################################################################
 
-C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c
       1          /***************************************************************************//**
       2           * @file
       3           * @brief Memory Manager Driver's Memory Pool Lightweight Feature Implementation.
@@ -697,80 +699,83 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
    \              0x5C 0x55    
    \              0x73 0x65    
    \              0x72 0x73
-   \        0x8   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
-   \              0x65 0x78    
-   \              0x69 0x6E    
-   \              0x5C 0x53
-   \       0x10   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
-   \              0x70 0x6C    
-   \              0x69 0x63    
-   \              0x69 0x74
-   \       0x18   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
-   \              0x74 0x75    
-   \              0x64 0x69    
-   \              0x6F 0x5C
-   \       0x20   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
-   \              0x5F 0x77    
-   \              0x6F 0x72    
-   \              0x6B 0x73
-   \       0x28   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
-   \              0x63 0x65    
-   \              0x5C 0x62    
-   \              0x74 0x73
-   \       0x30   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
-   \              0x73 0x6F    
-   \              0x72 0x5C    
-   \              0x73 0x69
-   \       0x38   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
-   \              0x6C 0x69    
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
    \              0x63 0x69    
-   \              0x74 0x79
-   \       0x40   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
-   \              0x64 0x6B    
-   \              0x5F 0x32    
-   \              0x30 0x32
-   \       0x48   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
-   \              0x31 0x32    
-   \              0x2E 0x33    
-   \              0x5C 0x70
-   \       0x50   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
-   \              0x74 0x66    
-   \              0x6F 0x72    
-   \              0x6D 0x5F
-   \       0x58   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
-   \              0x72 0x65    
-   \              0x5C 0x70    
-   \              0x6C 0x61
-   \       0x60   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x73, 0x65
-   \              0x6F 0x72    
-   \              0x6D 0x5C    
-   \              0x73 0x65
-   \       0x68   0x72 0x76          DC8 0x72, 0x76, 0x69, 0x63, 0x65, 0x5C, 0x6D, 0x65
-   \              0x69 0x63    
-   \              0x65 0x5C    
-   \              0x6D 0x65
-   \       0x70   0x6D 0x6F          DC8 0x6D, 0x6F, 0x72, 0x79, 0x5F, 0x6D, 0x61, 0x6E
-   \              0x72 0x79    
-   \              0x5F 0x6D    
-   \              0x61 0x6E
-   \       0x78   0x61 0x67          DC8 0x61, 0x67, 0x65, 0x72, 0x5C, 0x73, 0x72, 0x63
-   \              0x65 0x72    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
    \              0x5C 0x73    
-   \              0x72 0x63
-   \       0x80   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x6D, 0x65, 0x6D, 0x6F
-   \              0x6C 0x5F    
-   \              0x6D 0x65    
-   \              0x6D 0x6F
-   \       0x88   0x72 0x79          DC8 0x72, 0x79, 0x5F, 0x6D, 0x61, 0x6E, 0x61, 0x67
-   \              0x5F 0x6D    
-   \              0x61 0x6E    
-   \              0x61 0x67
-   \       0x90   0x65 0x72          DC8 0x65, 0x72, 0x5F, 0x70, 0x6F, 0x6F, 0x6C, 0x2E
-   \              0x5F 0x70    
-   \              0x6F 0x6F    
-   \              0x6C 0x2E
-   \       0x98   0x63 0x00          DC8 0x63, 0
-   \       0x9A                      DS8 2
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x35, 0x2E, 0x31
+   \              0x32 0x30    
+   \              0x32 0x35    
+   \              0x2E 0x31
+   \       0x50   0x32 0x2E          DC8 0x32, 0x2E, 0x33, 0x5C, 0x70, 0x6C, 0x61, 0x74
+   \              0x33 0x5C    
+   \              0x70 0x6C    
+   \              0x61 0x74
+   \       0x58   0x66 0x6F          DC8 0x66, 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72
+   \              0x72 0x6D    
+   \              0x5F 0x63    
+   \              0x6F 0x72
+   \       0x60   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F
+   \              0x70 0x6C    
+   \              0x61 0x74    
+   \              0x66 0x6F
+   \       0x68   0x72 0x6D          DC8 0x72, 0x6D, 0x5C, 0x73, 0x65, 0x72, 0x76, 0x69
+   \              0x5C 0x73    
+   \              0x65 0x72    
+   \              0x76 0x69
+   \       0x70   0x63 0x65          DC8 0x63, 0x65, 0x5C, 0x6D, 0x65, 0x6D, 0x6F, 0x72
+   \              0x5C 0x6D    
+   \              0x65 0x6D    
+   \              0x6F 0x72
+   \       0x78   0x79 0x5F          DC8 0x79, 0x5F, 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65
+   \              0x6D 0x61    
+   \              0x6E 0x61    
+   \              0x67 0x65
+   \       0x80   0x72 0x5C          DC8 0x72, 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C
+   \              0x73 0x72    
+   \              0x63 0x5C    
+   \              0x73 0x6C
+   \       0x88   0x5F 0x6D          DC8 0x5F, 0x6D, 0x65, 0x6D, 0x6F, 0x72, 0x79, 0x5F
+   \              0x65 0x6D    
+   \              0x6F 0x72    
+   \              0x79 0x5F
+   \       0x90   0x6D 0x61          DC8 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65, 0x72, 0x5F
+   \              0x6E 0x61    
+   \              0x67 0x65    
+   \              0x72 0x5F
+   \       0x98   0x70 0x6F          DC8 0x70, 0x6F, 0x6F, 0x6C, 0x2E, 0x63, 0
+   \              0x6F 0x6C    
+   \              0x2E 0x63    
+   \              0x00
+   \       0x9F                      DS8 1
 
    Maximum stack usage in bytes:
 
@@ -801,7 +806,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
    -----  --------------
        4  ??DataTable1
        4  ??DataTable1_1
-     156  ?_0
+     160  ?_0
       10  sl_memory_create_pool
       42  sl_memory_delete_pool
      134  sl_memory_heap_create_pool
@@ -810,11 +815,11 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
       34  sl_memory_pool_get_free_block_count
 
  
- 156 bytes in section .rodata
+ 160 bytes in section .rodata
  396 bytes in section .text
  
  396 bytes of CODE  memory
- 156 bytes of CONST memory
+ 160 bytes of CONST memory
 
 Errors: none
 Warnings: none

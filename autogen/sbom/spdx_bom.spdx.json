@@ -5,7 +5,7 @@
   "name" : "Silicon-Laboratories",
   "documentNamespace" : "https://silabs.com",
   "creationInfo" : {
-    "created" : "2026-06-21T07:00:42Z",
+    "created" : "2026-06-22T07:52:04Z",
     "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
   },
   "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
@@ -44,6 +44,14 @@
   }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_eusart",
     "name" : "EUSART",
+    "versionInfo" : "2025.12.3",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc",
+    "name" : "IADC",
     "versionInfo" : "2025.12.3",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -490,16 +498,16 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal",
-    "name" : "Device Manager Peripheral HAL",
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_syscfg",
+    "name" : "SYSCFG",
     "versionInfo" : "2025.12.3",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_syscfg",
-    "name" : "SYSCFG",
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal",
+    "name" : "Device Manager Peripheral HAL",
     "versionInfo" : "2025.12.3",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -665,8 +673,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc",
-    "name" : "IADC",
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-tempdrv",
+    "name" : "TEMPDRV",
     "versionInfo" : "2025.12.3",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -692,6 +700,10 @@
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2025.12.3",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_eusart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2025.12.3",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2025.12.3",
@@ -915,11 +927,11 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2025.12.3",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_syscfg",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2025.12.3",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_syscfg",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-device_peripheral_hal",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2025.12.3",
@@ -999,7 +1011,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2025.12.3",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_iadc",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2025.12.3-tempdrv",
     "relationshipType" : "CONTAINS"
   } ]
 }

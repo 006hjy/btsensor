@@ -36,6 +36,7 @@
                 "${workspaceFolder}/simplicity_sdk_2025.12.3/platform_core/platform/service/sl_main/src",
                 "${workspaceFolder}/simplicity_sdk_2025.12.3/platform_core/platform/service/sleeptimer/inc",
                 "${workspaceFolder}/simplicity_sdk_2025.12.3/platform_core/platform/service/sleeptimer/src",
+                "${workspaceFolder}/simplicity_sdk_2025.12.3/platform_core/platform/emdrv/tempdrv/inc",
                 "${workspaceFolder}/simplicity_sdk_2025.12.3/platform_core/platform/emdrv/uartdrv/inc",
                 "${workspaceFolder}/simplicity_sdk_2025.12.3/platform_core/platform/service/udelay/inc"
             ],

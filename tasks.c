@@ -1,6 +1,7 @@
 #include "timer.h"
 #include "uart.h"
 #include "adc.h"
+#include "env.h"
 #include "config.h"
 #include <stdlib.h>
 #include <string.h>
@@ -22,6 +23,8 @@ void tasks(void)
         uart_action();  // 调用 UART 发送函数
         
         update_and_store_config();
+        
+        update_temperature();
 
 
     }

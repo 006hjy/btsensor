@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\iar\ewarm-9.70.4\common\bin\cspybat" -f "C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.general.xcl" --backend -f "C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.driver.xcl" 
+& "C:\iar\ewarm-9.70.4\common\bin\cspybat" -f "C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.general.xcl" --backend -f "C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.driver.xcl" 
 }
 else
 {
-& "D:\iar\ewarm-9.70.4\common\bin\cspybat" -f "C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.driver.xcl" 
+& "C:\iar\ewarm-9.70.4\common\bin\cspybat" -f "C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\settings\btsensor.Default.driver.xcl" 
 }

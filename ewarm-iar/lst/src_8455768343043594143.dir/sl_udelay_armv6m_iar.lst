@@ -1,15 +1,15 @@
 ###############################################################################
 #                                                                             #
-#     IAR Assembler V9.70.4.588/W64 for ARM 21/Jun/2026  15:55:38             #
+#     IAR Assembler V9.70.4.588/W64 for ARM 22/Jun/2026  16:34:26             #
 #     Copyright 1999-2026 IAR Systems AB.                                     #
 #                                                                             #
-#           Source file   =  C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s#
-#           List file     =  C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8455768343043594143.dir\sl_udelay_armv6m_iar.lst#
-#           Object file   =  C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o#
+#           Source file   =  C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s#
+#           List file     =  C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8455768343043594143.dir\sl_udelay_armv6m_iar.lst#
+#           Object file   =  C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o#
 #           Command line  =  -f                                               #
-#                            C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o.rsp #
-#                            (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s #
-#                            -OC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir #
+#                            C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o.rsp #
+#                            (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s #
+#                            -OC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir #
 #                            -s+ -M<> -w+ -r -DDEBUG_EFM=1                    #
 #                            -DEFM32PG22C200F512IM32=1                        #
 #                            -DSL_CODE_COMPONENT_SYSTEM=system                #
@@ -28,47 +28,48 @@
 #                            -DSL_CODE_COMPONENT_CORE=core                    #
 #                            -DSL_CODE_COMPONENT_SLEEPTIMER=sleeptimer        #
 #                            -DSL_CODE_COMPONENT_UARTDRV=uartdrv              #
-#                            -LC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8455768343043594143.dir #
+#                            -LC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8455768343043594143.dir #
 #                            -t2 --cpu Cortex-M33 --cmse --fpu VFPv5_sp       #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\ #
-#                            -IC:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\) #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\) #
 #                            --diagnostics_format=sarif_stdout -y             #
-#                            C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o.iar_deps #
+#                            C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o.iar_deps #
 #                            --dynamic_output                                 #
-#                            C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o.iar_dynout #
+#                            C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8455768343043594143.dir\sl_udelay_armv6m_iar.o.iar_dynout #
 #                                                                             #
 ###############################################################################
 

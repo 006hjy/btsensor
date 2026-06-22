@@ -59,6 +59,9 @@ component:
   vendor: silabs
   id: sl_main
 - package: simplicity_sdk
+  vendor: silabs
+  id: tempdrv
+- package: simplicity_sdk
   instance:
   - inst0
   vendor: silabs

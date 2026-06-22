@@ -402,6 +402,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc</state>
                 </option>
@@ -741,6 +742,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc</state>
                 </option>
@@ -1295,6 +1297,9 @@
                 <name>$PROJ_DIR$\config\sl_uartdrv_eusart_inst0_config.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\config\tempdrv_config.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\config\uartdrv_config.h</name>
             </file>
         </group>
@@ -1669,6 +1674,21 @@
                                 </file>
                                 <file>
                                     <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_utils.c</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>tempdrv</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\tempdrv.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\src\tempdrv.c</name>
                                 </file>
                             </group>
                         </group>
@@ -2190,6 +2210,12 @@
     </file>
     <file>
         <name>$PROJ_DIR$\config.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\env.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\env.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\tasks.c</name>

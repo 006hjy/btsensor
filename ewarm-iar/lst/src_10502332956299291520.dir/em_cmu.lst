@@ -1,16 +1,16 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         21/Jun/2026  15:55:36
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         22/Jun/2026  16:34:23
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode          =  thumb
 #    Endian            =  little
 #    Source file       =
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_cmu.c
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_cmu.c
 #    Command line      =
 #        -f
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o.rsp
-#        (C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_cmu.c
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_cmu.c
 #        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
 #        SL_CODE_COMPONENT_SYSTEM=system -D
 #        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
@@ -26,86 +26,88 @@
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
 #        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_10502332956299291520.dir
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_10502332956299291520.dir
 #        --diag_suppress Pa050 -o
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir
 #        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
-#        --dlib_config D:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\
-#        -I C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\config\ -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\.\ -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\
 #        -I
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
 #        --dependencies=n
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o.iar_deps
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o.iar_deps
 #        --dynamic_output
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o.iar_dynout
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o.iar_dynout
 #    Locale            =  C
 #    List file         =
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_10502332956299291520.dir\em_cmu.lst
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_10502332956299291520.dir\em_cmu.lst
 #    Object file       =
-#        C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_10502332956299291520.dir\em_cmu.o
 #    Runtime model:       
 #      __CPP_Runtime   =  1
 #      __SystemLibrary =  DLib
@@ -113,7 +115,7 @@
 #
 ###############################################################################
 
-C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_cmu.c
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_cmu.c
       1          /***************************************************************************//**
       2           * @file
       3           * @brief Clock management unit (CMU) Peripheral API
@@ -405,126 +407,130 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
    \              0x5C 0x55    
    \              0x73 0x65    
    \              0x72 0x73
-   \      0x198   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
-   \              0x65 0x78    
-   \              0x69 0x6E    
-   \              0x5C 0x53
-   \      0x1A0   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
-   \              0x70 0x6C    
-   \              0x69 0x63    
-   \              0x69 0x74
-   \      0x1A8   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
-   \              0x74 0x75    
-   \              0x64 0x69    
-   \              0x6F 0x5C
-   \      0x1B0   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
-   \              0x5F 0x77    
-   \              0x6F 0x72    
-   \              0x6B 0x73
-   \      0x1B8   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
-   \              0x63 0x65    
-   \              0x5C 0x62    
-   \              0x74 0x73
-   \      0x1C0   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
-   \              0x73 0x6F    
-   \              0x72 0x5C    
-   \              0x73 0x69
-   \      0x1C8   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
-   \              0x6C 0x69    
+   \      0x198   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \      0x1A0   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \      0x1A8   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
    \              0x63 0x69    
-   \              0x74 0x79
-   \      0x1D0   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
-   \              0x64 0x6B    
-   \              0x5F 0x32    
-   \              0x30 0x32
-   \      0x1D8   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
-   \              0x31 0x32    
-   \              0x2E 0x33    
-   \              0x5C 0x70
-   \      0x1E0   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
-   \              0x74 0x66    
-   \              0x6F 0x72    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \      0x1B0   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \      0x1B8   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \      0x1C0   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \      0x1C8   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \      0x1D0   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \      0x1D8   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x35, 0x2E, 0x31
+   \              0x32 0x30    
+   \              0x32 0x35    
+   \              0x2E 0x31
+   \      0x1E0   0x32 0x2E          DC8 0x32, 0x2E, 0x33, 0x5C, 0x70, 0x6C, 0x61, 0x74
+   \              0x33 0x5C    
+   \              0x70 0x6C    
+   \              0x61 0x74
+   \      0x1E8   0x66 0x6F          DC8 0x66, 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72
+   \              0x72 0x6D    
+   \              0x5F 0x63    
+   \              0x6F 0x72
+   \      0x1F0   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F
+   \              0x70 0x6C    
+   \              0x61 0x74    
+   \              0x66 0x6F
+   \      0x1F8   0x72 0x6D          DC8 0x72, 0x6D, 0x5C, 0x65, 0x6D, 0x6C, 0x69, 0x62
+   \              0x5C 0x65    
+   \              0x6D 0x6C    
+   \              0x69 0x62
+   \      0x200   0x5C 0x69          DC8 0x5C, 0x69, 0x6E, 0x63, 0x5C, 0x65, 0x6D, 0x5F
+   \              0x6E 0x63    
+   \              0x5C 0x65    
    \              0x6D 0x5F
-   \      0x1E8   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
-   \              0x72 0x65    
-   \              0x5C 0x70    
-   \              0x6C 0x61
-   \      0x1F0   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x65, 0x6D
-   \              0x6F 0x72    
-   \              0x6D 0x5C    
-   \              0x65 0x6D
-   \      0x1F8   0x6C 0x69          DC8 0x6C, 0x69, 0x62, 0x5C, 0x69, 0x6E, 0x63, 0x5C
-   \              0x62 0x5C    
-   \              0x69 0x6E    
-   \              0x63 0x5C
-   \      0x200   0x65 0x6D          DC8 0x65, 0x6D, 0x5F, 0x62, 0x75, 0x73, 0x2E, 0x68
-   \              0x5F 0x62    
-   \              0x75 0x73    
-   \              0x2E 0x68
-   \      0x208   0x00               DC8 0
-   \      0x209                      DS8 3
-   \      0x20C   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \      0x208   0x62 0x75          DC8 0x62, 0x75, 0x73, 0x2E, 0x68, 0
+   \              0x73 0x2E    
+   \              0x68 0x00
+   \      0x20E                      DS8 2
+   \      0x210   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
    \              0x5C 0x55    
    \              0x73 0x65    
    \              0x72 0x73
-   \      0x214   0x5C 0x68          DC8 0x5C, 0x68, 0x65, 0x78, 0x69, 0x6E, 0x5C, 0x53
-   \              0x65 0x78    
-   \              0x69 0x6E    
-   \              0x5C 0x53
-   \      0x21C   0x69 0x6D          DC8 0x69, 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74
-   \              0x70 0x6C    
-   \              0x69 0x63    
-   \              0x69 0x74
-   \      0x224   0x79 0x53          DC8 0x79, 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C
-   \              0x74 0x75    
-   \              0x64 0x69    
-   \              0x6F 0x5C
-   \      0x22C   0x76 0x36          DC8 0x76, 0x36, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73
-   \              0x5F 0x77    
-   \              0x6F 0x72    
-   \              0x6B 0x73
-   \      0x234   0x70 0x61          DC8 0x70, 0x61, 0x63, 0x65, 0x5C, 0x62, 0x74, 0x73
-   \              0x63 0x65    
-   \              0x5C 0x62    
-   \              0x74 0x73
-   \      0x23C   0x65 0x6E          DC8 0x65, 0x6E, 0x73, 0x6F, 0x72, 0x5C, 0x73, 0x69
-   \              0x73 0x6F    
-   \              0x72 0x5C    
-   \              0x73 0x69
-   \      0x244   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
-   \              0x6C 0x69    
+   \      0x218   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \      0x220   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \      0x228   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
    \              0x63 0x69    
-   \              0x74 0x79
-   \      0x24C   0x5F 0x73          DC8 0x5F, 0x73, 0x64, 0x6B, 0x5F, 0x32, 0x30, 0x32
-   \              0x64 0x6B    
-   \              0x5F 0x32    
-   \              0x30 0x32
-   \      0x254   0x35 0x2E          DC8 0x35, 0x2E, 0x31, 0x32, 0x2E, 0x33, 0x5C, 0x70
-   \              0x31 0x32    
-   \              0x2E 0x33    
-   \              0x5C 0x70
-   \      0x25C   0x6C 0x61          DC8 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5F
-   \              0x74 0x66    
-   \              0x6F 0x72    
-   \              0x6D 0x5F
-   \      0x264   0x63 0x6F          DC8 0x63, 0x6F, 0x72, 0x65, 0x5C, 0x70, 0x6C, 0x61
-   \              0x72 0x65    
-   \              0x5C 0x70    
-   \              0x6C 0x61
-   \      0x26C   0x74 0x66          DC8 0x74, 0x66, 0x6F, 0x72, 0x6D, 0x5C, 0x65, 0x6D
-   \              0x6F 0x72    
-   \              0x6D 0x5C    
-   \              0x65 0x6D
-   \      0x274   0x6C 0x69          DC8 0x6C, 0x69, 0x62, 0x5C, 0x73, 0x72, 0x63, 0x5C
-   \              0x62 0x5C    
-   \              0x73 0x72    
-   \              0x63 0x5C
-   \      0x27C   0x65 0x6D          DC8 0x65, 0x6D, 0x5F, 0x63, 0x6D, 0x75, 0x2E, 0x63
+   \              0x74 0x79    
+   \              0x53 0x74
+   \      0x230   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \      0x238   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \      0x240   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \      0x248   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \      0x250   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \      0x258   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x35, 0x2E, 0x31
+   \              0x32 0x30    
+   \              0x32 0x35    
+   \              0x2E 0x31
+   \      0x260   0x32 0x2E          DC8 0x32, 0x2E, 0x33, 0x5C, 0x70, 0x6C, 0x61, 0x74
+   \              0x33 0x5C    
+   \              0x70 0x6C    
+   \              0x61 0x74
+   \      0x268   0x66 0x6F          DC8 0x66, 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72
+   \              0x72 0x6D    
    \              0x5F 0x63    
-   \              0x6D 0x75    
-   \              0x2E 0x63
-   \      0x284   0x00               DC8 0
-   \      0x285                      DS8 3
+   \              0x6F 0x72
+   \      0x270   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F
+   \              0x70 0x6C    
+   \              0x61 0x74    
+   \              0x66 0x6F
+   \      0x278   0x72 0x6D          DC8 0x72, 0x6D, 0x5C, 0x65, 0x6D, 0x6C, 0x69, 0x62
+   \              0x5C 0x65    
+   \              0x6D 0x6C    
+   \              0x69 0x62
+   \      0x280   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x65, 0x6D, 0x5F
+   \              0x72 0x63    
+   \              0x5C 0x65    
+   \              0x6D 0x5F
+   \      0x288   0x63 0x6D          DC8 0x63, 0x6D, 0x75, 0x2E, 0x63, 0
+   \              0x75 0x2E    
+   \              0x63 0x00
+   \      0x28E                      DS8 2
     144          {
     145            //  minFreq   maxFreq    HFRCOCAL value  band
     146            {  900000UL, 1080000UL, 0x82401F00UL, cmuHFRCODPLLFreq_1M0Hz         },
@@ -1680,7 +1686,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
    \        0xC   0xD106             BNE.N    ??CMU_ClockEnable_1
     827              EFM_ASSERT(false);                      /* No enable for this clock. */
    \        0xE   0xF240 0x313B      MOVW     R1,#+827
-   \       0x12   0xF507 0x7003      ADD      R0,R7,#+524
+   \       0x12   0xF507 0x7004      ADD      R0,R7,#+528
    \       0x16   0x.... 0x....      BL       assertEFM
    \       0x1A   0xE007             B.N      ??CMU_ClockEnable_2
     828            } else if (((unsigned)clock >> CMU_EN_REG_POS) == CMU_CLKEN0_EN_REG) {
@@ -4598,7 +4604,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
    \       0x3C   0x682A             LDR      R2,[R5, #+0]
    \       0x3E   0x.... 0x....      LDR.W    R7,??DataTable43
    \       0x42   0x.... 0x....      LDR.W    R3,??DataTable43_1
-   \       0x46   0xF507 0x7803      ADD      R8,R7,#+524
+   \       0x46   0xF507 0x7804      ADD      R8,R7,#+528
    \       0x4A   0x429A             CMP      R2,R3
    \       0x4C   0xD203             BCS.N    ??CrossCallReturnLabel_34
    \       0x4E   0xF640 0x2187      MOVW     R1,#+2695
@@ -8881,7 +8887,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
 
    \                                 In section .text, align 4, keep-with-next
    \                     ??DataTable18:
-   \        0x0   0x....'....        DC32     hfrcoCalTable+524
+   \        0x0   0x....'....        DC32     hfrcoCalTable+528
 
    \                                 In section .text, align 4, keep-with-next
    \                     ??DataTable18_1:
@@ -9013,7 +9019,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
 
    \                                 In section .text, align 4, keep-with-next
    \                     ??DataTable47_3:
-   \        0x0   0x....'....        DC32     hfrcoCalTable+524
+   \        0x0   0x....'....        DC32     hfrcoCalTable+528
 
    \                                 In section .text, align 4, keep-with-next
    \                     ??DataTable47_4:
@@ -16058,7 +16064,7 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
       68  em4GrpaClkGet
       48  euart0ClkGet
       84  flashWaitStateControl
-     648  hfrcoCalTable
+     656  hfrcoCalTable
        2  hfxo_precision
       74  iadcClkGet
        2  lfxo_precision
@@ -16078,12 +16084,12 @@ C:\Users\hexin\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\p
  
      2 bytes in section .bss
      4 bytes in section .data
-   648 bytes in section .rodata
+   656 bytes in section .rodata
  6'674 bytes in section .text
      4 bytes in section text_system_timecritical17171
  
  6'246 bytes of CODE  memory (+ 432 bytes shared)
-   648 bytes of CONST memory
+   656 bytes of CONST memory
      6 bytes of DATA  memory
 
 Errors: none

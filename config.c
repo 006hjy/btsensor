@@ -1,22 +1,11 @@
 #include <string.h>
 #include <stdlib.h>
+#include <config.h>
 #include "nvm3.h"
 #include "nvm3_default.h"
 
-// 1. 定义你的配置参数结构体（可以在里面放任意数量、不同类型的变量）
-typedef struct
-{
-    uint32_t boot_count;      // 启动次数 (4字节)
-    uint16_t alarm_threshold; // 报警阈值 (2字节)
-    uint8_t device_mode;      // 设备工作模式 (1字节)
-    uint8_t reserved;         // 预留字节，用于内存对齐 (1字节)
-} Config_t;
 
-// 2. 定义 NVM3 键
-#define STORAGE_KEY_CONFIG 0x00022
-
-// 3. 定义全局结构体变量，用于在内存中实时读写
-Config_t my_config;
+Config_t my_config = {0};
 
 /**
  * @brief 从 Flash 中读取配置到全局变量 my_config
@@ -39,7 +28,7 @@ uint8_t read_config(void)
         my_config.boot_count = 0;
         my_config.alarm_threshold = 500;
         my_config.device_mode = 0x01;
-        my_config.reserved = 0x00;
+        my_config.temp_way = 0x00;
 
         // 【可选】首次初始化时直接将默认值固化到 Flash
         // nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_CONFIG, &my_config, sizeof(Config_t));

@@ -8,7 +8,7 @@
 
 -p
 
-D:\iar\ewarm-9.70.4\arm\config\debugger\SiliconLaboratories\EFM32PG22C200F512IM32.ddf
+C:\iar\ewarm-9.70.4\arm\config\debugger\SiliconLaboratories\EFM32PG22C200F512IM32.ddf
 
 --semihosting=none
 
