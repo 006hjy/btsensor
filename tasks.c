@@ -22,7 +22,7 @@ void tasks(void)
 
         uart_action();  // 调用 UART 发送函数
         
-        update_and_store_config();
+        //update_and_store_config();
         
         update_temperature();
 

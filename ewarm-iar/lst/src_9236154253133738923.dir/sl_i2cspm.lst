@@ -1,0 +1,755 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         23/Jun/2026  17:07:40
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\src\sl_i2cspm.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_9236154253133738923.dir\sl_i2cspm.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\src\sl_i2cspm.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_9236154253133738923.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_9236154253133738923.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_9236154253133738923.dir\sl_i2cspm.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_9236154253133738923.dir\sl_i2cspm.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_9236154253133738923.dir\sl_i2cspm.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_9236154253133738923.dir\sl_i2cspm.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\src\sl_i2cspm.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief I2C simple poll-based master mode driver
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stddef.h>
+     32          #include <string.h>
+     33          #include "em_device.h"
+     34          #include "sl_assert.h"
+     35          #include "sl_clock_manager.h"
+     36          #include "sl_device_peripheral.h"
+     37          #include "sl_udelay.h"
+     38          #include "sl_gpio.h"
+     39          #include "sl_i2c.h"
+     40          #include "sli_i2c.h"
+     41          #include "sl_i2cspm.h"
+     42          
+     43          /*******************************************************************************
+     44           *******************************   DEFINES   ***********************************
+     45           ******************************************************************************/
+     46          
+     47          // Transfer timeout (how many polls).
+     48          #define SL_I2CSPM_TRANSFER_TIMEOUT 300000
+     49          
+     50          // SCL hold time in microseconds.
+     51          #ifndef SL_I2CSPM_SCL_HOLD_TIME_US
+     52          #define SL_I2CSPM_SCL_HOLD_TIME_US 100
+     53          #endif
+     54          
+     55          // Clock cycles for bus recovery.
+     56          #define SL_I2CSPM_RECOVER_NUM_CLOCKS  10
+     57          
+     58          /*******************************************************************************
+     59           **************************   LOCAL FUNCTIONS   ********************************
+     60           ******************************************************************************/
+     61          static sl_peripheral_t get_peripheral_from_i2c_port(I2C_TypeDef *port);
+     62          static sl_i2c_freq_mode_t map_frequency_to_mode(uint32_t frequency);
+     63          
+     64          /*******************************************************************************
+     65           *****************************   GLOBAL VARIABLES   ****************************
+     66           ******************************************************************************/
+     67          // I2C handles for each I2CSPM instance - these use the sl_i2c driver internally
+
+   \                                 In section .bss, align 4
+     68          static sl_i2c_handle_t i2cDeviceHandle[I2C_COUNT];
+   \                     i2cDeviceHandle:
+   \        0x0                      DS8 288
+     69          
+     70          /*******************************************************************************
+     71          **************************   GLOBAL FUNCTIONS   *******************************
+     72          *******************************************************************************/
+     73          
+     74          /*******************************************************************************
+     75           *   Initalize I2C peripheral
+     76           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     77          void I2CSPM_Init(I2CSPM_Init_TypeDef *init)
+     78          {
+   \                     I2CSPM_Init: (+1)
+   \        0x0   0xE92D 0x41FF      PUSH     {R0-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+     79            sl_status_t status;
+     80            int8_t i2cInstance;
+     81            sl_i2c_init_params_t i2c_init_params;
+     82            sl_i2c_handle_t *handle;
+     83          
+     84            EFM_ASSERT(init != NULL);
+   \        0x6   0x....             LDR.N    R5,??DataTable1
+   \        0x8   0xD103             BNE.N    ??I2CSPM_Init_0
+   \        0xA   0x2154             MOVS     R1,#+84
+   \        0xC   0x4628             MOV      R0,R5
+   \        0xE   0x.... 0x....      BL       assertEFM
+     85          
+     86            // Get the instance from port number.
+     87            i2cInstance = I2C_NUM(init->port);
+   \                     ??I2CSPM_Init_0: (+1)
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x.... 0x....      LDR.W    R8,??DataTable1_1
+   \       0x18   0x....             LDR.N    R7,??DataTable1_2
+   \       0x1A   0x4540             CMP      R0,R8
+   \       0x1C   0xBF08             IT       EQ
+   \       0x1E   0x2600             MOVEQ    R6,#+0
+   \       0x20   0xD009             BEQ.N    ??I2CSPM_Init_1
+   \       0x22   0x42B8             CMP      R0,R7
+   \       0x24   0xBF08             IT       EQ
+   \       0x26   0x2601             MOVEQ    R6,#+1
+   \       0x28   0xD005             BEQ.N    ??I2CSPM_Init_1
+   \       0x2A   0x2158             MOVS     R1,#+88
+   \       0x2C   0x4628             MOV      R0,R5
+   \       0x2E   0xF04F 0x36FF      MOV      R6,#+4294967295
+   \       0x32   0x.... 0x....      BL       assertEFM
+     88            EFM_ASSERT(i2cInstance >= 0 && i2cInstance < I2C_COUNT);
+     89          
+     90            // Get the handle for this instance
+     91            handle = &i2cDeviceHandle[i2cInstance];
+     92          
+     93            // Setup initialization parameters for sl_i2c_init
+     94            i2c_init_params.i2c_peripheral = get_peripheral_from_i2c_port(init->port);
+   \                     ??I2CSPM_Init_1: (+1)
+   \       0x36   0x6820             LDR      R0,[R4, #+0]
+   \       0x38   0x4540             CMP      R0,R8
+   \       0x3A   0xBF08             IT       EQ
+   \       0x3C   0x....             LDREQ.N  R0,??DataTable1_3
+   \       0x3E   0xD009             BEQ.N    ??I2CSPM_Init_2
+   \       0x40   0x42B8             CMP      R0,R7
+   \       0x42   0xBF08             IT       EQ
+   \       0x44   0x....             LDREQ.N  R0,??DataTable1_4
+   \       0x46   0xD005             BEQ.N    ??I2CSPM_Init_2
+   \       0x48   0xF240 0x1101      MOVW     R1,#+257
+   \       0x4C   0x4628             MOV      R0,R5
+   \       0x4E   0x.... 0x....      BL       assertEFM
+   \       0x52   0x2000             MOVS     R0,#+0
+   \                     ??I2CSPM_Init_2: (+1)
+   \       0x54   0x9000             STR      R0,[SP, #+0]
+     95          
+     96            // Check if we got a valid peripheral
+     97            if (i2c_init_params.i2c_peripheral == NULL) {
+   \       0x56   0xB908             CBNZ.N   R0,??I2CSPM_Init_3
+     98              // Invalid I2C port - cannot initialize
+     99              EFM_ASSERT(false);
+   \       0x58   0x2163             MOVS     R1,#+99
+   \       0x5A   0xE027             B.N      ??I2CSPM_Init_4
+    100              return;
+    101            }
+    102          
+    103            i2c_init_params.operating_mode = SL_I2C_LEADER_MODE;
+   \                     ??I2CSPM_Init_3: (+1)
+   \       0x5C   0x2000             MOVS     R0,#+0
+   \       0x5E   0xF88D 0x0004      STRB     R0,[SP, #+4]
+    104            i2c_init_params.frequency_mode = map_frequency_to_mode(init->i2cMaxFreq);
+   \       0x62   0x68E0             LDR      R0,[R4, #+12]
+   \       0x64   0x....             LDR.N    R1,??DataTable1_5
+   \       0x66   0x4288             CMP      R0,R1
+   \       0x68   0xBF38             IT       CC
+   \       0x6A   0x2000             MOVCC    R0,#+0
+   \       0x6C   0xD304             BCC.N    ??I2CSPM_Init_5
+   \       0x6E   0x....             LDR.N    R1,??DataTable1_6
+   \       0x70   0x4288             CMP      R0,R1
+   \       0x72   0xBF34             ITE      CC
+   \       0x74   0x2001             MOVCC    R0,#+1
+   \       0x76   0x2002             MOVCS    R0,#+2
+   \                     ??I2CSPM_Init_5: (+1)
+   \       0x78   0xF88D 0x0005      STRB     R0,[SP, #+5]
+    105            i2c_init_params.scl_gpio.port = init->sclPort;
+   \       0x7C   0x7920             LDRB     R0,[R4, #+4]
+    106            i2c_init_params.scl_gpio.pin = init->sclPin;
+    107            i2c_init_params.sda_gpio.port = init->sdaPort;
+    108            i2c_init_params.sda_gpio.pin = init->sdaPin;
+    109          
+    110            // Initialize using the sl_i2c driver
+    111            status = sl_i2c_init(handle, &i2c_init_params);
+   \       0x7E   0x....             LDR.N    R2,??DataTable1_7
+   \       0x80   0x4669             MOV      R1,SP
+   \       0x82   0xF88D 0x0006      STRB     R0,[SP, #+6]
+   \       0x86   0x7960             LDRB     R0,[R4, #+5]
+   \       0x88   0xF88D 0x0007      STRB     R0,[SP, #+7]
+   \       0x8C   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x8E   0xF88D 0x0008      STRB     R0,[SP, #+8]
+   \       0x92   0x79E0             LDRB     R0,[R4, #+7]
+   \       0x94   0xF88D 0x0009      STRB     R0,[SP, #+9]
+   \       0x98   0x2090             MOVS     R0,#+144
+   \       0x9A   0x4346             MULS     R6,R0,R6
+   \       0x9C   0x1990             ADDS     R0,R2,R6
+   \       0x9E   0x.... 0x....      BL       sl_i2c_init
+    112          
+    113            // Handle the return status properly
+    114            if (status == SL_STATUS_ALREADY_INITIALIZED) {
+   \       0xA2   0x2812             CMP      R0,#+18
+   \       0xA4   0xBF18             IT       NE
+   \       0xA6   0x2800             CMPNE    R0,#+0
+    115              // Already initialized, just return
+    116              return;
+    117            }
+    118            EFM_ASSERT(status == SL_STATUS_OK);
+   \       0xA8   0xD003             BEQ.N    ??I2CSPM_Init_6
+   \       0xAA   0x2176             MOVS     R1,#+118
+   \                     ??I2CSPM_Init_4: (+1)
+   \       0xAC   0x4628             MOV      R0,R5
+   \       0xAE   0x.... 0x....      BL       assertEFM
+    119          }
+   \                     ??I2CSPM_Init_6: (+1)
+   \       0xB2   0xE8BD 0x81FF      POP      {R0-R8,PC}
+    120          
+    121          /*******************************************************************************
+    122           *   Perform I2C transfer
+    123           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    124          I2C_TransferReturn_TypeDef I2CSPM_Transfer(I2C_TypeDef *i2c, I2C_TransferSeq_TypeDef *seq)
+    125          {
+   \                     I2CSPM_Transfer: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+    126            sl_status_t status;
+    127            int8_t i2cInstance;
+    128            sl_i2c_handle_t *handle;
+    129            uint32_t timeout_ms = SL_I2CSPM_TRANSFER_TIMEOUT;
+    130            uint8_t follower_addr; // Store the shifted address
+    131          
+    132            // Validate input parameters
+    133            if (i2c == NULL || seq == NULL) {
+   \        0x2   0x2800             CMP      R0,#+0
+   \        0x4   0xBF18             IT       NE
+   \        0x6   0x2900             CMPNE    R1,#+0
+   \        0x8   0xD057             BEQ.N    ??I2CSPM_Transfer_0
+    134              return i2cTransferUsageFault;
+    135            }
+    136          
+    137            // Get the instance from port number.
+    138            i2cInstance = I2C_NUM(i2c);
+   \        0xA   0x....             LDR.N    R2,??DataTable1_1
+   \        0xC   0x4290             CMP      R0,R2
+   \        0xE   0xBF08             IT       EQ
+   \       0x10   0x2300             MOVEQ    R3,#+0
+   \       0x12   0xD003             BEQ.N    ??I2CSPM_Transfer_1
+   \       0x14   0x....             LDR.N    R2,??DataTable1_2
+   \       0x16   0x4290             CMP      R0,R2
+   \       0x18   0xD14F             BNE.N    ??I2CSPM_Transfer_0
+   \       0x1A   0x2301             MOVS     R3,#+1
+    139            if (i2cInstance < 0 || i2cInstance >= I2C_COUNT) {
+    140              return i2cTransferUsageFault;
+    141            }
+    142          
+    143            // Get the handle for this instance
+    144            handle = &i2cDeviceHandle[i2cInstance];
+    145          
+    146            // Check if this instance is initialized by examining the handle
+    147            // If i2c_peripheral is NULL, the handle has not been initialized
+    148            if (handle->i2c_peripheral == NULL) {
+   \                     ??I2CSPM_Transfer_1: (+1)
+   \       0x1C   0x2290             MOVS     R2,#+144
+   \       0x1E   0x4353             MULS     R3,R2,R3
+   \       0x20   0x....             LDR.N    R2,??DataTable1_7
+   \       0x22   0x58D0             LDR      R0,[R2, R3]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD048             BEQ.N    ??I2CSPM_Transfer_0
+    149              return i2cTransferUsageFault;
+    150            }
+    151          
+    152            // Compute follower address once (shift from 8-bit to 7-bit address)
+    153            follower_addr = seq->addr >> 1;
+   \       0x28   0x880C             LDRH     R4,[R1, #+0]
+    154          
+    155            // Handle different transfer types using sl_i2c driver for all series
+    156            switch (seq->flags) {
+   \       0x2A   0x18D0             ADDS     R0,R2,R3
+   \       0x2C   0x884A             LDRH     R2,[R1, #+2]
+   \       0x2E   0x05E4             LSLS     R4,R4,#+23
+   \       0x30   0x....             LDR.N    R5,??DataTable1_8
+   \       0x32   0x2A01             CMP      R2,#+1
+   \       0x34   0xD006             BEQ.N    ??I2CSPM_Transfer_2
+   \       0x36   0x2A02             CMP      R2,#+2
+   \       0x38   0xD00D             BEQ.N    ??I2CSPM_Transfer_3
+   \       0x3A   0x2A04             CMP      R2,#+4
+   \       0x3C   0xD013             BEQ.N    ??I2CSPM_Transfer_4
+   \       0x3E   0x2A08             CMP      R2,#+8
+   \       0x40   0xD01C             BEQ.N    ??I2CSPM_Transfer_5
+   \       0x42   0xE03A             B.N      ??I2CSPM_Transfer_0
+    157              case I2C_FLAG_WRITE:
+    158                // Simple write operation
+    159                if (seq->buf[0].len == 0) {
+   \                     ??I2CSPM_Transfer_2: (+1)
+   \       0x44   0x890B             LDRH     R3,[R1, #+8]
+   \       0x46   0x2B00             CMP      R3,#+0
+   \       0x48   0xD037             BEQ.N    ??I2CSPM_Transfer_0
+    160                  return i2cTransferUsageFault;
+    161                }
+    162                status = sl_i2c_leader_send_blocking(handle, follower_addr, seq->buf[0].data, seq->buf[0].len, timeout_ms);
+   \       0x4A   0x9500             STR      R5,[SP, #+0]
+   \       0x4C   0x684A             LDR      R2,[R1, #+4]
+   \       0x4E   0x0E21             LSRS     R1,R4,#+24
+   \       0x50   0x.... 0x....      BL       sl_i2c_leader_send_blocking
+    163                break;
+   \       0x54   0xE01C             B.N      ??I2CSPM_Transfer_6
+    164          
+    165              case I2C_FLAG_READ:
+    166                // Simple read operation
+    167                if (seq->buf[0].len == 0) {
+   \                     ??I2CSPM_Transfer_3: (+1)
+   \       0x56   0x890B             LDRH     R3,[R1, #+8]
+   \       0x58   0xB37B             CBZ.N    R3,??I2CSPM_Transfer_0
+    168                  return i2cTransferUsageFault;
+    169                }
+    170                status = sl_i2c_leader_receive_blocking(handle, follower_addr, seq->buf[0].data, seq->buf[0].len, timeout_ms);
+   \       0x5A   0x9500             STR      R5,[SP, #+0]
+   \       0x5C   0x684A             LDR      R2,[R1, #+4]
+   \       0x5E   0x0E21             LSRS     R1,R4,#+24
+   \       0x60   0x.... 0x....      BL       sl_i2c_leader_receive_blocking
+    171                break;
+   \       0x64   0xE014             B.N      ??I2CSPM_Transfer_6
+    172          
+    173              case I2C_FLAG_WRITE_READ:
+    174                // Write followed by read (repeated start)
+    175                if (seq->buf[0].len == 0 || seq->buf[1].len == 0) {
+   \                     ??I2CSPM_Transfer_4: (+1)
+   \       0x66   0x890B             LDRH     R3,[R1, #+8]
+   \       0x68   0x2B00             CMP      R3,#+0
+   \       0x6A   0xBF1C             ITT      NE
+   \       0x6C   0x8A0A             LDRHNE   R2,[R1, #+16]
+   \       0x6E   0x2A00             CMPNE    R2,#+0
+   \       0x70   0xD023             BEQ.N    ??I2CSPM_Transfer_0
+    176                  return i2cTransferUsageFault;
+    177                }
+    178                status = sl_i2c_leader_transfer_blocking(handle, follower_addr,
+    179                                                         seq->buf[0].data, seq->buf[0].len,
+    180                                                         seq->buf[1].data, seq->buf[1].len,
+    181                                                         timeout_ms);
+   \       0x72   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x76   0x.... 0x....      BL       sl_i2c_leader_transfer_blocking
+    182                break;
+   \       0x7A   0xE009             B.N      ??I2CSPM_Transfer_6
+    183          
+    184              case I2C_FLAG_WRITE_WRITE:
+    185              {
+    186                // Two buffers written in a single transaction: S+ADDR(W)+DATA0+DATA1+P
+    187                if (seq->buf[0].len == 0 || seq->buf[1].len == 0) {
+   \                     ??I2CSPM_Transfer_5: (+1)
+   \       0x7C   0x890B             LDRH     R3,[R1, #+8]
+   \       0x7E   0x2B00             CMP      R3,#+0
+   \       0x80   0xBF1C             ITT      NE
+   \       0x82   0x8A0A             LDRHNE   R2,[R1, #+16]
+   \       0x84   0x2A00             CMPNE    R2,#+0
+   \       0x86   0xD018             BEQ.N    ??I2CSPM_Transfer_0
+    188                  return i2cTransferUsageFault;
+    189                }
+    190          
+    191                // Use internal API for write-write without malloc
+    192                status = sli_i2c_leader_write_no_stop_blocking(handle,
+    193                                                               follower_addr,
+    194                                                               seq->buf[0].data,
+    195                                                               seq->buf[0].len,
+    196                                                               seq->buf[1].data,
+    197                                                               seq->buf[1].len,
+    198                                                               timeout_ms);
+   \       0x88   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x8C   0x.... 0x....      BL       sli_i2c_leader_write_no_stop_blocking
+    199                break;
+    200              }
+    201          
+    202              default:
+    203                return i2cTransferUsageFault;
+    204            }
+    205          
+    206            // Convert sl_status_t to I2C_TransferReturn_TypeDef
+    207            switch (status) {
+   \                     ??I2CSPM_Transfer_6: (+1)
+   \       0x90   0xB1A8             CBZ.N    R0,??I2CSPM_Transfer_7
+   \       0x92   0x2806             CMP      R0,#+6
+   \       0x94   0xD008             BEQ.N    ??I2CSPM_Transfer_8
+   \       0x96   0x2807             CMP      R0,#+7
+   \       0x98   0xD00C             BEQ.N    ??I2CSPM_Transfer_9
+   \       0x9A   0x282D             CMP      R0,#+45
+   \       0x9C   0xD004             BEQ.N    ??I2CSPM_Transfer_8
+   \       0x9E   0x282F             CMP      R0,#+47
+   \       0xA0   0xD008             BEQ.N    ??I2CSPM_Transfer_9
+   \       0xA2   0x2831             CMP      R0,#+49
+   \       0xA4   0xD003             BEQ.N    ??I2CSPM_Transfer_10
+   \       0xA6   0xE008             B.N      ??I2CSPM_Transfer_0
+    208              case SL_STATUS_OK:
+    209                return i2cTransferDone;
+    210              case SL_STATUS_NOT_FOUND:   // Address NACK
+    211                return i2cTransferNack;
+    212              case SL_STATUS_ABORT:       // Data NACK
+    213                return i2cTransferNack;
+   \                     ??I2CSPM_Transfer_8: (+1)
+   \       0xA8   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0xAC   0xBD3E             POP      {R1-R5,PC}
+    214              case SL_STATUS_TRANSMIT:
+    215                return i2cTransferArbLost;
+   \                     ??I2CSPM_Transfer_10: (+1)
+   \       0xAE   0xF06F 0x0002      MVN      R0,#+2
+   \       0xB2   0xBD3E             POP      {R1-R5,PC}
+    216              case SL_STATUS_IO:
+    217                return i2cTransferBusErr;
+    218              case SL_STATUS_TIMEOUT:
+    219                return i2cTransferBusErr;
+   \                     ??I2CSPM_Transfer_9: (+1)
+   \       0xB4   0xF06F 0x0001      MVN      R0,#+1
+   \       0xB8   0xBD3E             POP      {R1-R5,PC}
+    220              default:
+    221                return i2cTransferUsageFault;
+   \                     ??I2CSPM_Transfer_0: (+1)
+   \       0xBA   0xF06F 0x0003      MVN      R0,#+3
+   \                     ??I2CSPM_Transfer_7: (+1)
+   \       0xBE   0xBD3E             POP      {R1-R5,PC}
+    222            }
+    223          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x9502             STR      R5,[SP, #+8]
+   \        0x2   0x9201             STR      R2,[SP, #+4]
+   \        0x4   0x68CA             LDR      R2,[R1, #+12]
+   \        0x6   0x9200             STR      R2,[SP, #+0]
+   \        0x8   0x684A             LDR      R2,[R1, #+4]
+   \        0xA   0x0E21             LSRS     R1,R4,#+24
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x5A01'0000        DC32     0x5a010000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x5006'8000        DC32     0x50068000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \        0x0   0x....'....        DC32     sl_peripheral_val_i2c0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \        0x0   0x....'....        DC32     sl_peripheral_val_i2c1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \        0x0   0x0001'86A1        DC32     0x186a1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \        0x0   0x0006'1A81        DC32     0x61a81
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \        0x0   0x....'....        DC32     i2cDeviceHandle
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_8:
+   \        0x0   0x0004'93E0        DC32     0x493e0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x35, 0x2E, 0x31
+   \              0x32 0x30    
+   \              0x32 0x35    
+   \              0x2E 0x31
+   \       0x50   0x32 0x2E          DC8 0x32, 0x2E, 0x33, 0x5C, 0x70, 0x6C, 0x61, 0x74
+   \              0x33 0x5C    
+   \              0x70 0x6C    
+   \              0x61 0x74
+   \       0x58   0x66 0x6F          DC8 0x66, 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72
+   \              0x72 0x6D    
+   \              0x5F 0x63    
+   \              0x6F 0x72
+   \       0x60   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F
+   \              0x70 0x6C    
+   \              0x61 0x74    
+   \              0x66 0x6F
+   \       0x68   0x72 0x6D          DC8 0x72, 0x6D, 0x5C, 0x64, 0x72, 0x69, 0x76, 0x65
+   \              0x5C 0x64    
+   \              0x72 0x69    
+   \              0x76 0x65
+   \       0x70   0x72 0x5C          DC8 0x72, 0x5C, 0x69, 0x32, 0x63, 0x73, 0x70, 0x6D
+   \              0x69 0x32    
+   \              0x63 0x73    
+   \              0x70 0x6D
+   \       0x78   0x5C 0x73          DC8 0x5C, 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F
+   \              0x72 0x63    
+   \              0x5C 0x73    
+   \              0x6C 0x5F
+   \       0x80   0x69 0x32          DC8 0x69, 0x32, 0x63, 0x73, 0x70, 0x6D, 0x2E, 0x63
+   \              0x63 0x73    
+   \              0x70 0x6D    
+   \              0x2E 0x63
+   \       0x88   0x00               DC8 0
+   \       0x89                      DS8 3
+    224          
+    225          /*******************************************************************************
+    226           **************************   LOCAL FUNCTIONS   ********************************
+    227           ******************************************************************************/
+    228          
+    229          /***************************************************************************//**
+    230           * @brief
+    231           *   Map I2C port to peripheral enum
+    232           ******************************************************************************/
+    233          static sl_peripheral_t get_peripheral_from_i2c_port(I2C_TypeDef *port)
+    234          {
+    235            // Use I2C_NUM to get instance number, then switch on it
+    236            int8_t i2c_instance = I2C_NUM(port);
+    237          
+    238            switch (i2c_instance) {
+    239          #if defined(I2C0)
+    240              case 0:
+    241                return SL_PERIPHERAL_I2C0;
+    242          #endif
+    243          #if defined(I2C1)
+    244              case 1:
+    245                return SL_PERIPHERAL_I2C1;
+    246          #endif
+    247          #if defined(I2C2)
+    248              case 2:
+    249                return SL_PERIPHERAL_I2C2;
+    250          #endif
+    251          #if defined(I2C3)
+    252              case 3:
+    253                return SL_PERIPHERAL_I2C3;
+    254          #endif
+    255              default:
+    256                // Invalid I2C instance - this should never happen with proper usage
+    257                EFM_ASSERT(false);
+    258                return NULL; // Return NULL to indicate invalid peripheral
+    259            }
+    260          }
+    261          
+    262          /***************************************************************************//**
+    263           * @brief
+    264           *   Map frequency value to frequency mode enum
+    265           ******************************************************************************/
+    266          static sl_i2c_freq_mode_t map_frequency_to_mode(uint32_t frequency)
+    267          {
+    268            if (frequency <= 100000) {
+    269              return SL_I2C_FREQ_STANDARD_MODE;
+    270            } else if (frequency <= 400000) {
+    271              return SL_I2C_FREQ_FAST_MODE;
+    272            } else {
+    273              return SL_I2C_FREQ_FASTPLUS_MODE;
+    274            }
+    275          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   I2CSPM_Init
+        40   -> assertEFM
+        40   -> sl_i2c_init
+      24   I2CSPM_Transfer
+        24   -> sl_i2c_leader_receive_blocking
+        24   -> sl_i2c_leader_send_blocking
+        24   -> sl_i2c_leader_transfer_blocking
+        24   -> sli_i2c_leader_write_no_stop_blocking
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+      14  ?Subroutine0
+     140  ?_0
+     182  I2CSPM_Init
+     192  I2CSPM_Transfer
+     288  i2cDeviceHandle
+
+ 
+ 288 bytes in section .bss
+ 140 bytes in section .rodata
+ 424 bytes in section .text
+ 
+ 424 bytes of CODE  memory
+ 140 bytes of CONST memory
+ 288 bytes of DATA  memory
+
+Errors: none
+Warnings: none

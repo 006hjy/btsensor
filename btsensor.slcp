@@ -50,6 +50,11 @@ component:
   vendor: silabs
   id: hal_letimer
 - package: simplicity_sdk
+  instance:
+  - tmp1075
+  vendor: silabs
+  id: i2cspm
+- package: simplicity_sdk
   vendor: silabs
   id: nvm3_source
 - package: simplicity_sdk

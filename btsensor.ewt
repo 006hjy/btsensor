@@ -1824,6 +1824,12 @@
                 <name>$PROJ_DIR$\autogen\sl_event_handler.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\autogen\sl_i2cspm_init.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_i2cspm_instances.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\autogen\sl_power_manager_handler.c</name>
             </file>
             <file>
@@ -1852,6 +1858,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\config\sl_device_init_dcdc_config.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\config\sl_i2cspm_tmp1075_config.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\config\sl_memory_manager_config.h</name>
@@ -2144,6 +2153,39 @@
                                 </file>
                             </group>
                         </group>
+                        <group>
+                            <name>i2c</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\inc\sl_i2c.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src\sl_i2c.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src\sli_i2c.h</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>i2cspm</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\inc\sl_i2cspm.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\src\sl_i2cspm.c</name>
+                                </file>
+                            </group>
+                        </group>
                     </group>
                     <group>
                         <name>emdrv</name>
@@ -2321,6 +2363,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_gpio.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_i2c.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_iadc.h</name>
                             </file>
                             <file>
@@ -2378,6 +2423,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_gpio.c</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_i2c.c</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_iadc.c</name>
                             </file>
                             <file>
@@ -2411,6 +2459,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_gpio.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_i2c.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_iadc.h</name>
                             </file>
                             <file>
@@ -2430,6 +2481,9 @@
                             <name>src</name>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_gpio.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_i2c.c</name>
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_iadc.c</name>
@@ -2796,6 +2850,12 @@
     </file>
     <file>
         <name>$PROJ_DIR$\timer.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\tmp1075.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\tmp1075.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\uart.c</name>

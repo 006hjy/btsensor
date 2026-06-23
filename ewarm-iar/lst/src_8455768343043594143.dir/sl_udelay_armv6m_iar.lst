@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-#     IAR Assembler V9.70.4.588/W64 for ARM 22/Jun/2026  16:34:26             #
+#     IAR Assembler V9.70.4.588/W64 for ARM 23/Jun/2026  17:07:44             #
 #     Copyright 1999-2026 IAR Systems AB.                                     #
 #                                                                             #
 #           Source file   =  C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s#
@@ -48,6 +48,9 @@
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\inc\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\ #

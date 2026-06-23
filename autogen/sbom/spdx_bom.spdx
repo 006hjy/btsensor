@@ -13,7 +13,7 @@ DocumentNamespace: https://silabs.com
 
 ## Creation Information
 Creator: Organization: Silicon Laboratories, Inc.
-Created: 2026-06-22T07:52:04Z
+Created: 2026-06-23T03:11:11Z
 ## Relationships
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-silabs.simplicity_sdk-2025.12.3
 
@@ -106,6 +106,11 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.si
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-sl_main_process_action
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-gpio
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-tempdrv
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-i2cspm
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-i2c_core
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-i2cspm_core
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_i2c
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3 CONTAINS SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_i2c
 
 ## Package Information
 PackageName: EFM32PG22C200F512IM32
@@ -1012,3 +1017,58 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-tempdrv CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+
+## Package Information
+PackageName: I2CSPM
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-i2cspm
+PackageVersion: 2025.12.3
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-i2cspm CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+
+## Package Information
+PackageName: I2C Core
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-i2c_core
+PackageVersion: 2025.12.3
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-i2c_core CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+
+## Package Information
+PackageName: I2CSPM Core
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-i2cspm_core
+PackageVersion: 2025.12.3
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-i2cspm_core CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+
+## Package Information
+PackageName: I2C
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_i2c
+PackageVersion: 2025.12.3
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-hal_i2c CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3
+
+## Package Information
+PackageName: I2C
+SPDXID: SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_i2c
+PackageVersion: 2025.12.3
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2025.12.3-emlib_i2c CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2025.12.3

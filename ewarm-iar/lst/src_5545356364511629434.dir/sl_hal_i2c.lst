@@ -1,0 +1,1190 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         23/Jun/2026  17:07:42
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_i2c.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_i2c.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_i2c.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMADRV=dmadrv -D SL_CODE_COMPONENT_GPIO=gpio -D
+#        SL_CODE_COMPONENT_HAL_COMMON=hal_common -D
+#        SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_i2c.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_i2c.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_5545356364511629434.dir\sl_hal_i2c.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_5545356364511629434.dir\sl_hal_i2c.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_i2c.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Inter-Integrated Circuit (I2C) peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_hal_i2c.h"
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_i2c_clear_interrupts(I2C_TypeDef *, uint32_t)
+   \                     sl_hal_i2c_clear_interrupts: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x4807             LDR.N    R0,??sl_hal_i2c_clear_interrupts_0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4284             CMP      R4,R0
+   \        0xA   0xBF1C             ITT      NE
+   \        0xC   0x4A06             LDRNE.N  R2,??sl_hal_i2c_clear_interrupts_0+4
+   \        0xE   0x4294             CMPNE    R4,R2
+   \       0x10   0xD004             BEQ.N    ??sl_hal_i2c_clear_interrupts_1
+   \       0x12   0xF44F 0x71DC      MOV      R1,#+440
+   \       0x16   0x4805             LDR.N    R0,??sl_hal_i2c_clear_interrupts_0+8
+   \       0x18   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_i2c_clear_interrupts_1: (+1)
+   \       0x1C   0xF242 0x013C      MOVW     R1,#+8252
+   \       0x20   0x5065             STR      R5,[R4, R1]
+   \       0x22   0xBD31             POP      {R0,R4,R5,PC}
+   \                     ??sl_hal_i2c_clear_interrupts_0:
+   \       0x24   0x5A01'0000        DC32     0x5a010000
+   \       0x28   0x5006'8000        DC32     0x50068000
+   \       0x2C   0x....'....        DC32     ?_0
+     32          #if defined(I2C_PRESENT)
+     33          
+     34          #include <stddef.h>
+     35          
+     36          /*******************************************************************************
+     37           *******************************   DEFINES   ***********************************
+     38           ******************************************************************************/
+     39          // Maximum I2C transmission rate constant.
+     40          #define SL_HAL_I2C_CR_MAX       8
+     41          
+     42          /*******************************************************************************
+     43           *****************************   LOCAL VARIABLES   *****************************
+     44           ******************************************************************************/
+     45          // Lookup table for Nlow + Nhigh setting defined by CLHR. Set the undefined,
+     46          // index (0x3) to reflect a default setting just in case.
+
+   \                                 In section .text, align 4, keep-with-next
+     47          static const uint8_t prescaled_clk_cycles_sum[] = { 4 + 4, 6 + 3, 11 + 6, 4 + 4 };
+   \                     prescaled_clk_cycles_sum:
+   \        0x0   0x08 0x09          DC8 8, 9, 17, 8
+   \              0x11 0x08
+     48          
+     49          /*******************************************************************************
+     50           **************************   LOCAL FUNCTIONS   ********************************
+     51           ******************************************************************************/
+     52          #if defined(_SILICON_LABS_32B_SERIES_2)
+     53          static void i2c_flush_rx(I2C_TypeDef *i2c);
+     54          #endif //_SILICON_LABS_32B_SERIES_2
+     55          /*******************************************************************************
+     56           **************************   GLOBAL FUNCTIONS   *******************************
+     57           ******************************************************************************/
+     58          extern __INLINE void sl_hal_i2c_wait_ready(I2C_TypeDef *i2c);
+     59          extern __INLINE void sl_hal_i2c_wait_sync(I2C_TypeDef *i2c);
+     60          extern __INLINE void sl_hal_i2c_enable(I2C_TypeDef *i2c);
+     61          extern __INLINE void sl_hal_i2c_disable(I2C_TypeDef *i2c);
+     62          extern __INLINE sl_status_t sl_hal_i2c_send_ack(I2C_TypeDef *i2c);
+     63          extern __INLINE void sl_hal_i2c_auto_ack(I2C_TypeDef *p_instance,
+     64                                                   uint8_t value);
+     65          extern __INLINE sl_status_t sl_hal_i2c_send_nack(I2C_TypeDef *i2c);
+     66          extern __INLINE uint32_t sl_hal_i2c_get_status(I2C_TypeDef *i2c);
+     67          extern __INLINE void sl_hal_i2c_enable_interrupts(I2C_TypeDef *i2c,
+     68                                                            uint32_t flags);
+     69          extern __INLINE void sl_hal_i2c_disable_interrupts(I2C_TypeDef *i2c,
+     70                                                             uint32_t flags);
+     71          extern __INLINE void sl_hal_i2c_set_interrupts(I2C_TypeDef *i2c,
+     72                                                         uint32_t flags);
+     73          extern __INLINE void sl_hal_i2c_clear_interrupts(I2C_TypeDef *i2c,
+     74                                                           uint32_t flags);
+     75          extern __INLINE uint32_t sl_hal_i2c_get_pending_interrupts(I2C_TypeDef *i2c);
+     76          extern __INLINE uint32_t sl_hal_i2c_get_enabled_interrupts(I2C_TypeDef *i2c);
+     77          extern __INLINE uint32_t sl_hal_i2c_get_enabled_pending_interrupts(I2C_TypeDef *i2c);
+     78          extern __INLINE void sl_hal_i2c_set_follower_address(I2C_TypeDef *i2c,
+     79                                                               uint16_t addr,
+     80                                                               bool is_10bit_addr);
+     81          extern __INLINE uint8_t sl_hal_i2c_get_follower_address(I2C_TypeDef *i2c);
+     82          extern __INLINE void sl_hal_i2c_set_follower_mask_address(I2C_TypeDef *i2c,
+     83                                                                    uint8_t mask);
+     84          extern __INLINE uint8_t sl_hal_i2c_get_follower_mask_address(I2C_TypeDef *i2c);
+     85          
+     86          #if defined(_I2C_CTRL_TXFIL_SHIFT)
+     87          extern __INLINE void sl_hal_i2c_set_tx_fifo_threshold(I2C_TypeDef *i2c,
+     88                                                                sl_i2c_fifo_threshold_t threshold_value);
+     89          extern __INLINE sl_i2c_fifo_threshold_t sl_hal_i2c_get_tx_fifo_threshold(const I2C_TypeDef *i2c);
+     90          #endif //_I2C_CTRL_TXFIL_SHIFT
+     91          
+     92          #if defined(_I2C_CTRL_RXFIL_SHIFT)
+     93          extern __INLINE void sl_hal_i2c_set_rx_fifo_threshold(I2C_TypeDef *i2c,
+     94                                                                sl_i2c_fifo_threshold_t threshold_value);
+     95          extern __INLINE sl_i2c_fifo_threshold_t sl_hal_i2c_get_rx_fifo_threshold(const I2C_TypeDef *i2c);
+     96          #endif //_I2C_CTRL_RXFIL_SHIFT
+     97          
+     98          /***************************************************************************//**
+     99           * Initializes the I2C Peripheral.
+    100           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    101          void sl_hal_i2c_init(I2C_TypeDef *i2c,
+    102                               sl_i2c_operating_mode_t  mode)
+    103          {
+   \                     sl_hal_i2c_init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine2
+    104            // Make sure the module exists on the selected chip.
+    105            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \        0x6   0xBF1C             ITT      NE
+   \        0x8   0x....             LDRNE.N  R2,??DataTable10
+   \        0xA   0x4294             CMPNE    R4,R2
+   \        0xC   0xD002             BEQ.N    ??CrossCallReturnLabel_11
+   \        0xE   0x2169             MOVS     R1,#+105
+   \       0x10   0x.... 0x....      BL       ?Subroutine1
+    106          
+    107            // Reset the i2c peripheral.
+    108            sl_hal_i2c_reset(i2c);
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x14   0x4620             MOV      R0,R4
+   \       0x16   0x.... 0x....      BL       sl_hal_i2c_reset
+    109          
+    110            // Wait for synchronization to complete.
+    111            sl_hal_i2c_wait_sync(i2c);
+    112          
+    113            // Leader or follower mode configuration.
+    114            i2c->CTRL_SET = (mode << _I2C_CTRL_SLAVE_SHIFT);
+   \       0x1A   0x006D             LSLS     R5,R5,#+1
+   \       0x1C   0xF241 0x0008      MOVW     R0,#+4104
+   \       0x20   0x5025             STR      R5,[R4, R0]
+    115          }
+   \       0x22   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x....             LDR.N    R0,??DataTable10_1
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4284             CMP      R4,R0
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_4
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    116          
+    117          /***************************************************************************//**
+    118           * Transmits 1 byte.
+    119           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    120          void sl_hal_i2c_tx(I2C_TypeDef *i2c,
+    121                             uint8_t data)
+    122          {
+   \                     sl_hal_i2c_tx: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine2
+    123            // Make sure the module exists on the selected chip.
+    124            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \        0x6   0xBF1C             ITT      NE
+   \        0x8   0x....             LDRNE.N  R2,??DataTable10
+   \        0xA   0x4294             CMPNE    R4,R2
+   \        0xC   0xD002             BEQ.N    ??CrossCallReturnLabel_10
+   \        0xE   0x217C             MOVS     R1,#+124
+   \       0x10   0x.... 0x....      BL       ?Subroutine1
+    125          
+    126          #if defined(_I2C_STATUS_TXFL_MASK)
+    127            // Check TX FIFO has space for at least one more frame.
+    128            while (!(i2c->STATUS & _I2C_STATUS_TXFL_MASK)) {
+    129            }
+    130          #endif //_I2C_STATUS_TXFL_MASK
+    131          
+    132            i2c->TXDATA = (uint32_t)data;
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x14   0x6365             STR      R5,[R4, #+52]
+    133          }
+   \       0x16   0xBD31             POP      {R0,R4,R5,PC}
+    134          
+    135          /***************************************************************************//**
+    136           * Receives 1 byte.
+    137           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    138          uint8_t sl_hal_i2c_rx(I2C_TypeDef *i2c)
+    139          {
+   \                     sl_hal_i2c_rx: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+    140            uint8_t rx_data = 0;
+    141            // Make sure the module exists on the selected chip.
+    142            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \        0x6   0x.... 0x....      LDR.W    R8,??DataTable10_1
+   \        0xA   0x....             LDR.N    R6,??DataTable10_2
+   \        0xC   0x....             LDR.N    R7,??DataTable10
+   \        0xE   0x4544             CMP      R4,R8
+   \       0x10   0xBF18             IT       NE
+   \       0x12   0x42BC             CMPNE    R4,R7
+   \       0x14   0xD004             BEQ.N    ??sl_hal_i2c_rx_0
+   \       0x16   0x218E             MOVS     R1,#+142
+   \       0x18   0xF106 0x0088      ADD      R0,R6,#+136
+   \       0x1C   0x.... 0x....      BL       assertEFM
+    143          
+    144            // Check for data to be available in receive buffer.
+    145            while (!(i2c->STATUS & _I2C_STATUS_RXDATAV_MASK)) {
+   \                     ??sl_hal_i2c_rx_0: (+1)
+   \       0x20   0x6960             LDR      R0,[R4, #+20]
+   \       0x22   0x05C1             LSLS     R1,R0,#+23
+   \       0x24   0xD5FC             BPL.N    ??sl_hal_i2c_rx_0
+    146            }
+    147          
+    148            // Read data.
+    149            rx_data = (uint8_t)i2c->RXDATA;
+   \       0x26   0x6A65             LDR      R5,[R4, #+36]
+    150          
+    151          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)  \
+    152            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) \
+    153            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_3)
+    154            // Errata I2C_E303 , I2C Fails to indicate new incoming data.
+    155            uint32_t status = sl_hal_i2c_get_status(i2c);
+    156          
+    157            // Look for invalid RXDATAV = 0 and RXFULL = 1 condition.
+    158            if (((status & I2C_IF_RXDATAV) == 0) & ((status & I2C_IF_RXFULL) != 0)) {
+   \       0x28   0x4544             CMP      R4,R8
+   \       0x2A   0xBF18             IT       NE
+   \       0x2C   0x42BC             CMPNE    R4,R7
+   \       0x2E   0xD004             BEQ.N    ??sl_hal_i2c_rx_1
+   \       0x30   0xF44F 0x71BA      MOV      R1,#+372
+   \       0x34   0x4630             MOV      R0,R6
+   \       0x36   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_i2c_rx_1: (+1)
+   \       0x3A   0x6961             LDR      R1,[R4, #+20]
+   \       0x3C   0x....             LDR.N    R0,??DataTable10_3
+   \       0x3E   0x4001             ANDS     R1,R0,R1
+   \       0x40   0xF5B1 0x3F00      CMP      R1,#+131072
+   \       0x44   0xD105             BNE.N    ??sl_hal_i2c_rx_2
+    159              // Performing a dummy read of the RXFIFO (I2C_RXDATA).
+    160              // This restores the expected RXDATAV = 1 and RXFULL = 0 condition.
+    161              (void)i2c->RXDATA;
+   \       0x46   0x6A60             LDR      R0,[R4, #+36]
+    162          
+    163              // The dummy read will also set the RXUFIF flag bit, which should be ignored and cleared.
+    164              sl_hal_i2c_clear_interrupts(i2c, I2C_IF_RXUF);
+   \       0x48   0xF44F 0x5100      MOV      R1,#+8192
+   \       0x4C   0x4620             MOV      R0,R4
+   \       0x4E   0x.... 0x....      BL       sl_hal_i2c_clear_interrupts
+    165            }
+    166          #endif
+    167          
+    168            return rx_data;
+   \                     ??sl_hal_i2c_rx_2: (+1)
+   \       0x52   0xB2E8             UXTB     R0,R5
+   \       0x54   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    169          }
+    170          
+    171          /***************************************************************************//**
+    172           *  Set I2C clock frequency.
+    173           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    174          void sl_hal_i2c_set_clock_frequency(I2C_TypeDef *i2c,
+    175                                              uint32_t i2c_clk,
+    176                                              uint32_t freq_scl,
+    177                                              sl_i2c_clock_hlr_t clhr)
+    178          {
+   \                     sl_hal_i2c_set_clock_frequency: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4607             MOV      R7,R0
+    179            uint32_t prescaled_clk_cycles;
+    180            uint32_t min_freq = 0;
+    181            uint32_t denominator;
+    182            int32_t clkdiv;
+    183          
+    184            // Make sure the module exists on the selected chip.
+    185            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \        0x6   0x....             LDR.N    R0,??DataTable10_1
+   \        0x8   0x460E             MOV      R6,R1
+   \        0xA   0x4614             MOV      R4,R2
+   \        0xC   0x461D             MOV      R5,R3
+   \        0xE   0xF04F 0x0900      MOV      R9,#+0
+   \       0x12   0x.... 0x....      LDR.W    R8,??DataTable10_4
+   \       0x16   0x4287             CMP      R7,R0
+   \       0x18   0xBF1C             ITT      NE
+   \       0x1A   0x....             LDRNE.N  R2,??DataTable10
+   \       0x1C   0x4297             CMPNE    R7,R2
+   \       0x1E   0xD002             BEQ.N    ??CrossCallReturnLabel_7
+   \       0x20   0x21B9             MOVS     R1,#+185
+   \       0x22   0x.... 0x....      BL       ?Subroutine0
+    186          
+    187            // Avoid dividing by 0.
+    188            EFM_ASSERT(freq_scl);
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x26   0xB914             CBNZ.N   R4,??CrossCallReturnLabel_6
+   \       0x28   0x21BC             MOVS     R1,#+188
+   \       0x2A   0x.... 0x....      BL       ?Subroutine0
+    189            EFM_ASSERT(i2c_clk);
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x2E   0xB916             CBNZ.N   R6,??CrossCallReturnLabel_5
+   \       0x30   0x21BD             MOVS     R1,#+189
+   \       0x32   0x.... 0x....      BL       ?Subroutine0
+    190          
+    191            // Wait for synchronization to complete.
+    192            sl_hal_i2c_wait_sync(i2c);
+    193          
+    194            // Set clhr mode.
+    195            i2c->CTRL_SET = clhr << _I2C_CTRL_CLHR_SHIFT;
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x36   0x0228             LSLS     R0,R5,#+8
+   \       0x38   0xF241 0x0108      MOVW     R1,#+4104
+   \       0x3C   0x5078             STR      R0,[R7, R1]
+    196          
+    197            // Check the minumum HF peripheral clock.
+    198            if (i2c->CTRL & I2C_CTRL_SLAVE) {
+   \       0x3E   0x68BA             LDR      R2,[R7, #+8]
+   \       0x40   0x0790             LSLS     R0,R2,#+30
+   \       0x42   0xD50B             BPL.N    ??sl_hal_i2c_set_clock_frequency_0
+    199              switch (clhr) {
+   \       0x44   0xB17D             CBZ.N    R5,??sl_hal_i2c_set_clock_frequency_1
+   \       0x46   0x2D02             CMP      R5,#+2
+   \       0x48   0xD003             BEQ.N    ??sl_hal_i2c_set_clock_frequency_2
+   \       0x4A   0xD205             BCS.N    ??sl_hal_i2c_set_clock_frequency_3
+    200                case SL_I2C_CLK_HLR_STANDARD:
+    201                  min_freq = 2000000;
+    202                  break;
+    203                case SL_I2C_CLK_HLR_ASYMMETRIC:
+    204                  min_freq = 5000000;
+   \       0x4C   0x.... 0x....      LDR.W    R9,??DataTable10_5
+    205                  break;
+   \       0x50   0xE015             B.N      ??CrossCallReturnLabel_4
+    206                case SL_I2C_CLK_HLR_FAST:
+    207                  min_freq = 14000000;
+   \                     ??sl_hal_i2c_set_clock_frequency_2: (+1)
+   \       0x52   0x.... 0x....      LDR.W    R9,??DataTable10_6
+    208                  break;
+   \       0x56   0xE012             B.N      ??CrossCallReturnLabel_4
+    209                default:
+    210                  EFM_ASSERT(false);
+   \                     ??sl_hal_i2c_set_clock_frequency_3: (+1)
+   \       0x58   0x21D2             MOVS     R1,#+210
+   \       0x5A   0xE00E             B.N      ??sl_hal_i2c_set_clock_frequency_4
+    211                  break;
+    212              }
+    213            } else {
+    214              switch (clhr) {
+   \                     ??sl_hal_i2c_set_clock_frequency_0: (+1)
+   \       0x5C   0xB11D             CBZ.N    R5,??sl_hal_i2c_set_clock_frequency_1
+   \       0x5E   0x2D02             CMP      R5,#+2
+   \       0x60   0xD007             BEQ.N    ??sl_hal_i2c_set_clock_frequency_5
+   \       0x62   0xD303             BCC.N    ??sl_hal_i2c_set_clock_frequency_6
+   \       0x64   0xE008             B.N      ??sl_hal_i2c_set_clock_frequency_7
+    215                case SL_I2C_CLK_HLR_STANDARD:
+    216                  min_freq = 2000000;
+   \                     ??sl_hal_i2c_set_clock_frequency_1: (+1)
+   \       0x66   0x.... 0x....      LDR.W    R9,??DataTable10_7
+    217                  break;
+   \       0x6A   0xE008             B.N      ??CrossCallReturnLabel_4
+    218                case SL_I2C_CLK_HLR_ASYMMETRIC:
+    219                  min_freq = 9000000;
+   \                     ??sl_hal_i2c_set_clock_frequency_6: (+1)
+   \       0x6C   0x.... 0x....      LDR.W    R9,??DataTable10_8
+    220                  break;
+   \       0x70   0xE005             B.N      ??CrossCallReturnLabel_4
+    221                case SL_I2C_CLK_HLR_FAST:
+    222                  min_freq = 20000000;
+   \                     ??sl_hal_i2c_set_clock_frequency_5: (+1)
+   \       0x72   0x.... 0x....      LDR.W    R9,??DataTable10_9
+    223                  break;
+   \       0x76   0xE002             B.N      ??CrossCallReturnLabel_4
+    224                default:
+    225                  EFM_ASSERT(false);
+   \                     ??sl_hal_i2c_set_clock_frequency_7: (+1)
+   \       0x78   0x21E1             MOVS     R1,#+225
+   \                     ??sl_hal_i2c_set_clock_frequency_4: (+1)
+   \       0x7A   0x.... 0x....      BL       ?Subroutine0
+    226                  break;
+    227              }
+    228            }
+    229          
+    230            // Reference frequency must be larger-than min frequency.
+    231            EFM_ASSERT(i2c_clk > min_freq);
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x7E   0x45B1             CMP      R9,R6
+   \       0x80   0xD302             BCC.N    ??CrossCallReturnLabel_3
+   \       0x82   0x21E7             MOVS     R1,#+231
+   \       0x84   0x.... 0x....      BL       ?Subroutine0
+    232          
+    233            // I2C SCL frequency is given by: freq_scl = i2c_clk/((Nlow + Nhigh) * (DIV + 1) + SL_HAL_I2C_CR_MAX).
+    234            // Therefore, DIV = ((i2c_clk - (SL_HAL_I2C_CR_MAX * freq_scl))/((Nlow + Nhigh) * freq_scl)) - 1.
+    235            // For more details, see the reference manual I2C Clock Generation chapter.
+    236          
+    237            // Calculation: n = Nlow + Nhigh.
+    238            prescaled_clk_cycles = (uint32_t)prescaled_clk_cycles_sum[clhr];
+    239            denominator = prescaled_clk_cycles * freq_scl;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x88   0x....             ADR.N    R0,prescaled_clk_cycles_sum
+   \       0x8A   0x5D45             LDRB     R5,[R0, R5]
+   \       0x8C   0x4365             MULS     R5,R4,R5
+    240          
+    241            // Ensure denominator is never zero.
+    242            EFM_ASSERT(denominator);
+   \       0x8E   0xD102             BNE.N    ??CrossCallReturnLabel_2
+   \       0x90   0x21F2             MOVS     R1,#+242
+   \       0x92   0x.... 0x....      BL       ?Subroutine0
+    243          
+    244            // Perform integer division so that clkdiv is rounded up.
+    245            clkdiv = (int32_t)(((i2c_clk - (SL_HAL_I2C_CR_MAX * freq_scl) + denominator - 1)
+    246                                / denominator) - 1);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x96   0xF06F 0x0007      MVN      R0,#+7
+   \       0x9A   0xFB00 0x6604      MLA      R6,R0,R4,R6
+   \       0x9E   0x19AE             ADDS     R6,R5,R6
+   \       0xA0   0x1E76             SUBS     R6,R6,#+1
+   \       0xA2   0xFBB6 0xF4F5      UDIV     R4,R6,R5
+   \       0xA6   0x1E64             SUBS     R4,R4,#+1
+    247          
+    248            // Verify that the resulting clock divider is within limits.
+    249            EFM_ASSERT(clkdiv >= 0);
+   \       0xA8   0xD502             BPL.N    ??CrossCallReturnLabel_1
+   \       0xAA   0x21F9             MOVS     R1,#+249
+   \       0xAC   0x.... 0x....      BL       ?Subroutine0
+    250            EFM_ASSERT((uint32_t)clkdiv <= _I2C_CLKDIV_DIV_MASK);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0xB0   0xF240 0x10FF      MOVW     R0,#+511
+   \       0xB4   0x4284             CMP      R4,R0
+   \       0xB6   0xD902             BLS.N    ??CrossCallReturnLabel_0
+   \       0xB8   0x21FA             MOVS     R1,#+250
+   \       0xBA   0x.... 0x....      BL       ?Subroutine0
+    251          
+    252            // The clock divisor must be at least 1 in follower mode according to the reference.
+    253            // Manual (in which case there is normally no need to set the bus frequency).
+    254            if ((i2c->CTRL & I2C_CTRL_SLAVE) && (clkdiv == 0)) {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0xBE   0x68B8             LDR      R0,[R7, #+8]
+   \       0xC0   0x0781             LSLS     R1,R0,#+30
+   \       0xC2   0xD501             BPL.N    ??sl_hal_i2c_set_clock_frequency_8
+   \       0xC4   0xB904             CBNZ.N   R4,??sl_hal_i2c_set_clock_frequency_8
+    255              clkdiv = 1;
+   \       0xC6   0x2401             MOVS     R4,#+1
+    256            }
+    257          
+    258            // Wait for synchronization to complete.
+    259            sl_hal_i2c_wait_sync(i2c);
+    260          
+    261            i2c->CLKDIV = (clkdiv & _I2C_CLKDIV_DIV_MASK);
+   \                     ??sl_hal_i2c_set_clock_frequency_8: (+1)
+   \       0xC8   0xF3C4 0x0408      UBFX     R4,R4,#+0,#+9
+   \       0xCC   0x61BC             STR      R4,[R7, #+24]
+    262          }
+   \       0xCE   0xE8BD 0x83F1      POP      {R0,R4-R9,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4640             MOV      R0,R8
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    263          /***************************************************************************//**
+    264           * Get I2C clock frequency.
+    265           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    266          uint32_t sl_hal_i2c_get_clock_frequency(I2C_TypeDef *i2c,
+    267                                                  uint32_t i2c_clk)
+    268          {
+   \                     sl_hal_i2c_get_clock_frequency: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    269            uint32_t prescaled_clk_cycles;
+    270          
+    271            // Make sure the module exists on the selected chip.
+    272            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \        0x4   0x....             LDR.N    R0,??DataTable10_1
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x....             LDR.N    R6,??DataTable10_4
+   \        0xA   0x4284             CMP      R4,R0
+   \        0xC   0xBF1C             ITT      NE
+   \        0xE   0x....             LDRNE.N  R2,??DataTable10
+   \       0x10   0x4294             CMPNE    R4,R2
+   \       0x12   0xD004             BEQ.N    ??sl_hal_i2c_get_clock_frequency_0
+   \       0x14   0xF44F 0x7188      MOV      R1,#+272
+   \       0x18   0x4630             MOV      R0,R6
+   \       0x1A   0x.... 0x....      BL       assertEFM
+    273          
+    274            // Make sure module is enabled.
+    275            EFM_ASSERT(i2c->EN & _I2C_EN_EN_MASK);
+   \                     ??sl_hal_i2c_get_clock_frequency_0: (+1)
+   \       0x1E   0x6860             LDR      R0,[R4, #+4]
+   \       0x20   0x07C1             LSLS     R1,R0,#+31
+   \       0x22   0xD404             BMI.N    ??sl_hal_i2c_get_clock_frequency_1
+   \       0x24   0xF240 0x1113      MOVW     R1,#+275
+   \       0x28   0x4630             MOV      R0,R6
+   \       0x2A   0x.... 0x....      BL       assertEFM
+    276          
+    277            // Wait for synchronization to complete.
+    278            sl_hal_i2c_wait_sync(i2c);
+    279          
+    280            // Calculating n , n = Nlow + Nhigh.
+    281            prescaled_clk_cycles = (uint32_t)prescaled_clk_cycles_sum[(i2c->CTRL & _I2C_CTRL_CLHR_MASK)
+    282                                                                      >> _I2C_CTRL_CLHR_SHIFT];
+   \                     ??sl_hal_i2c_get_clock_frequency_1: (+1)
+   \       0x2E   0x68A0             LDR      R0,[R4, #+8]
+    283          
+    284            return i2c_clk / ((prescaled_clk_cycles * (i2c->CLKDIV + 1)) + SL_HAL_I2C_CR_MAX);
+   \       0x30   0x....             ADR.N    R1,prescaled_clk_cycles_sum
+   \       0x32   0xF3C0 0x2001      UBFX     R0,R0,#+8,#+2
+   \       0x36   0x5C08             LDRB     R0,[R1, R0]
+   \       0x38   0x69A1             LDR      R1,[R4, #+24]
+   \       0x3A   0x1C49             ADDS     R1,R1,#+1
+   \       0x3C   0x4348             MULS     R0,R1,R0
+   \       0x3E   0x3008             ADDS     R0,R0,#+8
+   \       0x40   0xFBB5 0xF0F0      UDIV     R0,R5,R0
+   \       0x44   0xBD70             POP      {R4-R6,PC}
+    285          }
+    286          /***************************************************************************//**
+    287           * Configure the I2C to its reset state.
+    288           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    289          void sl_hal_i2c_reset(I2C_TypeDef *i2c)
+    290          {
+   \                     sl_hal_i2c_reset: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+    291            // Make sure the module exists on the selected chip.
+    292            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \        0x6   0x.... 0x....      LDR.W    R8,??DataTable10_1
+   \        0xA   0x....             LDR.N    R5,??DataTable10_2
+   \        0xC   0x....             LDR.N    R6,??DataTable10
+   \        0xE   0x4544             CMP      R4,R8
+   \       0x10   0xBF18             IT       NE
+   \       0x12   0x42B4             CMPNE    R4,R6
+   \       0x14   0xD005             BEQ.N    ??sl_hal_i2c_reset_0
+   \       0x16   0xF44F 0x7192      MOV      R1,#+292
+   \       0x1A   0xF105 0x0088      ADD      R0,R5,#+136
+   \       0x1E   0x.... 0x....      BL       assertEFM
+    293          
+    294          #if defined(_SILICON_LABS_32B_SERIES_2)
+    295            // Cancel ongoing operations and clear TX buffer
+    296            i2c->CMD       = I2C_CMD_CLEARPC | I2C_CMD_CLEARTX | I2C_CMD_ABORT;
+   \                     ??sl_hal_i2c_reset_0: (+1)
+   \       0x22   0x21E0             MOVS     R1,#+224
+   \       0x24   0x60E1             STR      R1,[R4, #+12]
+    297            i2c->CTRL      = _I2C_CTRL_RESETVALUE;
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x60A0             STR      R0,[R4, #+8]
+    298            i2c->CLKDIV    = _I2C_CLKDIV_RESETVALUE;
+   \       0x2A   0x2100             MOVS     R1,#+0
+   \       0x2C   0x61A1             STR      R1,[R4, #+24]
+    299            i2c->SADDR     = _I2C_SADDR_RESETVALUE;
+   \       0x2E   0x61E0             STR      R0,[R4, #+28]
+    300            i2c->SADDRMASK = _I2C_SADDRMASK_RESETVALUE;
+   \       0x30   0x6221             STR      R1,[R4, #+32]
+    301          
+    302          #else
+    303            // Cancel ongoing operations and clear TX and RX FIFO's.
+    304            i2c->CMD  = I2C_CMD_CLEARPC | I2C_CMD_CLEARTX | I2C_CMD_ABORT | I2C_CMD_CLEARRX;
+    305          
+    306            // Reset the module.
+    307            i2c->SWRST = I2C_SWRST_SWRST;
+    308          
+    309            // Wait until reset.
+    310            while (i2c->SWRST & _I2C_SWRST_RESETTING_MASK) {
+    311            }
+    312          #endif //_SILICON_LABS_32B_SERIES_2
+    313          
+    314            // Disable the I2C Peripheral.
+    315            sl_hal_i2c_disable(i2c);
+   \       0x32   0x4544             CMP      R4,R8
+   \       0x34   0xBF18             IT       NE
+   \       0x36   0x42B4             CMPNE    R4,R6
+   \       0x38   0xD004             BEQ.N    ??sl_hal_i2c_reset_1
+   \       0x3A   0xF44F 0x7187      MOV      R1,#+270
+   \       0x3E   0x4628             MOV      R0,R5
+   \       0x40   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_i2c_reset_1: (+1)
+   \       0x44   0x6860             LDR      R0,[R4, #+4]
+   \       0x46   0xF242 0x0104      MOVW     R1,#+8196
+   \       0x4A   0x1867             ADDS     R7,R4,R1
+   \       0x4C   0x07C1             LSLS     R1,R0,#+31
+   \       0x4E   0xBF44             ITT      MI
+   \       0x50   0x2001             MOVMI    R0,#+1
+   \       0x52   0x6038             STRMI    R0,[R7, #+0]
+    316          
+    317            // Disable I2C Interrupts.
+    318            sl_hal_i2c_disable_interrupts(i2c, _I2C_IEN_MASK);
+   \       0x54   0x4544             CMP      R4,R8
+   \       0x56   0xBF18             IT       NE
+   \       0x58   0x42B4             CMPNE    R4,R6
+   \       0x5A   0xD004             BEQ.N    ??sl_hal_i2c_reset_2
+   \       0x5C   0xF44F 0x71CB      MOV      R1,#+406
+   \       0x60   0x4628             MOV      R0,R5
+   \       0x62   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_i2c_reset_2: (+1)
+   \       0x66   0x....             LDR.N    R5,??DataTable10_10
+   \       0x68   0x63FD             STR      R5,[R7, #+60]
+    319          
+    320          #if defined(_SILICON_LABS_32B_SERIES_2)
+    321            // Flush the receive data buffer.
+    322            i2c_flush_rx(i2c);
+   \       0x6A   0x4620             MOV      R0,R4
+   \       0x6C   0x.... 0x....      BL       i2c_flush_rx
+    323          #endif //_SILICON_LABS_32B_SERIES_2
+    324          
+    325            // Clear the pending I2C Interrupts.
+    326            sl_hal_i2c_clear_interrupts(i2c, _I2C_IF_MASK);
+   \       0x70   0x4629             MOV      R1,R5
+   \       0x72   0x4620             MOV      R0,R4
+   \       0x74   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \       0x78   0x.... 0x....      B.W      sl_hal_i2c_clear_interrupts
+    327          }
+    328          
+    329          /***************************************************************************//**
+    330           * Sends the Start Command.
+    331           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    332          sl_status_t sl_hal_i2c_start_cmd(I2C_TypeDef *i2c)
+    333          {
+   \                     sl_hal_i2c_start_cmd: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    334            // Make sure the module exists on the selected chip.
+    335            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \        0x4   0x....             LDR.N    R0,??DataTable10_1
+   \        0x6   0x4284             CMP      R4,R0
+   \        0x8   0xBF1C             ITT      NE
+   \        0xA   0x....             LDRNE.N  R2,??DataTable10
+   \        0xC   0x4294             CMPNE    R4,R2
+   \        0xE   0xD003             BEQ.N    ??CrossCallReturnLabel_9
+   \       0x10   0xF240 0x114F      MOVW     R1,#+335
+   \       0x14   0x.... 0x....      BL       ?Subroutine1
+    336          
+    337            sl_status_t status = SL_STATUS_OK;
+    338          
+    339            if ((i2c->EN & _I2C_EN_EN_MASK) != I2C_EN_EN) {
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x18   0x6861             LDR      R1,[R4, #+4]
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x07CA             LSLS     R2,R1,#+31
+   \       0x1E   0xD401             BMI.N    ??sl_hal_i2c_start_cmd_0
+    340              status = SL_STATUS_NOT_INITIALIZED;
+   \       0x20   0x2011             MOVS     R0,#+17
+   \       0x22   0xBD10             POP      {R4,PC}
+    341            } else {
+    342              // Intiate Start Command.
+    343              i2c->CMD = I2C_CMD_START;
+   \                     ??sl_hal_i2c_start_cmd_0: (+1)
+   \       0x24   0x2101             MOVS     R1,#+1
+   \       0x26   0x60E1             STR      R1,[R4, #+12]
+    344          
+    345              // Wait for synchronization to complete.
+    346              sl_hal_i2c_wait_sync(i2c);
+    347            }
+    348          
+    349            return status;
+   \       0x28   0xBD10             POP      {R4,PC}
+    350          }
+    351          
+    352          /***************************************************************************//**
+    353           * Sends the Stop Command.
+    354           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    355          sl_status_t sl_hal_i2c_stop_cmd(I2C_TypeDef *i2c)
+    356          {
+   \                     sl_hal_i2c_stop_cmd: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    357            // Make sure the module exists on the selected chip.
+    358            EFM_ASSERT(SL_HAL_I2C_REF_VALID(i2c));
+   \        0x4   0x....             LDR.N    R0,??DataTable10_1
+   \        0x6   0x4284             CMP      R4,R0
+   \        0x8   0xBF1C             ITT      NE
+   \        0xA   0x....             LDRNE.N  R2,??DataTable10
+   \        0xC   0x4294             CMPNE    R4,R2
+   \        0xE   0xD003             BEQ.N    ??CrossCallReturnLabel_8
+   \       0x10   0xF44F 0x71B3      MOV      R1,#+358
+   \       0x14   0x.... 0x....      BL       ?Subroutine1
+    359          
+    360            sl_status_t status = SL_STATUS_OK;
+    361          
+    362            if ((i2c->EN & _I2C_EN_EN_MASK) != I2C_EN_EN) {
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x18   0x6861             LDR      R1,[R4, #+4]
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x07CA             LSLS     R2,R1,#+31
+   \       0x1E   0xD401             BMI.N    ??sl_hal_i2c_stop_cmd_0
+    363              status = SL_STATUS_NOT_INITIALIZED;
+   \       0x20   0x2011             MOVS     R0,#+17
+   \       0x22   0xBD10             POP      {R4,PC}
+    364            } else {
+    365              // Intiate Stop Command.
+    366              i2c->CMD = I2C_CMD_STOP;
+   \                     ??sl_hal_i2c_stop_cmd_0: (+1)
+   \       0x24   0x2102             MOVS     R1,#+2
+   \       0x26   0x60E1             STR      R1,[R4, #+12]
+    367          
+    368              // Wait for synchronization to complete.
+    369              sl_hal_i2c_wait_sync(i2c);
+    370            }
+    371          
+    372            return status;
+   \       0x28   0xBD10             POP      {R4,PC}
+    373          }
+    374          
+    375          /***************************************************************************//**
+    376           * Clears the Tx , RX Buffers , Shift registers and pending commands.
+    377           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    378          void sl_hal_i2c_flush_buffers(I2C_TypeDef *i2c)
+    379          {
+    380            // Abort the current transmission making the bus go idle.
+    381            if (i2c->STATE & I2C_STATE_BUSY) {
+   \                     sl_hal_i2c_flush_buffers: (+1)
+   \        0x0   0x6901             LDR      R1,[R0, #+16]
+   \        0x2   0x07CA             LSLS     R2,R1,#+31
+   \        0x4   0xBF44             ITT      MI
+   \        0x6   0x2120             MOVMI    R1,#+32
+   \        0x8   0x60C1             STRMI    R1,[R0, #+12]
+    382              i2c->CMD = I2C_CMD_ABORT;
+    383          
+    384              // Wait for synchronization to complete.
+    385              sl_hal_i2c_wait_sync(i2c);
+    386            }
+    387          
+    388          #if defined(_SILICON_LABS_32B_SERIES_2)
+    389            // Clear pending commands,clear TX Buffer.
+    390            i2c->CMD = (I2C_CMD_CLEARPC | I2C_CMD_CLEARTX);
+   \        0xA   0x22C0             MOVS     R2,#+192
+   \        0xC   0x60C2             STR      R2,[R0, #+12]
+    391          
+    392            // Flush the receive data buffer.
+    393            i2c_flush_rx(i2c);
+   \        0xE                      REQUIRE i2c_flush_rx
+   \        0xE                      ; // Fall through to label i2c_flush_rx
+    394          #else
+    395            // Clear pending commands,clear TX Buffer & Shift register.
+    396            i2c->CMD = (I2C_CMD_CLEARPC | I2C_CMD_CLEARTX | I2C_CMD_CLEARRX);
+    397          #endif //_SILICON_LABS_32B_SERIES_2
+    398          
+    399            // Wait for synchronization to complete.
+    400            sl_hal_i2c_wait_sync(i2c);
+    401          }
+    402          
+    403          /*******************************************************************************
+    404           **************************   LOCAL FUNCTIONS   ********************************
+    405           ******************************************************************************/
+    406          
+    407          /***************************************************************************//**
+    408           * Empty the received data buffer.
+    409           ******************************************************************************/
+    410          #if defined(_SILICON_LABS_32B_SERIES_2)
+
+   \                                 In section .text, align 2, keep-with-next
+    411          static void i2c_flush_rx(I2C_TypeDef *i2c)
+    412          {
+   \                     i2c_flush_rx: (+1)
+   \        0x0   0xE000             B.N      ??i2c_flush_rx_0
+    413            // Empty the received data buffer.
+    414            while (i2c->STATUS & I2C_STATUS_RXDATAV) {
+    415              (void)i2c->RXDATA;
+   \                     ??i2c_flush_rx_1: (+1)
+   \        0x2   0x6A41             LDR      R1,[R0, #+36]
+    416            }
+   \                     ??i2c_flush_rx_0: (+1)
+   \        0x4   0x6942             LDR      R2,[R0, #+20]
+   \        0x6   0x05D3             LSLS     R3,R2,#+23
+   \        0x8   0xD4FB             BMI.N    ??i2c_flush_rx_1
+    417          
+    418            // Clear data valid interrupt.
+    419            sl_hal_i2c_clear_interrupts(i2c, I2C_IF_RXDATAV);
+   \        0xA   0x2120             MOVS     R1,#+32
+   \        0xC   0x.... 0x....      B.W      sl_hal_i2c_clear_interrupts
+    420          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x5006'8000        DC32     0x50068000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x5A01'0000        DC32     0x5a010000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x0002'0020        DC32     0x20020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x....'....        DC32     ?_0+136
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x004C'4B40        DC32     0x4c4b40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \        0x0   0x00D5'9F80        DC32     0xd59f80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_7:
+   \        0x0   0x001E'8480        DC32     0x1e8480
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_8:
+   \        0x0   0x0089'5440        DC32     0x895440
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_9:
+   \        0x0   0x0131'2D00        DC32     0x1312d00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_10:
+   \        0x0   0x001F'FFFF        DC32     0x1fffff
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x35, 0x2E, 0x31
+   \              0x32 0x30    
+   \              0x32 0x35    
+   \              0x2E 0x31
+   \       0x50   0x32 0x2E          DC8 0x32, 0x2E, 0x33, 0x5C, 0x70, 0x6C, 0x61, 0x74
+   \              0x33 0x5C    
+   \              0x70 0x6C    
+   \              0x61 0x74
+   \       0x58   0x66 0x6F          DC8 0x66, 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72
+   \              0x72 0x6D    
+   \              0x5F 0x63    
+   \              0x6F 0x72
+   \       0x60   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F
+   \              0x70 0x6C    
+   \              0x61 0x74    
+   \              0x66 0x6F
+   \       0x68   0x72 0x6D          DC8 0x72, 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70
+   \              0x5C 0x70    
+   \              0x65 0x72    
+   \              0x69 0x70
+   \       0x70   0x68 0x65          DC8 0x68, 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x69, 0x6E
+   \              0x72 0x61    
+   \              0x6C 0x5C    
+   \              0x69 0x6E
+   \       0x78   0x63 0x5C          DC8 0x63, 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C
+   \              0x73 0x6C    
+   \              0x5F 0x68    
+   \              0x61 0x6C
+   \       0x80   0x5F 0x69          DC8 0x5F, 0x69, 0x32, 0x63, 0x2E, 0x68, 0
+   \              0x32 0x63    
+   \              0x2E 0x68    
+   \              0x00
+   \       0x87                      DS8 1
+   \       0x88   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x90   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x98   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0xA0   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0xA8   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0xB0   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0xB8   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0xC0   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0xC8   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0xD0   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x35, 0x2E, 0x31
+   \              0x32 0x30    
+   \              0x32 0x35    
+   \              0x2E 0x31
+   \       0xD8   0x32 0x2E          DC8 0x32, 0x2E, 0x33, 0x5C, 0x70, 0x6C, 0x61, 0x74
+   \              0x33 0x5C    
+   \              0x70 0x6C    
+   \              0x61 0x74
+   \       0xE0   0x66 0x6F          DC8 0x66, 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72
+   \              0x72 0x6D    
+   \              0x5F 0x63    
+   \              0x6F 0x72
+   \       0xE8   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F
+   \              0x70 0x6C    
+   \              0x61 0x74    
+   \              0x66 0x6F
+   \       0xF0   0x72 0x6D          DC8 0x72, 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70
+   \              0x5C 0x70    
+   \              0x65 0x72    
+   \              0x69 0x70
+   \       0xF8   0x68 0x65          DC8 0x68, 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x73, 0x72
+   \              0x72 0x61    
+   \              0x6C 0x5C    
+   \              0x73 0x72
+   \      0x100   0x63 0x5C          DC8 0x63, 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C
+   \              0x73 0x6C    
+   \              0x5F 0x68    
+   \              0x61 0x6C
+   \      0x108   0x5F 0x69          DC8 0x5F, 0x69, 0x32, 0x63, 0x2E, 0x63, 0
+   \              0x32 0x63    
+   \              0x2E 0x63    
+   \              0x00
+   \      0x10F                      DS8 1
+    421          #endif //_SILICON_LABS_32B_SERIES_2
+    422          
+    423          #endif /* defined(I2C_PRESENT) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   i2c_flush_rx
+         0   -> sl_hal_i2c_clear_interrupts
+      16   sl_hal_i2c_clear_interrupts
+        16   -> assertEFM
+       0   sl_hal_i2c_flush_buffers
+         0   -> i2c_flush_rx
+      16   sl_hal_i2c_get_clock_frequency
+        16   -> assertEFM
+      16   sl_hal_i2c_init
+        16   -> assertEFM
+        16   -> sl_hal_i2c_reset
+      24   sl_hal_i2c_reset
+        24   -> assertEFM
+        24   -> i2c_flush_rx
+         0   -> sl_hal_i2c_clear_interrupts
+      24   sl_hal_i2c_rx
+        24   -> assertEFM
+        24   -> sl_hal_i2c_clear_interrupts
+      32   sl_hal_i2c_set_clock_frequency
+        32   -> assertEFM
+       8   sl_hal_i2c_start_cmd
+         8   -> assertEFM
+       8   sl_hal_i2c_stop_cmd
+         8   -> assertEFM
+      16   sl_hal_i2c_tx
+        16   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_10
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable10_8
+       4  ??DataTable10_9
+       6  ?Subroutine0
+       6  ?Subroutine1
+      10  ?Subroutine2
+     272  ?_0
+      16  i2c_flush_rx
+       4  prescaled_clk_cycles_sum
+      48  sl_hal_i2c_clear_interrupts
+      14  sl_hal_i2c_flush_buffers
+      70  sl_hal_i2c_get_clock_frequency
+      36  sl_hal_i2c_init
+     124  sl_hal_i2c_reset
+      88  sl_hal_i2c_rx
+     210  sl_hal_i2c_set_clock_frequency
+      42  sl_hal_i2c_start_cmd
+      42  sl_hal_i2c_stop_cmd
+      24  sl_hal_i2c_tx
+
+ 
+ 272 bytes in section .rodata
+ 784 bytes in section .text
+ 
+ 736 bytes of CODE  memory (+ 48 bytes shared)
+ 272 bytes of CONST memory
+
+Errors: none
+Warnings: none
