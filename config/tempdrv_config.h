@@ -65,4 +65,3 @@
 /** @} (end addtogroup tempdrv) */
 
 #endif /* __SILICON_LABS_TEMPDRV_CONFIG_H__ */
-

@@ -1,0 +1,432 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:03
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_lock.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_lock.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_lock.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_lock.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_lock.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir\nvm3_lock.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_lock.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_lock.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief NVM3 data access lock API implementation
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "nvm3_lock.h"
+     32          #include "nvm3.h"
+     33          
+     34          #ifdef NVM3_HOST_BUILD
+     35          #include "nvm3_config.h"
+     36          #include "nvm3_trace.h"
+     37          #include "nvm3_hal.h"
+     38          #else
+     39          #include "sl_core.h"
+     40          #endif
+     41          
+     42          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     43          #include "sl_component_catalog.h"
+     44          #endif
+     45          
+     46          #if defined(SL_CATALOG_MPU_PRESENT)
+     47          #include "sl_mpu.h"
+     48          #endif
+     49          
+     50          #if defined(SL_CATALOG_KERNEL_PRESENT)
+     51          #include "cmsis_os2.h"
+     52          #endif
+     53          
+     54          //****************************************************************************
+     55          
+     56          #ifdef NVM3_HOST_BUILD
+     57          #define SL_WEAK
+     58          #endif
+     59          
+     60          #ifdef NVM3_HOST_BUILD
+     61          static int lockCount = 0;
+     62          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+     63          #elif defined(SL_CATALOG_KERNEL_PRESENT) && !defined(_SILICON_LABS_32B_SERIES_2)
+     64          static osMutexId_t nvm3_mutex;   ///< NVM3 Lock Mutex
+     65          #define NVM3_ERROR_ASSERT()   do { EFM_ASSERT(false); } while (0)
+     66          #else
+
+   \                                 In section .bss, align 4
+     67          CORE_DECLARE_IRQ_STATE;
+   \                     irqState:
+   \        0x0                      DS8 4
+     68          /// @endcond
+     69          #endif
+     70          
+     71          /***************************************************************************//**
+     72           * @addtogroup nvm3
+     73           * @{
+     74           ******************************************************************************/
+     75          
+     76          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+
+   \                                 In section .bss, align 4
+     77          nvm3_Obj_t nvm3_internalObjectHandleA;
+   \                     nvm3_internalObjectHandleA:
+   \        0x0                      DS8 44
+
+   \                                 In section .bss, align 4
+     78          nvm3_Obj_t nvm3_internalObjectHandleB;
+   \                     nvm3_internalObjectHandleB:
+   \        0x0                      DS8 44
+
+   \                                 In section .bss, align 4
+     79          nvm3_Obj_t nvm3_internalObjectHandleC;
+   \                     nvm3_internalObjectHandleC:
+   \        0x0                      DS8 44
+
+   \                                 In section .bss, align 4
+     80          nvm3_Obj_t nvm3_internalObjectHandleD;
+   \                     nvm3_internalObjectHandleD:
+   \        0x0                      DS8 44
+     81          #if defined(NVM3_SECURITY)
+     82          nvm3_Obj_t nvm3_internalObjectHandleE;
+     83          #endif
+
+   \                                 In section .rodata, align 1
+     84          const uint8_t nvm3_maxFragmentCount = NVM3_FRAGMENT_COUNT;
+   \                     nvm3_maxFragmentCount:
+   \        0x0   0x02               DC8 2
+
+   \                                 In section .rodata, align 4
+     85          const size_t  nvm3_objHandleSize = sizeof(nvm3_Obj_t);
+   \                     nvm3_objHandleSize:
+   \        0x0   0x0000'002C        DC32 44
+     86          
+     87          /// @endcond
+     88          
+     89          /***************************************************************************//**
+     90           * @addtogroup nvm3lock
+     91           * @{
+     92           ******************************************************************************/
+     93          
+     94          /***************************************************************************//**
+     95           * @details
+     96           * The Mutex creation for lock enable and disable.
+     97           *
+     98           * It provides options for using "mutexes" for RTOS users
+     99           * and "core_critical" APIs for bare-metal users.
+    100           *
+    101           * @note RTOS users should avoid invoking the nvm3_lock APIs from within
+    102           *       critical sections, as this may result in unexpected behavior.
+    103           *       Please, ensure that kernel has been initialized before this API call.
+    104           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    105          SL_WEAK void nvm3_lockCreateMutex(void)
+    106          {
+    107          #if defined(SL_CATALOG_KERNEL_PRESENT) && !defined(_SILICON_LABS_32B_SERIES_2)
+    108            if (nvm3_mutex == NULL) {
+    109              const osMutexAttr_t mutex_attr = {
+    110                " NVM3 Mutex",
+    111                osMutexRecursive | osMutexPrioInherit,
+    112                NULL,
+    113                0
+    114              };
+    115              nvm3_mutex = osMutexNew(&mutex_attr);
+    116              if (nvm3_mutex == NULL) {
+    117                NVM3_ERROR_ASSERT();
+    118              }
+    119            }
+    120          #endif
+    121          }
+   \                     nvm3_lockCreateMutex: (+1)
+   \        0x0   0x4770             BX       LR
+    122          
+    123          /***************************************************************************//**
+    124           * @details
+    125           * The default lock-begin implementation.
+    126           * @note RTOS users should avoid invoking the nvm3_lock APIs from within
+    127           *       critical sections, as this may result in unexpected behavior.
+    128           *       Please, ensure that kernel has been initialized before this API call.
+    129           ******************************************************************************/
+
+   \                                 In section .text, align 4
+    130          SL_WEAK void nvm3_lockBegin(void)
+    131          {
+   \                     nvm3_lockBegin: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    132          #ifdef NVM3_HOST_BUILD
+    133            lockCount++;
+    134          // In apps running on micrium OS on Ser2, the app is acquiring the mutex within
+    135          // a critical section while invoking bootloader APIs
+    136          #elif defined(SL_CATALOG_KERNEL_PRESENT) && !defined(_SILICON_LABS_32B_SERIES_2)
+    137          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+    138            osStatus_t os_status = osError;
+    139            // Bypass the lock if kernel is not running
+    140            if (osKernelGetState() == osKernelRunning) {
+    141              if (nvm3_mutex == NULL) {
+    142                nvm3_lockCreateMutex();
+    143              }
+    144              os_status = osMutexAcquire(nvm3_mutex, osWaitForever);
+    145              if (os_status != osErrorISR && os_status != osOK) {
+    146                NVM3_ERROR_ASSERT();
+    147              }
+    148            }
+    149          #else
+    150          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+    151            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x6   0x4901             LDR.N    R1,??nvm3_lockBegin_0
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+    152          /// @endcond
+    153          #endif
+    154          }
+   \        0xA   0xBD01             POP      {R0,PC}
+   \                     ??nvm3_lockBegin_0:
+   \        0xC   0x....'....        DC32     irqState
+    155          
+    156          /***************************************************************************//**
+    157           * @details
+    158           * The default lock-end implementation.
+    159           * @note RTOS users should avoid invoking the nvm3_lock APIs from within
+    160           *       critical sections, as this may result in unexpected behavior.
+    161           *       Please, ensure that kernel has been initialized before this API call.
+    162           ******************************************************************************/
+
+   \                                 In section .text, align 4
+    163          SL_WEAK void nvm3_lockEnd(void)
+    164          {
+    165          #ifdef NVM3_HOST_BUILD
+    166            if (lockCount == 0) {
+    167              nvm3_tracePrint(NVM3_TRACE_LEVEL_ERROR, "NVM3 ERROR - lockEnd: invalid lock count.\n");
+    168            }
+    169            lockCount--;
+    170          #elif defined(SL_CATALOG_KERNEL_PRESENT) && !defined(_SILICON_LABS_32B_SERIES_2)
+    171            osStatus_t os_status = osError;
+    172            // Bypass the lock if kernel is not running
+    173            if (osKernelGetState() == osKernelRunning) {
+    174              os_status = osMutexRelease(nvm3_mutex);
+    175              if (os_status != osErrorISR && os_status != osOK) {
+    176                NVM3_ERROR_ASSERT();
+    177              }
+    178            }
+    179          #else
+    180            CORE_EXIT_CRITICAL();
+   \                     nvm3_lockEnd: (+1)
+   \        0x0   0x4901             LDR.N    R1,??nvm3_lockEnd_0
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0x.... 0x....      B.W      CORE_ExitCritical
+   \                     ??nvm3_lockEnd_0:
+   \        0x8   0x....'....        DC32     irqState
+    181          #endif
+    182          }
+    183          
+    184          /***************************************************************************//**
+    185           * @details
+    186           *  Disable execution from data area.
+    187           *
+    188           * @param[in]  address Start of memory range
+    189           *
+    190           * @param[in]  size Size of memory range.
+    191           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    192          void nvm3_lockDisableExecute(void *address, size_t size)
+    193          {
+    194          #if defined(__MPU_PRESENT) && (__MPU_PRESENT == 1U) \
+    195            && defined(SL_CATALOG_MPU_PRESENT)                \
+    196            && !defined(SL_TRUSTZONE_SECURE)
+    197            // The memory range used by nvm3 may not be compatible with the mpu.
+    198            // Just ignore errors.
+    199            sl_mpu_disable_execute((uint32_t)address, (uint32_t)address + size - 1, size);
+    200          #else
+    201            (void)address;
+    202            (void)size;
+    203          #endif
+    204          }
+   \                     nvm3_lockDisableExecute: (+1)
+   \        0x0   0x4770             BX       LR
+    205          
+    206          /** @} (end addtogroup nvm3lock) */
+    207          /** @} (end addtogroup nvm3) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   nvm3_lockBegin
+         8   -> CORE_EnterCritical
+       0   nvm3_lockCreateMutex
+       0   nvm3_lockDisableExecute
+       0   nvm3_lockEnd
+         0   -> CORE_ExitCritical
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  irqState
+      44  nvm3_internalObjectHandleA
+      44  nvm3_internalObjectHandleB
+      44  nvm3_internalObjectHandleC
+      44  nvm3_internalObjectHandleD
+      16  nvm3_lockBegin
+       2  nvm3_lockCreateMutex
+       2  nvm3_lockDisableExecute
+      12  nvm3_lockEnd
+       1  nvm3_maxFragmentCount
+       4  nvm3_objHandleSize
+
+ 
+ 180 bytes in section .bss
+   5 bytes in section .rodata
+  32 bytes in section .text
+ 
+   2 bytes of CODE  memory (+ 30 bytes shared)
+   5 bytes of CONST memory
+ 180 bytes of DATA  memory
+
+Errors: none
+Warnings: none

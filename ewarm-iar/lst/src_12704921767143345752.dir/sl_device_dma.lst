@@ -1,0 +1,977 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:05
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_dma.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_dma.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_dma.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_12704921767143345752.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_dma.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_dma.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_12704921767143345752.dir\sl_device_dma.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_dma.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_dma.c
+      1          /**************************************************************************//**
+      2           * @file
+      3           * @brief Device Manager DMA API Definition
+      4           ******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories, Inc. www.silabs.com</b>
+      7           ******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           *****************************************************************************/
+     30          
+     31          #include "sl_device_dma.h"
+     32          #include "cmsis_compiler.h"
+     33          
+     34          /***************************************************************************//**
+     35           * @addtogroup device_dma Device Manager DMA
+     36           * @{
+     37           ******************************************************************************/
+     38          
+     39          // Weak declaration for LDMAXBAR0_PRSREQ0 DMA Signal
+
+   \                                 In section .rodata, align 4
+     40          __WEAK const uint32_t SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     41          // Weak declaration for LDMAXBAR0_PRSREQ1 DMA Signal
+
+   \                                 In section .rodata, align 4
+     42          __WEAK const uint32_t SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     43          
+     44          // Weak declaration for TIMER0 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+     45          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER0_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER0_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     46          // Weak declaration for TIMER0 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+     47          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER0_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER0_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     48          // Weak declaration for TIMER0 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+     49          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER0_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER0_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     50          // Weak declaration for TIMER0 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+     51          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER0_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER0_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     52          
+     53          // Weak declaration for TIMER1 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+     54          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER1_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER1_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     55          // Weak declaration for TIMER1 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+     56          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER1_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER1_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     57          // Weak declaration for TIMER1 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+     58          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER1_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER1_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     59          // Weak declaration for TIMER1 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+     60          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER1_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER1_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     61          
+     62          // Weak declaration for TIMER2 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+     63          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     64          // Weak declaration for TIMER2 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+     65          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     66          // Weak declaration for TIMER2 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+     67          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     68          // Weak declaration for TIMER2 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+     69          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     70          // Weak declaration for TIMER2 CC3 DMA Signal
+
+   \                                 In section .rodata, align 4
+     71          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_CC3_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_CC3_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     72          // Weak declaration for TIMER2 CC4 DMA Signal
+
+   \                                 In section .rodata, align 4
+     73          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_CC4_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_CC4_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     74          // Weak declaration for TIMER2 CC5 DMA Signal
+
+   \                                 In section .rodata, align 4
+     75          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_CC5_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_CC5_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     76          // Weak declaration for TIMER2 CC6 DMA Signal
+
+   \                                 In section .rodata, align 4
+     77          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER2_CC6_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER2_CC6_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     78          
+     79          // Weak declaration for TIMER3 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+     80          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     81          // Weak declaration for TIMER3 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+     82          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     83          // Weak declaration for TIMER3 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+     84          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     85          // Weak declaration for TIMER3 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+     86          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     87          // Weak declaration for TIMER3 CC3 DMA Signal
+
+   \                                 In section .rodata, align 4
+     88          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_CC3_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_CC3_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     89          // Weak declaration for TIMER3 CC4 DMA Signal
+
+   \                                 In section .rodata, align 4
+     90          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_CC4_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_CC4_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     91          // Weak declaration for TIMER3 CC5 DMA Signal
+
+   \                                 In section .rodata, align 4
+     92          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_CC5_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_CC5_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     93          // Weak declaration for TIMER3 CC6 DMA Signal
+
+   \                                 In section .rodata, align 4
+     94          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER3_CC6_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER3_CC6_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     95          
+     96          // Weak declaration for TIMER4 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+     97          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER4_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER4_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+     98          // Weak declaration for TIMER4 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+     99          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER4_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER4_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    100          // Weak declaration for TIMER4 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+    101          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER4_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER4_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    102          // Weak declaration for TIMER4 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    103          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER4_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER4_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    104          
+    105          // Weak declaration for TIMER5 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+    106          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER5_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER5_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    107          // Weak declaration for TIMER5 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+    108          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER5_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER5_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    109          // Weak declaration for TIMER5 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+    110          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER5_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER5_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    111          // Weak declaration for TIMER5 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    112          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER5_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER5_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    113          
+    114          // Weak declaration for TIMER6 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+    115          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER6_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER6_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    116          // Weak declaration for TIMER6 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+    117          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER6_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER6_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    118          // Weak declaration for TIMER6 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+    119          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER6_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER6_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    120          // Weak declaration for TIMER6 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    121          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER6_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER6_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    122          
+    123          // Weak declaration for TIMER7 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+    124          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER7_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER7_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    125          // Weak declaration for TIMER7 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+    126          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER7_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER7_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    127          // Weak declaration for TIMER7 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+    128          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER7_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER7_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    129          // Weak declaration for TIMER7 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    130          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER7_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER7_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    131          
+    132          // Weak declaration for TIMER8 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+    133          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER8_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER8_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    134          // Weak declaration for TIMER8 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+    135          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER8_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER8_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    136          // Weak declaration for TIMER8 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+    137          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER8_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER8_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    138          // Weak declaration for TIMER8 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    139          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER8_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER8_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    140          
+    141          // Weak declaration for TIMER9 CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+    142          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER9_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER9_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    143          // Weak declaration for TIMER9 CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+    144          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER9_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER9_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    145          // Weak declaration for TIMER9 CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+    146          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER9_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER9_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    147          // Weak declaration for TIMER9 UFOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    148          __WEAK const uint32_t SL_DMA_SIGNAL_TIMER9_UFOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_TIMER9_UFOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    149          
+    150          // Weak declaration for I2C0 RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    151          __WEAK const uint32_t SL_DMA_SIGNAL_I2C0_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C0_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    152          // Weak declaration for I2C0 TXBL DMA Signal
+
+   \                                 In section .rodata, align 4
+    153          __WEAK const uint32_t SL_DMA_SIGNAL_I2C0_TXBL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C0_TXBL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    154          
+    155          // Weak declaration for I2C1 RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    156          __WEAK const uint32_t SL_DMA_SIGNAL_I2C1_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C1_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    157          // Weak declaration for I2C1 TXBL DMA Signal
+
+   \                                 In section .rodata, align 4
+    158          __WEAK const uint32_t SL_DMA_SIGNAL_I2C1_TXBL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C1_TXBL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    159          
+    160          // Weak declaration for I2C2 RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    161          __WEAK const uint32_t SL_DMA_SIGNAL_I2C2_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C2_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    162          // Weak declaration for I2C2 TXBL DMA Signal
+
+   \                                 In section .rodata, align 4
+    163          __WEAK const uint32_t SL_DMA_SIGNAL_I2C2_TXBL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C2_TXBL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    164          
+    165          // Weak declaration for I2C3 RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    166          __WEAK const uint32_t SL_DMA_SIGNAL_I2C3_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C3_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    167          // Weak declaration for I2C3 TXBL DMA Signal
+
+   \                                 In section .rodata, align 4
+    168          __WEAK const uint32_t SL_DMA_SIGNAL_I2C3_TXBL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_I2C3_TXBL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    169          
+    170          // Weak declaration for PROTIMER BOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    171          __WEAK const uint32_t SL_DMA_SIGNAL_PROTIMER_BOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PROTIMER_BOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    172          // Weak declaration for PROTIMER CC0 DMA Signal
+
+   \                                 In section .rodata, align 4
+    173          __WEAK const uint32_t SL_DMA_SIGNAL_PROTIMER_CC0_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PROTIMER_CC0_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    174          // Weak declaration for PROTIMER CC1 DMA Signal
+
+   \                                 In section .rodata, align 4
+    175          __WEAK const uint32_t SL_DMA_SIGNAL_PROTIMER_CC1_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PROTIMER_CC1_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    176          // Weak declaration for PROTIMER CC2 DMA Signal
+
+   \                                 In section .rodata, align 4
+    177          __WEAK const uint32_t SL_DMA_SIGNAL_PROTIMER_CC2_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PROTIMER_CC2_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    178          // Weak declaration for PROTIMER CC3 DMA Signal
+
+   \                                 In section .rodata, align 4
+    179          __WEAK const uint32_t SL_DMA_SIGNAL_PROTIMER_CC3_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PROTIMER_CC3_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    180          // Weak declaration for PROTIMER POF DMA Signal
+
+   \                                 In section .rodata, align 4
+    181          __WEAK const uint32_t SL_DMA_SIGNAL_PROTIMER_POF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PROTIMER_POF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    182          // Weak declaration for PROTIMER WOF DMA Signal
+
+   \                                 In section .rodata, align 4
+    183          __WEAK const uint32_t SL_DMA_SIGNAL_PROTIMER_WOF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PROTIMER_WOF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    184          
+    185          // Weak declaration for ADC0 SCAN DMA Signal
+
+   \                                 In section .rodata, align 4
+    186          __WEAK const uint32_t SL_DMA_SIGNAL_ADC0_SCAN_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_ADC0_SCAN_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    187          
+    188          // Weak declaration for ADC1 SCAN DMA Signal
+
+   \                                 In section .rodata, align 4
+    189          __WEAK const uint32_t SL_DMA_SIGNAL_ADC1_SCAN_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_ADC1_SCAN_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    190          
+    191          // Weak declaration for IADC0 SCAN DMA Signal
+
+   \                                 In section .rodata, align 4
+    192          __WEAK const uint32_t SL_DMA_SIGNAL_IADC0_SCAN_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_IADC0_SCAN_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    193          // Weak declaration for IADC0 SINGLE DMA Signal
+
+   \                                 In section .rodata, align 4
+    194          __WEAK const uint32_t SL_DMA_SIGNAL_IADC0_SINGLE_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_IADC0_SINGLE_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    195          
+    196          // Weak declaration for EUSART0 RXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    197          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART0_RXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART0_RXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    198          // Weak declaration for EUSART0 TXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    199          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART0_TXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART0_TXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    200          
+    201          // Weak declaration for EUSART1 RXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    202          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART1_RXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART1_RXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    203          // Weak declaration for EUSART1 TXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    204          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART1_TXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART1_TXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    205          
+    206          // Weak declaration for EUSART2 RXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    207          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART2_RXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART2_RXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    208          // Weak declaration for EUSART2 TXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    209          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART2_TXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART2_TXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    210          
+    211          // Weak declaration for EUSART3 RXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    212          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART3_RXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART3_RXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    213          // Weak declaration for EUSART3 TXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    214          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART3_TXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART3_TXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    215          
+    216          // Weak declaration for EUSART4 RXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    217          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART4_RXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART4_RXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    218          // Weak declaration for EUSART4 TXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    219          __WEAK const uint32_t SL_DMA_SIGNAL_EUSART4_TXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUSART4_TXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    220          
+    221          // Weak declaration for EUART0 RXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    222          __WEAK const uint32_t SL_DMA_SIGNAL_EUART0_RXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUART0_RXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    223          // Weak declaration for EUART0 TXFL DMA Signal
+
+   \                                 In section .rodata, align 4
+    224          __WEAK const uint32_t SL_DMA_SIGNAL_EUART0_TXFL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_EUART0_TXFL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    225          
+    226          // Weak declaration for USART0 RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    227          __WEAK const uint32_t SL_DMA_SIGNAL_USART0_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART0_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    228          // Weak declaration for USART0 RXDATAVRIGHT DMA Signal
+
+   \                                 In section .rodata, align 4
+    229          __WEAK const uint32_t SL_DMA_SIGNAL_USART0_RXDATAVRIGHT_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART0_RXDATAVRIGHT_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    230          // Weak declaration for USART0 TXBL DMA Signal
+
+   \                                 In section .rodata, align 4
+    231          __WEAK const uint32_t SL_DMA_SIGNAL_USART0_TXBL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART0_TXBL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    232          // Weak declaration for USART0 TXBLRIGHT DMA Signal
+
+   \                                 In section .rodata, align 4
+    233          __WEAK const uint32_t SL_DMA_SIGNAL_USART0_TXBLRIGHT_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART0_TXBLRIGHT_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    234          // Weak declaration for USART0 TXEMPTY DMA Signal
+
+   \                                 In section .rodata, align 4
+    235          __WEAK const uint32_t SL_DMA_SIGNAL_USART0_TXEMPTY_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART0_TXEMPTY_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    236          
+    237          // Weak declaration for USART1 RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    238          __WEAK const uint32_t SL_DMA_SIGNAL_USART1_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART1_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    239          // Weak declaration for USART1 RXDATAVRIGHT DMA Signal
+
+   \                                 In section .rodata, align 4
+    240          __WEAK const uint32_t SL_DMA_SIGNAL_USART1_RXDATAVRIGHT_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART1_RXDATAVRIGHT_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    241          // Weak declaration for USART1 TXBL DMA Signal
+
+   \                                 In section .rodata, align 4
+    242          __WEAK const uint32_t SL_DMA_SIGNAL_USART1_TXBL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART1_TXBL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    243          // Weak declaration for USART1 TXBLRIGHT DMA Signal
+
+   \                                 In section .rodata, align 4
+    244          __WEAK const uint32_t SL_DMA_SIGNAL_USART1_TXBLRIGHT_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART1_TXBLRIGHT_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    245          // Weak declaration for USART1 TXEMPTY DMA Signal
+
+   \                                 In section .rodata, align 4
+    246          __WEAK const uint32_t SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    247          
+    248          // Weak declaration for USART2 RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    249          __WEAK const uint32_t SL_DMA_SIGNAL_USART2_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART2_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    250          // Weak declaration for USART2 RXDATAVRIGHT DMA Signal
+
+   \                                 In section .rodata, align 4
+    251          __WEAK const uint32_t SL_DMA_SIGNAL_USART2_RXDATAVRIGHT_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART2_RXDATAVRIGHT_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    252          // Weak declaration for USART2 TXBL DMA Signal
+
+   \                                 In section .rodata, align 4
+    253          __WEAK const uint32_t SL_DMA_SIGNAL_USART2_TXBL_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART2_TXBL_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    254          // Weak declaration for USART2 TXBLRIGHT DMA Signal
+
+   \                                 In section .rodata, align 4
+    255          __WEAK const uint32_t SL_DMA_SIGNAL_USART2_TXBLRIGHT_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART2_TXBLRIGHT_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    256          // Weak declaration for USART2 TXEMPTY DMA Signal
+
+   \                                 In section .rodata, align 4
+    257          __WEAK const uint32_t SL_DMA_SIGNAL_USART2_TXEMPTY_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_USART2_TXEMPTY_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    258          
+    259          // Weak declaration for MSC WDATA DMA Signal
+
+   \                                 In section .rodata, align 4
+    260          __WEAK const uint32_t SL_DMA_SIGNAL_MSC_WDATA_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_MSC_WDATA_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    261          
+    262          // Weak declaration for MVP REQ DMA Signal
+
+   \                                 In section .rodata, align 4
+    263          __WEAK const uint32_t SL_DMA_SIGNAL_MVP_REQ_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_MVP_REQ_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    264          
+    265          // Weak declaration for PDM RXDATAV DMA Signal
+
+   \                                 In section .rodata, align 4
+    266          __WEAK const uint32_t SL_DMA_SIGNAL_PDM_RXDATAV_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PDM_RXDATAV_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    267          
+    268          // Weak declaration for PDM0 RXDATA DMA Signal
+
+   \                                 In section .rodata, align 4
+    269          __WEAK const uint32_t SL_DMA_SIGNAL_PDM0_RXDATA_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PDM0_RXDATA_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    270          
+    271          // Weak declaration for LCD DMA Signal
+
+   \                                 In section .rodata, align 4
+    272          __WEAK const uint32_t SL_DMA_SIGNAL_LCD_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_LCD_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    273          
+    274          // Weak declaration for LESENSE FIFO DMA Signal
+
+   \                                 In section .rodata, align 4
+    275          __WEAK const uint32_t SL_DMA_SIGNAL_LESENSE_FIFO_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_LESENSE_FIFO_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    276          
+    277          // Weak declaration for VDAC0 CH0 REQ DMA Signal
+
+   \                                 In section .rodata, align 4
+    278          __WEAK const uint32_t SL_DMA_SIGNAL_VDAC0_CH0REQ_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_VDAC0_CH0REQ_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    279          // Weak declaration for VDAC0 CH1 REQ DMA Signal
+
+   \                                 In section .rodata, align 4
+    280          __WEAK const uint32_t SL_DMA_SIGNAL_VDAC0_CH1REQ_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_VDAC0_CH1REQ_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    281          
+    282          // Weak declaration for VDAC1 CH0 REQ DMA Signal
+
+   \                                 In section .rodata, align 4
+    283          __WEAK const uint32_t SL_DMA_SIGNAL_VDAC1_CH0REQ_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_VDAC1_CH0REQ_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    284          // Weak declaration for VDAC1 CH1 REQ DMA Signal
+
+   \                                 In section .rodata, align 4
+    285          __WEAK const uint32_t SL_DMA_SIGNAL_VDAC1_CH1REQ_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_VDAC1_CH1REQ_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    286          
+    287          // Weak declaration for PIXELRZ0REQ TXF DMA Signal
+
+   \                                 In section .rodata, align 4
+    288          __WEAK const uint32_t SL_DMA_SIGNAL_PIXELRZ0REQ_TXF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PIXELRZ0REQ_TXF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    289          
+    290          // Weak declaration for PIXELRZ1REQ TXF DMA Signal
+
+   \                                 In section .rodata, align 4
+    291          __WEAK const uint32_t SL_DMA_SIGNAL_PIXELRZ1REQ_TXF_VALUE = 0xFFFFFFFF;
+   \                     SL_DMA_SIGNAL_PIXELRZ1REQ_TXF_VALUE:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+    292          
+    293          /** @} (end addtogroup device_dma) */
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  SL_DMA_SIGNAL_ADC0_SCAN_VALUE
+       4  SL_DMA_SIGNAL_ADC1_SCAN_VALUE
+       4  SL_DMA_SIGNAL_EUART0_RXFL_VALUE
+       4  SL_DMA_SIGNAL_EUART0_TXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART0_RXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART0_TXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART1_RXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART1_TXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART2_RXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART2_TXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART3_RXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART3_TXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART4_RXFL_VALUE
+       4  SL_DMA_SIGNAL_EUSART4_TXFL_VALUE
+       4  SL_DMA_SIGNAL_I2C0_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_I2C0_TXBL_VALUE
+       4  SL_DMA_SIGNAL_I2C1_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_I2C1_TXBL_VALUE
+       4  SL_DMA_SIGNAL_I2C2_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_I2C2_TXBL_VALUE
+       4  SL_DMA_SIGNAL_I2C3_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_I2C3_TXBL_VALUE
+       4  SL_DMA_SIGNAL_IADC0_SCAN_VALUE
+       4  SL_DMA_SIGNAL_IADC0_SINGLE_VALUE
+       4  SL_DMA_SIGNAL_LCD_VALUE
+       4  SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0_VALUE
+       4  SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1_VALUE
+       4  SL_DMA_SIGNAL_LESENSE_FIFO_VALUE
+       4  SL_DMA_SIGNAL_MSC_WDATA_VALUE
+       4  SL_DMA_SIGNAL_MVP_REQ_VALUE
+       4  SL_DMA_SIGNAL_PDM0_RXDATA_VALUE
+       4  SL_DMA_SIGNAL_PDM_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_PIXELRZ0REQ_TXF_VALUE
+       4  SL_DMA_SIGNAL_PIXELRZ1REQ_TXF_VALUE
+       4  SL_DMA_SIGNAL_PROTIMER_BOF_VALUE
+       4  SL_DMA_SIGNAL_PROTIMER_CC0_VALUE
+       4  SL_DMA_SIGNAL_PROTIMER_CC1_VALUE
+       4  SL_DMA_SIGNAL_PROTIMER_CC2_VALUE
+       4  SL_DMA_SIGNAL_PROTIMER_CC3_VALUE
+       4  SL_DMA_SIGNAL_PROTIMER_POF_VALUE
+       4  SL_DMA_SIGNAL_PROTIMER_WOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC3_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC4_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC5_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC6_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC3_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC4_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC5_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC6_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER5_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER5_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER5_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER5_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER6_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER6_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER6_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER6_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER7_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER7_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER7_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER7_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER8_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER8_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER8_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER8_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER9_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER9_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER9_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER9_UFOF_VALUE
+       4  SL_DMA_SIGNAL_USART0_RXDATAVRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART0_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_USART0_TXBLRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART0_TXBL_VALUE
+       4  SL_DMA_SIGNAL_USART0_TXEMPTY_VALUE
+       4  SL_DMA_SIGNAL_USART1_RXDATAVRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART1_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_USART1_TXBLRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART1_TXBL_VALUE
+       4  SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE
+       4  SL_DMA_SIGNAL_USART2_RXDATAVRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART2_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_USART2_TXBLRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART2_TXBL_VALUE
+       4  SL_DMA_SIGNAL_USART2_TXEMPTY_VALUE
+       4  SL_DMA_SIGNAL_VDAC0_CH0REQ_VALUE
+       4  SL_DMA_SIGNAL_VDAC0_CH1REQ_VALUE
+       4  SL_DMA_SIGNAL_VDAC1_CH0REQ_VALUE
+       4  SL_DMA_SIGNAL_VDAC1_CH1REQ_VALUE
+
+ 
+ 432 bytes in section .rodata
+ 
+ 0 bytes of CONST memory (+ 432 bytes shared)
+
+Errors: none
+Warnings: none

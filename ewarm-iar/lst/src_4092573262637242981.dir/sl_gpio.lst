@@ -1,0 +1,2743 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:03
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\src\sl_gpio.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_4092573262637242981.dir\sl_gpio.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\src\sl_gpio.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_4092573262637242981.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_4092573262637242981.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_4092573262637242981.dir\sl_gpio.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_4092573262637242981.dir\sl_gpio.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_4092573262637242981.dir\sl_gpio.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_4092573262637242981.dir\sl_gpio.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\src\sl_gpio.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief General Purpose IO (GPIO) driver API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stddef.h>
+     32          #include "sl_core.h"
+     33          #include "sl_common.h"
+     34          #include "sl_interrupt_manager.h"
+     35          #include "sl_clock_manager.h"
+     36          #include "sl_hal_gpio.h"
+
+   \                                 In section text_hal_gpio_timecritical37700, align 4
+   \   __vfp void sl_hal_gpio_set_pin(sl_gpio_t const *)
+   \                     sl_hal_gpio_set_pin: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x4D17             LDR.N    R5,??sl_hal_gpio_set_pin_0
+   \        0x6   0xD104             BNE.N    ??sl_hal_gpio_set_pin_1
+   \        0x8   0xF240 0x21BF      MOVW     R1,#+703
+   \        0xC   0x4628             MOV      R0,R5
+   \        0xE   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_set_pin_1: (+1)
+   \       0x12   0x7820             LDRB     R0,[R4, #+0]
+   \       0x14   0xB908             CBNZ.N   R0,??sl_hal_gpio_set_pin_2
+   \       0x16   0x207F             MOVS     R0,#+127
+   \       0x18   0xE010             B.N      ??sl_hal_gpio_set_pin_3
+   \                     ??sl_hal_gpio_set_pin_2: (+1)
+   \       0x1A   0x2801             CMP      R0,#+1
+   \       0x1C   0xBF08             IT       EQ
+   \       0x1E   0x2007             MOVEQ    R0,#+7
+   \       0x20   0xD00C             BEQ.N    ??sl_hal_gpio_set_pin_3
+   \       0x22   0x2802             CMP      R0,#+2
+   \       0x24   0xBF0C             ITE      EQ
+   \       0x26   0x203F             MOVEQ    R0,#+63
+   \       0x28   0x2803             CMPNE    R0,#+3
+   \       0x2A   0xD007             BEQ.N    ??sl_hal_gpio_set_pin_3
+   \       0x2C   0x2804             CMP      R0,#+4
+   \       0x2E   0xBF18             IT       NE
+   \       0x30   0x2805             CMPNE    R0,#+5
+   \       0x32   0xD002             BEQ.N    ??sl_hal_gpio_set_pin_4
+   \       0x34   0x2806             CMP      R0,#+6
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2807             CMPNE    R0,#+7
+   \                     ??sl_hal_gpio_set_pin_4: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_set_pin_3: (+1)
+   \       0x3C   0x7861             LDRB     R1,[R4, #+1]
+   \       0x3E   0x40C8             LSRS     R0,R0,R1
+   \       0x40   0x07C0             LSLS     R0,R0,#+31
+   \       0x42   0xD404             BMI.N    ??sl_hal_gpio_set_pin_5
+   \       0x44   0xF44F 0x7130      MOV      R1,#+704
+   \       0x48   0x4628             MOV      R0,R5
+   \       0x4A   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_set_pin_5: (+1)
+   \       0x4E   0x2130             MOVS     R1,#+48
+   \       0x50   0x7860             LDRB     R0,[R4, #+1]
+   \       0x52   0x7824             LDRB     R4,[R4, #+0]
+   \       0x54   0x2201             MOVS     R2,#+1
+   \       0x56   0x4B04             LDR.N    R3,??sl_hal_gpio_set_pin_0+4
+   \       0x58   0x434C             MULS     R4,R1,R4
+   \       0x5A   0x4082             LSLS     R2,R2,R0
+   \       0x5C   0x1919             ADDS     R1,R3,R4
+   \       0x5E   0x610A             STR      R2,[R1, #+16]
+   \       0x60   0xBD31             POP      {R0,R4,R5,PC}
+   \       0x62   0xBF00             Nop
+   \                     ??sl_hal_gpio_set_pin_0:
+   \       0x64   0x....'....        DC32     ?_0
+   \       0x68   0x5003'D000        DC32     0x5003d000
+
+   \                                 In section text_hal_gpio_timecritical38818, align 4
+   \   __vfp void sl_hal_gpio_toggle_pin(sl_gpio_t const *)
+   \                     sl_hal_gpio_toggle_pin: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x4D17             LDR.N    R5,??sl_hal_gpio_toggle_pin_0
+   \        0x6   0xD104             BNE.N    ??sl_hal_gpio_toggle_pin_1
+   \        0x8   0xF240 0x3135      MOVW     R1,#+821
+   \        0xC   0x4628             MOV      R0,R5
+   \        0xE   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_toggle_pin_1: (+1)
+   \       0x12   0x7820             LDRB     R0,[R4, #+0]
+   \       0x14   0xB908             CBNZ.N   R0,??sl_hal_gpio_toggle_pin_2
+   \       0x16   0x207F             MOVS     R0,#+127
+   \       0x18   0xE010             B.N      ??sl_hal_gpio_toggle_pin_3
+   \                     ??sl_hal_gpio_toggle_pin_2: (+1)
+   \       0x1A   0x2801             CMP      R0,#+1
+   \       0x1C   0xBF08             IT       EQ
+   \       0x1E   0x2007             MOVEQ    R0,#+7
+   \       0x20   0xD00C             BEQ.N    ??sl_hal_gpio_toggle_pin_3
+   \       0x22   0x2802             CMP      R0,#+2
+   \       0x24   0xBF0C             ITE      EQ
+   \       0x26   0x203F             MOVEQ    R0,#+63
+   \       0x28   0x2803             CMPNE    R0,#+3
+   \       0x2A   0xD007             BEQ.N    ??sl_hal_gpio_toggle_pin_3
+   \       0x2C   0x2804             CMP      R0,#+4
+   \       0x2E   0xBF18             IT       NE
+   \       0x30   0x2805             CMPNE    R0,#+5
+   \       0x32   0xD002             BEQ.N    ??sl_hal_gpio_toggle_pin_4
+   \       0x34   0x2806             CMP      R0,#+6
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2807             CMPNE    R0,#+7
+   \                     ??sl_hal_gpio_toggle_pin_4: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_toggle_pin_3: (+1)
+   \       0x3C   0x7861             LDRB     R1,[R4, #+1]
+   \       0x3E   0x40C8             LSRS     R0,R0,R1
+   \       0x40   0x07C0             LSLS     R0,R0,#+31
+   \       0x42   0xD404             BMI.N    ??sl_hal_gpio_toggle_pin_5
+   \       0x44   0xF240 0x3136      MOVW     R1,#+822
+   \       0x48   0x4628             MOV      R0,R5
+   \       0x4A   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_toggle_pin_5: (+1)
+   \       0x4E   0x2130             MOVS     R1,#+48
+   \       0x50   0x7860             LDRB     R0,[R4, #+1]
+   \       0x52   0x7824             LDRB     R4,[R4, #+0]
+   \       0x54   0x2201             MOVS     R2,#+1
+   \       0x56   0x4B04             LDR.N    R3,??sl_hal_gpio_toggle_pin_0+4
+   \       0x58   0x434C             MULS     R4,R1,R4
+   \       0x5A   0x4082             LSLS     R2,R2,R0
+   \       0x5C   0x1919             ADDS     R1,R3,R4
+   \       0x5E   0x610A             STR      R2,[R1, #+16]
+   \       0x60   0xBD31             POP      {R0,R4,R5,PC}
+   \       0x62   0xBF00             Nop
+   \                     ??sl_hal_gpio_toggle_pin_0:
+   \       0x64   0x....'....        DC32     ?_0
+   \       0x68   0x5003'F000        DC32     0x5003f000
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_gpio_disable_pin_em4_wakeup(uint32_t)
+   \                     sl_hal_gpio_disable_pin_em4_wakeup: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0xF36F 0x401B      BFC      R0,#+16,#+12
+   \        0x8   0xB120             CBZ.N    R0,??sl_hal_gpio_disable_pin_em4_wakeup_1
+   \        0xA   0xF240 0x4177      MOVW     R1,#+1143
+   \        0xE   0x4803             LDR.N    R0,??sl_hal_gpio_disable_pin_em4_wakeup_0
+   \       0x10   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_disable_pin_em4_wakeup_1: (+1)
+   \       0x14   0x4902             LDR.N    R1,??sl_hal_gpio_disable_pin_em4_wakeup_0+4
+   \       0x16   0x600C             STR      R4,[R1, #+0]
+   \       0x18   0xBD10             POP      {R4,PC}
+   \       0x1A   0xBF00             Nop
+   \                     ??sl_hal_gpio_disable_pin_em4_wakeup_0:
+   \       0x1C   0x....'....        DC32     ?_0
+   \       0x20   0x5003'E42C        DC32     0x5003e42c
+     37          #include "sl_gpio.h"
+     38          
+     39          /*******************************************************************************
+     40           *******************************   DEFINES   ***********************************
+     41           ******************************************************************************/
+     42          
+     43          /// Define for supporting gpiointerrupt porting
+     44          #define SL_GPIO_PORT_INTERRUPT  (0xFF)
+     45          
+     46          /// Pin direction validation.
+     47          #define SL_GPIO_DIRECTION_IS_VALID(direction)  (direction <= SL_GPIO_PIN_DIRECTION_OUT)
+     48          
+     49          /*******************************************************************************
+     50           *******************************   STRUCTS   ***********************************
+     51           ******************************************************************************/
+     52          
+     53          typedef struct {
+     54            void *callback;   // Pointer to callback function.
+     55            void *context;    // Pointer to callback context.
+     56          } sl_gpio_callback_desc_t;
+     57          
+     58          typedef struct {
+     59            // An array of user callbacks for external interrupts.
+     60            // We have external interrupts configured from 0 to 15 bits.
+     61            sl_gpio_callback_desc_t callback_ext[SL_HAL_GPIO_NO_OF_EXT_INTERRUPTS];
+     62            // An array of user callbacks for EM4 interrupts.
+     63            // We have EM4 interrupts configured from 16 to 31 bits.
+     64            sl_gpio_callback_desc_t callback_em4[SL_HAL_GPIO_NO_OF_EXT_INTERRUPTS];
+     65          } sl_gpio_callbacks_t;
+     66          
+     67          /*******************************************************************************
+     68           ********************************   GLOBALS   **********************************
+     69           ******************************************************************************/
+     70          
+     71          // Variable to manage and organize the callback functions for External and EM4 interrupts.
+
+   \                                 In section .bss, align 4
+     72          static sl_gpio_callbacks_t gpio_interrupts = { 0 };
+   \                     gpio_interrupts:
+   \        0x0                      DS8 256
+     73          
+     74          /*******************************************************************************
+     75           ******************************   LOCAL FUCTIONS   *****************************
+     76           ******************************************************************************/
+     77          static void sl_gpio_dispatch_interrupt(uint32_t iflags);
+     78          
+     79          /***************************************************************************//**
+     80           *   Driver GPIO Initialization.
+     81           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     82          sl_status_t sl_gpio_init()
+     83          {
+   \                     sl_gpio_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     84            sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_GPIO);
+   \        0x2   0x.... 0x....      LDR.W    R0,??DataTable28
+   \        0x6   0x.... 0x....      BL       sl_clock_manager_enable_bus_clock
+     85          
+     86          #if defined(SL_HAL_GPIO_IRQN_SUPPORTED)
+     87            if (sl_interrupt_manager_is_irq_disabled(GPIO_ODD_IRQn)) {
+   \        0xA   0x2019             MOVS     R0,#+25
+   \        0xC   0x.... 0x....      BL       sl_interrupt_manager_is_irq_disabled
+   \       0x10   0xB128             CBZ.N    R0,??sl_gpio_init_0
+     88              sl_interrupt_manager_clear_irq_pending(GPIO_ODD_IRQn);
+   \       0x12   0x2019             MOVS     R0,#+25
+   \       0x14   0x.... 0x....      BL       sl_interrupt_manager_clear_irq_pending
+     89              sl_interrupt_manager_enable_irq(GPIO_ODD_IRQn);
+   \       0x18   0x2019             MOVS     R0,#+25
+   \       0x1A   0x.... 0x....      BL       sl_interrupt_manager_enable_irq
+     90            }
+     91            if (sl_interrupt_manager_is_irq_disabled(GPIO_EVEN_IRQn)) {
+   \                     ??sl_gpio_init_0: (+1)
+   \       0x1E   0x201A             MOVS     R0,#+26
+   \       0x20   0x.... 0x....      BL       sl_interrupt_manager_is_irq_disabled
+   \       0x24   0xB128             CBZ.N    R0,??sl_gpio_init_1
+     92              sl_interrupt_manager_clear_irq_pending(GPIO_EVEN_IRQn);
+   \       0x26   0x201A             MOVS     R0,#+26
+   \       0x28   0x.... 0x....      BL       sl_interrupt_manager_clear_irq_pending
+     93              sl_interrupt_manager_enable_irq(GPIO_EVEN_IRQn);
+   \       0x2C   0x201A             MOVS     R0,#+26
+   \       0x2E   0x.... 0x....      BL       sl_interrupt_manager_enable_irq
+     94            }
+     95          #endif
+     96          
+     97            return SL_STATUS_OK;
+   \                     ??sl_gpio_init_1: (+1)
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0xBD02             POP      {R1,PC}
+     98          }
+     99          
+    100          /***************************************************************************//**
+    101           *   Sets the pin direction for GPIO pin.
+    102           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    103          sl_status_t sl_gpio_set_pin_direction(const sl_gpio_t *gpio,
+    104                                                sl_gpio_pin_direction_t pin_direction)
+    105          {
+   \                     sl_gpio_set_pin_direction: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    106            CORE_DECLARE_IRQ_STATE;
+    107          
+    108            if (gpio == NULL) {
+   \        0x6   0x.... 0x....      LDR.W    R6,??DataTable28_1
+   \        0xA   0xD104             BNE.N    ??sl_gpio_set_pin_direction_0
+    109              EFM_ASSERT(false);
+   \        0xC   0x216D             MOVS     R1,#+109
+   \        0xE   0x.... 0x....      BL       ?Subroutine8
+    110              return SL_STATUS_NULL_POINTER;
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x12   0x2022             MOVS     R0,#+34
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+    111            }
+    112            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_gpio_set_pin_direction_0: (+1)
+   \       0x16   0x7820             LDRB     R0,[R4, #+0]
+   \       0x18   0xB908             CBNZ.N   R0,??sl_gpio_set_pin_direction_1
+   \       0x1A   0x207F             MOVS     R0,#+127
+   \       0x1C   0xE010             B.N      ??sl_gpio_set_pin_direction_2
+   \                     ??sl_gpio_set_pin_direction_1: (+1)
+   \       0x1E   0x2801             CMP      R0,#+1
+   \       0x20   0xBF08             IT       EQ
+   \       0x22   0x2007             MOVEQ    R0,#+7
+   \       0x24   0xD00C             BEQ.N    ??sl_gpio_set_pin_direction_2
+   \       0x26   0x2802             CMP      R0,#+2
+   \       0x28   0xBF0C             ITE      EQ
+   \       0x2A   0x203F             MOVEQ    R0,#+63
+   \       0x2C   0x2803             CMPNE    R0,#+3
+   \       0x2E   0xD007             BEQ.N    ??sl_gpio_set_pin_direction_2
+   \       0x30   0x2804             CMP      R0,#+4
+   \       0x32   0xBF18             IT       NE
+   \       0x34   0x2805             CMPNE    R0,#+5
+   \       0x36   0xD002             BEQ.N    ??sl_gpio_set_pin_direction_3
+   \       0x38   0x2806             CMP      R0,#+6
+   \       0x3A   0xBF18             IT       NE
+   \       0x3C   0x2807             CMPNE    R0,#+7
+   \                     ??sl_gpio_set_pin_direction_3: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     ??sl_gpio_set_pin_direction_2: (+1)
+   \       0x40   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \       0x44   0xD402             BMI.N    ??CrossCallReturnLabel_9
+   \       0x46   0x2170             MOVS     R1,#+112
+   \       0x48   0x.... 0x....      BL       ?Subroutine8
+    113            EFM_ASSERT(SL_GPIO_DIRECTION_IS_VALID(pin_direction));
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x4C   0x2D01             CMP      R5,#+1
+   \       0x4E   0xDD02             BLE.N    ??CrossCallReturnLabel_8
+   \       0x50   0x2171             MOVS     R1,#+113
+   \       0x52   0x.... 0x....      BL       ?Subroutine8
+    114          
+    115            CORE_ENTER_ATOMIC();
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x56   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x5A   0x4606             MOV      R6,R0
+    116          
+    117            if (pin_direction == SL_GPIO_PIN_DIRECTION_OUT) {
+   \       0x5C   0x2D01             CMP      R5,#+1
+   \       0x5E   0xD102             BNE.N    ??sl_gpio_set_pin_direction_4
+    118              sl_hal_gpio_set_pin_mode(gpio, SL_GPIO_MODE_PUSH_PULL, 1);
+   \       0x60   0x2201             MOVS     R2,#+1
+   \       0x62   0x2104             MOVS     R1,#+4
+   \       0x64   0xE002             B.N      ??sl_gpio_set_pin_direction_5
+    119            } else if (pin_direction == SL_GPIO_PIN_DIRECTION_IN) {
+   \                     ??sl_gpio_set_pin_direction_4: (+1)
+   \       0x66   0xB925             CBNZ.N   R5,??sl_gpio_set_pin_direction_6
+    120              sl_hal_gpio_set_pin_mode(gpio, SL_GPIO_MODE_INPUT, 0);
+   \       0x68   0x2200             MOVS     R2,#+0
+   \       0x6A   0x2101             MOVS     R1,#+1
+   \                     ??sl_gpio_set_pin_direction_5: (+1)
+   \       0x6C   0x4620             MOV      R0,R4
+   \       0x6E   0x.... 0x....      BL       sl_hal_gpio_set_pin_mode
+    121            }
+    122          
+    123            CORE_EXIT_ATOMIC();
+   \                     ??sl_gpio_set_pin_direction_6: (+1)
+   \       0x72   0x....             B.N      ?Subroutine0
+    124            return SL_STATUS_OK;
+    125          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine10: (+1)
+   \        0x0   0x7861             LDRB     R1,[R4, #+1]
+   \        0x2   0x40C8             LSRS     R0,R0,R1
+   \        0x4   0x07C0             LSLS     R0,R0,#+31
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine8: (+1)
+   \        0x0   0x4630             MOV      R0,R6
+   \        0x2   0x.... 0x....      B.W      assertEFM
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4630             MOV      R0,R6
+   \        0x2   0x.... 0x....      BL       CORE_ExitAtomic
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xBD70             POP      {R4-R6,PC}
+    126          
+    127          /***************************************************************************//**
+    128           *   Sets the mode for GPIO pin and pin direction.
+    129           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    130          sl_status_t sl_gpio_set_pin_mode(const sl_gpio_t *gpio,
+    131                                           sl_gpio_mode_t mode,
+    132                                           bool output_value)
+    133          {
+   \                     sl_gpio_set_pin_mode: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4616             MOV      R6,R2
+    134            CORE_DECLARE_IRQ_STATE;
+    135          
+    136            if (gpio == NULL) {
+   \        0x8   0x.... 0x....      LDR.W    R7,??DataTable28_1
+   \        0xC   0xD102             BNE.N    ??sl_gpio_set_pin_mode_0
+    137              EFM_ASSERT(false);
+   \        0xE   0x2189             MOVS     R1,#+137
+   \       0x10   0x4638             MOV      R0,R7
+   \       0x12   0x....             B.N      ??Subroutine3_0
+    138              return SL_STATUS_NULL_POINTER;
+    139            }
+    140            EFM_ASSERT(SL_HAL_GPIO_MODE_IS_VALID(mode));
+   \                     ??sl_gpio_set_pin_mode_0: (+1)
+   \       0x14   0xF005 0x010F      AND      R1,R5,#0xF
+   \       0x18   0x42A9             CMP      R1,R5
+   \       0x1A   0xD002             BEQ.N    ??CrossCallReturnLabel_18
+   \       0x1C   0x218C             MOVS     R1,#+140
+   \       0x1E   0x.... 0x....      BL       ?Subroutine9
+    141            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x22   0x7820             LDRB     R0,[R4, #+0]
+   \       0x24   0xB908             CBNZ.N   R0,??sl_gpio_set_pin_mode_1
+   \       0x26   0x207F             MOVS     R0,#+127
+   \       0x28   0xE010             B.N      ??sl_gpio_set_pin_mode_2
+   \                     ??sl_gpio_set_pin_mode_1: (+1)
+   \       0x2A   0x2801             CMP      R0,#+1
+   \       0x2C   0xBF08             IT       EQ
+   \       0x2E   0x2007             MOVEQ    R0,#+7
+   \       0x30   0xD00C             BEQ.N    ??sl_gpio_set_pin_mode_2
+   \       0x32   0x2802             CMP      R0,#+2
+   \       0x34   0xBF0C             ITE      EQ
+   \       0x36   0x203F             MOVEQ    R0,#+63
+   \       0x38   0x2803             CMPNE    R0,#+3
+   \       0x3A   0xD007             BEQ.N    ??sl_gpio_set_pin_mode_2
+   \       0x3C   0x2804             CMP      R0,#+4
+   \       0x3E   0xBF18             IT       NE
+   \       0x40   0x2805             CMPNE    R0,#+5
+   \       0x42   0xD002             BEQ.N    ??sl_gpio_set_pin_mode_3
+   \       0x44   0x2806             CMP      R0,#+6
+   \       0x46   0xBF18             IT       NE
+   \       0x48   0x2807             CMPNE    R0,#+7
+   \                     ??sl_gpio_set_pin_mode_3: (+1)
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \                     ??sl_gpio_set_pin_mode_2: (+1)
+   \       0x4C   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \       0x50   0xD402             BMI.N    ??CrossCallReturnLabel_17
+   \       0x52   0x218D             MOVS     R1,#+141
+   \       0x54   0x.... 0x....      BL       ?Subroutine9
+    142          
+    143            CORE_ENTER_ATOMIC();
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \       0x58   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x5C   0x4607             MOV      R7,R0
+    144          
+    145            sl_hal_gpio_set_pin_mode(gpio, mode, output_value);
+   \       0x5E   0x4632             MOV      R2,R6
+   \       0x60   0x4629             MOV      R1,R5
+   \       0x62   0x4620             MOV      R0,R4
+   \       0x64   0x.... 0x....      BL       sl_hal_gpio_set_pin_mode
+    146          
+    147            CORE_EXIT_ATOMIC();
+   \       0x68   0x....             B.N      ??Subroutine16_0
+    148            return SL_STATUS_OK;
+    149          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ??Subroutine16_0: (+1)
+   \        0x0   0x4638             MOV      R0,R7
+   \                     ??Subroutine16_1: (+1)
+   \        0x2   0x.... 0x....      BL       CORE_ExitAtomic
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xBDF2             POP      {R1,R4-R7,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x4630             MOV      R0,R6
+   \                     ??Subroutine3_0: (+1)
+   \        0x2   0x.... 0x....      BL       assertEFM
+   \        0x6   0x2022             MOVS     R0,#+34
+   \        0x8   0xBDF2             POP      {R1,R4-R7,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine9: (+1)
+   \        0x0   0x4638             MOV      R0,R7
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    150          
+    151          /***************************************************************************//**
+    152           *  Gets the current configuration selected pin on selected port.
+    153           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    154          sl_status_t sl_gpio_get_pin_config(const sl_gpio_t *gpio,
+    155                                             sl_gpio_pin_config_t *pin_config)
+    156          {
+   \                     sl_gpio_get_pin_config: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    157            CORE_DECLARE_IRQ_STATE;
+    158          
+    159            if (gpio == NULL || pin_config == NULL) {
+   \        0x6   0x.... 0x....      LDR.W    R6,??DataTable28_1
+   \        0xA   0xBF18             IT       NE
+   \        0xC   0x2D00             CMPNE    R5,#+0
+   \        0xE   0xD101             BNE.N    ??sl_gpio_get_pin_config_0
+    160              EFM_ASSERT(false);
+   \       0x10   0x21A0             MOVS     R1,#+160
+   \       0x12   0x....             B.N      ?Subroutine3
+    161              return SL_STATUS_NULL_POINTER;
+    162            }
+    163            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_gpio_get_pin_config_0: (+1)
+   \       0x14   0x7820             LDRB     R0,[R4, #+0]
+   \       0x16   0xB908             CBNZ.N   R0,??sl_gpio_get_pin_config_1
+   \       0x18   0x207F             MOVS     R0,#+127
+   \       0x1A   0xE010             B.N      ??sl_gpio_get_pin_config_2
+   \                     ??sl_gpio_get_pin_config_1: (+1)
+   \       0x1C   0x2801             CMP      R0,#+1
+   \       0x1E   0xBF08             IT       EQ
+   \       0x20   0x2007             MOVEQ    R0,#+7
+   \       0x22   0xD00C             BEQ.N    ??sl_gpio_get_pin_config_2
+   \       0x24   0x2802             CMP      R0,#+2
+   \       0x26   0xBF0C             ITE      EQ
+   \       0x28   0x203F             MOVEQ    R0,#+63
+   \       0x2A   0x2803             CMPNE    R0,#+3
+   \       0x2C   0xD007             BEQ.N    ??sl_gpio_get_pin_config_2
+   \       0x2E   0x2804             CMP      R0,#+4
+   \       0x30   0xBF18             IT       NE
+   \       0x32   0x2805             CMPNE    R0,#+5
+   \       0x34   0xD002             BEQ.N    ??sl_gpio_get_pin_config_3
+   \       0x36   0x2806             CMP      R0,#+6
+   \       0x38   0xBF18             IT       NE
+   \       0x3A   0x2807             CMPNE    R0,#+7
+   \                     ??sl_gpio_get_pin_config_3: (+1)
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \                     ??sl_gpio_get_pin_config_2: (+1)
+   \       0x3E   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \       0x42   0xD402             BMI.N    ??CrossCallReturnLabel_7
+   \       0x44   0x21A3             MOVS     R1,#+163
+   \       0x46   0x.... 0x....      BL       ?Subroutine8
+    164          
+    165            CORE_ENTER_ATOMIC();
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x4A   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x4E   0x4607             MOV      R7,R0
+    166          
+    167            pin_config->mode = sl_hal_gpio_get_pin_mode(gpio);
+   \       0x50   0x4620             MOV      R0,R4
+   \       0x52   0x.... 0x....      BL       sl_hal_gpio_get_pin_mode
+   \       0x56   0x7028             STRB     R0,[R5, #+0]
+    168            switch (pin_config->mode) {
+   \       0x58   0xB148             CBZ.N    R0,??sl_gpio_get_pin_config_4
+   \       0x5A   0x1E40             SUBS     R0,R0,#+1
+   \       0x5C   0x2802             CMP      R0,#+2
+   \       0x5E   0xD903             BLS.N    ??sl_gpio_get_pin_config_5
+   \       0x60   0x1EC0             SUBS     R0,R0,#+3
+   \       0x62   0x280B             CMP      R0,#+11
+   \       0x64   0xD903             BLS.N    ??sl_gpio_get_pin_config_4
+   \       0x66   0xE005             B.N      ??sl_gpio_get_pin_config_6
+    169              case SL_GPIO_MODE_INPUT:
+    170              case SL_GPIO_MODE_INPUT_PULL:
+    171              case SL_GPIO_MODE_INPUT_PULL_FILTER:
+    172                pin_config->direction = SL_GPIO_PIN_DIRECTION_IN;
+   \                     ??sl_gpio_get_pin_config_5: (+1)
+   \       0x68   0x2200             MOVS     R2,#+0
+   \       0x6A   0x706A             STRB     R2,[R5, #+1]
+    173                break;
+    174          
+    175              case SL_GPIO_MODE_DISABLED:
+    176              case SL_GPIO_MODE_PUSH_PULL:
+    177              case SL_GPIO_MODE_PUSH_PULL_ALTERNATE:
+    178              case SL_GPIO_MODE_WIRED_OR:
+    179              case SL_GPIO_MODE_WIRED_OR_PULL_DOWN:
+    180              case SL_GPIO_MODE_WIRED_AND:
+    181              case SL_GPIO_MODE_WIRED_AND_FILTER:
+    182              case SL_GPIO_MODE_WIRED_AND_PULLUP:
+    183              case SL_GPIO_MODE_WIRED_AND_PULLUP_FILTER:
+    184              case SL_GPIO_MODE_WIRED_AND_ALTERNATE:
+    185              case SL_GPIO_MODE_WIRED_AND_ALTERNATE_FILTER:
+    186              case SL_GPIO_MODE_WIRED_AND_ALTERNATE_PULLUP:
+    187              case SL_GPIO_MODE_WIRED_AND_ALTERNATE_PULLUP_FILTER:
+    188                pin_config->direction = SL_GPIO_PIN_DIRECTION_OUT;
+    189                break;
+    190          
+    191              default:
+    192                CORE_EXIT_ATOMIC();
+    193                EFM_ASSERT(false);
+    194                return SL_STATUS_INVALID_MODE;
+    195            }
+    196          
+    197            CORE_EXIT_ATOMIC();
+   \                     ??sl_gpio_get_pin_config_7: (+1)
+   \       0x6C   0x....             B.N      ??Subroutine16_0
+   \                     ??sl_gpio_get_pin_config_4: (+1)
+   \       0x6E   0x2001             MOVS     R0,#+1
+   \       0x70   0x7068             STRB     R0,[R5, #+1]
+   \       0x72   0xE7FB             B.N      ??sl_gpio_get_pin_config_7
+   \                     ??sl_gpio_get_pin_config_6: (+1)
+   \       0x74   0x4638             MOV      R0,R7
+   \       0x76   0x.... 0x....      BL       CORE_ExitAtomic
+   \       0x7A   0x21C1             MOVS     R1,#+193
+   \       0x7C   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x80   0x2024             MOVS     R0,#+36
+   \       0x82   0xBDF2             POP      {R1,R4-R7,PC}
+    198            return SL_STATUS_OK;
+    199          }
+    200          
+    201          /***************************************************************************//**
+    202           *  Sets the DOUT of selected pin on selected port.
+    203           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    204          sl_status_t sl_gpio_set_pin(const sl_gpio_t *gpio)
+    205          {
+   \                     sl_gpio_set_pin: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    206            if (gpio == NULL) {
+   \        0x4   0x.... 0x....      LDR.W    R0,??DataTable28_1
+   \        0x8   0xD101             BNE.N    ??sl_gpio_set_pin_0
+    207              EFM_ASSERT(false);
+   \        0xA   0x21CF             MOVS     R1,#+207
+   \        0xC   0x....             B.N      ?Subroutine4
+    208              return SL_STATUS_NULL_POINTER;
+    209            }
+    210            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_gpio_set_pin_0: (+1)
+   \        0xE   0x7821             LDRB     R1,[R4, #+0]
+   \       0x10   0xB909             CBNZ.N   R1,??sl_gpio_set_pin_1
+   \       0x12   0x217F             MOVS     R1,#+127
+   \       0x14   0xE011             B.N      ??sl_gpio_set_pin_2
+   \                     ??sl_gpio_set_pin_1: (+1)
+   \       0x16   0x2901             CMP      R1,#+1
+   \       0x18   0xBF08             IT       EQ
+   \       0x1A   0x2107             MOVEQ    R1,#+7
+   \       0x1C   0xD00D             BEQ.N    ??sl_gpio_set_pin_2
+   \       0x1E   0x2902             CMP      R1,#+2
+   \       0x20   0xBF0C             ITE      EQ
+   \       0x22   0x213F             MOVEQ    R1,#+63
+   \       0x24   0x2903             CMPNE    R1,#+3
+   \       0x26   0xD008             BEQ.N    ??sl_gpio_set_pin_2
+   \       0x28   0x2904             CMP      R1,#+4
+   \       0x2A   0xBF18             IT       NE
+   \       0x2C   0x2905             CMPNE    R1,#+5
+   \       0x2E   0xD003             BEQ.N    ??sl_gpio_set_pin_3
+   \       0x30   0x2906             CMP      R1,#+6
+   \       0x32   0xBF1C             ITT      NE
+   \       0x34   0x2907             CMPNE    R1,#+7
+   \       0x36   0x2908             CMPNE    R1,#+8
+   \                     ??sl_gpio_set_pin_3: (+1)
+   \       0x38   0x2100             MOVS     R1,#+0
+   \                     ??sl_gpio_set_pin_2: (+1)
+   \       0x3A   0x7862             LDRB     R2,[R4, #+1]
+   \       0x3C   0x40D1             LSRS     R1,R1,R2
+   \       0x3E   0x07C9             LSLS     R1,R1,#+31
+   \       0x40   0xBF5C             ITT      PL
+   \       0x42   0x21D2             MOVPL    R1,#+210
+   \       0x44   0x.... 0x....      BLPL     assertEFM
+    211          
+    212            sl_hal_gpio_set_pin(gpio);
+   \       0x48   0x4620             MOV      R0,R4
+   \       0x4A   0x.... 0x....      BL       sl_hal_gpio_set_pin
+    213          
+    214            return SL_STATUS_OK;
+   \       0x4E   0x2000             MOVS     R0,#+0
+   \       0x50   0xBD10             POP      {R4,PC}
+    215          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x.... 0x....      BL       assertEFM
+   \        0x4   0x2022             MOVS     R0,#+34
+   \        0x6   0xBD10             POP      {R4,PC}
+    216          
+    217          /***************************************************************************//**
+    218           *  Clears the DOUT of selected pin on selected port.
+    219           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    220          sl_status_t sl_gpio_clear_pin(const sl_gpio_t *gpio)
+    221          {
+   \                     sl_gpio_clear_pin: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    222            if (gpio == NULL) {
+   \        0x4   0x.... 0x....      LDR.W    R5,??DataTable28_2
+   \        0x8   0xF105 0x0088      ADD      R0,R5,#+136
+   \        0xC   0xD104             BNE.N    ??sl_gpio_clear_pin_0
+    223              EFM_ASSERT(false);
+   \        0xE   0x21DF             MOVS     R1,#+223
+   \       0x10   0x.... 0x....      BL       assertEFM
+    224              return SL_STATUS_NULL_POINTER;
+   \       0x14   0x2022             MOVS     R0,#+34
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}
+    225            }
+    226            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_gpio_clear_pin_0: (+1)
+   \       0x18   0x7821             LDRB     R1,[R4, #+0]
+   \       0x1A   0xB909             CBNZ.N   R1,??sl_gpio_clear_pin_1
+   \       0x1C   0x217F             MOVS     R1,#+127
+   \       0x1E   0xE011             B.N      ??sl_gpio_clear_pin_2
+   \                     ??sl_gpio_clear_pin_1: (+1)
+   \       0x20   0x2901             CMP      R1,#+1
+   \       0x22   0xBF08             IT       EQ
+   \       0x24   0x2107             MOVEQ    R1,#+7
+   \       0x26   0xD00D             BEQ.N    ??sl_gpio_clear_pin_2
+   \       0x28   0x2902             CMP      R1,#+2
+   \       0x2A   0xBF0C             ITE      EQ
+   \       0x2C   0x213F             MOVEQ    R1,#+63
+   \       0x2E   0x2903             CMPNE    R1,#+3
+   \       0x30   0xD008             BEQ.N    ??sl_gpio_clear_pin_2
+   \       0x32   0x2904             CMP      R1,#+4
+   \       0x34   0xBF18             IT       NE
+   \       0x36   0x2905             CMPNE    R1,#+5
+   \       0x38   0xD003             BEQ.N    ??sl_gpio_clear_pin_3
+   \       0x3A   0x2906             CMP      R1,#+6
+   \       0x3C   0xBF1C             ITT      NE
+   \       0x3E   0x2907             CMPNE    R1,#+7
+   \       0x40   0x2908             CMPNE    R1,#+8
+   \                     ??sl_gpio_clear_pin_3: (+1)
+   \       0x42   0x2100             MOVS     R1,#+0
+   \                     ??sl_gpio_clear_pin_2: (+1)
+   \       0x44   0x7862             LDRB     R2,[R4, #+1]
+   \       0x46   0x40D1             LSRS     R1,R1,R2
+   \       0x48   0x07C9             LSLS     R1,R1,#+31
+   \       0x4A   0xBF5C             ITT      PL
+   \       0x4C   0x21E2             MOVPL    R1,#+226
+   \       0x4E   0x.... 0x....      BLPL     assertEFM
+   \       0x52   0x7820             LDRB     R0,[R4, #+0]
+   \       0x54   0xB908             CBNZ.N   R0,??sl_gpio_clear_pin_4
+   \       0x56   0x207F             MOVS     R0,#+127
+   \       0x58   0xE010             B.N      ??sl_gpio_clear_pin_5
+   \                     ??sl_gpio_clear_pin_4: (+1)
+   \       0x5A   0x2801             CMP      R0,#+1
+   \       0x5C   0xBF08             IT       EQ
+   \       0x5E   0x2007             MOVEQ    R0,#+7
+   \       0x60   0xD00C             BEQ.N    ??sl_gpio_clear_pin_5
+   \       0x62   0x2802             CMP      R0,#+2
+   \       0x64   0xBF0C             ITE      EQ
+   \       0x66   0x203F             MOVEQ    R0,#+63
+   \       0x68   0x2803             CMPNE    R0,#+3
+   \       0x6A   0xD007             BEQ.N    ??sl_gpio_clear_pin_5
+   \       0x6C   0x2804             CMP      R0,#+4
+   \       0x6E   0xBF18             IT       NE
+   \       0x70   0x2805             CMPNE    R0,#+5
+   \       0x72   0xD002             BEQ.N    ??sl_gpio_clear_pin_6
+   \       0x74   0x2806             CMP      R0,#+6
+   \       0x76   0xBF18             IT       NE
+   \       0x78   0x2807             CMPNE    R0,#+7
+   \                     ??sl_gpio_clear_pin_6: (+1)
+   \       0x7A   0x2000             MOVS     R0,#+0
+   \                     ??sl_gpio_clear_pin_5: (+1)
+   \       0x7C   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_22: (+1)
+   \       0x80   0xD404             BMI.N    ??sl_gpio_clear_pin_7
+   \       0x82   0xF240 0x21E7      MOVW     R1,#+743
+   \       0x86   0x4628             MOV      R0,R5
+   \       0x88   0x.... 0x....      BL       assertEFM
+   \                     ??sl_gpio_clear_pin_7: (+1)
+   \       0x8C   0x2130             MOVS     R1,#+48
+   \       0x8E   0x7860             LDRB     R0,[R4, #+1]
+   \       0x90   0x7824             LDRB     R4,[R4, #+0]
+   \       0x92   0x2201             MOVS     R2,#+1
+   \       0x94   0x.... 0x....      LDR.W    R3,??DataTable28_3
+   \       0x98   0x434C             MULS     R4,R1,R4
+   \       0x9A   0x4082             LSLS     R2,R2,R0
+    227          
+    228            sl_hal_gpio_clear_pin(gpio);
+    229          
+    230            return SL_STATUS_OK;
+   \       0x9C   0x2000             MOVS     R0,#+0
+   \       0x9E   0x1919             ADDS     R1,R3,R4
+   \       0xA0   0x610A             STR      R2,[R1, #+16]
+   \       0xA2   0xBD32             POP      {R1,R4,R5,PC}
+    231          }
+    232          
+    233          /***************************************************************************//**
+    234           *  Toggles the DOUT of selected pin on selected port.
+    235           ******************************************************************************/
+
+   \                                 In section text_gpio_timecritical39190, align 4, keep-with-next
+    236          sl_status_t sl_gpio_toggle_pin(const sl_gpio_t *gpio)
+    237          {
+   \                     sl_gpio_toggle_pin: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    238            if (gpio == NULL) {
+   \        0x4   0x4814             LDR.N    R0,??sl_gpio_toggle_pin_0
+   \        0x6   0xD104             BNE.N    ??sl_gpio_toggle_pin_1
+    239              EFM_ASSERT(false);
+   \        0x8   0x21EF             MOVS     R1,#+239
+   \        0xA   0x.... 0x....      BL       assertEFM
+    240              return SL_STATUS_NULL_POINTER;
+   \        0xE   0x2022             MOVS     R0,#+34
+   \       0x10   0xBD10             POP      {R4,PC}
+    241            }
+    242            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_gpio_toggle_pin_1: (+1)
+   \       0x12   0x7821             LDRB     R1,[R4, #+0]
+   \       0x14   0xB909             CBNZ.N   R1,??sl_gpio_toggle_pin_2
+   \       0x16   0x217F             MOVS     R1,#+127
+   \       0x18   0xE011             B.N      ??sl_gpio_toggle_pin_3
+   \                     ??sl_gpio_toggle_pin_2: (+1)
+   \       0x1A   0x2901             CMP      R1,#+1
+   \       0x1C   0xBF08             IT       EQ
+   \       0x1E   0x2107             MOVEQ    R1,#+7
+   \       0x20   0xD00D             BEQ.N    ??sl_gpio_toggle_pin_3
+   \       0x22   0x2902             CMP      R1,#+2
+   \       0x24   0xBF0C             ITE      EQ
+   \       0x26   0x213F             MOVEQ    R1,#+63
+   \       0x28   0x2903             CMPNE    R1,#+3
+   \       0x2A   0xD008             BEQ.N    ??sl_gpio_toggle_pin_3
+   \       0x2C   0x2904             CMP      R1,#+4
+   \       0x2E   0xBF18             IT       NE
+   \       0x30   0x2905             CMPNE    R1,#+5
+   \       0x32   0xD003             BEQ.N    ??sl_gpio_toggle_pin_4
+   \       0x34   0x2906             CMP      R1,#+6
+   \       0x36   0xBF1C             ITT      NE
+   \       0x38   0x2907             CMPNE    R1,#+7
+   \       0x3A   0x2908             CMPNE    R1,#+8
+   \                     ??sl_gpio_toggle_pin_4: (+1)
+   \       0x3C   0x2100             MOVS     R1,#+0
+   \                     ??sl_gpio_toggle_pin_3: (+1)
+   \       0x3E   0x7862             LDRB     R2,[R4, #+1]
+   \       0x40   0x40D1             LSRS     R1,R1,R2
+   \       0x42   0x07C9             LSLS     R1,R1,#+31
+   \       0x44   0xBF5C             ITT      PL
+   \       0x46   0x21F2             MOVPL    R1,#+242
+   \       0x48   0x.... 0x....      BLPL     assertEFM
+    243          
+    244            sl_hal_gpio_toggle_pin(gpio);
+   \       0x4C   0x4620             MOV      R0,R4
+   \       0x4E   0x.... 0x....      BL       sl_hal_gpio_toggle_pin
+    245          
+    246            return SL_STATUS_OK;
+   \       0x52   0x2000             MOVS     R0,#+0
+   \       0x54   0xBD10             POP      {R4,PC}
+   \       0x56   0xBF00             Nop
+   \                     ??sl_gpio_toggle_pin_0:
+   \       0x58   0x....'....        DC32     ?_0+136
+    247          }
+    248          
+    249          /***************************************************************************//**
+    250           *  Gets the output state of selected pin on selected port.
+    251           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    252          sl_status_t sl_gpio_get_pin_output(const sl_gpio_t *gpio,
+    253                                             bool *pin_value)
+    254          {
+   \                     sl_gpio_get_pin_output: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    255            CORE_DECLARE_IRQ_STATE;
+    256          
+    257            if (gpio == NULL || pin_value == NULL) {
+   \        0x4   0x.... 0x....      LDR.W    R6,??DataTable28_2
+   \        0x8   0x460D             MOV      R5,R1
+   \        0xA   0xF106 0x0088      ADD      R0,R6,#+136
+   \        0xE   0xBF18             IT       NE
+   \       0x10   0x2D00             CMPNE    R5,#+0
+   \       0x12   0xD102             BNE.N    ??sl_gpio_get_pin_output_0
+    258              EFM_ASSERT(false);
+   \       0x14   0xF44F 0x7181      MOV      R1,#+258
+   \       0x18   0x....             B.N      ??Subroutine3_0
+    259              return SL_STATUS_NULL_POINTER;
+    260            }
+    261            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_gpio_get_pin_output_0: (+1)
+   \       0x1A   0x7821             LDRB     R1,[R4, #+0]
+   \       0x1C   0xB909             CBNZ.N   R1,??sl_gpio_get_pin_output_1
+   \       0x1E   0x217F             MOVS     R1,#+127
+   \       0x20   0xE011             B.N      ??sl_gpio_get_pin_output_2
+   \                     ??sl_gpio_get_pin_output_1: (+1)
+   \       0x22   0x2901             CMP      R1,#+1
+   \       0x24   0xBF08             IT       EQ
+   \       0x26   0x2107             MOVEQ    R1,#+7
+   \       0x28   0xD00D             BEQ.N    ??sl_gpio_get_pin_output_2
+   \       0x2A   0x2902             CMP      R1,#+2
+   \       0x2C   0xBF0C             ITE      EQ
+   \       0x2E   0x213F             MOVEQ    R1,#+63
+   \       0x30   0x2903             CMPNE    R1,#+3
+   \       0x32   0xD008             BEQ.N    ??sl_gpio_get_pin_output_2
+   \       0x34   0x2904             CMP      R1,#+4
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2905             CMPNE    R1,#+5
+   \       0x3A   0xD003             BEQ.N    ??sl_gpio_get_pin_output_3
+   \       0x3C   0x2906             CMP      R1,#+6
+   \       0x3E   0xBF1C             ITT      NE
+   \       0x40   0x2907             CMPNE    R1,#+7
+   \       0x42   0x2908             CMPNE    R1,#+8
+   \                     ??sl_gpio_get_pin_output_3: (+1)
+   \       0x44   0x2100             MOVS     R1,#+0
+   \                     ??sl_gpio_get_pin_output_2: (+1)
+   \       0x46   0x7862             LDRB     R2,[R4, #+1]
+   \       0x48   0x40D1             LSRS     R1,R1,R2
+   \       0x4A   0x07C9             LSLS     R1,R1,#+31
+   \       0x4C   0xBF5C             ITT      PL
+   \       0x4E   0xF240 0x1105      MOVWPL   R1,#+261
+   \       0x52   0x.... 0x....      BLPL     assertEFM
+    262          
+    263            CORE_ENTER_ATOMIC();
+   \       0x56   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x5A   0x4607             MOV      R7,R0
+    264          
+    265            *pin_value = sl_hal_gpio_get_pin_output(gpio);
+   \       0x5C   0x7820             LDRB     R0,[R4, #+0]
+   \       0x5E   0xB908             CBNZ.N   R0,??sl_gpio_get_pin_output_4
+   \       0x60   0x207F             MOVS     R0,#+127
+   \       0x62   0xE010             B.N      ??sl_gpio_get_pin_output_5
+   \                     ??sl_gpio_get_pin_output_4: (+1)
+   \       0x64   0x2801             CMP      R0,#+1
+   \       0x66   0xBF08             IT       EQ
+   \       0x68   0x2007             MOVEQ    R0,#+7
+   \       0x6A   0xD00C             BEQ.N    ??sl_gpio_get_pin_output_5
+   \       0x6C   0x2802             CMP      R0,#+2
+   \       0x6E   0xBF0C             ITE      EQ
+   \       0x70   0x203F             MOVEQ    R0,#+63
+   \       0x72   0x2803             CMPNE    R0,#+3
+   \       0x74   0xD007             BEQ.N    ??sl_gpio_get_pin_output_5
+   \       0x76   0x2804             CMP      R0,#+4
+   \       0x78   0xBF18             IT       NE
+   \       0x7A   0x2805             CMPNE    R0,#+5
+   \       0x7C   0xD002             BEQ.N    ??sl_gpio_get_pin_output_6
+   \       0x7E   0x2806             CMP      R0,#+6
+   \       0x80   0xBF18             IT       NE
+   \       0x82   0x2807             CMPNE    R0,#+7
+   \                     ??sl_gpio_get_pin_output_6: (+1)
+   \       0x84   0x2000             MOVS     R0,#+0
+   \                     ??sl_gpio_get_pin_output_5: (+1)
+   \       0x86   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_23: (+1)
+   \       0x8A   0xD403             BMI.N    ??CrossCallReturnLabel_5
+   \       0x8C   0xF240 0x310F      MOVW     R1,#+783
+   \       0x90   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x94   0x.... 0x....      BL       ?Subroutine11
+   \                     ??CrossCallReturnLabel_25: (+1)
+   \       0x98   0x6900             LDR      R0,[R0, #+16]
+   \       0x9A   0x....             B.N      ?Subroutine2
+    266          
+    267            CORE_EXIT_ATOMIC();
+    268            return SL_STATUS_OK;
+    269          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x7861             LDRB     R1,[R4, #+1]
+   \        0x2   0x40C8             LSRS     R0,R0,R1
+   \        0x4   0xF000 0x0001      AND      R0,R0,#0x1
+   \        0x8   0x7028             STRB     R0,[R5, #+0]
+   \        0xA                      REQUIRE ??Subroutine16_0
+   \        0xA                      ; // Fall through to label ??Subroutine16_0
+    270          
+    271          /***************************************************************************//**
+    272           *  Gets the input state of selected pin on selected port.
+    273           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    274          sl_status_t sl_gpio_get_pin_input(const sl_gpio_t *gpio,
+    275                                            bool *pin_value)
+    276          {
+   \                     sl_gpio_get_pin_input: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    277            CORE_DECLARE_IRQ_STATE;
+    278          
+    279            if (gpio == NULL || pin_value == NULL) {
+   \        0x4   0x.... 0x....      LDR.W    R6,??DataTable28_2
+   \        0x8   0x460D             MOV      R5,R1
+   \        0xA   0xF106 0x0088      ADD      R0,R6,#+136
+   \        0xE   0xBF18             IT       NE
+   \       0x10   0x2D00             CMPNE    R5,#+0
+   \       0x12   0xD102             BNE.N    ??sl_gpio_get_pin_input_0
+    280              EFM_ASSERT(false);
+   \       0x14   0xF44F 0x718C      MOV      R1,#+280
+   \       0x18   0x....             B.N      ??Subroutine3_0
+    281              return SL_STATUS_NULL_POINTER;
+    282            }
+    283            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_gpio_get_pin_input_0: (+1)
+   \       0x1A   0x7821             LDRB     R1,[R4, #+0]
+   \       0x1C   0xB909             CBNZ.N   R1,??sl_gpio_get_pin_input_1
+   \       0x1E   0x217F             MOVS     R1,#+127
+   \       0x20   0xE011             B.N      ??sl_gpio_get_pin_input_2
+   \                     ??sl_gpio_get_pin_input_1: (+1)
+   \       0x22   0x2901             CMP      R1,#+1
+   \       0x24   0xBF08             IT       EQ
+   \       0x26   0x2107             MOVEQ    R1,#+7
+   \       0x28   0xD00D             BEQ.N    ??sl_gpio_get_pin_input_2
+   \       0x2A   0x2902             CMP      R1,#+2
+   \       0x2C   0xBF0C             ITE      EQ
+   \       0x2E   0x213F             MOVEQ    R1,#+63
+   \       0x30   0x2903             CMPNE    R1,#+3
+   \       0x32   0xD008             BEQ.N    ??sl_gpio_get_pin_input_2
+   \       0x34   0x2904             CMP      R1,#+4
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2905             CMPNE    R1,#+5
+   \       0x3A   0xD003             BEQ.N    ??sl_gpio_get_pin_input_3
+   \       0x3C   0x2906             CMP      R1,#+6
+   \       0x3E   0xBF1C             ITT      NE
+   \       0x40   0x2907             CMPNE    R1,#+7
+   \       0x42   0x2908             CMPNE    R1,#+8
+   \                     ??sl_gpio_get_pin_input_3: (+1)
+   \       0x44   0x2100             MOVS     R1,#+0
+   \                     ??sl_gpio_get_pin_input_2: (+1)
+   \       0x46   0x7862             LDRB     R2,[R4, #+1]
+   \       0x48   0x40D1             LSRS     R1,R1,R2
+   \       0x4A   0x07C9             LSLS     R1,R1,#+31
+   \       0x4C   0xBF5C             ITT      PL
+   \       0x4E   0xF240 0x111B      MOVWPL   R1,#+283
+   \       0x52   0x.... 0x....      BLPL     assertEFM
+    284          
+    285            CORE_ENTER_ATOMIC();
+   \       0x56   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x5A   0x4607             MOV      R7,R0
+    286          
+    287            *pin_value = sl_hal_gpio_get_pin_input(gpio);
+   \       0x5C   0x7820             LDRB     R0,[R4, #+0]
+   \       0x5E   0xB908             CBNZ.N   R0,??sl_gpio_get_pin_input_4
+   \       0x60   0x207F             MOVS     R0,#+127
+   \       0x62   0xE010             B.N      ??sl_gpio_get_pin_input_5
+   \                     ??sl_gpio_get_pin_input_4: (+1)
+   \       0x64   0x2801             CMP      R0,#+1
+   \       0x66   0xBF08             IT       EQ
+   \       0x68   0x2007             MOVEQ    R0,#+7
+   \       0x6A   0xD00C             BEQ.N    ??sl_gpio_get_pin_input_5
+   \       0x6C   0x2802             CMP      R0,#+2
+   \       0x6E   0xBF0C             ITE      EQ
+   \       0x70   0x203F             MOVEQ    R0,#+63
+   \       0x72   0x2803             CMPNE    R0,#+3
+   \       0x74   0xD007             BEQ.N    ??sl_gpio_get_pin_input_5
+   \       0x76   0x2804             CMP      R0,#+4
+   \       0x78   0xBF18             IT       NE
+   \       0x7A   0x2805             CMPNE    R0,#+5
+   \       0x7C   0xD002             BEQ.N    ??sl_gpio_get_pin_input_6
+   \       0x7E   0x2806             CMP      R0,#+6
+   \       0x80   0xBF18             IT       NE
+   \       0x82   0x2807             CMPNE    R0,#+7
+   \                     ??sl_gpio_get_pin_input_6: (+1)
+   \       0x84   0x2000             MOVS     R0,#+0
+   \                     ??sl_gpio_get_pin_input_5: (+1)
+   \       0x86   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_24: (+1)
+   \       0x8A   0xD403             BMI.N    ??CrossCallReturnLabel_4
+   \       0x8C   0xF240 0x3101      MOVW     R1,#+769
+   \       0x90   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x94   0x.... 0x....      BL       ?Subroutine11
+   \                     ??CrossCallReturnLabel_26: (+1)
+   \       0x98   0x6940             LDR      R0,[R0, #+20]
+   \       0x9A                      REQUIRE ?Subroutine2
+   \       0x9A                      ; // Fall through to label ?Subroutine2
+    288          
+    289            CORE_EXIT_ATOMIC();
+    290            return SL_STATUS_OK;
+    291          }
+    292          
+    293          /***************************************************************************//**
+    294           *  Sets the selected pin(s) on selected port.
+    295           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    296          sl_status_t sl_gpio_set_port(sl_gpio_port_t port,
+    297                                       uint32_t pins)
+    298          {
+   \                     sl_gpio_set_port: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    299            EFM_ASSERT(SL_HAL_GPIO_PORT_IS_VALID(port));
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0x2C01             CMPNE    R4,#+1
+   \        0xC   0xD00F             BEQ.N    ??CrossCallReturnLabel_11
+   \        0xE   0x2C02             CMP      R4,#+2
+   \       0x10   0xBF18             IT       NE
+   \       0x12   0x2C03             CMPNE    R4,#+3
+   \       0x14   0xD00B             BEQ.N    ??CrossCallReturnLabel_11
+   \       0x16   0x.... 0x....      LDR.W    R6,??DataTable28_2
+   \       0x1A   0xF240 0x112B      MOVW     R1,#+299
+   \       0x1E   0xF106 0x0088      ADD      R0,R6,#+136
+   \       0x22   0x.... 0x....      BL       assertEFM
+   \       0x26   0xF44F 0x7133      MOV      R1,#+716
+   \       0x2A   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x2E   0x2030             MOVS     R0,#+48
+   \       0x30   0x4344             MULS     R4,R0,R4
+   \       0x32   0x.... 0x....      LDR.W    R1,??DataTable28_5
+   \       0x36   0x....             B.N      ?Subroutine1
+    300          
+    301            sl_hal_gpio_set_port(port, pins);
+    302          
+    303            return SL_STATUS_OK;
+    304          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x1908             ADDS     R0,R1,R4
+   \        0x2   0x6105             STR      R5,[R0, #+16]
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xBD70             POP      {R4-R6,PC}
+    305          
+    306          /***************************************************************************//**
+    307           *  Clears the selected pin on selected port.
+    308           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    309          sl_status_t sl_gpio_clear_port(sl_gpio_port_t port,
+    310                                         uint32_t pins)
+    311          {
+   \                     sl_gpio_clear_port: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    312            EFM_ASSERT(SL_HAL_GPIO_PORT_IS_VALID(port));
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0x2C01             CMPNE    R4,#+1
+   \        0xC   0xD00F             BEQ.N    ??CrossCallReturnLabel_12
+   \        0xE   0x2C02             CMP      R4,#+2
+   \       0x10   0xBF18             IT       NE
+   \       0x12   0x2C03             CMPNE    R4,#+3
+   \       0x14   0xD00B             BEQ.N    ??CrossCallReturnLabel_12
+   \       0x16   0x.... 0x....      LDR.W    R6,??DataTable28_2
+   \       0x1A   0xF44F 0x719C      MOV      R1,#+312
+   \       0x1E   0xF106 0x0088      ADD      R0,R6,#+136
+   \       0x22   0x.... 0x....      BL       assertEFM
+   \       0x26   0xF240 0x21F3      MOVW     R1,#+755
+   \       0x2A   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x2E   0x2030             MOVS     R0,#+48
+   \       0x30   0x4344             MULS     R4,R0,R4
+   \       0x32   0x.... 0x....      LDR.W    R1,??DataTable28_3
+   \       0x36                      REQUIRE ?Subroutine1
+   \       0x36                      ; // Fall through to label ?Subroutine1
+    313          
+    314            sl_hal_gpio_clear_port(port, pins);
+    315          
+    316            return SL_STATUS_OK;
+    317          }
+    318          
+    319          /***************************************************************************//**
+    320           *  Gets the output state of pins of selected port.
+    321           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    322          sl_status_t sl_gpio_get_port_output(sl_gpio_port_t port,
+    323                                              uint32_t *port_value)
+    324          {
+   \                     sl_gpio_get_port_output: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine14
+    325            CORE_DECLARE_IRQ_STATE;
+    326          
+    327            EFM_ASSERT(SL_HAL_GPIO_PORT_IS_VALID(port));
+   \                     ??CrossCallReturnLabel_33: (+1)
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2D01             CMPNE    R5,#+1
+   \        0xA   0xD007             BEQ.N    ??CrossCallReturnLabel_3
+   \        0xC   0x2D02             CMP      R5,#+2
+   \        0xE   0xBF18             IT       NE
+   \       0x10   0x2D03             CMPNE    R5,#+3
+   \       0x12   0xD003             BEQ.N    ??CrossCallReturnLabel_3
+   \       0x14   0xF240 0x1147      MOVW     R1,#+327
+   \       0x18   0x.... 0x....      BL       ?Subroutine8
+    328            if (port_value == NULL) {
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x1C   0xB914             CBNZ.N   R4,??sl_gpio_get_port_output_0
+    329              EFM_ASSERT(false);
+   \       0x1E   0xF240 0x1149      MOVW     R1,#+329
+   \       0x22   0x....             B.N      ?Subroutine3
+    330              return SL_STATUS_NULL_POINTER;
+    331            }
+    332          
+    333            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_get_port_output_0: (+1)
+   \       0x24   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x28   0x4606             MOV      R6,R0
+    334          
+    335            *port_value = sl_hal_gpio_get_port_output(port);
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0xBF18             IT       NE
+   \       0x2E   0x2D01             CMPNE    R5,#+1
+   \       0x30   0xD007             BEQ.N    ??CrossCallReturnLabel_16
+   \       0x32   0x2D02             CMP      R5,#+2
+   \       0x34   0xBF18             IT       NE
+   \       0x36   0x2D03             CMPNE    R5,#+3
+   \       0x38   0xD003             BEQ.N    ??CrossCallReturnLabel_16
+   \       0x3A   0xF240 0x3129      MOVW     R1,#+809
+   \       0x3E   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x42   0x.... 0x....      BL       ?Subroutine12
+   \                     ??CrossCallReturnLabel_27: (+1)
+   \       0x46   0x6900             LDR      R0,[R0, #+16]
+   \       0x48   0x6020             STR      R0,[R4, #+0]
+    336          
+    337            CORE_EXIT_ATOMIC();
+   \       0x4A   0x4630             MOV      R0,R6
+   \       0x4C   0x....             B.N      ??Subroutine16_1
+    338            return SL_STATUS_OK;
+    339          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine14: (+1)
+   \        0x0   0x4605             MOV      R5,R0
+   \        0x2   0x.... 0x....      LDR.W    R7,??DataTable28_2
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0xF107 0x0688      ADD      R6,R7,#+136
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0x4770             BX       LR
+    340          
+    341          /***************************************************************************//**
+    342           *  Gets the input state of pins of selected port.
+    343           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    344          sl_status_t sl_gpio_get_port_input(sl_gpio_port_t port,
+    345                                             uint32_t *port_value)
+    346          {
+   \                     sl_gpio_get_port_input: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine14
+    347            CORE_DECLARE_IRQ_STATE;
+    348          
+    349            EFM_ASSERT(SL_HAL_GPIO_PORT_IS_VALID(port));
+   \                     ??CrossCallReturnLabel_34: (+1)
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2D01             CMPNE    R5,#+1
+   \        0xA   0xD007             BEQ.N    ??CrossCallReturnLabel_2
+   \        0xC   0x2D02             CMP      R5,#+2
+   \        0xE   0xBF18             IT       NE
+   \       0x10   0x2D03             CMPNE    R5,#+3
+   \       0x12   0xD003             BEQ.N    ??CrossCallReturnLabel_2
+   \       0x14   0xF240 0x115D      MOVW     R1,#+349
+   \       0x18   0x.... 0x....      BL       ?Subroutine8
+    350            if (port_value == NULL) {
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x1C   0xB914             CBNZ.N   R4,??sl_gpio_get_port_input_0
+    351              EFM_ASSERT(false);
+   \       0x1E   0xF240 0x115F      MOVW     R1,#+351
+   \       0x22   0x....             B.N      ?Subroutine3
+    352              return SL_STATUS_NULL_POINTER;
+    353            }
+    354          
+    355            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_get_port_input_0: (+1)
+   \       0x24   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x28   0x4606             MOV      R6,R0
+    356          
+    357            *port_value = sl_hal_gpio_get_port_input(port);
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0xBF18             IT       NE
+   \       0x2E   0x2D01             CMPNE    R5,#+1
+   \       0x30   0xD007             BEQ.N    ??CrossCallReturnLabel_15
+   \       0x32   0x2D02             CMP      R5,#+2
+   \       0x34   0xBF18             IT       NE
+   \       0x36   0x2D03             CMPNE    R5,#+3
+   \       0x38   0xD003             BEQ.N    ??CrossCallReturnLabel_15
+   \       0x3A   0xF44F 0x7147      MOV      R1,#+796
+   \       0x3E   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x42   0x.... 0x....      BL       ?Subroutine12
+   \                     ??CrossCallReturnLabel_28: (+1)
+   \       0x46   0x6940             LDR      R0,[R0, #+20]
+   \       0x48   0x6020             STR      R0,[R4, #+0]
+    358          
+    359            CORE_EXIT_ATOMIC();
+   \       0x4A   0x4630             MOV      R0,R6
+   \       0x4C   0x....             B.N      ??Subroutine16_1
+    360            return SL_STATUS_OK;
+    361          }
+    362          
+    363          /***************************************************************************//**
+    364           *  Configuring the GPIO external pin interrupt.
+    365           *  This API can be used to configure interrupt and to register the callback.
+    366           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    367          sl_status_t sl_gpio_configure_external_interrupt(const sl_gpio_t *gpio,
+    368                                                           int32_t *int_no,
+    369                                                           sl_gpio_interrupt_flag_t flags,
+    370                                                           sl_gpio_irq_callback_t gpio_callback,
+    371                                                           void *context)
+    372          {
+   \                     sl_gpio_configure_external_interrupt: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x461F             MOV      R7,R3
+    373            uint32_t enabled_interrupts;
+    374            CORE_DECLARE_IRQ_STATE;
+    375          
+    376            if (gpio == NULL || int_no == NULL) {
+   \        0xC   0x.... 0x....      LDR.W    R8,??DataTable28_1
+   \       0x10   0xBF18             IT       NE
+   \       0x12   0x2D00             CMPNE    R5,#+0
+   \       0x14   0xD106             BNE.N    ??sl_gpio_configure_external_interrupt_0
+    377              EFM_ASSERT(false);
+   \       0x16   0xF240 0x1179      MOVW     R1,#+377
+   \       0x1A   0x4640             MOV      R0,R8
+   \       0x1C   0x.... 0x....      BL       assertEFM
+    378              return SL_STATUS_NULL_POINTER;
+   \       0x20   0x2022             MOVS     R0,#+34
+   \       0x22   0xE079             B.N      ??sl_gpio_configure_external_interrupt_1
+    379            }
+    380            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin) || (gpio->port == SL_GPIO_PORT_INTERRUPT));
+   \                     ??sl_gpio_configure_external_interrupt_0: (+1)
+   \       0x24   0x7820             LDRB     R0,[R4, #+0]
+   \       0x26   0xB908             CBNZ.N   R0,??sl_gpio_configure_external_interrupt_2
+   \       0x28   0x217F             MOVS     R1,#+127
+   \       0x2A   0xE014             B.N      ??sl_gpio_configure_external_interrupt_3
+   \                     ??sl_gpio_configure_external_interrupt_2: (+1)
+   \       0x2C   0x2801             CMP      R0,#+1
+   \       0x2E   0xBF08             IT       EQ
+   \       0x30   0x2107             MOVEQ    R1,#+7
+   \       0x32   0xD010             BEQ.N    ??sl_gpio_configure_external_interrupt_3
+   \       0x34   0x2802             CMP      R0,#+2
+   \       0x36   0xBF08             IT       EQ
+   \       0x38   0x213F             MOVEQ    R1,#+63
+   \       0x3A   0xD00C             BEQ.N    ??sl_gpio_configure_external_interrupt_3
+   \       0x3C   0x2803             CMP      R0,#+3
+   \       0x3E   0xBF08             IT       EQ
+   \       0x40   0x2103             MOVEQ    R1,#+3
+   \       0x42   0xD008             BEQ.N    ??sl_gpio_configure_external_interrupt_3
+   \       0x44   0x2804             CMP      R0,#+4
+   \       0x46   0xBF18             IT       NE
+   \       0x48   0x2805             CMPNE    R0,#+5
+   \       0x4A   0xD003             BEQ.N    ??sl_gpio_configure_external_interrupt_4
+   \       0x4C   0x2806             CMP      R0,#+6
+   \       0x4E   0xBF1C             ITT      NE
+   \       0x50   0x2807             CMPNE    R0,#+7
+   \       0x52   0x2808             CMPNE    R0,#+8
+   \                     ??sl_gpio_configure_external_interrupt_4: (+1)
+   \       0x54   0x2100             MOVS     R1,#+0
+   \                     ??sl_gpio_configure_external_interrupt_3: (+1)
+   \       0x56   0x7862             LDRB     R2,[R4, #+1]
+   \       0x58   0x40D1             LSRS     R1,R1,R2
+   \       0x5A   0x07C9             LSLS     R1,R1,#+31
+   \       0x5C   0xD406             BMI.N    ??sl_gpio_configure_external_interrupt_5
+   \       0x5E   0x28FF             CMP      R0,#+255
+   \       0x60   0xD004             BEQ.N    ??sl_gpio_configure_external_interrupt_5
+   \       0x62   0xF44F 0x71BE      MOV      R1,#+380
+   \       0x66   0x4640             MOV      R0,R8
+   \       0x68   0x.... 0x....      BL       assertEFM
+    381            EFM_ASSERT(SL_GPIO_FLAG_IS_VALID(flags));
+   \                     ??sl_gpio_configure_external_interrupt_5: (+1)
+   \       0x6C   0x0030             MOVS     R0,R6
+   \       0x6E   0xBF18             IT       NE
+   \       0x70   0x2E01             CMPNE    R6,#+1
+   \       0x72   0xD008             BEQ.N    ??sl_gpio_configure_external_interrupt_6
+   \       0x74   0x2E02             CMP      R6,#+2
+   \       0x76   0xBF18             IT       NE
+   \       0x78   0x2E04             CMPNE    R6,#+4
+   \       0x7A   0xD004             BEQ.N    ??sl_gpio_configure_external_interrupt_6
+   \       0x7C   0xF240 0x117D      MOVW     R1,#+381
+   \       0x80   0x4640             MOV      R0,R8
+   \       0x82   0x.... 0x....      BL       assertEFM
+    382          
+    383            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_configure_external_interrupt_6: (+1)
+   \       0x86   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x8A   0x4680             MOV      R8,R0
+    384          
+    385            if (gpio->port != SL_GPIO_PORT_INTERRUPT) {
+   \       0x8C   0x7820             LDRB     R0,[R4, #+0]
+   \       0x8E   0x28FF             CMP      R0,#+255
+   \       0x90   0xD005             BEQ.N    ??sl_gpio_configure_external_interrupt_7
+    386              *int_no = sl_hal_gpio_configure_external_interrupt(gpio, *int_no, flags);
+   \       0x92   0x6829             LDR      R1,[R5, #+0]
+   \       0x94   0x4632             MOV      R2,R6
+   \       0x96   0x4620             MOV      R0,R4
+   \       0x98   0x.... 0x....      BL       sl_hal_gpio_configure_external_interrupt
+   \       0x9C   0x6028             STR      R0,[R5, #+0]
+    387            }
+    388          
+    389            if (*int_no == SL_GPIO_INTERRUPT_UNAVAILABLE && gpio->port == SL_GPIO_PORT_INTERRUPT) {
+   \                     ??sl_gpio_configure_external_interrupt_7: (+1)
+   \       0x9E   0x6828             LDR      R0,[R5, #+0]
+   \       0xA0   0xF110 0x0F01      CMN      R0,#+1
+   \       0xA4   0xD11D             BNE.N    ??sl_gpio_configure_external_interrupt_8
+   \       0xA6   0x7821             LDRB     R1,[R4, #+0]
+   \       0xA8   0x29FF             CMP      R1,#+255
+   \       0xAA   0xD132             BNE.N    ??sl_gpio_configure_external_interrupt_9
+    390              enabled_interrupts = sl_hal_gpio_get_enabled_interrupts();
+   \       0xAC   0x.... 0x....      LDR.W    R0,??DataTable28_6
+   \       0xB0   0x6800             LDR      R0,[R0, #+0]
+    391              *int_no = sl_hal_gpio_get_external_interrupt_number(gpio->pin, enabled_interrupts);
+   \       0xB2   0x7861             LDRB     R1,[R4, #+1]
+   \       0xB4   0xF640 0x72FC      MOVW     R2,#+4092
+   \       0xB8   0xF04F 0x33FF      MOV      R3,#+4294967295
+   \       0xBC   0x400A             ANDS     R2,R2,R1
+   \       0xBE   0x2600             MOVS     R6,#+0
+   \                     ??sl_gpio_configure_external_interrupt_10: (+1)
+   \       0xC0   0xFA51 0xFC86      UXTAB    R12,R1,R6
+   \       0xC4   0xF00C 0x0C03      AND      R12,R12,#0x3
+   \       0xC8   0x4494             ADD      R12,R12,R2
+   \       0xCA   0xFA20 0xFE0C      LSR      LR,R0,R12
+   \       0xCE   0xEA5F 0x79CE      LSLS     R9,LR,#+31
+   \       0xD2   0xD51C             BPL.N    ??sl_gpio_configure_external_interrupt_11
+   \       0xD4   0x1C76             ADDS     R6,R6,#+1
+   \       0xD6   0xFA5F 0xFC86      UXTB     R12,R6
+   \       0xDA   0xF1BC 0x0F03      CMP      R12,#+3
+   \       0xDE   0xDDEF             BLE.N    ??sl_gpio_configure_external_interrupt_10
+   \                     ??sl_gpio_configure_external_interrupt_12: (+1)
+   \       0xE0   0x602B             STR      R3,[R5, #+0]
+    392            }
+    393          
+    394            if (*int_no != SL_GPIO_INTERRUPT_UNAVAILABLE) {
+   \                     ??sl_gpio_configure_external_interrupt_8: (+1)
+   \       0xE2   0x6829             LDR      R1,[R5, #+0]
+   \       0xE4   0xF111 0x0F01      CMN      R1,#+1
+   \       0xE8   0xD013             BEQ.N    ??sl_gpio_configure_external_interrupt_9
+   \       0xEA   0x9808             LDR      R0,[SP, #+32]
+    395              // Callback registration.
+    396              gpio_interrupts.callback_ext[*int_no].callback = (void *)gpio_callback;
+   \       0xEC   0x.... 0x....      LDR.W    R2,??DataTable28_7
+   \       0xF0   0xF842 0x7031      STR      R7,[R2, R1, LSL #+3]
+    397              gpio_interrupts.callback_ext[*int_no].context = context;
+   \       0xF4   0xEB02 0x02C1      ADD      R2,R2,R1, LSL #+3
+   \       0xF8   0x6050             STR      R0,[R2, #+4]
+    398          
+    399              if (gpio->port != SL_GPIO_PORT_INTERRUPT) {
+   \       0xFA   0x7820             LDRB     R0,[R4, #+0]
+   \       0xFC   0x28FF             CMP      R0,#+255
+   \       0xFE   0xD002             BEQ.N    ??CrossCallReturnLabel_35
+    400                sl_hal_gpio_enable_interrupts(1 << *int_no);
+   \      0x100   0x2201             MOVS     R2,#+1
+   \      0x102   0x.... 0x....      BL       ?Subroutine15
+    401              }
+    402            } else {
+    403              CORE_EXIT_ATOMIC();
+    404              return SL_STATUS_NOT_FOUND;
+    405            }
+    406          
+    407            CORE_EXIT_ATOMIC();
+   \                     ??CrossCallReturnLabel_35: (+1)
+   \      0x106   0x.... 0x....      BL       ?Subroutine13
+    408            return SL_STATUS_OK;
+   \                     ??CrossCallReturnLabel_32: (+1)
+   \      0x10A   0x2000             MOVS     R0,#+0
+   \      0x10C   0xE004             B.N      ??sl_gpio_configure_external_interrupt_1
+   \                     ??sl_gpio_configure_external_interrupt_11: (+1)
+   \      0x10E   0x4663             MOV      R3,R12
+   \      0x110   0xE7E6             B.N      ??sl_gpio_configure_external_interrupt_12
+   \                     ??sl_gpio_configure_external_interrupt_9: (+1)
+   \      0x112   0x.... 0x....      BL       ?Subroutine13
+   \                     ??CrossCallReturnLabel_31: (+1)
+   \      0x116   0x202D             MOVS     R0,#+45
+   \                     ??sl_gpio_configure_external_interrupt_1: (+1)
+   \      0x118   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    409          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine13: (+1)
+   \        0x0   0x4640             MOV      R0,R8
+   \        0x2   0x.... 0x....      B.W      CORE_ExitAtomic
+    410          
+    411          /***************************************************************************//**
+    412           *  Deconfigures the GPIO external pin interrupt.
+    413           *  This API can be used to deconfigure the interrupt and to unregister the callback.
+    414           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    415          sl_status_t sl_gpio_deconfigure_external_interrupt(int32_t int_no)
+    416          {
+   \                     sl_gpio_deconfigure_external_interrupt: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    417            CORE_DECLARE_IRQ_STATE;
+    418          
+    419            if ((int_no < 0) || (int_no > SL_HAL_GPIO_INTERRUPT_MAX) || (int_no == SL_GPIO_INTERRUPT_UNAVAILABLE)) {
+   \        0x4   0x2C10             CMP      R4,#+16
+   \        0x6   0xD202             BCS.N    ??sl_gpio_deconfigure_external_interrupt_0
+   \        0x8   0xF114 0x0F01      CMN      R4,#+1
+   \        0xC   0xD106             BNE.N    ??sl_gpio_deconfigure_external_interrupt_1
+    420              EFM_ASSERT(false);
+   \                     ??sl_gpio_deconfigure_external_interrupt_0: (+1)
+   \        0xE   0xF44F 0x71D2      MOV      R1,#+420
+   \       0x12   0x....             LDR.N    R0,??DataTable28_1
+   \       0x14   0x.... 0x....      BL       assertEFM
+    421              return SL_STATUS_INVALID_PARAMETER;
+   \       0x18   0x2021             MOVS     R0,#+33
+   \       0x1A   0xBD10             POP      {R4,PC}
+    422            }
+    423          
+    424            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_deconfigure_external_interrupt_1: (+1)
+   \       0x1C   0x.... 0x....      BL       CORE_EnterAtomic
+    425          
+    426            // Clear pending interrupt.
+    427            sl_hal_gpio_clear_interrupts(1 << int_no);
+   \       0x20   0x2101             MOVS     R1,#+1
+   \       0x22   0x40A1             LSLS     R1,R1,R4
+   \       0x24   0x....             LDR.N    R2,??DataTable28_8
+   \       0x26   0x6011             STR      R1,[R2, #+0]
+    428            sl_hal_gpio_disable_interrupts(1 << int_no);
+   \       0x28   0x6051             STR      R1,[R2, #+4]
+    429          
+    430            // Callback deregistration.
+    431            gpio_interrupts.callback_ext[int_no].callback = NULL;
+   \       0x2A   0x....             LDR.N    R1,??DataTable28_7
+   \       0x2C   0x2200             MOVS     R2,#+0
+   \       0x2E   0xF841 0x2034      STR      R2,[R1, R4, LSL #+3]
+    432            gpio_interrupts.callback_ext[int_no].context = NULL;
+   \       0x32   0xEB01 0x01C4      ADD      R1,R1,R4, LSL #+3
+   \       0x36   0x604A             STR      R2,[R1, #+4]
+    433          
+    434            CORE_EXIT_ATOMIC();
+   \       0x38   0x....             B.N      ?Subroutine5
+    435            return SL_STATUS_OK;
+    436          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x.... 0x....      BL       CORE_ExitAtomic
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xBD10             POP      {R4,PC}
+    437          
+    438          /***************************************************************************//**
+    439           *  Enables one or more GPIO interrupts.
+    440           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    441          sl_status_t sl_gpio_enable_interrupts(uint32_t flags)
+    442          {
+    443            sl_hal_gpio_enable_interrupts(flags);
+   \                     sl_gpio_enable_interrupts: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable28_9
+   \        0x2   0x....             B.N      ??Subroutine6_0
+    444          
+    445            return SL_STATUS_OK;
+    446          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable28_13
+   \                     ??Subroutine6_0: (+1)
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4770             BX       LR
+    447          
+    448          /***************************************************************************//**
+    449           *  Disables one or more GPIO interrupts.
+    450           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    451          sl_status_t sl_gpio_disable_interrupts(uint32_t flags)
+    452          {
+    453            sl_hal_gpio_disable_interrupts(flags);
+   \                     sl_gpio_disable_interrupts: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable28_10
+   \        0x2   0x....             B.N      ??Subroutine6_0
+    454          
+    455            return SL_STATUS_OK;
+    456          }
+    457          
+    458          /***************************************************************************//**
+    459           *  Configures the EM4WU pin as external level interrupts for waking up from EM mode.
+    460           *  Registering/unregistering the callbacks and Configuring the EM4 interrupts to enable/disable
+    461           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    462          sl_status_t sl_gpio_configure_wakeup_em4_interrupt(const sl_gpio_t *gpio,
+    463                                                             int32_t *em4_int_no,
+    464                                                             bool polarity,
+    465                                                             sl_gpio_irq_callback_t gpio_callback,
+    466                                                             void *context)
+    467          {
+   \                     sl_gpio_configure_wakeup_em4_interrupt: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x461F             MOV      R7,R3
+    468            CORE_DECLARE_IRQ_STATE;
+    469          
+    470            if (gpio == NULL || em4_int_no == NULL) {
+   \        0xC   0x....             LDR.N    R0,??DataTable28_1
+   \        0xE   0xBF18             IT       NE
+   \       0x10   0x2D00             CMPNE    R5,#+0
+   \       0x12   0xD105             BNE.N    ??sl_gpio_configure_wakeup_em4_interrupt_0
+    471              EFM_ASSERT(false);
+   \       0x14   0xF240 0x11D7      MOVW     R1,#+471
+   \       0x18   0x.... 0x....      BL       assertEFM
+    472              return SL_STATUS_NULL_POINTER;
+   \       0x1C   0x2022             MOVS     R0,#+34
+   \       0x1E   0xE047             B.N      ??sl_gpio_configure_wakeup_em4_interrupt_1
+    473            }
+    474            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin) || (gpio->port == SL_GPIO_PORT_INTERRUPT));
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_0: (+1)
+   \       0x20   0x7821             LDRB     R1,[R4, #+0]
+   \       0x22   0xB909             CBNZ.N   R1,??sl_gpio_configure_wakeup_em4_interrupt_2
+   \       0x24   0x227F             MOVS     R2,#+127
+   \       0x26   0xE013             B.N      ??sl_gpio_configure_wakeup_em4_interrupt_3
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_2: (+1)
+   \       0x28   0x2901             CMP      R1,#+1
+   \       0x2A   0xBF08             IT       EQ
+   \       0x2C   0x2207             MOVEQ    R2,#+7
+   \       0x2E   0xD00F             BEQ.N    ??sl_gpio_configure_wakeup_em4_interrupt_3
+   \       0x30   0x2902             CMP      R1,#+2
+   \       0x32   0xBF08             IT       EQ
+   \       0x34   0x223F             MOVEQ    R2,#+63
+   \       0x36   0xD00B             BEQ.N    ??sl_gpio_configure_wakeup_em4_interrupt_3
+   \       0x38   0x2903             CMP      R1,#+3
+   \       0x3A   0xBF08             IT       EQ
+   \       0x3C   0x2203             MOVEQ    R2,#+3
+   \       0x3E   0xD007             BEQ.N    ??sl_gpio_configure_wakeup_em4_interrupt_3
+   \       0x40   0x2904             CMP      R1,#+4
+   \       0x42   0xBF18             IT       NE
+   \       0x44   0x2905             CMPNE    R1,#+5
+   \       0x46   0xD002             BEQ.N    ??sl_gpio_configure_wakeup_em4_interrupt_4
+   \       0x48   0x2906             CMP      R1,#+6
+   \       0x4A   0xBF18             IT       NE
+   \       0x4C   0x2907             CMPNE    R1,#+7
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_4: (+1)
+   \       0x4E   0x2200             MOVS     R2,#+0
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_3: (+1)
+   \       0x50   0x7863             LDRB     R3,[R4, #+1]
+   \       0x52   0x40DA             LSRS     R2,R2,R3
+   \       0x54   0x07D2             LSLS     R2,R2,#+31
+   \       0x56   0xD405             BMI.N    ??sl_gpio_configure_wakeup_em4_interrupt_5
+   \       0x58   0x29FF             CMP      R1,#+255
+   \       0x5A   0xBF1C             ITT      NE
+   \       0x5C   0xF44F 0x71ED      MOVNE    R1,#+474
+   \       0x60   0x.... 0x....      BLNE     assertEFM
+    475          
+    476            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_5: (+1)
+   \       0x64   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x68   0x4680             MOV      R8,R0
+    477          
+    478            if (gpio->port != SL_GPIO_PORT_INTERRUPT) {
+   \       0x6A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x6C   0x28FF             CMP      R0,#+255
+   \       0x6E   0xD005             BEQ.N    ??sl_gpio_configure_wakeup_em4_interrupt_6
+    479              *em4_int_no = sl_hal_gpio_configure_wakeup_em4_external_interrupt(gpio, *em4_int_no, polarity);
+   \       0x70   0x6829             LDR      R1,[R5, #+0]
+   \       0x72   0x4632             MOV      R2,R6
+   \       0x74   0x4620             MOV      R0,R4
+   \       0x76   0x.... 0x....      BL       sl_hal_gpio_configure_wakeup_em4_external_interrupt
+   \       0x7A   0x6028             STR      R0,[R5, #+0]
+    480            }
+    481          
+    482            if (*em4_int_no != SL_GPIO_INTERRUPT_UNAVAILABLE) {
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_6: (+1)
+   \       0x7C   0x6829             LDR      R1,[R5, #+0]
+   \       0x7E   0xF111 0x0F01      CMN      R1,#+1
+   \       0x82   0xD012             BEQ.N    ??sl_gpio_configure_wakeup_em4_interrupt_7
+    483              // Callback registration.
+    484              gpio_interrupts.callback_em4[*em4_int_no].callback = (void *)gpio_callback;
+   \       0x84   0x....             LDR.N    R2,??DataTable28_7
+   \       0x86   0xEB02 0x03C1      ADD      R3,R2,R1, LSL #+3
+   \       0x8A   0x9806             LDR      R0,[SP, #+24]
+   \       0x8C   0xF103 0x0280      ADD      R2,R3,#+128
+   \       0x90   0x6017             STR      R7,[R2, #+0]
+    485              gpio_interrupts.callback_em4[*em4_int_no].context = context;
+   \       0x92   0x6050             STR      R0,[R2, #+4]
+    486          
+    487              if (gpio->port != SL_GPIO_PORT_INTERRUPT) {
+   \       0x94   0x7820             LDRB     R0,[R4, #+0]
+   \       0x96   0x28FF             CMP      R0,#+255
+   \       0x98   0xD003             BEQ.N    ??CrossCallReturnLabel_36
+    488                sl_hal_gpio_enable_interrupts(1 << (*em4_int_no + SL_HAL_GPIO_EM4WUEN_SHIFT));
+   \       0x9A   0x2201             MOVS     R2,#+1
+   \       0x9C   0x3110             ADDS     R1,R1,#+16
+   \       0x9E   0x.... 0x....      BL       ?Subroutine15
+    489              }
+    490            } else {
+    491              CORE_EXIT_ATOMIC();
+    492              return SL_STATUS_NOT_FOUND;
+    493            }
+    494          
+    495            CORE_EXIT_ATOMIC();
+   \                     ??CrossCallReturnLabel_36: (+1)
+   \       0xA2   0x.... 0x....      BL       ?Subroutine13
+    496            return SL_STATUS_OK;
+   \                     ??CrossCallReturnLabel_30: (+1)
+   \       0xA6   0x2000             MOVS     R0,#+0
+   \       0xA8   0xE002             B.N      ??sl_gpio_configure_wakeup_em4_interrupt_1
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_7: (+1)
+   \       0xAA   0x.... 0x....      BL       ?Subroutine13
+   \                     ??CrossCallReturnLabel_29: (+1)
+   \       0xAE   0x202D             MOVS     R0,#+45
+   \                     ??sl_gpio_configure_wakeup_em4_interrupt_1: (+1)
+   \       0xB0   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    497          }
+    498          
+    499          /***************************************************************************//**
+    500           *  Deconfigures the EM4 GPIO pin interrupt.
+    501           *  Unregisters a callback, disable/clear interrupt and clear em4 wakeup source
+    502           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    503          sl_status_t sl_gpio_deconfigure_wakeup_em4_interrupt(int32_t em4_int_no)
+    504          {
+   \                     sl_gpio_deconfigure_wakeup_em4_interrupt: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    505            CORE_DECLARE_IRQ_STATE;
+    506          
+    507            if (em4_int_no == SL_GPIO_INTERRUPT_UNAVAILABLE || em4_int_no < 0 || em4_int_no > SL_HAL_GPIO_INTERRUPT_MAX) {
+   \        0x4   0xF114 0x0F01      CMN      R4,#+1
+   \        0x8   0xD001             BEQ.N    ??sl_gpio_deconfigure_wakeup_em4_interrupt_0
+   \        0xA   0x2C10             CMP      R4,#+16
+   \        0xC   0xD306             BCC.N    ??sl_gpio_deconfigure_wakeup_em4_interrupt_1
+    508              EFM_ASSERT(false);
+   \                     ??sl_gpio_deconfigure_wakeup_em4_interrupt_0: (+1)
+   \        0xE   0xF44F 0x71FE      MOV      R1,#+508
+   \       0x12   0x....             LDR.N    R0,??DataTable28_1
+   \       0x14   0x.... 0x....      BL       assertEFM
+    509              return SL_STATUS_INVALID_PARAMETER;
+   \       0x18   0x2021             MOVS     R0,#+33
+   \       0x1A   0xBDF2             POP      {R1,R4-R7,PC}
+    510            }
+    511          
+    512            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_deconfigure_wakeup_em4_interrupt_1: (+1)
+   \       0x1C   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x20   0x4605             MOV      R5,R0
+    513          
+    514            // Clear any pending interrupt.
+    515            sl_hal_gpio_clear_interrupts(1 << (em4_int_no + SL_HAL_GPIO_EM4WUEN_SHIFT));
+   \       0x22   0x2601             MOVS     R6,#+1
+   \       0x24   0xF104 0x0010      ADD      R0,R4,#+16
+   \       0x28   0x4086             LSLS     R6,R6,R0
+   \       0x2A   0x....             LDR.N    R7,??DataTable28_8
+   \       0x2C   0x603E             STR      R6,[R7, #+0]
+    516            sl_hal_gpio_disable_pin_em4_wakeup(1 << (em4_int_no + SL_HAL_GPIO_EM4WUEN_SHIFT));
+   \       0x2E   0x4630             MOV      R0,R6
+   \       0x30   0x.... 0x....      BL       sl_hal_gpio_disable_pin_em4_wakeup
+    517            sl_hal_gpio_disable_interrupts(1 << (em4_int_no + SL_HAL_GPIO_EM4WUEN_SHIFT));
+    518          
+    519            /* Callback deregistration */
+    520            gpio_interrupts.callback_em4[em4_int_no].callback = NULL;
+   \       0x34   0x....             LDR.N    R0,??DataTable28_7
+   \       0x36   0xEB00 0x03C4      ADD      R3,R0,R4, LSL #+3
+   \       0x3A   0x607E             STR      R6,[R7, #+4]
+   \       0x3C   0xF103 0x0080      ADD      R0,R3,#+128
+   \       0x40   0x2100             MOVS     R1,#+0
+   \       0x42   0x6001             STR      R1,[R0, #+0]
+    521            gpio_interrupts.callback_em4[em4_int_no].context = NULL;
+   \       0x44   0x6041             STR      R1,[R0, #+4]
+    522          
+    523            CORE_EXIT_ATOMIC();
+   \       0x46   0x4628             MOV      R0,R5
+   \       0x48   0x....             B.N      ??Subroutine16_1
+    524            return SL_STATUS_OK;
+    525          }
+    526          
+    527          /***************************************************************************//**
+    528           *  Sets GPIO EM4 Wake up interrupt to Enable and EM4 Wake up interrupt polarity
+    529           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    530          sl_status_t sl_gpio_enable_pin_em4_wakeup(uint32_t em4_int_mask,
+    531                                                    uint32_t em4_polarity_mask)
+    532          {
+   \                     sl_gpio_enable_pin_em4_wakeup: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    533            uint32_t int_mask = 0;
+    534            uint32_t polarity_mask = 0;
+    535          
+    536            CORE_DECLARE_IRQ_STATE;
+    537            CORE_ENTER_ATOMIC();
+   \        0x6   0x.... 0x....      BL       CORE_EnterAtomic
+   \        0xA   0x4606             MOV      R6,R0
+    538          
+    539            // Enable EM4WU function and set polarity.
+    540            int_mask |= (em4_int_mask << _GPIO_EM4WUEN_EM4WUEN_SHIFT);
+    541            polarity_mask |= (em4_polarity_mask << _GPIO_EM4WUEN_EM4WUEN_SHIFT);
+    542            sl_hal_gpio_enable_pin_em4_wakeup(int_mask, polarity_mask);
+   \        0xC   0x0429             LSLS     R1,R5,#+16
+   \        0xE   0x0420             LSLS     R0,R4,#+16
+   \       0x10   0x.... 0x....      BL       sl_hal_gpio_enable_pin_em4_wakeup
+    543          
+    544            CORE_EXIT_ATOMIC();
+   \       0x14                      REQUIRE ?Subroutine0
+   \       0x14                      ; // Fall through to label ?Subroutine0
+    545            return SL_STATUS_OK;
+    546          }
+    547          
+    548          /***************************************************************************//**
+    549           *  Clears GPIO EM4 Wake up enable
+    550           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    551          sl_status_t sl_gpio_disable_pin_em4_wakeup(uint32_t em4_int_mask)
+    552          {
+   \                     sl_gpio_disable_pin_em4_wakeup: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    553            uint32_t int_mask = 0;
+    554          
+    555            CORE_DECLARE_IRQ_STATE;
+    556            CORE_ENTER_ATOMIC();
+   \        0x4   0x.... 0x....      BL       CORE_EnterAtomic
+   \        0x8   0x4605             MOV      R5,R0
+    557          
+    558            // Disable EM4WU function.
+    559            int_mask |= (em4_int_mask << _GPIO_EM4WUEN_EM4WUEN_SHIFT);
+    560            sl_hal_gpio_disable_pin_em4_wakeup(int_mask);
+   \        0xA   0x0420             LSLS     R0,R4,#+16
+   \        0xC   0x.... 0x....      BL       sl_hal_gpio_disable_pin_em4_wakeup
+    561          
+    562            CORE_EXIT_ATOMIC();
+   \       0x10   0x4628             MOV      R0,R5
+   \       0x12   0x.... 0x....      BL       CORE_ExitAtomic
+    563            return SL_STATUS_OK;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0xBD32             POP      {R1,R4,R5,PC}
+    564          }
+    565          
+    566          /***************************************************************************//**
+    567           *  Enable GPIO pin retention of output enable, output value, pull direction, pull enable in EM4
+    568           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    569          sl_status_t sl_gpio_set_pin_em4_retention(bool enable)
+    570          {
+   \                     sl_gpio_set_pin_em4_retention: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    571            CORE_DECLARE_IRQ_STATE;
+    572            CORE_ENTER_ATOMIC();
+   \        0x4   0x.... 0x....      BL       CORE_EnterAtomic
+    573          
+    574            sl_hal_gpio_set_pin_em4_retention(enable);
+   \        0x8   0x....             LDR.N    R1,??DataTable28_11
+   \        0xA   0x680A             LDR      R2,[R1, #+0]
+   \        0xC   0xF002 0x0230      AND      R2,R2,#0x30
+   \       0x10   0x2A20             CMP      R2,#+32
+   \       0x12   0xD00A             BEQ.N    ??sl_gpio_set_pin_em4_retention_0
+   \       0x14   0xB12C             CBZ.N    R4,??sl_gpio_set_pin_em4_retention_1
+   \       0x16   0x680B             LDR      R3,[R1, #+0]
+   \       0x18   0x2201             MOVS     R2,#+1
+   \       0x1A   0xF362 0x1305      BFI      R3,R2,#+4,#+2
+   \       0x1E   0x600B             STR      R3,[R1, #+0]
+   \       0x20   0xE003             B.N      ??sl_gpio_set_pin_em4_retention_0
+   \                     ??sl_gpio_set_pin_em4_retention_1: (+1)
+   \       0x22   0x680C             LDR      R4,[R1, #+0]
+   \       0x24   0xF024 0x0430      BIC      R4,R4,#0x30
+   \       0x28   0x600C             STR      R4,[R1, #+0]
+    575          
+    576            CORE_EXIT_ATOMIC();
+   \                     ??sl_gpio_set_pin_em4_retention_0: (+1)
+   \       0x2A                      REQUIRE ?Subroutine5
+   \       0x2A                      ; // Fall through to label ?Subroutine5
+    577            return SL_STATUS_OK;
+    578          }
+    579          
+    580          /***************************************************************************//**
+    581           * Sets slewrate for selected port.
+    582           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    583          sl_status_t sl_gpio_set_slew_rate(const sl_gpio_t *gpio,
+    584                                            uint8_t slewrate)
+    585          {
+   \                     sl_gpio_set_slew_rate: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    586            sl_status_t status = SL_STATUS_OK;
+    587            CORE_DECLARE_IRQ_STATE;
+    588          
+    589            if (gpio == NULL) {
+   \        0x6   0x....             LDR.N    R6,??DataTable28_2
+   \        0x8   0xD104             BNE.N    ??sl_gpio_set_slew_rate_0
+    590              EFM_ASSERT(false);
+   \        0xA   0xF240 0x214E      MOVW     R1,#+590
+   \        0xE   0xF106 0x0088      ADD      R0,R6,#+136
+   \       0x12   0x....             B.N      ??Subroutine3_0
+    591              return SL_STATUS_NULL_POINTER;
+    592            }
+    593          
+    594            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_set_slew_rate_0: (+1)
+   \       0x14   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x18   0x4607             MOV      R7,R0
+    595          
+    596            status = sl_hal_gpio_set_slew_rate(gpio, slewrate);
+   \       0x1A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xBF18             IT       NE
+   \       0x20   0x2801             CMPNE    R0,#+1
+   \       0x22   0xD007             BEQ.N    ??CrossCallReturnLabel_1
+   \       0x24   0x2802             CMP      R0,#+2
+   \       0x26   0xBF18             IT       NE
+   \       0x28   0x2803             CMPNE    R0,#+3
+   \       0x2A   0xD003             BEQ.N    ??CrossCallReturnLabel_1
+   \       0x2C   0xF240 0x315D      MOVW     R1,#+861
+   \       0x30   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x34   0x2D08             CMP      R5,#+8
+   \       0x36   0xD303             BCC.N    ??CrossCallReturnLabel_0
+   \       0x38   0xF240 0x315E      MOVW     R1,#+862
+   \       0x3C   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x40   0x7821             LDRB     R1,[R4, #+0]
+   \       0x42   0x2030             MOVS     R0,#+48
+   \       0x44   0xFB10 0xF001      SMULBB   R0,R0,R1
+   \       0x48   0x....             LDR.N    R1,??DataTable28_4
+   \       0x4A   0x580A             LDR      R2,[R1, R0]
+   \       0x4C   0xF022 0x0270      BIC      R2,R2,#0x70
+   \       0x50   0xEA42 0x1205      ORR      R2,R2,R5, LSL #+4
+   \       0x54   0x500A             STR      R2,[R1, R0]
+    597          
+    598            CORE_EXIT_ATOMIC();
+   \       0x56   0x....             B.N      ??Subroutine16_0
+    599            return status;
+    600          }
+    601          
+    602          /***************************************************************************//**
+    603           * Gets slewrate for selected port.
+    604           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    605          sl_status_t sl_gpio_get_slew_rate(const sl_gpio_t *gpio,
+    606                                            uint8_t *slewrate)
+    607          {
+   \                     sl_gpio_get_slew_rate: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    608            sl_status_t status = SL_STATUS_OK;
+    609            CORE_DECLARE_IRQ_STATE;
+    610          
+    611            if (gpio == NULL || slewrate == NULL) {
+   \        0x6   0x....             LDR.N    R7,??DataTable28_2
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0x2D00             CMPNE    R5,#+0
+   \        0xC   0xD105             BNE.N    ??sl_gpio_get_slew_rate_0
+    612              EFM_ASSERT(false);
+   \        0xE   0xF44F 0x7119      MOV      R1,#+612
+   \       0x12   0xF107 0x0088      ADD      R0,R7,#+136
+   \       0x16   0x.... 0x....      BL       assertEFM
+    613              status = SL_STATUS_NULL_POINTER;
+    614            }
+    615          
+    616            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_get_slew_rate_0: (+1)
+   \       0x1A   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x1E   0x4606             MOV      R6,R0
+    617          
+    618            status = sl_hal_gpio_get_slew_rate(gpio, slewrate);
+   \       0x20   0x2C00             CMP      R4,#+0
+   \       0x22   0xBF18             IT       NE
+   \       0x24   0x2D00             CMPNE    R5,#+0
+   \       0x26   0xD103             BNE.N    ??CrossCallReturnLabel_14
+   \       0x28   0xF240 0x318F      MOVW     R1,#+911
+   \       0x2C   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x30   0x7820             LDRB     R0,[R4, #+0]
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xBF18             IT       NE
+   \       0x36   0x2801             CMPNE    R0,#+1
+   \       0x38   0xD007             BEQ.N    ??CrossCallReturnLabel_13
+   \       0x3A   0x2802             CMP      R0,#+2
+   \       0x3C   0xBF18             IT       NE
+   \       0x3E   0x2803             CMPNE    R0,#+3
+   \       0x40   0xD003             BEQ.N    ??CrossCallReturnLabel_13
+   \       0x42   0xF240 0x3192      MOVW     R1,#+914
+   \       0x46   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x4A   0x7822             LDRB     R2,[R4, #+0]
+   \       0x4C   0x2030             MOVS     R0,#+48
+   \       0x4E   0x....             LDR.N    R1,??DataTable28_4
+   \       0x50   0x4342             MULS     R2,R0,R2
+   \       0x52   0x588B             LDR      R3,[R1, R2]
+   \       0x54   0xF3C3 0x1002      UBFX     R0,R3,#+4,#+3
+   \       0x58   0x7028             STRB     R0,[R5, #+0]
+    619          
+    620            CORE_EXIT_ATOMIC();
+   \       0x5A   0x4630             MOV      R0,R6
+   \       0x5C   0x....             B.N      ??Subroutine16_1
+    621          
+    622            return status;
+    623          }
+    624          
+    625          /***************************************************************************//**
+    626           *  Locks the GPIO Configuration
+    627           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    628          sl_status_t sl_gpio_lock(void)
+    629          {
+    630            sl_hal_gpio_lock();
+   \                     sl_gpio_lock: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable28_12
+   \        0x2   0x....             B.N      ?Subroutine6
+    631            return SL_STATUS_OK;
+    632          }
+    633          
+    634          /***************************************************************************//**
+    635           *  Unlocks the GPIO Configuration
+    636           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    637          sl_status_t sl_gpio_unlock(void)
+    638          {
+    639            sl_hal_gpio_unlock();
+   \                     sl_gpio_unlock: (+1)
+   \        0x0   0xF24A 0x5034      MOVW     R0,#+42292
+   \        0x4                      REQUIRE ?Subroutine6
+   \        0x4                      ; // Fall through to label ?Subroutine6
+    640            return SL_STATUS_OK;
+    641          }
+    642          
+    643          /***************************************************************************//**
+    644           *  Gets the GPIO State
+    645           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    646          sl_status_t sl_gpio_is_locked(bool *state)
+    647          {
+   \                     sl_gpio_is_locked: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    648            uint32_t status;
+    649            CORE_DECLARE_IRQ_STATE;
+    650          
+    651            if (state == NULL) {
+   \        0x4   0xD103             BNE.N    ??sl_gpio_is_locked_0
+    652              EFM_ASSERT(false);
+   \        0x6   0xF44F 0x7123      MOV      R1,#+652
+   \        0xA   0x....             LDR.N    R0,??DataTable28_1
+   \        0xC   0x....             B.N      ?Subroutine4
+    653              return SL_STATUS_NULL_POINTER;
+    654            }
+    655          
+    656            CORE_ENTER_ATOMIC();
+   \                     ??sl_gpio_is_locked_0: (+1)
+   \        0xE   0x.... 0x....      BL       CORE_EnterAtomic
+    657          
+    658            status =  sl_hal_gpio_get_lock_status();
+   \       0x12   0x....             LDR.N    R1,??DataTable28_14
+   \       0x14   0x6809             LDR      R1,[R1, #+0]
+    659            if (status) {
+   \       0x16   0xB101             CBZ.N    R1,??sl_gpio_is_locked_1
+   \       0x18   0x2101             MOVS     R1,#+1
+   \                     ??sl_gpio_is_locked_1: (+1)
+   \       0x1A   0x7021             STRB     R1,[R4, #+0]
+    660              // true - GPIO configuration registers are locked.
+    661              *state = true;
+    662            } else {
+    663              // false - GPIO configuration registers are unlocked.
+    664              *state = false;
+    665            }
+    666          
+    667            CORE_EXIT_ATOMIC();
+   \       0x1C   0x....             B.N      ?Subroutine5
+    668            return SL_STATUS_OK;
+    669          }
+    670          
+    671          /***************************************************************************//**
+    672           * Function calls users callback for registered pin interrupts.
+    673           *
+    674           * @details This function is called when GPIO interrupts are handled by the IRQHandlers.
+    675           *          Function gets even or odd interrupt flags and calls user callback
+    676           *          registered for that pin. Function iterates on flags starting from MSB.
+    677           *
+    678           * @param iflags Interrupt flags which shall be handled by the dispatcher.
+    679           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    680          static void sl_gpio_dispatch_interrupt(uint32_t iflags)
+    681          {
+   \                     sl_gpio_dispatch_interrupt: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0xE004             B.N      ??sl_gpio_dispatch_interrupt_0
+    682            uint32_t irq_idx;
+    683            sl_gpio_callback_desc_t *callback;
+    684            sl_gpio_irq_callback_t func;
+    685          
+    686            // Check for flags set in IF register.
+    687            while (iflags != 0) {
+    688              irq_idx = SL_CTZ(iflags);
+    689              iflags &= ~(1UL << irq_idx);
+    690          
+    691              if (irq_idx <= SL_HAL_GPIO_INTERRUPT_MAX) {
+    692                callback = &gpio_interrupts.callback_ext[irq_idx];
+    693              } else {
+    694                callback = &gpio_interrupts.callback_em4[irq_idx - SL_HAL_GPIO_EM4WUEN_SHIFT];
+    695                irq_idx = irq_idx - SL_HAL_GPIO_EM4WUEN_SHIFT;
+    696              }
+    697              // Call user callback.
+    698              if (callback->callback) {
+   \                     ??sl_gpio_dispatch_interrupt_1: (+1)
+   \        0x6   0x680A             LDR      R2,[R1, #+0]
+   \        0x8   0xB112             CBZ.N    R2,??sl_gpio_dispatch_interrupt_0
+    699                func = (sl_gpio_irq_callback_t)(callback->callback);
+    700                func((uint8_t)irq_idx, callback->context);
+   \        0xA   0x6849             LDR      R1,[R1, #+4]
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x4790             BLX      R2
+    701              }
+   \                     ??sl_gpio_dispatch_interrupt_0: (+1)
+   \       0x10   0xB18C             CBZ.N    R4,??sl_gpio_dispatch_interrupt_2
+   \       0x12   0x4621             MOV      R1,R4
+   \       0x14   0x2000             MOVS     R0,#+0
+   \                     ??sl_gpio_dispatch_interrupt_3: (+1)
+   \       0x16   0x07CA             LSLS     R2,R1,#+31
+   \       0x18   0xD403             BMI.N    ??sl_gpio_dispatch_interrupt_4
+   \       0x1A   0x1C40             ADDS     R0,R0,#+1
+   \       0x1C   0x0849             LSRS     R1,R1,#+1
+   \       0x1E   0x2820             CMP      R0,#+32
+   \       0x20   0xD3F9             BCC.N    ??sl_gpio_dispatch_interrupt_3
+   \                     ??sl_gpio_dispatch_interrupt_4: (+1)
+   \       0x22   0x2101             MOVS     R1,#+1
+   \       0x24   0x4081             LSLS     R1,R1,R0
+   \       0x26   0x438C             BICS     R4,R4,R1
+   \       0x28   0x....             LDR.N    R2,??DataTable28_7
+   \       0x2A   0xEB02 0x01C0      ADD      R1,R2,R0, LSL #+3
+   \       0x2E   0x2810             CMP      R0,#+16
+   \       0x30   0xBF28             IT       CS
+   \       0x32   0x3810             SUBCS    R0,R0,#+16
+   \       0x34   0xE7E7             B.N      ??sl_gpio_dispatch_interrupt_1
+    702            }
+    703          }
+   \                     ??sl_gpio_dispatch_interrupt_2: (+1)
+   \       0x36   0xBD10             POP      {R4,PC}
+    704          
+    705          /***************************************************************************//**
+    706           *   GPIO EVEN interrupt handler. Interrupt handler clears all IF even flags and
+    707           *   call the dispatcher passing the flags which triggered the interrupt.
+    708           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    709          void GPIO_EVEN_IRQHandler(void)
+    710          {
+    711            uint32_t even_flags;
+    712          
+    713            // Gets all enabled and pending even interrupts.
+    714            even_flags = sl_hal_gpio_get_enabled_pending_interrupts() & SL_HAL_GPIO_INT_IF_EVEN_MASK;
+   \                     GPIO_EVEN_IRQHandler: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable28_15
+   \        0x2   0x6848             LDR      R0,[R1, #+4]
+   \        0x4   0x6809             LDR      R1,[R1, #+0]
+    715            // Clears only even interrupts.
+    716            sl_hal_gpio_clear_interrupts(even_flags);
+   \        0x6   0x....             LDR.N    R2,??DataTable28_8
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x....             LDR.N    R1,??DataTable28_16
+   \        0xC   0x....             B.N      ?Subroutine7
+    717          
+    718            sl_gpio_dispatch_interrupt(even_flags);
+    719          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine7: (+1)
+   \        0x0   0x4008             ANDS     R0,R1,R0
+   \        0x2   0x6010             STR      R0,[R2, #+0]
+   \        0x4   0x....             B.N      sl_gpio_dispatch_interrupt
+    720          
+    721          /***************************************************************************//**
+    722           * @brief
+    723           *   GPIO ODD interrupt handler. Interrupt handler clears all IF odd flags and
+    724           *   call the dispatcher passing the flags which triggered the interrupt.
+    725           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    726          void GPIO_ODD_IRQHandler(void)
+    727          {
+    728            uint32_t odd_flags;
+    729          
+    730            // Gets all enabled and pending odd interrupts.
+    731            odd_flags = sl_hal_gpio_get_enabled_pending_interrupts() & SL_HAL_GPIO_INT_IF_ODD_MASK;
+   \                     GPIO_ODD_IRQHandler: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable28_15
+   \        0x2   0x6848             LDR      R0,[R1, #+4]
+   \        0x4   0x6809             LDR      R1,[R1, #+0]
+    732            // Clears only odd interrupts.
+    733            sl_hal_gpio_clear_interrupts(odd_flags);
+   \        0x6   0x....             LDR.N    R2,??DataTable28_8
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x....             LDR.N    R1,??DataTable28_17
+   \        0xC                      REQUIRE ?Subroutine7
+   \        0xC                      ; // Fall through to label ?Subroutine7
+    734          
+    735            sl_gpio_dispatch_interrupt(odd_flags);
+    736          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine11: (+1)
+   \        0x0   0x7822             LDRB     R2,[R4, #+0]
+   \        0x2   0x2030             MOVS     R0,#+48
+   \        0x4   0x.... 0x....      LDR.W    R1,??DataTable28_4
+   \        0x8   0x4342             MULS     R2,R0,R2
+   \        0xA   0x1888             ADDS     R0,R1,R2
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine12: (+1)
+   \        0x0   0x2030             MOVS     R0,#+48
+   \        0x2   0x4345             MULS     R5,R0,R5
+   \        0x4   0x.... 0x....      LDR.W    R1,??DataTable28_4
+   \        0x8   0x1948             ADDS     R0,R1,R5
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine15: (+1)
+   \        0x0   0xFA02 0xF101      LSL      R1,R2,R1
+   \        0x4   0x....             LDR.N    R0,??DataTable28_9
+   \        0x6   0x6001             STR      R1,[R0, #+0]
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28:
+   \        0x0   0x....'....        DC32     SL_BUS_CLOCK_GPIO_VALUE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_1:
+   \        0x0   0x....'....        DC32     ?_0+136
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_3:
+   \        0x0   0x5003'E000        DC32     0x5003e000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_4:
+   \        0x0   0x5003'C000        DC32     0x5003c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_5:
+   \        0x0   0x5003'D000        DC32     0x5003d000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_6:
+   \        0x0   0x5003'C424        DC32     0x5003c424
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_7:
+   \        0x0   0x....'....        DC32     gpio_interrupts
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_8:
+   \        0x0   0x5003'E420        DC32     0x5003e420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_9:
+   \        0x0   0x5003'D424        DC32     0x5003d424
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_10:
+   \        0x0   0x5003'E424        DC32     0x5003e424
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_11:
+   \        0x0   0x5000'406C        DC32     0x5000406c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_12:
+   \        0x0   0xFFFF'5ACB        DC32     0xffff5acb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_13:
+   \        0x0   0x5003'C300        DC32     0x5003c300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_14:
+   \        0x0   0x5003'C310        DC32     0x5003c310
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_15:
+   \        0x0   0x5003'C420        DC32     0x5003c420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_16:
+   \        0x0   0x0555'0555        DC32     0x5550555
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28_17:
+   \        0x0   0x0AAA'0AAA        DC32     0xaaa0aaa
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70, 0x68
+   \              0x70 0x65    
+   \              0x72 0x69    
+   \              0x70 0x68
+   \       0x70   0x65 0x72          DC8 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x69, 0x6E, 0x63
+   \              0x61 0x6C    
+   \              0x5C 0x69    
+   \              0x6E 0x63
+   \       0x78   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C, 0x5F
+   \              0x6C 0x5F    
+   \              0x68 0x61    
+   \              0x6C 0x5F
+   \       0x80   0x67 0x70          DC8 0x67, 0x70, 0x69, 0x6F, 0x2E, 0x68, 0
+   \              0x69 0x6F    
+   \              0x2E 0x68    
+   \              0x00
+   \       0x87                      DS8 1
+   \       0x88   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x90   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x98   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0xA0   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0xA8   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0xB0   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0xB8   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0xC0   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0xC8   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0xD0   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0xD8   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0xE0   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0xE8   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0xF0   0x6D 0x5C          DC8 0x6D, 0x5C, 0x64, 0x72, 0x69, 0x76, 0x65, 0x72
+   \              0x64 0x72    
+   \              0x69 0x76    
+   \              0x65 0x72
+   \       0xF8   0x5C 0x67          DC8 0x5C, 0x67, 0x70, 0x69, 0x6F, 0x5C, 0x73, 0x72
+   \              0x70 0x69    
+   \              0x6F 0x5C    
+   \              0x73 0x72
+   \      0x100   0x63 0x5C          DC8 0x63, 0x5C, 0x73, 0x6C, 0x5F, 0x67, 0x70, 0x69
+   \              0x73 0x6C    
+   \              0x5F 0x67    
+   \              0x70 0x69
+   \      0x108   0x6F 0x2E          DC8 0x6F, 0x2E, 0x63, 0
+   \              0x63 0x00
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   GPIO_EVEN_IRQHandler
+         0   -> sl_gpio_dispatch_interrupt
+       0   GPIO_ODD_IRQHandler
+         0   -> sl_gpio_dispatch_interrupt
+      16   sl_gpio_clear_pin
+        16   -> assertEFM
+      16   sl_gpio_clear_port
+        16   -> assertEFM
+      32   sl_gpio_configure_external_interrupt
+        32   -> CORE_EnterAtomic
+        32   -> CORE_ExitAtomic
+        32   -> assertEFM
+        32   -> sl_hal_gpio_configure_external_interrupt
+      24   sl_gpio_configure_wakeup_em4_interrupt
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+        24   -> sl_hal_gpio_configure_wakeup_em4_external_interrupt
+       8   sl_gpio_deconfigure_external_interrupt
+         8   -> CORE_EnterAtomic
+         8   -> CORE_ExitAtomic
+         8   -> assertEFM
+      24   sl_gpio_deconfigure_wakeup_em4_interrupt
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+        24   -> sl_hal_gpio_disable_pin_em4_wakeup
+       0   sl_gpio_disable_interrupts
+      16   sl_gpio_disable_pin_em4_wakeup
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+        16   -> sl_hal_gpio_disable_pin_em4_wakeup
+       8   sl_gpio_dispatch_interrupt
+         8   -- Indirect call
+       0   sl_gpio_enable_interrupts
+      16   sl_gpio_enable_pin_em4_wakeup
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+        16   -> sl_hal_gpio_enable_pin_em4_wakeup
+      24   sl_gpio_get_pin_config
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+        24   -> sl_hal_gpio_get_pin_mode
+      24   sl_gpio_get_pin_input
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+      24   sl_gpio_get_pin_output
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+      24   sl_gpio_get_port_input
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+      24   sl_gpio_get_port_output
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+      24   sl_gpio_get_slew_rate
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+       8   sl_gpio_init
+         8   -> sl_clock_manager_enable_bus_clock
+         8   -> sl_interrupt_manager_clear_irq_pending
+         8   -> sl_interrupt_manager_enable_irq
+         8   -> sl_interrupt_manager_is_irq_disabled
+       8   sl_gpio_is_locked
+         8   -> CORE_EnterAtomic
+         8   -> CORE_ExitAtomic
+         8   -> assertEFM
+       0   sl_gpio_lock
+       8   sl_gpio_set_pin
+         8   -> assertEFM
+         8   -> sl_hal_gpio_set_pin
+      16   sl_gpio_set_pin_direction
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+        16   -> assertEFM
+        16   -> sl_hal_gpio_set_pin_mode
+       8   sl_gpio_set_pin_em4_retention
+         8   -> CORE_EnterAtomic
+         8   -> CORE_ExitAtomic
+      24   sl_gpio_set_pin_mode
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+        24   -> sl_hal_gpio_set_pin_mode
+      16   sl_gpio_set_port
+        16   -> assertEFM
+      24   sl_gpio_set_slew_rate
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> assertEFM
+       8   sl_gpio_toggle_pin
+         8   -> assertEFM
+         8   -> sl_hal_gpio_toggle_pin
+       0   sl_gpio_unlock
+       8   sl_hal_gpio_disable_pin_em4_wakeup
+         8   -> assertEFM
+      16   sl_hal_gpio_set_pin
+        16   -> assertEFM
+      16   sl_hal_gpio_toggle_pin
+        16   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable28
+       4  ??DataTable28_1
+       4  ??DataTable28_10
+       4  ??DataTable28_11
+       4  ??DataTable28_12
+       4  ??DataTable28_13
+       4  ??DataTable28_14
+       4  ??DataTable28_15
+       4  ??DataTable28_16
+       4  ??DataTable28_17
+       4  ??DataTable28_2
+       4  ??DataTable28_3
+       4  ??DataTable28_4
+       4  ??DataTable28_5
+       4  ??DataTable28_6
+       4  ??DataTable28_7
+       4  ??DataTable28_8
+       4  ??DataTable28_9
+      10  ??Subroutine16_0
+      10  ?Subroutine0
+       8  ?Subroutine1
+       8  ?Subroutine10
+      14  ?Subroutine11
+      12  ?Subroutine12
+       6  ?Subroutine13
+      16  ?Subroutine14
+      10  ?Subroutine15
+      10  ?Subroutine2
+      10  ?Subroutine3
+       8  ?Subroutine4
+       8  ?Subroutine5
+       8  ?Subroutine6
+       6  ?Subroutine7
+       6  ?Subroutine8
+       6  ?Subroutine9
+     268  ?_0
+      14  GPIO_EVEN_IRQHandler
+      12  GPIO_ODD_IRQHandler
+     256  gpio_interrupts
+     164  sl_gpio_clear_pin
+      54  sl_gpio_clear_port
+     284  sl_gpio_configure_external_interrupt
+     180  sl_gpio_configure_wakeup_em4_interrupt
+      58  sl_gpio_deconfigure_external_interrupt
+      74  sl_gpio_deconfigure_wakeup_em4_interrupt
+       4  sl_gpio_disable_interrupts
+      26  sl_gpio_disable_pin_em4_wakeup
+      56  sl_gpio_dispatch_interrupt
+       4  sl_gpio_enable_interrupts
+      20  sl_gpio_enable_pin_em4_wakeup
+     132  sl_gpio_get_pin_config
+     154  sl_gpio_get_pin_input
+     156  sl_gpio_get_pin_output
+      78  sl_gpio_get_port_input
+      78  sl_gpio_get_port_output
+      94  sl_gpio_get_slew_rate
+      54  sl_gpio_init
+      30  sl_gpio_is_locked
+       4  sl_gpio_lock
+      82  sl_gpio_set_pin
+     116  sl_gpio_set_pin_direction
+      42  sl_gpio_set_pin_em4_retention
+     106  sl_gpio_set_pin_mode
+      56  sl_gpio_set_port
+      88  sl_gpio_set_slew_rate
+      92  sl_gpio_toggle_pin
+       4  sl_gpio_unlock
+      36  sl_hal_gpio_disable_pin_em4_wakeup
+     108  sl_hal_gpio_set_pin
+     108  sl_hal_gpio_toggle_pin
+
+ 
+   256 bytes in section .bss
+   268 bytes in section .rodata
+ 2'488 bytes in section .text
+    92 bytes in section text_gpio_timecritical39190
+   108 bytes in section text_hal_gpio_timecritical37700
+   108 bytes in section text_hal_gpio_timecritical38818
+ 
+ 2'544 bytes of CODE  memory (+ 252 bytes shared)
+   268 bytes of CONST memory
+   256 bytes of DATA  memory
+
+Errors: none
+Warnings: none

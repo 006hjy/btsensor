@@ -1,0 +1,1904 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:05
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpio.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpio.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpio.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14190545362676408484.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpio.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpio.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14190545362676408484.dir\sl_hal_gpio.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpio.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpio.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief General Purpose IO (GPIO) peripheral API.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2026 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_hal_gpio.h"
+
+   \                                 In section text_hal_gpio_timecritical28700, align 4
+   \   __vfp void sl_hal_gpio_set_pin(sl_gpio_t const *)
+   \                     sl_hal_gpio_set_pin: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x4D17             LDR.N    R5,??sl_hal_gpio_set_pin_0
+   \        0x6   0xD104             BNE.N    ??sl_hal_gpio_set_pin_1
+   \        0x8   0xF240 0x21BF      MOVW     R1,#+703
+   \        0xC   0x4628             MOV      R0,R5
+   \        0xE   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_set_pin_1: (+1)
+   \       0x12   0x7820             LDRB     R0,[R4, #+0]
+   \       0x14   0xB908             CBNZ.N   R0,??sl_hal_gpio_set_pin_2
+   \       0x16   0x207F             MOVS     R0,#+127
+   \       0x18   0xE010             B.N      ??sl_hal_gpio_set_pin_3
+   \                     ??sl_hal_gpio_set_pin_2: (+1)
+   \       0x1A   0x2801             CMP      R0,#+1
+   \       0x1C   0xBF08             IT       EQ
+   \       0x1E   0x2007             MOVEQ    R0,#+7
+   \       0x20   0xD00C             BEQ.N    ??sl_hal_gpio_set_pin_3
+   \       0x22   0x2802             CMP      R0,#+2
+   \       0x24   0xBF0C             ITE      EQ
+   \       0x26   0x203F             MOVEQ    R0,#+63
+   \       0x28   0x2803             CMPNE    R0,#+3
+   \       0x2A   0xD007             BEQ.N    ??sl_hal_gpio_set_pin_3
+   \       0x2C   0x2804             CMP      R0,#+4
+   \       0x2E   0xBF18             IT       NE
+   \       0x30   0x2805             CMPNE    R0,#+5
+   \       0x32   0xD002             BEQ.N    ??sl_hal_gpio_set_pin_4
+   \       0x34   0x2806             CMP      R0,#+6
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2807             CMPNE    R0,#+7
+   \                     ??sl_hal_gpio_set_pin_4: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_set_pin_3: (+1)
+   \       0x3C   0x7861             LDRB     R1,[R4, #+1]
+   \       0x3E   0x40C8             LSRS     R0,R0,R1
+   \       0x40   0x07C0             LSLS     R0,R0,#+31
+   \       0x42   0xD404             BMI.N    ??sl_hal_gpio_set_pin_5
+   \       0x44   0xF44F 0x7130      MOV      R1,#+704
+   \       0x48   0x4628             MOV      R0,R5
+   \       0x4A   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_set_pin_5: (+1)
+   \       0x4E   0x2130             MOVS     R1,#+48
+   \       0x50   0x7860             LDRB     R0,[R4, #+1]
+   \       0x52   0x7824             LDRB     R4,[R4, #+0]
+   \       0x54   0x2201             MOVS     R2,#+1
+   \       0x56   0x4B04             LDR.N    R3,??sl_hal_gpio_set_pin_0+4
+   \       0x58   0x434C             MULS     R4,R1,R4
+   \       0x5A   0x4082             LSLS     R2,R2,R0
+   \       0x5C   0x1919             ADDS     R1,R3,R4
+   \       0x5E   0x610A             STR      R2,[R1, #+16]
+   \       0x60   0xBD31             POP      {R0,R4,R5,PC}
+   \       0x62   0xBF00             Nop
+   \                     ??sl_hal_gpio_set_pin_0:
+   \       0x64   0x....'....        DC32     ?_0
+   \       0x68   0x5003'D000        DC32     0x5003d000
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_gpio_clear_pin(sl_gpio_t const *)
+   \                     sl_hal_gpio_clear_pin: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x4D17             LDR.N    R5,??sl_hal_gpio_clear_pin_0
+   \        0x6   0xD104             BNE.N    ??sl_hal_gpio_clear_pin_1
+   \        0x8   0xF240 0x21E6      MOVW     R1,#+742
+   \        0xC   0x4628             MOV      R0,R5
+   \        0xE   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_clear_pin_1: (+1)
+   \       0x12   0x7820             LDRB     R0,[R4, #+0]
+   \       0x14   0xB908             CBNZ.N   R0,??sl_hal_gpio_clear_pin_2
+   \       0x16   0x207F             MOVS     R0,#+127
+   \       0x18   0xE010             B.N      ??sl_hal_gpio_clear_pin_3
+   \                     ??sl_hal_gpio_clear_pin_2: (+1)
+   \       0x1A   0x2801             CMP      R0,#+1
+   \       0x1C   0xBF08             IT       EQ
+   \       0x1E   0x2007             MOVEQ    R0,#+7
+   \       0x20   0xD00C             BEQ.N    ??sl_hal_gpio_clear_pin_3
+   \       0x22   0x2802             CMP      R0,#+2
+   \       0x24   0xBF0C             ITE      EQ
+   \       0x26   0x203F             MOVEQ    R0,#+63
+   \       0x28   0x2803             CMPNE    R0,#+3
+   \       0x2A   0xD007             BEQ.N    ??sl_hal_gpio_clear_pin_3
+   \       0x2C   0x2804             CMP      R0,#+4
+   \       0x2E   0xBF18             IT       NE
+   \       0x30   0x2805             CMPNE    R0,#+5
+   \       0x32   0xD002             BEQ.N    ??sl_hal_gpio_clear_pin_4
+   \       0x34   0x2806             CMP      R0,#+6
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2807             CMPNE    R0,#+7
+   \                     ??sl_hal_gpio_clear_pin_4: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_clear_pin_3: (+1)
+   \       0x3C   0x7861             LDRB     R1,[R4, #+1]
+   \       0x3E   0x40C8             LSRS     R0,R0,R1
+   \       0x40   0x07C0             LSLS     R0,R0,#+31
+   \       0x42   0xD404             BMI.N    ??sl_hal_gpio_clear_pin_5
+   \       0x44   0xF240 0x21E7      MOVW     R1,#+743
+   \       0x48   0x4628             MOV      R0,R5
+   \       0x4A   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_clear_pin_5: (+1)
+   \       0x4E   0x2130             MOVS     R1,#+48
+   \       0x50   0x7860             LDRB     R0,[R4, #+1]
+   \       0x52   0x7824             LDRB     R4,[R4, #+0]
+   \       0x54   0x2201             MOVS     R2,#+1
+   \       0x56   0x4B04             LDR.N    R3,??sl_hal_gpio_clear_pin_0+4
+   \       0x58   0x434C             MULS     R4,R1,R4
+   \       0x5A   0x4082             LSLS     R2,R2,R0
+   \       0x5C   0x1919             ADDS     R1,R3,R4
+   \       0x5E   0x610A             STR      R2,[R1, #+16]
+   \       0x60   0xBD31             POP      {R0,R4,R5,PC}
+   \       0x62   0xBF00             Nop
+   \                     ??sl_hal_gpio_clear_pin_0:
+   \       0x64   0x....'....        DC32     ?_0
+   \       0x68   0x5003'E000        DC32     0x5003e000
+     32          #if defined(GPIO_PRESENT)
+     33          #include "sl_hal_bus.h"
+
+   \                                 In section text_hal_common_timecritical30111, align 4, keep-with-next
+   \   static __vfp void sl_hal_bus_reg_write_bit(uint32_t volatile *, uint32_t, uint32_t)
+   \                     sl_hal_bus_reg_write_bit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460E             MOV      R6,R1
+   \        0x4   0x4605             MOV      R5,R0
+   \        0x6   0x4614             MOV      R4,R2
+   \        0x8   0x2E20             CMP      R6,#+32
+   \        0xA   0xD303             BCC.N    ??sl_hal_bus_reg_write_bit_1
+   \        0xC   0x2174             MOVS     R1,#+116
+   \        0xE   0x4807             LDR.N    R0,??sl_hal_bus_reg_write_bit_0
+   \       0x10   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_bus_reg_write_bit_1: (+1)
+   \       0x14   0x2C00             CMP      R4,#+0
+   \       0x16   0xBF14             ITE      NE
+   \       0x18   0xF505 0x5580      ADDNE    R5,R5,#+4096
+   \       0x1C   0xF505 0x5500      ADDEQ    R5,R5,#+8192
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0xFA00 0xF606      LSL      R6,R0,R6
+   \       0x26   0x602E             STR      R6,[R5, #+0]
+   \       0x28   0xBD70             POP      {R4-R6,PC}
+   \       0x2A   0xBF00             Nop
+   \                     ??sl_hal_bus_reg_write_bit_0:
+   \       0x2C   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void sl_hal_bus_reg_write_mask(uint32_t volatile *, uint32_t, uint32_t)
+   \                     sl_hal_bus_reg_write_mask: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4616             MOV      R6,R2
+   \        0x8   0x.... 0x....      BL       CORE_EnterCritical
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+   \        0xE   0x43A9             BICS     R1,R1,R5
+   \       0x10   0x4035             ANDS     R5,R5,R6
+   \       0x12   0x430D             ORRS     R5,R5,R1
+   \       0x14   0x6025             STR      R5,[R4, #+0]
+   \       0x16   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x1A   0x.... 0x....      B.W      CORE_ExitCritical
+     34          
+     35          /*******************************************************************************
+     36           **************************   GLOBAL FUNCTIONS   *******************************
+     37           ******************************************************************************/
+     38          extern __INLINE void sl_hal_gpio_lock(void);
+     39          extern __INLINE void sl_hal_gpio_unlock(void);
+     40          extern __INLINE uint32_t sl_hal_gpio_get_lock_status(void);
+     41          extern __INLINE bool sl_hal_gpio_is_gpio_port(sl_gpio_port_t port);
+     42          #if defined(HSIO_PRESENT)
+     43          extern __INLINE bool sl_hal_gpio_is_hsio_port(sl_gpio_port_t port);
+     44          #endif
+     45          extern __INLINE void sl_hal_gpio_set_pin(const sl_gpio_t *gpio);
+     46          extern __INLINE void sl_hal_gpio_set_port(sl_gpio_port_t port,
+     47                                                    uint32_t pins);
+     48          extern __INLINE void sl_hal_gpio_set_port_value(sl_gpio_port_t port,
+     49                                                          uint32_t val,
+     50                                                          uint32_t mask);
+     51          extern __INLINE void sl_hal_gpio_clear_pin(const sl_gpio_t *gpio);
+     52          extern __INLINE void sl_hal_gpio_clear_port(sl_gpio_port_t port,
+     53                                                      uint32_t pins);
+     54          extern __INLINE bool sl_hal_gpio_get_pin_input(const sl_gpio_t *gpio);
+     55          extern __INLINE bool sl_hal_gpio_get_pin_output(const sl_gpio_t *gpio);
+     56          extern __INLINE uint32_t sl_hal_gpio_get_port_input(sl_gpio_port_t port);
+     57          extern __INLINE uint32_t sl_hal_gpio_get_port_output(sl_gpio_port_t port);
+     58          extern __INLINE void sl_hal_gpio_toggle_pin(const sl_gpio_t *gpio);
+     59          extern __INLINE void sl_hal_gpio_toggle_port(sl_gpio_port_t port,
+     60                                                       uint32_t pins);
+     61          extern __INLINE sl_status_t sl_hal_gpio_set_slew_rate(const sl_gpio_t *gpio,
+     62                                                                uint8_t slewrate);
+     63          extern __INLINE sl_status_t sl_hal_gpio_get_slew_rate(const sl_gpio_t *gpio,
+     64                                                                uint8_t *slewrate);
+     65          #if defined(_GPIO_P_CTRL_SLEWRATEALT_MASK)
+     66          extern __INLINE void sl_hal_gpio_set_slew_rate_alternate(sl_gpio_port_t port,
+     67                                                                   uint8_t slewrate_alt);
+     68          extern __INLINE uint8_t sl_hal_gpio_get_slew_rate_alternate(sl_gpio_port_t port);
+     69          #endif
+     70          extern __INLINE void sl_hal_gpio_enable_interrupts(uint32_t flags);
+     71          extern __INLINE void sl_hal_gpio_disable_interrupts(uint32_t flags);
+     72          extern __INLINE void sl_hal_gpio_clear_interrupts(uint32_t flags);
+     73          extern __INLINE void sl_hal_gpio_set_interrupts(uint32_t flags);
+     74          extern __INLINE uint32_t sl_hal_gpio_get_pending_interrupts(void);
+     75          extern __INLINE uint32_t sl_hal_gpio_get_enabled_interrupts(void);
+     76          extern __INLINE uint32_t sl_hal_gpio_get_enabled_pending_interrupts(void);
+     77          extern __INLINE int32_t sl_hal_gpio_get_external_interrupt_number(uint8_t pin,
+     78                                                                            uint32_t enabled_interrupts_mask);
+     79          extern __INLINE int32_t sl_hal_gpio_get_em4_interrupt_number(const sl_gpio_t *gpio);
+     80          extern __INLINE void sl_hal_gpio_set_pin_em4_retention(bool enable);
+     81          extern __INLINE void sl_hal_gpio_disable_pin_em4_wakeup (uint32_t pinmask);
+     82          extern __INLINE uint32_t sl_hal_gpio_get_pin_em4_wakeup_cause(void);
+     83          extern __INLINE void sl_hal_gpio_enable_debug_swo(bool enable);
+     84          extern __INLINE void sl_hal_gpio_enable_debug_swd_clk(bool enable);
+     85          extern __INLINE void sl_hal_gpio_enable_debug_swd_io(bool enable);
+     86          #if defined(_HSIO_P_PRDRVSTRENGTH_PRDRVSTRENGTH0_MASK) && defined(HSIO_PRESENT)
+     87          extern __INLINE sl_status_t sl_hal_gpio_set_pre_driver_strength(sl_gpio_t *gpio,
+     88                                                                          uint8_t predrv_strength);
+     89          extern __INLINE sl_status_t sl_hal_gpio_get_pre_driver_strength(sl_gpio_t *gpio,
+     90                                                                          uint8_t *predrv_strength);
+     91          #endif
+     92          #if defined(_HSIO_P_DRVSTRENGTH_MASK) && defined(HSIO_PRESENT)
+     93          extern __INLINE sl_status_t sl_hal_gpio_set_drive_strength(sl_gpio_t *gpio,
+     94                                                                     uint8_t drive_strength);
+     95          extern __INLINE sl_status_t sl_hal_gpio_get_drive_strength(sl_gpio_t *gpio,
+     96                                                                     uint8_t *drive_strength);
+     97          #endif
+     98          #if defined(_HSIO_P_HSRX_MASK) && defined(HSIO_PRESENT)
+     99          extern __INLINE sl_status_t sl_hal_gpio_is_high_speed_rx_enabled(sl_gpio_t *gpio,
+    100                                                                          bool *is_enabled);
+    101          extern __INLINE sl_status_t sl_hal_gpio_configure_high_speed_rx(sl_gpio_t *gpio,
+    102                                                                          bool enable);
+    103          #endif
+    104          #if defined(_HSIO_P_HSRXHYST_MASK) && defined(HSIO_PRESENT)
+    105          extern __INLINE sl_status_t sl_hal_gpio_set_high_speed_rx_hysteresis(sl_gpio_t *gpio,
+    106                                                                               uint8_t hysteresis);
+    107          extern __INLINE sl_status_t sl_hal_gpio_get_high_speed_rx_hysteresis(sl_gpio_t *gpio,
+    108                                                                               uint8_t *hysteresis);
+    109          #endif
+    110          #if defined(_HSIO_P_NONOVRLPDIS_MASK) && defined(HSIO_PRESENT)
+    111          extern __INLINE sl_status_t sl_hal_gpio_set_non_overlap_protection_disable(sl_gpio_t *gpio,
+    112                                                                                    bool disable);
+    113          extern __INLINE sl_status_t sl_hal_gpio_get_non_overlap_protection_disable(sl_gpio_t *gpio,
+    114                                                                                    bool *disable);
+    115          #endif
+    116          
+    117          /*******************************************************************************
+    118           ***************************   LOCAL FUNCTIONS   *******************************
+    119           ******************************************************************************/
+    120          static sl_gpio_mode_t sl_hal_gpio_map_gpio_mode(sl_gpio_mode_t mode);
+    121          static sl_gpio_mode_t sl_hal_gpio_map_gpio_reg_to_mode(sl_gpio_mode_t mode);
+    122          #if defined(HSIO_PRESENT)
+    123          static sl_gpio_mode_t sl_hal_gpio_map_hsio_mode(sl_gpio_mode_t mode);
+    124          static sl_gpio_mode_t sl_hal_gpio_map_hsio_reg_to_mode(sl_gpio_mode_t mode);
+    125          #endif
+    126          
+    127          /*******************************************************************************
+    128           **************************   GLOBAL FUNCTIONS   *******************************
+    129           ******************************************************************************/
+    130          
+    131          /***************************************************************************//**
+    132           *   Sets the mode for GPIO pin.
+    133           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    134          void sl_hal_gpio_set_pin_mode(const sl_gpio_t *gpio,
+    135                                        sl_gpio_mode_t mode,
+    136                                        bool output_value)
+    137          {
+   \                     sl_hal_gpio_set_pin_mode: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+    138            EFM_ASSERT(gpio != NULL);
+   \        0xA   0x.... 0x....      LDR.W    R8,??DataTable6
+   \        0xE   0xD102             BNE.N    ??CrossCallReturnLabel_5
+   \       0x10   0x218A             MOVS     R1,#+138
+   \       0x12   0x.... 0x....      BL       ?Subroutine0
+    139            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x16   0x7820             LDRB     R0,[R4, #+0]
+   \       0x18   0xB908             CBNZ.N   R0,??sl_hal_gpio_set_pin_mode_1
+   \       0x1A   0x207F             MOVS     R0,#+127
+   \       0x1C   0xE010             B.N      ??sl_hal_gpio_set_pin_mode_2
+   \                     ??sl_hal_gpio_set_pin_mode_1: (+1)
+   \       0x1E   0x2801             CMP      R0,#+1
+   \       0x20   0xBF08             IT       EQ
+   \       0x22   0x2007             MOVEQ    R0,#+7
+   \       0x24   0xD00C             BEQ.N    ??sl_hal_gpio_set_pin_mode_2
+   \       0x26   0x2802             CMP      R0,#+2
+   \       0x28   0xBF0C             ITE      EQ
+   \       0x2A   0x203F             MOVEQ    R0,#+63
+   \       0x2C   0x2803             CMPNE    R0,#+3
+   \       0x2E   0xD007             BEQ.N    ??sl_hal_gpio_set_pin_mode_2
+   \       0x30   0x2804             CMP      R0,#+4
+   \       0x32   0xBF18             IT       NE
+   \       0x34   0x2805             CMPNE    R0,#+5
+   \       0x36   0xD002             BEQ.N    ??sl_hal_gpio_set_pin_mode_3
+   \       0x38   0x2806             CMP      R0,#+6
+   \       0x3A   0xBF18             IT       NE
+   \       0x3C   0x2807             CMPNE    R0,#+7
+   \                     ??sl_hal_gpio_set_pin_mode_3: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_set_pin_mode_2: (+1)
+   \       0x40   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x44   0xD402             BMI.N    ??CrossCallReturnLabel_4
+   \       0x46   0x218B             MOVS     R1,#+139
+   \       0x48   0x.... 0x....      BL       ?Subroutine0
+    140            EFM_ASSERT(sl_hal_gpio_get_lock_status() == 0);
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x4C   0x.... 0x....      LDR.W    R0,??DataTable6_1
+   \       0x50   0x6800             LDR      R0,[R0, #+0]
+   \       0x52   0xB110             CBZ.N    R0,??CrossCallReturnLabel_3
+   \       0x54   0x218C             MOVS     R1,#+140
+   \       0x56   0x.... 0x....      BL       ?Subroutine0
+    141          
+    142            sl_gpio_mode_t gpio_mode = SL_GPIO_MODE_DISABLED;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x5A   0x2700             MOVS     R7,#+0
+    143          #if defined(HSIO_PRESENT)
+    144            bool is_hsio = sl_hal_gpio_is_hsio_port(gpio->port);
+    145            uint8_t hsio_index = is_hsio ? SL_HAL_HSIO_PORT_INDEX(gpio->port) : 0u;
+    146            gpio_mode = is_hsio ? sl_hal_gpio_map_hsio_mode(mode) : sl_hal_gpio_map_gpio_mode(mode);
+    147          #else
+    148            gpio_mode = sl_hal_gpio_map_gpio_mode(mode);
+   \       0x5C   0x2D0F             CMP      R5,#+15
+   \       0x5E   0xD827             BHI.N    ??sl_hal_gpio_set_pin_mode_4
+   \       0x60   0xE8DF 0xF005      TBB      [PC, R5]
+   \                     ??sl_hal_gpio_set_pin_mode_0:
+   \       0x64   0x2A 0x24          DC8      0x2A,0x24,0x22,0x20
+   \              0x22 0x20
+   \       0x68   0x1E 0x1C          DC8      0x1E,0x1C,0x1A,0x18
+   \              0x1A 0x18
+   \       0x6C   0x16 0x14          DC8      0x16,0x14,0x12,0x10
+   \              0x12 0x10
+   \       0x70   0x0E 0x0C          DC8      0xE,0xC,0xA,0x8
+   \              0x0A 0x08
+   \                     ??sl_hal_gpio_set_pin_mode_5: (+1)
+   \       0x74   0x270F             MOVS     R7,#+15
+   \       0x76   0xE021             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_7: (+1)
+   \       0x78   0x270E             MOVS     R7,#+14
+   \       0x7A   0xE01F             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_8: (+1)
+   \       0x7C   0x270D             MOVS     R7,#+13
+   \       0x7E   0xE01D             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_9: (+1)
+   \       0x80   0x270C             MOVS     R7,#+12
+   \       0x82   0xE01B             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_10: (+1)
+   \       0x84   0x270B             MOVS     R7,#+11
+   \       0x86   0xE019             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_11: (+1)
+   \       0x88   0x270A             MOVS     R7,#+10
+   \       0x8A   0xE017             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_12: (+1)
+   \       0x8C   0x2709             MOVS     R7,#+9
+   \       0x8E   0xE015             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_13: (+1)
+   \       0x90   0x2708             MOVS     R7,#+8
+   \       0x92   0xE013             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_14: (+1)
+   \       0x94   0x2707             MOVS     R7,#+7
+   \       0x96   0xE011             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_15: (+1)
+   \       0x98   0x2706             MOVS     R7,#+6
+   \       0x9A   0xE00F             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_16: (+1)
+   \       0x9C   0x2705             MOVS     R7,#+5
+   \       0x9E   0xE00D             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_17: (+1)
+   \       0xA0   0x2704             MOVS     R7,#+4
+   \       0xA2   0xE00B             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_18: (+1)
+   \       0xA4   0x2703             MOVS     R7,#+3
+   \       0xA6   0xE009             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_19: (+1)
+   \       0xA8   0x2702             MOVS     R7,#+2
+   \       0xAA   0xE007             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_20: (+1)
+   \       0xAC   0x2701             MOVS     R7,#+1
+   \       0xAE   0xE005             B.N      ??sl_hal_gpio_set_pin_mode_6
+   \                     ??sl_hal_gpio_set_pin_mode_4: (+1)
+   \       0xB0   0xF240 0x11CB      MOVW     R1,#+459
+   \       0xB4   0x.... 0x....      BL       ?Subroutine0
+    149          #endif
+    150          
+    151            EFM_ASSERT(SL_HAL_GPIO_MODE_IS_VALID(gpio_mode));
+    152          
+    153            // If disabling a pin, do not modify DOUT to reduce the chance of
+    154            // a glitch/spike (may not be sufficient precaution in all use cases).
+    155            // As mode settings are dependent on DOUT values, setting output value
+    156            // prior to mode. @ref enum - sl_gpio_mode_t
+    157            if (mode != SL_GPIO_MODE_DISABLED) {
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0xB8   0x0028             MOVS     R0,R5
+   \       0xBA   0xD007             BEQ.N    ??sl_hal_gpio_set_pin_mode_21
+    158              if (output_value) {
+   \                     ??sl_hal_gpio_set_pin_mode_6: (+1)
+   \       0xBC   0x0030             MOVS     R0,R6
+   \       0xBE   0x4620             MOV      R0,R4
+   \       0xC0   0xD002             BEQ.N    ??sl_hal_gpio_set_pin_mode_22
+    159                sl_hal_gpio_set_pin(gpio);
+   \       0xC2   0x.... 0x....      BL       sl_hal_gpio_set_pin
+   \       0xC6   0xE001             B.N      ??sl_hal_gpio_set_pin_mode_21
+    160              } else {
+    161                sl_hal_gpio_clear_pin(gpio);
+   \                     ??sl_hal_gpio_set_pin_mode_22: (+1)
+   \       0xC8   0x.... 0x....      BL       sl_hal_gpio_clear_pin
+    162              }
+    163            }
+    164          
+    165            // There are two registers controlling the pins for each port.
+    166            // The MODEL register controls pins 0-7 and MODEH controls pins 8-15.
+    167          #if defined(HSIO_PRESENT)
+    168            if (is_hsio) {
+    169              if (gpio->pin < 8) {
+    170                sl_hal_bus_reg_write_mask(&(GPIO->H[hsio_index].MODEL),
+    171                                          0xFu << (gpio->pin * 4),
+    172                                          gpio_mode << (gpio->pin * 4));
+    173              } else {
+    174                sl_hal_bus_reg_write_mask(&(GPIO->H[hsio_index].MODEH),
+    175                                          0xFu << ((gpio->pin - 8) * 4),
+    176                                          gpio_mode << ((gpio->pin - 8) * 4));
+    177              }
+    178            } else
+    179          #endif
+    180            {
+    181              if (gpio->pin < 8) {
+   \                     ??sl_hal_gpio_set_pin_mode_21: (+1)
+   \       0xCC   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \       0xD0   0x188B             ADDS     R3,R1,R2
+   \       0xD2   0x7861             LDRB     R1,[R4, #+1]
+   \       0xD4   0x200F             MOVS     R0,#+15
+   \       0xD6   0x2908             CMP      R1,#+8
+   \       0xD8   0xDA03             BGE.N    ??sl_hal_gpio_set_pin_mode_23
+    182                sl_hal_bus_reg_write_mask(&(GPIO->P[gpio->port].MODEL),
+    183                                          0xFu << (gpio->pin * 4),
+    184                                          gpio_mode << (gpio->pin * 4));
+   \       0xDA   0x.... 0x....      BL       ?Subroutine5
+    185              } else {
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \       0xDE   0x1D18             ADDS     R0,R3,#+4
+   \       0xE0   0xE004             B.N      ??sl_hal_gpio_set_pin_mode_24
+    186                sl_hal_bus_reg_write_mask(&(GPIO->P[gpio->port].MODEH),
+    187                                          0xFu << ((gpio->pin - 8) * 4),
+    188                                          gpio_mode << ((gpio->pin - 8) * 4));
+   \                     ??sl_hal_gpio_set_pin_mode_23: (+1)
+   \       0xE2   0x3908             SUBS     R1,R1,#+8
+   \       0xE4   0x.... 0x....      BL       ?Subroutine5
+    189              }
+    190            }
+   \                     ??CrossCallReturnLabel_22: (+1)
+   \       0xE8   0xF103 0x000C      ADD      R0,R3,#+12
+   \                     ??sl_hal_gpio_set_pin_mode_24: (+1)
+   \       0xEC   0x.... 0x....      BL       sl_hal_bus_reg_write_mask
+    191          
+    192            // SL_GPIO_MODE_DISABLED based on DOUT Value (low/high) act as two different configurations.
+    193            // By setting mode to disabled first and then modifying the DOUT value, so that
+    194            // previous mode configuration on given pin not effected.
+    195            if (mode == SL_GPIO_MODE_DISABLED) {
+   \       0xF0   0xB955             CBNZ.N   R5,??sl_hal_gpio_set_pin_mode_25
+    196              if (output_value) {
+   \       0xF2   0x2E00             CMP      R6,#+0
+   \       0xF4   0x4620             MOV      R0,R4
+   \       0xF6   0xD003             BEQ.N    ??sl_hal_gpio_set_pin_mode_26
+    197                sl_hal_gpio_set_pin(gpio);
+   \       0xF8   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \       0xFC   0x.... 0x....      B.W      sl_hal_gpio_set_pin
+    198              } else {
+    199                sl_hal_gpio_clear_pin(gpio);
+   \                     ??sl_hal_gpio_set_pin_mode_26: (+1)
+   \      0x100   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \      0x104   0x.... 0x....      B.W      sl_hal_gpio_clear_pin
+    200              }
+    201            }
+    202          }
+   \                     ??sl_hal_gpio_set_pin_mode_25: (+1)
+   \      0x108   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x0089             LSLS     R1,R1,#+2
+   \        0x2   0xFA07 0xF201      LSL      R2,R7,R1
+   \        0x6   0xFA00 0xF101      LSL      R1,R0,R1
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x7822             LDRB     R2,[R4, #+0]
+   \        0x2   0x2030             MOVS     R0,#+48
+   \        0x4   0x....             LDR.N    R1,??DataTable6_2
+   \        0x6   0x4342             MULS     R2,R0,R2
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x7861             LDRB     R1,[R4, #+1]
+   \        0x2   0x40C8             LSRS     R0,R0,R1
+   \        0x4   0x07C0             LSLS     R0,R0,#+31
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4640             MOV      R0,R8
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    203          
+    204          /***************************************************************************//**
+    205           *  Get the mode for a GPIO pin.
+    206           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    207          sl_gpio_mode_t sl_hal_gpio_get_pin_mode(const sl_gpio_t *gpio)
+    208          {
+   \                     sl_hal_gpio_get_pin_mode: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    209            EFM_ASSERT(gpio != NULL);
+   \        0x4   0x.... 0x....      LDR.W    R5,??DataTable6
+   \        0x8   0xD103             BNE.N    ??sl_hal_gpio_get_pin_mode_1
+   \        0xA   0x21D1             MOVS     R1,#+209
+   \        0xC   0x4628             MOV      R0,R5
+   \        0xE   0x.... 0x....      BL       assertEFM
+    210            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??sl_hal_gpio_get_pin_mode_1: (+1)
+   \       0x12   0x7820             LDRB     R0,[R4, #+0]
+   \       0x14   0xB908             CBNZ.N   R0,??sl_hal_gpio_get_pin_mode_2
+   \       0x16   0x207F             MOVS     R0,#+127
+   \       0x18   0xE010             B.N      ??sl_hal_gpio_get_pin_mode_3
+   \                     ??sl_hal_gpio_get_pin_mode_2: (+1)
+   \       0x1A   0x2801             CMP      R0,#+1
+   \       0x1C   0xBF08             IT       EQ
+   \       0x1E   0x2007             MOVEQ    R0,#+7
+   \       0x20   0xD00C             BEQ.N    ??sl_hal_gpio_get_pin_mode_3
+   \       0x22   0x2802             CMP      R0,#+2
+   \       0x24   0xBF0C             ITE      EQ
+   \       0x26   0x203F             MOVEQ    R0,#+63
+   \       0x28   0x2803             CMPNE    R0,#+3
+   \       0x2A   0xD007             BEQ.N    ??sl_hal_gpio_get_pin_mode_3
+   \       0x2C   0x2804             CMP      R0,#+4
+   \       0x2E   0xBF18             IT       NE
+   \       0x30   0x2805             CMPNE    R0,#+5
+   \       0x32   0xD002             BEQ.N    ??sl_hal_gpio_get_pin_mode_4
+   \       0x34   0x2806             CMP      R0,#+6
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2807             CMPNE    R0,#+7
+   \                     ??sl_hal_gpio_get_pin_mode_4: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_get_pin_mode_3: (+1)
+   \       0x3C   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x40   0xD403             BMI.N    ??sl_hal_gpio_get_pin_mode_5
+   \       0x42   0x21D2             MOVS     R1,#+210
+   \       0x44   0x4628             MOV      R0,R5
+   \       0x46   0x.... 0x....      BL       assertEFM
+    211          
+    212            sl_gpio_mode_t mode = SL_GPIO_MODE_DISABLED;
+    213          #if defined(HSIO_PRESENT)
+    214            bool is_hsio = sl_hal_gpio_is_hsio_port(gpio->port);
+    215            uint8_t hsio_index = is_hsio ? SL_HAL_HSIO_PORT_INDEX(gpio->port) : 0u;
+    216          #endif
+    217          
+    218            // Determine the current mode of the GPIO pin based on the pin number.
+    219          #if defined(HSIO_PRESENT)
+    220            if (is_hsio) {
+    221              if (gpio->pin < 8) {
+    222                mode = (sl_gpio_mode_t) ((GPIO->H[hsio_index].MODEL >> (gpio->pin * 4)) & 0xF);
+    223              } else {
+    224                mode = (sl_gpio_mode_t) ((GPIO->H[hsio_index].MODEH >> ((gpio->pin - 8) * 4)) & 0xF);
+    225              }
+    226            } else
+    227          #endif
+    228            {
+    229              if (gpio->pin < 8) {
+   \                     ??sl_hal_gpio_get_pin_mode_5: (+1)
+   \       0x4A   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \       0x4E   0x1888             ADDS     R0,R1,R2
+   \       0x50   0x7861             LDRB     R1,[R4, #+1]
+   \       0x52   0x2908             CMP      R1,#+8
+   \       0x54   0xDA03             BGE.N    ??sl_hal_gpio_get_pin_mode_6
+    230                mode = (sl_gpio_mode_t) ((GPIO->P[gpio->port].MODEL >> (gpio->pin * 4)) & 0xF);
+   \       0x56   0x6844             LDR      R4,[R0, #+4]
+   \       0x58   0x0089             LSLS     R1,R1,#+2
+   \       0x5A   0x40CC             LSRS     R4,R4,R1
+   \       0x5C   0xE004             B.N      ??sl_hal_gpio_get_pin_mode_7
+    231              } else {
+    232                mode = (sl_gpio_mode_t) ((GPIO->P[gpio->port].MODEH >> ((gpio->pin - 8) * 4)) & 0xF);
+   \                     ??sl_hal_gpio_get_pin_mode_6: (+1)
+   \       0x5E   0x68C4             LDR      R4,[R0, #+12]
+   \       0x60   0xF1A1 0x0008      SUB      R0,R1,#+8
+   \       0x64   0x0080             LSLS     R0,R0,#+2
+   \       0x66   0x40C4             LSRS     R4,R4,R0
+   \                     ??sl_hal_gpio_get_pin_mode_7: (+1)
+   \       0x68   0xF004 0x040F      AND      R4,R4,#0xF
+    233              }
+    234            }
+    235          
+    236            // Map the hardware-specific mode to the corresponding sl_gpio_mode_t value
+    237          #if defined(HSIO_PRESENT)
+    238            if (is_hsio) {
+    239              return sl_hal_gpio_map_hsio_reg_to_mode(mode);
+    240            }
+    241          #endif
+    242            return sl_hal_gpio_map_gpio_reg_to_mode(mode);
+   \       0x6C   0x2C0F             CMP      R4,#+15
+   \       0x6E   0xD829             BHI.N    ??sl_hal_gpio_get_pin_mode_8
+   \       0x70   0xE8DF 0xF004      TBB      [PC, R4]
+   \                     ??sl_hal_gpio_get_pin_mode_0:
+   \       0x74   0x26 0x24          DC8      0x26,0x24,0x22,0x20
+   \              0x22 0x20
+   \       0x78   0x1E 0x1C          DC8      0x1E,0x1C,0x1A,0x18
+   \              0x1A 0x18
+   \       0x7C   0x16 0x14          DC8      0x16,0x14,0x12,0x10
+   \              0x12 0x10
+   \       0x80   0x0E 0x0C          DC8      0xE,0xC,0xA,0x8
+   \              0x0A 0x08
+   \                     ??sl_hal_gpio_get_pin_mode_9: (+1)
+   \       0x84   0x240F             MOVS     R4,#+15
+   \       0x86   0xE022             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_11: (+1)
+   \       0x88   0x240E             MOVS     R4,#+14
+   \       0x8A   0xE020             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_12: (+1)
+   \       0x8C   0x240D             MOVS     R4,#+13
+   \       0x8E   0xE01E             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_13: (+1)
+   \       0x90   0x240C             MOVS     R4,#+12
+   \       0x92   0xE01C             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_14: (+1)
+   \       0x94   0x240B             MOVS     R4,#+11
+   \       0x96   0xE01A             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_15: (+1)
+   \       0x98   0x240A             MOVS     R4,#+10
+   \       0x9A   0xE018             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_16: (+1)
+   \       0x9C   0x2409             MOVS     R4,#+9
+   \       0x9E   0xE016             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_17: (+1)
+   \       0xA0   0x2408             MOVS     R4,#+8
+   \       0xA2   0xE014             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_18: (+1)
+   \       0xA4   0x2407             MOVS     R4,#+7
+   \       0xA6   0xE012             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_19: (+1)
+   \       0xA8   0x2406             MOVS     R4,#+6
+   \       0xAA   0xE010             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_20: (+1)
+   \       0xAC   0x2405             MOVS     R4,#+5
+   \       0xAE   0xE00E             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_21: (+1)
+   \       0xB0   0x2404             MOVS     R4,#+4
+   \       0xB2   0xE00C             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_22: (+1)
+   \       0xB4   0x2403             MOVS     R4,#+3
+   \       0xB6   0xE00A             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_23: (+1)
+   \       0xB8   0x2402             MOVS     R4,#+2
+   \       0xBA   0xE008             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_24: (+1)
+   \       0xBC   0x2401             MOVS     R4,#+1
+   \       0xBE   0xE006             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_25: (+1)
+   \       0xC0   0x2400             MOVS     R4,#+0
+   \       0xC2   0xE004             B.N      ??sl_hal_gpio_get_pin_mode_10
+   \                     ??sl_hal_gpio_get_pin_mode_8: (+1)
+   \       0xC4   0xF240 0x2115      MOVW     R1,#+533
+   \       0xC8   0x4628             MOV      R0,R5
+   \       0xCA   0x.... 0x....      BL       assertEFM
+   \                     ??sl_hal_gpio_get_pin_mode_10: (+1)
+   \       0xCE   0x4620             MOV      R0,R4
+   \       0xD0   0xBD32             POP      {R1,R4,R5,PC}
+    243          }
+    244          
+    245          /***************************************************************************//**
+    246           *   Configure the GPIO pin interrupt.
+    247           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    248          int32_t sl_hal_gpio_configure_external_interrupt(const sl_gpio_t *gpio,
+    249                                                           int32_t int_no,
+    250                                                           sl_gpio_interrupt_flag_t flags)
+    251          {
+   \                     sl_hal_gpio_configure_external_interrupt: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4691             MOV      R9,R2
+    252            EFM_ASSERT(gpio != NULL);
+   \        0xA   0x....             LDR.N    R7,??DataTable6
+   \        0xC   0xD102             BNE.N    ??CrossCallReturnLabel_12
+   \        0xE   0x21FC             MOVS     R1,#+252
+   \       0x10   0x.... 0x....      BL       ?Subroutine1
+    253            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x14   0x7820             LDRB     R0,[R4, #+0]
+   \       0x16   0xB908             CBNZ.N   R0,??sl_hal_gpio_configure_external_interrupt_0
+   \       0x18   0x207F             MOVS     R0,#+127
+   \       0x1A   0xE011             B.N      ??sl_hal_gpio_configure_external_interrupt_1
+   \                     ??sl_hal_gpio_configure_external_interrupt_0: (+1)
+   \       0x1C   0x2801             CMP      R0,#+1
+   \       0x1E   0xBF08             IT       EQ
+   \       0x20   0x2007             MOVEQ    R0,#+7
+   \       0x22   0xD00D             BEQ.N    ??sl_hal_gpio_configure_external_interrupt_1
+   \       0x24   0x2802             CMP      R0,#+2
+   \       0x26   0xBF0C             ITE      EQ
+   \       0x28   0x203F             MOVEQ    R0,#+63
+   \       0x2A   0x2803             CMPNE    R0,#+3
+   \       0x2C   0xD008             BEQ.N    ??sl_hal_gpio_configure_external_interrupt_1
+   \       0x2E   0x2804             CMP      R0,#+4
+   \       0x30   0xBF18             IT       NE
+   \       0x32   0x2805             CMPNE    R0,#+5
+   \       0x34   0xD003             BEQ.N    ??sl_hal_gpio_configure_external_interrupt_2
+   \       0x36   0x2806             CMP      R0,#+6
+   \       0x38   0xBF1C             ITT      NE
+   \       0x3A   0x2807             CMPNE    R0,#+7
+   \       0x3C   0x2808             CMPNE    R0,#+8
+   \                     ??sl_hal_gpio_configure_external_interrupt_2: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_configure_external_interrupt_1: (+1)
+   \       0x40   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \       0x44   0xD402             BMI.N    ??CrossCallReturnLabel_11
+   \       0x46   0x21FD             MOVS     R1,#+253
+   \       0x48   0x.... 0x....      BL       ?Subroutine1
+    254            EFM_ASSERT(SL_GPIO_FLAG_IS_VALID(flags));
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x4C   0xEA5F 0x0009      MOVS     R0,R9
+   \       0x50   0xBF18             IT       NE
+   \       0x52   0xF1B9 0x0F01      CMPNE    R9,#+1
+   \       0x56   0xD008             BEQ.N    ??CrossCallReturnLabel_10
+   \       0x58   0xF1B9 0x0F02      CMP      R9,#+2
+   \       0x5C   0xBF18             IT       NE
+   \       0x5E   0xF1B9 0x0F04      CMPNE    R9,#+4
+   \       0x62   0xD002             BEQ.N    ??CrossCallReturnLabel_10
+   \       0x64   0x21FE             MOVS     R1,#+254
+   \       0x66   0x.... 0x....      BL       ?Subroutine1
+    255            EFM_ASSERT(sl_hal_gpio_get_lock_status() == 0);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x6A   0x....             LDR.N    R0,??DataTable6_1
+   \       0x6C   0x6800             LDR      R0,[R0, #+0]
+   \       0x6E   0xB110             CBZ.N    R0,??CrossCallReturnLabel_9
+   \       0x70   0x21FF             MOVS     R1,#+255
+   \       0x72   0x.... 0x....      BL       ?Subroutine1
+    256          
+    257            if (int_no != SL_GPIO_INTERRUPT_UNAVAILABLE && int_no >= 0) {
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x76   0x.... 0x....      LDR.W    R8,??DataTable6_3
+   \       0x7A   0xF115 0x0F01      CMN      R5,#+1
+   \       0x7E   0xD00D             BEQ.N    ??sl_hal_gpio_configure_external_interrupt_3
+   \       0x80   0x2D00             CMP      R5,#+0
+   \       0x82   0xD424             BMI.N    ??sl_hal_gpio_configure_external_interrupt_4
+    258          #if defined(_GPIO_EXTIPINSELL_MASK)
+    259              EFM_ASSERT(SL_HAL_GPIO_INTNO_PIN_VALID(int_no, gpio->pin));
+   \       0x84   0x7861             LDRB     R1,[R4, #+1]
+   \       0x86   0x08A8             LSRS     R0,R5,#+2
+   \       0x88   0x0080             LSLS     R0,R0,#+2
+   \       0x8A   0x0889             LSRS     R1,R1,#+2
+   \       0x8C   0xEBB0 0x0F81      CMP      R0,R1, LSL #+2
+   \       0x90   0xD01F             BEQ.N    ??sl_hal_gpio_configure_external_interrupt_5
+   \       0x92   0xF240 0x1103      MOVW     R1,#+259
+   \       0x96   0x.... 0x....      BL       ?Subroutine1
+    260          #endif
+    261            }
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x9A   0xE01A             B.N      ??sl_hal_gpio_configure_external_interrupt_5
+    262          
+    263          #if !defined(_GPIO_EXTIPINSELL_MASK)
+    264            int_no = gpio->pin;
+    265          #endif
+    266          
+    267            if (int_no == SL_GPIO_INTERRUPT_UNAVAILABLE) {
+    268              uint32_t interrupts_enabled = sl_hal_gpio_get_enabled_interrupts();
+   \                     ??sl_hal_gpio_configure_external_interrupt_3: (+1)
+   \       0x9C   0xF8D8 0x0010      LDR      R0,[R8, #+16]
+    269              int_no = sl_hal_gpio_get_external_interrupt_number(gpio->pin, interrupts_enabled);
+   \       0xA0   0x7861             LDRB     R1,[R4, #+1]
+   \       0xA2   0xF640 0x72FC      MOVW     R2,#+4092
+   \       0xA6   0xF04F 0x35FF      MOV      R5,#+4294967295
+   \       0xAA   0x400A             ANDS     R2,R2,R1
+   \       0xAC   0x2300             MOVS     R3,#+0
+   \                     ??sl_hal_gpio_configure_external_interrupt_6: (+1)
+   \       0xAE   0xFA51 0xF783      UXTAB    R7,R1,R3
+   \       0xB2   0xF007 0x0703      AND      R7,R7,#0x3
+   \       0xB6   0x18BF             ADDS     R7,R7,R2
+   \       0xB8   0xFA20 0xF607      LSR      R6,R0,R7
+   \       0xBC   0x07F6             LSLS     R6,R6,#+31
+   \       0xBE   0xD517             BPL.N    ??sl_hal_gpio_configure_external_interrupt_7
+   \       0xC0   0x1C5B             ADDS     R3,R3,#+1
+   \       0xC2   0xB2DF             UXTB     R7,R3
+   \       0xC4   0x2F03             CMP      R7,#+3
+   \       0xC6   0xDDF2             BLE.N    ??sl_hal_gpio_configure_external_interrupt_6
+    270            }
+    271          
+    272            if (int_no != SL_GPIO_INTERRUPT_UNAVAILABLE && int_no >= 0) {
+   \                     ??sl_hal_gpio_configure_external_interrupt_8: (+1)
+   \       0xC8   0xF115 0x0F01      CMN      R5,#+1
+   \       0xCC   0xD036             BEQ.N    ??sl_hal_gpio_configure_external_interrupt_9
+   \                     ??sl_hal_gpio_configure_external_interrupt_4: (+1)
+   \       0xCE   0x2D00             CMP      R5,#+0
+   \       0xD0   0xD434             BMI.N    ??sl_hal_gpio_configure_external_interrupt_9
+    273              if (int_no < 8) {
+   \                     ??sl_hal_gpio_configure_external_interrupt_5: (+1)
+   \       0xD2   0x2703             MOVS     R7,#+3
+   \       0xD4   0x7822             LDRB     R2,[R4, #+0]
+   \       0xD6   0x2D08             CMP      R5,#+8
+   \       0xD8   0xDA0C             BGE.N    ??sl_hal_gpio_configure_external_interrupt_10
+    274                // The EXTIPSELL register controls pins 0-7 of the interrupt configuration.
+    275          #if defined(_GPIO_EXTIPSELL_EXTIPSEL0_MASK)
+    276                sl_hal_bus_reg_write_mask(&GPIO->EXTIPSELL,
+    277                                          _GPIO_EXTIPSELL_EXTIPSEL0_MASK
+    278                                          << (_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT * int_no),
+    279                                          (uint32_t)gpio->port << (_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT * int_no));
+   \       0xDA   0x00AE             LSLS     R6,R5,#+2
+   \       0xDC   0x40B7             LSLS     R7,R7,R6
+   \       0xDE   0x40B2             LSLS     R2,R2,R6
+   \       0xE0   0x4639             MOV      R1,R7
+   \       0xE2   0x....             LDR.N    R0,??DataTable6_4
+   \       0xE4   0x.... 0x....      BL       sl_hal_bus_reg_write_mask
+    280          #endif
+    281                // The EXTIPINSELL register controls interrupt 0-7 of the interrupt/pin number mapping.
+    282          #if defined(_GPIO_EXTIPINSELL_EXTIPINSEL0_MASK)
+    283                sl_hal_bus_reg_write_mask(&GPIO->EXTIPINSELL,
+    284                                          _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK
+    285                                          << (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * int_no),
+    286                                          ((gpio->pin % 4) & _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK)
+    287                                          << (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * int_no));
+   \       0xE8   0x.... 0x....      BL       ?Subroutine2
+    288          #endif
+    289              } else {
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0xEC   0x....             LDR.N    R0,??DataTable6_5
+   \       0xEE   0xE00D             B.N      ??sl_hal_gpio_configure_external_interrupt_11
+   \                     ??sl_hal_gpio_configure_external_interrupt_7: (+1)
+   \       0xF0   0x463D             MOV      R5,R7
+   \       0xF2   0xE7E9             B.N      ??sl_hal_gpio_configure_external_interrupt_8
+    290                // EXTIPSELH controls pins 8-15 of the interrupt configuration.
+    291          #if defined(_GPIO_EXTIPSELH_EXTIPSEL0_MASK)
+    292                uint32_t tmp = int_no - 8;
+   \                     ??sl_hal_gpio_configure_external_interrupt_10: (+1)
+   \       0xF4   0xF1A5 0x0008      SUB      R0,R5,#+8
+    293                sl_hal_bus_reg_write_mask(&GPIO->EXTIPSELH,
+    294                                          _GPIO_EXTIPSELH_EXTIPSEL0_MASK
+    295                                          << (_GPIO_EXTIPSELH_EXTIPSEL1_SHIFT * tmp),
+    296                                          (uint32_t)gpio->port << (_GPIO_EXTIPSELH_EXTIPSEL1_SHIFT * tmp));
+   \       0xF8   0x0086             LSLS     R6,R0,#+2
+   \       0xFA   0x40B7             LSLS     R7,R7,R6
+   \       0xFC   0x40B2             LSLS     R2,R2,R6
+   \       0xFE   0x4639             MOV      R1,R7
+   \      0x100   0x....             LDR.N    R0,??DataTable6_6
+   \      0x102   0x.... 0x....      BL       sl_hal_bus_reg_write_mask
+    297          #endif
+    298                // EXTIPINSELH controls interrupt 8-15 of the interrupt/pin number mapping.
+    299          #if defined(_GPIO_EXTIPINSELH_EXTIPINSEL0_MASK)
+    300                sl_hal_bus_reg_write_mask(&GPIO->EXTIPINSELH,
+    301                                          _GPIO_EXTIPINSELH_EXTIPINSEL0_MASK
+    302                                          << (_GPIO_EXTIPINSELH_EXTIPINSEL1_SHIFT * tmp),
+    303                                          ((gpio->pin % 4) & _GPIO_EXTIPINSELH_EXTIPINSEL0_MASK)
+    304                                          << (_GPIO_EXTIPINSELH_EXTIPINSEL1_SHIFT * tmp));
+   \      0x106   0x.... 0x....      BL       ?Subroutine2
+    305          #endif
+    306              }
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \      0x10A   0x....             LDR.N    R0,??DataTable6_7
+   \                     ??sl_hal_gpio_configure_external_interrupt_11: (+1)
+   \      0x10C   0x.... 0x....      BL       sl_hal_bus_reg_write_mask
+    307          
+    308              // Enable/disable rising edge interrupt.
+    309              (((flags & SL_GPIO_INTERRUPT_RISING_EDGE) == SL_GPIO_INTERRUPT_RISING_EDGE)
+    310               || ((flags & SL_GPIO_INTERRUPT_RISING_FALLING_EDGE) == SL_GPIO_INTERRUPT_RISING_FALLING_EDGE)) \
+    311              ? sl_hal_bus_reg_write_bit(&(GPIO->EXTIRISE), int_no, true)                                     \
+    312              : sl_hal_bus_reg_write_bit(&(GPIO->EXTIRISE), int_no, false);
+   \      0x110   0x....             LDR.N    R0,??DataTable6_8
+   \      0x112   0xF019 0x0F05      TST      R9,#0x5
+   \      0x116   0xBF14             ITE      NE
+   \      0x118   0x2201             MOVNE    R2,#+1
+   \      0x11A   0x2200             MOVEQ    R2,#+0
+   \      0x11C   0x4629             MOV      R1,R5
+   \      0x11E   0x.... 0x....      BL       sl_hal_bus_reg_write_bit
+    313          
+    314              // Enable/disable falling edge interrupt.
+    315              (((flags & SL_GPIO_INTERRUPT_FALLING_EDGE) == SL_GPIO_INTERRUPT_FALLING_EDGE)
+    316               || (flags & SL_GPIO_INTERRUPT_RISING_FALLING_EDGE) == SL_GPIO_INTERRUPT_RISING_FALLING_EDGE) \
+    317              ? sl_hal_bus_reg_write_bit(&(GPIO->EXTIFALL), int_no, true)                                   \
+    318              : sl_hal_bus_reg_write_bit(&(GPIO->EXTIFALL), int_no, false);
+   \      0x122   0xF019 0x0F06      TST      R9,#0x6
+   \      0x126   0xBF14             ITE      NE
+   \      0x128   0x2201             MOVNE    R2,#+1
+   \      0x12A   0x2200             MOVEQ    R2,#+0
+   \      0x12C   0x4629             MOV      R1,R5
+   \      0x12E   0x4640             MOV      R0,R8
+   \      0x130   0x.... 0x....      BL       sl_hal_bus_reg_write_bit
+    319          
+    320              // Clear any pending interrupt.
+    321              sl_hal_gpio_clear_interrupts(1 << int_no);
+   \      0x134   0x2001             MOVS     R0,#+1
+   \      0x136   0x40A8             LSLS     R0,R0,R5
+   \      0x138   0x....             LDR.N    R1,??DataTable6_9
+   \      0x13A   0x6008             STR      R0,[R1, #+0]
+    322            }
+    323          
+    324            return int_no;
+   \                     ??sl_hal_gpio_configure_external_interrupt_9: (+1)
+   \      0x13C   0x4628             MOV      R0,R5
+   \      0x13E   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    325          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x7860             LDRB     R0,[R4, #+1]
+   \        0x2   0x4639             MOV      R1,R7
+   \        0x4   0xF000 0x0003      AND      R0,R0,#0x3
+   \        0x8   0xFA00 0xF206      LSL      R2,R0,R6
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4638             MOV      R0,R7
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    326          
+    327          /**************************************************************************//**
+    328           *   Enable GPIO pin wake-up from EM4. When the function exits,
+    329           *   EM4 mode can be safely entered.
+    330           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    331          void sl_hal_gpio_enable_pin_em4_wakeup(uint32_t pinmask,
+    332                                                 uint32_t polaritymask)
+    333          {
+   \                     sl_hal_gpio_enable_pin_em4_wakeup: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    334            EFM_ASSERT((pinmask & ~_GPIO_EM4WUEN_MASK) == 0);
+   \        0x4   0x....             LDR.N    R7,??DataTable6_10
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x....             LDR.N    R6,??DataTable6
+   \        0xA   0x423C             TST      R4,R7
+   \        0xC   0xD004             BEQ.N    ??sl_hal_gpio_enable_pin_em4_wakeup_0
+   \        0xE   0xF44F 0x71A7      MOV      R1,#+334
+   \       0x12   0x4630             MOV      R0,R6
+   \       0x14   0x.... 0x....      BL       assertEFM
+    335            EFM_ASSERT((polaritymask & ~_GPIO_EM4WUPOL_MASK) == 0);
+   \                     ??sl_hal_gpio_enable_pin_em4_wakeup_0: (+1)
+   \       0x18   0x423D             TST      R5,R7
+   \       0x1A   0xD004             BEQ.N    ??sl_hal_gpio_enable_pin_em4_wakeup_1
+   \       0x1C   0xF240 0x114F      MOVW     R1,#+335
+   \       0x20   0x4630             MOV      R0,R6
+   \       0x22   0x.... 0x....      BL       assertEFM
+    336          
+    337            GPIO->EM4WUPOL &= ~pinmask;               // Set the wakeup polarity.
+   \                     ??sl_hal_gpio_enable_pin_em4_wakeup_1: (+1)
+   \       0x26   0x....             LDR.N    R0,??DataTable6_11
+   \       0x28   0x6841             LDR      R1,[R0, #+4]
+    338            GPIO->EM4WUPOL |= pinmask & polaritymask;
+   \       0x2A   0x4025             ANDS     R5,R5,R4
+   \       0x2C   0x43A1             BICS     R1,R1,R4
+   \       0x2E   0x6041             STR      R1,[R0, #+4]
+   \       0x30   0x6842             LDR      R2,[R0, #+4]
+   \       0x32   0x4315             ORRS     R5,R5,R2
+   \       0x34   0x6045             STR      R5,[R0, #+4]
+    339            GPIO->EM4WUEN  |= pinmask;                // Enable wakeup.
+   \       0x36   0x6801             LDR      R1,[R0, #+0]
+   \       0x38   0x4321             ORRS     R1,R4,R1
+   \       0x3A   0x6001             STR      R1,[R0, #+0]
+    340          
+    341            sl_hal_gpio_set_pin_em4_retention(true);  // Enable the pin retention.
+   \       0x3C   0x....             LDR.N    R0,??DataTable6_12
+   \       0x3E   0x6801             LDR      R1,[R0, #+0]
+   \       0x40   0xF001 0x0130      AND      R1,R1,#0x30
+   \       0x44   0x2920             CMP      R1,#+32
+   \       0x46   0xD004             BEQ.N    ??sl_hal_gpio_enable_pin_em4_wakeup_2
+   \       0x48   0x6802             LDR      R2,[R0, #+0]
+   \       0x4A   0x2101             MOVS     R1,#+1
+   \       0x4C   0xF361 0x1205      BFI      R2,R1,#+4,#+2
+   \       0x50   0x6002             STR      R2,[R0, #+0]
+    342            sl_hal_gpio_clear_interrupts(pinmask);    // clear any pending interrupt.
+   \                     ??sl_hal_gpio_enable_pin_em4_wakeup_2: (+1)
+   \       0x52   0x....             LDR.N    R0,??DataTable6_9
+   \       0x54   0x6004             STR      R4,[R0, #+0]
+    343          }
+   \       0x56   0xBDF1             POP      {R0,R4-R7,PC}
+    344          
+    345          /***************************************************************************//**
+    346           *    Configure EM4WU pins as external level-sensitive interrupts.
+    347           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    348          int32_t sl_hal_gpio_configure_wakeup_em4_external_interrupt(const sl_gpio_t *gpio,
+    349                                                                      int32_t int_no,
+    350                                                                      bool polarity)
+    351          {
+   \                     sl_hal_gpio_configure_wakeup_em4_external_interrupt: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    352            EFM_ASSERT(gpio != NULL);
+   \        0x4   0x....             LDR.N    R7,??DataTable6_13
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x460D             MOV      R5,R1
+   \        0xA   0x4616             MOV      R6,R2
+   \        0xC   0xF107 0x0888      ADD      R8,R7,#+136
+   \       0x10   0xD103             BNE.N    ??CrossCallReturnLabel_2
+   \       0x12   0xF44F 0x71B0      MOV      R1,#+352
+   \       0x16   0x.... 0x....      BL       ?Subroutine0
+    353            EFM_ASSERT(SL_HAL_GPIO_PORT_PIN_IS_VALID(gpio->port, gpio->pin));
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x1A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x1C   0xB908             CBNZ.N   R0,??sl_hal_gpio_configure_wakeup_em4_external_int_0
+   \       0x1E   0x207F             MOVS     R0,#+127
+   \       0x20   0xE010             B.N      ??sl_hal_gpio_configure_wakeup_em4_external_int_1
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_0: (+1)
+   \       0x22   0x2801             CMP      R0,#+1
+   \       0x24   0xBF08             IT       EQ
+   \       0x26   0x2007             MOVEQ    R0,#+7
+   \       0x28   0xD00C             BEQ.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_1
+   \       0x2A   0x2802             CMP      R0,#+2
+   \       0x2C   0xBF0C             ITE      EQ
+   \       0x2E   0x203F             MOVEQ    R0,#+63
+   \       0x30   0x2803             CMPNE    R0,#+3
+   \       0x32   0xD007             BEQ.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_1
+   \       0x34   0x2804             CMP      R0,#+4
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0x2805             CMPNE    R0,#+5
+   \       0x3A   0xD002             BEQ.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_2
+   \       0x3C   0x2806             CMP      R0,#+6
+   \       0x3E   0xBF18             IT       NE
+   \       0x40   0x2807             CMPNE    R0,#+7
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_2: (+1)
+   \       0x42   0x2000             MOVS     R0,#+0
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_1: (+1)
+   \       0x44   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x48   0xD403             BMI.N    ??CrossCallReturnLabel_1
+   \       0x4A   0xF240 0x1161      MOVW     R1,#+353
+   \       0x4E   0x.... 0x....      BL       ?Subroutine0
+    354            EFM_ASSERT(sl_hal_gpio_get_lock_status() == 0);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x52   0x....             LDR.N    R0,??DataTable6_1
+   \       0x54   0x6800             LDR      R0,[R0, #+0]
+   \       0x56   0xB118             CBZ.N    R0,??CrossCallReturnLabel_0
+   \       0x58   0xF44F 0x71B1      MOV      R1,#+354
+   \       0x5C   0x.... 0x....      BL       ?Subroutine0
+    355          
+    356          #if defined(HSIO_PRESENT)
+    357            bool is_hsio = sl_hal_gpio_is_hsio_port(gpio->port);
+    358            if (is_hsio) {
+    359              return SL_GPIO_INTERRUPT_UNAVAILABLE;
+    360            }
+    361          #endif
+    362          
+    363            int32_t em4_int_no = sl_hal_gpio_get_em4_interrupt_number(gpio);
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x60   0xB91C             CBNZ.N   R4,??CrossCallReturnLabel_7
+   \       0x62   0xF44F 0x6187      MOV      R1,#+1080
+   \       0x66   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x6A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x6C   0xB920             CBNZ.N   R0,??sl_hal_gpio_configure_wakeup_em4_external_int_3
+   \       0x6E   0x7860             LDRB     R0,[R4, #+1]
+   \       0x70   0x2805             CMP      R0,#+5
+   \       0x72   0xD112             BNE.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_4
+   \       0x74   0x2000             MOVS     R0,#+0
+   \       0x76   0xE012             B.N      ??sl_hal_gpio_configure_wakeup_em4_external_int_5
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_3: (+1)
+   \       0x78   0x2801             CMP      R0,#+1
+   \       0x7A   0xD104             BNE.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_6
+   \       0x7C   0x7860             LDRB     R0,[R4, #+1]
+   \       0x7E   0x2801             CMP      R0,#+1
+   \       0x80   0xD10B             BNE.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_4
+   \       0x82   0x2003             MOVS     R0,#+3
+   \       0x84   0xE00B             B.N      ??sl_hal_gpio_configure_wakeup_em4_external_int_5
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_6: (+1)
+   \       0x86   0x2802             CMP      R0,#+2
+   \       0x88   0xD107             BNE.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_4
+   \       0x8A   0x7860             LDRB     R0,[R4, #+1]
+   \       0x8C   0xB908             CBNZ.N   R0,??sl_hal_gpio_configure_wakeup_em4_external_int_7
+   \       0x8E   0x2006             MOVS     R0,#+6
+   \       0x90   0xE005             B.N      ??sl_hal_gpio_configure_wakeup_em4_external_int_5
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_7: (+1)
+   \       0x92   0x2805             CMP      R0,#+5
+   \       0x94   0xBF08             IT       EQ
+   \       0x96   0x2007             MOVEQ    R0,#+7
+   \       0x98   0xD001             BEQ.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_5
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_4: (+1)
+   \       0x9A   0xF04F 0x30FF      MOV      R0,#+4294967295
+    364          
+    365            if (int_no == SL_GPIO_INTERRUPT_UNAVAILABLE) {
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_5: (+1)
+   \       0x9E   0xF115 0x0F01      CMN      R5,#+1
+   \       0xA2   0xBF08             IT       EQ
+   \       0xA4   0x4605             MOVEQ    R5,R0
+    366              int_no = em4_int_no;
+    367            }
+    368          
+    369            if (em4_int_no == SL_GPIO_INTERRUPT_UNAVAILABLE || int_no != em4_int_no) {
+   \       0xA6   0xF110 0x0F01      CMN      R0,#+1
+   \       0xAA   0xD001             BEQ.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_8
+   \       0xAC   0x4285             CMP      R5,R0
+   \       0xAE   0xD002             BEQ.N    ??sl_hal_gpio_configure_wakeup_em4_external_int_9
+    370              return SL_GPIO_INTERRUPT_UNAVAILABLE;
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_8: (+1)
+   \       0xB0   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0xB4   0xE010             B.N      ??sl_hal_gpio_configure_wakeup_em4_external_int_10
+    371            }
+    372          
+    373            if (int_no != SL_GPIO_INTERRUPT_UNAVAILABLE) {
+    374              // GPIO pin mode set.
+    375              sl_hal_gpio_set_pin_mode(gpio, SL_GPIO_MODE_INPUT_PULL_FILTER, (unsigned int)!polarity);
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_9: (+1)
+   \       0xB6   0x1E72             SUBS     R2,R6,#+1
+   \       0xB8   0x4192             SBCS     R2,R2,R2
+   \       0xBA   0x0FD2             LSRS     R2,R2,#+31
+   \       0xBC   0x2103             MOVS     R1,#+3
+   \       0xBE   0x4620             MOV      R0,R4
+   \       0xC0   0x.... 0x....      BL       sl_hal_gpio_set_pin_mode
+    376          
+    377              // Enable EM4WU function and set polarity.
+    378              uint32_t polarityMask = (uint32_t)polarity << (int_no + _GPIO_EM4WUEN_EM4WUEN_SHIFT);
+    379              uint32_t pinmask =  1UL << (int_no + _GPIO_EM4WUEN_EM4WUEN_SHIFT);
+    380          
+    381              sl_hal_gpio_enable_pin_em4_wakeup(pinmask, polarityMask);
+   \       0xC4   0xF105 0x0010      ADD      R0,R5,#+16
+   \       0xC8   0xFA06 0xF100      LSL      R1,R6,R0
+   \       0xCC   0x2201             MOVS     R2,#+1
+   \       0xCE   0xFA02 0xF000      LSL      R0,R2,R0
+   \       0xD2   0x.... 0x....      BL       sl_hal_gpio_enable_pin_em4_wakeup
+    382            }
+    383          
+    384            return int_no;
+   \       0xD6   0x4628             MOV      R0,R5
+   \                     ??sl_hal_gpio_configure_wakeup_em4_external_int_10: (+1)
+   \       0xD8   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    385          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     ?_0+136
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x5003'C310        DC32     0x5003c310
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x5003'C000        DC32     0x5003c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x5003'C414        DC32     0x5003c414
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x5003'C400        DC32     0x5003c400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x5003'C408        DC32     0x5003c408
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x5003'C404        DC32     0x5003c404
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x5003'C40C        DC32     0x5003c40c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x5003'C410        DC32     0x5003c410
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x5003'E420        DC32     0x5003e420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \        0x0   0xF000'FFFF        DC32     0xf000ffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_11:
+   \        0x0   0x5003'C42C        DC32     0x5003c42c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_12:
+   \        0x0   0x5000'406C        DC32     0x5000406c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_13:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70, 0x68
+   \              0x70 0x65    
+   \              0x72 0x69    
+   \              0x70 0x68
+   \       0x70   0x65 0x72          DC8 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x69, 0x6E, 0x63
+   \              0x61 0x6C    
+   \              0x5C 0x69    
+   \              0x6E 0x63
+   \       0x78   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C, 0x5F
+   \              0x6C 0x5F    
+   \              0x68 0x61    
+   \              0x6C 0x5F
+   \       0x80   0x67 0x70          DC8 0x67, 0x70, 0x69, 0x6F, 0x2E, 0x68, 0
+   \              0x69 0x6F    
+   \              0x2E 0x68    
+   \              0x00
+   \       0x87                      DS8 1
+   \       0x88   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x90   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x98   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0xA0   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0xA8   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0xB0   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0xB8   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0xC0   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0xC8   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0xD0   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0xD8   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0xE0   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0xE8   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0xF0   0x6D 0x5C          DC8 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70, 0x68
+   \              0x70 0x65    
+   \              0x72 0x69    
+   \              0x70 0x68
+   \       0xF8   0x65 0x72          DC8 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x73, 0x72, 0x63
+   \              0x61 0x6C    
+   \              0x5C 0x73    
+   \              0x72 0x63
+   \      0x100   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C, 0x5F
+   \              0x6C 0x5F    
+   \              0x68 0x61    
+   \              0x6C 0x5F
+   \      0x108   0x67 0x70          DC8 0x67, 0x70, 0x69, 0x6F, 0x2E, 0x63, 0
+   \              0x69 0x6F    
+   \              0x2E 0x63    
+   \              0x00
+   \      0x10F                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70, 0x68
+   \              0x70 0x65    
+   \              0x72 0x69    
+   \              0x70 0x68
+   \       0x70   0x65 0x72          DC8 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x69, 0x6E, 0x63
+   \              0x61 0x6C    
+   \              0x5C 0x69    
+   \              0x6E 0x63
+   \       0x78   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C, 0x5F
+   \              0x6C 0x5F    
+   \              0x68 0x61    
+   \              0x6C 0x5F
+   \       0x80   0x62 0x75          DC8 0x62, 0x75, 0x73, 0x2E, 0x68, 0
+   \              0x73 0x2E    
+   \              0x68 0x00
+   \       0x86                      DS8 2
+    386          
+    387          /*******************************************************************************
+    388           ***************************   LOCAL FUNCTIONS   *******************************
+    389           ******************************************************************************/
+    390          
+    391          static sl_gpio_mode_t sl_hal_gpio_map_gpio_mode(sl_gpio_mode_t mode)
+    392          {
+    393            switch (mode) {
+    394              #if defined(_GPIO_P_MODEL_MODE0_DISABLED)
+    395                  case SL_GPIO_MODE_DISABLED:
+    396                    return  _GPIO_P_MODEL_MODE0_DISABLED;
+    397              #endif
+    398              #if defined(_GPIO_P_MODEL_MODE0_INPUT)
+    399                  case SL_GPIO_MODE_INPUT:
+    400                    return _GPIO_P_MODEL_MODE0_INPUT;
+    401              #endif
+    402              #if defined(_GPIO_P_MODEL_MODE0_INPUTPULL)
+    403                  case SL_GPIO_MODE_INPUT_PULL:
+    404                    return _GPIO_P_MODEL_MODE0_INPUTPULL;
+    405              #endif
+    406              #if defined(_GPIO_P_MODEL_MODE0_INPUTPULLFILTER)
+    407                  case SL_GPIO_MODE_INPUT_PULL_FILTER:
+    408                    return _GPIO_P_MODEL_MODE0_INPUTPULLFILTER;
+    409              #endif
+    410              #if defined(_GPIO_P_MODEL_MODE0_PUSHPULL)
+    411                  case SL_GPIO_MODE_PUSH_PULL:
+    412                    return _GPIO_P_MODEL_MODE0_PUSHPULL;
+    413              #endif
+    414              #if defined(_GPIO_P_MODEL_MODE0_PUSHPULLALT)
+    415                  case SL_GPIO_MODE_PUSH_PULL_ALTERNATE:
+    416                    return _GPIO_P_MODEL_MODE0_PUSHPULLALT;
+    417              #endif
+    418              #if defined(_GPIO_P_MODEL_MODE0_WIREDOR)
+    419                  case SL_GPIO_MODE_WIRED_OR:
+    420                    return _GPIO_P_MODEL_MODE0_WIREDOR;
+    421              #endif
+    422              #if defined(_GPIO_P_MODEL_MODE0_WIREDORPULLDOWN)
+    423                  case SL_GPIO_MODE_WIRED_OR_PULL_DOWN:
+    424                    return _GPIO_P_MODEL_MODE0_WIREDORPULLDOWN;
+    425              #endif
+    426              #if defined(_GPIO_P_MODEL_MODE0_WIREDAND)
+    427                  case SL_GPIO_MODE_WIRED_AND:
+    428                    return _GPIO_P_MODEL_MODE0_WIREDAND;
+    429              #endif
+    430              #if defined(_GPIO_P_MODEL_MODE0_WIREDANDFILTER)
+    431                  case SL_GPIO_MODE_WIRED_AND_FILTER:
+    432                    return _GPIO_P_MODEL_MODE0_WIREDANDFILTER;
+    433              #endif
+    434              #if defined(_GPIO_P_MODEL_MODE0_WIREDANDPULLUP)
+    435                  case SL_GPIO_MODE_WIRED_AND_PULLUP:
+    436                    return _GPIO_P_MODEL_MODE0_WIREDANDPULLUP;
+    437              #endif
+    438              #if defined(_GPIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER)
+    439                  case SL_GPIO_MODE_WIRED_AND_PULLUP_FILTER:
+    440                    return _GPIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER;
+    441              #endif
+    442              #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALT)
+    443                  case SL_GPIO_MODE_WIRED_AND_ALTERNATE:
+    444                    return _GPIO_P_MODEL_MODE0_WIREDANDALT;
+    445              #endif
+    446              #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALTFILTER)
+    447                  case SL_GPIO_MODE_WIRED_AND_ALTERNATE_FILTER:
+    448                    return _GPIO_P_MODEL_MODE0_WIREDANDALTFILTER;
+    449              #endif
+    450              #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALTPULLUP)
+    451                  case SL_GPIO_MODE_WIRED_AND_ALTERNATE_PULLUP:
+    452                    return _GPIO_P_MODEL_MODE0_WIREDANDALTPULLUP;
+    453              #endif
+    454              #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALTPULLUPFILTER)
+    455                  case SL_GPIO_MODE_WIRED_AND_ALTERNATE_PULLUP_FILTER:
+    456                    return _GPIO_P_MODEL_MODE0_WIREDANDALTPULLUPFILTER;
+    457              #endif
+    458                  default:
+    459                    EFM_ASSERT(false);
+    460                    return SL_GPIO_MODE_DISABLED;
+    461              }
+    462          }
+    463          
+    464          static sl_gpio_mode_t sl_hal_gpio_map_gpio_reg_to_mode(sl_gpio_mode_t mode)
+    465          {
+    466            // Map the hardware-specific mode to the corresponding sl_gpio_mode_t value
+    467            switch (mode) {
+    468          #if defined(_GPIO_P_MODEL_MODE0_DISABLED)
+    469              case _GPIO_P_MODEL_MODE0_DISABLED:
+    470                return SL_GPIO_MODE_DISABLED;
+    471          #endif
+    472          #if defined(_GPIO_P_MODEL_MODE0_INPUT)
+    473              case _GPIO_P_MODEL_MODE0_INPUT:
+    474                return SL_GPIO_MODE_INPUT;
+    475          #endif
+    476          #if defined(_GPIO_P_MODEL_MODE0_INPUTPULL)
+    477              case _GPIO_P_MODEL_MODE0_INPUTPULL:
+    478                return SL_GPIO_MODE_INPUT_PULL;
+    479          #endif
+    480          #if defined(_GPIO_P_MODEL_MODE0_INPUTPULLFILTER)
+    481              case _GPIO_P_MODEL_MODE0_INPUTPULLFILTER:
+    482                return SL_GPIO_MODE_INPUT_PULL_FILTER;
+    483          #endif
+    484          #if defined(_GPIO_P_MODEL_MODE0_PUSHPULL)
+    485              case _GPIO_P_MODEL_MODE0_PUSHPULL:
+    486                return SL_GPIO_MODE_PUSH_PULL;
+    487          #endif
+    488          #if defined(_GPIO_P_MODEL_MODE0_PUSHPULLALT)
+    489              case _GPIO_P_MODEL_MODE0_PUSHPULLALT:
+    490                return SL_GPIO_MODE_PUSH_PULL_ALTERNATE;
+    491          #endif
+    492          #if defined(_GPIO_P_MODEL_MODE0_WIREDOR)
+    493              case _GPIO_P_MODEL_MODE0_WIREDOR:
+    494                return SL_GPIO_MODE_WIRED_OR;
+    495          #endif
+    496          #if defined(_GPIO_P_MODEL_MODE0_WIREDORPULLDOWN)
+    497              case _GPIO_P_MODEL_MODE0_WIREDORPULLDOWN:
+    498                return SL_GPIO_MODE_WIRED_OR_PULL_DOWN;
+    499          #endif
+    500          #if defined(_GPIO_P_MODEL_MODE0_WIREDAND)
+    501              case _GPIO_P_MODEL_MODE0_WIREDAND:
+    502                return SL_GPIO_MODE_WIRED_AND;
+    503          #endif
+    504          #if defined(_GPIO_P_MODEL_MODE0_WIREDANDFILTER)
+    505              case _GPIO_P_MODEL_MODE0_WIREDANDFILTER:
+    506                return SL_GPIO_MODE_WIRED_AND_FILTER;
+    507          #endif
+    508          #if defined(_GPIO_P_MODEL_MODE0_WIREDANDPULLUP)
+    509              case _GPIO_P_MODEL_MODE0_WIREDANDPULLUP:
+    510                return SL_GPIO_MODE_WIRED_AND_PULLUP;
+    511          #endif
+    512          #if defined(_GPIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER)
+    513              case _GPIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER:
+    514                return SL_GPIO_MODE_WIRED_AND_PULLUP_FILTER;
+    515          #endif
+    516          #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALT)
+    517              case _GPIO_P_MODEL_MODE0_WIREDANDALT:
+    518                return SL_GPIO_MODE_WIRED_AND_ALTERNATE;
+    519          #endif
+    520          #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALTFILTER)
+    521              case _GPIO_P_MODEL_MODE0_WIREDANDALTFILTER:
+    522                return SL_GPIO_MODE_WIRED_AND_ALTERNATE_FILTER;
+    523          #endif
+    524          #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALTPULLUP)
+    525              case _GPIO_P_MODEL_MODE0_WIREDANDALTPULLUP:
+    526                return SL_GPIO_MODE_WIRED_AND_ALTERNATE_PULLUP;
+    527          #endif
+    528          #if defined(_GPIO_P_MODEL_MODE0_WIREDANDALTPULLUPFILTER)
+    529              case _GPIO_P_MODEL_MODE0_WIREDANDALTPULLUPFILTER:
+    530                return SL_GPIO_MODE_WIRED_AND_ALTERNATE_PULLUP_FILTER;
+    531          #endif
+    532              default:
+    533                EFM_ASSERT(false);
+    534                return mode; // returning the default state
+    535            }
+    536          }
+    537          
+    538          #if defined(HSIO_PRESENT)
+    539          // Map logical GPIO mode to HSIO register encoding (HSIO MODEL/MODEH only).
+    540          static sl_gpio_mode_t sl_hal_gpio_map_hsio_mode(sl_gpio_mode_t mode)
+    541          {
+    542            switch (mode) {
+    543          #if defined(_HSIO_P_MODEL_MODE0_DISABLED)
+    544              case SL_GPIO_MODE_DISABLED:
+    545                return _HSIO_P_MODEL_MODE0_DISABLED;
+    546          #endif
+    547          #if defined(_HSIO_P_MODEL_MODE0_INPUT)
+    548              case SL_GPIO_MODE_INPUT:
+    549                return _HSIO_P_MODEL_MODE0_INPUT;
+    550          #endif
+    551          #if defined(_HSIO_P_MODEL_MODE0_INPUTPULL)
+    552              case SL_GPIO_MODE_INPUT_PULL:
+    553                return _HSIO_P_MODEL_MODE0_INPUTPULL;
+    554          #endif
+    555          #if defined(_HSIO_P_MODEL_MODE0_INPUTPULLFILTER)
+    556              case SL_GPIO_MODE_INPUT_PULL_FILTER:
+    557                return _HSIO_P_MODEL_MODE0_INPUTPULLFILTER;
+    558          #endif
+    559          #if defined(_HSIO_P_MODEL_MODE0_PUSHPULL)
+    560              case SL_GPIO_MODE_PUSH_PULL:
+    561                return _HSIO_P_MODEL_MODE0_PUSHPULL;
+    562          #endif
+    563          #if defined(_HSIO_P_MODEL_MODE0_WIREDOR)
+    564              case SL_GPIO_MODE_WIRED_OR:
+    565                return _HSIO_P_MODEL_MODE0_WIREDOR;
+    566          #endif
+    567          #if defined(_HSIO_P_MODEL_MODE0_WIREDORPULLDOWN)
+    568              case SL_GPIO_MODE_WIRED_OR_PULL_DOWN:
+    569                return _HSIO_P_MODEL_MODE0_WIREDORPULLDOWN;
+    570          #endif
+    571          #if defined(_HSIO_P_MODEL_MODE0_WIREDAND)
+    572              case SL_GPIO_MODE_WIRED_AND:
+    573                return _HSIO_P_MODEL_MODE0_WIREDAND;
+    574          #endif
+    575          #if defined(_HSIO_P_MODEL_MODE0_WIREDANDFILTER)
+    576              case SL_GPIO_MODE_WIRED_AND_FILTER:
+    577                return _HSIO_P_MODEL_MODE0_WIREDANDFILTER;
+    578          #endif
+    579          #if defined(_HSIO_P_MODEL_MODE0_WIREDANDPULLUP)
+    580              case SL_GPIO_MODE_WIRED_AND_PULLUP:
+    581                return _HSIO_P_MODEL_MODE0_WIREDANDPULLUP;
+    582          #endif
+    583          #if defined(_HSIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER)
+    584              case SL_GPIO_MODE_WIRED_AND_PULLUP_FILTER:
+    585                return _HSIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER;
+    586          #endif
+    587              default:
+    588                EFM_ASSERT(false);
+    589                return SL_GPIO_MODE_DISABLED;
+    590            }
+    591          }
+    592          
+    593          // Map HSIO register encoding to logical GPIO mode.
+    594          static sl_gpio_mode_t sl_hal_gpio_map_hsio_reg_to_mode(sl_gpio_mode_t mode)
+    595          {
+    596            switch (mode) {
+    597          #if defined(_HSIO_P_MODEL_MODE0_DISABLED)
+    598              case _HSIO_P_MODEL_MODE0_DISABLED:
+    599                return SL_GPIO_MODE_DISABLED;
+    600          #endif
+    601          #if defined(_HSIO_P_MODEL_MODE0_INPUT)
+    602              case _HSIO_P_MODEL_MODE0_INPUT:
+    603                return SL_GPIO_MODE_INPUT;
+    604          #endif
+    605          #if defined(_HSIO_P_MODEL_MODE0_INPUTPULL)
+    606              case _HSIO_P_MODEL_MODE0_INPUTPULL:
+    607                return SL_GPIO_MODE_INPUT_PULL;
+    608          #endif
+    609          #if defined(_HSIO_P_MODEL_MODE0_INPUTPULLFILTER)
+    610              case _HSIO_P_MODEL_MODE0_INPUTPULLFILTER:
+    611                return SL_GPIO_MODE_INPUT_PULL_FILTER;
+    612          #endif
+    613          #if defined(_HSIO_P_MODEL_MODE0_PUSHPULL)
+    614              case _HSIO_P_MODEL_MODE0_PUSHPULL:
+    615                return SL_GPIO_MODE_PUSH_PULL;
+    616          #endif
+    617          #if defined(_HSIO_P_MODEL_MODE0_WIREDOR)
+    618              case _HSIO_P_MODEL_MODE0_WIREDOR:
+    619                return SL_GPIO_MODE_WIRED_OR;
+    620          #endif
+    621          #if defined(_HSIO_P_MODEL_MODE0_WIREDORPULLDOWN)
+    622              case _HSIO_P_MODEL_MODE0_WIREDORPULLDOWN:
+    623                return SL_GPIO_MODE_WIRED_OR_PULL_DOWN;
+    624          #endif
+    625          #if defined(_HSIO_P_MODEL_MODE0_WIREDAND)
+    626              case _HSIO_P_MODEL_MODE0_WIREDAND:
+    627                return SL_GPIO_MODE_WIRED_AND;
+    628          #endif
+    629          #if defined(_HSIO_P_MODEL_MODE0_WIREDANDFILTER)
+    630              case _HSIO_P_MODEL_MODE0_WIREDANDFILTER:
+    631                return SL_GPIO_MODE_WIRED_AND_FILTER;
+    632          #endif
+    633          #if defined(_HSIO_P_MODEL_MODE0_WIREDANDPULLUP)
+    634              case _HSIO_P_MODEL_MODE0_WIREDANDPULLUP:
+    635                return SL_GPIO_MODE_WIRED_AND_PULLUP;
+    636          #endif
+    637          #if defined(_HSIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER)
+    638              case _HSIO_P_MODEL_MODE0_WIREDANDPULLUPFILTER:
+    639                return SL_GPIO_MODE_WIRED_AND_PULLUP_FILTER;
+    640          #endif
+    641              default:
+    642                EFM_ASSERT(false);
+    643                return mode;
+    644            }
+    645          }
+    646          #endif /* defined(HSIO_PRESENT) */
+    647          
+    648          #endif /* defined(GPIO_PRESENT)*/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   sl_hal_bus_reg_write_bit
+        16   -> assertEFM
+      16   sl_hal_bus_reg_write_mask
+        16   -> CORE_EnterCritical
+         0   -> CORE_ExitCritical
+      16   sl_hal_gpio_clear_pin
+        16   -> assertEFM
+      32   sl_hal_gpio_configure_external_interrupt
+        32   -> assertEFM
+        32   -> sl_hal_bus_reg_write_bit
+        32   -> sl_hal_bus_reg_write_mask
+      24   sl_hal_gpio_configure_wakeup_em4_external_interrupt
+        24   -> assertEFM
+        24   -> sl_hal_gpio_enable_pin_em4_wakeup
+        24   -> sl_hal_gpio_set_pin_mode
+      24   sl_hal_gpio_enable_pin_em4_wakeup
+        24   -> assertEFM
+      16   sl_hal_gpio_get_pin_mode
+        16   -> assertEFM
+      16   sl_hal_gpio_set_pin
+        16   -> assertEFM
+      24   sl_hal_gpio_set_pin_mode
+        24   -> assertEFM
+        24   -> sl_hal_bus_reg_write_mask
+         0   -> sl_hal_gpio_clear_pin
+        24   -> sl_hal_gpio_clear_pin
+         0   -> sl_hal_gpio_set_pin
+        24   -> sl_hal_gpio_set_pin
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+       6  ?Subroutine0
+       6  ?Subroutine1
+      14  ?Subroutine2
+       8  ?Subroutine3
+      10  ?Subroutine4
+      12  ?Subroutine5
+     272  ?_0
+     136  ?_2
+      48  sl_hal_bus_reg_write_bit
+      30  sl_hal_bus_reg_write_mask
+     108  sl_hal_gpio_clear_pin
+     322  sl_hal_gpio_configure_external_interrupt
+     220  sl_hal_gpio_configure_wakeup_em4_external_interrupt
+      88  sl_hal_gpio_enable_pin_em4_wakeup
+     210  sl_hal_gpio_get_pin_mode
+     108  sl_hal_gpio_set_pin
+     268  sl_hal_gpio_set_pin_mode
+
+ 
+   408 bytes in section .rodata
+ 1'358 bytes in section .text
+    48 bytes in section text_hal_common_timecritical30111
+   108 bytes in section text_hal_gpio_timecritical28700
+ 
+ 1'298 bytes of CODE  memory (+ 216 bytes shared)
+   408 bytes of CONST memory
+
+Errors: none
+Warnings: none

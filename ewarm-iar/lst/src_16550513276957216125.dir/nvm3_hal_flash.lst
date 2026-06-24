@@ -1,0 +1,536 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:03
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_hal_flash.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_hal_flash.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_hal_flash.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_hal_flash.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_hal_flash.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir\nvm3_hal_flash.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_hal_flash.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_hal_flash.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Non-Volatile Memory Wear-Leveling driver HAL implementation
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stdbool.h>
+     32          #include <string.h>
+     33          #include "nvm3.h"
+     34          #include "nvm3_hal_flash.h"
+     35          #include "em_system.h"
+     36          #include "em_msc.h"
+     37          
+     38          /***************************************************************************//**
+     39           * @addtogroup nvm3
+     40           * @{
+     41           ******************************************************************************/
+     42          
+     43          /***************************************************************************//**
+     44           * @addtogroup nvm3hal
+     45           * @{
+     46           ******************************************************************************/
+     47          
+     48          /******************************************************************************
+     49           ******************************    MACROS    **********************************
+     50           *****************************************************************************/
+     51          
+     52          #define CHECK_DATA  1           ///< Macro defining if data should be checked
+     53          
+     54          /******************************************************************************
+     55           ***************************   LOCAL VARIABLES   ******************************
+     56           *****************************************************************************/
+     57          
+     58          /******************************************************************************
+     59           ***************************   LOCAL FUNCTIONS   ******************************
+     60           *****************************************************************************/
+     61          
+     62          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     63          
+     64          /***************************************************************************//**
+     65           * @brief
+     66           *   Convert return type.
+     67           *
+     68           * @details
+     69           *   This function converts between the return type of the emlib and the
+     70           *   NVM3 API.
+     71           *
+     72           * @param[in] result
+     73           *   Operation result.
+     74           *
+     75           * @return
+     76           *   Returns remapped status code.
+     77           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     78          static sl_status_t convertMscStatusToNvm3Status(MSC_Status_TypeDef result)
+     79          {
+     80            sl_status_t ret;
+     81          
+     82            switch (result) {
+   \                     convertMscStatusToNvm3Status: (+1)
+   \        0x0   0xB128             CBZ.N    R0,??convertMscStatusToNvm3Status_0
+   \        0x2   0xF1B0 0x3FFF      CMP      R0,#+4294967295
+   \        0x6   0xD101             BNE.N    ??convertMscStatusToNvm3Status_1
+     83              case mscReturnOk:
+     84                ret = SL_STATUS_OK;
+     85                break;
+     86              case mscReturnInvalidAddr:
+     87                ret = SL_STATUS_NVM3_INVALID_ADDR;
+   \        0x8   0x206E             MOVS     R0,#+110
+     88                break;
+   \        0xA   0x4770             BX       LR
+     89              default:
+     90                ret = SL_STATUS_NVM3_EMULATOR;
+   \                     ??convertMscStatusToNvm3Status_1: (+1)
+   \        0xC   0x2071             MOVS     R0,#+113
+     91                break;
+     92            }
+     93          
+     94            return ret;
+   \                     ??convertMscStatusToNvm3Status_0: (+1)
+   \        0xE   0x4770             BX       LR
+     95          }
+     96          
+     97          // Check if the page is erased.
+     98          static bool isErased(void *adr, size_t len)
+     99          {
+    100            size_t cnt;
+    101            uint32_t *dat = adr;
+    102          
+    103            cnt = len / sizeof(uint32_t);
+    104            for (size_t i = 0U; i < cnt; i++) {
+    105              if (*dat != 0xFFFFFFFFUL) {
+    106                return false;
+    107              }
+    108              dat++;
+    109            }
+    110          
+    111            return true;
+    112          }
+    113          
+    114          /** @endcond */
+    115          
+
+   \                                 In section .text, align 2, keep-with-next
+    116          static sl_status_t nvm3_halFlashOpen(nvm3_HalPtr_t nvmAdr, size_t flashSize)
+    117          {
+   \                     nvm3_halFlashOpen: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    118            (void)nvmAdr;
+    119            (void)flashSize;
+    120            MSC_Init();
+   \        0x2   0x.... 0x....      BL       MSC_Init
+    121          
+    122            return SL_STATUS_OK;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xBD02             POP      {R1,PC}
+    123          }
+    124          
+
+   \                                 In section .text, align 2, keep-with-next
+    125          static void nvm3_halFlashClose(void)
+    126          {
+    127            MSC_Deinit();
+   \                     nvm3_halFlashClose: (+1)
+   \        0x0   0x.... 0x....      B.W      MSC_Deinit
+    128          }
+    129          
+
+   \                                 In section .text, align 2, keep-with-next
+    130          static sl_status_t nvm3_halFlashGetInfo(nvm3_HalInfo_t *halInfo)
+    131          {
+   \                     nvm3_halFlashGetInfo: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    132            SYSTEM_ChipRevision_TypeDef chipRev;
+    133          
+    134            SYSTEM_ChipRevisionGet(&chipRev);
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x.... 0x....      BL       SYSTEM_ChipRevisionGet
+    135          #if defined(_SYSCFG_CHIPREV_PARTNUMBER_MASK)
+    136            halInfo->deviceFamilyPartNumber = chipRev.partNumber;
+    137          #else
+    138            halInfo->deviceFamilyPartNumber = chipRev.family;
+   \        0xA   0xF89D 0x0002      LDRB     R0,[SP, #+2]
+    139          #endif
+    140            halInfo->memoryMapped = 1;
+   \        0xE   0x2101             MOVS     R1,#+1
+    141          #if defined(_SILICON_LABS_32B_SERIES_2)
+    142            halInfo->writeSize = NVM3_HAL_WRITE_SIZE_32;
+   \       0x10   0x2200             MOVS     R2,#+0
+   \       0x12   0x8020             STRH     R0,[R4, #+0]
+   \       0x14   0x70E1             STRB     R1,[R4, #+3]
+   \       0x16   0x70A2             STRB     R2,[R4, #+2]
+    143          #else
+    144            halInfo->writeSize = NVM3_HAL_WRITE_SIZE_16;
+    145          #endif
+    146            halInfo->pageSize = SYSTEM_GetFlashPageSize();
+   \       0x18   0x.... 0x....      BL       SYSTEM_GetFlashPageSize
+   \       0x1C   0x6060             STR      R0,[R4, #+4]
+    147          
+    148            return SL_STATUS_OK;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0xBD16             POP      {R1,R2,R4,PC}
+    149          }
+    150          
+
+   \                                 In section .text, align 2, keep-with-next
+    151          static void nvm3_halFlashAccess(nvm3_HalNvmAccessCode_t access)
+    152          {
+    153            (void)access;
+    154          }
+   \                     nvm3_halFlashAccess: (+1)
+   \        0x0   0x4770             BX       LR
+    155          
+
+   \                                 In section .text, align 2, keep-with-next
+    156          static sl_status_t nvm3_halFlashReadWords(nvm3_HalPtr_t nvmAdr, void *dst, size_t wordCnt)
+    157          {
+   \                     nvm3_halFlashReadWords: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    158            uint32_t *pSrc = (uint32_t *)nvmAdr;
+   \        0x4   0x4605             MOV      R5,R0
+    159            uint32_t *pDst = dst;
+   \        0x6   0x4626             MOV      R6,R4
+    160          
+    161            if ((((size_t)pSrc % 4) == 0) && (((size_t)pDst % 4) == 0)) {
+   \        0x8   0xF015 0x0103      ANDS     R1,R5,#0x3
+   \        0xC   0xBF08             IT       EQ
+   \        0xE   0xF016 0x0303      ANDSEQ   R3,R6,#0x3
+   \       0x12   0xD108             BNE.N    ??nvm3_halFlashReadWords_0
+    162              while (wordCnt > 0U) {
+   \                     ??nvm3_halFlashReadWords_1: (+1)
+   \       0x14   0x2A00             CMP      R2,#+0
+   \       0x16   0xBF1E             ITTT     NE
+   \       0x18   0xF855 0x3B04      LDRNE    R3,[R5], #+4
+   \       0x1C   0xF846 0x3B04      STRNE    R3,[R6], #+4
+   \       0x20   0x1E52             SUBNE    R2,R2,#+1
+    163                *pDst++ = *pSrc++;
+    164                wordCnt--;
+   \       0x22   0xD1F7             BNE.N    ??nvm3_halFlashReadWords_1
+   \       0x24   0xE004             B.N      ??nvm3_halFlashReadWords_2
+    165              }
+    166            } else {
+    167              (void)memcpy(dst, nvmAdr, wordCnt * sizeof(uint32_t));
+   \                     ??nvm3_halFlashReadWords_0: (+1)
+   \       0x26   0x4601             MOV      R1,R0
+   \       0x28   0x0092             LSLS     R2,R2,#+2
+   \       0x2A   0x4620             MOV      R0,R4
+   \       0x2C   0x.... 0x....      BL       __aeabi_memcpy
+    168            }
+    169          
+    170            return SL_STATUS_OK;
+   \                     ??nvm3_halFlashReadWords_2: (+1)
+   \       0x30   0x2000             MOVS     R0,#+0
+   \       0x32   0xBD70             POP      {R4-R6,PC}
+    171          }
+    172          
+
+   \                                 In section .text, align 2, keep-with-next
+    173          static sl_status_t nvm3_halFlashWriteWords(nvm3_HalPtr_t nvmAdr, void const *src, size_t wordCnt)
+    174          {
+   \                     nvm3_halFlashWriteWords: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    175            const uint32_t *pSrc = src;
+    176            uint32_t *pDst = (uint32_t *)nvmAdr;
+    177            MSC_Status_TypeDef mscSta;
+    178            sl_status_t halSta;
+    179            size_t byteCnt;
+    180          
+    181            byteCnt = wordCnt * sizeof(uint32_t);
+   \        0x2   0x0097             LSLS     R7,R2,#+2
+   \        0x4   0x4605             MOV      R5,R0
+   \        0x6   0x460E             MOV      R6,R1
+    182            mscSta = MSC_WriteWord(pDst, pSrc, byteCnt);
+   \        0x8   0x463A             MOV      R2,R7
+   \        0xA   0x.... 0x....      BL       MSC_WriteWord
+    183            halSta = convertMscStatusToNvm3Status(mscSta);
+   \        0xE   0x.... 0x....      BL       convertMscStatusToNvm3Status
+   \       0x12   0x0004             MOVS     R4,R0
+    184          
+    185          #if CHECK_DATA
+    186            if (halSta == SL_STATUS_OK) {
+   \       0x14   0xD106             BNE.N    ??nvm3_halFlashWriteWords_0
+    187              if (memcmp(pDst, pSrc, byteCnt) != 0) {
+   \       0x16   0x463A             MOV      R2,R7
+   \       0x18   0x4631             MOV      R1,R6
+   \       0x1A   0x4628             MOV      R0,R5
+   \       0x1C   0x.... 0x....      BL       memcmp
+   \       0x20   0xB100             CBZ.N    R0,??nvm3_halFlashWriteWords_0
+    188                halSta = SL_STATUS_FLASH_PROGRAM_FAILED;
+   \       0x22   0x243D             MOVS     R4,#+61
+    189              }
+    190            }
+    191          #endif
+    192          
+    193            return halSta;
+   \                     ??nvm3_halFlashWriteWords_0: (+1)
+   \       0x24   0x4620             MOV      R0,R4
+   \       0x26   0xBDF2             POP      {R1,R4-R7,PC}
+    194          }
+    195          
+
+   \                                 In section .text, align 2, keep-with-next
+    196          static sl_status_t nvm3_halFlashPageErase(nvm3_HalPtr_t nvmAdr)
+    197          {
+   \                     nvm3_halFlashPageErase: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    198            MSC_Status_TypeDef mscSta;
+    199            sl_status_t halSta;
+    200          
+    201            mscSta = MSC_ErasePage((uint32_t *)nvmAdr);
+   \        0x4   0x.... 0x....      BL       MSC_ErasePage
+    202            halSta = convertMscStatusToNvm3Status(mscSta);
+   \        0x8   0x.... 0x....      BL       convertMscStatusToNvm3Status
+   \        0xC   0x0004             MOVS     R4,R0
+    203          
+    204          #if CHECK_DATA
+    205            if (halSta == SL_STATUS_OK) {
+   \        0xE   0xD10D             BNE.N    ??nvm3_halFlashPageErase_0
+    206              if (!isErased(nvmAdr, SYSTEM_GetFlashPageSize())) {
+   \       0x10   0x.... 0x....      BL       SYSTEM_GetFlashPageSize
+   \       0x14   0x2100             MOVS     R1,#+0
+   \       0x16   0xE000             B.N      ??nvm3_halFlashPageErase_1
+   \                     ??nvm3_halFlashPageErase_2: (+1)
+   \       0x18   0x1C49             ADDS     R1,R1,#+1
+   \                     ??nvm3_halFlashPageErase_1: (+1)
+   \       0x1A   0xEBB1 0x0F90      CMP      R1,R0, LSR #+2
+   \       0x1E   0xD205             BCS.N    ??nvm3_halFlashPageErase_0
+   \       0x20   0xF855 0x2B04      LDR      R2,[R5], #+4
+   \       0x24   0xF112 0x0F01      CMN      R2,#+1
+   \       0x28   0xD0F6             BEQ.N    ??nvm3_halFlashPageErase_2
+    207                halSta = SL_STATUS_FLASH_ERASE_FAILED;
+   \       0x2A   0x243E             MOVS     R4,#+62
+    208              }
+    209            }
+    210          #endif
+    211          
+    212            return halSta;
+   \                     ??nvm3_halFlashPageErase_0: (+1)
+   \       0x2C   0x4620             MOV      R0,R4
+   \       0x2E   0xBD32             POP      {R1,R4,R5,PC}
+    213          }
+    214          
+    215          /*******************************************************************************
+    216           ***************************   GLOBAL VARIABLES   ******************************
+    217           ******************************************************************************/
+    218          
+
+   \                                 In section .rodata, align 4
+    219          const nvm3_HalHandle_t nvm3_halFlashHandle = {
+   \                     nvm3_halFlashHandle:
+   \        0x0   0x....'....        DC32 nvm3_halFlashOpen, nvm3_halFlashClose, nvm3_halFlashGetInfo
+   \              0x....'....  
+   \              0x....'....
+   \        0xC   0x....'....        DC32 nvm3_halFlashAccess, nvm3_halFlashPageErase
+   \              0x....'....
+   \       0x14   0x....'....        DC32 nvm3_halFlashReadWords, nvm3_halFlashWriteWords
+   \              0x....'....
+    220            .open = nvm3_halFlashOpen,                    ///< Set the open function
+    221            .close = nvm3_halFlashClose,                  ///< Set the close function
+    222            .getInfo = nvm3_halFlashGetInfo,              ///< Set the get-info function
+    223            .access = nvm3_halFlashAccess,                ///< Set the access function
+    224            .pageErase = nvm3_halFlashPageErase,          ///< Set the page-erase function
+    225            .readWords = nvm3_halFlashReadWords,          ///< Set the read-words function
+    226            .writeWords = nvm3_halFlashWriteWords,        ///< Set the write-words function
+    227          };
+    228          
+    229          /** @} (end addtogroup nvm3hal) */
+    230          /** @} (end addtogroup nvm3) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   convertMscStatusToNvm3Status
+       0   nvm3_halFlashAccess
+       0   nvm3_halFlashClose
+         0   -> MSC_Deinit
+      16   nvm3_halFlashGetInfo
+        16   -> SYSTEM_ChipRevisionGet
+        16   -> SYSTEM_GetFlashPageSize
+       8   nvm3_halFlashOpen
+         8   -> MSC_Init
+      16   nvm3_halFlashPageErase
+        16   -> MSC_ErasePage
+        16   -> SYSTEM_GetFlashPageSize
+        16   -> convertMscStatusToNvm3Status
+      16   nvm3_halFlashReadWords
+        16   -> __aeabi_memcpy
+      24   nvm3_halFlashWriteWords
+        24   -> MSC_WriteWord
+        24   -> convertMscStatusToNvm3Status
+        24   -> memcmp
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      16  convertMscStatusToNvm3Status
+       2  nvm3_halFlashAccess
+       4  nvm3_halFlashClose
+      34  nvm3_halFlashGetInfo
+      28  nvm3_halFlashHandle
+      10  nvm3_halFlashOpen
+      48  nvm3_halFlashPageErase
+      52  nvm3_halFlashReadWords
+      40  nvm3_halFlashWriteWords
+
+ 
+  28 bytes in section .rodata
+ 206 bytes in section .text
+ 
+ 206 bytes of CODE  memory
+  28 bytes of CONST memory
+
+Errors: none
+Warnings: none

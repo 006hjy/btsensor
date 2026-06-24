@@ -43,4 +43,3 @@
 // <<< end of configuration section >>>
 
 #endif // NVM3_DEFAULT_CONFIG_H
-

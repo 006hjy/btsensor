@@ -1,0 +1,922 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:07
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\sl_power_manager_em4.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\common_8772316303540072548.dir\sl_power_manager_em4.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\sl_power_manager_em4.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\common_8772316303540072548.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\common_8772316303540072548.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\common_8772316303540072548.dir\sl_power_manager_em4.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\common_8772316303540072548.dir\sl_power_manager_em4.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\common_8772316303540072548.dir\sl_power_manager_em4.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\common_8772316303540072548.dir\sl_power_manager_em4.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\sl_power_manager_em4.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Power Manager EM4 API implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_power_manager.h"
+     32          #include "sl_power_manager_config.h"
+     33          #include "sli_power_manager.h"
+     34          
+     35          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     36          #include "sl_component_catalog.h"
+     37          #endif
+     38          
+     39          #include "em_device.h"
+     40          #if defined(_SILICON_LABS_32B_SERIES_2)
+     41          #include "em_emu.h"
+     42          #include "em_cmu.h"
+     43          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+     44          #include "em_iadc.h"
+     45          #endif
+     46          #endif
+     47          
+     48          #if defined(SL_CATALOG_METRIC_EM4_WAKE_PRESENT)
+     49          #include "sli_metric_em4_wake.h"
+     50          #endif
+     51          
+     52          #include <stdlib.h>
+     53          #include <stdint.h>
+     54          
+     55          /*******************************************************************************
+     56           ******************************   DEFINES   ************************************
+     57           ******************************************************************************/
+     58          
+     59          #if defined(WDOG_PRESENT)
+     60          // Macros to determine if WDOG instances are clocked or not
+     61          
+     62          #if defined(CMU_CLKEN0_WDOG0)
+     63          #define WDOG0_CLOCK_ENABLED_BIT (CMU->CLKEN0 & CMU_CLKEN0_WDOG0)
+     64          #else
+     65          // There's no CMU->CLKEN1 so assume the WDOG0 is clocked
+     66          #define WDOG0_CLOCK_ENABLED_BIT 1
+     67          #endif
+     68          
+     69          #if defined(CMU_CLKEN1_WDOG1)
+     70          #define WDOG1_CLOCK_ENABLED_BIT (CMU->CLKEN1 & CMU_CLKEN1_WDOG1)
+     71          #else
+     72          // There's no CMU->CLKEN1 so assume the WDOG1 is clocked
+     73          #define WDOG1_CLOCK_ENABLED_BIT 1
+     74          #endif
+     75          
+     76          #endif
+     77          
+     78          /*******************************************************************************
+     79           **************************   LOCAL FUNCTIONS   ********************************
+     80           ******************************************************************************/
+     81          
+     82          static bool is_em4_blocked(void);
+     83          
+     84          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) && (SL_POWER_MANAGER_RAMP_DVDD_EN == 1)
+     85          static void ramp_dvdd_and_switch_to_dcdc_bypass_mode(void);
+     86          #endif
+     87          
+     88          /*******************************************************************************
+     89           **************************   GLOBAL FUNCTIONS   *******************************
+     90           ******************************************************************************/
+     91          
+     92          /***************************************************************************//**
+     93           * update energy mode 4 configurations.
+     94           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     95          void sli_power_manager_init_em4(void)
+     96          {
+   \                     sli_power_manager_init_em4: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+   \        0x6   0xF88D 0x0004      STRB     R0,[SP, #+4]
+     97          #if !defined(_SILICON_LABS_32B_SERIES_2)
+     98            EMU->EM4CTRL = (EMU->EM4CTRL & ~_EMU_EM4CTRL_EM4IORETMODE_MASK)
+     99                           | SL_POWER_MANAGER_INIT_EMU_EM4_PIN_RETENTION_MODE;
+    100          #else
+    101            EMU_EM4Init_TypeDef em4_init = EMU_EM4INIT_DEFAULT;
+    102            em4_init.pinRetentionMode = (EMU_EM4PinRetention_TypeDef)SL_POWER_MANAGER_INIT_EMU_EM4_PIN_RETENTION_MODE;
+    103            EMU_EM4Init(&em4_init);
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x.... 0x....      BL       EMU_EM4Init
+    104          #endif
+    105          }
+   \       0x10   0xBD07             POP      {R0-R2,PC}
+    106          
+    107          /******************************************************************************
+    108           * Event called before entering EM4 sleep.
+    109           *****************************************************************************/
+
+   \                                 In section .text, align 2
+    110          SL_WEAK void sl_power_manager_em4_presleep_hook(void)
+    111          {
+    112            // This implementation is empty, but this function can be redefined as it's a weak implementation.
+    113          }
+   \                     sl_power_manager_em4_presleep_hook: (+1)
+   \        0x0   0x4770             BX       LR
+    114          
+    115          /***************************************************************************//**
+    116           * Enter energy mode 4 (EM4).
+    117           *
+    118           * @note  You should not expect to return from this function. Once the device
+    119           *        enters EM4, only a power on reset or external reset pin can wake the
+    120           *        device.
+    121           *
+    122           * @note  On xG22 devices, this function re-configures the IADC if EM4 entry
+    123           *        is possible.
+    124           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    125          __NO_RETURN void sl_power_manager_enter_em4(void)
+    126          {
+   \                     sl_power_manager_enter_em4: (+1)
+   \        0x0   0xB098             SUB      SP,SP,#+96
+    127            /* Device with Boost DC-DC cannot enter EM4 because Boost DC-DC module does not
+    128             * have BYPASS switch so DC-DC converter can not be set to bypass mode. */
+    129          #if (defined(_SILICON_LABS_DCDC_FEATURE) \
+    130            && (_SILICON_LABS_DCDC_FEATURE == _SILICON_LABS_DCDC_FEATURE_DCDC_BOOST))
+    131            EFM_ASSERT(false);
+    132          #endif
+    133          
+    134            // Make sure that we are not interrupted while we are entering em4
+    135            CORE_CRITICAL_IRQ_DISABLE();
+   \        0x2   0x.... 0x....      BL       CORE_CriticalDisableIrq
+    136          
+    137            EFM_ASSERT(is_em4_blocked() == false);
+   \        0x6   0x....             LDR.N    R4,??DataTable4
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0x.... 0x....      LDR.W    R11,??DataTable4_1
+   \        0xE   0x0481             LSLS     R1,R0,#+18
+   \       0x10   0xD50B             BPL.N    ??sl_power_manager_enter_em4_0
+   \       0x12   0x....             LDR.N    R0,??DataTable4_2
+   \       0x14   0x6841             LDR      R1,[R0, #+4]
+   \       0x16   0x070A             LSLS     R2,R1,#+28
+   \       0x18   0xD507             BPL.N    ??sl_power_manager_enter_em4_0
+   \       0x1A   0x6800             LDR      R0,[R0, #+0]
+   \       0x1C   0x07C1             LSLS     R1,R0,#+31
+   \       0x1E   0xD504             BPL.N    ??sl_power_manager_enter_em4_0
+   \       0x20   0x2189             MOVS     R1,#+137
+   \       0x22   0xF10B 0x0028      ADD      R0,R11,#+40
+   \       0x26   0x.... 0x....      BL       assertEFM
+    138          
+    139          #if defined(SL_CATALOG_METRIC_EM4_WAKE_PRESENT)
+    140            sli_metric_em4_wake_init();
+    141          #endif
+    142          
+    143            uint32_t em4seq2 = (EMU->EM4CTRL & ~_EMU_EM4CTRL_EM4ENTRY_MASK)
+    144                               | (2U << _EMU_EM4CTRL_EM4ENTRY_SHIFT);
+   \                     ??sl_power_manager_enter_em4_0: (+1)
+   \       0x2A   0x.... 0x....      LDR.W    R10,??DataTable4_3
+   \       0x2E   0xF8DA 0x000C      LDR      R0,[R10, #+12]
+   \       0x32   0x2102             MOVS     R1,#+2
+    145            uint32_t em4seq3 = (EMU->EM4CTRL & ~_EMU_EM4CTRL_EM4ENTRY_MASK)
+    146                               | (3U << _EMU_EM4CTRL_EM4ENTRY_SHIFT);
+    147          
+    148            // Make sure that the register write lock is disabled.
+    149            EMU->LOCK = EMU_LOCK_LOCKKEY_UNLOCK;
+   \       0x34   0x....             LDR.N    R6,??DataTable4_4
+   \       0x36   0xF361 0x0001      BFI      R0,R1,#+0,#+2
+   \       0x3A   0x900A             STR      R0,[SP, #+40]
+   \       0x3C   0xF8DA 0x000C      LDR      R0,[R10, #+12]
+   \       0x40   0xF64A 0x51E8      MOVW     R1,#+44520
+   \       0x44   0x....             LDR.N    R7,??DataTable4_5
+   \       0x46   0xF040 0x0003      ORR      R0,R0,#0x3
+   \       0x4A   0x9009             STR      R0,[SP, #+36]
+   \       0x4C   0xF8CA 0x1000      STR      R1,[R10, #+0]
+    150          
+    151          #if defined(_DCDC_IF_EM4ERR_MASK)
+    152            // Workaround for bug that may cause a Hard Fault on EM4 entry
+    153            CMU_CLOCK_SELECT_SET(SYSCLK, FSRCO);
+   \       0x50   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPreClockSelect
+   \       0x54   0x68E1             LDR      R1,[R4, #+12]
+   \       0x56   0x2001             MOVS     R0,#+1
+   \       0x58   0xF04F 0x0801      MOV      R8,#+1
+   \       0x5C   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x60   0x60E1             STR      R1,[R4, #+12]
+   \       0x62   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPostClockSelect
+    154            // The buck DC-DC is available in all energy modes except for EM4.
+    155            // The DC-DC converter must first be turned off and switched over to bypass mode.
+    156          #if (defined(EMU_SERIES2_DCDC_BUCK_PRESENT) \
+    157            || defined(EMU_SERIES2_DCDC_BOOST_PRESENT))
+    158            #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) && (SL_POWER_MANAGER_RAMP_DVDD_EN == 1)
+    159            ramp_dvdd_and_switch_to_dcdc_bypass_mode();
+   \       0x66   0x2000             MOVS     R0,#+0
+   \       0x68   0xA906             ADD      R1,SP,#+24
+   \       0x6A   0x6008             STR      R0,[R1, #+0]
+   \       0x6C   0x6048             STR      R0,[R1, #+4]
+   \       0x6E   0x6088             STR      R0,[R1, #+8]
+   \       0x70   0xA80D             ADD      R0,SP,#+52
+   \       0x72   0x4659             MOV      R1,R11
+   \       0x74   0x2228             MOVS     R2,#+40
+   \       0x76   0x.... 0x....      BL       __aeabi_memcpy4
+   \       0x7A   0xBF00             Nop
+   \       0x7C   0x....             ADR.N    R2,?_2
+   \       0x7E   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \       0x82   0xBF00             Nop
+   \       0x84   0x....             ADR.N    R3,?_3
+   \       0x86   0x681A             LDR      R2,[R3, #+0]
+   \       0x88   0xE9CD 0x0104      STRD     R0,R1,[SP, #+16]
+   \       0x8C   0x2101             MOVS     R1,#+1
+   \       0x8E   0x9201             STR      R2,[SP, #+4]
+   \       0x90   0x202A             MOVS     R0,#+42
+   \       0x92   0x.... 0x....      BL       CMU_ClockEnable
+   \       0x96   0x2200             MOVS     R2,#+0
+   \       0x98   0x....             LDR.N    R1,??DataTable4_6
+   \       0x9A   0x....             LDR.N    R0,??DataTable4_7
+   \       0x9C   0x.... 0x....      BL       IADC_calcSrcClkPrescale
+   \       0xA0   0xF88D 0x001D      STRB     R0,[SP, #+29]
+   \       0xA4   0x2100             MOVS     R1,#+0
+   \       0xA6   0xF89D 0x001D      LDRB     R0,[SP, #+29]
+   \       0xAA   0xF88D 0x1037      STRB     R1,[SP, #+55]
+   \       0xAE   0xF240 0x42BA      MOVW     R2,#+1210
+   \       0xB2   0x9210             STR      R2,[SP, #+64]
+   \       0xB4   0x2102             MOVS     R1,#+2
+   \       0xB6   0xF88D 0x1036      STRB     R1,[SP, #+54]
+   \       0xBA   0x2200             MOVS     R2,#+0
+   \       0xBC   0x9000             STR      R0,[SP, #+0]
+   \       0xBE   0xF88D 0x2044      STRB     R2,[SP, #+68]
+   \       0xC2   0x2300             MOVS     R3,#+0
+   \       0xC4   0x....             LDR.N    R1,??DataTable4_8
+   \       0xC6   0x....             LDR.N    R0,??DataTable4_7
+   \       0xC8   0x.... 0x....      BL       IADC_calcAdcClkPrescale
+   \       0xCC   0x900F             STR      R0,[SP, #+60]
+   \       0xCE   0x2102             MOVS     R1,#+2
+   \       0xD0   0xF88D 0x101B      STRB     R1,[SP, #+27]
+   \       0xD4   0x....             LDR.N    R0,??DataTable4_7
+   \       0xD6   0x.... 0x....      BL       IADC_reset
+   \       0xDA   0x210F             MOVS     R1,#+15
+   \       0xDC   0xF44F 0x60B0      MOV      R0,#+1408
+   \       0xE0   0x.... 0x....      BL       CMU_ClockSelectSet
+   \       0xE4   0x2100             MOVS     R1,#+0
+   \       0xE6   0xF88D 0x1010      STRB     R1,[SP, #+16]
+   \       0xEA   0xF88D 0x1007      STRB     R1,[SP, #+7]
+   \       0xEE   0x2001             MOVS     R0,#+1
+   \       0xF0   0x2114             MOVS     R1,#+20
+   \       0xF2   0xF88D 0x0015      STRB     R0,[SP, #+21]
+   \       0xF6   0xF88D 0x1005      STRB     R1,[SP, #+5]
+   \       0xFA   0xAA0D             ADD      R2,SP,#+52
+   \       0xFC   0xA906             ADD      R1,SP,#+24
+   \       0xFE   0x....             LDR.N    R0,??DataTable4_7
+   \      0x100   0x.... 0x....      BL       IADC_init
+   \      0x104   0xAA01             ADD      R2,SP,#+4
+   \      0x106   0xA904             ADD      R1,SP,#+16
+   \      0x108   0x....             LDR.N    R0,??DataTable4_7
+   \      0x10A   0x.... 0x....      BL       IADC_initSingle
+   \      0x10E   0x2001             MOVS     R0,#+1
+   \      0x110   0x....             LDR.N    R1,??DataTable4_7
+   \      0x112   0x60C8             STR      R0,[R1, #+12]
+   \      0x114   0x68B1             LDR      R1,[R6, #+8]
+   \      0x116   0x68F8             LDR      R0,[R7, #+12]
+   \      0x118   0x.... 0x....      LDR.W    R9,??DataTable4_9
+   \      0x11C   0x0909             LSRS     R1,R1,#+4
+   \      0x11E   0xEA40 0x1101      ORR      R1,R0,R1, LSL #+4
+   \      0x122   0x60B1             STR      R1,[R6, #+8]
+   \      0x124   0x6831             LDR      R1,[R6, #+0]
+   \      0x126   0x6938             LDR      R0,[R7, #+16]
+   \      0x128   0xF021 0x0170      BIC      R1,R1,#0x70
+   \      0x12C   0xEA41 0x1100      ORR      R1,R1,R0, LSL #+4
+   \      0x130   0xA80B             ADD      R0,SP,#+44
+   \      0x132   0x6031             STR      R1,[R6, #+0]
+   \      0x134   0x....             LDR.N    R1,??DataTable4_7
+   \      0x136   0x.... 0x....      BL       IADC_readSingleResult
+   \      0x13A   0xE9DD 0x010B      LDRD     R0,R1,[SP, #+44]
+   \      0x13E   0xE9CD 0x0102      STRD     R0,R1,[SP, #+8]
+   \                     ??sl_power_manager_enter_em4_1: (+1)
+   \      0x142   0x68B8             LDR      R0,[R7, #+8]
+   \      0x144   0x6839             LDR      R1,[R7, #+0]
+   \      0x146   0x6001             STR      R1,[R0, #+0]
+   \      0x148   0x687A             LDR      R2,[R7, #+4]
+   \      0x14A   0x2114             MOVS     R1,#+20
+   \      0x14C   0x6002             STR      R2,[R0, #+0]
+   \      0x14E   0x2014             MOVS     R0,#+20
+   \      0x150   0xFBB8 0xF0F0      UDIV     R0,R8,R0
+   \      0x154   0xFB01 0x8010      MLS      R0,R1,R0,R8
+   \      0x158   0xB978             CBNZ.N   R0,??sl_power_manager_enter_em4_2
+   \      0x15A   0xE9DD 0x4502      LDRD     R4,R5,[SP, #+8]
+   \      0x15E   0x....             LDR.N    R1,??DataTable4_7
+   \      0x160   0xA80B             ADD      R0,SP,#+44
+   \      0x162   0x.... 0x....      BL       IADC_readSingleResult
+   \      0x166   0xE9DD 0x010B      LDRD     R0,R1,[SP, #+44]
+   \      0x16A   0xE9CD 0x0102      STRD     R0,R1,[SP, #+8]
+   \      0x16E   0x9802             LDR      R0,[SP, #+8]
+   \      0x170   0x1B00             SUBS     R0,R0,R4
+   \      0x172   0xBF48             IT       MI
+   \      0x174   0x4240             RSBMI    R0,R0,#+0
+   \      0x176   0x2828             CMP      R0,#+40
+   \      0x178   0xDB2D             BLT.N    ??sl_power_manager_enter_em4_3
+   \                     ??sl_power_manager_enter_em4_2: (+1)
+   \      0x17A   0x69F0             LDR      R0,[R6, #+28]
+   \      0x17C   0x0641             LSLS     R1,R0,#+25
+   \      0x17E   0xD518             BPL.N    ??sl_power_manager_enter_em4_4
+   \      0x180   0x68F8             LDR      R0,[R7, #+12]
+   \      0x182   0xB108             CBZ.N    R0,??sl_power_manager_enter_em4_5
+   \      0x184   0x1E40             SUBS     R0,R0,#+1
+   \      0x186   0x60F8             STR      R0,[R7, #+12]
+   \                     ??sl_power_manager_enter_em4_5: (+1)
+   \      0x188   0x6938             LDR      R0,[R7, #+16]
+   \      0x18A   0x2807             CMP      R0,#+7
+   \      0x18C   0xBF3C             ITT      CC
+   \      0x18E   0x1C40             ADDCC    R0,R0,#+1
+   \      0x190   0x6138             STRCC    R0,[R7, #+16]
+   \      0x192   0x68B0             LDR      R0,[R6, #+8]
+   \      0x194   0x68F9             LDR      R1,[R7, #+12]
+   \      0x196   0x0900             LSRS     R0,R0,#+4
+   \      0x198   0xEA41 0x1000      ORR      R0,R1,R0, LSL #+4
+   \      0x19C   0x60B0             STR      R0,[R6, #+8]
+   \      0x19E   0x6830             LDR      R0,[R6, #+0]
+   \      0x1A0   0x6939             LDR      R1,[R7, #+16]
+   \      0x1A2   0xF020 0x0070      BIC      R0,R0,#0x70
+   \      0x1A6   0xEA40 0x1001      ORR      R0,R0,R1, LSL #+4
+   \      0x1AA   0x6030             STR      R0,[R6, #+0]
+   \      0x1AC   0x2040             MOVS     R0,#+64
+   \      0x1AE   0xF8C9 0x001C      STR      R0,[R9, #+28]
+   \                     ??sl_power_manager_enter_em4_4: (+1)
+   \      0x1B2   0x2008             MOVS     R0,#+8
+   \      0x1B4   0x.... 0x....      BL       sli_delay_loop
+   \      0x1B8   0xF108 0x0801      ADD      R8,R8,#+1
+   \      0x1BC   0xF5B8 0x7FFA      CMP      R8,#+500
+   \      0x1C0   0xD3BF             BCC.N    ??sl_power_manager_enter_em4_1
+   \      0x1C2   0x2001             MOVS     R0,#+1
+   \      0x1C4   0xF8C9 0x0000      STR      R0,[R9, #+0]
+   \      0x1C8   0xF44F 0x7193      MOV      R1,#+294
+   \      0x1CC   0xF10B 0x0028      ADD      R0,R11,#+40
+   \      0x1D0   0x.... 0x....      BL       assertEFM
+   \      0x1D4   0xE002             B.N      ??sl_power_manager_enter_em4_6
+   \                     ??sl_power_manager_enter_em4_3: (+1)
+   \      0x1D6   0x2001             MOVS     R0,#+1
+   \      0x1D8   0xF8C9 0x0000      STR      R0,[R9, #+0]
+    160            #else
+    161            EMU_DCDCModeSet(emuDcdcMode_Bypass);
+    162            #endif
+    163          #endif
+    164          #endif
+    165          
+    166            sl_power_manager_em4_presleep_hook();
+   \                     ??sl_power_manager_enter_em4_6: (+1)
+   \      0x1DC   0x.... 0x....      BL       sl_power_manager_em4_presleep_hook
+    167          
+    168            for (uint8_t i = 0; i < 4; i++) {
+   \      0x1E0   0x2004             MOVS     R0,#+4
+   \      0x1E2   0x990A             LDR      R1,[SP, #+40]
+   \      0x1E4   0x9A09             LDR      R2,[SP, #+36]
+    169              EMU->EM4CTRL = em4seq2;
+   \                     ??sl_power_manager_enter_em4_7: (+1)
+   \      0x1E6   0xF8CA 0x100C      STR      R1,[R10, #+12]
+    170              EMU->EM4CTRL = em4seq3;
+   \      0x1EA   0xF8CA 0x200C      STR      R2,[R10, #+12]
+    171            }
+   \      0x1EE   0x1E40             SUBS     R0,R0,#+1
+   \      0x1F0   0xD1F9             BNE.N    ??sl_power_manager_enter_em4_7
+    172            EMU->EM4CTRL = em4seq2;
+   \      0x1F2   0xF8CA 0x100C      STR      R1,[R10, #+12]
+    173            __DSB();
+   \      0x1F6   0xF3BF 0x8F4F      DSB      SY
+    174            __ISB();
+   \      0x1FA   0xF3BF 0x8F6F      ISB      SY
+    175            __WFI();
+   \      0x1FE   0xBF30             WFI
+    176          
+    177            for (;; ) {
+   \                     ??sl_power_manager_enter_em4_8: (+1)
+   \      0x200   0xE7FE             B.N      ??sl_power_manager_enter_em4_8
+    178              // __NO_RETURN
+    179            }
+    180          }
+    181          
+    182          /***************************************************************************//**
+    183           *   When EM4 pin retention is set to power_manager_pin_retention_latch,
+    184           *   then pins are retained through EM4 entry and wakeup. The pin state is
+    185           *   released by calling this function. The feature allows peripherals or
+    186           *   GPIO to be re-initialized after EM4 exit (reset), and when
+    187           *   initialization is done, this function can release pins and return
+    188           *   control to the peripherals or GPIO.
+    189           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    190          void sl_power_manager_em4_unlatch_pin_retention(void)
+    191          {
+    192          #if defined(_EMU_EM4CTRL_EM4IORETMODE_MASK)
+    193            EMU->CMD = EMU_CMD_EM4UNLATCH;
+   \                     sl_power_manager_em4_unlatch_pin_retention: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0x....             LDR.N    R1,??DataTable4_10
+   \        0x4   0x6008             STR      R0,[R1, #+0]
+    194          #endif
+    195          }
+   \        0x6   0x4770             BX       LR
+    196          
+    197          /***************************************************************************//**
+    198           * Returns true if em4 entry is blocked by a watchdog peripheral.
+    199           ******************************************************************************/
+    200          static bool is_em4_blocked(void)
+    201          {
+    202          #if defined(WDOG_PRESENT)
+    203          #if WDOG_COUNT > 0
+    204            if ( WDOG0_CLOCK_ENABLED_BIT && (WDOG0->CFG & WDOG_CFG_EM4BLOCK) && (WDOG0->EN & WDOG_EN_EN) ) {
+    205              return true;
+    206            }
+    207          #endif
+    208          #if WDOG_COUNT > 1
+    209            if ( WDOG1_CLOCK_ENABLED_BIT && (WDOG1->CFG & WDOG_CFG_EM4BLOCK) && (WDOG1->EN & WDOG_EN_EN) ) {
+    210              return true;
+    211            }
+    212          #endif
+    213          #endif
+    214            return false;
+    215          }
+    216          
+    217          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) && (SL_POWER_MANAGER_RAMP_DVDD_EN == 1)
+    218          
+    219          /* The following section provides an optimization to improve peak current
+    220           * consumption on xG22 devices.
+    221           */
+    222          
+    223          // ADC clock frequency (source and after prescale)
+    224          #define CLK_SRC_ADC_FREQ     9600000   // CLK_SRC_ADC
+    225          #define CLK_ADC_FREQ         1000000   // CLK_ADC
+    226          
+    227          extern void sli_delay_loop(uint32_t cycles);
+    228          
+
+   \                                 In section .data, align 4
+    229          uint32_t * dcdc_test_addr = (uint32_t *)(DCDC_NS_BASE + 0x80);
+    230          uint32_t ipkval = 7;
+    231          uint32_t ipktimeout = 1;
+    232          
+    233          /* Pulse generation sequence TOCTRIG (bit 3) TOCMODE (bit 2)*/
+    234          uint32_t cmd[2] = { (1 << 2) | (1 << 3), (1 << 2) };
+   \                     cmd:
+   \        0x0   0x0000'000C        DC32 12, 4
+   \              0x0000'0004
+   \                     dcdc_test_addr:
+   \        0x8   0x5009'4080        DC32 0x5009'4080
+   \                     ipkval:
+   \        0xC   0x0000'0007        DC32 7
+   \                     ipktimeout:
+   \       0x10   0x0000'0001        DC32 1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x5000'8064        DC32     0x50008064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x5A01'8004        DC32     0x5a018004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x5000'4060        DC32     0x50004060
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x5009'4008        DC32     0x50094008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x....'....        DC32     cmd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x0092'7C00        DC32     0x927c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \        0x0   0x5A00'4000        DC32     0x5a004000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \        0x0   0x000F'4240        DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \        0x0   0x5009'6008        DC32     0x50096008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \        0x0   0x5000'4070        DC32     0x50004070
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x00 0x00          DC8 0, 0, 3, 0, 0, 0, 0, 0
+   \              0x03 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x00 0x00          DC8 0, 0, 2, 0, 0
+   \              0x02 0x00    
+   \              0x00
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0, 1'210
+   \              0x0000'04BA
+   \       0x10   0x00               DC8 0
+   \       0x11                      DS8 3
+   \       0x14   0x00 0x00          DC8 0, 0, 2, 0, 0
+   \              0x02 0x00    
+   \              0x00
+   \       0x19                      DS8 3
+   \       0x1C   0x0000'0000        DC32 0, 1'210
+   \              0x0000'04BA
+   \       0x24   0x00               DC8 0
+   \       0x25                      DS8 3
+   \       0x28   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x30   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x38   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x40   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x48   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x50   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x58   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x60   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x68   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x70   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x78   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x80   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x88   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x90   0x6D 0x5C          DC8 0x6D, 0x5C, 0x73, 0x65, 0x72, 0x76, 0x69, 0x63
+   \              0x73 0x65    
+   \              0x72 0x76    
+   \              0x69 0x63
+   \       0x98   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6F, 0x77, 0x65, 0x72, 0x5F
+   \              0x70 0x6F    
+   \              0x77 0x65    
+   \              0x72 0x5F
+   \       0xA0   0x6D 0x61          DC8 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65, 0x72, 0x5C
+   \              0x6E 0x61    
+   \              0x67 0x65    
+   \              0x72 0x5C
+   \       0xA8   0x73 0x72          DC8 0x73, 0x72, 0x63, 0x5C, 0x63, 0x6F, 0x6D, 0x6D
+   \              0x63 0x5C    
+   \              0x63 0x6F    
+   \              0x6D 0x6D
+   \       0xB0   0x6F 0x6E          DC8 0x6F, 0x6E, 0x5C, 0x73, 0x6C, 0x5F, 0x70, 0x6F
+   \              0x5C 0x73    
+   \              0x6C 0x5F    
+   \              0x70 0x6F
+   \       0xB8   0x77 0x65          DC8 0x77, 0x65, 0x72, 0x5F, 0x6D, 0x61, 0x6E, 0x61
+   \              0x72 0x5F    
+   \              0x6D 0x61    
+   \              0x6E 0x61
+   \       0xC0   0x67 0x65          DC8 0x67, 0x65, 0x72, 0x5F, 0x65, 0x6D, 0x34, 0x2E
+   \              0x72 0x5F    
+   \              0x65 0x6D    
+   \              0x34 0x2E
+   \       0xC8   0x63 0x00          DC8 0x63, 0
+   \       0xCA                      DS8 2
+    235          
+    236          /***************************************************************************//**
+    237           * The voltage of Dvdd is ramped up to VMCU by sending pulses to a DCDC test
+    238           * register. These pulses are delayed, and ipkval and ipktimeout are tuned
+    239           * such that the voltage at Dvdd increases gradually to the voltage level of
+    240           * VMCU. Using the IADC, once Dvdd has gotten sufficiently close to VMCU,
+    241           * the DCDC peripheral is then switched into bypass mode. The IADC is used to
+    242           * detect this by sampling the voltage of Dvdd periodically, and calculating the
+    243           * difference between samples, when the difference is within some margin of zero
+    244           * then we know that the ramp sequence has reached a plateau.
+    245           ******************************************************************************/
+    246          static void ramp_dvdd_and_switch_to_dcdc_bypass_mode(void)
+    247          {
+    248            // Initialize the IADC for the purposes of detecting when the Dvdd ramp
+    249            // reaches a plateau.
+    250            IADC_Init_t init = IADC_INIT_DEFAULT;
+    251            IADC_AllConfigs_t initAllConfigs = IADC_ALLCONFIGS_DEFAULT;
+    252            IADC_InitSingle_t initSingle = IADC_INITSINGLE_DEFAULT;
+    253            IADC_SingleInput_t initSingleInput = IADC_SINGLEINPUT_DEFAULT;
+    254            CMU_ClockEnable(cmuClock_IADC0, true);
+    255          
+    256            init.srcClkPrescale = IADC_calcSrcClkPrescale(IADC0, CLK_SRC_ADC_FREQ, 0);
+    257            initAllConfigs.configs[0].reference = iadcCfgReferenceInt1V2;
+    258            initAllConfigs.configs[0].vRef = 1210;
+    259            initAllConfigs.configs[0].analogGain = iadcCfgAnalogGain1x;
+    260            initAllConfigs.configs[0].digAvg = iadcDigitalAverage1;
+    261            initAllConfigs.configs[0].adcClkPrescale =
+    262              IADC_calcAdcClkPrescale(IADC0,
+    263                                      CLK_ADC_FREQ,
+    264                                      0,
+    265                                      iadcCfgModeNormal,
+    266                                      init.srcClkPrescale);
+    267            init.warmup = iadcWarmupKeepWarm;
+    268          
+    269            IADC_reset(IADC0);
+    270            CMU_ClockSelectSet(cmuClock_IADCCLK, cmuSelect_EM01GRPACLK);
+    271            initSingle.triggerAction = iadcTriggerActionContinuous;
+    272            initSingle.alignment = iadcAlignRight12;
+    273            initSingleInput.compare = false;                   // Disable Window CMP
+    274            initSingleInput.posInput = iadcPosInputDvdd;
+    275            IADC_init(IADC0, &init, &initAllConfigs);
+    276            IADC_initSingle(IADC0, &initSingle, &initSingleInput);
+    277          
+    278            // Start capturing
+    279            IADC_command(IADC0, iadcCmdStartSingle);
+    280          
+    281            // Initialize DCDC peak current value and timeout to reach peak current value
+    282            DCDC->EM01CTRL0 = (DCDC->EM01CTRL0 & ~_DCDC_EM01CTRL0_IPKVAL_MASK) | (ipkval << 0);
+    283            DCDC->CTRL = (DCDC->CTRL & ~_DCDC_CTRL_IPKTMAXCTRL_MASK) | (ipktimeout << 4);
+    284          
+    285            /* Generate pulses */
+    286            uint32_t iter = 1U;
+    287            IADC_Result_t prev_result;
+    288            volatile IADC_Result_t current_result = IADC_readSingleResult(IADC0);
+    289            while (true) {
+    290              // If the algorithm doesn't converge after 500 pulses, switch to dcdc
+    291              // bypass anyways.
+    292              if (iter >= 500) {
+    293                DCDC->CTRL_CLR = DCDC_CTRL_MODE;
+    294                EFM_ASSERT(false);
+    295                return;
+    296              }
+    297          
+    298              /* Pulse generation sequence TOCTRIG (bit 3) TOCMODE (bit 2)*/
+    299              *dcdc_test_addr = cmd[0];
+    300              *dcdc_test_addr = cmd[1];
+    301          
+    302              // In DCDC mode, MCU input voltage VREGVDD cannot be directly measured, so
+    303              // we can't know what the target DVDD voltage is. Instead, since DVDD
+    304              // ramp-up should follow a RC charge curve, measure DVDD and keep charging
+    305              // until the delta between measures is smaller than the set tolerance.
+    306              if (iter % 20U == 0U) {
+    307                prev_result = current_result;
+    308                current_result = IADC_readSingleResult(IADC0);
+    309                if ( abs((int32_t)(current_result.data - prev_result.data)) < SL_POWER_MANAGER_RAMP_DVDD_TOLERANCE ) {
+    310                  DCDC->CTRL_CLR = DCDC_CTRL_MODE;
+    311                  return;
+    312                }
+    313              }
+    314          
+    315              if (DCDC->IF & DCDC_IF_TMAX) {
+    316                if (ipkval) {
+    317                  ipkval--; // DCDC peak current value
+    318                }
+    319          
+    320                if (ipktimeout < 7) {
+    321                  ipktimeout++; // Timeout to reach peak current value
+    322                }
+    323          
+    324                DCDC->EM01CTRL0 = (DCDC->EM01CTRL0 & ~_DCDC_EM01CTRL0_IPKVAL_MASK) | (ipkval << 0);
+    325                DCDC->CTRL = (DCDC->CTRL & ~_DCDC_CTRL_IPKTMAXCTRL_MASK) | (ipktimeout << 4);
+    326          
+    327                DCDC->IF_CLR = DCDC_IF_TMAX;
+    328              }
+    329          
+    330              /* delay for 8 clock cycles */
+    331              sli_delay_loop(8);
+    332              iter++;
+    333            }
+    334          }
+    335          
+    336          #endif // defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) && (SL_POWER_MANAGER_RAMP_DVDD_EN == 1)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_power_manager_em4_presleep_hook
+       0   sl_power_manager_em4_unlatch_pin_retention
+      96   sl_power_manager_enter_em4
+        96   -> CMU_ClockEnable
+        96   -> CMU_ClockSelectSet
+        96   -> CORE_CriticalDisableIrq
+        96   -> IADC_calcAdcClkPrescale
+        96   -> IADC_calcSrcClkPrescale
+        96   -> IADC_init
+        96   -> IADC_initSingle
+        96   -> IADC_readSingleResult
+        96   -> IADC_reset
+        96   -> __aeabi_memcpy4
+        96   -> assertEFM
+        96   -> sl_power_manager_em4_presleep_hook
+        96   -> sli_delay_loop
+        96   -> sli_em_cmu_SYSCLKInitPostClockSelect
+        96   -> sli_em_cmu_SYSCLKInitPreClockSelect
+      16   sli_power_manager_init_em4
+        16   -> EMU_EM4Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+     204  ?_0
+       8  ?_2
+       4  ?_3
+      20  cmd
+          dcdc_test_addr
+          ipkval
+          ipktimeout
+       2  sl_power_manager_em4_presleep_hook
+       8  sl_power_manager_em4_unlatch_pin_retention
+     514  sl_power_manager_enter_em4
+      18  sli_power_manager_init_em4
+
+ 
+  20 bytes in section .data
+ 204 bytes in section .rodata
+ 598 bytes in section .text
+ 
+ 596 bytes of CODE  memory (+ 2 bytes shared)
+ 204 bytes of CONST memory
+  20 bytes of DATA  memory
+
+Errors: none
+Warnings: none

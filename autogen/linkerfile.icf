@@ -122,3 +122,5 @@ place in RAM_region {
   block application_heap,
 };
 
+/* Linker file assertions. */
+

@@ -1,0 +1,618 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:05
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\clocks\sl_device_clock_efr32xg22.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\clocks_17057976963479099201.dir\sl_device_clock_efr32xg22.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\clocks\sl_device_clock_efr32xg22.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\clocks_17057976963479099201.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\clocks_17057976963479099201.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\clocks\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\clocks_17057976963479099201.dir\sl_device_clock_efr32xg22.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\clocks_17057976963479099201.dir\sl_device_clock_efr32xg22.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\clocks_17057976963479099201.dir\sl_device_clock_efr32xg22.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\clocks_17057976963479099201.dir\sl_device_clock_efr32xg22.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\clocks\sl_device_clock_efr32xg22.c
+      1          /**************************************************************************//**
+      2           * @file
+      3           * @brief Device Manager Clock Definition
+      4           ******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories, Inc. www.silabs.com</b>
+      7           ******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           *****************************************************************************/
+     30          
+     31          #include "em_device.h"
+     32          #include "sl_device_clock.h"
+     33          
+     34          /***************************************************************************//**
+     35           * @addtogroup device_clock Device Manager Clock
+     36           * @{
+     37           ******************************************************************************/
+     38          
+     39          #if defined(_CMU_CLKEN1_AGC_SHIFT)
+     40          // Define AGC peripheral bus clock value.
+     41          const uint32_t SL_BUS_CLOCK_AGC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_AGC_SHIFT;
+     42          #endif
+     43          
+     44          #if defined(_CMU_CLKEN0_AMUXCP0_SHIFT)
+     45          // Define AMUXCP0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     46          const uint32_t SL_BUS_CLOCK_AMUXCP0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_AMUXCP0_SHIFT;
+   \                     SL_BUS_CLOCK_AMUXCP0_VALUE:
+   \        0x0   0x0000'000B        DC32 11
+     47          #endif
+     48          
+     49          #if defined(_CMU_CLKEN1_BUFC_SHIFT)
+     50          // Define BUFC peripheral bus clock value.
+     51          const uint32_t SL_BUS_CLOCK_BUFC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_BUFC_SHIFT;
+     52          #endif
+     53          
+     54          #if defined(_CMU_CLKEN0_BURAM_SHIFT)
+     55          // Define BURAM peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     56          const uint32_t SL_BUS_CLOCK_BURAM_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_BURAM_SHIFT;
+   \                     SL_BUS_CLOCK_BURAM_VALUE:
+   \        0x0   0x0000'001C        DC32 28
+     57          #endif
+     58          
+     59          #if defined(_CMU_CLKEN0_BURTC_SHIFT)
+     60          // Define BURTC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     61          const uint32_t SL_BUS_CLOCK_BURTC_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_BURTC_SHIFT;
+   \                     SL_BUS_CLOCK_BURTC_VALUE:
+   \        0x0   0x0000'001D        DC32 29
+     62          #endif
+     63          
+     64          #if defined(_CMU_CLKEN1_CRYPTOACC_SHIFT)
+     65          // Define CRYPTOACC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     66          const uint32_t SL_BUS_CLOCK_CRYPTOACC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_CRYPTOACC_SHIFT;
+   \                     SL_BUS_CLOCK_CRYPTOACC_VALUE:
+   \        0x0   0x0000'004D        DC32 77
+     67          #endif
+     68          
+     69          #if defined(_CMU_CLKEN0_DCDC_SHIFT)
+     70          // Define DCDC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     71          const uint32_t SL_BUS_CLOCK_DCDC_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_DCDC_SHIFT;
+   \                     SL_BUS_CLOCK_DCDC_VALUE:
+   \        0x0   0x0000'001F        DC32 31
+     72          #endif
+     73          
+     74          #if defined(_CMU_CLKEN0_DPLL0_SHIFT)
+     75          // Define DPLL0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     76          const uint32_t SL_BUS_CLOCK_DPLL0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_DPLL0_SHIFT;
+   \                     SL_BUS_CLOCK_DPLL0_VALUE:
+   \        0x0   0x0000'0011        DC32 17
+     77          #endif
+     78          
+     79          #if defined(_CMU_CLKEN0_EUART0_SHIFT)
+     80          // Define EUART0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     81          const uint32_t SL_BUS_CLOCK_EUART0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_EUART0_SHIFT;
+   \                     SL_BUS_CLOCK_EUART0_VALUE:
+   \        0x0   0x0000'0018        DC32 24
+     82          #endif
+     83          
+     84          #if defined(_CMU_CLKEN1_FRC_SHIFT)
+     85          // Define FRC peripheral bus clock value.
+     86          const uint32_t SL_BUS_CLOCK_FRC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_FRC_SHIFT;
+     87          #endif
+     88          
+     89          #if defined(_CMU_CLKEN0_FSRCO_SHIFT)
+     90          // Define FSRCO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     91          const uint32_t SL_BUS_CLOCK_FSRCO_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_FSRCO_SHIFT;
+   \                     SL_BUS_CLOCK_FSRCO_VALUE:
+   \        0x0   0x0000'0014        DC32 20
+     92          #endif
+     93          
+     94          #if defined(_CMU_CLKEN0_GPCRC_SHIFT)
+     95          // Define GPCRC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+     96          const uint32_t SL_BUS_CLOCK_GPCRC0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_GPCRC_SHIFT;
+   \                     SL_BUS_CLOCK_GPCRC0_VALUE:
+   \        0x0   0x0000'0003        DC32 3
+     97          #endif
+     98          
+     99          #if defined(_CMU_CLKEN0_GPIO_SHIFT)
+    100          // Define GPIO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    101          const uint32_t SL_BUS_CLOCK_GPIO_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_GPIO_SHIFT;
+   \                     SL_BUS_CLOCK_GPIO_VALUE:
+   \        0x0   0x0000'001A        DC32 26
+    102          #endif
+    103          
+    104          #if defined(_CMU_CLKEN0_HFRCO0_SHIFT)
+    105          // Define HFRCO0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    106          const uint32_t SL_BUS_CLOCK_HFRCO0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_HFRCO0_SHIFT;
+   \                     SL_BUS_CLOCK_HFRCO0_VALUE:
+   \        0x0   0x0000'0012        DC32 18
+    107          #endif
+    108          
+    109          #if defined(_CMU_CLKEN0_HFXO0_SHIFT)
+    110          // Define HFXO0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    111          const uint32_t SL_BUS_CLOCK_HFXO0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_HFXO0_SHIFT;
+   \                     SL_BUS_CLOCK_HFXO0_VALUE:
+   \        0x0   0x0000'0013        DC32 19
+    112          #endif
+    113          
+    114          #if defined(_CMU_CLKEN0_I2C0_SHIFT)
+    115          // Define I2C0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    116          const uint32_t SL_BUS_CLOCK_I2C0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_I2C0_SHIFT;
+   \                     SL_BUS_CLOCK_I2C0_VALUE:
+   \        0x0   0x0000'000E        DC32 14
+    117          #endif
+    118          
+    119          #if defined(_CMU_CLKEN0_I2C1_SHIFT)
+    120          // Define I2C1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    121          const uint32_t SL_BUS_CLOCK_I2C1_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_I2C1_SHIFT;
+   \                     SL_BUS_CLOCK_I2C1_VALUE:
+   \        0x0   0x0000'000F        DC32 15
+    122          #endif
+    123          
+    124          #if defined(_CMU_CLKEN0_IADC0_SHIFT)
+    125          // Define IADC0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    126          const uint32_t SL_BUS_CLOCK_IADC0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_IADC0_SHIFT;
+   \                     SL_BUS_CLOCK_IADC0_VALUE:
+   \        0x0   0x0000'000A        DC32 10
+    127          #endif
+    128          
+    129          #if defined(_CMU_CLKEN1_ICACHE0_SHIFT)
+    130          // Define ICACHE0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    131          const uint32_t SL_BUS_CLOCK_ICACHE0_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_ICACHE0_SHIFT;
+   \                     SL_BUS_CLOCK_ICACHE0_VALUE:
+   \        0x0   0x0000'0050        DC32 80
+    132          #endif
+    133          
+    134          #if defined(_CMU_CLKEN1_IFADCDEBUG_SHIFT)
+    135          // Define IFADCDEBUG peripheral bus clock value.
+    136          const uint32_t SL_BUS_CLOCK_IFADCDEBUG_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_IFADCDEBUG_SHIFT;
+    137          #endif
+    138          
+    139          #if defined(_CMU_CLKEN0_LDMA_SHIFT)
+    140          // Define LDMA0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    141          const uint32_t SL_BUS_CLOCK_LDMA0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_LDMA_SHIFT;
+   \                     SL_BUS_CLOCK_LDMA0_VALUE:
+   \        0x0   0x0000'0000        DC32 0
+    142          #endif
+    143          
+    144          #if defined(_CMU_CLKEN0_LDMAXBAR_SHIFT)
+    145          // Define LDMAXBAR0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    146          const uint32_t SL_BUS_CLOCK_LDMAXBAR0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_LDMAXBAR_SHIFT;
+   \                     SL_BUS_CLOCK_LDMAXBAR0_VALUE:
+   \        0x0   0x0000'0001        DC32 1
+    147          #endif
+    148          
+    149          #if defined(_CMU_CLKEN0_LETIMER0_SHIFT)
+    150          // Define LETIMER0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    151          const uint32_t SL_BUS_CLOCK_LETIMER0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_LETIMER0_SHIFT;
+   \                     SL_BUS_CLOCK_LETIMER0_VALUE:
+   \        0x0   0x0000'000C        DC32 12
+    152          #endif
+    153          
+    154          #if defined(_CMU_CLKEN0_LFRCO_SHIFT)
+    155          // Define LFRCO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    156          const uint32_t SL_BUS_CLOCK_LFRCO_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_LFRCO_SHIFT;
+   \                     SL_BUS_CLOCK_LFRCO_VALUE:
+   \        0x0   0x0000'0015        DC32 21
+    157          #endif
+    158          
+    159          #if defined(_CMU_CLKEN0_LFXO_SHIFT)
+    160          // Define LFXO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    161          const uint32_t SL_BUS_CLOCK_LFXO_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_LFXO_SHIFT;
+   \                     SL_BUS_CLOCK_LFXO_VALUE:
+   \        0x0   0x0000'0016        DC32 22
+    162          #endif
+    163          
+    164          #if defined(_CMU_CLKEN1_MODEM_SHIFT)
+    165          // Define MODEM peripheral bus clock value.
+    166          const uint32_t SL_BUS_CLOCK_MODEM_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_MODEM_SHIFT;
+    167          #endif
+    168          
+    169          #if defined(_CMU_CLKEN1_MSC_SHIFT)
+    170          // Define MSC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    171          const uint32_t SL_BUS_CLOCK_MSC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_MSC_SHIFT;
+   \                     SL_BUS_CLOCK_MSC_VALUE:
+   \        0x0   0x0000'0051        DC32 81
+    172          #endif
+    173          
+    174          #if defined(_CMU_CLKEN0_PDM_SHIFT)
+    175          // Define PDM peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    176          const uint32_t SL_BUS_CLOCK_PDM_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_PDM_SHIFT;
+   \                     SL_BUS_CLOCK_PDM_VALUE:
+   \        0x0   0x0000'0019        DC32 25
+    177          #endif
+    178          
+    179          #if defined(_CMU_CLKEN1_PRORTC_SHIFT)
+    180          // Define PRORTC peripheral bus clock value.
+    181          const uint32_t SL_BUS_CLOCK_PRORTC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_PRORTC_SHIFT;
+    182          #endif
+    183          
+    184          #if defined(_CMU_CLKEN1_PROTIMER_SHIFT)
+    185          // Define PROTIMER peripheral bus clock value.
+    186          const uint32_t SL_BUS_CLOCK_PROTIMER_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_PROTIMER_SHIFT;
+    187          #endif
+    188          
+    189          #if defined(_CMU_CLKEN0_PRS_SHIFT)
+    190          // Define PRS peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    191          const uint32_t SL_BUS_CLOCK_PRS_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_PRS_SHIFT;
+   \                     SL_BUS_CLOCK_PRS_VALUE:
+   \        0x0   0x0000'001B        DC32 27
+    192          #endif
+    193          
+    194          #if defined(_CMU_CLKEN1_RAC_SHIFT)
+    195          // Define RAC peripheral bus clock value.
+    196          const uint32_t SL_BUS_CLOCK_RAC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_RAC_SHIFT;
+    197          #endif
+    198          
+    199          #if defined(_CMU_CLKEN0_RADIOAES_SHIFT)
+    200          // Define RADIOAES peripheral bus clock value.
+    201          const uint32_t SL_BUS_CLOCK_RADIOAES_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_RADIOAES_SHIFT;
+    202          #endif
+    203          
+    204          #if defined(_CMU_CLKEN1_RDMAILBOX0_SHIFT)
+    205          // Define RDMAILBOX0 peripheral bus clock value.
+    206          const uint32_t SL_BUS_CLOCK_RDMAILBOX0_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_RDMAILBOX0_SHIFT;
+    207          #endif
+    208          
+    209          #if defined(_CMU_CLKEN1_RDMAILBOX1_SHIFT)
+    210          // Define RDMAILBOX1 peripheral bus clock value.
+    211          const uint32_t SL_BUS_CLOCK_RDMAILBOX1_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_RDMAILBOX1_SHIFT;
+    212          #endif
+    213          
+    214          #if defined(_CMU_CLKEN1_RDSCRATCHPAD_SHIFT)
+    215          // Define RDSCRATCHPAD peripheral bus clock value.
+    216          const uint32_t SL_BUS_CLOCK_RDSCRATCHPAD_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_RDSCRATCHPAD_SHIFT;
+    217          #endif
+    218          
+    219          #if defined(_CMU_CLKEN1_RFCRC_SHIFT)
+    220          // Define RFCRC peripheral bus clock value.
+    221          const uint32_t SL_BUS_CLOCK_RFCRC_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_RFCRC_SHIFT;
+    222          #endif
+    223          
+    224          #if defined(_CMU_CLKEN1_RFSENSE_SHIFT)
+    225          // Define RFSENSE peripheral bus clock value.
+    226          const uint32_t SL_BUS_CLOCK_RFSENSE_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_RFSENSE_SHIFT;
+    227          #endif
+    228          
+    229          #if defined(_CMU_CLKEN0_RTCC_SHIFT)
+    230          // Define RTCC peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    231          const uint32_t SL_BUS_CLOCK_RTCC_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_RTCC_SHIFT;
+   \                     SL_BUS_CLOCK_RTCC_VALUE:
+   \        0x0   0x0000'001E        DC32 30
+    232          #endif
+    233          
+    234          #if defined(_CMU_CLKEN1_SMU_SHIFT)
+    235          // Define SMU peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    236          const uint32_t SL_BUS_CLOCK_SMU_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_SMU_SHIFT;
+   \                     SL_BUS_CLOCK_SMU_VALUE:
+   \        0x0   0x0000'004F        DC32 79
+    237          #endif
+    238          
+    239          #if defined(_CMU_CLKEN1_SYNTH_SHIFT)
+    240          // Define SYNTH peripheral bus clock value.
+    241          const uint32_t SL_BUS_CLOCK_SYNTH_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_SYNTH_SHIFT;
+    242          #endif
+    243          
+    244          #if defined(_CMU_CLKEN0_SYSCFG_SHIFT)
+    245          // Define SYSCFG peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    246          const uint32_t SL_BUS_CLOCK_SYSCFG_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_SYSCFG_SHIFT;
+   \                     SL_BUS_CLOCK_SYSCFG_VALUE:
+   \        0x0   0x0000'0010        DC32 16
+    247          #endif
+    248          
+    249          #if defined(_CMU_CLKEN0_TIMER0_SHIFT)
+    250          // Define TIMER0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    251          const uint32_t SL_BUS_CLOCK_TIMER0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_TIMER0_SHIFT;
+   \                     SL_BUS_CLOCK_TIMER0_VALUE:
+   \        0x0   0x0000'0004        DC32 4
+    252          #endif
+    253          
+    254          #if defined(_CMU_CLKEN0_TIMER1_SHIFT)
+    255          // Define TIMER1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    256          const uint32_t SL_BUS_CLOCK_TIMER1_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_TIMER1_SHIFT;
+   \                     SL_BUS_CLOCK_TIMER1_VALUE:
+   \        0x0   0x0000'0005        DC32 5
+    257          #endif
+    258          
+    259          #if defined(_CMU_CLKEN0_TIMER2_SHIFT)
+    260          // Define TIMER2 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    261          const uint32_t SL_BUS_CLOCK_TIMER2_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_TIMER2_SHIFT;
+   \                     SL_BUS_CLOCK_TIMER2_VALUE:
+   \        0x0   0x0000'0006        DC32 6
+    262          #endif
+    263          
+    264          #if defined(_CMU_CLKEN0_TIMER3_SHIFT)
+    265          // Define TIMER3 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    266          const uint32_t SL_BUS_CLOCK_TIMER3_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_TIMER3_SHIFT;
+   \                     SL_BUS_CLOCK_TIMER3_VALUE:
+   \        0x0   0x0000'0007        DC32 7
+    267          #endif
+    268          
+    269          #if defined(_CMU_CLKEN1_TIMER4_SHIFT)
+    270          // Define TIMER4 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    271          const uint32_t SL_BUS_CLOCK_TIMER4_VALUE = (BUS_CLOCK_CLKEN1 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN1_TIMER4_SHIFT;
+   \                     SL_BUS_CLOCK_TIMER4_VALUE:
+   \        0x0   0x0000'0052        DC32 82
+    272          #endif
+    273          
+    274          #if defined(_CMU_CLKEN0_ULFRCO_SHIFT)
+    275          // Define ULFRCO peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    276          const uint32_t SL_BUS_CLOCK_ULFRCO_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_ULFRCO_SHIFT;
+   \                     SL_BUS_CLOCK_ULFRCO_VALUE:
+   \        0x0   0x0000'0017        DC32 23
+    277          #endif
+    278          
+    279          #if defined(_CMU_CLKEN0_USART0_SHIFT)
+    280          // Define USART0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    281          const uint32_t SL_BUS_CLOCK_USART0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_USART0_SHIFT;
+   \                     SL_BUS_CLOCK_USART0_VALUE:
+   \        0x0   0x0000'0008        DC32 8
+    282          #endif
+    283          
+    284          #if defined(_CMU_CLKEN0_USART1_SHIFT)
+    285          // Define USART1 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    286          const uint32_t SL_BUS_CLOCK_USART1_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_USART1_SHIFT;
+   \                     SL_BUS_CLOCK_USART1_VALUE:
+   \        0x0   0x0000'0009        DC32 9
+    287          #endif
+    288          
+    289          #if defined(_CMU_CLKEN0_WDOG0_SHIFT)
+    290          // Define WDOG0 peripheral bus clock value.
+
+   \                                 In section .rodata, align 4
+    291          const uint32_t SL_BUS_CLOCK_WDOG0_VALUE = (BUS_CLOCK_CLKEN0 << _BUS_CLOCK_CLKENX_SHIFT) | _CMU_CLKEN0_WDOG0_SHIFT;
+   \                     SL_BUS_CLOCK_WDOG0_VALUE:
+   \        0x0   0x0000'000D        DC32 13
+    292          #endif
+    293          
+    294          /** @} (end addtogroup device_clock) */
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  SL_BUS_CLOCK_AMUXCP0_VALUE
+       4  SL_BUS_CLOCK_BURAM_VALUE
+       4  SL_BUS_CLOCK_BURTC_VALUE
+       4  SL_BUS_CLOCK_CRYPTOACC_VALUE
+       4  SL_BUS_CLOCK_DCDC_VALUE
+       4  SL_BUS_CLOCK_DPLL0_VALUE
+       4  SL_BUS_CLOCK_EUART0_VALUE
+       4  SL_BUS_CLOCK_FSRCO_VALUE
+       4  SL_BUS_CLOCK_GPCRC0_VALUE
+       4  SL_BUS_CLOCK_GPIO_VALUE
+       4  SL_BUS_CLOCK_HFRCO0_VALUE
+       4  SL_BUS_CLOCK_HFXO0_VALUE
+       4  SL_BUS_CLOCK_I2C0_VALUE
+       4  SL_BUS_CLOCK_I2C1_VALUE
+       4  SL_BUS_CLOCK_IADC0_VALUE
+       4  SL_BUS_CLOCK_ICACHE0_VALUE
+       4  SL_BUS_CLOCK_LDMA0_VALUE
+       4  SL_BUS_CLOCK_LDMAXBAR0_VALUE
+       4  SL_BUS_CLOCK_LETIMER0_VALUE
+       4  SL_BUS_CLOCK_LFRCO_VALUE
+       4  SL_BUS_CLOCK_LFXO_VALUE
+       4  SL_BUS_CLOCK_MSC_VALUE
+       4  SL_BUS_CLOCK_PDM_VALUE
+       4  SL_BUS_CLOCK_PRS_VALUE
+       4  SL_BUS_CLOCK_RTCC_VALUE
+       4  SL_BUS_CLOCK_SMU_VALUE
+       4  SL_BUS_CLOCK_SYSCFG_VALUE
+       4  SL_BUS_CLOCK_TIMER0_VALUE
+       4  SL_BUS_CLOCK_TIMER1_VALUE
+       4  SL_BUS_CLOCK_TIMER2_VALUE
+       4  SL_BUS_CLOCK_TIMER3_VALUE
+       4  SL_BUS_CLOCK_TIMER4_VALUE
+       4  SL_BUS_CLOCK_ULFRCO_VALUE
+       4  SL_BUS_CLOCK_USART0_VALUE
+       4  SL_BUS_CLOCK_USART1_VALUE
+       4  SL_BUS_CLOCK_WDOG0_VALUE
+
+ 
+ 144 bytes in section .rodata
+ 
+ 144 bytes of CONST memory
+
+Errors: none
+Warnings: none

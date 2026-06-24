@@ -1,0 +1,1624 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:07
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager_hal_s2.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_17362038477303012698.dir\sl_power_manager_hal_s2.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager_hal_s2.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\sleep_loop_17362038477303012698.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_17362038477303012698.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_17362038477303012698.dir\sl_power_manager_hal_s2.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_17362038477303012698.dir\sl_power_manager_hal_s2.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\sleep_loop_17362038477303012698.dir\sl_power_manager_hal_s2.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_17362038477303012698.dir\sl_power_manager_hal_s2.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager_hal_s2.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Power Manager HAL API implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_device.h"
+
+   \                                 In section text_system_timecritical17171, align 2, keep-with-next
+   \   static __vfp uint32_t SystemCoreClockGet(void)
+   \                     SystemCoreClockGet: (+1)
+   \        0x0   0x.... 0x....      B.W      SystemHCLKGet
+
+   \                                 In section text_system_timecritical18191, align 2, keep-with-next
+   \   static __vfp void SystemCoreClockUpdate(void)
+   \                     SystemCoreClockUpdate: (+1)
+   \        0x0   0x.... 0x....      B.W      SystemCoreClockGet
+     32          #if defined(_SILICON_LABS_32B_SERIES_2)
+     33          
+     34          #include "em_emu.h"
+     35          #include "em_cmu.h"
+     36          #include "sl_assert.h"
+     37          #include "sl_power_manager.h"
+     38          #include "sli_power_manager.h"
+     39          #include "sli_power_manager_private.h"
+     40          #include "sl_sleeptimer.h"
+     41          #include "sli_sleeptimer.h"
+     42          #include "sl_power_manager_config.h"
+     43          
+     44          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+     45          #include "em_iadc.h"
+     46          #include <stdlib.h>
+     47          #endif
+     48          
+     49          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     50          #include "sl_component_catalog.h"
+     51          #endif
+     52          
+     53          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT) \
+     54            && !defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+     55          #include "sli_hfxo_manager.h"
+     56          #endif
+     57          
+     58          #include <stdbool.h>
+     59          
+     60          /*******************************************************************************
+     61           *********************************   DEFINES   *********************************
+     62           ******************************************************************************/
+     63          
+     64          // Time required by the hardware to come out of EM2 in microseconds.
+     65          // This value includes HW startup, emlib and sleepdrv execution time.
+     66          // Voltage scaling, HFXO startup and HFXO steady times are excluded from
+     67          // this because they are handled separately. RTCCSYNC time is also
+     68          // excluded and it is handled by RTCCSYNC code itself.
+     69          #if (_SILICON_LABS_32B_SERIES_2_CONFIG == 1)
+     70          #define EM2_WAKEUP_PROCESS_TIME_OVERHEAD_US (31u)
+     71          #else // (_SILICON_LABS_32B_SERIES_2_CONFIG == 2),
+     72          #define EM2_WAKEUP_PROCESS_TIME_OVERHEAD_US (31u)
+     73          #endif
+     74          
+     75          // DPLL Locking delay related defines
+     76          #define DPLL_COARSECOUNT_VALUE  (5u)
+     77          
+     78          // Time it takes to upscale voltage after EM2 in microseconds.
+     79          // This value represents the time for scaling from VSCALE0 to VSCALE2.
+     80          #define EM2_WAKEUP_VSCALE_OVERHEAD_US (64u)
+     81          
+     82          // Default time value in microseconds required to wake-up the hfxo oscillator.
+     83          #define HFXO_WAKE_UP_TIME_DEFAULT_VALUE_US  (400u)
+     84          
+     85          // high frequency oscillator wake-up time margin for possible variation
+     86          // A shift by 3 will be like a division by 8, so a percentage of 12.5%.
+     87          #define HFXO_START_UP_TIME_OVERHEAD_LOG2   3
+     88          
+     89          // Default time value in microseconds for the HFXO minimum off time.
+     90          #define HFXO_MINIMUM_OFFTIME_DEFAULT_VALUE_US  (400u)
+     91          
+     92          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+     93          // Table size of HFXO wake-up time measurement
+     94          #define HFXO_WAKE_UP_TIME_TABLE_SIZE  10
+     95          #endif
+     96          
+     97          // Defines for hidden HFXO0 DBGSTATUS register and STARTUPDONE flag
+     98          #define HFXO0_DBGSTATUS  (*(volatile uint32_t *)(HFXO0_BASE + 0x05C))
+     99          #define HFXO_DBGSTATUS_STARTUPDONE                  (0x1UL << 1)                               /**< Startup Done Status                         */
+    100          #define _HFXO_DBGSTATUS_STARTUPDONE_SHIFT           1                                          /**< Shift value for HFXO_STARTUPDONE            */
+    101          #define _HFXO_DBGSTATUS_STARTUPDONE_MASK            0x2UL                                      /**< Bit mask for HFXO_STARTUPDONE               */
+    102          
+    103          // Define for the maximum clock prescaler for HCLK and PCLK.
+    104          #if defined(CMU_SYSCLKCTRL_HCLKPRESC_DIV16)
+    105          #define CMU_SYSCLKCTRL_MAX_PRESC  (CMU_SYSCLKCTRL_HCLKPRESC_DIV16 | CMU_SYSCLKCTRL_PCLKPRESC_DIV2)
+    106          #else
+    107          #define CMU_SYSCLKCTRL_MAX_PRESC  (CMU_SYSCLKCTRL_HCLKPRESC_DIV4 | CMU_SYSCLKCTRL_PCLKPRESC_DIV2)
+    108          #endif
+    109          
+    110          /*******************************************************************************
+    111           *******************************  MACROS   *************************************
+    112           ******************************************************************************/
+    113          
+    114          /*******************************************************************************
+    115          * DPLL lock time can be approximately calculated by the equation:
+    116          *   COARSECOUNT * (M + 1) * Tref
+    117          * Where
+    118          *   - COARSECOUNT is calibration value in a hidden register. Its default value
+    119          *     is 5 and should not change with calibration.
+    120          *   - M is one the DPLL configuration parameter.
+    121          *   - Tref is the reference clock period.
+    122          *******************************************************************************/
+    123          #define DPLL_LOCKING_DELAY_US_FUNCTION(M, freq_ref) \
+    124            (uint32_t)(((uint64_t)(DPLL_COARSECOUNT_VALUE * ((M) +1)) * 1000000 + ((freq_ref) - 1)) / (freq_ref))
+    125          
+    126          /*******************************************************************************
+    127           ***************************  LOCAL VARIABLES   ********************************
+    128           ******************************************************************************/
+    129          
+    130          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    131          // Variables to save the relevant clock registers.
+    132          uint32_t cmu_em01_grpA_clock_register;
+    133          #if defined(_CMU_EM01GRPBCLKCTRL_CLKSEL_MASK)
+    134          uint32_t cmu_em01_grpB_clock_register;
+    135          #endif
+    136          #if defined(_CMU_EM01GRPCCLKCTRL_CLKSEL_MASK)
+    137          uint32_t cmu_em01_grpC_clock_register;
+    138          #endif
+    139          #if defined(_CMU_DPLLREFCLKCTRL_CLKSEL_MASK)
+    140          uint32_t cmu_dpll_ref_clock_register;
+    141          #endif
+    142          
+    143          uint32_t cmu_sys_clock_register;
+    144          
+    145          static uint32_t sysclk_prescalers_value;
+    146          extern bool requirement_on_em1_added;
+    147          
+    148          // Time in ticks required for the general wake-up process.
+    149          static uint32_t process_wakeup_overhead_tick = 0;
+    150          
+    151          #if defined(SLI_POWER_MANAGER_VSCALE_EM23_PRESENT)
+    152          static bool is_fast_wakeup_enabled = true;
+    153          #endif
+    154          
+    155          static bool is_hf_x_oscillator_used = false;
+    156          static bool is_dpll_used = false;
+
+   \                                 In section .bss, align 1
+    157          static bool is_entering_deepsleep = false;
+   \                     is_entering_deepsleep:
+   \        0x0                      DS8 1
+
+   \                                 In section .data, align 4
+   \                     is_fast_wakeup_enabled:
+   \        0x0   0x01               DC8 1
+   \        0x1   0x00               DC8 0
+   \        0x2   0x00               DC8 0
+   \        0x3   0x00               DC8 0
+   \        0x4   0x00               DC8 0
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00
+   \                     cmu_em01_grpA_clock_register:
+   \        0x8                      DS8 4
+   \                     cmu_em01_grpB_clock_register:
+   \        0xC                      DS8 4
+   \                     cmu_dpll_ref_clock_register:
+   \       0x10                      DS8 4
+   \                     cmu_sys_clock_register:
+   \       0x14                      DS8 4
+   \       0x18                      DS8 4
+   \       0x1C   0x0000'0000        DC32 0
+   \       0x20   0x0000'0000        DC32 0
+   \       0x24                      DS8 40
+   \       0x4C   0x0000'0000        DC32 0
+   \       0x50   0x0000'0000        DC32 0
+    158          
+    159          static bool is_hf_x_oscillator_already_started = false;
+    160          
+    161          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    162          static uint32_t hf_x_oscillator_wakeup_time_tc_inital = 0;
+    163          
+    164          static uint32_t hfxo_wakeup_time_table[HFXO_WAKE_UP_TIME_TABLE_SIZE];
+    165          static uint8_t hfxo_wakeup_time_table_index = 0;
+    166          static uint32_t hfxo_wakeup_time_sum_average = 0;
+    167          
+    168          // Time in ticks required for HFXO start-up after wake-up from sleep.
+    169          static uint32_t hfxo_wakeup_time_tick = 0;
+    170          #endif
+    171          #endif
+    172          
+    173          /***************************************************************************//**
+    174           * Do some hardware initialization if necessary.
+    175           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    176          void sli_power_manager_init_hardware(void)
+    177          {
+   \                     sli_power_manager_init_hardware: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0xF88D 0x1000      STRB     R1,[SP, #+0]
+    178            // Initializes EMU (voltage scaling in EM2/3)
+    179          #if defined(SLI_POWER_MANAGER_VSCALE_EM01_PRESENT)
+    180            EMU_EM01Init_TypeDef em01_init = EMU_EM01INIT_DEFAULT;
+    181          
+    182          #if defined(SL_POWER_MANAGER_ENABLE_EM01_VOLTAGE_SCALING) && (SL_POWER_MANAGER_ENABLE_EM01_VOLTAGE_SCALING == 1)
+    183            em01_init.vScaleEM01LowPowerVoltageEnable = true;
+    184          #endif
+    185          
+    186            EMU_EM01Init(&em01_init);
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x.... 0x....      BL       EMU_EM01Init
+    187          #endif
+    188          
+    189          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    190          #if defined(SLI_POWER_MANAGER_VSCALE_EM23_PRESENT)
+    191          #if defined(SL_POWER_MANAGER_CONFIG_VOLTAGE_SCALING_FAST_WAKEUP)
+    192          #if (SL_POWER_MANAGER_CONFIG_VOLTAGE_SCALING_FAST_WAKEUP == 0)
+    193            sli_power_manager_em23_voltage_scaling_enable_fast_wakeup(false);
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x.... 0x....      BL       sli_power_manager_em23_voltage_scaling_enable_fast_wakeup
+    194          #else
+    195            sli_power_manager_em23_voltage_scaling_enable_fast_wakeup(true);
+    196          #endif
+    197          #else
+    198            sli_power_manager_em23_voltage_scaling_enable_fast_wakeup(false);
+    199          #endif
+    200          #endif
+    201          
+    202          #if defined(_CMU_DPLLREFCLKCTRL_CLKSEL_MASK)
+    203            cmu_dpll_ref_clock_register = CMU->DPLLREFCLKCTRL & _CMU_DPLLREFCLKCTRL_CLKSEL_MASK;
+   \       0x14   0x....             LDR.N    R5,??DataTable4
+   \       0x16   0x6828             LDR      R0,[R5, #+0]
+   \       0x18   0x....             LDR.N    R4,??DataTable4_1
+    204          #endif
+    205          
+    206          #if defined(CMU_CLKEN0_DPLL0)
+    207            CMU->CLKEN0_SET = CMU_CLKEN0_HFXO0;
+   \       0x1A   0xF44F 0x2100      MOV      R1,#+524288
+   \       0x1E   0xF000 0x0003      AND      R0,R0,#0x3
+   \       0x22   0x6120             STR      R0,[R4, #+16]
+   \       0x24   0x....             LDR.N    R0,??DataTable4_2
+   \       0x26   0x6001             STR      R1,[R0, #+0]
+    208          
+    209            CMU->CLKEN0_SET = CMU_CLKEN0_DPLL0;
+   \       0x28   0xF44F 0x3200      MOV      R2,#+131072
+   \       0x2C   0x6002             STR      R2,[R0, #+0]
+    210          #endif
+    211          
+    212            // Retrieve clocks information about HFXO and DPLL
+    213            sli_power_manager_save_oscillators_usage();
+   \       0x2E   0x.... 0x....      BL       sli_power_manager_save_oscillators_usage
+    214          
+    215          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    216            // Set HFXO wakeup time to conservative default value
+    217            hfxo_wakeup_time_tick = sli_power_manager_convert_delay_us_to_tick(HFXO_WAKE_UP_TIME_DEFAULT_VALUE_US);
+   \       0x32   0xF44F 0x70C8      MOV      R0,#+400
+   \       0x36   0x.... 0x....      BL       sli_power_manager_convert_delay_us_to_tick
+    218            for (uint8_t i = 0; i < HFXO_WAKE_UP_TIME_TABLE_SIZE; i++) {
+   \       0x3A   0x6CE3             LDR      R3,[R4, #+76]
+   \       0x3C   0x6520             STR      R0,[R4, #+80]
+   \       0x3E   0x4602             MOV      R2,R0
+   \       0x40   0x200A             MOVS     R0,#+10
+   \       0x42   0x2100             MOVS     R1,#+0
+   \       0x44   0xFB00 0x3302      MLA      R3,R0,R2,R3
+    219              hfxo_wakeup_time_table[i] = hfxo_wakeup_time_tick;
+   \                     ??sli_power_manager_init_hardware_0: (+1)
+   \       0x48   0xB2C8             UXTB     R0,R1
+    220              hfxo_wakeup_time_sum_average += hfxo_wakeup_time_tick;
+    221            }
+   \       0x4A   0x1C49             ADDS     R1,R1,#+1
+   \       0x4C   0xEB04 0x0680      ADD      R6,R4,R0, LSL #+2
+   \       0x50   0xB2C8             UXTB     R0,R1
+   \       0x52   0x6272             STR      R2,[R6, #+36]
+   \       0x54   0x280A             CMP      R0,#+10
+   \       0x56   0xDBF7             BLT.N    ??sli_power_manager_init_hardware_0
+    222          #endif
+    223          
+    224            // Calculate DPLL locking delay from its configuration
+    225            if (is_dpll_used) {
+   \       0x58   0x78A0             LDRB     R0,[R4, #+2]
+   \       0x5A   0x64E3             STR      R3,[R4, #+76]
+   \       0x5C   0xB308             CBZ.N    R0,??sli_power_manager_init_hardware_1
+    226              uint32_t freq = 0;
+    227          
+    228              switch (CMU->DPLLREFCLKCTRL & _CMU_DPLLREFCLKCTRL_CLKSEL_MASK) {
+   \       0x5E   0x6829             LDR      R1,[R5, #+0]
+   \       0x60   0xF001 0x0103      AND      R1,R1,#0x3
+   \       0x64   0x2901             CMP      R1,#+1
+   \       0x66   0xD004             BEQ.N    ??sli_power_manager_init_hardware_2
+   \       0x68   0xD328             BCC.N    ??sli_power_manager_init_hardware_3
+   \       0x6A   0x2903             CMP      R1,#+3
+   \       0x6C   0xD023             BEQ.N    ??sli_power_manager_init_hardware_4
+   \       0x6E   0xD31F             BCC.N    ??sli_power_manager_init_hardware_5
+   \       0x70   0xE024             B.N      ??sli_power_manager_init_hardware_3
+    229                case _CMU_DPLLREFCLKCTRL_CLKSEL_HFXO:
+    230                  freq = SystemHFXOClockGet();
+   \                     ??sli_power_manager_init_hardware_2: (+1)
+   \       0x72   0x.... 0x....      BL       SystemHFXOClockGet
+   \                     ??sli_power_manager_init_hardware_6: (+1)
+   \       0x76   0x0002             MOVS     R2,R0
+    231                  break;
+    232          
+    233                case _CMU_DPLLREFCLKCTRL_CLKSEL_LFXO:
+    234                  freq = SystemLFXOClockGet();
+    235                  break;
+    236          
+    237                case _CMU_DPLLREFCLKCTRL_CLKSEL_CLKIN0:
+    238                  freq = SystemCLKIN0Get();
+    239                  break;
+    240          
+    241                default:
+    242                  EFM_ASSERT(false);
+    243                  break;
+    244              }
+    245              if (freq > 0) { // Avoid division by 0
+   \       0x78   0xD013             BEQ.N    ??sli_power_manager_init_hardware_1
+    246                // Add DPLL Locking delay
+    247                process_wakeup_overhead_tick += sli_power_manager_convert_delay_us_to_tick(DPLL_LOCKING_DELAY_US_FUNCTION((DPLL0->CFG1 & _DPLL_CFG1_M_MASK) >> _DPLL_CFG1_M_SHIFT, freq));
+   \       0x7A   0x....             LDR.N    R0,??DataTable4_3
+   \       0x7C   0x6803             LDR      R3,[R0, #+0]
+   \       0x7E   0x....             LDR.N    R5,??DataTable4_4
+   \       0x80   0x1E50             SUBS     R0,R2,#+1
+   \       0x82   0xF3C3 0x030B      UBFX     R3,R3,#+0,#+12
+   \       0x86   0x1C5B             ADDS     R3,R3,#+1
+   \       0x88   0xEB03 0x0383      ADD      R3,R3,R3, LSL #+2
+   \       0x8C   0x2100             MOVS     R1,#+0
+   \       0x8E   0xFBE5 0x0103      UMLAL    R0,R1,R5,R3
+   \       0x92   0x2300             MOVS     R3,#+0
+   \       0x94   0x.... 0x....      BL       __aeabi_uldivmod
+   \       0x98   0x.... 0x....      BL       sli_power_manager_convert_delay_us_to_tick
+   \       0x9C   0x69E1             LDR      R1,[R4, #+28]
+   \       0x9E   0x1840             ADDS     R0,R0,R1
+   \       0xA0   0x61E0             STR      R0,[R4, #+28]
+    248              }
+    249            }
+    250          
+    251            process_wakeup_overhead_tick += sli_power_manager_convert_delay_us_to_tick(EM2_WAKEUP_PROCESS_TIME_OVERHEAD_US);
+   \                     ??sli_power_manager_init_hardware_1: (+1)
+   \       0xA2   0x201F             MOVS     R0,#+31
+   \       0xA4   0x.... 0x....      BL       sli_power_manager_convert_delay_us_to_tick
+   \       0xA8   0x69E1             LDR      R1,[R4, #+28]
+   \       0xAA   0x1840             ADDS     R0,R0,R1
+   \       0xAC   0x61E0             STR      R0,[R4, #+28]
+    252          
+    253          #endif
+    254          }
+   \       0xAE   0xBD73             POP      {R0,R1,R4-R6,PC}
+   \                     ??sli_power_manager_init_hardware_5: (+1)
+   \       0xB0   0x.... 0x....      BL       SystemLFXOClockGet
+   \       0xB4   0xE7DF             B.N      ??sli_power_manager_init_hardware_6
+   \                     ??sli_power_manager_init_hardware_4: (+1)
+   \       0xB6   0x.... 0x....      BL       SystemCLKIN0Get
+   \       0xBA   0xE7DC             B.N      ??sli_power_manager_init_hardware_6
+   \                     ??sli_power_manager_init_hardware_3: (+1)
+   \       0xBC   0x21F2             MOVS     R1,#+242
+   \       0xBE   0x....             LDR.N    R0,??DataTable4_5
+   \       0xC0   0x.... 0x....      BL       assertEFM
+   \       0xC4   0xE7ED             B.N      ??sli_power_manager_init_hardware_1
+    255          
+    256          /***************************************************************************//**
+    257           * Retrieve information about if HFXO and DPLL oscillators are used.
+    258           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical6264, align 4, keep-with-next
+    259          void sli_power_manager_save_oscillators_usage(void)
+    260          {
+   \                     sli_power_manager_save_oscillators_usage: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    261          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    262            // Get the current HF oscillator for the SYSCLK.
+    263            cmu_sys_clock_register = CMU->SYSCLKCTRL & _CMU_SYSCLKCTRL_CLKSEL_MASK;
+   \        0x2   0x4818             LDR.N    R0,??sli_power_manager_save_oscillators_usage_0
+   \        0x4   0x6802             LDR      R2,[R0, #+0]
+   \        0x6   0x4918             LDR.N    R1,??sli_power_manager_save_oscillators_usage_0+4
+   \        0x8   0xF002 0x0207      AND      R2,R2,#0x7
+   \        0xC   0x614A             STR      R2,[R1, #+20]
+    264          
+    265            // Get SYSCLK prescalers.
+    266            sysclk_prescalers_value = (CMU->SYSCLKCTRL & (_CMU_SYSCLKCTRL_HCLKPRESC_MASK | _CMU_SYSCLKCTRL_PCLKPRESC_MASK));
+   \        0xE   0x6800             LDR      R0,[R0, #+0]
+    267          
+    268            // Get DPLL state.
+    269            is_dpll_used = ((DPLL0->STATUS & _DPLL_STATUS_ENS_MASK) != 0);
+   \       0x10   0x4A16             LDR.N    R2,??sli_power_manager_save_oscillators_usage_0+8
+   \       0x12   0xF400 0x4074      AND      R0,R0,#0xF400
+   \       0x16   0x6188             STR      R0,[R1, #+24]
+   \       0x18   0x6810             LDR      R0,[R2, #+0]
+    270          
+    271            // Get HFXO state.
+    272            is_hf_x_oscillator_used = ((cmu_sys_clock_register == CMU_SYSCLKCTRL_CLKSEL_HFXO)
+    273                                       || ((CMU->EM01GRPACLKCTRL & _CMU_EM01GRPACLKCTRL_CLKSEL_MASK) == CMU_EM01GRPACLKCTRL_CLKSEL_HFXO));
+   \       0x1A   0x4A15             LDR.N    R2,??sli_power_manager_save_oscillators_usage_0+12
+   \       0x1C   0x0840             LSRS     R0,R0,#+1
+   \       0x1E   0xF000 0x0001      AND      R0,R0,#0x1
+   \       0x22   0x7088             STRB     R0,[R1, #+2]
+   \       0x24   0x6948             LDR      R0,[R1, #+20]
+   \       0x26   0x2803             CMP      R0,#+3
+   \       0x28   0xBF1E             ITTT     NE
+   \       0x2A   0x6A10             LDRNE    R0,[R2, #+32]
+   \       0x2C   0xF000 0x0003      ANDNE    R0,R0,#0x3
+   \       0x30   0x2802             CMPNE    R0,#+2
+   \       0x32   0xBF1E             ITTT     NE
+   \       0x34   0x6A50             LDRNE    R0,[R2, #+36]
+   \       0x36   0xF000 0x0007      ANDNE    R0,R0,#0x7
+   \       0x3A   0x2802             CMPNE    R0,#+2
+   \       0x3C   0xD101             BNE.N    ??sli_power_manager_save_oscillators_usage_1
+   \       0x3E   0x2301             MOVS     R3,#+1
+   \       0x40   0xE000             B.N      ??sli_power_manager_save_oscillators_usage_2
+   \                     ??sli_power_manager_save_oscillators_usage_1: (+1)
+   \       0x42   0x2300             MOVS     R3,#+0
+    274          
+    275          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    276            // EFRXG21 has its RADIOCLK directly connected to HFXO.
+    277            is_hf_x_oscillator_used = is_hf_x_oscillator_used || ((CMU->RADIOCLKCTRL & _CMU_RADIOCLKCTRL_EN_MASK) != 0);
+    278          #endif
+    279          
+    280          #if defined(CMU_EM01GRPBCLKCTRL_CLKSEL_HFXO)
+    281            is_hf_x_oscillator_used = is_hf_x_oscillator_used || ((CMU->EM01GRPBCLKCTRL & _CMU_EM01GRPBCLKCTRL_CLKSEL_MASK) == CMU_EM01GRPBCLKCTRL_CLKSEL_HFXO);
+    282          #endif
+    283          
+    284          #if defined(CMU_EM01GRPCCLKCTRL_CLKSEL_HFXO)
+    285            is_hf_x_oscillator_used = is_hf_x_oscillator_used || ((CMU->EM01GRPCCLKCTRL & _CMU_EM01GRPCCLKCTRL_CLKSEL_MASK) == CMU_EM01GRPCCLKCTRL_CLKSEL_HFXO);
+    286          #endif
+    287          
+    288            if (is_dpll_used && !is_hf_x_oscillator_used) {
+   \                     ??sli_power_manager_save_oscillators_usage_2: (+1)
+   \       0x44   0x788D             LDRB     R5,[R1, #+2]
+   \       0x46   0xF083 0x0401      EOR      R4,R3,#0x1
+   \       0x4A   0x4225             TST      R5,R4
+   \       0x4C   0xD007             BEQ.N    ??sli_power_manager_save_oscillators_usage_3
+    289              is_hf_x_oscillator_used = is_hf_x_oscillator_used || ((CMU->DPLLREFCLKCTRL & _CMU_DPLLREFCLKCTRL_CLKSEL_MASK) == _CMU_DPLLREFCLKCTRL_CLKSEL_HFXO);
+   \       0x4E   0x0018             MOVS     R0,R3
+   \       0x50   0xD104             BNE.N    ??sli_power_manager_save_oscillators_usage_4
+   \       0x52   0x6810             LDR      R0,[R2, #+0]
+   \       0x54   0xF000 0x0003      AND      R0,R0,#0x3
+   \       0x58   0x2801             CMP      R0,#+1
+   \       0x5A   0xD100             BNE.N    ??sli_power_manager_save_oscillators_usage_3
+   \                     ??sli_power_manager_save_oscillators_usage_4: (+1)
+   \       0x5C   0x2301             MOVS     R3,#+1
+   \                     ??sli_power_manager_save_oscillators_usage_3: (+1)
+   \       0x5E   0x704B             STRB     R3,[R1, #+1]
+    290            }
+    291          #endif
+    292          }
+   \       0x60   0xBD30             POP      {R4,R5,PC}
+   \       0x62   0xBF00             Nop
+   \                     ??sli_power_manager_save_oscillators_usage_0:
+   \       0x64   0x5000'8070        DC32     0x50008070
+   \       0x68   0x....'....        DC32     is_fast_wakeup_enabled
+   \       0x6C   0x5001'C018        DC32     0x5001c018
+   \       0x70   0x5000'8100        DC32     0x50008100
+    293          
+    294          /***************************************************************************//**
+    295           * Enable or disable fast wake-up in EM2 and EM3.
+    296           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    297          void sli_power_manager_em23_voltage_scaling_enable_fast_wakeup(bool enable)
+    298          {
+   \                     sli_power_manager_em23_voltage_scaling_enable_fast_wakeup: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    299          #if (defined(SLI_POWER_MANAGER_VSCALE_EM23_PRESENT) && !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT))
+    300          
+    301            if (enable == is_fast_wakeup_enabled) {
+   \        0x2   0x....             LDR.N    R5,??DataTable4_1
+   \        0x4   0x7829             LDRB     R1,[R5, #+0]
+   \        0x6   0x4604             MOV      R4,R0
+   \        0x8   0x4288             CMP      R0,R1
+   \        0xA   0xD01C             BEQ.N    ??sli_power_manager_em23_voltage_scaling_enable_0
+    302              return;
+    303            }
+    304          
+    305            EMU_EM23Init_TypeDef em23_init = EMU_EM23INIT_DEFAULT;
+   \        0xC   0x....             ADR.N    R2,?_1
+   \        0xE   0x8810             LDRH     R0,[R2, #+0]
+    306          
+    307            // Enable/disable EMU voltage scaling in EM2/3
+    308            if (enable) {
+   \       0x10   0x0021             MOVS     R1,R4
+   \       0x12   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \       0x16   0xBF14             ITE      NE
+   \       0x18   0x2002             MOVNE    R0,#+2
+   \       0x1A   0x2000             MOVEQ    R0,#+0
+    309              em23_init.vScaleEM23Voltage = emuVScaleEM23_FastWakeup;
+    310            } else {
+    311              em23_init.vScaleEM23Voltage = emuVScaleEM23_LowPower;
+   \       0x1C   0xF88D 0x0001      STRB     R0,[SP, #+1]
+    312            }
+    313          
+    314            EMU_EM23Init(&em23_init);
+   \       0x20   0x4668             MOV      R0,SP
+   \       0x22   0x.... 0x....      BL       EMU_EM23Init
+    315          
+    316            // Calculate and add voltage scaling wake-up delays in ticks
+    317            if (enable) {
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0xD006             BEQ.N    ??sli_power_manager_em23_voltage_scaling_enable_1
+    318              // Remove voltage scaling delay if it was added before
+    319              process_wakeup_overhead_tick -= sli_power_manager_convert_delay_us_to_tick(EM2_WAKEUP_VSCALE_OVERHEAD_US);
+   \       0x2A   0x2040             MOVS     R0,#+64
+   \       0x2C   0x.... 0x....      BL       sli_power_manager_convert_delay_us_to_tick
+   \       0x30   0x4601             MOV      R1,R0
+   \       0x32   0x69E8             LDR      R0,[R5, #+28]
+   \       0x34   0x1A40             SUBS     R0,R0,R1
+   \       0x36   0xE004             B.N      ??sli_power_manager_em23_voltage_scaling_enable_2
+    320            } else {
+    321              // Add voltage scaling delay if it was not added before
+    322              process_wakeup_overhead_tick += sli_power_manager_convert_delay_us_to_tick(EM2_WAKEUP_VSCALE_OVERHEAD_US);
+   \                     ??sli_power_manager_em23_voltage_scaling_enable_1: (+1)
+   \       0x38   0x2040             MOVS     R0,#+64
+   \       0x3A   0x.... 0x....      BL       sli_power_manager_convert_delay_us_to_tick
+   \       0x3E   0x69E9             LDR      R1,[R5, #+28]
+   \       0x40   0x1840             ADDS     R0,R0,R1
+   \                     ??sli_power_manager_em23_voltage_scaling_enable_2: (+1)
+   \       0x42   0x61E8             STR      R0,[R5, #+28]
+    323            }
+    324          
+    325            is_fast_wakeup_enabled = enable;
+   \       0x44   0x702C             STRB     R4,[R5, #+0]
+    326          #else
+    327            (void)enable;
+    328          #endif
+    329          }
+   \                     ??sli_power_manager_em23_voltage_scaling_enable_0: (+1)
+   \       0x46   0xBD31             POP      {R0,R4,R5,PC}
+    330          
+    331          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    332          /***************************************************************************//**
+    333           * Save the CMU HF clock select state, oscillator enable, and voltage scaling.
+    334           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical6592, align 4, keep-with-next
+    335          void sli_power_manager_save_states(void)
+    336          {
+    337            // Save HF clock sources
+    338            cmu_em01_grpA_clock_register = CMU->EM01GRPACLKCTRL & _CMU_EM01GRPACLKCTRL_CLKSEL_MASK;
+   \                     sli_power_manager_save_states: (+1)
+   \        0x0   0x4905             LDR.N    R1,??sli_power_manager_save_states_0
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4805             LDR.N    R0,??sli_power_manager_save_states_0+4
+   \        0x6   0xF002 0x0203      AND      R2,R2,#0x3
+   \        0xA   0x6082             STR      R2,[R0, #+8]
+    339          #if defined(_CMU_EM01GRPBCLKCTRL_CLKSEL_MASK)
+    340            cmu_em01_grpB_clock_register = CMU->EM01GRPBCLKCTRL & _CMU_EM01GRPBCLKCTRL_CLKSEL_MASK;
+   \        0xC   0x6849             LDR      R1,[R1, #+4]
+   \        0xE   0xF001 0x0107      AND      R1,R1,#0x7
+   \       0x12   0x60C1             STR      R1,[R0, #+12]
+    341          #endif
+    342          #if defined(_CMU_EM01GRPCCLKCTRL_CLKSEL_MASK)
+    343            cmu_em01_grpC_clock_register = CMU->EM01GRPCCLKCTRL & _CMU_EM01GRPCCLKCTRL_CLKSEL_MASK;
+    344          #endif
+    345          
+    346            EMU_Save();
+   \       0x14   0x.... 0x....      B.W      EMU_Save
+   \                     ??sli_power_manager_save_states_0:
+   \       0x18   0x5000'8120        DC32     0x50008120
+   \       0x1C   0x....'....        DC32     is_fast_wakeup_enabled
+    347          }
+    348          #endif
+    349          
+    350          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    351          /***************************************************************************//**
+    352           * Handle pre-sleep operations if any are necessary, like manually disabling
+    353           * oscillators, change clock settings, etc.
+    354           ******************************************************************************/
+    355          SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
+
+   \                                 In section text_power_manager_timecritical78355, align 4, keep-with-next
+    356          void EMU_EM23PresleepHook(void)
+    357          {
+   \                     EMU_EM23PresleepHook: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    358            // Change the HF Clocks to be on FSRCO before sleep
+    359            if (is_entering_deepsleep) {
+   \        0x2   0x490D             LDR.N    R1,??EMU_EM23PresleepHook_0
+   \        0x4   0x7808             LDRB     R0,[R1, #+0]
+   \        0x6   0xB198             CBZ.N    R0,??EMU_EM23PresleepHook_1
+    360              is_entering_deepsleep = false;
+    361          
+    362              CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~_CMU_SYSCLKCTRL_CLKSEL_MASK) | _CMU_SYSCLKCTRL_CLKSEL_FSRCO;
+   \        0x8   0x480C             LDR.N    R0,??EMU_EM23PresleepHook_0+4
+   \        0xA   0x2200             MOVS     R2,#+0
+   \        0xC   0x700A             STRB     R2,[R1, #+0]
+   \        0xE   0x6802             LDR      R2,[R0, #+0]
+   \       0x10   0x2101             MOVS     R1,#+1
+   \       0x12   0xF361 0x0202      BFI      R2,R1,#+0,#+3
+   \       0x16   0x6002             STR      R2,[R0, #+0]
+    363              // Switch the HF Clocks oscillator's to FSRCO before deepsleep
+    364              CMU->EM01GRPACLKCTRL = (CMU->EM01GRPACLKCTRL  & ~_CMU_EM01GRPACLKCTRL_CLKSEL_MASK) | _CMU_EM01GRPACLKCTRL_CLKSEL_FSRCO;
+   \       0x18   0x4809             LDR.N    R0,??EMU_EM23PresleepHook_0+8
+   \       0x1A   0x6801             LDR      R1,[R0, #+0]
+   \       0x1C   0xF041 0x0103      ORR      R1,R1,#0x3
+   \       0x20   0x6001             STR      R1,[R0, #+0]
+    365          #if defined(_CMU_EM01GRPBCLKCTRL_CLKSEL_MASK)
+    366              CMU->EM01GRPBCLKCTRL = (CMU->EM01GRPBCLKCTRL  & ~_CMU_EM01GRPBCLKCTRL_CLKSEL_MASK) | _CMU_EM01GRPBCLKCTRL_CLKSEL_FSRCO;
+   \       0x22   0x6842             LDR      R2,[R0, #+4]
+   \       0x24   0x2103             MOVS     R1,#+3
+   \       0x26   0xF361 0x0202      BFI      R2,R1,#+0,#+3
+   \       0x2A   0x6042             STR      R2,[R0, #+4]
+    367          #endif
+    368          #if defined(_CMU_EM01GRPCCLKCTRL_CLKSEL_MASK)
+    369              CMU->EM01GRPCCLKCTRL = (CMU->EM01GRPCCLKCTRL  & ~_CMU_EM01GRPCCLKCTRL_CLKSEL_MASK) | _CMU_EM01GRPCCLKCTRL_CLKSEL_FSRCO;
+    370          #endif
+    371              // Disable DPLL before deepsleep
+    372          #if (_DPLL_IPVERSION_IPVERSION_DEFAULT >= 1)
+    373          #if defined(_CMU_DPLLREFCLKCTRL_CLKSEL_MASK)
+    374              if (is_dpll_used) {
+    375                DPLL0->EN_CLR = DPLL_EN_EN;
+    376                while ((DPLL0->EN & _DPLL_EN_DISABLING_MASK) != 0) {
+    377                  // Wait for DPLL to be disabled.
+    378                }
+    379              }
+    380          #endif
+    381          #endif
+    382          
+    383              SystemCoreClockUpdate();
+   \       0x2C   0x.... 0x....      BL       SystemCoreClockUpdate
+    384            }
+    385            // Clear HFXO IEN RDY before entering sleep to prevent HFXO HW requests from waking up the system
+    386            HFXO0->IEN_CLR = HFXO_IEN_RDY;
+   \                     ??EMU_EM23PresleepHook_1: (+1)
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x4904             LDR.N    R1,??EMU_EM23PresleepHook_0+12
+   \       0x34   0x6008             STR      R0,[R1, #+0]
+    387          }
+   \       0x36   0xBD01             POP      {R0,PC}
+   \                     ??EMU_EM23PresleepHook_0:
+   \       0x38   0x....'....        DC32     is_entering_deepsleep
+   \       0x3C   0x5000'8070        DC32     0x50008070
+   \       0x40   0x5000'8120        DC32     0x50008120
+   \       0x44   0x5000'E074        DC32     0x5000e074
+    388          #endif
+    389          
+    390          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    391          /***************************************************************************//**
+    392           * Handle post-sleep operations. The idea is to start HFXO ASAP when we know we
+    393           * will need it.
+    394           *
+    395           * @note In case HFXO is already started when we wake-up (ENS flag is up),
+    396           *       the hidden flag STARTUPDONE is check to see if the HFXO was just
+    397           *       enabled or not. If HFXO is enabled automatically following the wake-up,
+    398           *       the STARTUPDONE flag will not yet be up, and it's an indication that
+    399           *       we can still process to the HFXO restore time measurement.
+    400           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    401          void EMU_EM23PostsleepHook(void)
+    402          {
+   \                     EMU_EM23PostsleepHook: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    403            // Re enable HFXO IEN RDY since it was disabled in EMU_EM23PresleepHook
+    404            HFXO0->IEN_SET = HFXO_IEN_RDY;
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....             LDR.N    R2,??DataTable4_6
+   \        0x6   0x6010             STR      R0,[R2, #+0]
+    405          
+    406            // Poke sleeptimer to determine if power manager's timer expired before the
+    407            // ISR handler executes.
+    408            // Also, check if HFXO is used.
+    409            if (is_hf_x_oscillator_used
+    410                && sli_sleeptimer_hal_is_int_status_set(SLEEPTIMER_EVENT_COMP)
+    411                && sli_sleeptimer_is_power_manager_timer_next_to_expire()) {
+   \        0x8   0x....             LDR.N    R4,??DataTable4_1
+   \        0xA   0x7861             LDRB     R1,[R4, #+1]
+   \        0xC   0xB1F9             CBZ.N    R1,??EMU_EM23PostsleepHook_0
+   \        0xE   0x2002             MOVS     R0,#+2
+   \       0x10   0x.... 0x....      BL       sli_sleeptimer_hal_is_int_status_set
+   \       0x14   0xB1D8             CBZ.N    R0,??EMU_EM23PostsleepHook_0
+   \       0x16   0x.... 0x....      BL       sli_sleeptimer_is_power_manager_timer_next_to_expire
+   \       0x1A   0xB1C0             CBZ.N    R0,??EMU_EM23PostsleepHook_0
+    412              // Check if HFXO is already running and has finished its startup.
+    413              // If yes, don't do the HFXO restore time measurement.
+    414              if (((HFXO0->STATUS & _HFXO_STATUS_ENS_MASK) != 0
+    415                   && (HFXO0_DBGSTATUS & _HFXO_DBGSTATUS_STARTUPDONE_MASK) != 0)
+    416                  || (HFXO0->STATUS & _HFXO_STATUS_RDY_MASK) != 0) {
+   \       0x1C   0x....             LDR.N    R0,??DataTable4_7
+   \       0x1E   0x6801             LDR      R1,[R0, #+0]
+   \       0x20   0x03CA             LSLS     R2,R1,#+15
+   \       0x22   0xD502             BPL.N    ??EMU_EM23PostsleepHook_1
+   \       0x24   0x6841             LDR      R1,[R0, #+4]
+   \       0x26   0x078A             LSLS     R2,R1,#+30
+   \       0x28   0xD411             BMI.N    ??EMU_EM23PostsleepHook_0
+   \                     ??EMU_EM23PostsleepHook_1: (+1)
+   \       0x2A   0x6800             LDR      R0,[R0, #+0]
+   \       0x2C   0x07C1             LSLS     R1,R0,#+31
+   \       0x2E   0xD40E             BMI.N    ??EMU_EM23PostsleepHook_0
+    417          #if !defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    418                // Force-enable HFXO in case the HFXO on-demand request would be removed
+    419                // before we finish the restore process.
+    420                HFXO0->CTRL_SET = HFXO_CTRL_FORCEEN;
+    421          #endif
+    422                return;
+    423              }
+    424          
+    425              // Start measure HFXO restore time.
+    426              is_hf_x_oscillator_already_started = true;
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x70E0             STRB     R0,[R4, #+3]
+    427          
+    428          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    429              hf_x_oscillator_wakeup_time_tc_inital = sl_sleeptimer_get_tick_count();
+   \       0x34   0x.... 0x....      BL       sl_sleeptimer_get_tick_count
+   \       0x38   0x6220             STR      R0,[R4, #+32]
+    430          
+    431              // Switch SYSCLK to HFXO to measure restore time
+    432              CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~_CMU_SYSCLKCTRL_CLKSEL_MASK) | cmuSelect_HFXO;
+   \       0x3A   0x....             LDR.N    R0,??DataTable4_8
+   \       0x3C   0x6802             LDR      R2,[R0, #+0]
+   \       0x3E   0x2103             MOVS     R1,#+3
+   \       0x40   0xF361 0x0202      BFI      R2,R1,#+0,#+3
+   \       0x44   0x6002             STR      R2,[R0, #+0]
+    433              SystemCoreClockUpdate();
+   \       0x46   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x4A   0x.... 0x....      B.W      SystemCoreClockUpdate
+    434          #else
+    435              sli_hfxo_manager_begin_startup_measurement();
+    436          
+    437              // Force enable HFXO to measure restore time
+    438              HFXO0->CTRL_SET = HFXO_CTRL_FORCEEN;
+    439          #endif
+    440            }
+    441          }
+   \                     ??EMU_EM23PostsleepHook_0: (+1)
+   \       0x4E   0xBD10             POP      {R4,PC}
+    442          #endif
+    443          
+    444          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    445          /***************************************************************************//**
+    446           * Handle pre-deepsleep operations if any are necessary, like manually disabling
+    447           * oscillators, change clock settings, etc.
+    448           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical6695, align 4, keep-with-next
+    449          void sli_power_manager_handle_pre_deepsleep_operations(void)
+    450          {
+    451            is_entering_deepsleep = true;
+   \                     sli_power_manager_handle_pre_deepsleep_operations: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x4901             LDR.N    R1,??sli_power_manager_handle_pre_deepsleep_operat_0
+   \        0x4   0x7008             STRB     R0,[R1, #+0]
+    452          }
+   \        0x6   0x4770             BX       LR
+   \                     ??sli_power_manager_handle_pre_deepsleep_operat_0:
+   \        0x8   0x....'....        DC32     is_entering_deepsleep
+    453          #endif
+    454          
+    455          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    456          /***************************************************************************//**
+    457           * Handle post-sleep operations if any are necessary, like manually enabling
+    458           * oscillators, change clock settings, etc.
+    459           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical6798, align 4, keep-with-next
+    460          void sli_power_manager_restore_high_freq_accuracy_clk(void)
+    461          {
+   \                     sli_power_manager_restore_high_freq_accuracy_clk: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    462            if (!is_hf_x_oscillator_used) {
+   \        0x2   0x4C1C             LDR.N    R4,??sli_power_manager_restore_high_freq_accuracy__0
+   \        0x4   0x7860             LDRB     R0,[R4, #+1]
+   \        0x6   0xB3A0             CBZ.N    R0,??sli_power_manager_restore_high_freq_accuracy__1
+    463              return;
+    464            }
+    465          
+    466            // For the cases where it's not started from an early wake up
+    467            // And if HFXO is not already running.
+    468            if (!is_hf_x_oscillator_already_started) {
+   \        0x8   0x78E0             LDRB     R0,[R4, #+3]
+   \        0xA   0xB9A0             CBNZ.N   R0,??sli_power_manager_restore_high_freq_accuracy__2
+    469              // Check if HFXO is already running and has finished its startup.
+    470              // If yes, don't do the HFXO restore time measurement.
+    471              if (((HFXO0->STATUS & _HFXO_STATUS_ENS_MASK) != 0
+    472                   && (HFXO0_DBGSTATUS & _HFXO_DBGSTATUS_STARTUPDONE_MASK) != 0)
+    473                  || (HFXO0->STATUS & _HFXO_STATUS_RDY_MASK) != 0) {
+   \        0xC   0x481A             LDR.N    R0,??sli_power_manager_restore_high_freq_accuracy__0+4
+   \        0xE   0x6801             LDR      R1,[R0, #+0]
+   \       0x10   0x03CA             LSLS     R2,R1,#+15
+   \       0x12   0xD502             BPL.N    ??sli_power_manager_restore_high_freq_accuracy__3
+   \       0x14   0x6841             LDR      R1,[R0, #+4]
+   \       0x16   0x078A             LSLS     R2,R1,#+30
+   \       0x18   0xD42B             BMI.N    ??sli_power_manager_restore_high_freq_accuracy__1
+   \                     ??sli_power_manager_restore_high_freq_accuracy__3: (+1)
+   \       0x1A   0x6800             LDR      R0,[R0, #+0]
+   \       0x1C   0x07C1             LSLS     R1,R0,#+31
+   \       0x1E   0xD428             BMI.N    ??sli_power_manager_restore_high_freq_accuracy__1
+    474          #if !defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    475                // Force-enable HFXO in case the HFXO on-demand request would be removed
+    476                // before we finish the restore process.
+    477                HFXO0->CTRL_SET = HFXO_CTRL_FORCEEN;
+    478          #endif
+    479                return;
+    480              }
+    481          
+    482          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    483              hf_x_oscillator_wakeup_time_tc_inital = sl_sleeptimer_get_tick_count();
+   \       0x20   0x.... 0x....      BL       sl_sleeptimer_get_tick_count
+   \       0x24   0x6220             STR      R0,[R4, #+32]
+    484          
+    485              // Switch SYSCLK to HFXO to measure restore time
+    486              CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~_CMU_SYSCLKCTRL_CLKSEL_MASK) | cmuSelect_HFXO;
+   \       0x26   0x4815             LDR.N    R0,??sli_power_manager_restore_high_freq_accuracy__0+8
+   \       0x28   0x6802             LDR      R2,[R0, #+0]
+   \       0x2A   0x2103             MOVS     R1,#+3
+   \       0x2C   0xF361 0x0202      BFI      R2,R1,#+0,#+3
+   \       0x30   0x6002             STR      R2,[R0, #+0]
+    487              SystemCoreClockUpdate();
+   \       0x32   0x.... 0x....      BL       SystemCoreClockUpdate
+    488          #else
+    489              // Start measure HFXO restore time
+    490              sli_hfxo_manager_begin_startup_measurement();
+    491          
+    492              // Force enable HFXO to measure restore time
+    493              HFXO0->CTRL_SET = HFXO_CTRL_FORCEEN;
+    494          #endif
+    495            }
+    496          
+    497          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    498            uint32_t current_time = sl_sleeptimer_get_tick_count() - hf_x_oscillator_wakeup_time_tc_inital;
+   \                     ??sli_power_manager_restore_high_freq_accuracy__2: (+1)
+   \       0x36   0x.... 0x....      BL       sl_sleeptimer_get_tick_count
+   \       0x3A   0x6A21             LDR      R1,[R4, #+32]
+    499            // Calculate average for HFXO restore time
+    500            hfxo_wakeup_time_sum_average -= (int32_t)hfxo_wakeup_time_table[hfxo_wakeup_time_table_index] - (int32_t)current_time;
+   \       0x3C   0x7922             LDRB     R2,[R4, #+4]
+   \       0x3E   0x1A40             SUBS     R0,R0,R1
+   \       0x40   0x6CE3             LDR      R3,[R4, #+76]
+   \       0x42   0xEB04 0x0582      ADD      R5,R4,R2, LSL #+2
+    501            hfxo_wakeup_time_table[hfxo_wakeup_time_table_index] = current_time;
+    502            hfxo_wakeup_time_tick = ((hfxo_wakeup_time_sum_average + (HFXO_WAKE_UP_TIME_TABLE_SIZE - 1) ) / HFXO_WAKE_UP_TIME_TABLE_SIZE);
+    503          
+    504            // Update index of wakeup time table
+    505            hfxo_wakeup_time_table_index++;
+    506            hfxo_wakeup_time_table_index %= HFXO_WAKE_UP_TIME_TABLE_SIZE;
+   \       0x46   0x1C52             ADDS     R2,R2,#+1
+   \       0x48   0x6A69             LDR      R1,[R5, #+36]
+   \       0x4A   0xB2D2             UXTB     R2,R2
+   \       0x4C   0x6268             STR      R0,[R5, #+36]
+   \       0x4E   0x1A5B             SUBS     R3,R3,R1
+   \       0x50   0x210A             MOVS     R1,#+10
+   \       0x52   0xFB92 0xF1F1      SDIV     R1,R2,R1
+   \       0x56   0x18C3             ADDS     R3,R0,R3
+   \       0x58   0xF103 0x0009      ADD      R0,R3,#+9
+   \       0x5C   0x250A             MOVS     R5,#+10
+   \       0x5E   0xFBB0 0xF5F5      UDIV     R5,R0,R5
+   \       0x62   0x200A             MOVS     R0,#+10
+   \       0x64   0xFB00 0x2211      MLS      R2,R0,R1,R2
+   \       0x68   0x6525             STR      R5,[R4, #+80]
+    507          #endif
+    508          
+    509            is_hf_x_oscillator_already_started = false;
+    510          }
+   \       0x6A   0x64E3             STR      R3,[R4, #+76]
+   \       0x6C   0x7122             STRB     R2,[R4, #+4]
+   \       0x6E   0x2200             MOVS     R2,#+0
+   \       0x70   0x70E2             STRB     R2,[R4, #+3]
+   \                     ??sli_power_manager_restore_high_freq_accuracy__1: (+1)
+   \       0x72   0xBD31             POP      {R0,R4,R5,PC}
+   \                     ??sli_power_manager_restore_high_freq_accuracy__0:
+   \       0x74   0x....'....        DC32     is_fast_wakeup_enabled
+   \       0x78   0x5000'C058        DC32     0x5000c058
+   \       0x7C   0x5000'8070        DC32     0x50008070
+    511          #endif
+    512          
+    513          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    514          /***************************************************************************//**
+    515           * Checks if HF accuracy clocks is fully restored and, if needed, waits for it.
+    516           *
+    517           * @param wait  True, to wait for HF accuracy clocks to be ready
+    518           *              False, otherwise.
+    519           *
+    520           * @return True, if HFXO ready.
+    521           *         False, otherwise.
+    522           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical68101, align 2, keep-with-next
+    523          bool sli_power_manager_is_high_freq_accuracy_clk_ready(bool wait)
+    524          {
+    525            if (!is_hf_x_oscillator_used) {
+    526              return true;
+    527            }
+    528          
+    529          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    530            (void)wait;
+    531            return true;
+   \                     sli_power_manager_is_high_freq_accuracy_clk_ready: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x4770             BX       LR
+    532          #else
+    533            return sli_hfxo_manager_is_hfxo_ready(wait);
+    534          #endif
+    535          }
+    536          #endif
+    537          
+    538          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    539          /***************************************************************************//**
+    540           * Restore CMU HF clock select state, oscillator enable, and voltage scaling.
+    541           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical69104, align 4, keep-with-next
+    542          void sli_power_manager_restore_states(void)
+    543          {
+   \                     sli_power_manager_restore_states: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    544            // Restore specific EMU saved contexts
+    545            EMU_Restore();
+   \        0x2   0x.... 0x....      BL       EMU_Restore
+    546          
+    547            // Restore DPLL after deepsleep
+    548          #if (_DPLL_IPVERSION_IPVERSION_DEFAULT >= 1)
+    549          #if defined(_CMU_DPLLREFCLKCTRL_CLKSEL_MASK)
+    550            if (is_dpll_used) {
+    551              DPLL0->EN_SET = DPLL_EN_EN;
+    552              while ((DPLL0->STATUS & _DPLL_STATUS_RDY_MASK) == 0U) {
+    553                // Wait for DPLL to be ready.
+    554              }
+    555            }
+    556          #endif
+    557          #endif
+    558          
+    559            // Restore SYSCLK to what it was before the deepsleep
+    560            CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~_CMU_SYSCLKCTRL_CLKSEL_MASK) | cmu_sys_clock_register;
+   \        0x6   0x490F             LDR.N    R1,??sli_power_manager_restore_states_0
+   \        0x8   0x4A0F             LDR.N    R2,??sli_power_manager_restore_states_0+4
+   \        0xA   0x680B             LDR      R3,[R1, #+0]
+   \        0xC   0x6950             LDR      R0,[R2, #+20]
+   \        0xE   0x08DB             LSRS     R3,R3,#+3
+   \       0x10   0xEA40 0x03C3      ORR      R3,R0,R3, LSL #+3
+   \       0x14   0x600B             STR      R3,[R1, #+0]
+    561          
+    562            // Restore the HF Clocks to what they were before deepsleep
+    563            CMU->EM01GRPACLKCTRL = (CMU->EM01GRPACLKCTRL & ~_CMU_EM01GRPACLKCTRL_CLKSEL_MASK) | cmu_em01_grpA_clock_register;
+   \       0x16   0x4B0D             LDR.N    R3,??sli_power_manager_restore_states_0+8
+   \       0x18   0x6819             LDR      R1,[R3, #+0]
+   \       0x1A   0x6890             LDR      R0,[R2, #+8]
+   \       0x1C   0x0889             LSRS     R1,R1,#+2
+   \       0x1E   0xEA40 0x0181      ORR      R1,R0,R1, LSL #+2
+   \       0x22   0x6019             STR      R1,[R3, #+0]
+    564          #if defined(_CMU_EM01GRPBCLKCTRL_CLKSEL_MASK)
+    565            CMU->EM01GRPBCLKCTRL = (CMU->EM01GRPBCLKCTRL & ~_CMU_EM01GRPBCLKCTRL_CLKSEL_MASK) | cmu_em01_grpB_clock_register;
+   \       0x24   0x685C             LDR      R4,[R3, #+4]
+   \       0x26   0x68D1             LDR      R1,[R2, #+12]
+   \       0x28   0x08E4             LSRS     R4,R4,#+3
+   \       0x2A   0xEA41 0x04C4      ORR      R4,R1,R4, LSL #+3
+   \       0x2E   0x605C             STR      R4,[R3, #+4]
+    566          #endif
+    567          #if defined(_CMU_EM01GRPCCLKCTRL_CLKSEL_MASK)
+    568            CMU->EM01GRPCCLKCTRL = (CMU->EM01GRPCCLKCTRL & ~_CMU_EM01GRPCCLKCTRL_CLKSEL_MASK) | cmu_em01_grpC_clock_register;
+    569          #endif
+    570          
+    571            // Remove FORCEEN on HFXO
+    572            if (is_hf_x_oscillator_used) {
+   \       0x30   0x7850             LDRB     R0,[R2, #+1]
+   \       0x32   0xB110             CBZ.N    R0,??sli_power_manager_restore_states_1
+    573              HFXO0->CTRL_CLR = HFXO_CTRL_FORCEEN;
+   \       0x34   0x2101             MOVS     R1,#+1
+   \       0x36   0x4806             LDR.N    R0,??sli_power_manager_restore_states_0+12
+   \       0x38   0x6001             STR      R1,[R0, #+0]
+    574            }
+    575          
+    576            SystemCoreClockUpdate();
+   \                     ??sli_power_manager_restore_states_1: (+1)
+   \       0x3A   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x3E   0x.... 0x....      B.W      SystemCoreClockUpdate
+   \       0x42   0xBF00             Nop
+   \                     ??sli_power_manager_restore_states_0:
+   \       0x44   0x5000'8070        DC32     0x50008070
+   \       0x48   0x....'....        DC32     is_fast_wakeup_enabled
+   \       0x4C   0x5000'8120        DC32     0x50008120
+   \       0x50   0x5000'E028        DC32     0x5000e028
+    577          }
+    578          #endif
+    579          
+    580          /***************************************************************************//**
+    581           * Applies energy mode.
+    582           *
+    583           * @param em  Energy mode to apply:
+    584           *            SL_POWER_MANAGER_EM1
+    585           *            SL_POWER_MANAGER_EM2
+    586           *
+    587           * @note EMU_EnterEM2() has the parameter 'restore' set to true in
+    588           *       the Power Manager. When set to true, the parameter 'restore'
+    589           *       allows the EMU driver to save and restore oscillators, clocks and
+    590           *       voltage scaling. When the processor returns from EM2 or EM3, its
+    591           *       execution resumes in a clean and stable state.
+    592           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical6486, align 4, keep-with-next
+    593          void sli_power_manager_apply_em(sl_power_manager_em_t em)
+    594          {
+   \                     sli_power_manager_apply_em: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    595          #if defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    596            // Perform required actions according to energy mode
+    597            switch (em) {
+    598              case SL_POWER_MANAGER_EM1:
+    599              case SL_POWER_MANAGER_EM2:
+    600          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    601                // when measuring interrupt disabled time, we don't
+    602                // want to count the time spent in sleep
+    603                sl_cycle_counter_pause();
+    604          #endif
+    605                EMU_EnterEM1();
+    606          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    607                sl_cycle_counter_resume();
+    608          #endif
+    609                break;
+    610          
+    611              default:
+    612                EFM_ASSERT(false);
+    613                break;
+    614            }
+    615          #else
+    616            // Perform required actions according to energy mode
+    617            switch (em) {
+   \        0x2   0x4C18             LDR.N    R4,??sli_power_manager_apply_em_0
+   \        0x4   0x2801             CMP      R0,#+1
+   \        0x6   0xD002             BEQ.N    ??sli_power_manager_apply_em_1
+   \        0x8   0x2802             CMP      R0,#+2
+   \        0xA   0xD01B             BEQ.N    ??sli_power_manager_apply_em_2
+   \        0xC   0xE022             B.N      ??sli_power_manager_apply_em_3
+    618              case SL_POWER_MANAGER_EM1:
+    619          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    620                // when measuring interrupt disabled time, we don't
+    621                // want to count the time spent in sleep
+    622                sl_cycle_counter_pause();
+    623          #endif
+    624                if (requirement_on_em1_added) {
+   \                     ??sli_power_manager_apply_em_1: (+1)
+   \        0xE   0x4916             LDR.N    R1,??sli_power_manager_apply_em_0+4
+   \       0x10   0x7808             LDRB     R0,[R1, #+0]
+   \       0x12   0x4A16             LDR.N    R2,??sli_power_manager_apply_em_0+8
+   \       0x14   0xB118             CBZ.N    R0,??sli_power_manager_apply_em_4
+    625                  // Apply HCLK and PCLK prescalers.
+    626                  CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~(_CMU_SYSCLKCTRL_HCLKPRESC_MASK | _CMU_SYSCLKCTRL_PCLKPRESC_MASK)) | CMU_SYSCLKCTRL_MAX_PRESC;
+   \       0x16   0x6813             LDR      R3,[R2, #+0]
+   \       0x18   0xF443 0x4374      ORR      R3,R3,#0xF400
+   \       0x1C   0x6013             STR      R3,[R2, #+0]
+    627                }
+    628                EMU_EnterEM1();
+   \                     ??sli_power_manager_apply_em_4: (+1)
+   \       0x1E   0x6825             LDR      R5,[R4, #+0]
+   \       0x20   0xF025 0x0504      BIC      R5,R5,#0x4
+   \       0x24   0x6025             STR      R5,[R4, #+0]
+   \       0x26   0xF3BF 0x8F4F      DSB      SY
+   \       0x2A   0xF3BF 0x8F6F      ISB      SY
+   \       0x2E   0xBF30             WFI
+    629                if (requirement_on_em1_added) {
+   \       0x30   0x7808             LDRB     R0,[R1, #+0]
+   \       0x32   0xB1B0             CBZ.N    R0,??sli_power_manager_apply_em_5
+    630                  // Restore HCLK and PCLK prescalers.
+    631                  CMU->SYSCLKCTRL = (CMU->SYSCLKCTRL & ~(_CMU_SYSCLKCTRL_HCLKPRESC_MASK | _CMU_SYSCLKCTRL_PCLKPRESC_MASK)) | sysclk_prescalers_value;
+   \       0x34   0x6813             LDR      R3,[R2, #+0]
+   \       0x36   0x480E             LDR.N    R0,??sli_power_manager_apply_em_0+12
+   \       0x38   0x6981             LDR      R1,[R0, #+24]
+   \       0x3A   0xF423 0x4374      BIC      R3,R3,#0xF400
+   \       0x3E   0x430B             ORRS     R3,R1,R3
+   \       0x40   0x6013             STR      R3,[R2, #+0]
+   \       0x42   0xBD31             POP      {R0,R4,R5,PC}
+    632                }
+    633          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    634                sl_cycle_counter_resume();
+    635          #endif
+    636                break;
+    637          
+    638              case SL_POWER_MANAGER_EM2:
+    639          #if defined(SLI_POWER_MANAGER_ENABLE_SYSTEMVIEW)
+    640                SEGGER_SYSVIEW_MarkStart(SLI_SYSTEMVIEW_MARKER_ID_SLEEP);
+    641          #endif
+    642                EMU_EnterEM2(false);
+   \                     ??sli_power_manager_apply_em_2: (+1)
+   \       0x44   0x2000             MOVS     R0,#+0
+   \       0x46   0x.... 0x....      BL       EMU_EnterEM2
+    643          #if defined(SLI_POWER_MANAGER_ENABLE_SYSTEMVIEW)
+    644                SEGGER_SYSVIEW_MarkStop(SLI_SYSTEMVIEW_MARKER_ID_SLEEP);
+    645          #endif
+    646                // Clear the SLEEPDEEP bit after sleep.
+    647                SCB->SCR &= ~SCB_SCR_SLEEPDEEP_Msk;
+   \       0x4A   0x6821             LDR      R1,[R4, #+0]
+   \       0x4C   0xF021 0x0104      BIC      R1,R1,#0x4
+   \       0x50   0x6021             STR      R1,[R4, #+0]
+    648                break;
+   \       0x52   0xBD31             POP      {R0,R4,R5,PC}
+    649          
+    650              default:
+    651                EFM_ASSERT(false);
+   \                     ??sli_power_manager_apply_em_3: (+1)
+   \       0x54   0xF240 0x218B      MOVW     R1,#+651
+   \       0x58   0x4806             LDR.N    R0,??sli_power_manager_apply_em_0+16
+   \       0x5A   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \       0x5E   0x.... 0x....      B.W      assertEFM
+    652                break;
+    653            }
+    654          #endif // SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT
+    655          }
+   \                     ??sli_power_manager_apply_em_5: (+1)
+   \       0x62   0xBD31             POP      {R0,R4,R5,PC}
+   \                     ??sli_power_manager_apply_em_0:
+   \       0x64   0xE000'ED10        DC32     0xe000ed10
+   \       0x68   0x....'....        DC32     requirement_on_em1_added
+   \       0x6C   0x5000'8070        DC32     0x50008070
+   \       0x70   0x....'....        DC32     is_fast_wakeup_enabled
+   \       0x74   0x....'....        DC32     ?_0
+    656          
+    657          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    658          /*******************************************************************************
+    659           * Returns the default minimum offtime for HFXO.
+    660           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    661          uint32_t sli_power_manager_get_default_high_frequency_minimum_offtime(void)
+    662          {
+    663            return sli_power_manager_convert_delay_us_to_tick(HFXO_MINIMUM_OFFTIME_DEFAULT_VALUE_US);
+   \                     sli_power_manager_get_default_high_frequency_minimum_offtime: (+1)
+   \        0x0   0xF44F 0x70C8      MOV      R0,#+400
+   \        0x4   0x.... 0x....      B.W      sli_power_manager_convert_delay_us_to_tick
+    664          }
+    665          #endif
+    666          
+    667          /*******************************************************************************
+    668           * Gets the delay associated the wake-up process from EM23.
+    669           *
+    670           * @return Delay for the complete wake-up process with full restore.
+    671           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical6372, align 4, keep-with-next
+    672          uint32_t sli_power_manager_get_wakeup_process_time_overhead(void)
+    673          {
+    674          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    675            uint32_t delay = 0;
+    676          
+    677            // Add HFXO start-up delay if applicable
+    678            if (is_hf_x_oscillator_used) {
+   \                     sli_power_manager_get_wakeup_process_time_overhead: (+1)
+   \        0x0   0x4A04             LDR.N    R2,??sli_power_manager_get_wakeup_process_time_ove_0
+   \        0x2   0x7851             LDRB     R1,[R2, #+1]
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xB111             CBZ.N    R1,??sli_power_manager_get_wakeup_process_time_ove_1
+    679          #if defined(SL_CATALOG_POWER_MANAGER_DEEPSLEEP_BLOCKING_HFXO_RESTORE_PRESENT)
+    680              delay = hfxo_wakeup_time_tick;
+   \        0x8   0x6D10             LDR      R0,[R2, #+80]
+    681          #else
+    682              delay = sli_hfxo_manager_get_startup_time();
+    683          #endif
+    684              delay += delay >> HFXO_START_UP_TIME_OVERHEAD_LOG2;
+   \        0xA   0xEB00 0x00D0      ADD      R0,R0,R0, LSR #+3
+    685            }
+    686          
+    687            // Add all additional overhead wake-up delays (DPLL, VSCALE, general wake-up process)
+    688            delay += process_wakeup_overhead_tick;
+    689          
+    690            return delay;
+   \                     ??sli_power_manager_get_wakeup_process_time_ove_1: (+1)
+   \        0xE   0x69D1             LDR      R1,[R2, #+28]
+   \       0x10   0x1808             ADDS     R0,R1,R0
+   \       0x12   0x4770             BX       LR
+   \                     ??sli_power_manager_get_wakeup_process_time_ove_0:
+   \       0x14   0x....'....        DC32     is_fast_wakeup_enabled
+    691          #else
+    692            return 0;
+    693          #endif
+    694          }
+    695          
+    696          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    697          /***************************************************************************//**
+    698           * Informs the power manager module that the high accuracy/high frequency clock
+    699           * is used.
+    700           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    701          void sli_power_manager_set_high_accuracy_hf_clock_as_used(void)
+    702          {
+    703            is_hf_x_oscillator_used = true;
+   \                     sli_power_manager_set_high_accuracy_hf_clock_as_used: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x....             LDR.N    R1,??DataTable4_1
+   \        0x4   0x7048             STRB     R0,[R1, #+1]
+    704          }
+   \        0x6   0x4770             BX       LR
+    705          #endif
+    706          
+    707          #if !defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    708          /***************************************************************************//**
+    709           * Informs the power manager if the high accuracy/high frequency clock
+    710           * is used, prior to scheduling an early clock restore.
+    711           *
+    712           * @return true if HFXO is used, else false.
+    713           ******************************************************************************/
+
+   \                                 In section text_power_manager_timecritical70123, align 4, keep-with-next
+    714          bool sli_power_manager_is_high_freq_accuracy_clk_used(void)
+    715          {
+    716            return is_hf_x_oscillator_used;
+   \                     sli_power_manager_is_high_freq_accuracy_clk_used: (+1)
+   \        0x0   0x4801             LDR.N    R0,??sli_power_manager_is_high_freq_accuracy_clk_u_0
+   \        0x2   0x7840             LDRB     R0,[R0, #+1]
+   \        0x4   0x4770             BX       LR
+   \        0x6   0xBF00             Nop
+   \                     ??sli_power_manager_is_high_freq_accuracy_clk_u_0:
+   \        0x8   0x....'....        DC32     is_fast_wakeup_enabled
+    717          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x5000'8100        DC32     0x50008100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     is_fast_wakeup_enabled
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x5000'9064        DC32     0x50009064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x5001'C00C        DC32     0x5001c00c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x000F'4240        DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x5000'D074        DC32     0x5000d074
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \        0x0   0x5000'C058        DC32     0x5000c058
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \        0x0   0x5000'8070        DC32     0x50008070
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x73, 0x65, 0x72, 0x76, 0x69, 0x63
+   \              0x73 0x65    
+   \              0x72 0x76    
+   \              0x69 0x63
+   \       0x70   0x65 0x5C          DC8 0x65, 0x5C, 0x70, 0x6F, 0x77, 0x65, 0x72, 0x5F
+   \              0x70 0x6F    
+   \              0x77 0x65    
+   \              0x72 0x5F
+   \       0x78   0x6D 0x61          DC8 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65, 0x72, 0x5C
+   \              0x6E 0x61    
+   \              0x67 0x65    
+   \              0x72 0x5C
+   \       0x80   0x73 0x72          DC8 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x65, 0x65
+   \              0x63 0x5C    
+   \              0x73 0x6C    
+   \              0x65 0x65
+   \       0x88   0x70 0x5F          DC8 0x70, 0x5F, 0x6C, 0x6F, 0x6F, 0x70, 0x5C, 0x73
+   \              0x6C 0x6F    
+   \              0x6F 0x70    
+   \              0x5C 0x73
+   \       0x90   0x6C 0x5F          DC8 0x6C, 0x5F, 0x70, 0x6F, 0x77, 0x65, 0x72, 0x5F
+   \              0x70 0x6F    
+   \              0x77 0x65    
+   \              0x72 0x5F
+   \       0x98   0x6D 0x61          DC8 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65, 0x72, 0x5F
+   \              0x6E 0x61    
+   \              0x67 0x65    
+   \              0x72 0x5F
+   \       0xA0   0x68 0x61          DC8 0x68, 0x61, 0x6C, 0x5F, 0x73, 0x32, 0x2E, 0x63
+   \              0x6C 0x5F    
+   \              0x73 0x32    
+   \              0x2E 0x63
+   \       0xA8   0x00               DC8 0
+   \       0xA9                      DS8 3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x00 0x02          DC8 0, 2
+    718          #endif
+    719          
+    720          #if defined(SL_CATALOG_POWER_MANAGER_NO_DEEPSLEEP_PRESENT)
+    721          /*******************************************************************************
+    722           * HAL hook function for pre EM1HCLKDIV sleep.
+    723           ******************************************************************************/
+    724          void sli_power_manager_em1hclkdiv_presleep_operations(void)
+    725          {
+    726            // No operations to do before EM1HCLKDIV sleep on series 2 devices
+    727          }
+    728          
+    729          /*******************************************************************************
+    730           * HAL hook function for post EM1HCLKDIV sleep.
+    731           ******************************************************************************/
+    732          void sli_power_manager_em1hclkdiv_postsleep_operations(void)
+    733          {
+    734            // No operations to do before EM1HCLKDIV sleep on series 2 devices
+    735          }
+    736          #endif
+    737          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   EMU_EM23PostsleepHook
+         0   -> SystemCoreClockUpdate
+         8   -> sl_sleeptimer_get_tick_count
+         8   -> sli_sleeptimer_hal_is_int_status_set
+         8   -> sli_sleeptimer_is_power_manager_timer_next_to_expire
+       8   EMU_EM23PresleepHook
+         8   -> SystemCoreClockUpdate
+       0   SystemCoreClockGet
+         0   -> SystemHCLKGet
+       0   SystemCoreClockUpdate
+         0   -> SystemCoreClockGet
+      16   sli_power_manager_apply_em
+        16   -> EMU_EnterEM2
+         0   -> assertEFM
+      16   sli_power_manager_em23_voltage_scaling_enable_fast_wakeup
+        16   -> EMU_EM23Init
+        16   -> sli_power_manager_convert_delay_us_to_tick
+       0   sli_power_manager_get_default_high_frequency_minimum_offtime
+         0   -> sli_power_manager_convert_delay_us_to_tick
+       0   sli_power_manager_get_wakeup_process_time_overhead
+       0   sli_power_manager_handle_pre_deepsleep_operations
+      24   sli_power_manager_init_hardware
+        24   -> EMU_EM01Init
+        24   -> SystemCLKIN0Get
+        24   -> SystemHFXOClockGet
+        24   -> SystemLFXOClockGet
+        24   -> assertEFM
+        24   -> sli_power_manager_convert_delay_us_to_tick
+        24   -> sli_power_manager_em23_voltage_scaling_enable_fast_wakeup
+        24   -> sli_power_manager_save_oscillators_usage
+        24 __aeabi_uldivmod
+       0   sli_power_manager_is_high_freq_accuracy_clk_ready
+       0   sli_power_manager_is_high_freq_accuracy_clk_used
+      16   sli_power_manager_restore_high_freq_accuracy_clk
+        16   -> SystemCoreClockUpdate
+        16   -> sl_sleeptimer_get_tick_count
+       8   sli_power_manager_restore_states
+         8   -> EMU_Restore
+         0   -> SystemCoreClockUpdate
+      12   sli_power_manager_save_oscillators_usage
+       0   sli_power_manager_save_states
+         0   -> EMU_Save
+       0   sli_power_manager_set_high_accuracy_hf_clock_as_used
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+     172  ?_0
+       2  ?_1
+      80  EMU_EM23PostsleepHook
+      72  EMU_EM23PresleepHook
+       4  SystemCoreClockGet
+       4  SystemCoreClockUpdate
+       1  is_entering_deepsleep
+      84  is_fast_wakeup_enabled
+          is_hf_x_oscillator_used
+          is_dpll_used
+          is_hf_x_oscillator_already_started
+          hfxo_wakeup_time_table_index
+          cmu_em01_grpA_clock_register
+          cmu_em01_grpB_clock_register
+          cmu_dpll_ref_clock_register
+          cmu_sys_clock_register
+          sysclk_prescalers_value
+          process_wakeup_overhead_tick
+          hf_x_oscillator_wakeup_time_tc_inital
+          hfxo_wakeup_time_table
+          hfxo_wakeup_time_sum_average
+          hfxo_wakeup_time_tick
+     120  sli_power_manager_apply_em
+      72  sli_power_manager_em23_voltage_scaling_enable_fast_wakeup
+       8  sli_power_manager_get_default_high_frequency_minimum_offtime
+      24  sli_power_manager_get_wakeup_process_time_overhead
+      12  sli_power_manager_handle_pre_deepsleep_operations
+     198  sli_power_manager_init_hardware
+       4  sli_power_manager_is_high_freq_accuracy_clk_ready
+      12  sli_power_manager_is_high_freq_accuracy_clk_used
+     128  sli_power_manager_restore_high_freq_accuracy_clk
+      84  sli_power_manager_restore_states
+     116  sli_power_manager_save_oscillators_usage
+      32  sli_power_manager_save_states
+       8  sli_power_manager_set_high_accuracy_hf_clock_as_used
+
+ 
+   1 byte  in section .bss
+  84 bytes in section .data
+ 172 bytes in section .rodata
+ 404 bytes in section .text
+ 116 bytes in section text_power_manager_timecritical6264
+  24 bytes in section text_power_manager_timecritical6372
+ 120 bytes in section text_power_manager_timecritical6486
+  32 bytes in section text_power_manager_timecritical6592
+  12 bytes in section text_power_manager_timecritical6695
+ 128 bytes in section text_power_manager_timecritical6798
+   4 bytes in section text_power_manager_timecritical68101
+  84 bytes in section text_power_manager_timecritical69104
+  12 bytes in section text_power_manager_timecritical70123
+  72 bytes in section text_power_manager_timecritical78355
+   4 bytes in section text_system_timecritical17171
+   4 bytes in section text_system_timecritical18191
+ 
+ 1'016 bytes of CODE  memory
+   172 bytes of CONST memory
+    85 bytes of DATA  memory
+
+Errors: none
+Warnings: none

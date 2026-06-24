@@ -80,4 +80,3 @@
 // <<< sl:end pin_tool >>>
 
 #endif // SL_I2CSPM_TMP1075_CONFIG_H
-

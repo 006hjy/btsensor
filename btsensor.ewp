@@ -237,10 +237,12 @@
                     <state>SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager</state>
                     <state>SL_COMPONENT_CATALOG_PRESENT=1</state>
                     <state>SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral</state>
-                    <state>SL_CODE_COMPONENT_DMADRV=dmadrv</state>
+                    <state>SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel</state>
+                    <state>SL_CODE_COMPONENT_DMA_MANAGER=dma_manager</state>
                     <state>SL_CODE_COMPONENT_GPIO=gpio</state>
                     <state>SL_CODE_COMPONENT_HAL_COMMON=hal_common</state>
                     <state>SL_CODE_COMPONENT_HAL_GPIO=hal_gpio</state>
+                    <state>SL_CODE_COMPONENT_HAL_LDMA=hal_ldma</state>
                     <state>SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager</state>
                     <state>CMSIS_NVIC_VIRTUAL=1</state>
                     <state>CMSIS_NVIC_VIRTUAL_HEADER_FILE="cmsis_nvic_virtual.h"</state>
@@ -373,41 +375,43 @@
                     <state>$PROJ_DIR$\config</state>
                     <state>$PROJ_DIR$\autogen</state>
                     <state>$PROJ_DIR$\.</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -609,10 +613,12 @@
                     <state>SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager</state>
                     <state>SL_COMPONENT_CATALOG_PRESENT=1</state>
                     <state>SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral</state>
-                    <state>SL_CODE_COMPONENT_DMADRV=dmadrv</state>
+                    <state>SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel</state>
+                    <state>SL_CODE_COMPONENT_DMA_MANAGER=dma_manager</state>
                     <state>SL_CODE_COMPONENT_GPIO=gpio</state>
                     <state>SL_CODE_COMPONENT_HAL_COMMON=hal_common</state>
                     <state>SL_CODE_COMPONENT_HAL_GPIO=hal_gpio</state>
+                    <state>SL_CODE_COMPONENT_HAL_LDMA=hal_ldma</state>
                     <state>SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager</state>
                     <state>CMSIS_NVIC_VIRTUAL=1</state>
                     <state>CMSIS_NVIC_VIRTUAL_HEADER_FILE="cmsis_nvic_virtual.h"</state>
@@ -716,41 +722,43 @@
                     <state>$PROJ_DIR$\config</state>
                     <state>$PROJ_DIR$\autogen</state>
                     <state>$PROJ_DIR$\.</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc</state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -1252,6 +1260,12 @@
                 <name>$PROJ_DIR$\autogen\sl_component_catalog.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\autogen\sl_dma_manager_instances.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_dma_manager_instances.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\autogen\sl_event_handler.c</name>
             </file>
             <file>
@@ -1275,9 +1289,6 @@
         </group>
         <group>
             <name>config</name>
-            <file>
-                <name>$PROJ_DIR$\config\dmadrv_config.h</name>
-            </file>
             <file>
                 <name>$PROJ_DIR$\config\nvm3_default_config.h</name>
             </file>
@@ -1319,226 +1330,40 @@
             </file>
         </group>
         <group>
-            <name>simplicity_sdk_2025.12.3</name>
+            <name>simplicity_sdk_2026.6.0</name>
             <group>
                 <name>cmsis</name>
                 <group>
                     <name>Core</name>
                     <group>
                         <name>Include</name>
-                        <file>
-                            <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include\cmsis_compiler.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include\cmsis_iccarm.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include\cmsis_version.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include\core_cm33.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include\mpu_armv8.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\cmsis\Core\Include\tz_context.h</name>
-                        </file>
-                    </group>
-                </group>
-            </group>
-            <group>
-                <name>devices</name>
-                <group>
-                    <name>platform</name>
-                    <group>
-                        <name>Device</name>
                         <group>
-                            <name>SiliconLabs</name>
-                            <group>
-                                <name>EFM32PG22</name>
-                                <group>
-                                    <name>Include</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_buram.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_burtc.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_cmu.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_cryptoacc.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_dcdc.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_devinfo.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_dma_descriptor.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_dpll.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_emu.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_eusart.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_fsrco.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_gpcrc.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_gpio.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_gpio_port.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_hfrco.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_hfxo.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_i2c.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_iadc.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_icache.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ldma.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ldmaxbar.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ldmaxbar_defines.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_letimer.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_lfrco.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_lfxo.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_msc.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_pdm.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_prs.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_prs_signals.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_rtcc.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_smu.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_syscfg.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_timer.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ulfrco.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_usart.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_wdog.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22c200f512im32.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\em_device.h</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Include\system_efm32pg22.h</name>
-                                    </file>
-                                </group>
-                                <group>
-                                    <name>Source</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Source\startup_efm32pg22.c</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\devices\platform\Device\SiliconLabs\EFM32PG22\Source\system_efm32pg22.c</name>
-                                    </file>
-                                </group>
-                            </group>
-                        </group>
-                    </group>
-                </group>
-            </group>
-            <group>
-                <name>platform_common</name>
-                <group>
-                    <name>platform</name>
-                    <group>
-                        <name>common</name>
-                        <group>
-                            <name>inc</name>
+                            <name>m-profile</name>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_assert.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\armv8m_mpu.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_atomic.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_bit.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_code_classification.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_common.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_compiler.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_enum.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_slist.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sl_status.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\inc\sli_code_classification.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\cmsis_iccarm_m.h</name>
                             </file>
                         </group>
-                        <group>
-                            <name>src</name>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\src\sl_assert.c</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_common\platform\common\src\sl_slist.c</name>
-                            </file>
-                        </group>
+                        <file>
+                            <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\cmsis_compiler.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\cmsis_iccarm.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\cmsis_version.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\core_cm33.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\sli_cmsis_deprecated_aliases.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\cmsis\Core\Include\tz_context.h</name>
+                        </file>
                     </group>
                 </group>
             </group>
@@ -1553,37 +1378,238 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\errno_error_codes\inc\errno_error_codes.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\errno_error_codes.h</name>
                                 </file>
                             </group>
                         </group>
                         <group>
                             <name>inc</name>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\inc\sl_core.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_assert.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_atomic.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_bit.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_code_classification.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_common.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_compiler.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_core.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_enum.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_slist.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_status.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sli_code_classification.h</name>
                             </file>
                         </group>
                         <group>
                             <name>src</name>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\common\src\sl_core_cortexm.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\src\sl_assert.c</name>
                             </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\src\sl_core_cortexm.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\src\sl_slist.c</name>
+                            </file>
+                        </group>
+                    </group>
+                    <group>
+                        <name>Device</name>
+                        <group>
+                            <name>SiliconLabs</name>
+                            <group>
+                                <name>EFM32PG22</name>
+                                <group>
+                                    <name>Include</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_buram.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_burtc.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_cmu.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_cryptoacc.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_dcdc.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_devinfo.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_dma_descriptor.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_dpll.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_emu.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_eusart.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_fsrco.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_gpcrc.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_gpio.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_gpio_port.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_hfrco.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_hfxo.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_i2c.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_iadc.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_icache.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ldma.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ldmaxbar.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ldmaxbar_defines.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_letimer.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_lfrco.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_lfxo.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_msc.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_pdm.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_prs.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_prs_signals.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_rtcc.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_smu.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_syscfg.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_timer.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_ulfrco.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_usart.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22_wdog.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\efm32pg22c200f512im32.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\em_device.h</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\system_efm32pg22.h</name>
+                                    </file>
+                                </group>
+                                <group>
+                                    <name>Source</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Source\startup_efm32pg22.c</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Source\system_efm32pg22.c</name>
+                                    </file>
+                                </group>
+                            </group>
                         </group>
                     </group>
                     <group>
                         <name>driver</name>
                         <group>
-                            <name>gpio</name>
+                            <name>dma_channel</name>
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\inc\sl_gpio.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\sl_dma_channel.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\sl_dma_channel_device.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\sl_dma_descriptor_allocator.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\sli_dma_channel.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\gpio\src\sl_gpio.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\src\sl_dma_channel.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\src\sl_dma_descriptor_allocator.c</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>gpio</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\sl_gpio.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\src\sl_gpio.c</name>
                                 </file>
                             </group>
                         </group>
@@ -1592,16 +1618,16 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\inc\sl_i2c.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\sl_i2c.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src\sl_i2c.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\sl_i2c.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2c\src\sli_i2c.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\sli_i2c.h</name>
                                 </file>
                             </group>
                         </group>
@@ -1610,13 +1636,13 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\inc\sl_i2cspm.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\sl_i2cspm.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\driver\i2cspm\src\sl_i2cspm.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\src\sl_i2cspm.c</name>
                                 </file>
                             </group>
                         </group>
@@ -1628,28 +1654,7 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\common\inc\ecode.h</name>
-                                </file>
-                            </group>
-                        </group>
-                        <group>
-                            <name>dmadrv</name>
-                            <group>
-                                <name>inc</name>
-                                <group>
-                                    <name>s2_signals</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h</name>
-                                    </file>
-                                </group>
-                                <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\inc\dmadrv.h</name>
-                                </file>
-                            </group>
-                            <group>
-                                <name>src</name>
-                                <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\dmadrv\src\dmadrv.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\ecode.h</name>
                                 </file>
                             </group>
                         </group>
@@ -1658,70 +1663,70 @@
                             <group>
                                 <name>config</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\config\nvm3_config.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\nvm3_config.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_cache.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_cache.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_default.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_default.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_generic.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_generic.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_hal.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_hal.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_hal_flash.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_hal_flash.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_lock.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_lock.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_object.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_object.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_page.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_page.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_trace.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_trace.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\inc\nvm3_utils.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\nvm3_utils.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_cache.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_cache.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_default_common_linker.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_default_common_linker.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_hal_flash.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_hal_flash.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_lock.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_lock.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_object.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_object.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_page.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_page.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\nvm3\src\nvm3_utils.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_utils.c</name>
                                 </file>
                             </group>
                         </group>
@@ -1730,13 +1735,13 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\inc\tempdrv.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\tempdrv.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\tempdrv\src\tempdrv.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\src\tempdrv.c</name>
                                 </file>
                             </group>
                         </group>
@@ -1745,13 +1750,13 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\inc\uartdrv.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\uartdrv.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emdrv\uartdrv\src\uartdrv.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\src\uartdrv.c</name>
                                 </file>
                             </group>
                         </group>
@@ -1761,124 +1766,118 @@
                         <group>
                             <name>inc</name>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_assert.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_assert.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_burtc.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_burtc.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_bus.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_bus.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_cmu.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_cmu.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_cmu_compat.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_cmu_compat.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_common.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_common.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_core.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_core.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_core_generic.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_core_generic.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_emu.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_emu.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_eusart.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_eusart.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_eusart_compat.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_eusart_compat.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_gpio.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_gpio.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_i2c.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_i2c.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_iadc.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_iadc.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_ldma.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_msc.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_msc.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_msc_compat.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_msc_compat.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_ramfunc.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_ramfunc.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_rtcc.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_rtcc.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_syscfg.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_syscfg.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_system.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_system.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_system_generic.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_system_generic.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_timer.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_timer.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_usart.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_usart.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\em_version.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\em_version.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\inc\sli_em_cmu.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\sli_em_cmu.h</name>
                             </file>
                         </group>
                         <group>
                             <name>src</name>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_burtc.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_burtc.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_cmu.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_cmu.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_emu.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_emu.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_eusart.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_eusart.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_gpio.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_gpio.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_i2c.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_i2c.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_iadc.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_iadc.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_ldma.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_msc.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_msc.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_rtcc.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_rtcc.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_system.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_system.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_timer.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_timer.c</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\emlib\src\em_usart.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_usart.c</name>
                             </file>
                         </group>
                     </group>
@@ -1887,49 +1886,55 @@
                         <group>
                             <name>inc</name>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_bus.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_bus.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_gpio.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_gpio.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_i2c.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_i2c.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_iadc.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_iadc.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_letimer.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_ldma.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_syscfg.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_letimer.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_system.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_syscfg.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\inc\sl_hal_system_generic.h</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_system.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_system_generic.h</name>
                             </file>
                         </group>
                         <group>
                             <name>src</name>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_gpio.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpio.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_i2c.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_i2c.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_iadc.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_iadc.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_letimer.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_ldma.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_syscfg.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_letimer.c</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\peripheral\src\sl_hal_system.c</name>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_syscfg.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_system.c</name>
                             </file>
                         </group>
                     </group>
@@ -1940,34 +1945,34 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\sl_clock_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\sl_clock_manager.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\sl_clock_manager_init.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\sl_clock_manager_init.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\inc\sli_clock_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\sli_clock_manager.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\sl_clock_manager.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager_hal_s2.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\sl_clock_manager_hal_s2.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager_init.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\sl_clock_manager_init.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sl_clock_manager_init_hal_s2.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\sl_clock_manager_init_hal_s2.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sli_clock_manager_hal.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\sli_clock_manager_hal.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\clock_manager\src\sli_clock_manager_init_hal.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\sli_clock_manager_init_hal.h</name>
                                 </file>
                             </group>
                         </group>
@@ -1976,13 +1981,13 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\inc\sl_device_init_dcdc.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\sl_device_init_dcdc.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_init\src\sl_device_init_dcdc_s2.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\src\sl_device_init_dcdc_s2.c</name>
                                 </file>
                             </group>
                         </group>
@@ -1991,55 +1996,76 @@
                             <group>
                                 <name>clocks</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\clocks\sl_device_clock_efr32xg22.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\clocks\sl_device_clock_efr32xg22.c</name>
                                 </file>
                             </group>
                             <group>
                                 <name>devices</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\devices\sl_device_peripheral_hal_efr32xg22.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\devices\sl_device_peripheral_hal_efr32xg22.c</name>
                                 </file>
                             </group>
                             <group>
                                 <name>dma</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\dma\sl_device_dma_s2.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\dma\sl_device_dma_s2.c</name>
                                 </file>
                             </group>
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\sl_device_clock.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\sl_device_clock.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\sl_device_dma.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\sl_device_dma.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\sl_device_gpio.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\sl_device_gpio.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\sl_device_i2c.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\sl_device_i2c.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\sl_device_peripheral.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\sl_device_peripheral.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\inc\sl_device_peripheral_types.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\sl_device_peripheral_types.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\sl_device_clock.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_clock.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\sl_device_dma.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_dma.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\sl_device_gpio.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_gpio.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\device_manager\src\sl_device_peripheral.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_peripheral.c</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>dma_manager</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\sl_dma_manager.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\sl_dma_manager.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\sl_dma_manager_hal_ldma.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\sli_dma_manager_internal.h</name>
                                 </file>
                             </group>
                         </group>
@@ -2050,20 +2076,20 @@
                                 <group>
                                     <name>arm</name>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\arm\cmsis_nvic_virtual.h</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\cmsis_nvic_virtual.h</name>
                                     </file>
                                 </group>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\inc\sl_interrupt_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\sl_interrupt_manager.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\sl_interrupt_manager_cortexm.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\sl_interrupt_manager_cortexm.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\interrupt_manager\src\sli_interrupt_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\sli_interrupt_manager.h</name>
                                 </file>
                             </group>
                         </group>
@@ -2072,40 +2098,40 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\sl_memory_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\sl_memory_manager.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\sl_memory_manager_region.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\sl_memory_manager_region.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\inc\sli_memory_manager_retention_control.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\sli_memory_manager_retention_control.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_dynamic_reservation.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_dynamic_reservation.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool_common.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_pool_common.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_region.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_region.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sl_memory_manager_retarget.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_retarget.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sli_memory_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sli_memory_manager.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\memory_manager\src\sli_memory_manager_common.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sli_memory_manager_common.c</name>
                                 </file>
                             </group>
                         </group>
@@ -2114,13 +2140,13 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\sl_power_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\sl_power_manager.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\sl_power_manager_debug.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\sl_power_manager_debug.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\inc\sli_power_manager.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\sli_power_manager.h</name>
                                 </file>
                             </group>
                             <group>
@@ -2128,28 +2154,28 @@
                                 <group>
                                     <name>common</name>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\sl_power_manager_common.c</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\sl_power_manager_common.c</name>
                                     </file>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\sl_power_manager_em4.c</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\sl_power_manager_em4.c</name>
                                     </file>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\common\sli_power_manager_common_private.h</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\sli_power_manager_common_private.h</name>
                                     </file>
                                 </group>
                                 <group>
                                     <name>sleep_loop</name>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager.c</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager.c</name>
                                     </file>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager_debug.c</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager_debug.c</name>
                                     </file>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager_hal_s2.c</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\sl_power_manager_hal_s2.c</name>
                                     </file>
                                     <file>
-                                        <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\power_manager\src\sleep_loop\sli_power_manager_private.h</name>
+                                        <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\sli_power_manager_private.h</name>
                                     </file>
                                 </group>
                             </group>
@@ -2159,28 +2185,28 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\sl_main_init.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\sl_main_init.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\sl_main_init_memory.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\sl_main_init_memory.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\inc\sl_main_process_action.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\sl_main_process_action.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\sl_main_init.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\sl_main_init.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\sl_main_init_memory.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\sl_main_init_memory.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\sl_main_process_action.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\sl_main_process_action.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sl_main\src\sli_main_init_memory.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\sli_main_init_memory.h</name>
                                 </file>
                             </group>
                         </group>
@@ -2189,28 +2215,28 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\sl_sleeptimer.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\sl_sleeptimer.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\inc\sli_sleeptimer.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\sli_sleeptimer.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sl_sleeptimer.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\sl_sleeptimer.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_burtc.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_burtc.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_rtcc.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_rtcc.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_timer.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\sl_sleeptimer_hal_timer.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\sleeptimer\src\sli_sleeptimer_hal.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\sli_sleeptimer_hal.h</name>
                                 </file>
                             </group>
                         </group>
@@ -2219,16 +2245,16 @@
                             <group>
                                 <name>inc</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\inc\sl_udelay.h</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\sl_udelay.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>src</name>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay.c</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\src\sl_udelay.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2025.12.3\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s</name>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s</name>
                                 </file>
                             </group>
                         </group>

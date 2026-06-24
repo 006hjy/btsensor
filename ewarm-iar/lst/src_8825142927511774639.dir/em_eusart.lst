@@ -1,0 +1,2600 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:04
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_eusart.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_eusart.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_eusart.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8825142927511774639.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_eusart.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_eusart.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8825142927511774639.dir\em_eusart.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_eusart.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_eusart.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Universal asynchronous receiver/transmitter (EUSART) peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_eusart.h"
+     32          #if defined(EUART_PRESENT) || defined(EUSART_PRESENT)
+     33          #include "em_cmu.h"
+     34          #include <stddef.h>
+     35          
+     36          /*******************************************************************************
+     37           *********************************   DEFINES   *********************************
+     38           ******************************************************************************/
+     39          
+     40          #if defined(EUART_PRESENT)
+     41            #define EUSART_REF_VALID(ref)    ((ref) == EUART0)
+     42            #define EUSART_EM2_CAPABLE(ref)  (true)
+     43            #define EUSART_RX_FIFO_SIZE  4u
+     44          #elif defined(EUSART_PRESENT)
+     45            #define EUSART_REF_VALID(ref)    (EUSART_NUM(ref) != -1)
+     46            #define EUSART_RX_FIFO_SIZE  16u
+     47          #endif
+     48          
+     49          /*******************************************************************************
+     50           **************************   LOCAL VARIABLES   ********************************
+     51           ******************************************************************************/
+     52          #if defined(EUSART_DALICFG_DALIEN)
+     53          static uint8_t dali_tx_nb_packets[EUSART_COUNT];
+     54          static uint8_t dali_rx_nb_packets[EUSART_COUNT];
+     55          #endif /* EUSART_DALICFG_DALIEN */
+     56          
+     57          /*******************************************************************************
+     58           **************************   LOCAL FUNCTIONS   ********************************
+     59           ******************************************************************************/
+     60          
+     61          static CMU_Clock_TypeDef EUSART_ClockGet(EUSART_TypeDef *eusart);
+     62          
+     63          static void EUSART_AsyncInitCommon(EUSART_TypeDef *eusart,
+     64                                             const EUSART_UartInit_TypeDef *init,
+     65                                             const EUSART_IrDAInit_TypeDef *irdaInit,
+     66                                             const EUSART_DaliInit_TypeDef *daliInit);
+     67          
+     68          #if defined(EUSART_PRESENT)
+     69          static void EUSART_SyncInitCommon(EUSART_TypeDef *eusart,
+     70                                            const EUSART_SpiInit_TypeDef  *init);
+     71          #endif
+     72          
+     73          /***************************************************************************//**
+     74           * Wait for ongoing sync of register(s) to the low-frequency domain to complete.
+     75           *
+     76           * @param eusart Pointer to the EUSART peripheral register block.
+     77           * @param mask A bitmask corresponding to SYNCBUSY register defined bits,
+     78           *             indicating registers that must complete any ongoing
+     79           *             synchronization.
+     80           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     81          __STATIC_INLINE void eusart_sync(EUSART_TypeDef *eusart, uint32_t mask)
+     82          {
+     83            // Wait for any pending previous write operation to have been completed
+     84            // in the low-frequency domain.
+     85            while ((eusart->SYNCBUSY & mask) != 0U) {
+   \                     eusart_sync: (+1)
+   \                     ??eusart_sync_0: (+1)
+   \        0x0   0x6CC2             LDR      R2,[R0, #+76]
+   \        0x2   0x420A             TST      R2,R1
+   \        0x4   0xD1FC             BNE.N    ??eusart_sync_0
+     86              // Wait for sync.
+     87            }
+     88          }
+   \        0x6   0x4770             BX       LR
+     89          
+     90          /***************************************************************************//**
+     91           *   Calculate baudrate for a given reference frequency, clock division,
+     92           *   and oversampling rate.
+     93           ******************************************************************************/
+     94          __STATIC_INLINE uint32_t EUSART_AsyncBaudrateCalc(uint32_t refFreq,
+     95                                                            uint32_t clkdiv,
+     96                                                            EUSART_OVS_TypeDef ovs);
+     97          
+     98          /***************************************************************************//**
+     99           *   Execute the EUSART peripheral disabling sequence.
+    100           ******************************************************************************/
+    101          __STATIC_INLINE void EUSART_Disable(EUSART_TypeDef *eusart);
+    102          
+    103          /*******************************************************************************
+    104           **************************   GLOBAL FUNCTIONS   *******************************
+    105           ******************************************************************************/
+    106          
+    107          /***************************************************************************//**
+    108           * Initializes the EUSART when used with the high frequency clock.
+    109           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    110          void EUSART_UartInitHf(EUSART_TypeDef *eusart, const EUSART_UartInit_TypeDef *init)
+    111          {
+   \                     EUSART_UartInitHf: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine3
+    112            // Make sure the module exists on the selected chip.
+    113            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \        0x6   0xD002             BEQ.N    ??CrossCallReturnLabel_20
+   \        0x8   0x2171             MOVS     R1,#+113
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    114            // Init structure must be provided.
+    115            EFM_ASSERT(init);
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \        0xE   0xB914             CBNZ.N   R4,??CrossCallReturnLabel_19
+   \       0x10   0x2173             MOVS     R1,#+115
+   \       0x12   0x.... 0x....      BL       ?Subroutine2
+    116          
+    117            // Assert features specific to HF.
+    118            // The oversampling must not be disabled when using a high frequency clock.
+    119            EFM_ASSERT(init->oversampling != eusartOVS0);
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \       0x16   0x7B20             LDRB     R0,[R4, #+12]
+   \       0x18   0x2880             CMP      R0,#+128
+   \       0x1A   0xD102             BNE.N    ??CrossCallReturnLabel_18
+   \       0x1C   0x2177             MOVS     R1,#+119
+   \       0x1E   0x.... 0x....      BL       ?Subroutine2
+    120          
+    121            // Uart mode only supports up to 9 databits frame.
+    122            EFM_ASSERT(init->databits <= eusartDataBits9);
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x22   0x7B60             LDRB     R0,[R4, #+13]
+   \       0x24   0x2804             CMP      R0,#+4
+   \       0x26   0xDB02             BLT.N    ??CrossCallReturnLabel_17
+   \       0x28   0x217A             MOVS     R1,#+122
+   \       0x2A   0x.... 0x....      BL       ?Subroutine2
+    123          
+    124            // Initialize EUSART with common features to HF and LF.
+    125            EUSART_AsyncInitCommon(eusart, init, NULL, NULL);
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \       0x2E   0x4621             MOV      R1,R4
+   \       0x30   0x4628             MOV      R0,R5
+   \       0x32   0x2300             MOVS     R3,#+0
+   \       0x34   0x2200             MOVS     R2,#+0
+   \       0x36   0x....             B.N      ?Subroutine1
+    126          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \        0x4   0x....             B.N      EUSART_AsyncInitCommon
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x4605             MOV      R5,R0
+   \        0x2   0x.... 0x....      LDR.W    R2,??DataTable11
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0x.... 0x....      LDR.W    R6,??DataTable11_1
+   \        0xC   0x4295             CMP      R5,R2
+   \        0xE   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x4630             MOV      R0,R6
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    127          
+    128          /***************************************************************************//**
+    129           * Initializes the EUSART when used with the low frequency clock.
+    130           *
+    131           * @note (1) When EUSART oversampling is set to eusartOVS0 (Disable), the peripheral
+    132           *           clock frequency must be at least three times higher than the
+    133           *           chosen baud rate. In LF, max input clock is 32768 (LFXO or LFRCO),
+    134           *           thus 32768 / 3 ~ 9600 baudrate.
+    135           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    136          void EUSART_UartInitLf(EUSART_TypeDef *eusart, const EUSART_UartInit_TypeDef *init)
+    137          {
+   \                     EUSART_UartInitLf: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    138            // Make sure the module exists and is Low frequency capable.
+    139            EFM_ASSERT(EUSART_REF_VALID(eusart) && EUSART_EM2_CAPABLE(EUSART_NUM(eusart)));
+   \        0x4   0x.... 0x....      LDR.W    R7,??DataTable11
+   \        0x8   0x460C             MOV      R4,R1
+   \        0xA   0x.... 0x....      LDR.W    R6,??DataTable11_1
+   \        0xE   0x42BD             CMP      R5,R7
+   \       0x10   0xD002             BEQ.N    ??CrossCallReturnLabel_16
+   \       0x12   0x218B             MOVS     R1,#+139
+   \       0x14   0x.... 0x....      BL       ?Subroutine2
+    140            // Init structure must be provided.
+    141            EFM_ASSERT(init);
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x18   0xB914             CBNZ.N   R4,??CrossCallReturnLabel_15
+   \       0x1A   0x218D             MOVS     R1,#+141
+   \       0x1C   0x.... 0x....      BL       ?Subroutine2
+    142          
+    143            // Assert features specific to LF.
+    144            // LFXO, LFRCO, ULFRCO can be a clock source in LF.
+    145          #if defined(DEBUG_EFM) || defined(DEBUG_EFM_USER)
+    146            {
+    147              CMU_Select_TypeDef clock_source = (CMU_Select_TypeDef) NULL;
+    148          #if defined(EUART_PRESENT)
+    149              if (eusart == EUART0) {
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x20   0x42BD             CMP      R5,R7
+   \       0x22   0xD10A             BNE.N    ??EUSART_UartInitLf_0
+    150                clock_source = CMU_ClockSelectGet(cmuClock_EUART0);
+   \       0x24   0x2038             MOVS     R0,#+56
+   \       0x26   0x.... 0x....      BL       CMU_ClockSelectGet
+    151              }
+    152          #endif
+    153          #if defined(EUSART_PRESENT) && defined(EUSART0)
+    154              if (eusart == EUSART0) {
+    155                clock_source = CMU_ClockSelectGet(cmuClock_EUSART0);
+    156              }
+    157          #endif
+    158          
+    159              EFM_ASSERT(
+    160                (clock_source == cmuSelect_ULFRCO)
+    161                || (clock_source == cmuSelect_LFXO)
+    162                || (clock_source == cmuSelect_LFRCO)
+    163                || (clock_source == cmuSelect_EM23GRPACLK)
+    164          #if defined(_CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPCCLK)
+    165                || (clock_source == cmuSelect_EM01GRPCCLK)
+    166          #endif
+    167          #if defined(_CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPACLK)
+    168                || (clock_source == cmuSelect_EM01GRPACLK) /* ULFRCO, LFXO, LFRCO, EM23GRPACLK, EM01GRPACLK or EM01GRPCCLK */
+    169          #endif
+    170                );
+   \       0x2A   0x280B             CMP      R0,#+11
+   \       0x2C   0xBF18             IT       NE
+   \       0x2E   0x2808             CMPNE    R0,#+8
+   \       0x30   0xD006             BEQ.N    ??CrossCallReturnLabel_14
+   \       0x32   0x2809             CMP      R0,#+9
+   \       0x34   0xBF18             IT       NE
+   \       0x36   0x2810             CMPNE    R0,#+16
+   \       0x38   0xD002             BEQ.N    ??CrossCallReturnLabel_14
+   \                     ??EUSART_UartInitLf_0: (+1)
+   \       0x3A   0x21AA             MOVS     R1,#+170
+    171            }
+   \       0x3C   0x.... 0x....      BL       ?Subroutine2
+    172          #endif
+    173            // Uart mode only supports up to 9 databits frame.
+    174            EFM_ASSERT(init->databits <= eusartDataBits9);
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x40   0x7B60             LDRB     R0,[R4, #+13]
+   \       0x42   0x2804             CMP      R0,#+4
+   \       0x44   0xDB02             BLT.N    ??CrossCallReturnLabel_13
+   \       0x46   0x21AE             MOVS     R1,#+174
+   \       0x48   0x.... 0x....      BL       ?Subroutine2
+    175            // The oversampling must be disabled when using a low frequency clock.
+    176            EFM_ASSERT(init->oversampling == eusartOVS0);
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x4C   0x7B20             LDRB     R0,[R4, #+12]
+   \       0x4E   0x2880             CMP      R0,#+128
+   \       0x50   0xD002             BEQ.N    ??CrossCallReturnLabel_12
+   \       0x52   0x21B0             MOVS     R1,#+176
+   \       0x54   0x.... 0x....      BL       ?Subroutine2
+    177            // The Majority Vote must be disabled when using a low frequency clock.
+    178            EFM_ASSERT(init->majorityVote == eusartMajorityVoteDisable);
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x58   0x6960             LDR      R0,[R4, #+20]
+   \       0x5A   0xF1B0 0x4F80      CMP      R0,#+1073741824
+   \       0x5E   0xD002             BEQ.N    ??CrossCallReturnLabel_11
+   \       0x60   0x21B2             MOVS     R1,#+178
+   \       0x62   0x.... 0x....      BL       ?Subroutine2
+    179            // Number of stop bits can only be 1 or 2 in LF.
+    180            EFM_ASSERT((init->stopbits == eusartStopbits1) || (init->stopbits == eusartStopbits2));
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x66   0xF9B4 0x0010      LDRSH    R0,[R4, #+16]
+   \       0x6A   0xF5B0 0x5F80      CMP      R0,#+4096
+   \       0x6E   0xBF18             IT       NE
+   \       0x70   0xF5B0 0x5F40      CMPNE    R0,#+12288
+   \       0x74   0xD002             BEQ.N    ??CrossCallReturnLabel_10
+   \       0x76   0x21B4             MOVS     R1,#+180
+   \       0x78   0x.... 0x....      BL       ?Subroutine2
+    181            // In LF, max baudrate is 9600. See Note #1.
+    182            EFM_ASSERT(init->baudrate <= 9600 && init->baudrate != 0);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x7C   0x68A0             LDR      R0,[R4, #+8]
+   \       0x7E   0xF242 0x5181      MOVW     R1,#+9601
+   \       0x82   0x4288             CMP      R0,R1
+   \       0x84   0xD200             BCS.N    ??EUSART_UartInitLf_1
+   \       0x86   0xB910             CBNZ.N   R0,??CrossCallReturnLabel_9
+   \                     ??EUSART_UartInitLf_1: (+1)
+   \       0x88   0x21B6             MOVS     R1,#+182
+   \       0x8A   0x.... 0x....      BL       ?Subroutine2
+    183          
+    184            // Initialize EUSART with common features to HF and LF.
+    185            EUSART_AsyncInitCommon(eusart, init, NULL, NULL);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x8E   0x4621             MOV      R1,R4
+   \       0x90   0x4628             MOV      R0,R5
+   \       0x92   0xB001             ADD      SP,SP,#+4
+   \       0x94   0x2300             MOVS     R3,#+0
+   \       0x96   0x2200             MOVS     R2,#+0
+   \       0x98   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \       0x9C   0x....             B.N      EUSART_AsyncInitCommon
+    186          }
+    187          
+    188          /***************************************************************************//**
+    189           * Initializes the EUSART when used in IrDA mode with the high or low
+    190           * frequency clock.
+    191           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    192          void EUSART_IrDAInit(EUSART_TypeDef *eusart,
+    193                               const EUSART_IrDAInit_TypeDef *irdaInit)
+    194          {
+   \                     EUSART_IrDAInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine3
+    195            // Make sure the module exists on the selected chip.
+    196            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \                     ??CrossCallReturnLabel_22: (+1)
+   \        0x6   0xD002             BEQ.N    ??CrossCallReturnLabel_8
+   \        0x8   0x21C4             MOVS     R1,#+196
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    197            // Init structure must be provided.
+    198            EFM_ASSERT(irdaInit);
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \        0xE   0xB914             CBNZ.N   R4,??CrossCallReturnLabel_7
+   \       0x10   0x21C6             MOVS     R1,#+198
+   \       0x12   0x.... 0x....      BL       ?Subroutine2
+    199          
+    200            if (irdaInit->irDALowFrequencyEnable) {
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x16   0xF894 0x0020      LDRB     R0,[R4, #+32]
+   \       0x1A   0x7B21             LDRB     R1,[R4, #+12]
+   \       0x1C   0xB1F0             CBZ.N    R0,??EUSART_IrDAInit_0
+    201              // Validate the low frequency capability of the EUSART instance.
+    202              EFM_ASSERT(EUSART_EM2_CAPABLE(EUSART_NUM(eusart)));
+    203              // The oversampling must be disabled when using a low frequency clock.
+    204              EFM_ASSERT(irdaInit->init.oversampling == eusartOVS0);
+   \       0x1E   0x2980             CMP      R1,#+128
+   \       0x20   0xD002             BEQ.N    ??CrossCallReturnLabel_6
+   \       0x22   0x21CC             MOVS     R1,#+204
+   \       0x24   0x.... 0x....      BL       ?Subroutine2
+    205              // Number of stop bits can only be 1 or 2 in LF.
+    206              EFM_ASSERT((irdaInit->init.stopbits == eusartStopbits1) || (irdaInit->init.stopbits == eusartStopbits2));
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x28   0xF9B4 0x0010      LDRSH    R0,[R4, #+16]
+   \       0x2C   0xF5B0 0x5F80      CMP      R0,#+4096
+   \       0x30   0xBF18             IT       NE
+   \       0x32   0xF5B0 0x5F40      CMPNE    R0,#+12288
+   \       0x36   0xD002             BEQ.N    ??CrossCallReturnLabel_5
+   \       0x38   0x21CE             MOVS     R1,#+206
+   \       0x3A   0x.... 0x....      BL       ?Subroutine2
+    207              // In LF, max baudrate is 9600. See Note #1.
+    208              EFM_ASSERT(irdaInit->init.baudrate <= 9600);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x3E   0x68A0             LDR      R0,[R4, #+8]
+   \       0x40   0xF242 0x5181      MOVW     R1,#+9601
+   \       0x44   0x4288             CMP      R0,R1
+   \       0x46   0xD302             BCC.N    ??CrossCallReturnLabel_4
+   \       0x48   0x21D0             MOVS     R1,#+208
+   \       0x4A   0x.... 0x....      BL       ?Subroutine2
+    209              EFM_ASSERT(irdaInit->init.enable == eusartEnableRx || irdaInit->init.enable == eusartDisable);
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x4E   0x7820             LDRB     R0,[R4, #+0]
+   \       0x50   0x2809             CMP      R0,#+9
+   \       0x52   0xBF18             IT       NE
+   \       0x54   0x2800             CMPNE    R0,#+0
+   \       0x56   0xD010             BEQ.N    ??CrossCallReturnLabel_2
+   \       0x58   0x21D1             MOVS     R1,#+209
+   \       0x5A   0xE00C             B.N      ??EUSART_IrDAInit_1
+    210            } else {
+    211              EFM_ASSERT(irdaInit->init.oversampling != eusartOVS0);
+   \                     ??EUSART_IrDAInit_0: (+1)
+   \       0x5C   0x2980             CMP      R1,#+128
+   \       0x5E   0xD102             BNE.N    ??CrossCallReturnLabel_3
+   \       0x60   0x21D3             MOVS     R1,#+211
+   \       0x62   0x.... 0x....      BL       ?Subroutine2
+    212              // In HF, 2.4 kbps <= baudrate <= 1.152 Mbps.
+    213              EFM_ASSERT(irdaInit->init.baudrate >= 2400 && irdaInit->init.baudrate <= 1152000);
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x66   0x68A0             LDR      R0,[R4, #+8]
+   \       0x68   0x.... 0x....      LDR.W    R1,??DataTable11_2
+   \       0x6C   0xF5A0 0x6016      SUB      R0,R0,#+2400
+   \       0x70   0x4288             CMP      R0,R1
+   \       0x72   0xD302             BCC.N    ??CrossCallReturnLabel_2
+   \       0x74   0x21D5             MOVS     R1,#+213
+    214            }
+   \                     ??EUSART_IrDAInit_1: (+1)
+   \       0x76   0x.... 0x....      BL       ?Subroutine2
+    215          
+    216            // Initialize EUSART with common features to HF and LF.
+    217            EUSART_AsyncInitCommon(eusart, &irdaInit->init, irdaInit, NULL);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x7A   0x4622             MOV      R2,R4
+   \       0x7C   0x4621             MOV      R1,R4
+   \       0x7E   0x4628             MOV      R0,R5
+   \       0x80   0x2300             MOVS     R3,#+0
+   \       0x82                      REQUIRE ?Subroutine1
+   \       0x82                      ; // Fall through to label ?Subroutine1
+    218          }
+    219          
+    220          #if defined(EUSART_PRESENT)
+    221          /***************************************************************************//**
+    222           * Initializes the EUSART when used in SPI mode.
+    223           ******************************************************************************/
+    224          void EUSART_SpiInit(EUSART_TypeDef *eusart, EUSART_SpiInit_TypeDef const *init)
+    225          {
+    226            // Make sure the module exists on the selected chip.
+    227            EFM_ASSERT(EUSART_REF_VALID(eusart));
+    228            // Init structure must be provided.
+    229            EFM_ASSERT(init);
+    230            if (init->master) {
+    231              EFM_ASSERT(init->bitRate <= 20000000);
+    232          
+    233              if (init->advancedSettings) {
+    234                EFM_ASSERT(!(init->advancedSettings->prsClockEnable));
+    235              }
+    236            } else {
+    237              EFM_ASSERT(init->bitRate <= 10000000);
+    238              if (init->advancedSettings && init->advancedSettings->forceLoad) {
+    239                // If baud-rate is more than 5MHz, a value of 4 is recommended, any values
+    240                // smaller than that can be tried out but avoid using 0. If baud-rate is less than 5MHz,
+    241                // value of 5 is recommended, values higher than 5 can be used but it may make the load
+    242                // error easy to occur. The recommended values for frequency bands should be sufficient
+    243                // to work all the time.
+    244                EFM_ASSERT((init->bitRate >= 5000000 && init->advancedSettings->setupWindow <= 4)
+    245                           || (init->bitRate < 5000000 && init->advancedSettings->setupWindow >= 5));
+    246              }
+    247            }
+    248          
+    249            EUSART_SyncInitCommon(eusart, init);
+    250          }
+    251          
+    252          #if defined(EUSART_DALICFG_DALIEN)
+    253          /***************************************************************************//**
+    254           * Initializes the EUSART when used in DALI mode with the high or low
+    255           * frequency clock.
+    256           *
+    257           * @note (1) When EUSART oversampling is set to eusartOVS0 (Disable), the peripheral
+    258           *           clock frequency must be at least three times higher than the
+    259           *           chosen baud rate. In LF, max input clock is 32768 (LFXO or LFRCO),
+    260           *           thus 32768 / 3 ~ 9600 baudrate.
+    261           ******************************************************************************/
+    262          void EUSART_DaliInit(EUSART_TypeDef *eusart,
+    263                               const EUSART_DaliInit_TypeDef *daliInit)
+    264          {
+    265            // Make sure the module exists on the selected chip.
+    266            EFM_ASSERT(EUSART_REF_VALID(eusart));
+    267            // Init structure must be provided.
+    268            EFM_ASSERT(daliInit);
+    269          
+    270            if (daliInit->init.loopbackEnable) {
+    271              // If LOOPBK in CFG0 is set to 1 in order to do loopback testing for DALI,
+    272              // then in this case DALIRXENDT should be set to 1 and DALIRXDATABITS should
+    273              // be set the same as DALITXDATABITS.
+    274              EFM_ASSERT( (daliInit->TXdatabits >> _EUSART_DALICFG_DALITXDATABITS_SHIFT)
+    275                          == (daliInit->RXdatabits >> _EUSART_DALICFG_DALIRXDATABITS_SHIFT));
+    276            }
+    277          
+    278            if (daliInit->daliLowFrequencyEnable) {
+    279              // Validate the low frequency capability of the EUSART instance.
+    280              EFM_ASSERT(EUSART_EM2_CAPABLE(EUSART_NUM(eusart)));
+    281              // The oversampling must be disabled when using a low frequency clock.
+    282              EFM_ASSERT(daliInit->init.oversampling == eusartOVS0);
+    283              // In LF, max baudrate is 9600. See Note #1.
+    284              // but manchester is running at 2x clock 9600 => 4800
+    285              EFM_ASSERT(daliInit->init.baudrate <= 4800);
+    286            } else {
+    287              EFM_ASSERT(daliInit->init.oversampling != eusartOVS0);
+    288              // In HF, 2.4 kbps <= baudrate <= 1.152 Mbps.
+    289              // but manchester is running at 2x clock so 2.4 kbps => 1.2 kbps
+    290              EFM_ASSERT(daliInit->init.baudrate >= 1200 && daliInit->init.baudrate <= 57600);
+    291            }
+    292          
+    293            // Initialize EUSART with common features to HF and LF.
+    294            EUSART_AsyncInitCommon(eusart, &daliInit->init, NULL, daliInit);
+    295          }
+    296          #endif /* EUSART_DALICFG_DALIEN */
+    297          #endif /* EUSART_PRESENT */
+    298          
+    299          /***************************************************************************//**
+    300           * Configure the EUSART to its reset state.
+    301           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    302          void EUSART_Reset(EUSART_TypeDef *eusart)
+    303          {
+   \                     EUSART_Reset: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    304            // 1. Properly disable the module
+    305            EUSART_Disable(eusart);
+   \        0x4   0x.... 0x....      BL       EUSART_Disable
+    306          
+    307          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_3)  \
+    308            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_4) \
+    309            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_5) \
+    310            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_6)
+    311            // Manual toggling tx_sclk_mst to synchronize handshake
+    312            // when switching from SPI master to other modes
+    313            // so module is disabling correctly.
+    314            uint32_t forcedClkCycle = 4u;
+    315          
+    316            while (forcedClkCycle--) {
+    317              eusart->CFG2_SET = _EUSART_CFG2_CLKPHA_MASK;
+    318              eusart->CFG2_CLR = _EUSART_CFG2_CLKPHA_MASK;
+    319            }
+    320          #endif
+    321            // All registers that end with CFG should be programmed before EUSART gets enabled (EUSARTn_EN is set).
+    322            // Set all configurable register to its reset value.
+    323            // Note: Program desired settings to all registers that have names ending with CFG in the following sequence:
+    324            //  a. CFG2
+    325          #if defined(EUSART_PRESENT)
+    326            eusart->CFG2 = _EUSART_CFG2_RESETVALUE;
+    327          #endif
+    328            //  b. CFG1
+    329            eusart->CFG1 = _EUSART_CFG1_RESETVALUE;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x60E0             STR      R0,[R4, #+12]
+    330            //  c. CFG0
+    331            eusart->CFG0 = _EUSART_CFG0_RESETVALUE;
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0x60A1             STR      R1,[R4, #+8]
+    332            //  d. FRAMECFG, DTXDATCFG, TIMINGCFG (Any sequence)
+    333            eusart->FRAMECFG = _EUSART_FRAMECFG_RESETVALUE;
+   \       0x10   0xF241 0x0002      MOVW     R0,#+4098
+   \       0x14   0x6120             STR      R0,[R4, #+16]
+    334          #if defined(EUSART_PRESENT)
+    335            eusart->DTXDATCFG = _EUSART_DTXDATCFG_RESETVALUE;
+    336          #if defined(EUSART_DALICFG_DALIEN)
+    337            eusart->DALICFG = _EUSART_DALICFG_RESETVALUE;
+    338          #endif /* EUSART_DALICFG_DALIEN */
+    339          #endif /* EUSART_PRESENT */
+    340            eusart->TIMINGCFG = _EUSART_TIMINGCFG_RESETVALUE;
+   \       0x16   0x61E1             STR      R1,[R4, #+28]
+    341            eusart->IRHFCFG = _EUSART_IRHFCFG_RESETVALUE;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x6160             STR      R0,[R4, #+20]
+    342            eusart->IRLFCFG = _EUSART_IRLFCFG_RESETVALUE;
+   \       0x1C   0x61A1             STR      R1,[R4, #+24]
+    343            eusart->STARTFRAMECFG = _EUSART_STARTFRAMECFG_RESETVALUE;
+   \       0x1E   0x6220             STR      R0,[R4, #+32]
+    344            eusart->SIGFRAMECFG = _EUSART_SIGFRAMECFG_RESETVALUE;
+   \       0x20   0x6261             STR      R1,[R4, #+36]
+    345            eusart->TRIGCTRL = _EUSART_TRIGCTRL_RESETVALUE;
+   \       0x22   0x62E0             STR      R0,[R4, #+44]
+    346            eusart->IEN = _EUSART_IEN_RESETVALUE;
+   \       0x24   0x2200             MOVS     R2,#+0
+   \       0x26   0x64A2             STR      R2,[R4, #+72]
+    347            eusart->IF_CLR = _EUSART_IF_MASK;
+   \       0x28   0x.... 0x....      LDR.W    R0,??DataTable11_3
+   \       0x2C   0xF242 0x0144      MOVW     R1,#+8260
+   \       0x30   0x5060             STR      R0,[R4, R1]
+    348          
+    349            // no need to sync while EN=0, multiple writes can be queued up,
+    350            // and the last one will synchronize once EN=1
+    351            eusart->CLKDIV = _EUSART_CLKDIV_RESETVALUE;
+   \       0x32   0x62A2             STR      R2,[R4, #+40]
+    352          }
+   \       0x34   0xBD10             POP      {R4,PC}
+    353          
+    354          /***************************************************************************//**
+    355           * Enables/disables the EUSART receiver and/or transmitter.
+    356           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    357          void EUSART_Enable(EUSART_TypeDef *eusart, EUSART_Enable_TypeDef enable)
+    358          {
+   \                     EUSART_Enable: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine4
+    359            uint32_t tmp = 0;
+    360          
+    361            // Make sure that the module exists on the selected chip.
+    362            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \                     ??CrossCallReturnLabel_23: (+1)
+   \        0x6   0xD003             BEQ.N    ??CrossCallReturnLabel_38
+   \        0x8   0xF44F 0x71B5      MOV      R1,#+362
+   \        0xC   0x.... 0x....      BL       ?Subroutine6
+    363          
+    364            if (enable == eusartDisable) {
+   \                     ??CrossCallReturnLabel_38: (+1)
+   \       0x10   0x0028             MOVS     R0,R5
+   \       0x12   0xD103             BNE.N    ??EUSART_Enable_0
+    365              EUSART_Disable(eusart);
+   \       0x14   0x4620             MOV      R0,R4
+   \       0x16   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \       0x1A   0x....             B.N      EUSART_Disable
+    366            } else {
+    367              // Enable peripheral to configure Rx and Tx.
+    368              eusart->EN_SET = EUSART_EN_EN;
+   \                     ??EUSART_Enable_0: (+1)
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0xF241 0x0104      MOVW     R1,#+4100
+   \       0x22   0x5060             STR      R0,[R4, R1]
+    369          
+    370              // Enable or disable Rx and/or Tx
+    371              tmp = enable
+    372                    & (_EUSART_CMD_RXEN_MASK | _EUSART_CMD_TXEN_MASK
+    373                       | _EUSART_CMD_RXDIS_MASK | _EUSART_CMD_TXDIS_MASK);
+   \       0x24   0xF005 0x000F      AND      R0,R5,#0xF
+    374          
+    375              eusart_sync(eusart, _EUSART_SYNCBUSY_MASK);
+   \                     ??EUSART_Enable_1: (+1)
+   \       0x28   0x6CE1             LDR      R1,[R4, #+76]
+   \       0x2A   0x054A             LSLS     R2,R1,#+21
+   \       0x2C   0xD1FC             BNE.N    ??EUSART_Enable_1
+    376              eusart->CMD = tmp;
+   \       0x2E   0x6320             STR      R0,[R4, #+48]
+    377              eusart_sync(eusart,
+    378                          EUSART_SYNCBUSY_RXEN | EUSART_SYNCBUSY_TXEN
+    379                          | EUSART_SYNCBUSY_RXDIS | EUSART_SYNCBUSY_TXDIS);
+   \                     ??EUSART_Enable_2: (+1)
+   \       0x30   0x6CE0             LDR      R0,[R4, #+76]
+   \       0x32   0xF010 0x0F78      TST      R0,#0x78
+   \       0x36   0xD1FB             BNE.N    ??EUSART_Enable_2
+    380          
+    381              // Wait for the status register to be updated.
+    382              tmp = 0;
+   \       0x38   0x2000             MOVS     R0,#+0
+    383              if (_EUSART_CMD_RXEN_MASK & enable) {
+   \       0x3A   0x07E9             LSLS     R1,R5,#+31
+   \       0x3C   0xBF48             IT       MI
+   \       0x3E   0x2001             MOVMI    R0,#+1
+    384                tmp |= EUSART_STATUS_RXENS;
+    385              }
+    386              if (_EUSART_CMD_TXEN_MASK & enable) {
+   \       0x40   0x0769             LSLS     R1,R5,#+29
+   \       0x42   0xBF48             IT       MI
+   \       0x44   0xF040 0x0002      ORRMI    R0,R0,#0x2
+    387                tmp |= EUSART_STATUS_TXENS;
+    388              }
+    389              while ((eusart->STATUS & (_EUSART_STATUS_TXENS_MASK | _EUSART_STATUS_RXENS_MASK)) != tmp) {
+   \                     ??EUSART_Enable_3: (+1)
+   \       0x48   0x6C21             LDR      R1,[R4, #+64]
+   \       0x4A   0xF001 0x0103      AND      R1,R1,#0x3
+   \       0x4E   0x4281             CMP      R1,R0
+   \       0x50   0xD1FA             BNE.N    ??EUSART_Enable_3
+    390                // Wait for status register.
+    391              }
+    392            }
+    393          }
+   \       0x52   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x....             LDR.N    R2,??DataTable11
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4294             CMP      R4,R2
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable11_1
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    394          
+    395          /***************************************************************************//**
+    396           * Receives one 8 bit frame, (or part of 9 bit frame).
+    397           *
+    398           * @note (1) Handles the case where the RX Fifo Watermark has been set to N frames,
+    399           *       and when N is greater than one. Attempt to read a frame from the RX Fifo.
+    400           *       If the read is unsuccessful (i.e. no frames in the RX fifo), the RXFU
+    401           *       interrupt flag is set. If the flag is set, wait to read again until the RXFL
+    402           *       status flag is set, indicating there are N frames in the RX Fifo, where N
+    403           *       is equal to the RX watermark level. Once there are N frames in the Fifo,
+    404           *       read and return one frame. For consecutive N-1 reads there will be data available
+    405           *       in the Fifo. Therefore, the RXUF interrupt will not be triggered eliminating
+    406           *       delays between reads and sending N data frames in "bursts".
+    407           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    408          uint8_t EUSART_Rx(EUSART_TypeDef *eusart)
+    409          {
+   \                     EUSART_Rx: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+    410            // If RX watermark has not been configured.
+    411            if ((eusart->CFG1 & _EUSART_CFG1_RXFIW_MASK) == EUSART_CFG1_RXFIW_DEFAULT) {
+   \        0x2   0x68C8             LDR      R0,[R1, #+12]
+   \        0x4   0xF410 0x1FC0      TST      R0,#0x180000
+   \        0x8   0xD003             BEQ.N    ??EUSART_Rx_0
+    412              while (!(eusart->STATUS & EUSART_STATUS_RXFL)) {
+    413                // Wait for incoming data.
+    414              }
+    415              return (uint8_t)eusart->RXDATA;
+    416            }
+    417          
+    418            // See Note #1.
+    419            uint8_t rx_data = (uint8_t)(eusart->RXDATA & 0xFFU);
+   \        0xA   0x6B48             LDR      R0,[R1, #+52]
+    420            // If there is underflow i.e Rx data read was unsuccessful
+    421            if (eusart->IF & EUSART_IF_RXUF) {
+   \        0xC   0x6C4A             LDR      R2,[R1, #+68]
+   \        0xE   0x0693             LSLS     R3,R2,#+26
+   \       0x10   0xD503             BPL.N    ??EUSART_Rx_1
+    422              // Wait until data becomes available in Rx fifo
+    423              while (!(eusart->STATUS & EUSART_STATUS_RXFL)) {
+   \                     ??EUSART_Rx_0: (+1)
+   \       0x12   0x6C08             LDR      R0,[R1, #+64]
+   \       0x14   0x0602             LSLS     R2,R0,#+24
+   \       0x16   0xD5FC             BPL.N    ??EUSART_Rx_0
+    424                // Wait for Rx FIFO.
+    425              }
+    426              // Read Rx data again once data is available in the fifo
+    427              rx_data = (uint8_t)(eusart->RXDATA & 0xFFU);
+   \       0x18   0x6B48             LDR      R0,[R1, #+52]
+    428            }
+    429          
+    430            return rx_data;
+   \                     ??EUSART_Rx_1: (+1)
+   \       0x1A   0xB2C0             UXTB     R0,R0
+   \       0x1C   0x4770             BX       LR
+    431          }
+    432          
+    433          /***************************************************************************//**
+    434           * Receives one 8-9 bit frame with extended information.
+    435           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    436          uint16_t EUSART_RxExt(EUSART_TypeDef *eusart)
+    437          {
+    438            while (!(eusart->STATUS & EUSART_STATUS_RXFL)) {
+   \                     EUSART_RxExt: (+1)
+   \                     ??EUSART_RxExt_0: (+1)
+   \        0x0   0x6C01             LDR      R1,[R0, #+64]
+   \        0x2   0x060A             LSLS     R2,R1,#+24
+   \        0x4   0xD5FC             BPL.N    ??EUSART_RxExt_0
+    439              // Wait for incoming data.
+    440            }
+    441          
+    442            return (uint16_t)eusart->RXDATA;
+   \        0x6   0x6B40             LDR      R0,[R0, #+52]
+   \        0x8   0xB280             UXTH     R0,R0
+   \        0xA   0x4770             BX       LR
+    443          }
+    444          
+    445          /***************************************************************************//**
+    446           * Transmits one frame.
+    447           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    448          void EUSART_Tx(EUSART_TypeDef *eusart, uint8_t data)
+    449          {
+   \                     EUSART_Tx: (+1)
+   \        0x0   0x....             B.N      ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+    450            // Check that transmit FIFO is not full.
+    451            while (!(eusart->STATUS & EUSART_STATUS_TXFL)) {
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x6C02             LDR      R2,[R0, #+64]
+   \        0x2   0x0653             LSLS     R3,R2,#+25
+   \        0x4   0xD5FC             BPL.N    ?Subroutine0
+    452              // Wait for TX FIFO.
+    453            }
+    454          
+    455            eusart->TXDATA = (uint32_t)data;
+   \        0x6   0x63C1             STR      R1,[R0, #+60]
+    456          }
+   \        0x8   0x4770             BX       LR
+    457          
+    458          /***************************************************************************//**
+    459           * Transmits one 8-9 bit frame with extended control.
+    460           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    461          void EUSART_TxExt(EUSART_TypeDef *eusart, uint16_t data)
+    462          {
+   \                     EUSART_TxExt: (+1)
+   \        0x0   0xBF00             Nop
+   \        0x2                      REQUIRE ?Subroutine0
+   \        0x2                      ; // Fall through to label ?Subroutine0
+    463            // Check that transmit FIFO is not full.
+    464            while (!(eusart->STATUS & EUSART_STATUS_TXFL)) {
+    465              // Wait for TX FIFO.
+    466            }
+    467          
+    468            eusart->TXDATA = (uint32_t)data;
+    469          }
+    470          
+    471          #if defined(EUSART_PRESENT)
+    472          /***************************************************************************//**
+    473           * Transmits one 8-16 bit frame and return received data.
+    474           ******************************************************************************/
+    475          uint16_t EUSART_Spi_TxRx(EUSART_TypeDef *eusart, uint16_t data)
+    476          {
+    477            // Check that transmit FIFO is not full.
+    478            while (!(eusart->STATUS & EUSART_STATUS_TXFL)) {
+    479              // Wait for TX FIFO.
+    480            }
+    481            eusart->TXDATA = (uint32_t)data;
+    482          
+    483            // Wait for Rx data to be available.
+    484            while (!(eusart->STATUS & EUSART_STATUS_RXFL)) {
+    485              // Wait for RX FIFO.
+    486            }
+    487            return (uint16_t)eusart->RXDATA;
+    488          }
+    489          
+    490          #if defined(EUSART_DALICFG_DALIEN)
+    491          /***************************************************************************//**
+    492           * Transmits one frame.
+    493           ******************************************************************************/
+    494          void EUSART_Dali_Tx(EUSART_TypeDef *eusart, uint32_t data)
+    495          {
+    496            uint32_t packet;
+    497          
+    498            // Make sure the module exists on the selected chip.
+    499            EFM_ASSERT(EUSART_REF_VALID(eusart));
+    500          
+    501            // Check that transmit FIFO is not full.
+    502            while (!(eusart->STATUS & EUSART_STATUS_TXFL)) {
+    503              // Wait for TX FIFO.
+    504            }
+    505          
+    506            for (uint8_t index = 0; index < dali_tx_nb_packets[EUSART_NUM(eusart)]; index++) {
+    507              // when DALICFG.DALIEN is set to 1, then all 16 bits [15:0] represent data
+    508              // First write to TXDATA register should contain 16 LSBs of the TX frame.
+    509              // Transmission will not start after this first write.
+    510              // Second write to TXDATA register should contain the remaining TX frame bits.
+    511              // This second write will result in start of transmission.
+    512              packet = (data >> (index * 16));
+    513              // To ensure compatibility with future devices, always write bits [31:16] to 0.
+    514              packet &= 0x0000FFFF;
+    515              eusart->TXDATA = packet;
+    516            }
+    517          }
+    518          
+    519          /***************************************************************************//**
+    520           * Receive one frame.
+    521           ******************************************************************************/
+    522          uint32_t EUSART_Dali_Rx(EUSART_TypeDef *eusart)
+    523          {
+    524            uint32_t data = 0;
+    525          
+    526            // Make sure the module exists on the selected chip.
+    527            EFM_ASSERT(EUSART_REF_VALID(eusart));
+    528          
+    529            while (!(eusart->STATUS & EUSART_STATUS_RXFL)) {
+    530              // Wait for incoming data.
+    531            }
+    532          
+    533            for (uint8_t index = 0; index < dali_rx_nb_packets[EUSART_NUM(eusart)]; index++) {
+    534              // when DALICFG.DALIEN is set to 1, then all 16 bits [15:0] represent data
+    535              // When receiving a frame that has more than 16 databits,
+    536              // RXDATA register needs to be read twice:
+    537              //    First read will provide 16 LSBs of the received frame.
+    538              //    Second read will provide the remaining RX frame bits.
+    539              data |= ((eusart->RXDATA & _EUSART_RXDATA_RXDATA_MASK) << (index * 16));
+    540            }
+    541            return data;
+    542          }
+    543          
+    544          #endif /* EUSART_DALICFG_DALIEN */
+    545          #endif /* EUSART_PRESENT */
+    546          
+    547          /***************************************************************************//**
+    548           * Configures the baudrate (or as close as possible to a specified baudrate)
+    549           * depending on the current mode of the EU(S)ART peripheral.
+    550           *
+    551           * @note (1) When the oversampling is disabled, the peripheral clock frequency
+    552           *           must be at least three times higher than the chosen baud rate.
+    553           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    554          void EUSART_BaudrateSet(EUSART_TypeDef *eusart,
+    555                                  uint32_t refFreq,
+    556                                  uint32_t baudrate)
+    557          {
+   \                     EUSART_BaudrateSet: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4606             MOV      R6,R0
+   \        0x4   0x460C             MOV      R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    558            uint32_t          clkdiv;
+    559            uint8_t           oversample = 0;
+    560          
+    561            // Prevent dividing by 0.
+    562            EFM_ASSERT(baudrate);
+   \        0x8   0x.... 0x....      LDR.W    R7,??DataTable11_1
+   \        0xC   0xD103             BNE.N    ??CrossCallReturnLabel_34
+   \        0xE   0xF240 0x2132      MOVW     R1,#+562
+   \       0x12   0x.... 0x....      BL       ?Subroutine5
+    563          
+    564            // Make sure the module exists on the selected chip.
+    565            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \                     ??CrossCallReturnLabel_34: (+1)
+   \       0x16   0x.... 0x....      LDR.W    R2,??DataTable11
+   \       0x1A   0x4296             CMP      R6,R2
+   \       0x1C   0xD003             BEQ.N    ??CrossCallReturnLabel_33
+   \       0x1E   0xF240 0x2135      MOVW     R1,#+565
+   \       0x22   0x.... 0x....      BL       ?Subroutine5
+    566          
+    567            // Get the current frequency.
+    568            if (!refFreq) {
+   \                     ??CrossCallReturnLabel_33: (+1)
+   \       0x26   0xB92C             CBNZ.N   R4,??EUSART_BaudrateSet_0
+    569              refFreq = CMU_ClockFreqGet(EUSART_ClockGet(eusart));
+   \       0x28   0x4630             MOV      R0,R6
+   \       0x2A   0x.... 0x....      BL       EUSART_ClockGet
+   \       0x2E   0x.... 0x....      BL       CMU_ClockFreqGet
+   \       0x32   0x4604             MOV      R4,R0
+    570            }
+    571          
+    572          #if defined(EUSART_PRESENT)
+    573            // In synchronous mode (ex: SPI)
+    574            if (eusart->CFG0 & _EUSART_CFG0_SYNC_MASK) {
+    575              EFM_ASSERT(baudrate <= refFreq);
+    576          
+    577              EUSART_Enable_TypeDef txrxEnStatus = eusartDisable;
+    578              bool wasEnabled = (eusart->EN & _EUSART_EN_EN_MASK) == true;
+    579              clkdiv = refFreq / baudrate - 1UL;
+    580          
+    581              // If the desired bit rate requires a divider larger than the Synchronous divider bitfield (CFG2_SDIV),
+    582              // the resulting spi master bus clock will be undefined because the result will be truncated.
+    583              EFM_ASSERT(clkdiv <= (_EUSART_CFG2_SDIV_MASK >> _EUSART_CFG2_SDIV_SHIFT));
+    584          
+    585              if (wasEnabled) {
+    586                eusart_sync(eusart, _EUSART_SYNCBUSY_RXEN_MASK | _EUSART_SYNCBUSY_TXEN_MASK);
+    587          
+    588                // Save the state of the reveiver and transmitter before disabling the peripheral.
+    589                if (eusart->STATUS & (_EUSART_STATUS_RXENS_MASK | _EUSART_STATUS_TXENS_MASK)) {
+    590                  txrxEnStatus = eusartEnable;
+    591                } else if (eusart->STATUS & _EUSART_STATUS_RXENS_MASK) {
+    592                  txrxEnStatus = eusartEnableRx;
+    593                } else if (eusart->STATUS & _EUSART_STATUS_TXENS_MASK) {
+    594                  txrxEnStatus = eusartEnableTx;
+    595                } else {
+    596                  EFM_ASSERT(false);
+    597                }
+    598          
+    599                // Disable the eusart to be able to modify the CFG2 register.
+    600                EUSART_Disable(eusart);
+    601              }
+    602          
+    603              // In Synchronous mode the clock divider that is managing the bitRate
+    604              // is located inside the sdiv bitfield of the CFG2 register instead of
+    605              // the CLKDIV register combined with the oversample setting for asynchronous mode.
+    606              eusart->CFG2 = (eusart->CFG2 & ~_EUSART_CFG2_SDIV_MASK) | ((clkdiv << _EUSART_CFG2_SDIV_SHIFT) & _EUSART_CFG2_SDIV_MASK);
+    607          
+    608              if (wasEnabled) {
+    609                EUSART_Enable(eusart, txrxEnStatus);
+    610              }
+    611            } else // In asynchronous mode (ex: UART)
+    612          #endif
+    613            {
+    614              // The peripheral must be enabled to configure the baud rate.
+    615              EFM_ASSERT(eusart->EN == EUSART_EN_EN);
+   \                     ??EUSART_BaudrateSet_0: (+1)
+   \       0x34   0x6870             LDR      R0,[R6, #+4]
+   \       0x36   0x2801             CMP      R0,#+1
+   \       0x38   0xD003             BEQ.N    ??CrossCallReturnLabel_32
+   \       0x3A   0xF240 0x2167      MOVW     R1,#+615
+   \       0x3E   0x.... 0x....      BL       ?Subroutine5
+    616          
+    617          #if defined(EUSART_DALICFG_DALIEN)
+    618              if (eusart->DALICFG & EUSART_DALICFG_DALIEN) {
+    619                // adjust for manchester double-clocking scheme
+    620                baudrate *= 2;
+    621              }
+    622          #endif
+    623          
+    624              /*
+    625               * Use integer division to avoid forcing in float division
+    626               * utils, and yet keep rounding effect errors to a minimum.
+    627               *
+    628               * CLKDIV is given by:
+    629               *
+    630               * CLKDIV = 256 * (fUARTn/(oversample * br) - 1)
+    631               * or
+    632               * CLKDIV = (256 * fUARTn)/(oversample * br) - 256
+    633               *
+    634               * Since fUARTn may be derived from HFCORECLK, consider the overflow when
+    635               * using integer arithmetic.
+    636               *
+    637               * The basic problem with integer division in the above formula is that
+    638               * the dividend (256 * fUARTn) may become higher than the maximum 32 bit
+    639               * integer. Yet, the dividend should be evaluated first before dividing
+    640               * to get as small rounding effects as possible.
+    641               * Also, harsh restrictions on the maximum fUARTn value should not be made.
+    642               *
+    643               * Since the last 3 bits of CLKDIV are don't care, base the
+    644               * integer arithmetic on the below formula:
+    645               *
+    646               * CLKDIV/8 = ((32*fUARTn)/(br * Oversample)) - 32
+    647               *
+    648               * and calculate 1/8 of CLKDIV first. This allows for fUARTn
+    649               * up to 128 MHz without overflowing a 32 bit value.
+    650               */
+    651          
+    652              // Map oversampling.
+    653              switch (eusart->CFG0 & _EUSART_CFG0_OVS_MASK) {
+   \                     ??CrossCallReturnLabel_32: (+1)
+   \       0x42   0x68B0             LDR      R0,[R6, #+8]
+   \       0x44   0xF010 0x00E0      ANDS     R0,R0,#0xE0
+   \       0x48   0xD008             BEQ.N    ??EUSART_BaudrateSet_1
+   \       0x4A   0x2820             CMP      R0,#+32
+   \       0x4C   0xD025             BEQ.N    ??EUSART_BaudrateSet_2
+   \       0x4E   0x2840             CMP      R0,#+64
+   \       0x50   0xD02C             BEQ.N    ??EUSART_BaudrateSet_3
+   \       0x52   0x2860             CMP      R0,#+96
+   \       0x54   0xD035             BEQ.N    ??EUSART_BaudrateSet_4
+   \       0x56   0x2880             CMP      R0,#+128
+   \       0x58   0xD03C             BEQ.N    ??EUSART_BaudrateSet_5
+   \       0x5A   0xE045             B.N      ??EUSART_BaudrateSet_6
+    654                case eusartOVS16:
+    655                  EFM_ASSERT(baudrate <= (refFreq / 16));
+   \                     ??EUSART_BaudrateSet_1: (+1)
+   \       0x5C   0x0921             LSRS     R1,R4,#+4
+   \       0x5E   0x42A9             CMP      R1,R5
+   \       0x60   0xD203             BCS.N    ??CrossCallReturnLabel_31
+   \       0x62   0xF240 0x218F      MOVW     R1,#+655
+   \       0x66   0x.... 0x....      BL       ?Subroutine5
+    656                  oversample = 16;
+   \                     ??CrossCallReturnLabel_31: (+1)
+   \       0x6A   0x2010             MOVS     R0,#+16
+    657                  break;
+    658          
+    659                case eusartOVS8:
+    660                  EFM_ASSERT(baudrate <= (refFreq / 8));
+    661                  oversample = 8;
+    662                  break;
+    663          
+    664                case eusartOVS6:
+    665                  EFM_ASSERT(baudrate <= (refFreq / 6));
+    666                  oversample = 6;
+    667                  break;
+    668          
+    669                case eusartOVS4:
+    670                  EFM_ASSERT(baudrate <= (refFreq / 4));
+    671                  oversample = 4;
+    672                  break;
+    673          
+    674                case eusartOVS0:
+    675                  EFM_ASSERT(refFreq >= (3 * baudrate)); // See Note #1.
+    676                  oversample = 1;
+    677                  break;
+    678          
+    679                default:
+    680                  // Invalid input
+    681                  EFM_ASSERT(0);
+    682                  break;
+    683              }
+    684          
+    685              if (oversample > 0U) {
+    686                // Calculate and set the CLKDIV with fractional bits.
+    687                clkdiv  = (32 * refFreq) / (baudrate * oversample);
+    688                clkdiv -= 32;
+    689                clkdiv *= 8;
+   \                     ??EUSART_BaudrateSet_7: (+1)
+   \       0x6C   0x4345             MULS     R5,R0,R5
+   \       0x6E   0x0164             LSLS     R4,R4,#+5
+   \       0x70   0xFBB4 0xF4F5      UDIV     R4,R4,R5
+    690          
+    691                // Verify that the resulting clock divider is within limits.
+    692                EFM_ASSERT(clkdiv <= _EUSART_CLKDIV_MASK);
+   \       0x74   0x.... 0x....      LDR.W    R5,??DataTable11_4
+   \       0x78   0x3C20             SUBS     R4,R4,#+32
+   \       0x7A   0x00E4             LSLS     R4,R4,#+3
+   \       0x7C   0x42AC             CMP      R4,R5
+   \       0x7E   0xD903             BLS.N    ??CrossCallReturnLabel_30
+   \       0x80   0xF44F 0x712D      MOV      R1,#+692
+   \       0x84   0x.... 0x....      BL       ?Subroutine5
+    693          
+    694                // If the EFM_ASSERT is not enabled, make sure not to write to reserved bits.
+    695                clkdiv &= _EUSART_CLKDIV_MASK;
+   \                     ??CrossCallReturnLabel_30: (+1)
+   \       0x88   0x402C             ANDS     R4,R5,R4
+    696          
+    697                eusart_sync(eusart, _EUSART_SYNCBUSY_DIV_MASK);
+   \                     ??EUSART_BaudrateSet_8: (+1)
+   \       0x8A   0x6CF0             LDR      R0,[R6, #+76]
+   \       0x8C   0x07C1             LSLS     R1,R0,#+31
+   \       0x8E   0xD4FC             BMI.N    ??EUSART_BaudrateSet_8
+    698                eusart->CLKDIV = clkdiv;
+   \       0x90   0x62B4             STR      R4,[R6, #+40]
+    699                eusart_sync(eusart, _EUSART_SYNCBUSY_DIV_MASK);
+   \                     ??EUSART_BaudrateSet_9: (+1)
+   \       0x92   0x6CF0             LDR      R0,[R6, #+76]
+   \       0x94   0x07C1             LSLS     R1,R0,#+31
+   \       0x96   0xD4FC             BMI.N    ??EUSART_BaudrateSet_9
+    700              }
+    701            }
+    702          }
+   \       0x98   0xBDF1             POP      {R0,R4-R7,PC}
+   \                     ??EUSART_BaudrateSet_2: (+1)
+   \       0x9A   0x08E0             LSRS     R0,R4,#+3
+   \       0x9C   0x42A8             CMP      R0,R5
+   \       0x9E   0xD203             BCS.N    ??CrossCallReturnLabel_29
+   \       0xA0   0xF44F 0x7125      MOV      R1,#+660
+   \       0xA4   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_29: (+1)
+   \       0xA8   0x2008             MOVS     R0,#+8
+   \       0xAA   0xE7DF             B.N      ??EUSART_BaudrateSet_7
+   \                     ??EUSART_BaudrateSet_3: (+1)
+   \       0xAC   0x2006             MOVS     R0,#+6
+   \       0xAE   0xFBB4 0xF0F0      UDIV     R0,R4,R0
+   \       0xB2   0x42A8             CMP      R0,R5
+   \       0xB4   0xD203             BCS.N    ??CrossCallReturnLabel_28
+   \       0xB6   0xF240 0x2199      MOVW     R1,#+665
+   \       0xBA   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_28: (+1)
+   \       0xBE   0x2006             MOVS     R0,#+6
+   \       0xC0   0xE7D4             B.N      ??EUSART_BaudrateSet_7
+   \                     ??EUSART_BaudrateSet_4: (+1)
+   \       0xC2   0x08A0             LSRS     R0,R4,#+2
+   \       0xC4   0x42A8             CMP      R0,R5
+   \       0xC6   0xD203             BCS.N    ??CrossCallReturnLabel_27
+   \       0xC8   0xF240 0x219E      MOVW     R1,#+670
+   \       0xCC   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_27: (+1)
+   \       0xD0   0x2004             MOVS     R0,#+4
+   \       0xD2   0xE7CB             B.N      ??EUSART_BaudrateSet_7
+   \                     ??EUSART_BaudrateSet_5: (+1)
+   \       0xD4   0xEB05 0x0045      ADD      R0,R5,R5, LSL #+1
+   \       0xD8   0x4284             CMP      R4,R0
+   \       0xDA   0xD203             BCS.N    ??CrossCallReturnLabel_26
+   \       0xDC   0xF240 0x21A3      MOVW     R1,#+675
+   \       0xE0   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_26: (+1)
+   \       0xE4   0x2001             MOVS     R0,#+1
+   \       0xE6   0xE7C1             B.N      ??EUSART_BaudrateSet_7
+   \                     ??EUSART_BaudrateSet_6: (+1)
+   \       0xE8   0x4638             MOV      R0,R7
+   \       0xEA   0xF240 0x21A9      MOVW     R1,#+681
+   \       0xEE   0xE8BD 0x40F4      POP      {R2,R4-R7,LR}
+   \       0xF2   0x.... 0x....      B.W      assertEFM
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x4638             MOV      R0,R7
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    703          
+    704          /***************************************************************************//**
+    705           * Gets the current baudrate.
+    706           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    707          uint32_t EUSART_BaudrateGet(EUSART_TypeDef *eusart)
+    708          {
+   \                     EUSART_BaudrateGet: (+1)
+   \        0x0   0xE92D 0x45F8      PUSH     {R3-R8,R10,LR}
+   \        0x4   0x4604             MOV      R4,R0
+    709            uint32_t freq;
+    710            uint32_t div = 1;
+    711            uint32_t br = 0;
+    712            EUSART_OVS_TypeDef ovs = eusartOVS0;
+    713          
+    714            // Make sure the module exists on the selected chip.
+    715            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \        0x6   0x....             LDR.N    R2,??DataTable11
+   \        0x8   0x....             LDR.N    R5,??DataTable11_1
+   \        0xA   0x4294             CMP      R4,R2
+   \        0xC   0xD004             BEQ.N    ??EUSART_BaudrateGet_0
+   \        0xE   0xF240 0x21CB      MOVW     R1,#+715
+   \       0x12   0x4628             MOV      R0,R5
+   \       0x14   0x.... 0x....      BL       assertEFM
+    716          
+    717            freq = CMU_ClockFreqGet(EUSART_ClockGet(eusart));
+   \                     ??EUSART_BaudrateGet_0: (+1)
+   \       0x18   0x4620             MOV      R0,R4
+   \       0x1A   0x.... 0x....      BL       EUSART_ClockGet
+   \       0x1E   0x.... 0x....      BL       CMU_ClockFreqGet
+    718          
+    719          #if defined(EUSART_PRESENT)
+    720            // In synchronous mode (ex: SPI)
+    721            if (eusart->CFG0 & _EUSART_CFG0_SYNC_MASK) {
+    722              div = (eusart->CFG2 & _EUSART_CFG2_SDIV_MASK) >> _EUSART_CFG2_SDIV_SHIFT;
+    723              br = freq / (div + 1);
+    724            }
+    725            // In asynchronous mode (ex: UART)
+    726            else
+    727          #endif
+    728            {
+    729              div = eusart->CLKDIV;
+   \       0x22   0x6AA6             LDR      R6,[R4, #+40]
+    730              ovs = (EUSART_OVS_TypeDef)(eusart->CFG0 & _EUSART_CFG0_OVS_MASK);
+   \       0x24   0x68A4             LDR      R4,[R4, #+8]
+    731              br = EUSART_AsyncBaudrateCalc(freq, div, ovs);
+   \       0x26   0x....             LDR.N    R7,??DataTable11_4
+   \       0x28   0x4680             MOV      R8,R0
+   \       0x2A   0xF004 0x04E0      AND      R4,R4,#0xE0
+   \       0x2E   0x42BE             CMP      R6,R7
+   \       0x30   0xD904             BLS.N    ??EUSART_BaudrateGet_1
+   \       0x32   0xF240 0x41F5      MOVW     R1,#+1269
+   \       0x36   0x4628             MOV      R0,R5
+   \       0x38   0x.... 0x....      BL       assertEFM
+   \                     ??EUSART_BaudrateGet_1: (+1)
+   \       0x3C   0x403E             ANDS     R6,R7,R6
+   \       0x3E   0xB19C             CBZ.N    R4,??EUSART_BaudrateGet_2
+   \       0x40   0x2C20             CMP      R4,#+32
+   \       0x42   0xD00F             BEQ.N    ??EUSART_BaudrateGet_3
+   \       0x44   0x2C40             CMP      R4,#+64
+   \       0x46   0xD00A             BEQ.N    ??EUSART_BaudrateGet_4
+   \       0x48   0x2C60             CMP      R4,#+96
+   \       0x4A   0xD005             BEQ.N    ??EUSART_BaudrateGet_5
+   \       0x4C   0x2C80             CMP      R4,#+128
+   \       0x4E   0xD120             BNE.N    ??EUSART_BaudrateGet_6
+   \       0x50   0x2001             MOVS     R0,#+1
+   \       0x52   0xF44F 0x7480      MOV      R4,#+256
+   \       0x56   0xE009             B.N      ??EUSART_BaudrateGet_7
+   \                     ??EUSART_BaudrateGet_5: (+1)
+   \       0x58   0x2001             MOVS     R0,#+1
+   \       0x5A   0x2440             MOVS     R4,#+64
+   \       0x5C   0xE006             B.N      ??EUSART_BaudrateGet_7
+   \                     ??EUSART_BaudrateGet_4: (+1)
+   \       0x5E   0x2003             MOVS     R0,#+3
+   \       0x60   0x2480             MOVS     R4,#+128
+   \       0x62   0xE003             B.N      ??EUSART_BaudrateGet_7
+   \                     ??EUSART_BaudrateGet_3: (+1)
+   \       0x64   0x2001             MOVS     R0,#+1
+   \       0x66   0xE001             B.N      ??EUSART_BaudrateGet_7
+   \                     ??EUSART_BaudrateGet_2: (+1)
+   \       0x68   0x2001             MOVS     R0,#+1
+   \       0x6A   0x2410             MOVS     R4,#+16
+   \                     ??EUSART_BaudrateGet_7: (+1)
+   \       0x6C   0xF506 0x7680      ADD      R6,R6,#+256
+   \       0x70   0x4346             MULS     R6,R6,R0
+   \       0x72   0x.... 0x....      BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_39: (+1)
+   \       0x76   0x4682             MOV      R10,R0
+   \       0x78   0x.... 0x....      BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_40: (+1)
+   \       0x7C   0xFBA2 0x0104      UMULL    R0,R1,R2,R4
+   \       0x80   0x4632             MOV      R2,R6
+   \       0x82   0xFB03 0x1104      MLA      R1,R3,R4,R1
+   \       0x86   0x2300             MOVS     R3,#+0
+   \       0x88   0x.... 0x....      BL       __aeabi_uldivmod
+   \       0x8C   0xFB0A 0x0004      MLA      R0,R10,R4,R0
+   \       0x90   0xE000             B.N      ??EUSART_BaudrateGet_8
+   \                     ??EUSART_BaudrateGet_6: (+1)
+   \       0x92   0x2000             MOVS     R0,#+0
+    732          
+    733          #if defined(EUSART_DALICFG_DALIEN)
+    734              if (eusart->DALICFG & EUSART_DALICFG_DALIEN) {
+    735                // adjust for manchester double-clocking scheme
+    736                br /= 2;
+    737              }
+    738          #endif
+    739            }
+    740          
+    741            return br;
+   \                     ??EUSART_BaudrateGet_8: (+1)
+   \       0x94   0xE8BD 0x85F2      POP      {R1,R4-R8,R10,PC}
+    742          }
+    743          
+    744          /***************************************************************************//**
+    745           * Enable/Disable reception operations until the configured start frame is
+    746           * received.
+    747           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    748          void EUSART_RxBlock(EUSART_TypeDef *eusart, EUSART_BlockRx_TypeDef enable)
+    749          {
+   \                     EUSART_RxBlock: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine4
+    750            uint32_t tmp;
+    751          
+    752            // Make sure that the module exists on the selected chip.
+    753            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \                     ??CrossCallReturnLabel_24: (+1)
+   \        0x6   0xD003             BEQ.N    ??CrossCallReturnLabel_37
+   \        0x8   0xF240 0x21F1      MOVW     R1,#+753
+   \        0xC   0x.... 0x....      BL       ?Subroutine6
+    754          
+    755            tmp   = ((uint32_t)(enable));
+    756            tmp  &= (_EUSART_CMD_RXBLOCKEN_MASK | _EUSART_CMD_RXBLOCKDIS_MASK);
+   \                     ??CrossCallReturnLabel_37: (+1)
+   \       0x10   0xF005 0x0030      AND      R0,R5,#0x30
+    757          
+    758            eusart_sync(eusart, EUSART_SYNCBUSY_RXBLOCKEN | EUSART_SYNCBUSY_RXBLOCKDIS);
+   \                     ??EUSART_RxBlock_0: (+1)
+   \       0x14   0x6CE1             LDR      R1,[R4, #+76]
+   \       0x16   0xF411 0x7FC0      TST      R1,#0x180
+   \       0x1A   0xD1FB             BNE.N    ??EUSART_RxBlock_0
+    759            eusart->CMD_SET = tmp;
+   \       0x1C   0xF241 0x0130      MOVW     R1,#+4144
+   \       0x20   0x5060             STR      R0,[R4, R1]
+    760            eusart_sync(eusart, EUSART_SYNCBUSY_RXBLOCKEN | EUSART_SYNCBUSY_RXBLOCKDIS);
+   \                     ??EUSART_RxBlock_1: (+1)
+   \       0x22   0x6CE0             LDR      R0,[R4, #+76]
+   \       0x24   0xF410 0x7FC0      TST      R0,#0x180
+   \       0x28   0xD1FB             BNE.N    ??EUSART_RxBlock_1
+    761          
+    762            tmp = 0u;
+   \       0x2A   0x2000             MOVS     R0,#+0
+    763            if ((_EUSART_CMD_RXBLOCKEN_MASK & enable) != 0u) {
+   \       0x2C   0x06E9             LSLS     R1,R5,#+27
+   \       0x2E   0xBF48             IT       MI
+   \       0x30   0x2008             MOVMI    R0,#+8
+    764              tmp |= EUSART_STATUS_RXBLOCK;
+    765            }
+    766            while ((eusart->STATUS & _EUSART_STATUS_RXBLOCK_MASK) != tmp) {
+   \                     ??EUSART_RxBlock_2: (+1)
+   \       0x32   0x6C21             LDR      R1,[R4, #+64]
+   \       0x34   0xF001 0x0108      AND      R1,R1,#0x8
+   \       0x38   0x4281             CMP      R1,R0
+   \       0x3A   0xD1FA             BNE.N    ??EUSART_RxBlock_2
+    767              // Wait for the status register to be updated.
+    768            }
+    769          }
+   \       0x3C   0xBD31             POP      {R0,R4,R5,PC}
+    770          
+    771          /***************************************************************************//**
+    772           * Enables/Disables the tristating of the transmitter output.
+    773           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    774          void  EUSART_TxTristateSet(EUSART_TypeDef *eusart,
+    775                                     EUSART_TristateTx_TypeDef enable)
+    776          {
+   \                     EUSART_TxTristateSet: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine4
+    777            uint32_t tmp;
+    778          
+    779            // Make sure that the module exists on the selected chip.
+    780            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \                     ??CrossCallReturnLabel_25: (+1)
+   \        0x6   0xD003             BEQ.N    ??CrossCallReturnLabel_36
+   \        0x8   0xF44F 0x7143      MOV      R1,#+780
+   \        0xC   0x.... 0x....      BL       ?Subroutine6
+    781          
+    782            tmp   = ((uint32_t)(enable));
+    783            tmp  &= (_EUSART_CMD_TXTRIEN_MASK | _EUSART_CMD_TXTRIDIS_MASK);
+   \                     ??CrossCallReturnLabel_36: (+1)
+   \       0x10   0xF005 0x00C0      AND      R0,R5,#0xC0
+    784          
+    785            eusart_sync(eusart, EUSART_SYNCBUSY_TXTRIEN | EUSART_SYNCBUSY_TXTRIDIS);
+   \                     ??EUSART_TxTristateSet_0: (+1)
+   \       0x14   0x6CE1             LDR      R1,[R4, #+76]
+   \       0x16   0xF411 0x6FC0      TST      R1,#0x600
+   \       0x1A   0xD1FB             BNE.N    ??EUSART_TxTristateSet_0
+    786            eusart->CMD = tmp;
+   \       0x1C   0x6320             STR      R0,[R4, #+48]
+    787            eusart_sync(eusart, EUSART_SYNCBUSY_TXTRIEN | EUSART_SYNCBUSY_TXTRIDIS);
+   \                     ??EUSART_TxTristateSet_1: (+1)
+   \       0x1E   0x6CE0             LDR      R0,[R4, #+76]
+   \       0x20   0xF410 0x6FC0      TST      R0,#0x600
+   \       0x24   0xD1FB             BNE.N    ??EUSART_TxTristateSet_1
+    788          
+    789            tmp = 0u;
+   \       0x26   0x2000             MOVS     R0,#+0
+    790            if ((_EUSART_CMD_TXTRIEN_MASK & enable) != 0u) {
+   \       0x28   0x0669             LSLS     R1,R5,#+25
+   \       0x2A   0xBF48             IT       MI
+   \       0x2C   0x2010             MOVMI    R0,#+16
+    791              tmp |= EUSART_STATUS_TXTRI;
+    792            }
+    793            while ((eusart->STATUS & _EUSART_STATUS_TXTRI_MASK) != tmp) {
+   \                     ??EUSART_TxTristateSet_2: (+1)
+   \       0x2E   0x6C21             LDR      R1,[R4, #+64]
+   \       0x30   0xF001 0x0110      AND      R1,R1,#0x10
+   \       0x34   0x4281             CMP      R1,R0
+   \       0x36   0xD1FA             BNE.N    ??EUSART_TxTristateSet_2
+    794              // Wait for the status register to be updated.
+    795            }
+    796          }
+   \       0x38   0xBD31             POP      {R0,R4,R5,PC}
+    797          
+    798          /***************************************************************************//**
+    799           * Initializes the automatic enabling of transmissions and/or reception using
+    800           * the PRS as a trigger.
+    801           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    802          void EUSART_PrsTriggerEnable(EUSART_TypeDef *eusart,
+    803                                       const EUSART_PrsTriggerInit_TypeDef *init)
+    804          {
+   \                     EUSART_PrsTriggerEnable: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    805            uint32_t tmp;
+    806          
+    807            // Make sure that the module exists on the selected chip.
+    808            EFM_ASSERT(EUSART_REF_VALID(eusart));
+   \        0x4   0x....             LDR.N    R2,??DataTable11
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x....             LDR.N    R6,??DataTable11_1
+   \        0xA   0x4294             CMP      R4,R2
+   \        0xC   0xD003             BEQ.N    ??CrossCallReturnLabel_1
+   \        0xE   0xF44F 0x714A      MOV      R1,#+808
+   \       0x12   0x.... 0x....      BL       ?Subroutine2
+    809          
+    810            // The peripheral must be enabled to configure the PRS trigger.
+    811            EFM_ASSERT(eusart->EN == EUSART_EN_EN);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x16   0x6860             LDR      R0,[R4, #+4]
+   \       0x18   0x2801             CMP      R0,#+1
+   \       0x1A   0xD003             BEQ.N    ??CrossCallReturnLabel_0
+   \       0x1C   0xF240 0x312B      MOVW     R1,#+811
+   \       0x20   0x.... 0x....      BL       ?Subroutine2
+    812          
+    813          #if defined(EUART_PRESENT)
+    814            PRS->CONSUMER_EUART0_TRIGGER = (init->prs_trigger_channel & _PRS_CONSUMER_EUART0_TRIGGER_MASK);
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x24   0x7868             LDRB     R0,[R5, #+1]
+   \       0x26   0x....             LDR.N    R1,??DataTable11_5
+   \       0x28   0xF000 0x000F      AND      R0,R0,#0xF
+   \       0x2C   0x6008             STR      R0,[R1, #+0]
+    815          #else
+    816          
+    817          #if defined(EUSART0)
+    818            if (eusart == EUSART0) {
+    819              PRS->CONSUMER_EUSART0_TRIGGER = (init->prs_trigger_channel & _PRS_CONSUMER_EUSART0_TRIGGER_MASK);
+    820            }
+    821          #endif
+    822          #if defined(EUSART1)
+    823            if (eusart == EUSART1) {
+    824              PRS->CONSUMER_EUSART1_TRIGGER = (init->prs_trigger_channel & _PRS_CONSUMER_EUSART1_TRIGGER_MASK);
+    825            }
+    826          #endif
+    827          #if defined(EUSART2)
+    828            if (eusart == EUSART2) {
+    829              PRS->CONSUMER_EUSART2_TRIGGER = (init->prs_trigger_channel & _PRS_CONSUMER_EUSART2_TRIGGER_MASK);
+    830            }
+    831          #endif
+    832          #if defined(EUSART3)
+    833            if (eusart == EUSART3) {
+    834              PRS->CONSUMER_EUSART3_TRIGGER = (init->prs_trigger_channel & _PRS_CONSUMER_EUSART3_TRIGGER_MASK);
+    835            }
+    836          #endif
+    837          #if defined(EUSART4)
+    838            if (eusart == EUSART4) {
+    839              PRS->CONSUMER_EUSART4_TRIGGER = (init->prs_trigger_channel & _PRS_CONSUMER_EUSART4_TRIGGER_MASK);
+    840            }
+    841          #endif
+    842          #endif
+    843          
+    844            tmp   = ((uint32_t)(init->prs_trigger_enable));
+    845            tmp  &= (_EUSART_TRIGCTRL_RXTEN_MASK | _EUSART_TRIGCTRL_TXTEN_MASK);
+    846          
+    847            eusart->TRIGCTRL_SET = tmp;
+   \       0x2E   0x782A             LDRB     R2,[R5, #+0]
+   \       0x30   0xF241 0x002C      MOVW     R0,#+4140
+   \       0x34   0xF002 0x0203      AND      R2,R2,#0x3
+   \       0x38   0x5022             STR      R2,[R4, R0]
+    848            eusart_sync(eusart, EUSART_SYNCBUSY_RXTEN | EUSART_SYNCBUSY_TXTEN);
+   \                     ??EUSART_PrsTriggerEnable_0: (+1)
+   \       0x3A   0x6CE1             LDR      R1,[R4, #+76]
+   \       0x3C   0xF011 0x0F06      TST      R1,#0x6
+   \       0x40   0xD1FB             BNE.N    ??EUSART_PrsTriggerEnable_0
+    849          
+    850            tmp   = ~((uint32_t)(init->prs_trigger_enable));
+    851            tmp  &= (_EUSART_TRIGCTRL_RXTEN_MASK | _EUSART_TRIGCTRL_TXTEN_MASK);
+    852            eusart->TRIGCTRL_CLR = tmp;
+   \       0x42   0x7828             LDRB     R0,[R5, #+0]
+   \       0x44   0xF242 0x012C      MOVW     R1,#+8236
+   \       0x48   0x43C0             MVNS     R0,R0
+   \       0x4A   0xF000 0x0003      AND      R0,R0,#0x3
+   \       0x4E   0x5060             STR      R0,[R4, R1]
+    853            eusart_sync(eusart, EUSART_SYNCBUSY_RXTEN | EUSART_SYNCBUSY_TXTEN);
+   \                     ??EUSART_PrsTriggerEnable_1: (+1)
+   \       0x50   0x6CE0             LDR      R0,[R4, #+76]
+   \       0x52   0xF010 0x0F06      TST      R0,#0x6
+   \       0x56   0xD1FB             BNE.N    ??EUSART_PrsTriggerEnable_1
+    854          }
+   \       0x58   0xBD70             POP      {R4-R6,PC}
+    855          
+    856          /*******************************************************************************
+    857           **************************   LOCAL FUNCTIONS   ********************************
+    858           ******************************************************************************/
+    859          
+    860          /***************************************************************************//**
+    861           * Gets the clock associated to the specified EUSART instance.
+    862           *
+    863           * @param eusart Pointer to the EUSART peripheral register block.
+    864           *
+    865           * @return Clock corresponding to the eusart.
+    866           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    867          static CMU_Clock_TypeDef EUSART_ClockGet(EUSART_TypeDef *eusart)
+    868          {
+    869            CMU_Clock_TypeDef clock;
+    870          
+    871          #if defined(EUART0)
+    872            if (eusart == EUART0) {
+   \                     EUSART_ClockGet: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable11
+   \        0x2   0xB580             PUSH     {R7,LR}
+   \        0x4   0x4288             CMP      R0,R1
+   \        0x6   0xD101             BNE.N    ??EUSART_ClockGet_0
+    873              clock = cmuClock_EUART0;
+    874            }
+    875          #endif
+    876          #if defined(EUSART0)
+    877            if (eusart == EUSART0) {
+    878              clock = cmuClock_EUSART0;
+    879            }
+    880          #endif
+    881          #if defined(EUSART1)
+    882            else if (eusart == EUSART1) {
+    883              clock = cmuClock_EUSART1;
+    884            }
+    885          #endif
+    886          #if defined(EUSART2)
+    887            else if (eusart == EUSART2) {
+    888              clock = cmuClock_EUSART2;
+    889            }
+    890          #endif
+    891          #if defined(EUSART3)
+    892            else if (eusart == EUSART3) {
+    893              clock = cmuClock_EUSART3;
+    894            }
+    895          #endif
+    896          #if defined(EUSART4)
+    897            else if (eusart == EUSART4) {
+    898              clock = cmuClock_EUSART4;
+    899            }
+    900          #endif
+    901            else {
+    902              EFM_ASSERT(0);
+    903              return (CMU_Clock_TypeDef)0u;
+    904            }
+    905            return clock;
+   \        0x8   0x2038             MOVS     R0,#+56
+   \        0xA   0xBD02             POP      {R1,PC}
+   \                     ??EUSART_ClockGet_0: (+1)
+   \        0xC   0xF240 0x3186      MOVW     R1,#+902
+   \       0x10   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_35: (+1)
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xBD02             POP      {R1,PC}
+    906          }
+    907          
+    908          /***************************************************************************//**
+    909           * Initializes the EUSART with asynchronous common settings to high
+    910           * and low frequency clock.
+    911           *
+    912           * @param eusart Pointer to the EUSART peripheral register block.
+    913           * @param init A pointer to the initialization structure.
+    914           * @param irdaInit Pointer to IrDA initialization structure.
+    915           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    916          static void EUSART_AsyncInitCommon(EUSART_TypeDef *eusart,
+    917                                             const EUSART_UartInit_TypeDef  *init,
+    918                                             const EUSART_IrDAInit_TypeDef  *irdaInit,
+    919                                             const EUSART_DaliInit_TypeDef  *daliInit)
+    920          {
+   \                     EUSART_AsyncInitCommon: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4605             MOV      R5,R0
+   \        0x4   0x4614             MOV      R4,R2
+    921            // LF register about to be modified requires sync busy check.
+    922            if (eusart->EN) {
+   \        0x6   0x686A             LDR      R2,[R5, #+4]
+   \        0x8   0x460E             MOV      R6,R1
+   \        0xA   0xB11A             CBZ.N    R2,??EUSART_AsyncInitCommon_0
+    923              eusart_sync(eusart, _EUSART_SYNCBUSY_MASK);
+   \        0xC   0xF240 0x71FF      MOVW     R1,#+2047
+   \       0x10   0x.... 0x....      BL       eusart_sync
+    924            }
+    925            // Initialize EUSART registers to hardware reset state.
+    926            EUSART_Reset(eusart);
+   \                     ??EUSART_AsyncInitCommon_0: (+1)
+   \       0x14   0x4628             MOV      R0,R5
+   \       0x16   0x.... 0x....      BL       EUSART_Reset
+    927          
+    928            // Configure frame format
+    929            eusart->FRAMECFG = (eusart->FRAMECFG & ~(_EUSART_FRAMECFG_DATABITS_MASK
+    930                                                     | _EUSART_FRAMECFG_STOPBITS_MASK
+    931                                                     | _EUSART_FRAMECFG_PARITY_MASK))
+    932                               | (uint32_t)(init->databits)
+    933                               | (uint32_t)(init->parity)
+    934                               | (uint32_t)(init->stopbits);
+   \       0x1A   0x692A             LDR      R2,[R5, #+16]
+   \       0x1C   0x7B71             LDRB     R1,[R6, #+13]
+   \       0x1E   0x....             LDR.N    R0,??DataTable11_6
+   \       0x20   0x4002             ANDS     R2,R0,R2
+   \       0x22   0xF9B6 0x000E      LDRSH    R0,[R6, #+14]
+   \       0x26   0x430A             ORRS     R2,R1,R2
+   \       0x28   0xF9B6 0x1010      LDRSH    R1,[R6, #+16]
+   \       0x2C   0x4302             ORRS     R2,R0,R2
+    935          
+    936            // Configure global configuration register 0.
+    937            eusart->CFG0 = (eusart->CFG0 & ~(_EUSART_CFG0_OVS_MASK
+    938                                             | _EUSART_CFG0_LOOPBK_MASK
+    939                                             | _EUSART_CFG0_MVDIS_MASK))
+    940                           | (uint32_t)(init->oversampling)
+    941                           | (uint32_t)(init->loopbackEnable)
+    942                           | (uint32_t)(init->majorityVote);
+   \       0x2E   0x....             LDR.N    R0,??DataTable11_7
+   \       0x30   0x430A             ORRS     R2,R1,R2
+   \       0x32   0x612A             STR      R2,[R5, #+16]
+   \       0x34   0x68AA             LDR      R2,[R5, #+8]
+   \       0x36   0x7B31             LDRB     R1,[R6, #+12]
+   \       0x38   0x4002             ANDS     R2,R0,R2
+   \       0x3A   0x7E30             LDRB     R0,[R6, #+24]
+   \       0x3C   0x430A             ORRS     R2,R1,R2
+   \       0x3E   0x6971             LDR      R1,[R6, #+20]
+   \       0x40   0x4302             ORRS     R2,R0,R2
+   \       0x42   0x430A             ORRS     R2,R1,R2
+   \       0x44   0x60AA             STR      R2,[R5, #+8]
+    943          
+    944            if (init->baudrate == 0) {
+   \       0x46   0x68B0             LDR      R0,[R6, #+8]
+   \       0x48   0xB918             CBNZ.N   R0,??EUSART_AsyncInitCommon_1
+    945              eusart->CFG0 |= EUSART_CFG0_AUTOBAUDEN;
+   \       0x4A   0x68A8             LDR      R0,[R5, #+8]
+   \       0x4C   0xF040 0x4000      ORR      R0,R0,#0x80000000
+   \       0x50   0x60A8             STR      R0,[R5, #+8]
+    946            }
+    947          
+    948            if (init->advancedSettings) {
+   \                     ??EUSART_AsyncInitCommon_1: (+1)
+   \       0x52   0x69F0             LDR      R0,[R6, #+28]
+   \       0x54   0xF241 0x0104      MOVW     R1,#+4100
+   \       0x58   0x186B             ADDS     R3,R5,R1
+   \       0x5A   0x2800             CMP      R0,#+0
+   \       0x5C   0xD055             BEQ.N    ??EUSART_AsyncInitCommon_2
+    949              eusart->CFG0 = (eusart->CFG0 & ~(_EUSART_CFG0_ERRSDMA_MASK | _EUSART_CFG0_AUTOTRI_MASK
+    950                                               | _EUSART_CFG0_RXINV_MASK | _EUSART_CFG0_TXINV_MASK
+    951                                               | _EUSART_CFG0_CCEN_MASK  | _EUSART_CFG0_MPM_MASK
+    952                                               | _EUSART_CFG0_MPAB_MASK  | _EUSART_CFG0_MSBF_MASK))
+    953                             | (uint32_t)(init->advancedSettings->dmaHaltOnError << _EUSART_CFG0_ERRSDMA_SHIFT)
+    954                             | (uint32_t)(init->advancedSettings->txAutoTristate << _EUSART_CFG0_AUTOTRI_SHIFT)
+    955                             | (init->advancedSettings->invertIO & (_EUSART_CFG0_RXINV_MASK | _EUSART_CFG0_TXINV_MASK))
+    956                             | (uint32_t)(init->advancedSettings->collisionDetectEnable << _EUSART_CFG0_CCEN_SHIFT)
+    957                             | (uint32_t)(init->advancedSettings->multiProcessorEnable << _EUSART_CFG0_MPM_SHIFT)
+    958                             | (uint32_t)(init->advancedSettings->multiProcessorAddressBitHigh << _EUSART_CFG0_MPAB_SHIFT)
+    959                             | (uint32_t)(init->advancedSettings->msbFirst << _EUSART_CFG0_MSBF_SHIFT);
+   \       0x5E   0x68AA             LDR      R2,[R5, #+8]
+   \       0x60   0x7A07             LDRB     R7,[R0, #+8]
+   \       0x62   0x....             LDR.N    R1,??DataTable11_8
+   \       0x64   0x400A             ANDS     R2,R1,R2
+   \       0x66   0xEA42 0x5287      ORR      R2,R2,R7, LSL #+22
+   \       0x6A   0x7A81             LDRB     R1,[R0, #+10]
+   \       0x6C   0x8887             LDRH     R7,[R0, #+4]
+   \       0x6E   0xEA42 0x4241      ORR      R2,R2,R1, LSL #+17
+   \       0x72   0x7841             LDRB     R1,[R0, #+1]
+   \       0x74   0xF407 0x47C0      AND      R7,R7,#0x6000
+   \       0x78   0x433A             ORRS     R2,R7,R2
+   \       0x7A   0x7B47             LDRB     R7,[R0, #+13]
+   \       0x7C   0xEA42 0x0281      ORR      R2,R2,R1, LSL #+2
+   \       0x80   0x7B81             LDRB     R1,[R0, #+14]
+   \       0x82   0xEA42 0x02C7      ORR      R2,R2,R7, LSL #+3
+   \       0x86   0x7887             LDRB     R7,[R0, #+2]
+   \       0x88   0xEA42 0x1201      ORR      R2,R2,R1, LSL #+4
+    960          
+    961              // Configure global configuration register 1.
+    962              eusart->CFG1 = (eusart->CFG1 & ~(_EUSART_CFG1_RXFIW_MASK | _EUSART_CFG1_TXFIW_MASK
+    963                                               | _EUSART_CFG1_RXDMAWU_MASK | _EUSART_CFG1_TXDMAWU_MASK))
+    964                             | (uint32_t)(init->advancedSettings->RxFifoWatermark)
+    965                             | (uint32_t)(init->advancedSettings->TxFifoWatermark)
+    966                             | (uint32_t)(init->advancedSettings->dmaWakeUpOnRx << _EUSART_CFG1_RXDMAWU_SHIFT)
+    967                             | (uint32_t)(init->advancedSettings->dmaWakeUpOnTx << _EUSART_CFG1_TXDMAWU_SHIFT);
+   \       0x8C   0x....             LDR.N    R1,??DataTable11_9
+   \       0x8E   0xEA42 0x2287      ORR      R2,R2,R7, LSL #+10
+   \       0x92   0x60AA             STR      R2,[R5, #+8]
+   \       0x94   0x68EF             LDR      R7,[R5, #+12]
+   \       0x96   0x6902             LDR      R2,[R0, #+16]
+   \       0x98   0x400F             ANDS     R7,R1,R7
+   \       0x9A   0x6941             LDR      R1,[R0, #+20]
+   \       0x9C   0x4317             ORRS     R7,R2,R7
+   \       0x9E   0x7982             LDRB     R2,[R0, #+6]
+   \       0xA0   0x430F             ORRS     R7,R1,R7
+   \       0xA2   0x79C1             LDRB     R1,[R0, #+7]
+   \       0xA4   0xEA47 0x2782      ORR      R7,R7,R2, LSL #+10
+   \       0xA8   0xEA47 0x2741      ORR      R7,R7,R1, LSL #+9
+   \       0xAC   0x60EF             STR      R7,[R5, #+12]
+    968          
+    969              if (init->advancedSettings->hwFlowControl == eusartHwFlowControlCts
+    970                  || init->advancedSettings->hwFlowControl == eusartHwFlowControlCtsAndRts) {
+   \       0xAE   0x7801             LDRB     R1,[R0, #+0]
+   \       0xB0   0x2901             CMP      R1,#+1
+   \       0xB2   0xBF18             IT       NE
+   \       0xB4   0x2903             CMPNE    R1,#+3
+   \       0xB6   0xD103             BNE.N    ??EUSART_AsyncInitCommon_3
+    971                eusart->CFG1 |= EUSART_CFG1_CTSEN;
+   \       0xB8   0x68E9             LDR      R1,[R5, #+12]
+   \       0xBA   0xF041 0x0104      ORR      R1,R1,#0x4
+   \       0xBE   0x60E9             STR      R1,[R5, #+12]
+    972              }
+    973              // Enable RTS route pin if necessary. CTS is an input so it is enabled by default.
+    974              if ((init->advancedSettings->hwFlowControl == eusartHwFlowControlRts)
+    975                  || (init->advancedSettings->hwFlowControl == eusartHwFlowControlCtsAndRts)) {
+   \                     ??EUSART_AsyncInitCommon_3: (+1)
+   \       0xC0   0x7801             LDRB     R1,[R0, #+0]
+   \       0xC2   0x2902             CMP      R1,#+2
+   \       0xC4   0xBF18             IT       NE
+   \       0xC6   0x2903             CMPNE    R1,#+3
+   \       0xC8   0xD103             BNE.N    ??EUSART_AsyncInitCommon_4
+    976          #if defined(EUART0)
+    977                GPIO->EUARTROUTE_SET->ROUTEEN = GPIO_EUART_ROUTEEN_RTSPEN;
+   \       0xCA   0x2101             MOVS     R1,#+1
+   \       0xCC   0x....             LDR.N    R2,??DataTable11_10
+   \       0xCE   0x6011             STR      R1,[R2, #+0]
+   \       0xD0   0xE002             B.N      ??EUSART_AsyncInitCommon_5
+    978          #elif defined(EUSART0)
+    979                GPIO->EUSARTROUTE_SET[EUSART_NUM(eusart)].ROUTEEN = GPIO_EUSART_ROUTEEN_RTSPEN;
+    980          #endif
+    981              } else {
+    982          #if defined(EUART0)
+    983                GPIO->EUARTROUTE_CLR->ROUTEEN = GPIO_EUART_ROUTEEN_RTSPEN;
+   \                     ??EUSART_AsyncInitCommon_4: (+1)
+   \       0xD2   0x2701             MOVS     R7,#+1
+   \       0xD4   0x....             LDR.N    R1,??DataTable11_11
+   \       0xD6   0x600F             STR      R7,[R1, #+0]
+    984          #elif defined(EUSART0)
+    985                GPIO->EUSARTROUTE_CLR[EUSART_NUM(eusart)].ROUTEEN = GPIO_EUSART_ROUTEEN_RTSPEN;
+    986          #endif
+    987              }
+    988              eusart->STARTFRAMECFG_SET = (uint32_t)init->advancedSettings->startFrame;
+   \                     ??EUSART_AsyncInitCommon_5: (+1)
+   \       0xD8   0x7A42             LDRB     R2,[R0, #+9]
+   \       0xDA   0x61DA             STR      R2,[R3, #+28]
+    989              if (init->advancedSettings->startFrame) {
+   \       0xDC   0x7A41             LDRB     R1,[R0, #+9]
+   \       0xDE   0xB119             CBZ.N    R1,??EUSART_AsyncInitCommon_6
+    990                eusart->CFG1 |= EUSART_CFG1_SFUBRX;
+   \       0xE0   0x68E9             LDR      R1,[R5, #+12]
+   \       0xE2   0xF441 0x6100      ORR      R1,R1,#0x800
+   \       0xE6   0x60E9             STR      R1,[R5, #+12]
+    991              }
+    992              if (init->advancedSettings->prsRxEnable) {
+   \                     ??EUSART_AsyncInitCommon_6: (+1)
+   \       0xE8   0x7AC1             LDRB     R1,[R0, #+11]
+   \       0xEA   0xB141             CBZ.N    R1,??EUSART_AsyncInitCommon_7
+    993                eusart->CFG1 |= EUSART_CFG1_RXPRSEN;
+   \       0xEC   0x68E9             LDR      R1,[R5, #+12]
+    994                // Configure PRS channel as input data line for EUSART.
+    995          #if defined(EUART_PRESENT)
+    996                PRS->CONSUMER_EUART0_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUART0_RX_MASK);
+   \       0xEE   0x....             LDR.N    R2,??DataTable11_12
+   \       0xF0   0xF441 0x4100      ORR      R1,R1,#0x8000
+   \       0xF4   0x60E9             STR      R1,[R5, #+12]
+   \       0xF6   0x7B01             LDRB     R1,[R0, #+12]
+   \       0xF8   0xF001 0x010F      AND      R1,R1,#0xF
+   \       0xFC   0x6011             STR      R1,[R2, #+0]
+    997          #elif defined(EUSART_PRESENT)
+    998          
+    999                if (eusart == EUSART0) {
+   1000                  PRS->CONSUMER_EUSART0_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART0_RX_MASK);
+   1001                }
+   1002          #if defined(EUSART1)
+   1003                if (eusart == EUSART1) {
+   1004                  PRS->CONSUMER_EUSART1_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART1_RX_MASK);
+   1005                }
+   1006          #endif
+   1007          #if defined(EUSART2)
+   1008                if (eusart == EUSART2) {
+   1009                  PRS->CONSUMER_EUSART2_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART2_RX_MASK);
+   1010                }
+   1011          #endif
+   1012          #if defined(EUSART3)
+   1013                if (eusart == EUSART3) {
+   1014                  PRS->CONSUMER_EUSART3_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART3_RX_MASK);
+   1015                }
+   1016          #endif
+   1017          #if defined(EUSART4)
+   1018                if (eusart == EUSART4) {
+   1019                  PRS->CONSUMER_EUSART4_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART4_RX_MASK);
+   1020                }
+   1021          #endif
+   1022          #endif
+   1023              }
+   1024          
+   1025              // Configure global configuration timing register.
+   1026              eusart->TIMINGCFG = (eusart->TIMINGCFG & ~_EUSART_TIMINGCFG_TXDELAY_MASK)
+   1027                                  | (uint32_t)(init->advancedSettings->autoTxDelay);
+   \                     ??EUSART_AsyncInitCommon_7: (+1)
+   \       0xFE   0x69E9             LDR      R1,[R5, #+28]
+   \      0x100   0x7BC0             LDRB     R0,[R0, #+15]
+   \      0x102   0x0889             LSRS     R1,R1,#+2
+   \      0x104   0xEA40 0x0181      ORR      R1,R0,R1, LSL #+2
+   \      0x108   0x61E9             STR      R1,[R5, #+28]
+   1028            }
+   1029          
+   1030            if (irdaInit) {
+   \                     ??EUSART_AsyncInitCommon_2: (+1)
+   \      0x10A   0xB184             CBZ.N    R4,??EUSART_AsyncInitCommon_8
+   1031              if (irdaInit->irDALowFrequencyEnable) {
+   \      0x10C   0xF104 0x0120      ADD      R1,R4,#+32
+   \      0x110   0x7808             LDRB     R0,[R1, #+0]
+   \      0x112   0xB110             CBZ.N    R0,??EUSART_AsyncInitCommon_9
+   1032                eusart->IRLFCFG_SET = EUSART_IRLFCFG_IRLFEN;
+   \      0x114   0x2101             MOVS     R1,#+1
+   \      0x116   0x6159             STR      R1,[R3, #+20]
+   \      0x118   0xE009             B.N      ??EUSART_AsyncInitCommon_8
+   1033              } else {
+   1034                // Configure IrDA HF configuration register.
+   1035                eusart->IRHFCFG_SET = (eusart->IRHFCFG & ~(_EUSART_IRHFCFG_IRHFEN_MASK
+   1036                                                           | _EUSART_IRHFCFG_IRHFEN_MASK
+   1037                                                           | _EUSART_IRHFCFG_IRHFFILT_MASK))
+   1038                                      | EUSART_IRHFCFG_IRHFEN
+   1039                                      | (uint32_t)(irdaInit->irDAPulseWidth)
+   1040                                      | irdaInit->irDARxFilterEnable;
+   \                     ??EUSART_AsyncInitCommon_9: (+1)
+   \      0x11A   0x696A             LDR      R2,[R5, #+20]
+   \      0x11C   0x7888             LDRB     R0,[R1, #+2]
+   \      0x11E   0x7849             LDRB     R1,[R1, #+1]
+   \      0x120   0xF022 0x0209      BIC      R2,R2,#0x9
+   \      0x124   0x4302             ORRS     R2,R0,R2
+   \      0x126   0x430A             ORRS     R2,R1,R2
+   \      0x128   0xF042 0x0201      ORR      R2,R2,#0x1
+   \      0x12C   0x611A             STR      R2,[R3, #+16]
+   1041              }
+   1042            }
+   1043          
+   1044          #if defined(EUSART_DALICFG_DALIEN)
+   1045            // DALI-specific configuration section
+   1046            if (daliInit) {
+   1047              if (init->loopbackEnable) {
+   1048                // If LOOPBK in CFG0 is set to 1 in order to do loopback testing for DALI,
+   1049                // then in this case DALIRXENDT should be set to 1.
+   1050                eusart->DALICFG_SET = EUSART_DALICFG_DALIRXENDT;
+   1051              }
+   1052          
+   1053              if (EUSART_REF_VALID(eusart)) {
+   1054                uint8_t index = EUSART_NUM(eusart);
+   1055          
+   1056                // keep track of the number of 16-bits packet to send
+   1057                if (daliInit->TXdatabits <= eusartDaliTxDataBits16) {
+   1058                  dali_tx_nb_packets[index] = 1;
+   1059                } else {
+   1060                  dali_tx_nb_packets[index] = 2;
+   1061                }
+   1062          
+   1063                // keep track of the number of 16-bits packet to receive
+   1064                if (daliInit->RXdatabits <= eusartDaliRxDataBits16) {
+   1065                  dali_rx_nb_packets[index] = 1;
+   1066                } else {
+   1067                  dali_rx_nb_packets[index] = 2;
+   1068                }
+   1069              }
+   1070          
+   1071              // Configure the numbers of bits per TX and RX frames
+   1072              eusart->DALICFG = (eusart->DALICFG & ~(_EUSART_DALICFG_DALITXDATABITS_MASK
+   1073                                                     | _EUSART_DALICFG_DALIRXDATABITS_MASK))
+   1074                                | daliInit->TXdatabits
+   1075                                | daliInit->RXdatabits;
+   1076              eusart->DALICFG_SET = EUSART_DALICFG_DALIEN;
+   1077            }
+   1078          #else
+   1079            (void)(daliInit);
+   1080          #endif /* EUSART_DALICFG_DALIEN */
+   1081          
+   1082            // Enable EUSART IP.
+   1083            eusart->EN_SET = EUSART_EN_EN;
+   \                     ??EUSART_AsyncInitCommon_8: (+1)
+   \      0x12E   0x2001             MOVS     R0,#+1
+   \      0x130   0x6018             STR      R0,[R3, #+0]
+   1084          
+   1085            // Configure the baudrate if auto baud detection is not used.
+   1086            if (init->baudrate) {
+   \      0x132   0x68B2             LDR      R2,[R6, #+8]
+   \      0x134   0xB11A             CBZ.N    R2,??EUSART_AsyncInitCommon_10
+   1087              EUSART_BaudrateSet(eusart, init->refFreq, init->baudrate);
+   \      0x136   0x6871             LDR      R1,[R6, #+4]
+   \      0x138   0x4628             MOV      R0,R5
+   \      0x13A   0x.... 0x....      BL       EUSART_BaudrateSet
+   1088            }
+   1089          
+   1090            // Finally enable the Rx and/or Tx channel (as specified).
+   1091            EUSART_Enable(eusart, init->enable);
+   \                     ??EUSART_AsyncInitCommon_10: (+1)
+   \      0x13E   0x7831             LDRB     R1,[R6, #+0]
+   \      0x140   0x4628             MOV      R0,R5
+   \      0x142   0x.... 0x....      BL       EUSART_Enable
+   1092            while (~EUSART_StatusGet(eusart) & (_EUSART_STATUS_RXIDLE_MASK | _EUSART_STATUS_TXIDLE_MASK)) {
+   \                     ??EUSART_AsyncInitCommon_11: (+1)
+   \      0x146   0x6C28             LDR      R0,[R5, #+64]
+   \      0x148   0x43C0             MVNS     R0,R0
+   \      0x14A   0xF410 0x5F40      TST      R0,#0x3000
+   \      0x14E   0xD1FA             BNE.N    ??EUSART_AsyncInitCommon_11
+   1093              // Busy-wait until RX and/or TX channel(s) become idle.
+   1094            }
+   1095          }
+   \      0x150   0xBDF1             POP      {R0,R4-R7,PC}
+   1096          
+   1097          #if defined(EUSART_PRESENT)
+   1098          /***************************************************************************//**
+   1099           * Initializes the EUSART with synchronous common settings to high
+   1100           * and low frequency clock.
+   1101           *
+   1102           * @param eusart Pointer to the EUSART peripheral register block.
+   1103           * @param init A pointer to the initialization structure.
+   1104           ******************************************************************************/
+   1105          static void EUSART_SyncInitCommon(EUSART_TypeDef *eusart,
+   1106                                            EUSART_SpiInit_TypeDef const *init)
+   1107          {
+   1108            const void *advancedSetting_ptr = init->advancedSettings; // Used to avoid GCC over optimization.
+   1109          
+   1110            // LF register about to be modified requires sync busy check.
+   1111            if (eusart->EN) {
+   1112              eusart_sync(eusart, _EUSART_SYNCBUSY_MASK);
+   1113            }
+   1114          
+   1115            // Initialize EUSART registers to hardware reset state.
+   1116            EUSART_Reset(eusart);
+   1117          
+   1118            // Configure global configuration register 2.
+   1119            eusart->CFG2 = (eusart->CFG2 & ~(_EUSART_CFG2_MASTER_MASK
+   1120                                             | _EUSART_CFG2_CLKPOL_MASK
+   1121                                             | _EUSART_CFG2_CLKPHA_MASK
+   1122                                             | _EUSART_CFG2_FORCELOAD_MASK))
+   1123                           | (uint32_t)(init->master)
+   1124                           | (uint32_t)(init->clockMode)
+   1125                           | (uint32_t)(EUSART_CFG2_FORCELOAD); // Force load feature enabled by default.
+   1126          
+   1127            if (advancedSetting_ptr) {
+   1128              // Configure global configuration register 2.
+   1129              eusart->CFG2 = (eusart->CFG2 & ~(_EUSART_CFG2_FORCELOAD_MASK
+   1130                                               | _EUSART_CFG2_AUTOCS_MASK
+   1131                                               | _EUSART_CFG2_AUTOTX_MASK
+   1132                                               | _EUSART_CFG2_CSINV_MASK
+   1133                                               | _EUSART_CFG2_CLKPRSEN_MASK))
+   1134                             | (uint32_t)(init->advancedSettings->forceLoad << _EUSART_CFG2_FORCELOAD_SHIFT)
+   1135                             | (uint32_t)(init->advancedSettings->autoCsEnable << _EUSART_CFG2_AUTOCS_SHIFT)
+   1136                             | (uint32_t)(init->advancedSettings->autoTxEnable << _EUSART_CFG2_AUTOTX_SHIFT)
+   1137                             | init->advancedSettings->csPolarity
+   1138                             | (uint32_t)(init->advancedSettings->prsClockEnable << _EUSART_CFG2_CLKPRSEN_SHIFT);
+   1139          
+   1140              // Only applicable to EM2 (low frequency) capable EUSART instances.
+   1141              eusart->CFG1 = (eusart->CFG1 & ~(_EUSART_CFG1_RXFIW_MASK
+   1142                                               | _EUSART_CFG1_TXFIW_MASK))
+   1143                             | (uint32_t)(init->advancedSettings->RxFifoWatermark)
+   1144                             | (uint32_t)(init->advancedSettings->TxFifoWatermark)
+   1145                             | (uint32_t)(init->advancedSettings->dmaWakeUpOnRx << _EUSART_CFG1_RXDMAWU_SHIFT)
+   1146                             | (uint32_t)(init->advancedSettings->prsRxEnable << _EUSART_CFG1_RXPRSEN_SHIFT);
+   1147            }
+   1148          
+   1149            eusart->CFG0 = (eusart->CFG0 & ~(_EUSART_CFG0_SYNC_MASK
+   1150                                             | _EUSART_CFG0_LOOPBK_MASK))
+   1151                           | _EUSART_CFG0_SYNC_SYNC
+   1152                           | (uint32_t)(init->loopbackEnable);
+   1153          
+   1154            if (advancedSetting_ptr) {
+   1155              eusart->CFG0 |= (uint32_t)init->advancedSettings->invertIO & (_EUSART_CFG0_RXINV_MASK | _EUSART_CFG0_TXINV_MASK);
+   1156              eusart->CFG0 |= (uint32_t)init->advancedSettings->msbFirst << _EUSART_CFG0_MSBF_SHIFT;
+   1157          
+   1158              // Configure global configurationTiming register.
+   1159              eusart->TIMINGCFG = (eusart->TIMINGCFG & ~(_EUSART_TIMINGCFG_CSSETUP_MASK
+   1160                                                         | _EUSART_TIMINGCFG_CSHOLD_MASK
+   1161                                                         | _EUSART_TIMINGCFG_ICS_MASK
+   1162                                                         | _EUSART_TIMINGCFG_SETUPWINDOW_MASK))
+   1163                                  | ((uint32_t)(init->advancedSettings->autoCsSetupTime << _EUSART_TIMINGCFG_CSSETUP_SHIFT)
+   1164                                     & _EUSART_TIMINGCFG_CSSETUP_MASK)
+   1165                                  | ((uint32_t)(init->advancedSettings->autoCsHoldTime << _EUSART_TIMINGCFG_CSHOLD_SHIFT)
+   1166                                     & _EUSART_TIMINGCFG_CSHOLD_MASK)
+   1167                                  | ((uint32_t)(init->advancedSettings->autoInterFrameTime << _EUSART_TIMINGCFG_ICS_SHIFT)
+   1168                                     & _EUSART_TIMINGCFG_ICS_MASK)
+   1169                                  | ((uint32_t)(init->advancedSettings->setupWindow << _EUSART_TIMINGCFG_SETUPWINDOW_SHIFT)
+   1170                                     & _EUSART_TIMINGCFG_SETUPWINDOW_MASK)
+   1171              ;
+   1172            }
+   1173          
+   1174            // Configure frame format
+   1175            eusart->FRAMECFG = (eusart->FRAMECFG & ~(_EUSART_FRAMECFG_DATABITS_MASK))
+   1176                               | init->databits;
+   1177          
+   1178            if (advancedSetting_ptr) {
+   1179              eusart->DTXDATCFG = (init->advancedSettings->defaultTxData & _EUSART_DTXDATCFG_MASK);
+   1180          
+   1181              if (init->advancedSettings->prsRxEnable) {
+   1182                //Configure PRS channel as input data line for EUSART.
+   1183                if (eusart == EUSART0) {
+   1184                  PRS->CONSUMER_EUSART0_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART0_RX_MASK);
+   1185                }
+   1186          #if defined(EUSART1)
+   1187                if (eusart == EUSART1) {
+   1188                  PRS->CONSUMER_EUSART1_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART1_RX_MASK);
+   1189                }
+   1190          #endif
+   1191          #if defined(EUSART2)
+   1192                if (eusart == EUSART2) {
+   1193                  PRS->CONSUMER_EUSART2_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART2_RX_MASK);
+   1194                }
+   1195          #endif
+   1196          #if defined(EUSART3)
+   1197                if (eusart == EUSART3) {
+   1198                  PRS->CONSUMER_EUSART3_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART3_RX_MASK);
+   1199                }
+   1200          #endif
+   1201          #if defined(EUSART4)
+   1202                if (eusart == EUSART4) {
+   1203                  PRS->CONSUMER_EUSART4_RX_SET = (init->advancedSettings->prsRxChannel & _PRS_CONSUMER_EUSART4_RX_MASK);
+   1204                }
+   1205          #endif
+   1206              }
+   1207          
+   1208              if (init->advancedSettings->prsClockEnable) {
+   1209                //Configure PRS channel as SCLK input for EUSART.
+   1210                if (eusart == EUSART0) {
+   1211                  PRS->CONSUMER_EUSART0_CLK_SET = (init->advancedSettings->prsClockChannel & _PRS_CONSUMER_EUSART0_CLK_MASK);
+   1212                }
+   1213          #if defined(EUSART1)
+   1214                if (eusart == EUSART1) {
+   1215                  PRS->CONSUMER_EUSART1_CLK_SET = (init->advancedSettings->prsClockChannel & _PRS_CONSUMER_EUSART1_CLK_MASK);
+   1216                }
+   1217          #endif
+   1218          #if defined(EUSART2)
+   1219                if (eusart == EUSART2) {
+   1220                  PRS->CONSUMER_EUSART2_CLK_SET = (init->advancedSettings->prsClockChannel & _PRS_CONSUMER_EUSART2_CLK_MASK);
+   1221                }
+   1222          #endif
+   1223          #if defined(EUSART3)
+   1224                if (eusart == EUSART3) {
+   1225                  PRS->CONSUMER_EUSART3_CLK_SET = (init->advancedSettings->prsClockChannel & _PRS_CONSUMER_EUSART3_CLK_MASK);
+   1226                }
+   1227          #endif
+   1228          #if defined(EUSART4)
+   1229                if (eusart == EUSART4) {
+   1230                  PRS->CONSUMER_EUSART4_CLK_SET = (init->advancedSettings->prsClockChannel & _PRS_CONSUMER_EUSART4_CLK_MASK);
+   1231                }
+   1232          #endif
+   1233              }
+   1234            }
+   1235          
+   1236            // Set baudrate for synchronous operation mode.
+   1237            EUSART_BaudrateSet(eusart, init->refFreq, init->bitRate);
+   1238          
+   1239            // Finally enable the Rx and/or Tx channel (as specified).
+   1240            EUSART_Enable(eusart, init->enable);
+   1241            while (~EUSART_StatusGet(eusart) & (_EUSART_STATUS_RXIDLE_MASK | _EUSART_STATUS_TXIDLE_MASK)) {
+   1242              // Busy-wait until RX and/or TX channel(s) become idle.
+   1243            }
+   1244          }
+   1245          #endif
+   1246          
+   1247          /***************************************************************************//**
+   1248           * Calculate baudrate for a given reference frequency, clock division,
+   1249           * and oversampling rate when the module is in UART mode.
+   1250           *
+   1251           * @param refFreq The EUSART reference clock frequency in Hz that will be used.
+   1252           * @param clkdiv Clock division factor to be used.
+   1253           * @param ovs Oversampling to be used.
+   1254           *
+   1255           * @return Computed baudrate from given settings.
+   1256           ******************************************************************************/
+   1257          __STATIC_INLINE uint32_t EUSART_AsyncBaudrateCalc(uint32_t refFreq,
+   1258                                                            uint32_t clkdiv,
+   1259                                                            EUSART_OVS_TypeDef ovs)
+   1260          {
+   1261            uint32_t oversample;
+   1262            uint64_t divisor;
+   1263            uint64_t factor;
+   1264            uint64_t remainder;
+   1265            uint64_t quotient;
+   1266            uint32_t br;
+   1267          
+   1268            // Out of bound clkdiv.
+   1269            EFM_ASSERT(clkdiv <= _EUSART_CLKDIV_MASK);
+   1270          
+   1271            // Mask out unused bits
+   1272            clkdiv &= _EUSART_CLKDIV_MASK;
+   1273          
+   1274            /* Use integer division to avoid forcing in float division
+   1275             * utils and yet keep rounding effect errors to a minimum.
+   1276             *
+   1277             * Baudrate in is given by:
+   1278             *
+   1279             * br = fUARTn/(oversample * (1 + (CLKDIV / 256)))
+   1280             * or
+   1281             * br = (256 * fUARTn)/(oversample * (256 + CLKDIV))
+   1282             *
+   1283             * 256 factor of the dividend is reduced with a
+   1284             * (part of) oversample part of the divisor.
+   1285             */
+   1286          
+   1287            switch (ovs) {
+   1288              case eusartOVS16:
+   1289                oversample = 1;
+   1290                factor = 256 / 16;
+   1291                break;
+   1292          
+   1293              case eusartOVS8:
+   1294                oversample = 1;
+   1295                factor = 256 / 8;
+   1296                break;
+   1297          
+   1298              case eusartOVS6:
+   1299                oversample = 3;
+   1300                factor = 256 / 2;
+   1301                break;
+   1302          
+   1303              case eusartOVS4:
+   1304                oversample = 1;
+   1305                factor = 256 / 4;
+   1306                break;
+   1307          
+   1308              case eusartOVS0:
+   1309                oversample = 1;
+   1310                factor = 256;
+   1311                break;
+   1312          
+   1313              default:
+   1314                return 0u;
+   1315                break;
+   1316            }
+   1317          
+   1318            /*
+   1319             * The basic problem with integer division in the above formula is that
+   1320             * the dividend (factor * fUARTn) may become larger than a 32 bit
+   1321             * integer. Yet we want to evaluate the dividend first before dividing
+   1322             * to get as small rounding effects as possible. Too harsh restrictions
+   1323             * should not be made on the maximum fUARTn value either.
+   1324             *
+   1325             * For division a/b,
+   1326             *
+   1327             * a = qb + r
+   1328             *
+   1329             * where q is the quotient and r is the remainder, both integers.
+   1330             *
+   1331             * The original baudrate formula can be rewritten as
+   1332             *
+   1333             * br = xa / b = x(qb + r)/b = xq + xr/b
+   1334             *
+   1335             * where x is 'factor', a is 'refFreq' and b is 'divisor', referring to
+   1336             * variable names.
+   1337             */
+   1338          
+   1339            /*
+   1340             * The divisor will never exceed max 32 bit value since
+   1341             * clkdiv <= _EUSART_CLKDIV_MASK (currently 0x7FFFF8)
+   1342             * and 'oversample' has been reduced to <= 3.
+   1343             */
+   1344            divisor = (uint64_t)(oversample * (256 + clkdiv));
+   1345          
+   1346            quotient = refFreq / divisor;
+   1347            remainder = refFreq % divisor;
+   1348          
+   1349            // The factor <= 128 and since divisor >= 256, the below cannot exceed the maximum
+   1350            // 32 bit value. However, factor * remainder can become larger than 32-bit
+   1351            // because of the size of _EUSART_CLKDIV_DIV_MASK on some families.
+   1352            br = (uint32_t) (factor * quotient);
+   1353          
+   1354            /*
+   1355             * The factor <= 128 and remainder < (oversample*(256 + clkdiv)), which
+   1356             * means dividend (factor * remainder) worst case is
+   1357             * 128 * (3 * (256 + _EUSART_CLKDIV_MASK)) = 0xC001_7400.
+   1358             */
+   1359            br += (uint32_t) ((factor * remainder) / divisor);
+   1360          
+   1361            return br;
+   1362          }
+   1363          
+   1364          /***************************************************************************//**
+   1365           * Perform EUSART Module disablement - resetting all internal flops/FSM.
+   1366           *
+   1367           * @param eusart Pointer to the EUSART peripheral register block.
+   1368           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1369          __STATIC_INLINE void EUSART_Disable(EUSART_TypeDef *eusart)
+   1370          {
+   \                     EUSART_Disable: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   1371            if (eusart->EN & _EUSART_EN_EN_MASK) {
+   \        0x4   0x6860             LDR      R0,[R4, #+4]
+   \        0x6   0x07C1             LSLS     R1,R0,#+31
+   \        0x8   0xD518             BPL.N    ??EUSART_Disable_0
+   1372              // This step should be skipped especially in Synchronous Slave mode when
+   1373              // external SCLK is not running and CS is active
+   1374          #if defined(EUSART_PRESENT)
+   1375              if (!(eusart->CFG0 & _EUSART_CFG0_SYNC_MASK) || (eusart->CFG2 & _EUSART_CFG2_MASTER_MASK))
+   1376          #endif
+   1377              {
+   1378                // General Programming Guideline to properly disable the module:
+   1379                // 1a. Disable TX and RX using TXDIS and RXDIS cmd
+   1380                eusart->CMD = EUSART_CMD_TXDIS | EUSART_CMD_RXDIS;
+   \        0xA   0x220A             MOVS     R2,#+10
+   \        0xC   0x6322             STR      R2,[R4, #+48]
+   1381                // 1b. Poll for EUSARTn_SYNCBUSY.TXDIS and EUSARTn_SYNCBUSY.RXDIS to go low;
+   1382                eusart_sync(eusart, (EUSART_SYNCBUSY_TXDIS | EUSART_SYNCBUSY_RXDIS));
+   \        0xE   0x2150             MOVS     R1,#+80
+   \       0x10   0x4620             MOV      R0,R4
+   \       0x12   0x.... 0x....      BL       eusart_sync
+   1383                // 1c. Wait for EUSARTn_STATUS.TXENS and EUSARTn_STATUS.RXENS to go low
+   1384                while (eusart->STATUS & (_EUSART_STATUS_TXENS_MASK | _EUSART_STATUS_RXENS_MASK)) {
+   \                     ??EUSART_Disable_1: (+1)
+   \       0x16   0x6C20             LDR      R0,[R4, #+64]
+   \       0x18   0xF010 0x0F03      TST      R0,#0x3
+   \       0x1C   0xD1FB             BNE.N    ??EUSART_Disable_1
+   1385                  // Wait for TX/RX disabled.
+   1386                }
+   1387              }
+   1388          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+   1389              eusart->CLKDIV = eusart->CLKDIV;
+   \       0x1E   0x6AA0             LDR      R0,[R4, #+40]
+   1390              eusart_sync(eusart, _EUSART_SYNCBUSY_DIV_MASK);
+   \       0x20   0x2101             MOVS     R1,#+1
+   \       0x22   0x62A0             STR      R0,[R4, #+40]
+   \       0x24   0x4620             MOV      R0,R4
+   \       0x26   0x.... 0x....      BL       eusart_sync
+   \       0x2A   0xE000             B.N      ??EUSART_Disable_2
+   1391          
+   1392              // Read data until FIFO is emptied
+   1393              // but taking care not to underflow the receiver
+   1394              while (eusart->STATUS & EUSART_STATUS_RXFL) {
+   1395                eusart->RXDATA;
+   \                     ??EUSART_Disable_3: (+1)
+   \       0x2C   0x6B60             LDR      R0,[R4, #+52]
+   1396              }
+   \                     ??EUSART_Disable_2: (+1)
+   \       0x2E   0x6C21             LDR      R1,[R4, #+64]
+   \       0x30   0x060A             LSLS     R2,R1,#+24
+   \       0x32   0xD4FB             BMI.N    ??EUSART_Disable_3
+   1397          #endif
+   1398          
+   1399              eusart->EN_CLR = EUSART_EN_EN;
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0xF242 0x0104      MOVW     R1,#+8196
+   \       0x3A   0x5060             STR      R0,[R4, R1]
+   1400          
+   1401          #if defined(_EUSART_EN_DISABLING_MASK)
+   1402              // 2. Polling for EUSARTn_EN.DISABLING = 0.
+   1403              while (eusart->EN & _EUSART_EN_DISABLING_MASK) {
+   1404                // Wait for disabling.
+   1405              }
+   1406          #endif
+   1407            }
+   1408          }
+   \                     ??EUSART_Disable_0: (+1)
+   \       0x3C   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine7: (+1)
+   \        0x0   0x4640             MOV      R0,R8
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x4632             MOV      R2,R6
+   \        0x6   0x2300             MOVS     R3,#+0
+   \        0x8   0x.... 0x....      B.W      __aeabi_uldivmod
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0x5A03'0000        DC32     0x5a030000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \        0x0   0x0011'8AA1        DC32     0x118aa1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \        0x0   0x010C'377F        DC32     0x10c377f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \        0x0   0x007F'FFF8        DC32     0x7ffff8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_5:
+   \        0x0   0x5003'8084        DC32     0x50038084
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_6:
+   \        0x0   0xFFFF'CCFC        DC32     0xffffccfc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_7:
+   \        0x0   0xBFFF'FF1D        DC32     0xbfffff1d
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_8:
+   \        0x0   0xFFBD'9BE3        DC32     0xffbd9be3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_9:
+   \        0x0   0xFFE4'F9FF        DC32     0xffe4f9ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_10:
+   \        0x0   0x5003'D4C0        DC32     0x5003d4c0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_11:
+   \        0x0   0x5003'E4C0        DC32     0x5003e4c0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_12:
+   \        0x0   0x5003'9080        DC32     0x50039080
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x65, 0x6D, 0x6C, 0x69, 0x62, 0x5C
+   \              0x65 0x6D    
+   \              0x6C 0x69    
+   \              0x62 0x5C
+   \       0x70   0x73 0x72          DC8 0x73, 0x72, 0x63, 0x5C, 0x65, 0x6D, 0x5F, 0x65
+   \              0x63 0x5C    
+   \              0x65 0x6D    
+   \              0x5F 0x65
+   \       0x78   0x75 0x73          DC8 0x75, 0x73, 0x61, 0x72, 0x74, 0x2E, 0x63, 0
+   \              0x61 0x72    
+   \              0x74 0x2E    
+   \              0x63 0x00
+   1409          
+   1410          #endif /* defined(EUART_PRESENT) || defined(EUSART_PRESENT) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   EUSART_AsyncInitCommon
+        24   -> EUSART_BaudrateSet
+        24   -> EUSART_Enable
+        24   -> EUSART_Reset
+        24   -> eusart_sync
+      32   EUSART_BaudrateGet
+        32   -> CMU_ClockFreqGet
+        32   -> EUSART_ClockGet
+        32   -> assertEFM
+        32 __aeabi_uldivmod
+      24   EUSART_BaudrateSet
+        24   -> CMU_ClockFreqGet
+        24   -> EUSART_ClockGet
+         0   -> assertEFM
+        24   -> assertEFM
+       8   EUSART_ClockGet
+         8   -> assertEFM
+       8   EUSART_Disable
+         8   -> eusart_sync
+      16   EUSART_Enable
+         0   -> EUSART_Disable
+        16   -> assertEFM
+      16   EUSART_IrDAInit
+         0   -> EUSART_AsyncInitCommon
+        16   -> assertEFM
+      16   EUSART_PrsTriggerEnable
+        16   -> assertEFM
+       8   EUSART_Reset
+         8   -> EUSART_Disable
+       0   EUSART_Rx
+      16   EUSART_RxBlock
+        16   -> assertEFM
+       0   EUSART_RxExt
+       0   EUSART_Tx
+       0   EUSART_TxExt
+      16   EUSART_TxTristateSet
+        16   -> assertEFM
+      16   EUSART_UartInitHf
+         0   -> EUSART_AsyncInitCommon
+        16   -> assertEFM
+      24   EUSART_UartInitLf
+        24   -> CMU_ClockSelectGet
+         0   -> EUSART_AsyncInitCommon
+        24   -> assertEFM
+       0   eusart_sync
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_10
+       4  ??DataTable11_11
+       4  ??DataTable11_12
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+       4  ??DataTable11_7
+       4  ??DataTable11_8
+       4  ??DataTable11_9
+      10  ?Subroutine0
+       6  ?Subroutine1
+       6  ?Subroutine2
+      16  ?Subroutine3
+      10  ?Subroutine4
+       6  ?Subroutine5
+       6  ?Subroutine6
+      12  ?Subroutine7
+     128  ?_0
+     338  EUSART_AsyncInitCommon
+     152  EUSART_BaudrateGet
+     246  EUSART_BaudrateSet
+      24  EUSART_ClockGet
+      62  EUSART_Disable
+      84  EUSART_Enable
+     130  EUSART_IrDAInit
+      90  EUSART_PrsTriggerEnable
+      54  EUSART_Reset
+      30  EUSART_Rx
+      62  EUSART_RxBlock
+      12  EUSART_RxExt
+       2  EUSART_Tx
+       2  EUSART_TxExt
+      58  EUSART_TxTristateSet
+      56  EUSART_UartInitHf
+     158  EUSART_UartInitLf
+       8  eusart_sync
+
+ 
+   128 bytes in section .rodata
+ 1'692 bytes in section .text
+ 
+ 1'692 bytes of CODE  memory
+   128 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1174 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:03
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_cache.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_cache.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_cache.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_cache.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_cache.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir\nvm3_cache.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_cache.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_cache.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief NVM3 object cache
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "nvm3_cache.h"
+     32          #include "nvm3_trace.h"
+     33          
+     34          #if defined(__ICCARM__)
+     35          #define SPEED_OPT _Pragma("optimize=speed")
+     36          #elif defined(__GNUC__) && !defined(__clang__) && defined(__CORTEX_M)
+     37          #define SPEED_OPT _Pragma("GCC optimize(\"O3\")")
+     38          #else
+     39          #define SPEED_OPT
+     40          #endif
+     41          
+     42          #define TRACE_LEVEL                 NVM3_TRACE_LEVEL_LOW
+     43          
+     44          #if defined(NVM3_OPTIMIZATION) && (NVM3_OPTIMIZATION == 1)
+     45          #include "sl_memory_manager.h"
+     46          #endif
+     47          
+     48          //****************************************************************************
+     49          
+     50          // isValid is implemented as a macro as this significantly improves
+     51          // speed when using compiler settings that do not inline these functions.
+     52          #define isValid(h, idx) (h->entryPtr[idx].key != NVM3_KEY_INVALID)
+     53          
+     54          #if defined(NVM3_OPTIMIZATION) && (NVM3_OPTIMIZATION == 1)
+     55          uint32_t *L;
+     56          uint32_t *H;
+     57          uint32_t *P1;
+     58          uint32_t *P2;
+     59          uint32_t *K1;
+     60          uint32_t *K2;
+     61          #endif
+     62          
+     63          static inline nvm3_ObjectKey_t entryGetKey(nvm3_Cache_t *h, size_t idx)
+     64          {
+     65            uint32_t tmp = h->entryPtr[idx].key;
+     66            return (tmp & NVM3_KEY_MASK);
+     67          }
+     68          
+
+   \                                 In section .text, align 2, keep-with-next
+     69          static inline nvm3_ObjGroup_t entryGetGroup(nvm3_Cache_t *h, size_t idx)
+     70          {
+     71            uint32_t tmp = h->entryPtr[idx].key;
+     72            return (nvm3_ObjGroup_t)(tmp >> NVM3_KEY_SIZE);
+   \                     entryGetGroup: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xF850 0x0031      LDR      R0,[R0, R1, LSL #+3]
+   \        0x6   0x0100             LSLS     R0,R0,#+4
+   \        0x8   0x0E00             LSRS     R0,R0,#+24
+   \        0xA   0x4770             BX       LR
+     73          }
+     74          
+     75          static inline nvm3_ObjPtr_t entryGetPtr(nvm3_Cache_t *h, size_t idx)
+     76          {
+     77            return h->entryPtr[idx].ptr;
+     78          }
+     79          
+
+   \                                 In section .text, align 2, keep-with-next
+     80          static inline void entrySetKey(nvm3_Cache_t *h, size_t idx, nvm3_ObjectKey_t key)
+     81          {
+     82            uint32_t tmp = h->entryPtr[idx].key;
+     83            tmp &= ~NVM3_KEY_MASK;
+     84            tmp |= key;
+     85            h->entryPtr[idx].key = (nvm3_ObjectKey_t)tmp;
+   \                     entrySetKey: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xF850 0x3031      LDR      R3,[R0, R1, LSL #+3]
+   \        0x6   0x0D1B             LSRS     R3,R3,#+20
+   \        0x8   0xEA42 0x5203      ORR      R2,R2,R3, LSL #+20
+   \        0xC   0xF840 0x2031      STR      R2,[R0, R1, LSL #+3]
+     86          }
+   \       0x10   0x4770             BX       LR
+     87          
+
+   \                                 In section .text, align 2, keep-with-next
+     88          static inline void entrySetGroup(nvm3_Cache_t *h, size_t idx, nvm3_ObjGroup_t group)
+     89          {
+     90            uint32_t tmp = h->entryPtr[idx].key;
+     91            tmp &= NVM3_KEY_MASK;
+     92            tmp |= (group << NVM3_KEY_SIZE);
+     93            h->entryPtr[idx].key = (nvm3_ObjectKey_t)tmp;
+   \                     entrySetGroup: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xF850 0x3031      LDR      R3,[R0, R1, LSL #+3]
+   \        0x6   0xF3C3 0x0313      UBFX     R3,R3,#+0,#+20
+   \        0xA   0xEA43 0x5302      ORR      R3,R3,R2, LSL #+20
+   \        0xE   0xF840 0x3031      STR      R3,[R0, R1, LSL #+3]
+     94          }
+   \       0x12   0x4770             BX       LR
+     95          
+
+   \                                 In section .text, align 2, keep-with-next
+     96          static inline void entrySetPtr(nvm3_Cache_t *h, size_t idx, nvm3_ObjPtr_t obj)
+     97          {
+     98            h->entryPtr[idx].ptr = obj;
+   \                     entrySetPtr: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xEB00 0x01C1      ADD      R1,R0,R1, LSL #+3
+   \        0x6   0x604A             STR      R2,[R1, #+4]
+     99          }
+   \        0x8   0x4770             BX       LR
+    100          
+
+   \                                 In section .text, align 2, keep-with-next
+    101          static inline void setInvalid(nvm3_Cache_t *h, size_t idx)
+    102          {
+    103            h->entryPtr[idx].key = NVM3_KEY_INVALID;
+   \                     setInvalid: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xF04F 0x32FF      MOV      R2,#+4294967295
+   \        0x6   0xF840 0x2031      STR      R2,[R0, R1, LSL #+3]
+    104            h->entryPtr[idx].ptr = NVM3_OBJ_PTR_INVALID;
+   \        0xA   0xEB00 0x00C1      ADD      R0,R0,R1, LSL #+3
+   \        0xE   0x6042             STR      R2,[R0, #+4]
+    105          }
+   \       0x10   0x4770             BX       LR
+    106          
+    107          //****************************************************************************
+    108          
+
+   \                                 In section .text, align 2, keep-with-next
+    109          void nvm3_cacheOpen(nvm3_Cache_t *h, nvm3_CacheEntry_t *ptr, size_t count)
+    110          {
+    111            h->entryPtr = ptr;
+   \                     nvm3_cacheOpen: (+1)
+   \        0x0   0x6001             STR      R1,[R0, #+0]
+    112            h->entryCount = count;
+   \        0x2   0x6042             STR      R2,[R0, #+4]
+    113            nvm3_cacheClear(h);
+   \        0x4                      REQUIRE nvm3_cacheClear
+   \        0x4                      ; // Fall through to label nvm3_cacheClear
+    114          }
+    115          
+
+   \                                 In section .text, align 2, keep-with-next
+    116          void nvm3_cacheClear(nvm3_Cache_t *h)
+    117          {
+   \                     nvm3_cacheClear: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    118            nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheClear.\n");
+    119          
+    120            for (size_t idx = 0; idx < h->entryCount; idx++) {
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0xE004             B.N      ??nvm3_cacheClear_0
+    121              setInvalid(h, idx);
+   \                     ??nvm3_cacheClear_1: (+1)
+   \        0x8   0x4629             MOV      R1,R5
+   \        0xA   0x4620             MOV      R0,R4
+   \        0xC   0x.... 0x....      BL       setInvalid
+    122            }
+   \       0x10   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??nvm3_cacheClear_0: (+1)
+   \       0x12   0x6860             LDR      R0,[R4, #+4]
+   \       0x14   0x4285             CMP      R5,R0
+   \       0x16   0xD3F7             BCC.N    ??nvm3_cacheClear_1
+    123            h->overflow = false;
+   \       0x18   0x2100             MOVS     R1,#+0
+   \       0x1A   0x7221             STRB     R1,[R4, #+8]
+    124          #if defined(NVM3_OPTIMIZATION) && (NVM3_OPTIMIZATION == 1)
+    125            h->usedCount = 0U;
+    126          #endif
+    127          }
+   \       0x1C   0xBD31             POP      {R0,R4,R5,PC}
+    128          
+    129          #if defined(NVM3_OPTIMIZATION) && (NVM3_OPTIMIZATION == 1)
+    130          /******************************************************************************************************//**
+    131           * Find index of the key in cache using binary search.
+    132           *
+    133           * @param[in]  h      A pointer to NVM3 cache data.
+    134           *
+    135           * @param[in]  key    A 20-bit object identifier.
+    136           *
+    137           * @param[out] idx    A pointer to the location where key idx will be placed.
+    138           *
+    139           * @return            Returns SL_STATUS_OK on success or SL_STATUS_NOT_FOUND on failure.
+    140           *********************************************************************************************************/
+    141          static sl_status_t cacheSearch(nvm3_Cache_t *h, nvm3_ObjectKey_t key, size_t *idx)
+    142          {
+    143            if (h->usedCount <= 0U) {
+    144              return SL_STATUS_NOT_FOUND;
+    145            }
+    146          
+    147            size_t low = 0U;
+    148            size_t high = h->usedCount - 1;
+    149            size_t mid = 0U;
+    150            while (low <= high) {
+    151              mid = (low + high) / 2;
+    152              if (entryGetKey(h, mid) == key) {
+    153                *idx = mid;
+    154                return SL_STATUS_OK;
+    155              }
+    156              if (entryGetKey(h, mid) < key) {
+    157                low = mid + 1;
+    158              } else {
+    159                if (mid != 0U) {
+    160                  high = mid - 1;
+    161                } else {
+    162                  return SL_STATUS_NOT_FOUND;
+    163                }
+    164              }
+    165            }
+    166            return SL_STATUS_NOT_FOUND;
+    167          }
+    168          
+    169          /******************************************************************************************************//**
+    170           * Merge two cache subarrays. Merges the two haves arr[low..mid] and arr[mid+1..high] of cache subarrays.
+    171           *
+    172           * @param[in]  h       A pointer to NVM3 cache data.
+    173           *
+    174           * @param[in]  low     Left index of cache subarray.
+    175           *
+    176           * @param[in]  mid     Mid index of cache subarray.
+    177           *
+    178           * @param[in]  high    Right index of cache subarray.
+    179           *
+    180           * @return             Returns SL_STATUS_OK on success or SL_STATUS_ALLOCATION_FAILED on failure.
+    181           *********************************************************************************************************/
+    182          static sl_status_t cacheMerge(nvm3_Cache_t *h, uint32_t low, uint32_t mid, uint32_t high)
+    183          {
+    184            sl_status_t status = SL_STATUS_OK;
+    185          
+    186            if ((low > mid) || (mid >= high)) {
+    187              return SL_STATUS_INVALID_PARAMETER;
+    188            }
+    189          
+    190            uint32_t i, j, k;
+    191            uint32_t a1 = mid - low + 1;
+    192            uint32_t a2 = high - mid;
+    193          
+    194            if ((L != NULL) && (H != NULL) && (P1 != NULL) && (P2 != NULL) && (K1 != NULL) && (K2 != NULL)) {
+    195              // Copy cache key and pointer data into subarrays
+    196              for (i = 0; i < a1; i++) {
+    197                L[i] = entryGetKey(h, low + i);
+    198                P1[i] = (uint32_t)h->entryPtr[low + i].ptr;
+    199                K1[i] = h->entryPtr[low + i].key;
+    200              }
+    201              for (j = 0; j < a2; j++) {
+    202                H[j] = entryGetKey(h, mid + 1 + j);
+    203                P2[j] = (uint32_t)h->entryPtr[mid + 1 + j].ptr;
+    204                K2[j] = h->entryPtr[mid + 1 + j].key;
+    205              }
+    206          
+    207              // Index of first, second and merged subarrays
+    208              i = 0;
+    209              j = 0;
+    210              k = low;
+    211          
+    212              // Merge cache subarrays
+    213              while (i < a1 && j < a2) {
+    214                if (L[i] <= H[j]) {
+    215                  h->entryPtr[k].key = K1[i];
+    216                  h->entryPtr[k].ptr = (uint32_t*)P1[i];
+    217                  i++;
+    218                } else {
+    219                  h->entryPtr[k].key = K2[j];
+    220                  h->entryPtr[k].ptr = (uint32_t*)P2[j];
+    221                  j++;
+    222                }
+    223                k++;
+    224              }
+    225          
+    226              // Copy remaining cache elements of L subarray
+    227              while (i < a1) {
+    228                h->entryPtr[k].key = K1[i];
+    229                h->entryPtr[k].ptr = (uint32_t*)P1[i];
+    230                i++;
+    231                k++;
+    232              }
+    233          
+    234              // Copy remaining cache elements of H subarray
+    235              while (j < a2) {
+    236                h->entryPtr[k].key = K2[j];
+    237                h->entryPtr[k].ptr = (uint32_t*)P2[j];
+    238                j++;
+    239                k++;
+    240              }
+    241            } else {
+    242              status = SL_STATUS_ALLOCATION_FAILED;
+    243            }
+    244          
+    245            return status;
+    246          }
+    247          
+    248          /******************************************************************************************************//**
+    249           * Sort cache entries using merge sort.
+    250           *
+    251           * @param[in]  h   A pointer to NVM3 cache data.
+    252           *
+    253           * @return         Returns SL_STATUS_OK on success or SL_STATUS_ALLOCATION_FAILED on failure.
+    254           *********************************************************************************************************/
+    255          sl_status_t nvm3_cacheSort(nvm3_Cache_t *h)
+    256          {
+    257            sl_status_t status = SL_STATUS_OK;
+    258            uint32_t cacheSize = h->usedCount;  // size of cache array
+    259            uint32_t currSize;                  // current size of subarray
+    260            uint32_t leftStart;                 // starting index of left subarray
+    261          
+    262            // Allocate memory for cache subarrays
+    263            L = sl_malloc(cacheSize * sizeof(uint32_t));
+    264            H = sl_malloc(cacheSize * sizeof(uint32_t));
+    265            P1 = sl_malloc(cacheSize * sizeof(uint32_t));
+    266            P2 = sl_malloc(cacheSize * sizeof(uint32_t));
+    267            K1 = sl_malloc(cacheSize * sizeof(uint32_t));
+    268            K2 = sl_malloc(cacheSize * sizeof(uint32_t));
+    269          
+    270            // Merge cache subarrays using bottom up approach.
+    271            for (currSize = 1; currSize <= cacheSize - 1; currSize = (currSize * 2U)) {
+    272              // Pick starting point of different subarrays of current size
+    273              for (leftStart = 0; leftStart < cacheSize - 1; leftStart += (currSize * 2U)) {
+    274                // Find ending point of left subarray. mid+1 is starting point of right
+    275                uint32_t mid = SL_MIN(leftStart + currSize - 1, cacheSize - 1);
+    276                uint32_t rightEnd = SL_MIN(leftStart + (2U * currSize - 1), cacheSize - 1);
+    277                // Merge cache subarrays arr[leftStart...mid] & arr[mid+1...rightEnd]
+    278                status = cacheMerge(h, leftStart, mid, rightEnd);
+    279              }
+    280            }
+    281          
+    282            sl_free(L);
+    283            sl_free(H);
+    284            sl_free(K1);
+    285            sl_free(P1);
+    286            sl_free(K2);
+    287            sl_free(P2);
+    288          
+    289            return status;
+    290          }
+    291          
+    292          /******************************************************************************************************//**
+    293           * Update existing cache entry.
+    294           *
+    295           * @param[in]  h       A pointer to NVM3 cache data.
+    296           *
+    297           * @param[in]  key     A 20-bit object identifier.
+    298           *
+    299           * @param[in]  obj     A pointer to object struct.
+    300           *
+    301           * @param[in]  group   Object group.
+    302           *
+    303           * @return             Returns true on success or false on failure.
+    304           *********************************************************************************************************/
+    305          bool nvm3_cacheUpdateEntry(nvm3_Cache_t *h, nvm3_ObjectKey_t key, nvm3_ObjPtr_t obj, nvm3_ObjGroup_t group)
+    306          {
+    307            size_t idx = 0;
+    308            bool res = false;
+    309          
+    310            if ((h->usedCount > 0U) && (h->usedCount <= h->entryCount)) {
+    311              if (cacheSearch(h, key, &idx) == SL_STATUS_OK) {
+    312                if (isValid(h, idx)) {
+    313                  entrySetGroup(h, idx, group);
+    314                  entrySetPtr(h, idx, obj);
+    315                  res = true;
+    316                }
+    317              }
+    318            }
+    319            nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheUpdateEntry, key=%lu, grp=%u, obj=%p, idx=%u.\n", key, group, obj, idx);
+    320            return res;
+    321          }
+    322          
+    323          /******************************************************************************************************//**
+    324           * Add new cache entry
+    325           *
+    326           * @param[in]  h       A pointer to NVM3 cache data.
+    327           *
+    328           * @param[in]  key     A 20-bit object identifier.
+    329           *
+    330           * @param[in]  obj     A pointer to object struct.
+    331           *
+    332           * @param[in]  group   Object type.
+    333           *
+    334           * @return             Returns SL_STATUS_OK on success or SL_STATUS_ALLOCATION_FAILED on failure.
+    335           *********************************************************************************************************/
+    336          sl_status_t nvm3_cacheAddEntry(nvm3_Cache_t *h, nvm3_ObjectKey_t key, nvm3_ObjPtr_t obj, nvm3_ObjGroup_t group)
+    337          {
+    338            sl_status_t status = SL_STATUS_OK;
+    339            bool cacheSet = false;
+    340          
+    341            if (h->usedCount < h->entryCount) {
+    342              size_t idx = 0;
+    343              if (h->usedCount > 0U) {
+    344                if (nvm3_cacheGetIdx(h, key, 0U, h->usedCount - 1, &idx) == SL_STATUS_OK) {
+    345                  nvm3_cacheOrganize(h, idx);
+    346                }
+    347              }
+    348              setInvalid(h, idx);
+    349              entrySetKey(h, idx, key);
+    350              entrySetGroup(h, idx, group);
+    351              entrySetPtr(h, idx, obj);
+    352              cacheSet = true;
+    353              h->usedCount++;
+    354              nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheAddEntry(1), key=%lu, grp=%u, obj=%p, idx=%u.\n", key, group, obj, idx);
+    355            }
+    356          
+    357            // Prioritize data over deleted objects, force an overwrite if possible
+    358            if ((!cacheSet) && (group != objGroupDeleted)) {
+    359              for (size_t idx1 = 0; idx1 < h->entryCount; idx1++) {
+    360                nvm3_ObjGroup_t cacheGroup = entryGetGroup(h, idx1);
+    361                if (cacheGroup == objGroupDeleted) {
+    362                  entrySetKey(h, idx1, key);
+    363                  entrySetGroup(h, idx1, group);
+    364                  entrySetPtr(h, idx1, obj);
+    365                  cacheSet = true;
+    366                  if (h->usedCount > 1U) {
+    367                    status = nvm3_cacheSort(h);
+    368                  }
+    369                  nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheAddEntry(2), cache overflow for key=%lu, grp=%u, obj=%p, inserted at idx=%u.\n", key, group, obj, idx1);
+    370                  break;
+    371                }
+    372              }
+    373            }
+    374          
+    375            if (!cacheSet) {
+    376              h->overflow = true;
+    377              nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheAddEntry(3), cache overflow for key=%lu, grp=%u, obj=%p.\n", key, group, obj);
+    378            }
+    379          
+    380            return status;
+    381          }
+    382          
+    383          /******************************************************************************************************//**
+    384           * Get cache idx to add new entry
+    385           *
+    386           * @param[in]  h       A pointer to NVM3 cache data.
+    387           *
+    388           * @param[in]  key     A 20-bit object identifier.
+    389           *
+    390           * @param[in]  low     Left index of cache subarray.
+    391           *
+    392           * @param[in]  high    Right index of cache subarray.
+    393           *
+    394           * @param[out] idx     A pointer to the location where key idx will be placed.
+    395           *
+    396           * @return             Returns SL_STATUS_OK on success or SL_STATUS_NOT_FOUND on failure.
+    397           *********************************************************************************************************/
+    398          sl_status_t nvm3_cacheGetIdx(nvm3_Cache_t *h, nvm3_ObjectKey_t key, size_t low, size_t high, size_t *idx)
+    399          {
+    400            if (high <= low) {
+    401              *idx = (key > entryGetKey(h, low)) ? (low + 1) : low;
+    402              return SL_STATUS_OK;
+    403            }
+    404            if (key > entryGetKey(h, high)) {
+    405              *idx = high + 1;
+    406              return SL_STATUS_OK;
+    407            }
+    408            if (key < entryGetKey(h, low)) {
+    409              *idx = low;
+    410              return SL_STATUS_OK;
+    411            }
+    412            size_t mid = (low + high) / 2;
+    413            if (key == entryGetKey(h, mid)) {
+    414              *idx = mid + 1;
+    415              return SL_STATUS_OK;
+    416            }
+    417            if (key > entryGetKey(h, mid)) {
+    418              return nvm3_cacheGetIdx(h, key, mid + 1, high, idx);
+    419            }
+    420            if (mid != 0U) {
+    421              return nvm3_cacheGetIdx(h, key, low, mid - 1, idx);
+    422            } else {
+    423              return SL_STATUS_NOT_FOUND;
+    424            }
+    425          }
+    426          
+    427          /******************************************************************************************************//**
+    428           * Arrange cache entries
+    429           *
+    430           * @param[in]  h       A pointer to NVM3 cache data.
+    431           *
+    432           * @param[in]  idx     Index of the key to arrange the cache entries.
+    433           *
+    434           *********************************************************************************************************/
+    435          void nvm3_cacheOrganize(nvm3_Cache_t *h, size_t idx)
+    436          {
+    437            size_t lastIdx = h->usedCount - 1;
+    438            // Move all cache entries from idx to end
+    439            for (; (lastIdx >= idx) && (lastIdx != 0); lastIdx--) {
+    440              h->entryPtr[lastIdx + 1].key = h->entryPtr[lastIdx].key;
+    441              h->entryPtr[lastIdx + 1].ptr = h->entryPtr[lastIdx].ptr;
+    442            }
+    443            if ((lastIdx == 0) && (idx == 0)) {
+    444              h->entryPtr[lastIdx + 1].key = h->entryPtr[lastIdx].key;
+    445              h->entryPtr[lastIdx + 1].ptr = h->entryPtr[lastIdx].ptr;
+    446            }
+    447          }
+    448          #endif
+    449          
+    450          #if defined(NVM3_OPTIMIZATION) && (NVM3_OPTIMIZATION == 1)
+    451          void nvm3_cacheDelete(nvm3_Cache_t *h, nvm3_ObjectKey_t key)
+    452          {
+    453            bool found = false;
+    454            size_t idx = 0;
+    455          
+    456            if ((h->usedCount > 0U) && (h->usedCount <= h->entryCount)) {
+    457              if (cacheSearch(h, key, &idx) == SL_STATUS_OK) {
+    458                if (isValid(h, idx)) {
+    459                  if (entryGetKey(h, idx) == key) {
+    460                    setInvalid(h, idx);
+    461                    found = true;
+    462                    size_t lastIdx = h->usedCount - 1;
+    463                    // Arrange cache entries after cache obj deletion
+    464                    for (; idx < lastIdx; idx++) {
+    465                      h->entryPtr[idx].key = h->entryPtr[idx + 1].key;
+    466                      h->entryPtr[idx].ptr = h->entryPtr[idx + 1].ptr;
+    467                    }
+    468                    if (h->usedCount > 0) {
+    469                      h->usedCount--;
+    470                    }
+    471                  }
+    472                }
+    473              }
+    474            }
+    475          
+    476            nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheDelete, key=%lu, found=%d.\n", key, found ? 1 : 0);
+    477            (void)found;
+    478          }
+    479          #else
+
+   \                                 In section .text, align 2, keep-with-next
+    480          void nvm3_cacheDelete(nvm3_Cache_t *h, nvm3_ObjectKey_t key)
+    481          {
+   \                     nvm3_cacheDelete: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x460A             MOV      R2,R1
+    482            bool found = false;
+    483          
+    484            for (size_t idx = 0; idx < h->entryCount; idx++) {
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x6803             LDR      R3,[R0, #+0]
+   \        0x8   0xE000             B.N      ??nvm3_cacheDelete_0
+   \                     ??nvm3_cacheDelete_1: (+1)
+   \        0xA   0x1C49             ADDS     R1,R1,#+1
+   \                     ??nvm3_cacheDelete_0: (+1)
+   \        0xC   0x6844             LDR      R4,[R0, #+4]
+   \        0xE   0x42A1             CMP      R1,R4
+   \       0x10   0xD20B             BCS.N    ??nvm3_cacheDelete_2
+    485              if (isValid(h, idx)) {
+   \       0x12   0xF853 0x4031      LDR      R4,[R3, R1, LSL #+3]
+   \       0x16   0xF114 0x0F01      CMN      R4,#+1
+   \       0x1A   0xD0F6             BEQ.N    ??nvm3_cacheDelete_1
+    486                if (entryGetKey(h, idx) == key) {
+   \       0x1C   0xF3C4 0x0413      UBFX     R4,R4,#+0,#+20
+   \       0x20   0x4294             CMP      R4,R2
+   \       0x22   0xD1F2             BNE.N    ??nvm3_cacheDelete_1
+    487                  setInvalid(h, idx);
+   \       0x24   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x28   0x....             B.N      setInvalid
+    488                  found = true;
+    489                  break;
+    490                }
+    491              }
+    492            }
+    493          
+    494            nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheDelete, key=%lu, found=%d.\n", key, found ? 1 : 0);
+    495            (void)found;
+    496          }
+   \                     ??nvm3_cacheDelete_2: (+1)
+   \       0x2A   0xBD10             POP      {R4,PC}
+    497          #endif
+    498          
+    499          #if defined(NVM3_OPTIMIZATION) && (NVM3_OPTIMIZATION == 1)
+    500          nvm3_ObjPtr_t nvm3_cacheGet(nvm3_Cache_t *h, nvm3_ObjectKey_t key, nvm3_ObjGroup_t *group)
+    501          {
+    502            nvm3_ObjPtr_t obj = NVM3_OBJ_PTR_INVALID;
+    503          #if NVM3_TRACE_PORT
+    504            int tmp = -1;
+    505          #endif
+    506          
+    507            size_t idx = 0;
+    508            if ((h->usedCount > 0U) && (h->usedCount <= h->entryCount)) {
+    509              if (cacheSearch(h, key, &idx) == SL_STATUS_OK) {
+    510                if (isValid(h, idx)) {
+    511                  *group = entryGetGroup(h, idx);
+    512                  obj = entryGetPtr(h, idx);
+    513          #if NVM3_TRACE_PORT
+    514                  tmp = (int)idx;
+    515          #endif
+    516                }
+    517              }
+    518            }
+    519          
+    520            nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheGet, key=%lu, grp=%d, obj=%p, idx=%d.\n", key, (obj != NVM3_OBJ_PTR_INVALID) ? *group : -1, obj, tmp);
+    521          
+    522            return obj;
+    523          }
+    524          #else
+
+   \                                 In section .text, align 2, keep-with-next
+    525          nvm3_ObjPtr_t nvm3_cacheGet(nvm3_Cache_t *h, nvm3_ObjectKey_t key, nvm3_ObjGroup_t *group)
+    526          {
+   \                     nvm3_cacheGet: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x4615             MOV      R5,R2
+    527            nvm3_ObjPtr_t obj = NVM3_OBJ_PTR_INVALID;
+   \        0x6   0xF04F 0x30FF      MOV      R0,#+4294967295
+    528          #if NVM3_TRACE_PORT
+    529            int tmp = -1;
+    530          #endif
+    531          
+    532            for (size_t idx = 0; idx < h->entryCount; idx++) {
+   \        0xA   0x2600             MOVS     R6,#+0
+   \        0xC   0x6822             LDR      R2,[R4, #+0]
+   \        0xE   0xE000             B.N      ??nvm3_cacheGet_0
+   \                     ??nvm3_cacheGet_1: (+1)
+   \       0x10   0x1C76             ADDS     R6,R6,#+1
+   \                     ??nvm3_cacheGet_0: (+1)
+   \       0x12   0x6863             LDR      R3,[R4, #+4]
+   \       0x14   0x429E             CMP      R6,R3
+   \       0x16   0xD211             BCS.N    ??nvm3_cacheGet_2
+    533              if (isValid(h, idx)) {
+   \       0x18   0xF852 0x3036      LDR      R3,[R2, R6, LSL #+3]
+   \       0x1C   0xF113 0x0F01      CMN      R3,#+1
+   \       0x20   0xD0F6             BEQ.N    ??nvm3_cacheGet_1
+    534                if (entryGetKey(h, idx) == key) {
+   \       0x22   0xF3C3 0x0313      UBFX     R3,R3,#+0,#+20
+   \       0x26   0x428B             CMP      R3,R1
+   \       0x28   0xD1F2             BNE.N    ??nvm3_cacheGet_1
+    535                  *group = entryGetGroup(h, idx);
+   \       0x2A   0x4631             MOV      R1,R6
+   \       0x2C   0x4620             MOV      R0,R4
+   \       0x2E   0x.... 0x....      BL       entryGetGroup
+   \       0x32   0x7028             STRB     R0,[R5, #+0]
+    536                  obj = entryGetPtr(h, idx);
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0xEB00 0x01C6      ADD      R1,R0,R6, LSL #+3
+   \       0x3A   0x6848             LDR      R0,[R1, #+4]
+    537          #if NVM3_TRACE_PORT
+    538                  tmp = (int)idx;
+    539          #endif
+    540                  break;
+    541                }
+    542              }
+    543            }
+    544          
+    545            nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheGet, key=%lu, grp=%d, obj=%p, idx=%d.\n", key, (obj != NVM3_OBJ_PTR_INVALID) ? *group : -1, obj, tmp);
+    546          
+    547            return obj;
+   \                     ??nvm3_cacheGet_2: (+1)
+   \       0x3C   0xBD70             POP      {R4-R6,PC}
+    548          }
+    549          #endif
+    550          
+    551          #if defined(NVM3_OPTIMIZATION) && (NVM3_OPTIMIZATION == 1)
+    552          SPEED_OPT
+    553          void nvm3_cacheSet(nvm3_Cache_t *h, nvm3_ObjectKey_t key, nvm3_ObjPtr_t obj, nvm3_ObjGroup_t group)
+    554          {
+    555            bool bSet = false;
+    556          
+    557            // Update existing entry
+    558            size_t idx = 0;
+    559            if ((h->usedCount > 0U) && (h->usedCount <= h->entryCount)) {
+    560              for (idx = 0; idx < h->usedCount; idx++) {
+    561                if (isValid(h, idx)) {
+    562                  if (entryGetKey(h, idx) == key) {
+    563                    entrySetGroup(h, idx, group);
+    564                    entrySetPtr(h, idx, obj);
+    565                    nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(1), key=%lu, grp=%u, obj=%p, idx=%u.\n", key, group, obj, idx);
+    566                    return;
+    567                  }
+    568                }
+    569              }
+    570            }
+    571          
+    572            // Add new Entry
+    573            if (h->usedCount < h->entryCount) {
+    574              idx = h->usedCount;
+    575              if (!isValid(h, idx)) {
+    576                entrySetKey(h, idx, key);
+    577                entrySetGroup(h, idx, group);
+    578                entrySetPtr(h, idx, obj);
+    579                bSet = true;
+    580                h->usedCount++;
+    581                nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(2), key=%lu, grp=%u, obj=%p, idx=%u.\n", key, group, obj, idx);
+    582              }
+    583            }
+    584          
+    585            // Full, prioritize data over deleted objects, force an overwrite if possible
+    586            if ((!bSet) && (group != objGroupDeleted)) {
+    587              for (size_t idx1 = 0; idx1 < h->entryCount; idx1++) {
+    588                nvm3_ObjGroup_t cacheGroup = entryGetGroup(h, idx1);
+    589                if (cacheGroup == objGroupDeleted) {
+    590                  entrySetKey(h, idx1, key);
+    591                  entrySetGroup(h, idx1, group);
+    592                  entrySetPtr(h, idx1, obj);
+    593                  bSet = true;
+    594                  nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(3), cache overflow for key=%lu, grp=%u, obj=%p, inserted at idx=%u.\n", key, group, obj, idx1);
+    595                  break;
+    596                }
+    597              }
+    598            }
+    599          
+    600            if (!bSet) {
+    601              h->overflow = true;
+    602              nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(4), cache overflow for key=%lu, grp=%u, obj=%p.\n", key, group, obj);
+    603            }
+    604          }
+    605          #else
+    606          SPEED_OPT
+
+   \                                 In section .text, align 4, keep-with-next
+    607          void nvm3_cacheSet(nvm3_Cache_t *h, nvm3_ObjectKey_t key, nvm3_ObjPtr_t obj, nvm3_ObjGroup_t group)
+    608          {
+   \                     nvm3_cacheSet: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB081             SUB      SP,SP,#+4
+   \        0x6   0x4606             MOV      R6,R0
+    609            bool bSet = false;
+    610          
+    611            // Update existing entry
+    612            for (size_t idx = 0; idx < h->entryCount; idx++) {
+   \        0x8   0x6874             LDR      R4,[R6, #+4]
+   \        0xA   0x2700             MOVS     R7,#+0
+   \        0xC   0x4693             MOV      R11,R2
+   \        0xE   0x4698             MOV      R8,R3
+   \       0x10   0x2C00             CMP      R4,#+0
+   \       0x12   0xF000 0x8083      BEQ.W    ??nvm3_cacheSet_0
+   \       0x16   0xF8D6 0x9000      LDR      R9,[R6, #+0]
+   \       0x1A   0xF014 0x0A03      ANDS     R10,R4,#0x3
+   \       0x1E   0x4650             MOV      R0,R10
+   \       0x20   0x464A             MOV      R2,R9
+   \       0x22   0xD00D             BEQ.N    ??nvm3_cacheSet_1
+    613              if (isValid(h, idx)) {
+   \                     ??nvm3_cacheSet_2: (+1)
+   \       0x24   0x6813             LDR      R3,[R2, #+0]
+   \       0x26   0xF113 0x0F01      CMN      R3,#+1
+   \       0x2A   0xD004             BEQ.N    ??nvm3_cacheSet_3
+    614                if (entryGetKey(h, idx) == key) {
+   \       0x2C   0xF3C3 0x0313      UBFX     R3,R3,#+0,#+20
+   \       0x30   0x428B             CMP      R3,R1
+   \       0x32   0xF000 0x8088      BEQ.W    ??nvm3_cacheSet_4
+   \                     ??nvm3_cacheSet_3: (+1)
+   \       0x36   0x1C7F             ADDS     R7,R7,#+1
+   \       0x38   0x1E40             SUBS     R0,R0,#+1
+   \       0x3A   0xF102 0x0208      ADD      R2,R2,#+8
+   \       0x3E   0xD1F1             BNE.N    ??nvm3_cacheSet_2
+   \                     ??nvm3_cacheSet_1: (+1)
+   \       0x40   0x08A5             LSRS     R5,R4,#+2
+   \       0x42   0x0028             MOVS     R0,R5
+   \       0x44   0xD13A             BNE.N    ??nvm3_cacheSet_5
+   \                     ??nvm3_cacheSet_6: (+1)
+   \       0x46   0x2200             MOVS     R2,#+0
+   \       0x48   0x464B             MOV      R3,R9
+   \       0x4A   0xEA5F 0x000A      MOVS     R0,R10
+   \       0x4E   0xD00A             BEQ.N    ??nvm3_cacheSet_7
+   \       0x50   0xF05F 0x0400      MOVS.W   R4,#+0
+    615                  entrySetGroup(h, idx, group);
+    616                  entrySetPtr(h, idx, obj);
+    617                  nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(1), key=%lu, grp=%u, obj=%p, idx=%u.\n", key, group, obj, idx);
+    618                  return;
+    619                }
+    620              }
+    621            }
+    622          
+    623            // Add new Entry
+    624            for (size_t idx = 0; idx < h->entryCount; idx++) {
+    625              if (!isValid(h, idx)) {
+   \                     ??nvm3_cacheSet_8: (+1)
+   \       0x54   0xF853 0x2B08      LDR      R2,[R3], #+8
+   \       0x58   0xF112 0x0F01      CMN      R2,#+1
+   \       0x5C   0xD021             BEQ.N    ??nvm3_cacheSet_9
+   \       0x5E   0x1C64             ADDS     R4,R4,#+1
+   \       0x60   0x1E40             SUBS     R0,R0,#+1
+   \       0x62   0xD1F7             BNE.N    ??nvm3_cacheSet_8
+   \       0x64   0x4622             MOV      R2,R4
+   \                     ??nvm3_cacheSet_7: (+1)
+   \       0x66   0x0028             MOVS     R0,R5
+   \       0x68   0xD058             BEQ.N    ??nvm3_cacheSet_0
+   \       0x6A   0xEB09 0x03C2      ADD      R3,R9,R2, LSL #+3
+   \       0x6E   0x4614             MOV      R4,R2
+   \                     ??nvm3_cacheSet_10: (+1)
+   \       0x70   0x681A             LDR      R2,[R3, #+0]
+   \       0x72   0xF112 0x0F01      CMN      R2,#+1
+   \       0x76   0xBF1E             ITTT     NE
+   \       0x78   0x1C64             ADDNE    R4,R4,#+1
+   \       0x7A   0x689A             LDRNE    R2,[R3, #+8]
+   \       0x7C   0xF112 0x0F01      CMNNE    R2,#+1
+   \       0x80   0xD00F             BEQ.N    ??nvm3_cacheSet_9
+   \       0x82   0x691A             LDR      R2,[R3, #+16]
+   \       0x84   0x1C64             ADDS     R4,R4,#+1
+   \       0x86   0xF112 0x0F01      CMN      R2,#+1
+   \       0x8A   0xBF1E             ITTT     NE
+   \       0x8C   0x1C64             ADDNE    R4,R4,#+1
+   \       0x8E   0x699A             LDRNE    R2,[R3, #+24]
+   \       0x90   0xF112 0x0F01      CMNNE    R2,#+1
+   \       0x94   0xD005             BEQ.N    ??nvm3_cacheSet_9
+   \       0x96   0x1C64             ADDS     R4,R4,#+1
+   \       0x98   0x1E40             SUBS     R0,R0,#+1
+   \       0x9A   0xF103 0x0320      ADD      R3,R3,#+32
+   \       0x9E   0xD1E7             BNE.N    ??nvm3_cacheSet_10
+   \       0xA0   0xE03C             B.N      ??nvm3_cacheSet_0
+    626                entrySetKey(h, idx, key);
+   \                     ??nvm3_cacheSet_9: (+1)
+   \       0xA2   0x460A             MOV      R2,R1
+   \       0xA4   0x4621             MOV      R1,R4
+   \       0xA6   0x4630             MOV      R0,R6
+   \       0xA8   0x.... 0x....      BL       entrySetKey
+    627                entrySetGroup(h, idx, group);
+   \       0xAC   0x4642             MOV      R2,R8
+   \       0xAE   0x4621             MOV      R1,R4
+   \       0xB0   0x4630             MOV      R0,R6
+   \       0xB2   0x.... 0x....      BL       entrySetGroup
+    628                entrySetPtr(h, idx, obj);
+   \       0xB6   0x465A             MOV      R2,R11
+   \       0xB8   0x4621             MOV      R1,R4
+   \       0xBA   0xE04B             B.N      ??nvm3_cacheSet_11
+    629                bSet = true;
+    630                nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(2), key=%lu, grp=%u, obj=%p, idx=%u.\n", key, group, obj, idx);
+    631                break;
+    632              }
+    633            }
+   \                     ??nvm3_cacheSet_5: (+1)
+   \       0xBC   0xEB09 0x02C7      ADD      R2,R9,R7, LSL #+3
+   \                     ??nvm3_cacheSet_12: (+1)
+   \       0xC0   0xF8D2 0xC000      LDR      R12,[R2, #+0]
+   \       0xC4   0xF11C 0x0F01      CMN      R12,#+1
+   \       0xC8   0xD004             BEQ.N    ??nvm3_cacheSet_13
+   \       0xCA   0xF3CC 0x0C13      UBFX     R12,R12,#+0,#+20
+   \       0xCE   0x458C             CMP      R12,R1
+   \       0xD0   0xF000 0x8039      BEQ.W    ??nvm3_cacheSet_4
+   \                     ??nvm3_cacheSet_13: (+1)
+   \       0xD4   0xF8D2 0xC008      LDR      R12,[R2, #+8]
+   \       0xD8   0x1C7F             ADDS     R7,R7,#+1
+   \       0xDA   0xF11C 0x0F01      CMN      R12,#+1
+   \       0xDE   0xD003             BEQ.N    ??nvm3_cacheSet_14
+   \       0xE0   0xF3CC 0x0C13      UBFX     R12,R12,#+0,#+20
+   \       0xE4   0x458C             CMP      R12,R1
+   \       0xE6   0xD02E             BEQ.N    ??nvm3_cacheSet_4
+   \                     ??nvm3_cacheSet_14: (+1)
+   \       0xE8   0x6913             LDR      R3,[R2, #+16]
+   \       0xEA   0x1C7F             ADDS     R7,R7,#+1
+   \       0xEC   0xF113 0x0F01      CMN      R3,#+1
+   \       0xF0   0xD004             BEQ.N    ??nvm3_cacheSet_15
+   \       0xF2   0xF3C3 0x0313      UBFX     R3,R3,#+0,#+20
+   \       0xF6   0x428B             CMP      R3,R1
+   \       0xF8   0xF000 0x8025      BEQ.W    ??nvm3_cacheSet_4
+   \                     ??nvm3_cacheSet_15: (+1)
+   \       0xFC   0xF8D2 0xC018      LDR      R12,[R2, #+24]
+   \      0x100   0x1C7F             ADDS     R7,R7,#+1
+   \      0x102   0xF11C 0x0F01      CMN      R12,#+1
+   \      0x106   0xD003             BEQ.N    ??nvm3_cacheSet_16
+   \      0x108   0xF3CC 0x0C13      UBFX     R12,R12,#+0,#+20
+   \      0x10C   0x458C             CMP      R12,R1
+   \      0x10E   0xD01A             BEQ.N    ??nvm3_cacheSet_4
+   \                     ??nvm3_cacheSet_16: (+1)
+   \      0x110   0x1C7F             ADDS     R7,R7,#+1
+   \      0x112   0x1E40             SUBS     R0,R0,#+1
+   \      0x114   0xF102 0x0220      ADD      R2,R2,#+32
+   \      0x118   0xD1D2             BNE.N    ??nvm3_cacheSet_12
+   \      0x11A   0xE794             B.N      ??nvm3_cacheSet_6
+   \                     ??nvm3_cacheSet_0: (+1)
+   \      0x11C   0xF1B8 0x0F03      CMP      R8,#+3
+   \      0x120   0xD01D             BEQ.N    ??nvm3_cacheSet_17
+    634          
+    635            // Full, prioritize data over deleted objects, force an overwrite if possible
+    636            if ((!bSet) && (group != objGroupDeleted)) {
+    637              for (size_t idx = 0; idx < h->entryCount; idx++) {
+   \      0x122   0x2700             MOVS     R7,#+0
+   \      0x124   0x9100             STR      R1,[SP, #+0]
+   \      0x126   0xE000             B.N      ??nvm3_cacheSet_18
+   \                     ??nvm3_cacheSet_19: (+1)
+   \      0x128   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??nvm3_cacheSet_18: (+1)
+   \      0x12A   0x6870             LDR      R0,[R6, #+4]
+   \      0x12C   0x4287             CMP      R7,R0
+   \      0x12E   0xD216             BCS.N    ??nvm3_cacheSet_17
+    638                nvm3_ObjGroup_t cacheGroup = entryGetGroup(h, idx);
+    639                if (cacheGroup == objGroupDeleted) {
+   \      0x130   0x4639             MOV      R1,R7
+   \      0x132   0x4630             MOV      R0,R6
+   \      0x134   0x.... 0x....      BL       entryGetGroup
+   \      0x138   0x2803             CMP      R0,#+3
+   \      0x13A   0xD1F5             BNE.N    ??nvm3_cacheSet_19
+    640                  entrySetKey(h, idx, key);
+   \      0x13C   0x9A00             LDR      R2,[SP, #+0]
+   \      0x13E   0x4639             MOV      R1,R7
+   \      0x140   0x4630             MOV      R0,R6
+   \      0x142   0x.... 0x....      BL       entrySetKey
+    641                  entrySetGroup(h, idx, group);
+   \                     ??nvm3_cacheSet_4: (+1)
+   \      0x146   0x4642             MOV      R2,R8
+   \      0x148   0x4639             MOV      R1,R7
+   \      0x14A   0x4630             MOV      R0,R6
+   \      0x14C   0x.... 0x....      BL       entrySetGroup
+    642                  entrySetPtr(h, idx, obj);
+   \      0x150   0x465A             MOV      R2,R11
+   \      0x152   0x4639             MOV      R1,R7
+   \                     ??nvm3_cacheSet_11: (+1)
+   \      0x154   0x4630             MOV      R0,R6
+   \      0x156   0xB001             ADD      SP,SP,#+4
+   \      0x158   0xE8BD 0x4FF0      POP      {R4-R11,LR}
+   \      0x15C   0x....             B.N      entrySetPtr
+    643                  bSet = true;
+    644                  nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(3), cache overflow for key=%lu, grp=%u, obj=%p, inserted at idx=%u.\n", key, group, obj, idx);
+    645                  break;
+    646                }
+    647              }
+    648            }
+    649          
+    650            if (!bSet) {
+    651              h->overflow = true;
+   \                     ??nvm3_cacheSet_17: (+1)
+   \      0x15E   0x2001             MOVS     R0,#+1
+   \      0x160   0x7230             STRB     R0,[R6, #+8]
+    652              nvm3_tracePrint(TRACE_LEVEL, "nvm3_cacheSet(4), cache overflow for key=%lu, grp=%u, obj=%p.\n", key, group, obj);
+    653            }
+    654          }
+   \      0x162   0xB001             ADD      SP,SP,#+4
+   \      0x164   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    655          #endif
+    656          
+
+   \                                 In section .text, align 2, keep-with-next
+    657          void nvm3_cacheScan(nvm3_Cache_t *h, nvm3_CacheScanCallback_t cacheScanCallback, void *user)
+    658          {
+   \                     nvm3_cacheScan: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x4688             MOV      R8,R1
+   \        0x8   0x4616             MOV      R6,R2
+    659            bool keepGoing;
+    660            for (size_t idx = 0; idx < h->entryCount; idx++) {
+   \        0xA   0x2700             MOVS     R7,#+0
+   \        0xC   0xE000             B.N      ??nvm3_cacheScan_0
+   \                     ??nvm3_cacheScan_1: (+1)
+   \        0xE   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??nvm3_cacheScan_0: (+1)
+   \       0x10   0x6860             LDR      R0,[R4, #+4]
+   \       0x12   0x4287             CMP      R7,R0
+   \       0x14   0xD216             BCS.N    ??nvm3_cacheScan_2
+    661              if (isValid(h, idx)) {
+   \       0x16   0x6821             LDR      R1,[R4, #+0]
+   \       0x18   0xF851 0x5037      LDR      R5,[R1, R7, LSL #+3]
+   \       0x1C   0xF115 0x0F01      CMN      R5,#+1
+   \       0x20   0xD0F5             BEQ.N    ??nvm3_cacheScan_1
+    662                // Found an object.
+    663                nvm3_ObjectKey_t key = entryGetKey(h, idx);
+    664                nvm3_ObjGroup_t group = entryGetGroup(h, idx);
+   \       0x22   0x4639             MOV      R1,R7
+   \       0x24   0x4620             MOV      R0,R4
+   \       0x26   0x.... 0x....      BL       entryGetGroup
+    665                nvm3_ObjPtr_t obj = entryGetPtr(h, idx);
+    666                keepGoing = cacheScanCallback(h, key, group, obj, user);
+    667                if (!keepGoing) {
+   \       0x2A   0x9600             STR      R6,[SP, #+0]
+   \       0x2C   0x6822             LDR      R2,[R4, #+0]
+   \       0x2E   0xF3C5 0x0513      UBFX     R5,R5,#+0,#+20
+   \       0x32   0xEB02 0x01C7      ADD      R1,R2,R7, LSL #+3
+   \       0x36   0x684B             LDR      R3,[R1, #+4]
+   \       0x38   0x4602             MOV      R2,R0
+   \       0x3A   0x4629             MOV      R1,R5
+   \       0x3C   0x4620             MOV      R0,R4
+   \       0x3E   0x47C0             BLX      R8
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD1E4             BNE.N    ??nvm3_cacheScan_1
+    668                  return;
+   \                     ??nvm3_cacheScan_2: (+1)
+   \       0x44   0xE8BD 0x81F3      POP      {R0,R1,R4-R8,PC}
+    669                }
+    670              }
+    671            }
+    672          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   entryGetGroup
+       0   entrySetGroup
+       0   entrySetKey
+       0   entrySetPtr
+      16   nvm3_cacheClear
+        16   -> setInvalid
+       8   nvm3_cacheDelete
+         0   -> setInvalid
+      16   nvm3_cacheGet
+        16   -> entryGetGroup
+       0   nvm3_cacheOpen
+         0   -> nvm3_cacheClear
+      32   nvm3_cacheScan
+        32   -- Indirect call
+        32   -> entryGetGroup
+      40   nvm3_cacheSet
+        40   -> entryGetGroup
+        40   -> entrySetGroup
+        40   -> entrySetKey
+         0   -> entrySetPtr
+       0   setInvalid
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  entryGetGroup
+      20  entrySetGroup
+      18  entrySetKey
+      10  entrySetPtr
+      30  nvm3_cacheClear
+      44  nvm3_cacheDelete
+      62  nvm3_cacheGet
+       4  nvm3_cacheOpen
+      72  nvm3_cacheScan
+     360  nvm3_cacheSet
+      18  setInvalid
+
+ 
+ 650 bytes in section .text
+ 
+ 650 bytes of CODE memory
+
+Errors: none
+Warnings: none

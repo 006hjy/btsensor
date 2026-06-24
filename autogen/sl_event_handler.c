@@ -1,6 +1,7 @@
 #include "sl_event_handler.h"
 
 #include "sl_clock_manager.h"
+#include "sl_dma_manager_instances.h"
 #include "sl_gpio.h"
 #include "sl_i2cspm_instances.h"
 #include "sl_uartdrv_instances.h"
@@ -25,6 +26,7 @@ void sli_internal_permanent_allocation(void)
 void sl_platform_init(void)
 {
   sl_clock_manager_runtime_init();
+  sl_dma_manager_instances_init();
   nvm3_initDefault();
 }
 

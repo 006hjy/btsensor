@@ -1,0 +1,735 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:03
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_object.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_object.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_object.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_object.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_object.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir\nvm3_object.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_object.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_object.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief NVM3 object handling functions
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "nvm3_object.h"
+     32          #include "nvm3_utils.h"
+     33          #include <string.h>
+     34          
+     35          #define NVM3_OBJ_LEN_SIZE                7U          //  7 bits
+     36          #define NVM3_OBJ_LEN_MASK                ((1U << NVM3_OBJ_LEN_SIZE) - 1U)
+     37          #define NVM3_OBJ_LLEN_SIZE               26U         // 26 bits: large obj length
+     38          #define NVM3_OBJ_LLEN_MASK               ((1U << NVM3_OBJ_LLEN_SIZE) - 1U)
+     39          #define NVM3_OBJ_BCCB_SIZE               5U          //  5 bits: small obj berger code
+     40          #define NVM3_OBJ_BCCB_MASK               ((1U << NVM3_OBJ_BCCB_SIZE) - 1U)
+     41          #define NVM3_OBJ_LBCCB_SIZE              6U          //  6 bits: large obj berger code
+     42          #define NVM3_OBJ_LBCCB_MASK              ((1U << NVM3_OBJ_LBCCB_SIZE) - 1U)
+     43          #define NVM3_OBJ_F_SIZE                  2U          //  2 bits: fragment field
+     44          #define NVM3_OBJ_F_MASK                  ((1U << NVM3_OBJ_F_SIZE) - 1U)
+     45          #define NVM3_OBJ_U_SIZE                  3U          //  3 bits: unused field
+     46          #define NVM3_OBJ_U_MASK                  ((1U << NVM3_OBJ_U_SIZE) - 1U)
+     47          #define NVM3_OBJ_KEY_OFFSET              (NVM3_OBJ_LEN_SIZE)
+     48          #define NVM3_OBJ_F_OFFSET                (NVM3_OBJ_LEN_SIZE + NVM3_KEY_SIZE)
+     49          #define NVM3_OBJ_U_OFFSET                (NVM3_OBJ_LEN_SIZE + NVM3_KEY_SIZE + NVM3_OBJ_F_SIZE)
+     50          #define NVM3_OBJ_BCCB_OFFSET             (NVM3_OBJ_LEN_SIZE + NVM3_KEY_SIZE)
+     51          #define NVM3_OBJ_LBCCB_OFFSET            (NVM3_OBJ_LLEN_SIZE)
+     52          
+     53          //****************************************************************************
+     54          
+     55          __STATIC_INLINE uint32_t hdrSmallGetBergerCode(nvm3_ObjHdrSmall_t *oh)
+     56          {
+     57            return ((oh->oh1 >> NVM3_OBJ_BCCB_OFFSET) & NVM3_OBJ_BCCB_MASK);
+     58          }
+     59          
+     60          __STATIC_INLINE uint32_t hdrLargeGetBergerCode(nvm3_ObjHdrLarge_t *oh)
+     61          {
+     62            return ((oh->oh2 >> NVM3_OBJ_LBCCB_OFFSET) & NVM3_OBJ_LBCCB_MASK);
+     63          }
+     64          
+     65          __STATIC_INLINE nvm3_ObjType_t toObjType(uint32_t value)
+     66          {
+     67            int type = (int)value;
+     68            return (nvm3_ObjType_t)type;
+     69          }
+     70          
+     71          __STATIC_INLINE nvm3_ObjFragType_t toObjFragType(uint32_t value)
+     72          {
+     73            int type = (int)value;
+     74            return (nvm3_ObjFragType_t)type;
+     75          }
+     76          
+     77          __STATIC_INLINE nvm3_ObjType_t hdrGetType(nvm3_ObjHdrSmall_t *oh)
+     78          {
+     79            return toObjType(oh->oh1 & NVM3_OBJ_LEN_MASK);
+     80          }
+     81          
+
+   \                                 In section .text, align 2, keep-with-next
+     82          __STATIC_INLINE bool hdrIsLarge(nvm3_ObjHdrSmall_t *oh)
+     83          {
+     84            nvm3_ObjType_t objTyp = hdrGetType(oh);
+   \                     hdrIsLarge: (+1)
+   \        0x0   0x7800             LDRB     R0,[R0, #+0]
+   \        0x2   0xF000 0x007F      AND      R0,R0,#0x7F
+     85            return ((objTyp == objTypeCounterLarge) || (objTyp == objTypeDataLarge));
+   \        0x6   0x2801             CMP      R0,#+1
+   \        0x8   0xD002             BEQ.N    ??hdrIsLarge_0
+   \        0xA   0x1E40             SUBS     R0,R0,#+1
+   \        0xC   0x4180             SBCS     R0,R0,R0
+   \        0xE   0x0FC0             LSRS     R0,R0,#+31
+   \                     ??hdrIsLarge_0: (+1)
+   \       0x10   0x4770             BX       LR
+     86          }
+     87          
+     88          //****************************************************************************
+     89          
+     90          /*** Initialize object header */
+
+   \                                 In section .text, align 2, keep-with-next
+     91          size_t nvm3_objHdrInit(nvm3_ObjHdrLargePtr_t oh, nvm3_ObjectKey_t key, nvm3_ObjType_t objType,
+     92                                 size_t len, bool isLarge, nvm3_ObjFragType_t fragTyp)
+     93          {
+   \                     nvm3_objHdrInit: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine1
+     94            uint8_t BCCB = 0;
+     95          
+     96            oh->oh1 = (key & NVM3_KEY_MASK) << NVM3_OBJ_KEY_OFFSET;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0x6   0x....             LDR.N    R0,??DataTable2
+   \        0x8   0xEA00 0x10C1      AND      R0,R0,R1, LSL #+7
+     97            oh->oh2 = (len & NVM3_OBJ_LLEN_MASK);
+   \        0xC   0xF023 0x417C      BIC      R1,R3,#0xFC000000
+   \       0x10   0x6061             STR      R1,[R4, #+4]
+     98            switch (objType) {
+   \       0x12   0xEA42 0x0100      ORR      R1,R2,R0
+   \       0x16   0x2A01             CMP      R2,#+1
+   \       0x18   0xD903             BLS.N    ??nvm3_objHdrInit_0
+   \       0x1A   0x1E92             SUBS     R2,R2,#+2
+   \       0x1C   0x2A01             CMP      R2,#+1
+   \       0x1E   0xD907             BLS.N    ??nvm3_objHdrInit_1
+   \       0x20   0xE008             B.N      ??nvm3_objHdrInit_2
+   \                     ??nvm3_objHdrInit_0: (+1)
+   \       0x22   0x9805             LDR      R0,[SP, #+20]
+     99              case objTypeCounterLarge:
+    100              /* Intented fall-through */
+    101              case objTypeDataLarge:
+    102                oh->oh1 |= (uint32_t)objType;
+    103                oh->oh1 |= ((uint32_t)NVM3_OBJ_U_MASK << NVM3_OBJ_U_OFFSET);
+    104                oh->oh1 |= ((uint32_t)fragTyp & NVM3_OBJ_F_MASK) << NVM3_OBJ_F_OFFSET;
+   \       0x24   0xB2C0             UXTB     R0,R0
+   \       0x26   0xEA41 0x63C0      ORR      R3,R1,R0, LSL #+27
+   \       0x2A   0xF043 0x4360      ORR      R3,R3,#0xE0000000
+    105                break;
+   \       0x2E   0xE005             B.N      ??nvm3_objHdrInit_3
+    106              case objTypeCounterSmall:
+    107              /* Intented fall-through*/
+    108              case objTypeDeleted:
+    109                oh->oh1 |= (uint32_t)objType;
+   \                     ??nvm3_objHdrInit_1: (+1)
+   \       0x30   0x460B             MOV      R3,R1
+    110                break;
+   \       0x32   0xE003             B.N      ??nvm3_objHdrInit_3
+    111              default:
+    112                oh->oh1 |= ((len + (uint32_t)objTypeDataSmall) & NVM3_OBJ_LEN_MASK);
+   \                     ??nvm3_objHdrInit_2: (+1)
+   \       0x34   0x1DDB             ADDS     R3,R3,#+7
+   \       0x36   0xF003 0x037F      AND      R3,R3,#0x7F
+   \       0x3A   0x4303             ORRS     R3,R3,R0
+    113                break;
+   \                     ??nvm3_objHdrInit_3: (+1)
+   \       0x3C   0x9804             LDR      R0,[SP, #+16]
+   \       0x3E   0x6023             STR      R3,[R4, #+0]
+    114            }
+    115            if (isLarge) {
+   \       0x40   0xB2C0             UXTB     R0,R0
+   \       0x42   0xB158             CBZ.N    R0,??nvm3_objHdrInit_4
+    116              nvm3_utilsComputeBergerCode(&BCCB, &oh->oh1, 32);
+   \       0x44   0x.... 0x....      BL       ?Subroutine0
+    117              nvm3_utilsComputeBergerCode(&BCCB, &oh->oh2, NVM3_OBJ_LLEN_SIZE);
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x48   0x.... 0x....      BL       ?Subroutine2
+    118              oh->oh2 |= ((uint32_t)BCCB & NVM3_OBJ_LBCCB_MASK) << NVM3_OBJ_LBCCB_OFFSET;
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x4C   0x6860             LDR      R0,[R4, #+4]
+   \       0x4E   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x52   0xEA40 0x6081      ORR      R0,R0,R1, LSL #+26
+   \       0x56   0x6060             STR      R0,[R4, #+4]
+   \       0x58   0x2008             MOVS     R0,#+8
+   \       0x5A   0xBD16             POP      {R1,R2,R4,PC}
+    119            } else {
+    120              nvm3_utilsComputeBergerCode(&BCCB, &oh->oh1, (uint8_t)(NVM3_OBJ_LEN_SIZE + NVM3_KEY_SIZE));
+   \                     ??nvm3_objHdrInit_4: (+1)
+   \       0x5C   0x221B             MOVS     R2,#+27
+   \       0x5E   0x.... 0x....      BL       ??Subroutine0_0
+    121              oh->oh1 |= ((uint32_t)BCCB & NVM3_OBJ_BCCB_MASK) << NVM3_OBJ_BCCB_OFFSET;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x62   0x6820             LDR      R0,[R4, #+0]
+   \       0x64   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x68   0xEA40 0x60C1      ORR      R0,R0,R1, LSL #+27
+   \       0x6C   0x6020             STR      R0,[R4, #+0]
+   \       0x6E   0x2004             MOVS     R0,#+4
+   \       0x70   0xBD16             POP      {R1,R2,R4,PC}
+    122            }
+    123          
+    124            return nvm3_objHdrLen(isLarge);
+    125          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2220             MOVS     R2,#+32
+   \                     ??Subroutine0_0: (+1)
+   \        0x2   0x4621             MOV      R1,R4
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x.... 0x....      B.W      nvm3_utilsComputeBergerCode
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x221A             MOVS     R2,#+26
+   \        0x2   0x1D21             ADDS     R1,R4,#+4
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x.... 0x....      B.W      nvm3_utilsComputeBergerCode
+    126          
+
+   \                                 In section .text, align 2, keep-with-next
+    127          size_t nvm3_objHdrLen(bool isLarge)
+    128          {
+    129            return isLarge ? NVM3_OBJ_HEADER_SIZE_LARGE : NVM3_OBJ_HEADER_SIZE_SMALL;
+   \                     nvm3_objHdrLen: (+1)
+   \        0x0   0xB108             CBZ.N    R0,??nvm3_objHdrLen_0
+   \        0x2   0x2008             MOVS     R0,#+8
+   \        0x4   0x4770             BX       LR
+   \                     ??nvm3_objHdrLen_0: (+1)
+   \        0x6   0x2004             MOVS     R0,#+4
+   \        0x8   0x4770             BX       LR
+    130          }
+    131          
+
+   \                                 In section .text, align 2, keep-with-next
+    132          bool nvm3_objHdrValidateSmall(nvm3_ObjHdrSmallPtr_t objHdrSmall)
+    133          {
+   \                     nvm3_objHdrValidateSmall: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine1
+    134            uint8_t codReq = 0;
+    135            uint8_t codAct;
+    136            bool res = false;
+    137          
+    138            nvm3_utilsComputeBergerCode(&codReq, &objHdrSmall->oh1, (uint8_t)(NVM3_OBJ_LEN_SIZE + NVM3_KEY_SIZE));
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \        0x6   0x221B             MOVS     R2,#+27
+   \        0x8   0x.... 0x....      BL       ??Subroutine0_0
+    139            codAct = (uint8_t)hdrSmallGetBergerCode(objHdrSmall);
+    140            if (codReq == codAct) {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0xC   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x10   0x6821             LDR      R1,[R4, #+0]
+   \       0x12   0x2500             MOVS     R5,#+0
+   \       0x14   0xEBB0 0x6FD1      CMP      R0,R1, LSR #+27
+   \       0x18   0xBF08             IT       EQ
+   \       0x1A   0x2501             MOVEQ    R5,#+1
+    141              res = true;
+    142            }
+    143          
+    144            return res;
+   \       0x1C   0x4628             MOV      R0,R5
+   \       0x1E   0xBD32             POP      {R1,R4,R5,PC}
+    145          }
+    146          
+
+   \                                 In section .text, align 2, keep-with-next
+    147          bool nvm3_objHdrValidateLarge(nvm3_ObjHdrLargePtr_t objHdrLarge)
+    148          {
+   \                     nvm3_objHdrValidateLarge: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine1
+    149            uint8_t codReq = 0;
+    150            uint8_t codAct;
+    151            bool res = false;
+    152          
+    153            nvm3_utilsComputeBergerCode(&codReq, &objHdrLarge->oh1, 32);
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \        0x6   0x.... 0x....      BL       ?Subroutine0
+    154            nvm3_utilsComputeBergerCode(&codReq, &objHdrLarge->oh2, NVM3_OBJ_LLEN_SIZE);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    155            codAct = (uint8_t)hdrLargeGetBergerCode(objHdrLarge);
+    156            if (codReq == codAct) {
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \        0xE   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x12   0x6861             LDR      R1,[R4, #+4]
+   \       0x14   0x2500             MOVS     R5,#+0
+   \       0x16   0xEBB0 0x6F91      CMP      R0,R1, LSR #+26
+   \       0x1A   0xBF08             IT       EQ
+   \       0x1C   0x2501             MOVEQ    R5,#+1
+    157              res = true;
+    158            }
+    159          
+    160            return res;
+   \       0x1E   0x4628             MOV      R0,R5
+   \       0x20   0xBD32             POP      {R1,R4,R5,PC}
+    161          }
+    162          
+
+   \                                 In section .text, align 2, keep-with-next
+    163          bool nvm3_objHdrGetErased(nvm3_ObjHdrSmallPtr_t objHdrSmall)
+    164          {
+    165            return objHdrSmall->oh1 == 0xFFFFFFFFU;
+   \                     nvm3_objHdrGetErased: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xF110 0x0F01      CMN      R0,#+1
+   \        0x6   0xD101             BNE.N    ??nvm3_objHdrGetErased_0
+   \        0x8   0x2001             MOVS     R0,#+1
+   \        0xA   0x4770             BX       LR
+   \                     ??nvm3_objHdrGetErased_0: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x4770             BX       LR
+    166          }
+    167          
+
+   \                                 In section .text, align 2, keep-with-next
+    168          nvm3_ObjFragType_t nvm3_objHdrGetFragTyp(nvm3_ObjHdrSmallPtr_t objHdrSmall)
+    169          {
+   \                     nvm3_objHdrGetFragTyp: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    170            nvm3_ObjFragType_t fragTyp = toObjFragType((objHdrSmall->oh1 >> NVM3_OBJ_F_OFFSET) & NVM3_OBJ_F_MASK);
+   \        0x2   0x6804             LDR      R4,[R0, #+0]
+    171          
+    172            return hdrIsLarge(objHdrSmall) ? fragTyp : fragTypeNone;
+   \        0x4   0x.... 0x....      BL       hdrIsLarge
+   \        0x8   0x0EE4             LSRS     R4,R4,#+27
+   \        0xA   0xF004 0x0403      AND      R4,R4,#0x3
+   \        0xE   0xB900             CBNZ.N   R0,??nvm3_objHdrGetFragTyp_0
+   \       0x10   0x2400             MOVS     R4,#+0
+   \                     ??nvm3_objHdrGetFragTyp_0: (+1)
+   \       0x12   0x4620             MOV      R0,R4
+   \       0x14   0xBD10             POP      {R4,PC}
+    173          }
+    174          
+
+   \                                 In section .text, align 2, keep-with-next
+    175          nvm3_ObjectKey_t nvm3_objHdrGetKey(nvm3_ObjHdrSmallPtr_t objHdrSmall)
+    176          {
+    177            return (nvm3_ObjectKey_t)((objHdrSmall->oh1 >> NVM3_OBJ_KEY_OFFSET) & NVM3_KEY_MASK);
+   \                     nvm3_objHdrGetKey: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xF3C0 0x10D3      UBFX     R0,R0,#+7,#+20
+   \        0x6   0x4770             BX       LR
+    178          }
+    179          
+
+   \                                 In section .text, align 2, keep-with-next
+    180          bool nvm3_objHdrGetHdrIsLarge(nvm3_ObjHdrSmallPtr_t objHdrSmall)
+    181          {
+    182            return hdrIsLarge(objHdrSmall);
+   \                     nvm3_objHdrGetHdrIsLarge: (+1)
+   \        0x0   0x....             B.N      hdrIsLarge
+    183          }
+    184          
+
+   \                                 In section .text, align 2, keep-with-next
+    185          size_t nvm3_objHdrGetHdrLen(nvm3_ObjHdrSmallPtr_t objHdrSmall)
+    186          {
+   \                     nvm3_objHdrGetHdrLen: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    187            return nvm3_objHdrLen(hdrIsLarge(objHdrSmall));
+   \        0x2   0x.... 0x....      BL       hdrIsLarge
+   \        0x6   0xB108             CBZ.N    R0,??nvm3_objHdrGetHdrLen_0
+   \        0x8   0x2008             MOVS     R0,#+8
+   \        0xA   0xBD02             POP      {R1,PC}
+   \                     ??nvm3_objHdrGetHdrLen_0: (+1)
+   \        0xC   0x2004             MOVS     R0,#+4
+   \        0xE   0xBD02             POP      {R1,PC}
+    188          }
+    189          
+
+   \                                 In section .text, align 2, keep-with-next
+    190          size_t nvm3_objHdrGetDatLen(nvm3_ObjHdrLargePtr_t objHdrLarge)
+    191          {
+   \                     nvm3_objHdrGetDatLen: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    192            size_t len;
+    193          
+    194            if (hdrIsLarge((nvm3_ObjHdrSmallPtr_t)objHdrLarge)) {
+   \        0x4   0x.... 0x....      BL       hdrIsLarge
+   \        0x8   0xB118             CBZ.N    R0,??nvm3_objHdrGetDatLen_0
+    195              len = objHdrLarge->oh2 & NVM3_OBJ_LLEN_MASK;
+   \        0xA   0x6860             LDR      R0,[R4, #+4]
+   \        0xC   0xF020 0x407C      BIC      R0,R0,#0xFC000000
+   \       0x10   0xBD10             POP      {R4,PC}
+    196            } else {
+    197              len = objHdrLarge->oh1 & NVM3_OBJ_LEN_MASK;
+   \                     ??nvm3_objHdrGetDatLen_0: (+1)
+   \       0x12   0x7820             LDRB     R0,[R4, #+0]
+   \       0x14   0xF000 0x007F      AND      R0,R0,#0x7F
+    198              len = (len > (size_t)objTypeDataSmall) ? (len - (size_t)objTypeDataSmall) : 0U;
+   \       0x18   0x2808             CMP      R0,#+8
+   \       0x1A   0xD301             BCC.N    ??nvm3_objHdrGetDatLen_1
+   \       0x1C   0x1FC0             SUBS     R0,R0,#+7
+   \       0x1E   0xBD10             POP      {R4,PC}
+   \                     ??nvm3_objHdrGetDatLen_1: (+1)
+   \       0x20   0x2000             MOVS     R0,#+0
+    199            }
+    200          
+    201            return len;
+   \       0x22   0xBD10             POP      {R4,PC}
+    202          }
+    203          
+
+   \                                 In section .text, align 2, keep-with-next
+    204          nvm3_ObjType_t nvm3_objHdrGetType(nvm3_ObjHdrSmallPtr_t objHdrSmall)
+    205          {
+    206            return hdrGetType(objHdrSmall);
+   \                     nvm3_objHdrGetType: (+1)
+   \        0x0   0x7800             LDRB     R0,[R0, #+0]
+   \        0x2   0xF000 0x007F      AND      R0,R0,#0x7F
+   \        0x6   0x4770             BX       LR
+    207          }
+    208          
+
+   \                                 In section .text, align 2, keep-with-next
+    209          void nvm3_objInit(nvm3_ObjPtr_t obj, nvm3_ObjPtr_t objAdr)
+    210          {
+    211            // The sizeof(nvm3_Obj_t) is dependent on the page size.
+    212            (void)memset(obj, 0, nvm3_objHandleSize);
+   \                     nvm3_objInit: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable2_1
+   \        0x2   0xB538             PUSH     {R3-R5,LR}
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x6811             LDR      R1,[R2, #+0]
+   \        0x8   0x4604             MOV      R4,R0
+   \        0xA   0x.... 0x....      BL       __aeabi_memclr4
+    213            obj->key = NVM3_KEY_INVALID;
+   \        0xE   0xF04F 0x33FF      MOV      R3,#+4294967295
+   \       0x12   0x6023             STR      R3,[R4, #+0]
+    214            obj->objAdr = objAdr;
+    215            obj->isValid = false;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x6065             STR      R5,[R4, #+4]
+   \       0x18   0x75A0             STRB     R0,[R4, #+22]
+    216            obj->totalLen = 0;
+   \       0x1A   0x6120             STR      R0,[R4, #+16]
+    217            obj->nextObjAdr = NVM3_OBJ_PTR_INVALID;
+   \       0x1C   0x60A3             STR      R3,[R4, #+8]
+    218            obj->isFragmented = false;
+   \       0x1E   0x75E0             STRB     R0,[R4, #+23]
+    219            obj->frag.isFirstFragFound = false;
+   \       0x20   0x7660             STRB     R0,[R4, #+25]
+    220            obj->frag.isLastFragFound = false;
+   \       0x22   0x76A0             STRB     R0,[R4, #+26]
+    221            obj->frag.idx = 0;
+   \       0x24   0x7620             STRB     R0,[R4, #+24]
+    222          }
+   \       0x26   0xBD31             POP      {R0,R4,R5,PC}
+    223          
+
+   \                                 In section .text, align 2, keep-with-next
+    224          nvm3_ObjType_t nvm3_objGroupToType(nvm3_ObjGroup_t objGroup, bool hdrIsLarge)
+    225          {
+    226            nvm3_ObjType_t objType;
+    227          
+    228            if (objGroup == objGroupDeleted) {
+   \                     nvm3_objGroupToType: (+1)
+   \        0x0   0x2803             CMP      R0,#+3
+   \        0x2   0xD008             BEQ.N    ??nvm3_objGroupToType_0
+    229              objType = objTypeDeleted;
+    230            } else if (objGroup == objGroupCounter) {
+   \        0x4   0x2802             CMP      R0,#+2
+   \        0x6   0xD102             BNE.N    ??nvm3_objGroupToType_1
+    231              objType = hdrIsLarge ? objTypeCounterLarge : objTypeCounterSmall;
+   \        0x8   0xB129             CBZ.N    R1,??nvm3_objGroupToType_0
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0x4770             BX       LR
+    232            } else {
+    233              objType = hdrIsLarge ? objTypeDataLarge : objTypeDataSmall;
+   \                     ??nvm3_objGroupToType_1: (+1)
+   \        0xE   0xB109             CBZ.N    R1,??nvm3_objGroupToType_2
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x4770             BX       LR
+   \                     ??nvm3_objGroupToType_2: (+1)
+   \       0x14   0x2007             MOVS     R0,#+7
+    234            }
+    235          
+    236            return objType;
+   \                     ??nvm3_objGroupToType_0: (+1)
+   \       0x16   0x4770             BX       LR
+    237          }
+    238          
+
+   \                                 In section .text, align 2, keep-with-next
+    239          nvm3_ObjGroup_t nvm3_objTypeToGroup(nvm3_ObjType_t objType)
+    240          {
+    241            nvm3_ObjGroup_t objGroup;
+    242          
+    243            switch (objType) {
+   \                     nvm3_objTypeToGroup: (+1)
+   \        0x0   0x1E40             SUBS     R0,R0,#+1
+   \        0x2   0x2801             CMP      R0,#+1
+   \        0x4   0xD905             BLS.N    ??nvm3_objTypeToGroup_0
+   \        0x6   0x1E80             SUBS     R0,R0,#+2
+   \        0x8   0xD007             BEQ.N    ??nvm3_objTypeToGroup_1
+   \        0xA   0x1E40             SUBS     R0,R0,#+1
+   \        0xC   0x2802             CMP      R0,#+2
+   \        0xE   0xD902             BLS.N    ??nvm3_objTypeToGroup_2
+   \       0x10   0xE005             B.N      ??nvm3_objTypeToGroup_3
+    244              case objTypeCounterSmall:
+    245                objGroup = objGroupCounter;
+    246                break;
+    247              case objTypeCounterLarge:
+    248                objGroup = objGroupCounter;
+   \                     ??nvm3_objTypeToGroup_0: (+1)
+   \       0x12   0x2002             MOVS     R0,#+2
+    249                break;
+   \       0x14   0x4770             BX       LR
+    250              case objTypeDataLarge:
+    251                objGroup = objGroupData;
+    252                break;
+    253              case objTypeRes_1:
+    254              case objTypeRes_2:
+    255              case objTypeRes_3:
+    256                objGroup = objGroupUnknown;
+   \                     ??nvm3_objTypeToGroup_2: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+    257                break;
+   \       0x18   0x4770             BX       LR
+    258              case objTypeDeleted:
+    259                objGroup = objGroupDeleted;
+   \                     ??nvm3_objTypeToGroup_1: (+1)
+   \       0x1A   0x2003             MOVS     R0,#+3
+    260                break;
+   \       0x1C   0x4770             BX       LR
+    261              default:
+    262                objGroup = objGroupData;
+   \                     ??nvm3_objTypeToGroup_3: (+1)
+   \       0x1E   0x2001             MOVS     R0,#+1
+    263                break;
+    264            }
+    265          
+    266            return objGroup;
+   \       0x20   0x4770             BX       LR
+    267          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x07FF'FF80        DC32     0x7ffff80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     nvm3_objHandleSize
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   hdrIsLarge
+       0   nvm3_objGroupToType
+       8   nvm3_objHdrGetDatLen
+         8   -> hdrIsLarge
+       0   nvm3_objHdrGetErased
+       8   nvm3_objHdrGetFragTyp
+         8   -> hdrIsLarge
+       0   nvm3_objHdrGetHdrIsLarge
+         0   -> hdrIsLarge
+       8   nvm3_objHdrGetHdrLen
+         8   -> hdrIsLarge
+       0   nvm3_objHdrGetKey
+       0   nvm3_objHdrGetType
+      16   nvm3_objHdrInit
+        16   -> nvm3_utilsComputeBergerCode
+       0   nvm3_objHdrLen
+      16   nvm3_objHdrValidateLarge
+        16   -> nvm3_utilsComputeBergerCode
+      16   nvm3_objHdrValidateSmall
+        16   -> nvm3_utilsComputeBergerCode
+      16   nvm3_objInit
+        16   -> __aeabi_memclr4
+       0   nvm3_objTypeToGroup
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      10  ?Subroutine0
+      10  ?Subroutine1
+      10  ?Subroutine2
+      18  hdrIsLarge
+      24  nvm3_objGroupToType
+      36  nvm3_objHdrGetDatLen
+      16  nvm3_objHdrGetErased
+      22  nvm3_objHdrGetFragTyp
+       2  nvm3_objHdrGetHdrIsLarge
+      16  nvm3_objHdrGetHdrLen
+       8  nvm3_objHdrGetKey
+       8  nvm3_objHdrGetType
+     114  nvm3_objHdrInit
+      10  nvm3_objHdrLen
+      34  nvm3_objHdrValidateLarge
+      32  nvm3_objHdrValidateSmall
+      40  nvm3_objInit
+      34  nvm3_objTypeToGroup
+
+ 
+ 452 bytes in section .text
+ 
+ 452 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,4 @@
+C:/Users/JunyiHuang/SimplicityStudio/v6_workspace/btsensor/cmake_gcc/build/CMakeFiles/slc.dir
+C:/Users/JunyiHuang/SimplicityStudio/v6_workspace/btsensor/cmake_gcc/build/CMakeFiles/btsensor.dir
+C:/Users/JunyiHuang/SimplicityStudio/v6_workspace/btsensor/cmake_gcc/build/CMakeFiles/edit_cache.dir
+C:/Users/JunyiHuang/SimplicityStudio/v6_workspace/btsensor/cmake_gcc/build/CMakeFiles/rebuild_cache.dir

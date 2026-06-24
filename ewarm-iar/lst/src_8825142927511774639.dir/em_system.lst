@@ -1,0 +1,777 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:04
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_system.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_system.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_system.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8825142927511774639.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_system.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_system.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_8825142927511774639.dir\em_system.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_8825142927511774639.dir\em_system.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\src\em_system.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief System Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_system.h"
+     32          #include "sl_assert.h"
+     33          #include <stddef.h>
+     34          #if defined(SYSCFG_PRESENT)
+     35          #include "em_syscfg.h"
+     36          #endif
+     37          /***************************************************************************//**
+     38           * @addtogroup system SYSTEM - System Utils
+     39           * @{
+     40           ******************************************************************************/
+     41          
+     42          /*******************************************************************************
+     43           *********************************   DEFINES   *********************************
+     44           ******************************************************************************/
+     45          
+     46          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     47          
+     48          /* Bit mask used to extract the part number value without the new naming
+     49           * bitfield. */
+     50          #define SYSCFG_CHIPREV_PARTNUMBER1  0xFE0
+     51          #define SYSCFG_CHIPREV_PARTNUMBER0  0xF
+     52          
+     53          /* Bit mask to convert NON-SECURE to SECURE */
+     54          #define CONVERT_NS_TO_S (~(1 << 28U))
+     55          
+     56          /** @endcond */
+     57          
+     58          /*******************************************************************************
+     59           **************************   GLOBAL FUNCTIONS   *******************************
+     60           ******************************************************************************/
+     61          
+     62          /***************************************************************************//**
+     63           * @brief
+     64           *   Get a chip major/minor revision.
+     65           *
+     66           * @param[out] rev
+     67           *   A location to place the chip revision information.
+     68           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     69          void SYSTEM_ChipRevisionGet(SYSTEM_ChipRevision_TypeDef *rev)
+     70          {
+   \                     SYSTEM_ChipRevisionGet: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     71          #if defined(_SYSCFG_CHIPREV_FAMILY_MASK) || defined(_SYSCFG_CHIPREV_PARTNUMBER_MASK)
+     72            /* On series-2 (and higher) the revision info is in the SYSCFG->CHIPREV register. */
+     73            uint32_t chiprev = SYSCFG_readChipRev();
+   \        0x2   0xF44F 0x3180      MOV      R1,#+65536
+   \        0x6   0x....             LDR.N    R2,??DataTable10
+   \        0x8   0x6011             STR      R1,[R2, #+0]
+   \        0xA   0x....             LDR.N    R4,??DataTable10_1
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+     74          #if defined(_SYSCFG_CHIPREV_PARTNUMBER_MASK)
+     75            rev->partNumber = ((chiprev & SYSCFG_CHIPREV_PARTNUMBER1) >> 5) | (chiprev & SYSCFG_CHIPREV_PARTNUMBER0);
+     76          #else
+     77            rev->family = (chiprev & _SYSCFG_CHIPREV_FAMILY_MASK) >> _SYSCFG_CHIPREV_FAMILY_SHIFT;
+   \        0xE   0x098B             LSRS     R3,R1,#+6
+   \       0x10   0xF003 0x033F      AND      R3,R3,#0x3F
+     78          #endif
+     79            rev->major  = (chiprev & _SYSCFG_CHIPREV_MAJOR_MASK)  >> _SYSCFG_CHIPREV_MAJOR_SHIFT;
+   \       0x14   0xF001 0x023F      AND      R2,R1,#0x3F
+   \       0x18   0x7083             STRB     R3,[R0, #+2]
+   \       0x1A   0x7042             STRB     R2,[R0, #+1]
+     80            rev->minor  = (chiprev & _SYSCFG_CHIPREV_MINOR_MASK)  >> _SYSCFG_CHIPREV_MINOR_SHIFT;
+   \       0x1C   0x0B09             LSRS     R1,R1,#+12
+   \       0x1E   0x7001             STRB     R1,[R0, #+0]
+     81          #else
+     82            uint8_t tmp;
+     83          
+     84            EFM_ASSERT(rev);
+     85          
+     86            /* CHIP FAMILY bit [5:2] */
+     87            tmp  = (uint8_t)(((ROMTABLE->PID1 & _ROMTABLE_PID1_FAMILYMSB_MASK)
+     88                              >> _ROMTABLE_PID1_FAMILYMSB_SHIFT) << 2);
+     89            /* CHIP FAMILY bit [1:0] */
+     90            tmp |=  (uint8_t)((ROMTABLE->PID0 & _ROMTABLE_PID0_FAMILYLSB_MASK)
+     91                              >> _ROMTABLE_PID0_FAMILYLSB_SHIFT);
+     92            rev->family = tmp;
+     93          
+     94            /* CHIP MAJOR bit [3:0] */
+     95            rev->major = (uint8_t)((ROMTABLE->PID0 & _ROMTABLE_PID0_REVMAJOR_MASK)
+     96                                   >> _ROMTABLE_PID0_REVMAJOR_SHIFT);
+     97          
+     98            /* CHIP MINOR bit [7:4] */
+     99            tmp  = (uint8_t)(((ROMTABLE->PID2 & _ROMTABLE_PID2_REVMINORMSB_MASK)
+    100                              >> _ROMTABLE_PID2_REVMINORMSB_SHIFT) << 4);
+    101            /* CHIP MINOR bit [3:0] */
+    102            tmp |= (uint8_t)((ROMTABLE->PID3 & _ROMTABLE_PID3_REVMINORLSB_MASK)
+    103                             >> _ROMTABLE_PID3_REVMINORLSB_SHIFT);
+    104            rev->minor = tmp;
+    105          #endif
+    106          }
+   \       0x20   0xBD10             POP      {R4,PC}
+    107          
+    108          /***************************************************************************//**
+    109           * @brief
+    110           *    Get a factory calibration value for a given peripheral register.
+    111           *
+    112           * @param[in] regAddress
+    113           *    The peripheral calibration register address to get a calibration value for. If
+    114           *    the calibration value is found, this register is updated with the
+    115           *    calibration value.
+    116           *
+    117           * @return
+    118           *    True if a calibration value exists, false otherwise.
+    119           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    120          bool SYSTEM_GetCalibrationValue(volatile uint32_t *regAddress)
+    121          {
+    122            const SYSTEM_CalAddrVal_TypeDef * p;
+    123            const SYSTEM_CalAddrVal_TypeDef * end;
+    124          
+    125            uint32_t s_regAddress = (uint32_t)regAddress;
+    126            s_regAddress = s_regAddress & CONVERT_NS_TO_S;
+   \                     SYSTEM_GetCalibrationValue: (+1)
+   \        0x0   0xF020 0x5280      BIC      R2,R0,#0x10000000
+    127          
+    128          #if defined(MSC_FLASH_CHIPCONFIG_MEM_BASE)
+    129            p   = (const SYSTEM_CalAddrVal_TypeDef *)MSC_FLASH_CHIPCONFIG_MEM_BASE;
+   \        0x4   0x....             LDR.N    R3,??DataTable10_2
+    130            end = (const SYSTEM_CalAddrVal_TypeDef *)MSC_FLASH_CHIPCONFIG_MEM_END;
+    131          #else
+    132            p   = (const SYSTEM_CalAddrVal_TypeDef *)(DEVINFO_BASE & 0xFFFFF000U);
+    133            end = (const SYSTEM_CalAddrVal_TypeDef *)DEVINFO_BASE;
+    134          #endif
+    135          
+    136            for (; p < end; p++) {
+    137              if (p->address == 0) {
+   \                     ??SYSTEM_GetCalibrationValue_0: (+1)
+   \        0x6   0x6819             LDR      R1,[R3, #+0]
+   \        0x8   0xB151             CBZ.N    R1,??SYSTEM_GetCalibrationValue_1
+    138                /* p->address == 0 marks the end of the table */
+    139                return false;
+    140              }
+    141              if (p->address == s_regAddress) {
+   \        0xA   0x4291             CMP      R1,R2
+   \        0xC   0xD004             BEQ.N    ??SYSTEM_GetCalibrationValue_2
+   \        0xE   0x3308             ADDS     R3,R3,#+8
+   \       0x10   0x....             LDR.N    R1,??DataTable10_3
+   \       0x12   0x428B             CMP      R3,R1
+   \       0x14   0xD3F7             BCC.N    ??SYSTEM_GetCalibrationValue_0
+   \       0x16   0xE003             B.N      ??SYSTEM_GetCalibrationValue_1
+    142                *regAddress = p->calValue;
+   \                     ??SYSTEM_GetCalibrationValue_2: (+1)
+   \       0x18   0x685A             LDR      R2,[R3, #+4]
+   \       0x1A   0x6002             STR      R2,[R0, #+0]
+    143                return true;
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0x4770             BX       LR
+    144              }
+    145            }
+    146            /* Nothing found for regAddress. */
+    147            return false;
+   \                     ??SYSTEM_GetCalibrationValue_1: (+1)
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x4770             BX       LR
+    148          }
+    149          
+    150          /***************************************************************************//**
+    151           * @brief
+    152           *   Get family security capability.
+    153           *
+    154           * @note
+    155           *   This function retrieves the family security capability based on the
+    156           *   device number. The device number is one letter and 3 digits:
+    157           *   DEVICENUMBER = (alpha-'A')*1000 + numeric. i.e. 0d = "A000"; 1123d = "B123".
+    158           *   The security capabilities are represented by ::SYSTEM_SecurityCapability_TypeDef.
+    159           *
+    160           * @return
+    161           *   Security capability of MCU.
+    162           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    163          SYSTEM_SecurityCapability_TypeDef SYSTEM_GetSecurityCapability(void)
+    164          {
+    165            SYSTEM_SecurityCapability_TypeDef sc;
+    166          
+    167          #if (_SILICON_LABS_32B_SERIES == 0)
+    168            sc = securityCapabilityNA;
+    169          #elif (_SILICON_LABS_32B_SERIES == 1)
+    170            sc = securityCapabilityBasic;
+    171          #elif (_SILICON_LABS_32B_SERIES == 2)
+    172            uint16_t mcuFeatureSetMajor;
+    173            uint16_t deviceNumber;
+    174            deviceNumber = SYSTEM_GetPartNumber();
+   \                     SYSTEM_GetSecurityCapability: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_4
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+    175            mcuFeatureSetMajor = 'A' + (deviceNumber / 1000);
+    176          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+    177            // override feature set since BRD4182A Rev A00 -> rev B02 are marked "A"
+    178            mcuFeatureSetMajor = 'C';
+    179          #endif
+    180          
+    181            switch (mcuFeatureSetMajor) {
+    182              case 'A':
+    183                sc = securityCapabilitySE;
+    184                break;
+    185          
+    186              case 'B':
+    187                sc = securityCapabilityVault;
+    188                break;
+    189          
+    190              case 'C':
+    191                sc = securityCapabilityRoT;
+    192                break;
+    193          
+    194              default:
+    195                sc = securityCapabilityUnknown;
+    196                break;
+    197            }
+    198          #else
+    199            sc = securityCapabilityUnknown;
+    200          #endif
+    201          
+    202            return sc;
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x4770             BX       LR
+    203          }
+    204          
+    205          /***************************************************************************//**
+    206           * @brief
+    207           *   Get the unique number for this device.
+    208           *
+    209           * @return
+    210           *   Unique number for this device.
+    211           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    212          uint64_t SYSTEM_GetUnique(void)
+    213          {
+    214          #if defined (_DEVINFO_EUI64H_MASK)
+    215            uint32_t tmp = DEVINFO->EUI64L;
+   \                     SYSTEM_GetUnique: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable10_5
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+    216            return ((uint64_t)DEVINFO->EUI64H << 32) | tmp;
+   \        0x4   0x6849             LDR      R1,[R1, #+4]
+   \        0x6   0x4770             BX       LR
+    217          #elif defined(_DEVINFO_UNIQUEH_MASK)
+    218            uint32_t tmp = DEVINFO->UNIQUEL;
+    219            return ((uint64_t)DEVINFO->UNIQUEH << 32) | tmp;
+    220          #else
+    221          #error (em_system.c): Location of device unique number is not defined.
+    222          #endif
+    223          }
+    224          
+    225          /***************************************************************************//**
+    226           * @brief
+    227           *   Get the production revision for this part.
+    228           *
+    229           * @return
+    230           *   Production revision for this part.
+    231           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    232          uint8_t SYSTEM_GetProdRev(void)
+    233          {
+    234          #if defined (_DEVINFO_PART_PROD_REV_MASK)
+    235            return (uint8_t)((DEVINFO->PART & _DEVINFO_PART_PROD_REV_MASK)
+    236                             >> _DEVINFO_PART_PROD_REV_SHIFT);
+    237          #elif defined (_DEVINFO_INFO_PRODREV_MASK)
+    238            return (uint8_t)((DEVINFO->INFO & _DEVINFO_INFO_PRODREV_MASK)
+    239                             >> _DEVINFO_INFO_PRODREV_SHIFT);
+   \                     SYSTEM_GetProdRev: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_6
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0200             LSLS     R0,R0,#+8
+   \        0x6   0x0E00             LSRS     R0,R0,#+24
+   \        0x8   0x4770             BX       LR
+    240          #else
+    241          #error (em_system.c): Location of production revision is not defined.
+    242          #endif
+    243          }
+    244          
+    245          /***************************************************************************//**
+    246           * @brief
+    247           *   Get the SRAM Base Address.
+    248           *
+    249           * @note
+    250           *   This function is used to retrieve the base address of the SRAM.
+    251           *
+    252           * @return
+    253           *   Base address SRAM (32-bit unsigned integer).
+    254           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    255          uint32_t SYSTEM_GetSRAMBaseAddress(void)
+    256          {
+    257            return SRAM_BASE;
+   \                     SYSTEM_GetSRAMBaseAddress: (+1)
+   \        0x0   0xF04F 0x5000      MOV      R0,#+536870912
+   \        0x4   0x4770             BX       LR
+    258          }
+    259          
+    260          /***************************************************************************//**
+    261           * @brief
+    262           *   Get the SRAM size (in KB).
+    263           *
+    264           * @note
+    265           *   This function retrieves SRAM size by reading the chip device
+    266           *   info structure. If your binary is made for one specific device only,
+    267           *   use SRAM_SIZE instead.
+    268           *
+    269           * @return
+    270           *   Size of internal SRAM (in KB).
+    271           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    272          uint16_t SYSTEM_GetSRAMSize(void)
+    273          {
+    274            uint16_t sizekb;
+    275          
+    276          #if defined(_EFM32_GECKO_FAMILY)
+    277            /* Early Gecko devices had a bug where SRAM and Flash size were swapped. */
+    278            if (SYSTEM_GetProdRev() < 5) {
+    279              sizekb = (DEVINFO->MSIZE & _DEVINFO_MSIZE_FLASH_MASK)
+    280                       >> _DEVINFO_MSIZE_FLASH_SHIFT;
+    281            }
+    282          #endif
+    283            sizekb = (uint16_t)((DEVINFO->MSIZE & _DEVINFO_MSIZE_SRAM_MASK)
+    284                                >> _DEVINFO_MSIZE_SRAM_SHIFT);
+   \                     SYSTEM_GetSRAMSize: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_7
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+    285          
+    286          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80) && defined(_EFR_DEVICE)
+    287            /* Do not include EFR32xG1 RAMH. */
+    288            sizekb--;
+    289          #endif
+    290          
+    291            return sizekb;
+   \        0x4   0x0140             LSLS     R0,R0,#+5
+   \        0x6   0x0D40             LSRS     R0,R0,#+21
+   \        0x8   0x4770             BX       LR
+    292          }
+    293          
+    294          /***************************************************************************//**
+    295           * @brief
+    296           *   Get the flash size (in KB).
+    297           *
+    298           * @note
+    299           *   This function retrieves flash size by reading the chip device
+    300           *   info structure. If your binary is made for one specific device only,
+    301           *   use FLASH_SIZE instead.
+    302           *
+    303           * @return
+    304           *   Size of internal flash (in KB).
+    305           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    306          uint16_t SYSTEM_GetFlashSize(void)
+    307          {
+    308          #if defined(_EFM32_GECKO_FAMILY)
+    309            /* Early Gecko devices had a bug where SRAM and Flash size were swapped. */
+    310            if (SYSTEM_GetProdRev() < 5) {
+    311              return (DEVINFO->MSIZE & _DEVINFO_MSIZE_SRAM_MASK)
+    312                     >> _DEVINFO_MSIZE_SRAM_SHIFT;
+    313            }
+    314          #endif
+    315            return (uint16_t)((DEVINFO->MSIZE & _DEVINFO_MSIZE_FLASH_MASK)
+    316                              >> _DEVINFO_MSIZE_FLASH_SHIFT);
+   \                     SYSTEM_GetFlashSize: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_7
+   \        0x2   0x....             B.N      ?Subroutine0
+    317          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xB280             UXTH     R0,R0
+   \        0x4   0x4770             BX       LR
+    318          
+    319          /***************************************************************************//**
+    320           * @brief
+    321           *   Get the flash page size in bytes.
+    322           *
+    323           * @note
+    324           *   This function retrieves flash page size by reading the chip device
+    325           *   info structure. If your binary is made for one specific device only,
+    326           *   use FLASH_PAGE_SIZE instead.
+    327           *
+    328           * @return
+    329           *   Page size of internal flash in bytes.
+    330           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    331          uint32_t SYSTEM_GetFlashPageSize(void)
+    332          {
+    333            uint32_t tmp;
+    334          
+    335          #if defined(_SILICON_LABS_32B_SERIES_0)
+    336          
+    337          #if defined(_EFM32_GIANT_FAMILY)
+    338            if (SYSTEM_GetProdRev() < 18) {
+    339              /* Early Giant/Leopard devices did not have MEMINFO in DEVINFO. */
+    340              return FLASH_PAGE_SIZE;
+    341            }
+    342          #elif defined(_EFM32_ZERO_FAMILY)
+    343            if (SYSTEM_GetProdRev() < 24) {
+    344              /* Early Zero devices have an incorrect DEVINFO flash page size */
+    345              return FLASH_PAGE_SIZE;
+    346            }
+    347          #endif
+    348          #endif
+    349          
+    350          #if defined(_DEVINFO_MEMINFO_FLASHPAGESIZE_MASK)
+    351            tmp = (DEVINFO->MEMINFO & _DEVINFO_MEMINFO_FLASHPAGESIZE_MASK)
+    352                  >> _DEVINFO_MEMINFO_FLASHPAGESIZE_SHIFT;
+   \                     SYSTEM_GetFlashPageSize: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_8
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+    353          #elif defined(_DEVINFO_MEMINFO_FLASH_PAGE_SIZE_MASK)
+    354            tmp = (DEVINFO->MEMINFO & _DEVINFO_MEMINFO_FLASH_PAGE_SIZE_MASK)
+    355                  >> _DEVINFO_MEMINFO_FLASH_PAGE_SIZE_SHIFT;
+    356          #else
+    357          #error (em_system.c): Location of flash page size is not defined.
+    358          #endif
+    359          
+    360            return 1UL << ((tmp + 10UL) & 0x1FUL);
+   \        0x4   0x2101             MOVS     R1,#+1
+   \        0x6   0x300A             ADDS     R0,R0,#+10
+   \        0x8   0xF000 0x001F      AND      R0,R0,#0x1F
+   \        0xC   0xFA01 0xF000      LSL      R0,R1,R0
+   \       0x10   0x4770             BX       LR
+    361          }
+    362          
+    363          /***************************************************************************//**
+    364           * @brief
+    365           *   Get the MCU part number.
+    366           *
+    367           * @return
+    368           *   The part number of MCU.
+    369           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    370          uint16_t SYSTEM_GetPartNumber(void)
+    371          {
+    372          #if defined(_DEVINFO_PART_DEVICENUM_MASK)
+    373            return (uint16_t)((DEVINFO->PART & _DEVINFO_PART_DEVICENUM_MASK)
+    374                              >> _DEVINFO_PART_DEVICENUM_SHIFT);
+   \                     SYSTEM_GetPartNumber: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_4
+   \        0x2                      REQUIRE ?Subroutine0
+   \        0x2                      ; // Fall through to label ?Subroutine0
+    375          #elif defined(_DEVINFO_PART_DEVICE_NUMBER_MASK)
+    376            return (uint16_t)((DEVINFO->PART & _DEVINFO_PART_DEVICE_NUMBER_MASK)
+    377                              >> _DEVINFO_PART_DEVICE_NUMBER_SHIFT);
+    378          #else
+    379          #error (em_system.c): Location of device part number is not defined.
+    380          #endif
+    381          }
+    382          
+    383          /***************************************************************************//**
+    384           * @brief
+    385           *   Get the calibration temperature (in degrees Celsius).
+    386           *
+    387           * @return
+    388           *   Calibration temperature in Celsius.
+    389           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    390          uint8_t SYSTEM_GetCalibrationTemperature(void)
+    391          {
+    392          #if defined(_DEVINFO_CAL_TEMP_MASK)
+    393            return (uint8_t)((DEVINFO->CAL & _DEVINFO_CAL_TEMP_MASK)
+    394                             >> _DEVINFO_CAL_TEMP_SHIFT);
+    395          #elif defined(_DEVINFO_CALTEMP_TEMP_MASK)
+    396            return (uint8_t)((DEVINFO->CALTEMP & _DEVINFO_CALTEMP_TEMP_MASK)
+    397                             >> _DEVINFO_CALTEMP_TEMP_SHIFT);
+   \                     SYSTEM_GetCalibrationTemperature: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_9
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0xB2C0             UXTB     R0,R0
+   \        0x6   0x4770             BX       LR
+    398          #else
+    399          #error (em_system.c): Location of calibration temperature is not defined.
+    400          #endif
+    401          }
+    402          
+    403          /***************************************************************************//**
+    404           * @brief
+    405           *   Get the MCU family identifier.
+    406           *
+    407           * @note
+    408           *   This function retrieves family ID by reading the chip's device info
+    409           *   structure in flash memory. Users can retrieve family ID directly
+    410           *   by reading DEVINFO->PART item and decode with mask and shift
+    411           *   \#defines defined in \<part_family\>_devinfo.h (refer to code
+    412           *   below for details).
+    413           *
+    414           * @return
+    415           *   Family identifier of MCU.
+    416           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    417          SYSTEM_PartFamily_TypeDef SYSTEM_GetFamily(void)
+    418          {
+    419          #if defined(_DEVINFO_PART_FAMILY_MASK)
+    420            return (SYSTEM_PartFamily_TypeDef)(DEVINFO->PART & (_DEVINFO_PART_FAMILY_MASK
+    421                                                                | _DEVINFO_PART_FAMILYNUM_MASK));
+   \                     SYSTEM_GetFamily: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_4
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x....             LDR.N    R1,??DataTable10_10
+   \        0x6   0x4008             ANDS     R0,R1,R0
+   \        0x8   0x4770             BX       LR
+    422          #elif defined(_DEVINFO_PART_DEVICE_FAMILY_MASK)
+    423            return (SYSTEM_PartFamily_TypeDef)
+    424                   (uint32_t)((DEVINFO->PART & _DEVINFO_PART_DEVICE_FAMILY_MASK)
+    425                              >> _DEVINFO_PART_DEVICE_FAMILY_SHIFT);
+    426          #else
+    427            #error (em_system.h): Location of device family name is not defined.
+    428          #endif
+    429          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x5000'9064        DC32     0x50009064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x5007'C014        DC32     0x5007c014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x0FE0'E000        DC32     0xfe0e000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x0FE0'E5FF        DC32     0xfe0e5ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x0FE0'8004        DC32     0xfe08004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x0FE0'8048        DC32     0xfe08048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \        0x0   0x0FE0'8000        DC32     0xfe08000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_7:
+   \        0x0   0x0FE0'800C        DC32     0xfe0800c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_8:
+   \        0x0   0x0FE0'8008        DC32     0xfe08008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_9:
+   \        0x0   0x0FE0'8050        DC32     0xfe08050
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_10:
+   \        0x0   0x3F3F'0000        DC32     0x3f3f0000
+    430          
+    431          /** @} (end addtogroup system) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   SYSTEM_ChipRevisionGet
+       0   SYSTEM_GetCalibrationTemperature
+       0   SYSTEM_GetCalibrationValue
+       0   SYSTEM_GetFamily
+       0   SYSTEM_GetFlashPageSize
+       0   SYSTEM_GetFlashSize
+       0   SYSTEM_GetPartNumber
+       0   SYSTEM_GetProdRev
+       0   SYSTEM_GetSRAMBaseAddress
+       0   SYSTEM_GetSRAMSize
+       0   SYSTEM_GetSecurityCapability
+       0   SYSTEM_GetUnique
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_10
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable10_8
+       4  ??DataTable10_9
+       6  ?Subroutine0
+      34  SYSTEM_ChipRevisionGet
+       8  SYSTEM_GetCalibrationTemperature
+      36  SYSTEM_GetCalibrationValue
+      10  SYSTEM_GetFamily
+      18  SYSTEM_GetFlashPageSize
+       4  SYSTEM_GetFlashSize
+       2  SYSTEM_GetPartNumber
+      10  SYSTEM_GetProdRev
+       6  SYSTEM_GetSRAMBaseAddress
+      10  SYSTEM_GetSRAMSize
+       8  SYSTEM_GetSecurityCapability
+       8  SYSTEM_GetUnique
+
+ 
+ 204 bytes in section .text
+ 
+ 204 bytes of CODE memory
+
+Errors: none
+Warnings: none

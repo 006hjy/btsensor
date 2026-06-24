@@ -42,7 +42,7 @@
 // <o SL_UARTDRV_EUSART_INST0_LF_MODE> Low frequency mode
 // <true=> True
 // <false=> False
-#define SL_UARTDRV_EUSART_INST0_LF_MODE         true
+#define SL_UARTDRV_EUSART_INST0_LF_MODE         false
 
 // <o SL_UARTDRV_EUSART_INST0_PARITY> Parity mode to use
 // <eusartNoParity=> No Parity
@@ -122,4 +122,3 @@
 // [EUSART_SL_UARTDRV_EUSART_INST0]$
 // <<< sl:end pin_tool >>>
 #endif // SL_UARTDRV_EUSART_INST0_CONFIG_H
-

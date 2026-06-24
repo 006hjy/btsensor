@@ -1,0 +1,861 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:03
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_page.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_page.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_page.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_page.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_page.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_16550513276957216125.dir\nvm3_page.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_16550513276957216125.dir\nvm3_page.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\src\nvm3_page.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief NVM3 page handling functions
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stdbool.h>
+     32          #include <stddef.h>
+     33          #include <string.h>
+     34          #include "nvm3_page.h"
+     35          #include "nvm3_object.h"
+     36          #include "nvm3_utils.h"
+     37          #include "nvm3_trace.h"
+     38          
+     39          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     40          
+     41          //============================================================================
+     42          
+     43          #define H1_MAGIC_SHIFT          16          // The magic shift
+     44          #define H1_MAGIC_V1             0xB29AU     // The magic marker
+     45          #define H1_VERSION_V1           0x01U       // The first version of NVM3
+     46          #define H4_BAD_MASK             0xffff0000U // The BAD mask
+     47          #define H4_BAD_SHIFT            16          // The BAD shift
+     48          #define H4_BAD_GOOD             0xFFFFU     // The page is good
+     49          #define H4_BAD_NOTGOOD          0x0000U     // The page is not good
+     50          #define H4_EIP_MASK             0xffffU     // The EIP mask
+     51          #define H4_EIP_SET              0xA5A5U     // The page is scheduled for erase
+     52          #define H4_EIP_CLEAR            0xFFFFU     // The page is not sceduled for erase
+     53          #define H5_DEVICE_FAMILY_MASK   0x07FFU
+     54          #define H5_WRITESIZE_SHIFT      11
+     55          #define H5_WRITESIZE_MASK       0x0800U
+     56          #define H5_MEMORYMAPPED_SHIFT   12
+     57          #define H5_MEMORYMAPPED_MASK    0x1000U
+     58          #define H5_PAGESIZE_SHIFT       13
+     59          #define H5_PAGESIZE_MASK        0xE000U
+     60          #define H5_DEVINFO_MASK         (H5_DEVICE_FAMILY_MASK | H5_WRITESIZE_MASK | H5_MEMORYMAPPED_MASK | H5_PAGESIZE_MASK)
+     61          #if defined(NVM3_SECURITY)
+     62          #define H5_SECTYPE_AEAD_SHIFT   16          // The AEAD shift
+     63          #define H5_SECTYPE_AEAD_MASK    0x10000U    // The AEAD mask
+     64          #define H5_SECTYPE_ENC_SHIFT    17          // The encryption shift
+     65          #define H5_SECTYPE_ENC_MASK     0x20000U    // The encryption mask
+     66          #endif
+     67          
+     68          //============================================================================
+     69          
+     70          typedef enum {
+     71            eraseCntNormal,
+     72            eraseCntInverted
+     73          } EraseCnt_t;
+     74          
+     75          //============================================================================
+     76          
+     77          __STATIC_INLINE bool pageHdrErased(nvm3_PageHdr_t *pageHdr)
+     78          {
+     79            return (pageHdr->data[0] == 0xFFFFFFFFU);
+     80          }
+     81          
+     82          __STATIC_INLINE bool pageHdrMagicAndVersion(nvm3_PageHdr_t *pageHdr)
+     83          {
+     84            uint16_t magic;
+     85            uint16_t version;
+     86          
+     87            magic = (uint16_t)(pageHdr->data[0] >> H1_MAGIC_SHIFT);
+     88            version = (uint16_t)pageHdr->data[0];
+     89            return (magic == H1_MAGIC_V1) && (version == H1_VERSION_V1);
+     90          }
+     91          
+     92          __STATIC_INLINE bool pageHdrIsPageBad(nvm3_PageHdr_t *pageHdr)
+     93          {
+     94            uint32_t badPage = (pageHdr->data[3] & H4_BAD_MASK) >> H4_BAD_SHIFT;
+     95          
+     96            return badPage != H4_BAD_GOOD;
+     97          }
+     98          
+     99          __STATIC_INLINE bool pageHdrIsEraseInProgress(nvm3_PageHdr_t *pageHdr)
+    100          {
+    101            uint16_t EIP = (pageHdr->data[3]);
+    102          
+    103            return EIP != H4_EIP_CLEAR;
+    104          }
+    105          
+    106          __STATIC_INLINE uint32_t pageHdrGetCounterBcod(uint32_t h)
+    107          {
+    108            return (h >> NVM3_PAGE_COUNTER_SIZE) & NVM3_PAGE_BCCB_MASK;
+    109          }
+    110          
+
+   \                                 In section .text, align 2, keep-with-next
+    111          __STATIC_INLINE uint32_t pageHdrGetCounterVal(uint32_t h, EraseCnt_t level)
+    112          {
+    113            uint32_t cnt = (level == eraseCntInverted) ? ~h : h;
+   \                     pageHdrGetCounterVal: (+1)
+   \        0x0   0x2901             CMP      R1,#+1
+   \        0x2   0xBF08             IT       EQ
+   \        0x4   0x43C0             MVNEQ    R0,R0
+    114            return cnt & NVM3_PAGE_COUNTER_MASK;
+   \        0x6   0xF020 0x4078      BIC      R0,R0,#0xF8000000
+   \        0xA   0x4770             BX       LR
+    115          }
+    116          
+
+   \                                 In section .text, align 2, keep-with-next
+    117          __STATIC_INLINE uint32_t pageHdrCounterMake(uint32_t cnt, EraseCnt_t level)
+    118          {
+   \                     pageHdrCounterMake: (+1)
+   \        0x0   0xB501             PUSH     {R0,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+    119            uint8_t  BCCB;
+    120          
+    121            if (level == eraseCntInverted) {
+   \        0x4   0x2901             CMP      R1,#+1
+   \        0x6   0xBF04             ITT      EQ
+   \        0x8   0x43C0             MVNEQ    R0,R0
+   \        0xA   0x9002             STREQ    R0,[SP, #+8]
+    122              cnt = ~cnt;
+    123            }
+    124            cnt &= NVM3_PAGE_COUNTER_MASK;
+   \        0xC   0x9802             LDR      R0,[SP, #+8]
+    125            BCCB = 0;
+   \        0xE   0x2300             MOVS     R3,#+0
+   \       0x10   0xF88D 0x3000      STRB     R3,[SP, #+0]
+   \       0x14   0xF020 0x4078      BIC      R0,R0,#0xF8000000
+   \       0x18   0x9002             STR      R0,[SP, #+8]
+    126            nvm3_utilsComputeBergerCode(&BCCB, &cnt, NVM3_PAGE_COUNTER_SIZE);
+   \       0x1A   0x221B             MOVS     R2,#+27
+   \       0x1C   0xA902             ADD      R1,SP,#+8
+   \       0x1E   0x4668             MOV      R0,SP
+   \       0x20   0x.... 0x....      BL       nvm3_utilsComputeBergerCode
+    127            return ((uint32_t)BCCB << NVM3_PAGE_COUNTER_SIZE) | cnt;
+   \       0x24   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x28   0x9802             LDR      R0,[SP, #+8]
+   \       0x2A   0xEA40 0x60C1      ORR      R0,R0,R1, LSL #+27
+   \       0x2E   0xBD0E             POP      {R1-R3,PC}
+    128          }
+    129          
+    130          // The page size field has a value from 0 to 7 describing page sizes from 512
+    131          // to 65536 bytes. Note: The page size must be a power of 2.
+    132          static uint16_t pageSizeToField(size_t pageSize)
+    133          {
+    134            uint16_t field = 0U;
+    135          
+    136            pageSize /= 512U;
+    137            for (;; ) {
+    138              pageSize /= 2U;
+    139              if (pageSize == 0U) {
+    140                break;
+    141              }
+    142              field++;
+    143            }
+    144          
+    145            return field;
+    146          }
+    147          
+    148          //============================================================================
+    149          #if defined(NVM3_SECURITY)
+    150          sl_status_t nvm3_pageHeaderWrite(const nvm3_HalHandle_t *hal, nvm3_HalPtr_t pageAdr, uint32_t eraseCnt, nvm3_HalInfo_t *halInfo, nvm3_SecurityType_t secType)
+    151          #else
+
+   \                                 In section .text, align 2, keep-with-next
+    152          sl_status_t nvm3_pageHeaderWrite(const nvm3_HalHandle_t *hal, nvm3_HalPtr_t pageAdr, uint32_t eraseCnt, nvm3_HalInfo_t *halInfo)
+    153          #endif
+    154          {
+   \                     nvm3_pageHeaderWrite: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+   \        0x6   0x4605             MOV      R5,R0
+    155            nvm3_PageHdr_t pageHdr;
+    156            uint32_t devInfo;
+    157            uint32_t formatInfo;
+    158            size_t ofs;
+    159            nvm3_HalPtr_t adr;
+    160            sl_status_t staWrite;
+    161            sl_status_t sta = SL_STATUS_OK;
+    162          
+    163            // Create header
+    164            devInfo = ((pageSizeToField(halInfo->pageSize) << H5_PAGESIZE_SHIFT) & H5_PAGESIZE_MASK)
+    165                      + (((halInfo->memoryMapped) << H5_MEMORYMAPPED_SHIFT) & H5_MEMORYMAPPED_MASK)
+    166                      + (((halInfo->writeSize) << H5_WRITESIZE_SHIFT) & H5_WRITESIZE_MASK)
+    167                      + ((halInfo->deviceFamilyPartNumber) & H5_DEVICE_FAMILY_MASK);
+   \        0x8   0x6858             LDR      R0,[R3, #+4]
+   \        0xA   0x460E             MOV      R6,R1
+   \        0xC   0x4690             MOV      R8,R2
+   \        0xE   0x2400             MOVS     R4,#+0
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0x0A40             LSRS     R0,R0,#+9
+   \       0x14   0xE000             B.N      ??nvm3_pageHeaderWrite_0
+   \                     ??nvm3_pageHeaderWrite_1: (+1)
+   \       0x16   0x1C49             ADDS     R1,R1,#+1
+   \                     ??nvm3_pageHeaderWrite_0: (+1)
+   \       0x18   0x0840             LSRS     R0,R0,#+1
+   \       0x1A   0xD1FC             BNE.N    ??nvm3_pageHeaderWrite_1
+   \       0x1C   0x78D8             LDRB     R0,[R3, #+3]
+   \       0x1E   0xB289             UXTH     R1,R1
+   \       0x20   0x881F             LDRH     R7,[R3, #+0]
+   \       0x22   0x0300             LSLS     R0,R0,#+12
+   \       0x24   0xF400 0x5080      AND      R0,R0,#0x1000
+   \       0x28   0xEB00 0x3041      ADD      R0,R0,R1, LSL #+13
+   \       0x2C   0x7899             LDRB     R1,[R3, #+2]
+   \       0x2E   0xF3C7 0x070A      UBFX     R7,R7,#+0,#+11
+    168          #if defined(NVM3_SECURITY)
+    169            formatInfo = ((secType == NVM3_SECURITY_AEAD) ? 0 : 1) + 0xFFFEU;
+    170          #else
+    171            formatInfo = 0xFFFFU;
+    172          #endif
+    173            pageHdr.data[0] = (H1_MAGIC_V1 << H1_MAGIC_SHIFT) | H1_VERSION_V1;
+   \       0x32   0x....             LDR.N    R2,??DataTable1
+   \       0x34   0x02C9             LSLS     R1,R1,#+11
+   \       0x36   0xF401 0x6100      AND      R1,R1,#0x800
+   \       0x3A   0x1808             ADDS     R0,R1,R0
+   \       0x3C   0x183F             ADDS     R7,R7,R0
+   \       0x3E   0x9200             STR      R2,[SP, #+0]
+    174            pageHdr.data[1] = pageHdrCounterMake(eraseCnt, eraseCntNormal);
+   \       0x40   0x2100             MOVS     R1,#+0
+   \       0x42   0x4640             MOV      R0,R8
+   \       0x44   0x.... 0x....      BL       pageHdrCounterMake
+   \       0x48   0x9001             STR      R0,[SP, #+4]
+    175            pageHdr.data[2] = pageHdrCounterMake(eraseCnt, eraseCntInverted);
+   \       0x4A   0x2101             MOVS     R1,#+1
+   \       0x4C   0x4640             MOV      R0,R8
+   \       0x4E   0x.... 0x....      BL       pageHdrCounterMake
+    176            pageHdr.data[3] = 0xffffffffU;
+   \       0x52   0xF04F 0x31FF      MOV      R1,#+4294967295
+    177            pageHdr.data[4] = (formatInfo << 16) | devInfo;
+   \       0x56   0xF047 0x477F      ORR      R7,R7,#0xFF000000
+   \       0x5A   0x9002             STR      R0,[SP, #+8]
+   \       0x5C   0x9103             STR      R1,[SP, #+12]
+   \       0x5E   0xF447 0x077F      ORR      R7,R7,#0xFF0000
+   \       0x62   0x9704             STR      R7,[SP, #+16]
+    178            //printf("-> hdrWr: adr=%p, cnt=%u, 1=0x%08x, 2=0x%08x\n", pageAdr, eraseCnt, pageHdr.data[1], pageHdr.data[2]);
+    179          
+    180            // Write header in the following order: H5 -> H3 -> H2 -> H1
+    181            // Write H5
+    182            ofs = 4 * sizeof(uint32_t);
+    183            adr = (nvm3_HalPtr_t)((size_t)pageAdr + ofs);
+    184            staWrite = nvm3_halWriteWords(hal, adr, &(pageHdr.data[4]), 1);
+   \       0x64   0x69AB             LDR      R3,[R5, #+24]
+   \       0x66   0x2201             MOVS     R2,#+1
+   \       0x68   0xA904             ADD      R1,SP,#+16
+   \       0x6A   0xF106 0x0010      ADD      R0,R6,#+16
+   \       0x6E   0x4798             BLX      R3
+    185            if (staWrite != SL_STATUS_OK) {
+   \       0x70   0x.... 0x....      BL       ?Subroutine0
+    186              sta = staWrite;
+    187            }
+    188          
+    189            // Write H4
+    190            // Do not write 0xffffffff
+    191          
+    192            // Write H3
+    193            ofs = 2 * sizeof(uint32_t);
+    194            adr = (nvm3_HalPtr_t)((size_t)pageAdr + ofs);
+    195            staWrite = nvm3_halWriteWords(hal, adr, &(pageHdr.data[2]), 1);
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x74   0xA902             ADD      R1,SP,#+8
+   \       0x76   0xF106 0x0008      ADD      R0,R6,#+8
+   \       0x7A   0x4798             BLX      R3
+    196            if (staWrite != SL_STATUS_OK) {
+   \       0x7C   0x.... 0x....      BL       ?Subroutine0
+    197              sta = staWrite;
+    198            }
+    199          
+    200            // Write H2
+    201            ofs = 1 * sizeof(uint32_t);
+    202            adr = (nvm3_HalPtr_t)((size_t)pageAdr + ofs);
+    203            staWrite = nvm3_halWriteWords(hal, adr, &(pageHdr.data[1]), 1);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x80   0xA901             ADD      R1,SP,#+4
+   \       0x82   0x1D30             ADDS     R0,R6,#+4
+   \       0x84   0x4798             BLX      R3
+    204            if (staWrite != SL_STATUS_OK) {
+   \       0x86   0x.... 0x....      BL       ?Subroutine0
+    205              sta = staWrite;
+    206            }
+    207          
+    208            // Write H1
+    209            ofs = 0;
+    210            adr = (nvm3_HalPtr_t)((size_t)pageAdr + ofs);
+    211            staWrite = nvm3_halWriteWords(hal, adr, &(pageHdr.data[0]), 1);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x8A   0x4669             MOV      R1,SP
+   \       0x8C   0x4630             MOV      R0,R6
+   \       0x8E   0x4798             BLX      R3
+    212            if (staWrite != SL_STATUS_OK) {
+   \       0x90   0xB100             CBZ.N    R0,??nvm3_pageHeaderWrite_2
+    213              sta = staWrite;
+   \       0x92   0x4604             MOV      R4,R0
+    214            }
+    215          
+    216            return sta;
+   \                     ??nvm3_pageHeaderWrite_2: (+1)
+   \       0x94   0x4620             MOV      R0,R4
+   \       0x96   0xB006             ADD      SP,SP,#+24
+   \       0x98   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    217          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xB100             CBZ.N    R0,??Subroutine0_0
+   \        0x2   0x4604             MOV      R4,R0
+   \                     ??Subroutine0_0: (+1)
+   \        0x4   0x69AB             LDR      R3,[R5, #+24]
+   \        0x6   0x2201             MOVS     R2,#+1
+   \        0x8   0x4770             BX       LR
+    218          
+    219          /*** Mark page as bad page */
+
+   \                                 In section .text, align 2, keep-with-next
+    220          void nvm3_pageSetBad(const nvm3_HalHandle_t *hal, nvm3_HalPtr_t pageAdr)
+    221          {
+   \                     nvm3_pageSetBad: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine1
+    222            uint32_t  h4Rd;
+    223            uint32_t  h4Wr;
+    224            nvm3_HalPtr_t adr;
+    225          
+    226            nvm3_tracePrint(NVM3_TRACE_LEVEL_WARNING, "nvm3_pageSetBad, pageAdr=0x%p.\n", pageAdr);
+    227          
+    228            adr = (nvm3_HalPtr_t)((size_t)pageAdr + NVM3_PAGE_H4_OFFSET);
+    229            nvm3_halReadWords(hal, adr, &h4Rd, 1);
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \        0x6   0xA901             ADD      R1,SP,#+4
+   \        0x8   0x4628             MOV      R0,R5
+   \        0xA   0x4798             BLX      R3
+    230          
+    231            h4Wr = h4Rd & ~H4_BAD_MASK;
+    232            h4Wr |= (H4_BAD_NOTGOOD << H4_BAD_SHIFT);
+   \        0xC   0x9801             LDR      R0,[SP, #+4]
+    233            (void)nvm3_halWriteWords(hal, adr, &h4Wr, 1);
+   \        0xE   0x2201             MOVS     R2,#+1
+   \       0x10   0x4669             MOV      R1,SP
+   \       0x12   0xB280             UXTH     R0,R0
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+   \       0x16   0x69A3             LDR      R3,[R4, #+24]
+   \       0x18   0x4628             MOV      R0,R5
+   \       0x1A   0x4798             BLX      R3
+    234          
+    235            // There is no recovery from a write error at this point.
+    236          }
+   \       0x1C   0xBD37             POP      {R0-R2,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x6963             LDR      R3,[R4, #+20]
+   \        0x4   0xF101 0x050C      ADD      R5,R1,#+12
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0x4770             BX       LR
+    237          
+
+   \                                 In section .text, align 2, keep-with-next
+    238          sl_status_t nvm3_pageSetEip(const nvm3_HalHandle_t *hal, nvm3_HalPtr_t pageAdr)
+    239          {
+   \                     nvm3_pageSetEip: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine1
+    240            uint32_t  h4Rd;
+    241            uint32_t  h4Wr;
+    242            nvm3_HalPtr_t adr;
+    243            sl_status_t sta = SL_STATUS_OK;
+    244          
+    245            nvm3_tracePrint(NVM3_TRACE_LEVEL_LOW, "nvm3_pageSetEip, pageAdr=0x%p.\n", pageAdr);
+    246          
+    247            adr = (nvm3_HalPtr_t)((size_t)pageAdr + NVM3_PAGE_H4_OFFSET);
+    248            nvm3_halReadWords(hal, adr, &h4Rd, 1);
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0x6   0x4669             MOV      R1,SP
+   \        0x8   0x4628             MOV      R0,R5
+   \        0xA   0x4798             BLX      R3
+    249            if ((h4Rd & H4_EIP_MASK) == H4_EIP_CLEAR) {
+   \        0xC   0x9800             LDR      R0,[SP, #+0]
+   \        0xE   0x2600             MOVS     R6,#+0
+   \       0x10   0xF64F 0x71FF      MOVW     R1,#+65535
+   \       0x14   0xB280             UXTH     R0,R0
+   \       0x16   0x4288             CMP      R0,R1
+   \       0x18   0xD10B             BNE.N    ??nvm3_pageSetEip_0
+    250              h4Wr = (h4Rd & ~H4_EIP_MASK);
+    251              h4Wr |= H4_EIP_SET;
+   \       0x1A   0x9800             LDR      R0,[SP, #+0]
+   \       0x1C   0xF24A 0x51A5      MOVW     R1,#+42405
+    252              sta = nvm3_halWriteWords(hal, adr, &h4Wr, 1);
+   \       0x20   0x2201             MOVS     R2,#+1
+   \       0x22   0xF361 0x000F      BFI      R0,R1,#+0,#+16
+   \       0x26   0x9001             STR      R0,[SP, #+4]
+   \       0x28   0x69A3             LDR      R3,[R4, #+24]
+   \       0x2A   0xA901             ADD      R1,SP,#+4
+   \       0x2C   0x4628             MOV      R0,R5
+   \       0x2E   0x4798             BLX      R3
+   \       0x30   0x4606             MOV      R6,R0
+    253            }
+    254          
+    255            return sta;
+   \                     ??nvm3_pageSetEip_0: (+1)
+   \       0x32   0x4630             MOV      R0,R6
+   \       0x34   0xBD76             POP      {R1,R2,R4-R6,PC}
+    256          }
+    257          
+
+   \                                 In section .text, align 2, keep-with-next
+    258          uint32_t nvm3_pageGetEraseCnt(nvm3_PageHdr_t *pageHdr)
+    259          {
+   \                     nvm3_pageGetEraseCnt: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    260            uint8_t BCCB;
+    261          
+    262            BCCB = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    263            nvm3_utilsComputeBergerCode(&BCCB, &(pageHdr->data[1]), NVM3_PAGE_COUNTER_SIZE);
+   \        0xA   0x221B             MOVS     R2,#+27
+   \        0xC   0x1D21             ADDS     R1,R4,#+4
+   \        0xE   0x4668             MOV      R0,SP
+   \       0x10   0x.... 0x....      BL       nvm3_utilsComputeBergerCode
+    264            if (BCCB == pageHdrGetCounterBcod(pageHdr->data[1])) {
+   \       0x14   0x6860             LDR      R0,[R4, #+4]
+   \       0x16   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x1A   0xEBB1 0x6FD0      CMP      R1,R0, LSR #+27
+   \       0x1E   0xBF08             IT       EQ
+   \       0x20   0x2100             MOVEQ    R1,#+0
+    265              return pageHdrGetCounterVal(pageHdr->data[1], eraseCntNormal);
+   \       0x22   0xD00F             BEQ.N    ??nvm3_pageGetEraseCnt_0
+    266            }
+    267          
+    268            BCCB = 0;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    269            nvm3_utilsComputeBergerCode(&BCCB, &(pageHdr->data[2]), NVM3_PAGE_COUNTER_SIZE);
+   \       0x2A   0x221B             MOVS     R2,#+27
+   \       0x2C   0xF104 0x0108      ADD      R1,R4,#+8
+   \       0x30   0x4668             MOV      R0,SP
+   \       0x32   0x.... 0x....      BL       nvm3_utilsComputeBergerCode
+    270            if (BCCB == pageHdrGetCounterBcod(pageHdr->data[2])) {
+   \       0x36   0x68A0             LDR      R0,[R4, #+8]
+   \       0x38   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x3C   0xEBB1 0x6FD0      CMP      R1,R0, LSR #+27
+   \       0x40   0xD103             BNE.N    ??nvm3_pageGetEraseCnt_1
+    271              return pageHdrGetCounterVal(pageHdr->data[2], eraseCntInverted);
+   \       0x42   0x2101             MOVS     R1,#+1
+   \                     ??nvm3_pageGetEraseCnt_0: (+1)
+   \       0x44   0x.... 0x....      BL       pageHdrGetCounterVal
+   \       0x48   0xBD16             POP      {R1,R2,R4,PC}
+    272            }
+    273          
+    274            //printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ERROR: getEraseCount failed!\n");
+    275            return NVM3_ERASE_COUNT_INVALID;
+   \                     ??nvm3_pageGetEraseCnt_1: (+1)
+   \       0x4A   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x4E   0xBD16             POP      {R1,R2,R4,PC}
+    276          }
+    277          
+
+   \                                 In section .text, align 2, keep-with-next
+    278          nvm3_PageState_t nvm3_pageGetState(nvm3_PageHdr_t *pageHdr)
+    279          {
+   \                     nvm3_pageGetState: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    280            nvm3_PageState_t pageState;
+    281            uint32_t eraseCnt = NVM3_ERASE_COUNT_INVALID;
+    282            bool pageHdrValid;
+    283          
+    284            pageHdrValid = pageHdrMagicAndVersion(pageHdr);
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0xF24B 0x229A      MOVW     R2,#+45722
+   \        0xA   0x0C01             LSRS     R1,R0,#+16
+   \        0xC   0x4291             CMP      R1,R2
+   \        0xE   0xBF04             ITT      EQ
+   \       0x10   0xB280             UXTHEQ   R0,R0
+   \       0x12   0x2801             CMPEQ    R0,#+1
+   \       0x14   0xD114             BNE.N    ??nvm3_pageGetState_0
+    285          
+    286            if (pageHdrValid) {
+    287              eraseCnt = nvm3_pageGetEraseCnt(pageHdr);
+    288            }
+    289          
+    290            if (eraseCnt != NVM3_ERASE_COUNT_INVALID) {
+   \       0x16   0x4620             MOV      R0,R4
+   \       0x18   0x.... 0x....      BL       nvm3_pageGetEraseCnt
+   \       0x1C   0xF110 0x0F01      CMN      R0,#+1
+   \       0x20   0xD00E             BEQ.N    ??nvm3_pageGetState_0
+    291              if (pageHdrIsPageBad(pageHdr)) {
+   \       0x22   0x68E0             LDR      R0,[R4, #+12]
+   \       0x24   0xF64F 0x71FF      MOVW     R1,#+65535
+   \       0x28   0x0C02             LSRS     R2,R0,#+16
+   \       0x2A   0x428A             CMP      R2,R1
+   \       0x2C   0xD001             BEQ.N    ??nvm3_pageGetState_1
+    292                pageState = nvm3_PageStateBad;
+   \       0x2E   0x2002             MOVS     R0,#+2
+   \       0x30   0xBD10             POP      {R4,PC}
+    293              } else if (pageHdrIsEraseInProgress(pageHdr)) {
+   \                     ??nvm3_pageGetState_1: (+1)
+   \       0x32   0xB280             UXTH     R0,R0
+   \       0x34   0x4288             CMP      R0,R1
+   \       0x36   0xD001             BEQ.N    ??nvm3_pageGetState_2
+   \       0x38   0x2001             MOVS     R0,#+1
+   \       0x3A   0xBD10             POP      {R4,PC}
+   \                     ??nvm3_pageGetState_2: (+1)
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0xBD10             POP      {R4,PC}
+    294                pageState = nvm3_PageStateGoodEip;
+    295              } else {
+    296                pageState = nvm3_PageStateGood;
+    297              }
+    298            } else {
+    299              if (pageHdrErased(pageHdr)) {
+   \                     ??nvm3_pageGetState_0: (+1)
+   \       0x40   0x6820             LDR      R0,[R4, #+0]
+   \       0x42   0xF110 0x0F01      CMN      R0,#+1
+   \       0x46   0xD101             BNE.N    ??nvm3_pageGetState_3
+    300                pageState = nvm3_PageStateInvalidErased;
+   \       0x48   0x2003             MOVS     R0,#+3
+   \       0x4A   0xBD10             POP      {R4,PC}
+    301              } else {
+    302                pageState = nvm3_PageStateInvalidUnknown;
+   \                     ??nvm3_pageGetState_3: (+1)
+   \       0x4C   0x2004             MOVS     R0,#+4
+    303              }
+    304            }
+    305          
+    306            return pageState;
+   \       0x4E   0xBD10             POP      {R4,PC}
+    307          }
+    308          
+
+   \                                 In section .text, align 2, keep-with-next
+    309          bool nvm3_pageStateIsGood(nvm3_PageState_t pageState)
+    310          {
+    311            return ((pageState == nvm3_PageStateGood) || (pageState == nvm3_PageStateGoodEip));
+   \                     nvm3_pageStateIsGood: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xBF18             IT       NE
+   \        0x4   0x2801             CMPNE    R0,#+1
+   \        0x6   0xD101             BNE.N    ??nvm3_pageStateIsGood_0
+   \        0x8   0x2001             MOVS     R0,#+1
+   \        0xA   0x4770             BX       LR
+   \                     ??nvm3_pageStateIsGood_0: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x4770             BX       LR
+    312          }
+    313          
+
+   \                                 In section .text, align 2, keep-with-next
+    314          bool nvm3_pageStateIsInvalid(nvm3_PageState_t pageState)
+    315          {
+    316            return ((pageState == nvm3_PageStateInvalidErased) || (pageState == nvm3_PageStateInvalidUnknown));
+   \                     nvm3_pageStateIsInvalid: (+1)
+   \        0x0   0x2803             CMP      R0,#+3
+   \        0x2   0xBF18             IT       NE
+   \        0x4   0x2804             CMPNE    R0,#+4
+   \        0x6   0xD101             BNE.N    ??nvm3_pageStateIsInvalid_0
+   \        0x8   0x2001             MOVS     R0,#+1
+   \        0xA   0x4770             BX       LR
+   \                     ??nvm3_pageStateIsInvalid_0: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x4770             BX       LR
+    317          }
+    318          
+
+   \                                 In section .text, align 2, keep-with-next
+    319          nvm3_ObjPtr_t nvm3_pageGetFirstObj(nvm3_HalPtr_t pageAdr)
+    320          {
+    321            return (nvm3_ObjPtr_t)((size_t)pageAdr + NVM3_PAGE_HEADER_SIZE);
+   \                     nvm3_pageGetFirstObj: (+1)
+   \        0x0   0x3014             ADDS     R0,R0,#+20
+   \        0x2   0x4770             BX       LR
+    322          }
+    323          
+    324          #if defined(NVM3_SECURITY)
+    325          sl_status_t nvm3_pageErase(const nvm3_HalHandle_t *hal, nvm3_HalPtr_t pageAdr, uint32_t eraseCnt, nvm3_HalInfo_t *halInfo, nvm3_SecurityType_t secType)
+    326          #else
+
+   \                                 In section .text, align 2, keep-with-next
+    327          sl_status_t nvm3_pageErase(const nvm3_HalHandle_t *hal, nvm3_HalPtr_t pageAdr, uint32_t eraseCnt, nvm3_HalInfo_t *halInfo)
+    328          #endif
+    329          {
+   \                     nvm3_pageErase: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4605             MOV      R5,R0
+   \        0x6   0x460E             MOV      R6,R1
+    330            sl_status_t sta;
+    331          
+    332            nvm3_tracePrint(NVM3_TRACE_LEVEL_LOW, "nvm3_pageErase: adr=0x%p, eraseCnt=%lu.\n", pageAdr, eraseCnt);
+    333          
+    334            // Erase
+    335            sta = nvm3_halPageErase(hal, pageAdr);
+   \        0x8   0x6929             LDR      R1,[R5, #+16]
+   \        0xA   0x4617             MOV      R7,R2
+   \        0xC   0x4698             MOV      R8,R3
+   \        0xE   0x4630             MOV      R0,R6
+   \       0x10   0x4788             BLX      R1
+   \       0x12   0x0004             MOVS     R4,R0
+    336            if (sta == SL_STATUS_OK) {
+   \       0x14   0xD107             BNE.N    ??nvm3_pageErase_0
+    337              // Create new page header
+    338          #if defined(NVM3_SECURITY)
+    339              sta = nvm3_pageHeaderWrite(hal, pageAdr, eraseCnt, halInfo, secType);
+    340          #else
+    341              sta = nvm3_pageHeaderWrite(hal, pageAdr, eraseCnt, halInfo);
+   \       0x16   0x4643             MOV      R3,R8
+   \       0x18   0x463A             MOV      R2,R7
+   \       0x1A   0x4631             MOV      R1,R6
+   \       0x1C   0x4628             MOV      R0,R5
+   \       0x1E   0x.... 0x....      BL       nvm3_pageHeaderWrite
+   \       0x22   0x0004             MOVS     R4,R0
+    342          #endif
+    343              if (sta != SL_STATUS_OK) {
+   \       0x24   0xD003             BEQ.N    ??nvm3_pageErase_1
+    344                nvm3_tracePrint(NVM3_TRACE_LEVEL_WARNING, "erasePage: adr=0x%p, Write hdr ERROR, mark page as BAD.\n", pageAdr);
+    345                nvm3_pageSetBad(hal, pageAdr);
+    346              }
+    347            } else {
+    348              // Erasure failed, mark page as BAD
+    349              nvm3_tracePrint(NVM3_TRACE_LEVEL_WARNING, "erasePage: adr=0x%p, Erase ERROR, page is marked as BAD.\n", pageAdr);
+    350              nvm3_pageSetBad(hal, pageAdr);
+   \                     ??nvm3_pageErase_0: (+1)
+   \       0x26   0x4631             MOV      R1,R6
+   \       0x28   0x4628             MOV      R0,R5
+   \       0x2A   0x.... 0x....      BL       nvm3_pageSetBad
+    351            }
+    352          
+    353            return sta;
+   \                     ??nvm3_pageErase_1: (+1)
+   \       0x2E   0x4620             MOV      R0,R4
+   \       0x30   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    354          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0xB29A'0001        DC32     0xb29a0001
+    355          
+    356          #if defined(NVM3_SECURITY)
+    357          /***************************************************************************//**
+    358           * Get NVM3 security type.
+    359           *
+    360           * @param[in]  pageHdr     Page header of a valid page.
+    361           *
+    362           * @return                 Returns NVM3 security type.
+    363           ******************************************************************************/
+    364          nvm3_SecurityType_t nvm3_pageGetSecType(nvm3_PageHdr_t *pageHdr)
+    365          {
+    366            nvm3_SecurityType_t secType = NVM3_SECURITY_INVALID;
+    367          
+    368            if (((pageHdr->data[4] & H5_SECTYPE_AEAD_MASK) >> H5_SECTYPE_AEAD_SHIFT) == 0) {
+    369              secType = NVM3_SECURITY_AEAD;
+    370            }
+    371          
+    372            return secType;
+    373          }
+    374          #endif
+    375          /** @endcond */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   nvm3_pageErase
+        24   -- Indirect call
+        24   -> nvm3_pageHeaderWrite
+        24   -> nvm3_pageSetBad
+      16   nvm3_pageGetEraseCnt
+        16   -> nvm3_utilsComputeBergerCode
+        16   -> pageHdrGetCounterVal
+       0   nvm3_pageGetFirstObj
+       8   nvm3_pageGetState
+         8   -> nvm3_pageGetEraseCnt
+      48   nvm3_pageHeaderWrite
+        48   -- Indirect call
+        48   -> pageHdrCounterMake
+      24   nvm3_pageSetBad
+        24   -- Indirect call
+      24   nvm3_pageSetEip
+        24   -- Indirect call
+       0   nvm3_pageStateIsGood
+       0   nvm3_pageStateIsInvalid
+      16   pageHdrCounterMake
+        16   -> nvm3_utilsComputeBergerCode
+       0   pageHdrGetCounterVal
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+      10  ?Subroutine0
+      12  ?Subroutine1
+      52  nvm3_pageErase
+      80  nvm3_pageGetEraseCnt
+       4  nvm3_pageGetFirstObj
+      80  nvm3_pageGetState
+     156  nvm3_pageHeaderWrite
+      30  nvm3_pageSetBad
+      54  nvm3_pageSetEip
+      16  nvm3_pageStateIsGood
+      16  nvm3_pageStateIsInvalid
+      48  pageHdrCounterMake
+      12  pageHdrGetCounterVal
+
+ 
+ 574 bytes in section .text
+ 
+ 574 bytes of CODE memory
+
+Errors: none
+Warnings: none

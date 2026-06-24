@@ -1,0 +1,606 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:06
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_retarget.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_3805666523351537575.dir\sl_memory_manager_retarget.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_retarget.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_3805666523351537575.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_3805666523351537575.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_3805666523351537575.dir\sl_memory_manager_retarget.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_3805666523351537575.dir\sl_memory_manager_retarget.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_3805666523351537575.dir\sl_memory_manager_retarget.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_3805666523351537575.dir\sl_memory_manager_retarget.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\sl_memory_manager_retarget.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Memory Manager Driver's Retarget Implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_memory_manager.h"
+     32          
+     33          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     34          #include "sl_component_catalog.h"
+     35          #endif
+     36          
+     37          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+     38          #include "sli_memory_profiler.h"
+     39          #endif
+     40          
+     41          #if defined(__GNUC__)
+     42          #include <sys/reent.h>
+     43          
+     44          // Wrapping a system function with GCC works by using the linker option '--wrap=symbol'.
+     45          // Any undefined reference to "symbol" will be resolved to "__wrap_symbol".
+     46          // Any undefined reference to "__real_symbol" will be resolved to "symbol".
+     47          // In our case, "__real_symbol" is not really required as the retargeted standard
+     48          // C memory functions will call the corresponding Memory Manager (MM)
+     49          // native function and not the standard functions again. So it should be seen:
+     50          // standard _malloc_r()  -> MM sl_malloc()
+     51          // standard _free_r()    -> MM sl_free()
+     52          // standard _calloc_r()  -> MM sl_calloc()
+     53          // standard _realloc_r() -> MM sl_realloc()
+     54          #define STD_LIB_WRAPPER_MALLOC  __wrap__malloc_r
+     55          #define STD_LIB_WRAPPER_FREE    __wrap__free_r
+     56          #define STD_LIB_WRAPPER_CALLOC  __wrap__calloc_r
+     57          #define STD_LIB_WRAPPER_REALLOC __wrap__realloc_r
+     58          
+     59          // The GNU gold linker has an issue with LTO and wrapping, where the symbol is
+     60          // stripped even if it is used in the source code, which leads to link-time errors.
+     61          // https://sourceware.org/bugzilla/show_bug.cgi?id=24415
+     62          // By marking the wrapper as externally_visible, the symbol will not be stripped
+     63          // from the final binary, regardless if it is referenced or not in the source code.
+     64          #if !defined(__clang__)
+     65          #define ATTR_EXT_VIS    __attribute__((externally_visible))
+     66          #else
+     67          // The 'externally_visible' attribute is not supported by clang, but the 'used'
+     68          // attribute has a similar effect in preventing the compiler from stripping symbols.
+     69          // However, for this wrapper, we can leave it empty for clang.
+     70          #define ATTR_EXT_VIS
+     71          #endif
+     72          
+     73          // Reentrant parameter.
+     74          #define RARG            const struct _reent *reent,
+     75          #define VOID_RARG       (void) reent
+     76          
+     77          #elif defined(__IAR_SYSTEMS_ICC__)
+     78          // Wrapping a system function works with IAR by patching symbol definitions using $Super$$ and $Sub$$
+     79          // The $Super$$ special pattern identifies the original unpatched function used for calling
+     80          // the original function directly.
+     81          // The $Sub$$ special pattern identifies the new function that is called instead of the
+     82          // original function.
+     83          // In our case, $Super$$ is not really required as the retargeted standard
+     84          // C memory functions will call the corresponding Memory Manager (MM)
+     85          // native function and not the standard functions again.
+     86          //
+     87          // NOTE: IAR supports three separate heap memory handlers: the basic, the advanced, and the no-free
+     88          //       heap handlers.
+     89          //       - If there are calls to heap memory allocation routines in your application, but no calls
+     90          //         to heap deallocation routines, the linker automatically chooses the no-free heap.
+     91          //       - If there are calls to heap memory allocation routines in your application, the linker
+     92          //         automatically chooses the advanced heap.
+     93          //       - If there are calls to heap memory allocation routines in a library for example, the linker
+     94          //         automatically chooses the basic heap.
+     95          //
+     96          //       Depending on the heap handler type, IAR will select a different malloc/free/calloc/realloc
+     97          //       implementation provided by the IAR system library. That's why, there are different sets of
+     98          //       macros below below to wrap the right IAR standard memory functions with $Sub$$.
+     99          //       - Basic heap:    IAR memory functions are prefixed with "basic_"
+    100          //       - Advanced heap: IAR memory functions are prefixed with "dl"
+    101          //       - No Free heap:  IAR memory functions are prefixed with "no_free"
+    102          //
+    103          //       For No Free heap, IAR does not provide a free and realloc implementation.
+    104          #if (__VER__ == 8050009)
+    105          #define STD_LIB_WRAPPER_MALLOC  $Sub$$__iar_dlmalloc
+    106          #define STD_LIB_WRAPPER_FREE    $Sub$$__iar_dlfree
+    107          #define STD_LIB_WRAPPER_CALLOC  $Sub$$__iar_dlcalloc
+    108          #define STD_LIB_WRAPPER_REALLOC $Sub$$__iar_dlrealloc
+    109          #elif (__VER__ == 9040001) || (__VER__ == 9060004) || (__VER__ == 9070004)
+    110          #define STD_LIB_WRAPPER_MALLOC  $Sub$$__basic_malloc
+    111          #define STD_LIB_WRAPPER_FREE    $Sub$$__basic_free
+    112          #define STD_LIB_WRAPPER_CALLOC  $Sub$$__basic_calloc
+    113          #define STD_LIB_WRAPPER_REALLOC $Sub$$__basic_realloc
+    114          
+    115          #define STD_LIB_WRAPPER_MALLOC_ADVANCED  $Sub$$__iar_dlmalloc
+    116          #define STD_LIB_WRAPPER_FREE_ADVANCED    $Sub$$__iar_dlfree
+    117          #define STD_LIB_WRAPPER_CALLOC_ADVANCED  $Sub$$__iar_dlcalloc
+    118          #define STD_LIB_WRAPPER_REALLOC_ADVANCED $Sub$$__iar_dlrealloc
+    119          
+    120          #define STD_LIB_WRAPPER_MALLOC_NO_FREE  $Sub$$__no_free_malloc
+    121          #define STD_LIB_WRAPPER_CALLOC_NO_FREE  $Sub$$__no_free_calloc
+    122          #else
+    123          #error Unsupported IAR compiler version for standard C memory functions retarget
+    124          #endif
+    125          
+    126          // Since IAR does not use LTO, resolve the attribute as nothing.
+    127          #define ATTR_EXT_VIS
+    128          
+    129          // Since IAR does not use reentrant functions, resolve reentrant parameter to nothing.
+    130          #define RARG
+    131          #define VOID_RARG
+    132          
+    133          #else
+    134          #error Unsupported compiler for standard C memory functions retarget
+    135          #endif
+    136          
+    137          #if defined(TEST_MEMORY_MANAGER_RETARGET_PRESENT)
+    138          volatile uint32_t retarget_malloc_counter = 0;
+    139          volatile uint32_t retarget_free_counter = 0;
+    140          volatile uint32_t retarget_calloc_counter = 0;
+    141          volatile uint32_t retarget_realloc_counter = 0;
+    142          #endif
+    143          
+    144          /*******************************************************************************
+    145           **************************   GLOBAL FUNCTIONS   *******************************
+    146           ******************************************************************************/
+    147          
+    148          /***************************************************************************//**
+    149           * malloc() wrapper. Allocates a memory block of at least requested size from
+    150           * the heap.
+    151           *
+    152           * @param[in] size  Size of the block, in bytes.
+    153           *
+    154           * @return    Pointer to allocated block if successful. Null pointer if
+    155           *            allocation failed.
+    156           *
+    157           * @note Requesting a block of 0 byte will return a null pointer.
+    158           *
+    159           * @note All allocated blocks using this function will be considered long-term
+    160           *       allocations.
+    161           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    162          ATTR_EXT_VIS void *STD_LIB_WRAPPER_MALLOC(RARG
+    163                                                    size_t size)
+    164          {
+    165          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    166            void * volatile return_address = sli_memory_profiler_get_return_address();
+    167          #endif
+    168            VOID_RARG;
+    169            void *ptr;
+    170          
+    171            ptr = sl_malloc(size);
+    172          #if defined(TEST_MEMORY_MANAGER_RETARGET_PRESENT)
+    173            retarget_malloc_counter++;
+    174          #endif
+    175          
+    176          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    177            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    178                                                ptr,
+    179                                                return_address);
+    180          #endif
+    181          
+    182            return ptr;
+   \                     `$Sub$$__basic_malloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_malloc
+    183          }
+    184          
+    185          #if defined(__IAR_SYSTEMS_ICC__) && ((__VER__ == 9040001) || (__VER__ == 9070004))
+
+   \                                 In section .text, align 2, keep-with-next
+    186          void *STD_LIB_WRAPPER_MALLOC_ADVANCED(size_t size)
+    187          {
+    188          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    189            void * volatile return_address = sli_memory_profiler_get_return_address();
+    190          #endif
+    191            void *ptr;
+    192          
+    193            ptr = sl_malloc(size);
+    194          
+    195          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    196            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    197                                                ptr,
+    198                                                return_address);
+    199          #endif
+    200          
+    201            return ptr;
+   \                     `$Sub$$__iar_dlmalloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_malloc
+    202          }
+    203          
+
+   \                                 In section .text, align 2, keep-with-next
+    204          void *STD_LIB_WRAPPER_MALLOC_NO_FREE(size_t size)
+    205          {
+    206          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    207            void * volatile return_address = sli_memory_profiler_get_return_address();
+    208          #endif
+    209            void *ptr;
+    210          
+    211            ptr = sl_malloc(size);
+    212          
+    213          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    214            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    215                                                ptr,
+    216                                                return_address);
+    217          #endif
+    218          
+    219            return ptr;
+   \                     `$Sub$$__no_free_malloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_malloc
+    220          }
+    221          #endif
+    222          
+    223          /***************************************************************************//**
+    224           * free() wrapper. Frees a previously allocated block back into the heap.
+    225           *
+    226           * @param[in] ptr   Pointer to memory block to be freed.
+    227           *
+    228           * @note Passing a null pointer does nothing.
+    229           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    230          ATTR_EXT_VIS void STD_LIB_WRAPPER_FREE(RARG
+    231                                                 void *ptr)
+    232          {
+    233            VOID_RARG;
+    234            sl_free(ptr);
+   \                     `$Sub$$__basic_free`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_free
+    235          #if defined(TEST_MEMORY_MANAGER_RETARGET_PRESENT)
+    236            retarget_free_counter++;
+    237          #endif
+    238          }
+    239          
+    240          #if defined(__IAR_SYSTEMS_ICC__) && ((__VER__ == 9040001) || (__VER__ == 9070004))
+
+   \                                 In section .text, align 2, keep-with-next
+    241          void STD_LIB_WRAPPER_FREE_ADVANCED(void *ptr)
+    242          {
+    243            sl_free(ptr);
+   \                     `$Sub$$__iar_dlfree`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_free
+    244          }
+    245          #endif
+    246          
+    247          /***************************************************************************//**
+    248           * calloc() wrapper. Dynamically allocates a block of memory cleared to 0.
+    249           *
+    250           * @param[in] item_count  Number of elements to be allocated.
+    251           * @param[in] size        Size of each elements, in bytes.
+    252           *
+    253           * @return Pointer to allocated block if successful. Null pointer if
+    254           *         allocation failed.
+    255           *
+    256           * @note All allocated blocks using this function will be considered long-term
+    257           *       allocations.
+    258           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    259          ATTR_EXT_VIS void *STD_LIB_WRAPPER_CALLOC(RARG
+    260                                                    size_t item_count,
+    261                                                    size_t size)
+    262          {
+    263          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    264            void * volatile return_address = sli_memory_profiler_get_return_address();
+    265          #endif
+    266            VOID_RARG;
+    267            void *ptr;
+    268          
+    269            ptr = sl_calloc(item_count, size);
+    270          #if defined(TEST_MEMORY_MANAGER_RETARGET_PRESENT)
+    271            retarget_calloc_counter++;
+    272          #endif
+    273          
+    274          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    275            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    276                                                ptr,
+    277                                                return_address);
+    278          #endif
+    279          
+    280            return ptr;
+   \                     `$Sub$$__basic_calloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_calloc
+    281          }
+    282          
+    283          #if defined(__IAR_SYSTEMS_ICC__) && ((__VER__ == 9040001) || (__VER__ == 9070004))
+
+   \                                 In section .text, align 2, keep-with-next
+    284          void *STD_LIB_WRAPPER_CALLOC_ADVANCED(size_t item_count,
+    285                                                size_t size)
+    286          {
+    287          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    288            void * volatile return_address = sli_memory_profiler_get_return_address();
+    289          #endif
+    290            void *ptr;
+    291          
+    292            ptr = sl_calloc(item_count, size);
+    293          
+    294          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    295            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    296                                                ptr,
+    297                                                return_address);
+    298          #endif
+    299          
+    300            return ptr;
+   \                     `$Sub$$__iar_dlcalloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_calloc
+    301          }
+    302          
+
+   \                                 In section .text, align 2, keep-with-next
+    303          void *STD_LIB_WRAPPER_CALLOC_NO_FREE(size_t item_count,
+    304                                               size_t size)
+    305          {
+    306          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    307            void * volatile return_address = sli_memory_profiler_get_return_address();
+    308          #endif
+    309            void *ptr;
+    310          
+    311            ptr = sl_calloc(item_count, size);
+    312          
+    313          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    314            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    315                                                ptr,
+    316                                                return_address);
+    317          #endif
+    318          
+    319            return ptr;
+   \                     `$Sub$$__no_free_calloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_calloc
+    320          }
+    321          #endif
+    322          
+    323          /***************************************************************************//**
+    324           * realloc() wrapper. Resizes a previously allocated memory block.
+    325           *
+    326           * @param[in] ptr   Pointer to the allocation to resize. If NULL, behavior
+    327           *                  is same as sl_malloc(), sl_memory_alloc().
+    328           * @param[in] size  New size of the block, in bytes. If 0, behavior is same as
+    329           *                  sl_free(), sl_memory_free().
+    330           *
+    331           * @return Pointer to newly allocated block, if successful. Null pointer if
+    332           *         re-allocation failed.
+    333           *
+    334           * @note All re-allocated blocks using this function will be considered
+    335           *       long-term allocations.
+    336           *
+    337           * @note 'ptr' NULL and 'size' of 0 bytes is an incorrect parameters
+    338           *       combination. No reallocation will be done by the function as it is
+    339           *       an error condition.
+    340           *
+    341           * @note If the new 'size' is the same as the old, the function changes nothing
+    342           *       and returns the same provided address 'ptr'.
+    343           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    344          ATTR_EXT_VIS void *STD_LIB_WRAPPER_REALLOC(RARG
+    345                                                     void *ptr,
+    346                                                     size_t size)
+    347          {
+    348          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    349            void * volatile return_address = sli_memory_profiler_get_return_address();
+    350          #endif
+    351            VOID_RARG;
+    352            void *r_ptr;
+    353          
+    354            r_ptr = sl_realloc(ptr, size);
+    355          #if defined(TEST_MEMORY_MANAGER_RETARGET_PRESENT)
+    356            retarget_realloc_counter++;
+    357          #endif
+    358          
+    359          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    360            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    361                                                r_ptr,
+    362                                                return_address);
+    363          #endif
+    364          
+    365            return r_ptr;
+   \                     `$Sub$$__basic_realloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_realloc
+    366          }
+    367          
+    368          #if defined(__IAR_SYSTEMS_ICC__) && ((__VER__ == 9040001) || (__VER__ == 9070004))
+
+   \                                 In section .text, align 2, keep-with-next
+    369          void *STD_LIB_WRAPPER_REALLOC_ADVANCED(void *ptr,
+    370                                                 size_t size)
+    371          {
+    372          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    373            void * volatile return_address = sli_memory_profiler_get_return_address();
+    374          #endif
+    375            void *r_ptr;
+    376          
+    377            r_ptr = sl_realloc(ptr, size);
+    378          
+    379          #if defined(SL_CATALOG_MEMORY_PROFILER_PRESENT)
+    380            sli_memory_profiler_track_ownership(SLI_INVALID_MEMORY_TRACKER_HANDLE,
+    381                                                r_ptr,
+    382                                                return_address);
+    383          #endif
+    384          
+    385            return r_ptr;
+   \                     `$Sub$$__iar_dlrealloc`: (+1)
+   \        0x0   0x.... 0x....      B.W      sl_realloc
+    386          }
+    387          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   $Sub$$__basic_calloc
+         0   -> sl_calloc
+       0   $Sub$$__basic_free
+         0   -> sl_free
+       0   $Sub$$__basic_malloc
+         0   -> sl_malloc
+       0   $Sub$$__basic_realloc
+         0   -> sl_realloc
+       0   $Sub$$__iar_dlcalloc
+         0   -> sl_calloc
+       0   $Sub$$__iar_dlfree
+         0   -> sl_free
+       0   $Sub$$__iar_dlmalloc
+         0   -> sl_malloc
+       0   $Sub$$__iar_dlrealloc
+         0   -> sl_realloc
+       0   $Sub$$__no_free_calloc
+         0   -> sl_calloc
+       0   $Sub$$__no_free_malloc
+         0   -> sl_malloc
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  $Sub$$__basic_calloc
+       4  $Sub$$__basic_free
+       4  $Sub$$__basic_malloc
+       4  $Sub$$__basic_realloc
+       4  $Sub$$__iar_dlcalloc
+       4  $Sub$$__iar_dlfree
+       4  $Sub$$__iar_dlmalloc
+       4  $Sub$$__iar_dlrealloc
+       4  $Sub$$__no_free_calloc
+       4  $Sub$$__no_free_malloc
+
+ 
+ 40 bytes in section .text
+ 
+ 40 bytes of CODE memory
+
+Errors: none
+Warnings: none

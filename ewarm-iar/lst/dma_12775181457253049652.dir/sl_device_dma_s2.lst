@@ -1,0 +1,758 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:06
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\dma\sl_device_dma_s2.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\dma_12775181457253049652.dir\sl_device_dma_s2.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\dma\sl_device_dma_s2.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\dma_12775181457253049652.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\dma_12775181457253049652.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\dma\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\dma_12775181457253049652.dir\sl_device_dma_s2.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\dma_12775181457253049652.dir\sl_device_dma_s2.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\dma_12775181457253049652.dir\sl_device_dma_s2.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\dma_12775181457253049652.dir\sl_device_dma_s2.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\dma\sl_device_dma_s2.c
+      1          /**************************************************************************//**
+      2           * @file
+      3           * @brief Device Manager DMA Definition
+      4           ******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2025 Silicon Laboratories, Inc. www.silabs.com</b>
+      7           ******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           *****************************************************************************/
+     30          
+     31          #include "em_device.h"
+     32          #include "sl_device_dma.h"
+     33          
+     34          /***************************************************************************//**
+     35           * @addtogroup device_dma Device Manager DMA
+     36           * @{
+     37           ******************************************************************************/
+     38          
+     39          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_CAN0RXFL_0)
+     40          const uint32_t SL_DMA_SIGNAL_CAN0_RXFL0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_CAN0RXFL_0 | LDMAXBAR_CH_REQSEL_SOURCESEL_CAN0;
+     41          #endif
+     42          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_CAN0RXFL_1)
+     43          const uint32_t SL_DMA_SIGNAL_CAN0_RXFL1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_CAN0RXFL_1 | LDMAXBAR_CH_REQSEL_SOURCESEL_CAN0;
+     44          #endif
+     45          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_CAN0TXFL_0)
+     46          const uint32_t SL_DMA_SIGNAL_CAN0_TXFL0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_CAN0TXFL_0 | LDMAXBAR_CH_REQSEL_SOURCESEL_CAN0;
+     47          #endif
+     48          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_CAN0TXFL_1)
+     49          const uint32_t SL_DMA_SIGNAL_CAN0_TXFL1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_CAN0TXFL_1 | LDMAXBAR_CH_REQSEL_SOURCESEL_CAN0;
+     50          #endif
+     51          
+     52          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_LDMAXBARPRSREQ0)
+     53          /// Define LDMAXBAR0_PRSREQ0 DMA signal value.
+
+   \                                 In section .rodata, align 4
+     54          const uint32_t SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_LDMAXBARPRSREQ0 | LDMAXBAR_CH_REQSEL_SOURCESEL_LDMAXBAR;
+   \                     SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0_VALUE:
+   \        0x0   0x0001'0000        DC32 65'536
+     55          #endif
+     56          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_LDMAXBARPRSREQ1)
+     57          /// Define LDMAXBAR0_PRSREQ1 DMA Signal value.
+
+   \                                 In section .rodata, align 4
+     58          const uint32_t SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_LDMAXBARPRSREQ1 | LDMAXBAR_CH_REQSEL_SOURCESEL_LDMAXBAR;
+   \                     SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1_VALUE:
+   \        0x0   0x0001'0001        DC32 65'537
+     59          #endif
+     60          
+     61          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0CC0)
+
+   \                                 In section .rodata, align 4
+     62          const uint32_t SL_DMA_SIGNAL_TIMER0_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER0;
+   \                     SL_DMA_SIGNAL_TIMER0_CC0_VALUE:
+   \        0x0   0x0002'0000        DC32 131'072
+     63          #endif
+     64          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0CC1)
+
+   \                                 In section .rodata, align 4
+     65          const uint32_t SL_DMA_SIGNAL_TIMER0_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER0;
+   \                     SL_DMA_SIGNAL_TIMER0_CC1_VALUE:
+   \        0x0   0x0002'0001        DC32 131'073
+     66          #endif
+     67          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0CC2)
+
+   \                                 In section .rodata, align 4
+     68          const uint32_t SL_DMA_SIGNAL_TIMER0_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER0;
+   \                     SL_DMA_SIGNAL_TIMER0_CC2_VALUE:
+   \        0x0   0x0002'0002        DC32 131'074
+     69          #endif
+     70          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0UFOF)
+
+   \                                 In section .rodata, align 4
+     71          const uint32_t SL_DMA_SIGNAL_TIMER0_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER0UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER0;
+   \                     SL_DMA_SIGNAL_TIMER0_UFOF_VALUE:
+   \        0x0   0x0002'0003        DC32 131'075
+     72          #endif
+     73          
+     74          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1CC0)
+
+   \                                 In section .rodata, align 4
+     75          const uint32_t SL_DMA_SIGNAL_TIMER1_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER1;
+   \                     SL_DMA_SIGNAL_TIMER1_CC0_VALUE:
+   \        0x0   0x0003'0000        DC32 196'608
+     76          #endif
+     77          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1CC1)
+
+   \                                 In section .rodata, align 4
+     78          const uint32_t SL_DMA_SIGNAL_TIMER1_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER1;
+   \                     SL_DMA_SIGNAL_TIMER1_CC1_VALUE:
+   \        0x0   0x0003'0001        DC32 196'609
+     79          #endif
+     80          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1CC2)
+
+   \                                 In section .rodata, align 4
+     81          const uint32_t SL_DMA_SIGNAL_TIMER1_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER1;
+   \                     SL_DMA_SIGNAL_TIMER1_CC2_VALUE:
+   \        0x0   0x0003'0002        DC32 196'610
+     82          #endif
+     83          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1UFOF)
+
+   \                                 In section .rodata, align 4
+     84          const uint32_t SL_DMA_SIGNAL_TIMER1_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER1UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER1;
+   \                     SL_DMA_SIGNAL_TIMER1_UFOF_VALUE:
+   \        0x0   0x0003'0003        DC32 196'611
+     85          #endif
+     86          
+     87          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC0)
+
+   \                                 In section .rodata, align 4
+     88          const uint32_t SL_DMA_SIGNAL_TIMER2_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+   \                     SL_DMA_SIGNAL_TIMER2_CC0_VALUE:
+   \        0x0   0x000D'0000        DC32 851'968
+     89          #endif
+     90          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC1)
+
+   \                                 In section .rodata, align 4
+     91          const uint32_t SL_DMA_SIGNAL_TIMER2_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+   \                     SL_DMA_SIGNAL_TIMER2_CC1_VALUE:
+   \        0x0   0x000D'0001        DC32 851'969
+     92          #endif
+     93          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC2)
+
+   \                                 In section .rodata, align 4
+     94          const uint32_t SL_DMA_SIGNAL_TIMER2_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+   \                     SL_DMA_SIGNAL_TIMER2_CC2_VALUE:
+   \        0x0   0x000D'0002        DC32 851'970
+     95          #endif
+     96          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2UFOF)
+
+   \                                 In section .rodata, align 4
+     97          const uint32_t SL_DMA_SIGNAL_TIMER2_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+   \                     SL_DMA_SIGNAL_TIMER2_UFOF_VALUE:
+   \        0x0   0x000D'0003        DC32 851'971
+     98          #endif
+     99          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC3)
+    100          const uint32_t SL_DMA_SIGNAL_TIMER2_CC3_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC3 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+    101          #endif
+    102          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC4)
+    103          const uint32_t SL_DMA_SIGNAL_TIMER2_CC4_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC4 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+    104          #endif
+    105          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC5)
+    106          const uint32_t SL_DMA_SIGNAL_TIMER2_CC5_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC5 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+    107          #endif
+    108          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC6)
+    109          const uint32_t SL_DMA_SIGNAL_TIMER2_CC6_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER2CC6 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER2;
+    110          #endif
+    111          
+    112          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC0)
+
+   \                                 In section .rodata, align 4
+    113          const uint32_t SL_DMA_SIGNAL_TIMER3_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+   \                     SL_DMA_SIGNAL_TIMER3_CC0_VALUE:
+   \        0x0   0x000E'0000        DC32 917'504
+    114          #endif
+    115          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC1)
+
+   \                                 In section .rodata, align 4
+    116          const uint32_t SL_DMA_SIGNAL_TIMER3_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+   \                     SL_DMA_SIGNAL_TIMER3_CC1_VALUE:
+   \        0x0   0x000E'0001        DC32 917'505
+    117          #endif
+    118          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC2)
+
+   \                                 In section .rodata, align 4
+    119          const uint32_t SL_DMA_SIGNAL_TIMER3_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+   \                     SL_DMA_SIGNAL_TIMER3_CC2_VALUE:
+   \        0x0   0x000E'0002        DC32 917'506
+    120          #endif
+    121          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3UFOF)
+
+   \                                 In section .rodata, align 4
+    122          const uint32_t SL_DMA_SIGNAL_TIMER3_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+   \                     SL_DMA_SIGNAL_TIMER3_UFOF_VALUE:
+   \        0x0   0x000E'0003        DC32 917'507
+    123          #endif
+    124          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC3)
+    125          const uint32_t SL_DMA_SIGNAL_TIMER3_CC3_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC3 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+    126          #endif
+    127          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC4)
+    128          const uint32_t SL_DMA_SIGNAL_TIMER3_CC4_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC4 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+    129          #endif
+    130          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC5)
+    131          const uint32_t SL_DMA_SIGNAL_TIMER3_CC5_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC5 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+    132          #endif
+    133          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC6)
+    134          const uint32_t SL_DMA_SIGNAL_TIMER3_CC6_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER3CC6 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER3;
+    135          #endif
+    136          
+    137          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4CC0)
+
+   \                                 In section .rodata, align 4
+    138          const uint32_t SL_DMA_SIGNAL_TIMER4_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER4;
+   \                     SL_DMA_SIGNAL_TIMER4_CC0_VALUE:
+   \        0x0   0x0011'0000        DC32 1'114'112
+    139          #endif
+    140          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4CC1)
+
+   \                                 In section .rodata, align 4
+    141          const uint32_t SL_DMA_SIGNAL_TIMER4_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER4;
+   \                     SL_DMA_SIGNAL_TIMER4_CC1_VALUE:
+   \        0x0   0x0011'0001        DC32 1'114'113
+    142          #endif
+    143          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4CC2)
+
+   \                                 In section .rodata, align 4
+    144          const uint32_t SL_DMA_SIGNAL_TIMER4_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER4;
+   \                     SL_DMA_SIGNAL_TIMER4_CC2_VALUE:
+   \        0x0   0x0011'0002        DC32 1'114'114
+    145          #endif
+    146          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4UFOF)
+
+   \                                 In section .rodata, align 4
+    147          const uint32_t SL_DMA_SIGNAL_TIMER4_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER4UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER4;
+   \                     SL_DMA_SIGNAL_TIMER4_UFOF_VALUE:
+   \        0x0   0x0011'0003        DC32 1'114'115
+    148          #endif
+    149          
+    150          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5CC0)
+    151          const uint32_t SL_DMA_SIGNAL_TIMER5_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER5;
+    152          #endif
+    153          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5CC1)
+    154          const uint32_t SL_DMA_SIGNAL_TIMER5_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER5;
+    155          #endif
+    156          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5CC2)
+    157          const uint32_t SL_DMA_SIGNAL_TIMER5_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER5;
+    158          #endif
+    159          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5UFOF)
+    160          const uint32_t SL_DMA_SIGNAL_TIMER5_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER5UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER5;
+    161          #endif
+    162          
+    163          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6CC0)
+    164          const uint32_t SL_DMA_SIGNAL_TIMER6_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER6;
+    165          #endif
+    166          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6CC1)
+    167          const uint32_t SL_DMA_SIGNAL_TIMER6_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER6;
+    168          #endif
+    169          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6CC2)
+    170          const uint32_t SL_DMA_SIGNAL_TIMER6_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER6;
+    171          #endif
+    172          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6UFOF)
+    173          const uint32_t SL_DMA_SIGNAL_TIMER6_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER6UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER6;
+    174          #endif
+    175          
+    176          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7CC0)
+    177          const uint32_t SL_DMA_SIGNAL_TIMER7_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER7;
+    178          #endif
+    179          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7CC1)
+    180          const uint32_t SL_DMA_SIGNAL_TIMER7_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER7;
+    181          #endif
+    182          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7CC2)
+    183          const uint32_t SL_DMA_SIGNAL_TIMER7_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER7;
+    184          #endif
+    185          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7UFOF)
+    186          const uint32_t SL_DMA_SIGNAL_TIMER7_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER7UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER7;
+    187          #endif
+    188          
+    189          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8CC0)
+    190          const uint32_t SL_DMA_SIGNAL_TIMER8_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER8;
+    191          #endif
+    192          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8CC1)
+    193          const uint32_t SL_DMA_SIGNAL_TIMER8_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER8;
+    194          #endif
+    195          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8CC2)
+    196          const uint32_t SL_DMA_SIGNAL_TIMER8_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER8;
+    197          #endif
+    198          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8UFOF)
+    199          const uint32_t SL_DMA_SIGNAL_TIMER8_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER8UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER8;
+    200          #endif
+    201          
+    202          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9CC0)
+    203          const uint32_t SL_DMA_SIGNAL_TIMER9_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9CC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER9;
+    204          #endif
+    205          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9CC1)
+    206          const uint32_t SL_DMA_SIGNAL_TIMER9_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9CC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER9;
+    207          #endif
+    208          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9CC2)
+    209          const uint32_t SL_DMA_SIGNAL_TIMER9_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9CC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER9;
+    210          #endif
+    211          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9UFOF)
+    212          const uint32_t SL_DMA_SIGNAL_TIMER9_UFOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_TIMER9UFOF | LDMAXBAR_CH_REQSEL_SOURCESEL_TIMER9;
+    213          #endif
+    214          
+    215          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERBOF)
+    216          const uint32_t SL_DMA_SIGNAL_PROTIMER_BOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERBOF | LDMAXBAR_CH_REQSEL_SOURCESEL_PROTIMER;
+    217          #endif
+    218          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC0)
+    219          const uint32_t SL_DMA_SIGNAL_PROTIMER_CC0_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC0 | LDMAXBAR_CH_REQSEL_SOURCESEL_PROTIMER;
+    220          #endif
+    221          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC1)
+    222          const uint32_t SL_DMA_SIGNAL_PROTIMER_CC1_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC1 | LDMAXBAR_CH_REQSEL_SOURCESEL_PROTIMER;
+    223          #endif
+    224          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC2)
+    225          const uint32_t SL_DMA_SIGNAL_PROTIMER_CC2_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC2 | LDMAXBAR_CH_REQSEL_SOURCESEL_PROTIMER;
+    226          #endif
+    227          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC3)
+    228          const uint32_t SL_DMA_SIGNAL_PROTIMER_CC3_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERCC3 | LDMAXBAR_CH_REQSEL_SOURCESEL_PROTIMER;
+    229          #endif
+    230          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERPOF)
+    231          const uint32_t SL_DMA_SIGNAL_PROTIMER_POF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERPOF | LDMAXBAR_CH_REQSEL_SOURCESEL_PROTIMER;
+    232          #endif
+    233          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERWOF)
+    234          const uint32_t SL_DMA_SIGNAL_PROTIMER_WOF_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PROTIMERWOF | LDMAXBAR_CH_REQSEL_SOURCESEL_PROTIMER;
+    235          #endif
+    236          
+    237          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C0RXDATAV)
+
+   \                                 In section .rodata, align 4
+    238          const uint32_t SL_DMA_SIGNAL_I2C0_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C0RXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C0;
+   \                     SL_DMA_SIGNAL_I2C0_RXDATAV_VALUE:
+   \        0x0   0x0006'0000        DC32 393'216
+    239          #endif
+    240          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C0TXBL)
+
+   \                                 In section .rodata, align 4
+    241          const uint32_t SL_DMA_SIGNAL_I2C0_TXBL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C0TXBL | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C0;
+   \                     SL_DMA_SIGNAL_I2C0_TXBL_VALUE:
+   \        0x0   0x0006'0001        DC32 393'217
+    242          #endif
+    243          
+    244          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C1RXDATAV)
+
+   \                                 In section .rodata, align 4
+    245          const uint32_t SL_DMA_SIGNAL_I2C1_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C1RXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C1;
+   \                     SL_DMA_SIGNAL_I2C1_RXDATAV_VALUE:
+   \        0x0   0x0007'0000        DC32 458'752
+    246          #endif
+    247          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C1TXBL)
+
+   \                                 In section .rodata, align 4
+    248          const uint32_t SL_DMA_SIGNAL_I2C1_TXBL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C1TXBL | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C1;
+   \                     SL_DMA_SIGNAL_I2C1_TXBL_VALUE:
+   \        0x0   0x0007'0001        DC32 458'753
+    249          #endif
+    250          
+    251          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C2RXDATAV)
+    252          const uint32_t SL_DMA_SIGNAL_I2C2_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C2RXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C2;
+    253          #endif
+    254          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C2TXBL)
+    255          const uint32_t SL_DMA_SIGNAL_I2C2_TXBL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C2TXBL | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C2;
+    256          #endif
+    257          
+    258          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C3RXDATAV)
+    259          const uint32_t SL_DMA_SIGNAL_I2C3_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C3RXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C3;
+    260          #endif
+    261          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_I2C3TXBL)
+    262          const uint32_t SL_DMA_SIGNAL_I2C3_TXBL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_I2C3TXBL | LDMAXBAR_CH_REQSEL_SOURCESEL_I2C3;
+    263          #endif
+    264          
+    265          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_IADC0IADC_SCAN)
+
+   \                                 In section .rodata, align 4
+    266          const uint32_t SL_DMA_SIGNAL_IADC0_SCAN_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_IADC0IADC_SCAN | LDMAXBAR_CH_REQSEL_SOURCESEL_IADC0;
+   \                     SL_DMA_SIGNAL_IADC0_SCAN_VALUE:
+   \        0x0   0x000B'0000        DC32 720'896
+    267          #endif
+    268          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_IADC0IADC_SINGLE)
+
+   \                                 In section .rodata, align 4
+    269          const uint32_t SL_DMA_SIGNAL_IADC0_SINGLE_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_IADC0IADC_SINGLE | LDMAXBAR_CH_REQSEL_SOURCESEL_IADC0;
+   \                     SL_DMA_SIGNAL_IADC0_SINGLE_VALUE:
+   \        0x0   0x000B'0001        DC32 720'897
+    270          #endif
+    271          
+    272          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_ADC0ADC_SCAN)
+    273          const uint32_t SL_DMA_SIGNAL_ADC0_SCAN_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_ADC0ADC_SCAN | LDMAXBAR_CH_REQSEL_SOURCESEL_ADC0;
+    274          #endif
+    275          
+    276          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_ADC1ADC_SCAN)
+    277          const uint32_t SL_DMA_SIGNAL_ADC1_SCAN_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_ADC1ADC_SCAN | LDMAXBAR_CH_REQSEL_SOURCESEL_ADC1;
+    278          #endif
+    279          
+    280          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART0RXFL)
+    281          const uint32_t SL_DMA_SIGNAL_EUSART0_RXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART0RXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART0;
+    282          #endif
+    283          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART0TXFL)
+    284          const uint32_t SL_DMA_SIGNAL_EUSART0_TXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART0TXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART0;
+    285          #endif
+    286          
+    287          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART1RXFL)
+    288          const uint32_t SL_DMA_SIGNAL_EUSART1_RXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART1RXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART1;
+    289          #endif
+    290          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART1TXFL)
+    291          const uint32_t SL_DMA_SIGNAL_EUSART1_TXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART1TXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART1;
+    292          #endif
+    293          
+    294          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART2RXFL)
+    295          const uint32_t SL_DMA_SIGNAL_EUSART2_RXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART2RXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART2;
+    296          #endif
+    297          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART2TXFL)
+    298          const uint32_t SL_DMA_SIGNAL_EUSART2_TXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART2TXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART2;
+    299          #endif
+    300          
+    301          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART3RXFL)
+    302          const uint32_t SL_DMA_SIGNAL_EUSART3_RXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART3RXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART3;
+    303          #endif
+    304          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART3TXFL)
+    305          const uint32_t SL_DMA_SIGNAL_EUSART3_TXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART3TXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART3;
+    306          #endif
+    307          
+    308          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART4RXFL)
+    309          const uint32_t SL_DMA_SIGNAL_EUSART4_RXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART4RXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART4;
+    310          #endif
+    311          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUSART4TXFL)
+    312          const uint32_t SL_DMA_SIGNAL_EUSART4_TXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUSART4TXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUSART4;
+    313          #endif
+    314          
+    315          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART0RXDATAV)
+
+   \                                 In section .rodata, align 4
+    316          const uint32_t SL_DMA_SIGNAL_USART0_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART0RXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_USART0;
+   \                     SL_DMA_SIGNAL_USART0_RXDATAV_VALUE:
+   \        0x0   0x0004'0000        DC32 262'144
+    317          #endif
+    318          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART0RXDATAVRIGHT)
+
+   \                                 In section .rodata, align 4
+    319          const uint32_t SL_DMA_SIGNAL_USART0_RXDATAVRIGHT_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART0RXDATAVRIGHT | LDMAXBAR_CH_REQSEL_SOURCESEL_USART0;
+   \                     SL_DMA_SIGNAL_USART0_RXDATAVRIGHT_VALUE:
+   \        0x0   0x0004'0001        DC32 262'145
+    320          #endif
+    321          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART0TXBL)
+
+   \                                 In section .rodata, align 4
+    322          const uint32_t SL_DMA_SIGNAL_USART0_TXBL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART0TXBL | LDMAXBAR_CH_REQSEL_SOURCESEL_USART0;
+   \                     SL_DMA_SIGNAL_USART0_TXBL_VALUE:
+   \        0x0   0x0004'0002        DC32 262'146
+    323          #endif
+    324          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART0TXBLRIGHT)
+
+   \                                 In section .rodata, align 4
+    325          const uint32_t SL_DMA_SIGNAL_USART0_TXBLRIGHT_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART0TXBLRIGHT | LDMAXBAR_CH_REQSEL_SOURCESEL_USART0;
+   \                     SL_DMA_SIGNAL_USART0_TXBLRIGHT_VALUE:
+   \        0x0   0x0004'0003        DC32 262'147
+    326          #endif
+    327          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART0TXEMPTY)
+
+   \                                 In section .rodata, align 4
+    328          const uint32_t SL_DMA_SIGNAL_USART0_TXEMPTY_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART0TXEMPTY | LDMAXBAR_CH_REQSEL_SOURCESEL_USART0;
+   \                     SL_DMA_SIGNAL_USART0_TXEMPTY_VALUE:
+   \        0x0   0x0004'0004        DC32 262'148
+    329          #endif
+    330          
+    331          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART1RXDATAV)
+
+   \                                 In section .rodata, align 4
+    332          const uint32_t SL_DMA_SIGNAL_USART1_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART1RXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_USART1;
+   \                     SL_DMA_SIGNAL_USART1_RXDATAV_VALUE:
+   \        0x0   0x0005'0000        DC32 327'680
+    333          #endif
+    334          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART1RXDATAVRIGHT)
+
+   \                                 In section .rodata, align 4
+    335          const uint32_t SL_DMA_SIGNAL_USART1_RXDATAVRIGHT_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART1RXDATAVRIGHT | LDMAXBAR_CH_REQSEL_SOURCESEL_USART1;
+   \                     SL_DMA_SIGNAL_USART1_RXDATAVRIGHT_VALUE:
+   \        0x0   0x0005'0001        DC32 327'681
+    336          #endif
+    337          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART1TXBL)
+
+   \                                 In section .rodata, align 4
+    338          const uint32_t SL_DMA_SIGNAL_USART1_TXBL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART1TXBL | LDMAXBAR_CH_REQSEL_SOURCESEL_USART1;
+   \                     SL_DMA_SIGNAL_USART1_TXBL_VALUE:
+   \        0x0   0x0005'0002        DC32 327'682
+    339          #endif
+    340          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART1TXBLRIGHT)
+
+   \                                 In section .rodata, align 4
+    341          const uint32_t SL_DMA_SIGNAL_USART1_TXBLRIGHT_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART1TXBLRIGHT | LDMAXBAR_CH_REQSEL_SOURCESEL_USART1;
+   \                     SL_DMA_SIGNAL_USART1_TXBLRIGHT_VALUE:
+   \        0x0   0x0005'0003        DC32 327'683
+    342          #endif
+    343          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART1TXEMPTY)
+
+   \                                 In section .rodata, align 4
+    344          const uint32_t SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART1TXEMPTY | LDMAXBAR_CH_REQSEL_SOURCESEL_USART1;
+   \                     SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE:
+   \        0x0   0x0005'0004        DC32 327'684
+    345          #endif
+    346          
+    347          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART2RXDATAV)
+    348          const uint32_t SL_DMA_SIGNAL_USART2_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART2RXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_USART2;
+    349          #endif
+    350          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART2RXDATAVRIGHT)
+    351          const uint32_t SL_DMA_SIGNAL_USART2_RXDATAVRIGHT_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART2RXDATAVRIGHT | LDMAXBAR_CH_REQSEL_SOURCESEL_USART2;
+    352          #endif
+    353          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART2TXBL)
+    354          const uint32_t SL_DMA_SIGNAL_USART2_TXBL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART2TXBL | LDMAXBAR_CH_REQSEL_SOURCESEL_USART2;
+    355          #endif
+    356          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART2TXBLRIGHT)
+    357          const uint32_t SL_DMA_SIGNAL_USART2_TXBLRIGHT_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART2TXBLRIGHT | LDMAXBAR_CH_REQSEL_SOURCESEL_USART2;
+    358          #endif
+    359          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_USART2TXEMPTY)
+    360          const uint32_t SL_DMA_SIGNAL_USART2_TXEMPTY_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_USART2TXEMPTY | LDMAXBAR_CH_REQSEL_SOURCESEL_USART2;
+    361          #endif
+    362          
+    363          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUART0RXFL)
+
+   \                                 In section .rodata, align 4
+    364          const uint32_t SL_DMA_SIGNAL_EUART0_RXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUART0RXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUART0;
+   \                     SL_DMA_SIGNAL_EUART0_RXFL_VALUE:
+   \        0x0   0x0010'0000        DC32 1'048'576
+    365          #endif
+    366          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUART0TXFL)
+
+   \                                 In section .rodata, align 4
+    367          const uint32_t SL_DMA_SIGNAL_EUART0_TXFL_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_EUART0TXFL | LDMAXBAR_CH_REQSEL_SOURCESEL_EUART0;
+   \                     SL_DMA_SIGNAL_EUART0_TXFL_VALUE:
+   \        0x0   0x0010'0001        DC32 1'048'577
+    368          #endif
+    369          
+    370          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_MSCWDATA)
+
+   \                                 In section .rodata, align 4
+    371          const uint32_t SL_DMA_SIGNAL_MSC_WDATA_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_MSCWDATA | LDMAXBAR_CH_REQSEL_SOURCESEL_MSC;
+   \                     SL_DMA_SIGNAL_MSC_WDATA_VALUE:
+   \        0x0   0x000C'0000        DC32 786'432
+    372          #endif
+    373          
+    374          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_VDAC0CH0_REQ)
+    375          const uint32_t SL_DMA_SIGNAL_VDAC0_CH0REQ_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_VDAC0CH0_REQ | LDMAXBAR_CH_REQSEL_SOURCESEL_VDAC0;
+    376          #endif
+    377          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_VDAC0CH1_REQ)
+    378          const uint32_t SL_DMA_SIGNAL_VDAC0_CH1REQ_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_VDAC0CH1_REQ | LDMAXBAR_CH_REQSEL_SOURCESEL_VDAC0;
+    379          #endif
+    380          
+    381          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_VDAC1CH0_REQ)
+    382          const uint32_t SL_DMA_SIGNAL_VDAC1_CH0REQ_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_VDAC1CH0_REQ | LDMAXBAR_CH_REQSEL_SOURCESEL_VDAC1;
+    383          #endif
+    384          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_VDAC1CH1_REQ)
+    385          const uint32_t SL_DMA_SIGNAL_VDAC1_CH1REQ_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_VDAC1CH1_REQ | LDMAXBAR_CH_REQSEL_SOURCESEL_VDAC1;
+    386          #endif
+    387          
+    388          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_LESENSEFIFO)
+    389          const uint32_t SL_DMA_SIGNAL_LESENSE_FIFO_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_LESENSEFIFO | LDMAXBAR_CH_REQSEL_SOURCESEL_LESENSE;
+    390          #endif
+    391          
+    392          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_LCD)
+    393          const uint32_t SL_DMA_SIGNAL_LCD_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_LCD | LDMAXBAR_CH_REQSEL_SOURCESEL_LCD;
+    394          #endif
+    395          
+    396          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_MVPREQ)
+    397          const uint32_t SL_DMA_SIGNAL_MVP_REQ_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_MVPREQ | LDMAXBAR_CH_REQSEL_SOURCESEL_MVP;
+    398          #endif
+    399          
+    400          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_PDMRXDATAV)
+
+   \                                 In section .rodata, align 4
+    401          const uint32_t SL_DMA_SIGNAL_PDM_RXDATAV_VALUE = LDMAXBAR_CH_REQSEL_SIGSEL_PDMRXDATAV | LDMAXBAR_CH_REQSEL_SOURCESEL_PDM;
+   \                     SL_DMA_SIGNAL_PDM_RXDATAV_VALUE:
+   \        0x0   0x000F'0000        DC32 983'040
+    402          #endif
+    403          
+    404          /** @} (end addtogroup device_dma) */
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  SL_DMA_SIGNAL_EUART0_RXFL_VALUE
+       4  SL_DMA_SIGNAL_EUART0_TXFL_VALUE
+       4  SL_DMA_SIGNAL_I2C0_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_I2C0_TXBL_VALUE
+       4  SL_DMA_SIGNAL_I2C1_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_I2C1_TXBL_VALUE
+       4  SL_DMA_SIGNAL_IADC0_SCAN_VALUE
+       4  SL_DMA_SIGNAL_IADC0_SINGLE_VALUE
+       4  SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ0_VALUE
+       4  SL_DMA_SIGNAL_LDMAXBAR0_PRSREQ1_VALUE
+       4  SL_DMA_SIGNAL_MSC_WDATA_VALUE
+       4  SL_DMA_SIGNAL_PDM_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER0_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER1_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER2_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER3_UFOF_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_CC0_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_CC1_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_CC2_VALUE
+       4  SL_DMA_SIGNAL_TIMER4_UFOF_VALUE
+       4  SL_DMA_SIGNAL_USART0_RXDATAVRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART0_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_USART0_TXBLRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART0_TXBL_VALUE
+       4  SL_DMA_SIGNAL_USART0_TXEMPTY_VALUE
+       4  SL_DMA_SIGNAL_USART1_RXDATAVRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART1_RXDATAV_VALUE
+       4  SL_DMA_SIGNAL_USART1_TXBLRIGHT_VALUE
+       4  SL_DMA_SIGNAL_USART1_TXBL_VALUE
+       4  SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE
+
+ 
+ 168 bytes in section .rodata
+ 
+ 168 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -115,4 +115,3 @@
 #endif /* SL_POWER_MANAGER_CONFIG_H */
 
 // <<< end of configuration section >>>
-

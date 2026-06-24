@@ -1,0 +1,1571 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:06
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\sl_dma_manager.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1442740067370495051.dir\sl_dma_manager.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\sl_dma_manager.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_1442740067370495051.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1442740067370495051.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1442740067370495051.dir\sl_dma_manager.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1442740067370495051.dir\sl_dma_manager.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_1442740067370495051.dir\sl_dma_manager.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1442740067370495051.dir\sl_dma_manager.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\sl_dma_manager.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief DMA Manager APIs.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stdbool.h>
+     32          #include <stdlib.h>
+     33          #include "em_device.h"
+     34          #include "sl_status.h"
+     35          #include "sl_enum.h"
+     36          #include "sl_core.h"
+     37          #include "sl_common.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t SL_CTZ(uint32_t)
+   \                     SL_CTZ: (+1)
+   \        0x0   0xFA90 0xF0A0      RBIT     R0,R0
+   \        0x4   0xFAB0 0xF080      CLZ      R0,R0
+   \        0x8   0x4770             BX       LR
+     38          #include "sl_bit.h"
+     39          #include "sl_dma_manager.h"
+     40          #include "sli_dma_manager_internal.h"
+     41          #include "sl_component_catalog.h"
+     42          #if defined(SL_CATALOG_DMA_MANAGER_ROUND_ROBIN_PRESENT)
+     43          #include "sl_dma_manager_round_robin_config.h"
+     44          #endif
+     45          #include "sl_device_peripheral.h"
+     46          #include "sl_memory_manager.h"
+     47          
+     48          // -----------------------------------------------------------------------------
+     49          // GLOBAL VARIABLES
+     50          
+
+   \                                 In section .bss, align 4
+     51          sl_slist_node_t* dma_handle_list = NULL;
+     52          sl_dma_handle_t* default_dma_handle;
+     53          
+     54          static const sl_dma_handle_t *current_irq_dma_handle = NULL;
+     55          static uint8_t current_irq_channel_nbr = 0;
+   \                     current_irq_channel_nbr:
+   \        0x0                      DS8 1
+   \        0x1                      DS8 3
+   \                     dma_handle_list:
+   \        0x4                      DS8 4
+   \                     default_dma_handle:
+   \        0x8                      DS8 4
+   \        0xC                      DS8 4
+     56          
+     57          // -----------------------------------------------------------------------------
+     58          // FUNCTION DEFINITIONS
+     59          
+     60          /***************************************************************************//**
+     61           * Initializes the DMA manager.
+     62           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     63          sl_status_t sl_dma_manager_init(sl_dma_handle_t *dma_handle,
+     64                                          sl_peripheral_dma_t dma_peripheral)
+     65          {
+   \                     sl_dma_manager_init: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+     66            CORE_DECLARE_IRQ_STATE;
+     67            sl_dma_handle_t* handle;
+     68            sl_dma_handle_t* saved_default_handle;
+     69            sl_status_t status;
+     70            bool handle_allocated = false;
+   \        0x8   0x2600             MOVS     R6,#+0
+     71          
+     72            // If no DMA peripheral is specified, get the default one from the HAL
+     73            if (dma_peripheral == NULL) {
+   \        0xA   0xB92D             CBNZ.N   R5,??sl_dma_manager_init_0
+     74              dma_peripheral = sli_dma_manager_hal_get_dma_peripheral();
+   \        0xC   0x.... 0x....      BL       sli_dma_manager_hal_get_dma_peripheral
+   \       0x10   0x0005             MOVS     R5,R0
+     75              if (dma_peripheral == NULL) {
+   \       0x12   0xBF08             IT       EQ
+   \       0x14   0x202D             MOVEQ    R0,#+45
+     76                return SL_STATUS_NOT_FOUND;
+   \       0x16   0xD068             BEQ.N    ??sl_dma_manager_init_1
+     77              }
+     78            }
+     79          
+     80            if (dma_peripheral->nbr_channel >= 32) {
+   \                     ??sl_dma_manager_init_0: (+1)
+   \       0x18   0x7D28             LDRB     R0,[R5, #+20]
+   \       0x1A   0x2820             CMP      R0,#+32
+   \       0x1C   0xBFA8             IT       GE
+   \       0x1E   0x200F             MOVGE    R0,#+15
+     81              // The DMA Manager only supports up to 32 channels due to the use of a 32-bit bitmap
+     82              return SL_STATUS_NOT_SUPPORTED;
+   \       0x20   0xDA63             BGE.N    ??sl_dma_manager_init_1
+     83            }
+     84          
+     85            CORE_ENTER_ATOMIC();
+   \       0x22   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x26   0x4680             MOV      R8,R0
+     86          
+     87            // Check if the dma handle is already initialized
+     88            SL_SLIST_FOR_EACH_ENTRY(dma_handle_list, handle, sl_dma_handle_t, node) {
+   \       0x28   0x.... 0x....      LDR.W    R0,??DataTable10
+   \       0x2C   0x6840             LDR      R0,[R0, #+4]
+   \       0x2E   0xE000             B.N      ??sl_dma_manager_init_2
+     89              if (handle == dma_handle) {
+     90                // The same dma_handle is already in the list
+     91                CORE_EXIT_ATOMIC();
+     92                return SL_STATUS_ALREADY_INITIALIZED;
+     93              }
+     94          
+     95              if (handle->dma_peripheral != dma_peripheral) {
+     96                // Continue looping if the DMA Manager handle has a different DMA peripheral
+     97                continue;
+   \                     ??sl_dma_manager_init_3: (+1)
+   \       0x30   0x6980             LDR      R0,[R0, #+24]
+   \                     ??sl_dma_manager_init_2: (+1)
+   \       0x32   0x3818             SUBS     R0,R0,#+24
+   \       0x34   0xF110 0x0F18      CMN      R0,#+24
+   \       0x38   0xD010             BEQ.N    ??sl_dma_manager_init_4
+   \       0x3A   0x42A0             CMP      R0,R4
+   \       0x3C   0xD00A             BEQ.N    ??sl_dma_manager_init_5
+   \       0x3E   0x6801             LDR      R1,[R0, #+0]
+   \       0x40   0x42A9             CMP      R1,R5
+   \       0x42   0xD1F5             BNE.N    ??sl_dma_manager_init_3
+     98              }
+     99          
+    100              if (dma_handle == NULL) {
+   \       0x44   0xB134             CBZ.N    R4,??sl_dma_manager_init_5
+    101                // We already have a default DMA handle for this peripheral
+    102                CORE_EXIT_ATOMIC();
+    103                return SL_STATUS_ALREADY_INITIALIZED;
+    104              }
+    105          
+    106              // Assert if another DMA Manager handle has the same DMA peripheral
+    107              EFM_ASSERT(false);
+   \       0x46   0x216B             MOVS     R1,#+107
+   \       0x48   0x.... 0x....      BL       ?Subroutine4
+    108              CORE_EXIT_ATOMIC();
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x4C   0x.... 0x....      BL       ?Subroutine3
+    109              return SL_STATUS_INVALID_CONFIGURATION;
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x50   0x2023             MOVS     R0,#+35
+   \       0x52   0xE04A             B.N      ??sl_dma_manager_init_1
+   \                     ??sl_dma_manager_init_5: (+1)
+   \       0x54   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x58   0x2012             MOVS     R0,#+18
+   \       0x5A   0xE046             B.N      ??sl_dma_manager_init_1
+    110            }
+    111          
+    112            saved_default_handle = default_dma_handle;
+   \                     ??sl_dma_manager_init_4: (+1)
+   \       0x5C   0x.... 0x....      LDR.W    R7,??DataTable10
+   \       0x60   0x68B8             LDR      R0,[R7, #+8]
+   \       0x62   0x4682             MOV      R10,R0
+    113          
+    114            if (dma_handle == NULL) {
+   \       0x64   0xB974             CBNZ.N   R4,??sl_dma_manager_init_6
+    115              // Allocate DMA handle if no handle is passed as argument
+    116              status = sl_memory_alloc(sizeof(sl_dma_handle_t), BLOCK_TYPE_LONG_TERM, (void **)&default_dma_handle);
+   \       0x66   0xF107 0x0208      ADD      R2,R7,#+8
+   \       0x6A   0x2100             MOVS     R1,#+0
+   \       0x6C   0x201C             MOVS     R0,#+28
+   \       0x6E   0x.... 0x....      BL       sl_memory_alloc
+   \       0x72   0x0004             MOVS     R4,R0
+    117              if (status != SL_STATUS_OK) {
+   \       0x74   0xD003             BEQ.N    ??sl_dma_manager_init_7
+    118                CORE_EXIT_ATOMIC();
+   \       0x76   0x.... 0x....      BL       ?Subroutine3
+    119                return status;
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x7A   0x4620             MOV      R0,R4
+   \       0x7C   0xE035             B.N      ??sl_dma_manager_init_1
+    120              }
+    121              dma_handle = default_dma_handle;
+   \                     ??sl_dma_manager_init_7: (+1)
+   \       0x7E   0x68BC             LDR      R4,[R7, #+8]
+    122              handle_allocated = true;
+   \       0x80   0x2601             MOVS     R6,#+1
+   \       0x82   0xE001             B.N      ??sl_dma_manager_init_8
+    123            } else {
+    124              // Set default DMA handle if not already set.
+    125              if (default_dma_handle == NULL) {
+   \                     ??sl_dma_manager_init_6: (+1)
+   \       0x84   0xB900             CBNZ.N   R0,??sl_dma_manager_init_8
+    126                default_dma_handle = dma_handle;
+   \       0x86   0x60BC             STR      R4,[R7, #+8]
+    127              }
+    128            }
+    129          
+    130            // Allocate the table for the interrupt callback function pointers
+    131            status = sl_memory_calloc(dma_peripheral->nbr_channel,
+    132                                      sizeof(sl_dma_manager_channel_irq_callback_t),
+    133                                      BLOCK_TYPE_LONG_TERM,
+    134                                      (void **)&dma_handle->channel_irq_callbacks_table);
+   \                     ??sl_dma_manager_init_8: (+1)
+   \       0x88   0x7D28             LDRB     R0,[R5, #+20]
+   \       0x8A   0xF104 0x0310      ADD      R3,R4,#+16
+   \       0x8E   0x2200             MOVS     R2,#+0
+   \       0x90   0x2104             MOVS     R1,#+4
+   \       0x92   0x.... 0x....      BL       sl_memory_calloc
+   \       0x96   0xEA5F 0x0900      MOVS     R9,R0
+    135            if (status != SL_STATUS_OK) {
+   \       0x9A   0xD10C             BNE.N    ??sl_dma_manager_init_9
+    136              if (handle_allocated) {
+    137                sl_memory_free((void *)dma_handle);
+    138              }
+    139              default_dma_handle = saved_default_handle;
+    140              CORE_EXIT_ATOMIC();
+    141              return status;
+    142            }
+    143          
+    144            // Allocate the table for the per-channel user data pointers
+    145            status = sl_memory_calloc(dma_peripheral->nbr_channel,
+    146                                      sizeof(void *),
+    147                                      BLOCK_TYPE_LONG_TERM,
+    148                                      (void **)&dma_handle->channel_user_data_table);
+   \       0x9C   0x7D28             LDRB     R0,[R5, #+20]
+   \       0x9E   0xF104 0x0314      ADD      R3,R4,#+20
+   \       0xA2   0x2200             MOVS     R2,#+0
+   \       0xA4   0x2104             MOVS     R1,#+4
+   \       0xA6   0x.... 0x....      BL       sl_memory_calloc
+   \       0xAA   0xEA5F 0x0900      MOVS     R9,R0
+    149            if (status != SL_STATUS_OK) {
+   \       0xAE   0xD00C             BEQ.N    ??sl_dma_manager_init_10
+    150              sl_memory_free((void *)dma_handle->channel_irq_callbacks_table);
+   \       0xB0   0x6920             LDR      R0,[R4, #+16]
+   \       0xB2   0x.... 0x....      BL       sl_memory_free
+    151              if (handle_allocated) {
+   \                     ??sl_dma_manager_init_9: (+1)
+   \       0xB6   0xB116             CBZ.N    R6,??sl_dma_manager_init_11
+    152                sl_memory_free((void *)dma_handle);
+   \       0xB8   0x4620             MOV      R0,R4
+   \       0xBA   0x.... 0x....      BL       sl_memory_free
+    153              }
+    154              default_dma_handle = saved_default_handle;
+   \                     ??sl_dma_manager_init_11: (+1)
+   \       0xBE   0xF8C7 0xA008      STR      R10,[R7, #+8]
+    155              CORE_EXIT_ATOMIC();
+   \       0xC2   0x.... 0x....      BL       ?Subroutine3
+    156              return status;
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0xC6   0x4648             MOV      R0,R9
+   \       0xC8   0xE00F             B.N      ??sl_dma_manager_init_1
+    157            }
+    158          
+    159            // Initialize DMA handle parameters
+    160            dma_handle->dma_channels_bitmap = 0;
+   \                     ??sl_dma_manager_init_10: (+1)
+   \       0xCA   0x2000             MOVS     R0,#+0
+   \       0xCC   0x6060             STR      R0,[R4, #+4]
+    161            dma_handle->round_robin_channel_number = 0;
+   \       0xCE   0x7320             STRB     R0,[R4, #+12]
+    162            dma_handle->sync_bit_bitmap = 0;
+   \       0xD0   0x60A0             STR      R0,[R4, #+8]
+    163            dma_handle->dma_peripheral = dma_peripheral;
+   \       0xD2   0x6025             STR      R5,[R4, #+0]
+    164          
+    165            // Add DMA handle to the list
+    166            sl_slist_push(&dma_handle_list, &dma_handle->node);
+   \       0xD4   0xF104 0x0118      ADD      R1,R4,#+24
+   \       0xD8   0x1D38             ADDS     R0,R7,#+4
+   \       0xDA   0x.... 0x....      BL       sl_slist_push
+    167          
+    168            // Initialize the DMA peripheral Hardware module
+    169            sli_dma_manager_hal_init(dma_peripheral);
+   \       0xDE   0x4628             MOV      R0,R5
+   \       0xE0   0x.... 0x....      BL       sli_dma_manager_hal_init
+    170          
+    171          #if defined(SL_CATALOG_DMA_MANAGER_ROUND_ROBIN_PRESENT)
+    172            EFM_ASSERT(SL_DMA_MANAGER_ROUND_ROBIN_CHANNEL_COUNT <= dma_peripheral->nbr_channel);
+    173            dma_handle->round_robin_channel_number = SL_DMA_MANAGER_ROUND_ROBIN_CHANNEL_COUNT;
+    174            sli_dma_manager_hal_configure_round_robin_channel_nbr(dma_peripheral, SL_DMA_MANAGER_ROUND_ROBIN_CHANNEL_COUNT);
+    175          #endif
+    176          
+    177            CORE_EXIT_ATOMIC();
+   \       0xE4   0x.... 0x....      BL       ?Subroutine3
+    178          
+    179            return SL_STATUS_OK;
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0xE8   0x2000             MOVS     R0,#+0
+   \                     ??sl_dma_manager_init_1: (+1)
+   \       0xEA   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    180          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_1
+   \        0x2   0x.... 0x....      B.W      assertEFM
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x4640             MOV      R0,R8
+   \        0x2   0x.... 0x....      B.W      CORE_ExitAtomic
+    181          
+    182          /***************************************************************************//**
+    183           * Sets the number of round robin channels.
+    184           ******************************************************************************/
+    185          #if defined(SL_CATALOG_DMA_MANAGER_ROUND_ROBIN_PRESENT)
+    186          sl_status_t sli_dma_manager_set_nbr_round_robin_channels(sl_dma_handle_t *dma_handle,
+    187                                                                   uint8_t nbr_round_robin_channels)
+    188          {
+    189            CORE_DECLARE_IRQ_STATE;
+    190          
+    191            if (dma_handle == NULL) {
+    192              dma_handle = default_dma_handle;
+    193            }
+    194          
+    195            // Number of Round-Robin channels must be between 0 and the number of Channels
+    196            if (nbr_round_robin_channels > dma_handle->dma_peripheral->nbr_channel) {
+    197              return SL_STATUS_INVALID_PARAMETER;
+    198            }
+    199          
+    200            CORE_ENTER_ATOMIC();
+    201          
+    202            // Check that no channels have been allocated yet
+    203            if (dma_handle->dma_channels_bitmap != 0) {
+    204              CORE_EXIT_ATOMIC();
+    205              return SL_STATUS_FAIL;
+    206            }
+    207          
+    208            dma_handle->round_robin_channel_number = nbr_round_robin_channels;
+    209          
+    210            sli_dma_manager_hal_configure_round_robin_channel_nbr(dma_handle->dma_peripheral, nbr_round_robin_channels);
+    211          
+    212            CORE_EXIT_ATOMIC();
+    213          
+    214            return SL_STATUS_OK;
+    215          }
+    216          #endif
+    217          
+    218          /***************************************************************************//**
+    219           * Gets the default DMA handle.
+    220           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    221          sl_status_t sl_dma_manager_get_default_handle(sl_dma_handle_t **dma_handle)
+    222          {
+    223            if (dma_handle == NULL) {
+   \                     sl_dma_manager_get_default_handle: (+1)
+   \        0x0   0xB908             CBNZ.N   R0,??sl_dma_manager_get_default_handle_0
+    224              return SL_STATUS_NULL_POINTER;
+   \        0x2   0x2022             MOVS     R0,#+34
+   \        0x4   0x4770             BX       LR
+    225            }
+    226          
+    227            *dma_handle = default_dma_handle;
+   \                     ??sl_dma_manager_get_default_handle_0: (+1)
+   \        0x6   0x....             LDR.N    R1,??DataTable10
+   \        0x8   0x688A             LDR      R2,[R1, #+8]
+   \        0xA   0x6002             STR      R2,[R0, #+0]
+    228          
+    229            return SL_STATUS_OK;
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x4770             BX       LR
+    230          }
+    231          
+    232          /***************************************************************************//**
+    233           * Allocates a DMA channel.
+    234           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    235          sl_status_t sl_dma_manager_allocate_channel(sl_dma_handle_t *dma_handle,
+    236                                                      uint8_t *channel_nbr)
+    237          {
+   \                     sl_dma_manager_allocate_channel: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    238          #if !defined(SL_CATALOG_DMA_MANAGER_ROUND_ROBIN_PRESENT)
+    239            CORE_DECLARE_IRQ_STATE;
+    240          
+    241            EFM_ASSERT(channel_nbr != NULL);
+   \        0x6   0xD102             BNE.N    ??CrossCallReturnLabel_11
+   \        0x8   0x21F1             MOVS     R1,#+241
+   \        0xA   0x.... 0x....      BL       ?Subroutine4
+    242          
+    243            // Fall back on the default DMA instance if no handle is provided
+    244            if (dma_handle == NULL) {
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \        0xE   0x.... 0x....      BL       ?Subroutine2
+    245              dma_handle = default_dma_handle;
+    246            }
+    247          
+    248            CORE_ENTER_ATOMIC();
+    249          
+    250            // Create mask for valid channels
+    251            uint32_t dma_channel_nbr_channel_mask = (1U << dma_handle->dma_peripheral->nbr_channel) - 1U;
+    252          
+    253            // Get available channels (inverted bitmap) and mask to valid channels only
+    254            uint32_t available_channels = ~dma_handle->dma_channels_bitmap & dma_channel_nbr_channel_mask;
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x12   0x6821             LDR      R1,[R4, #+0]
+   \       0x14   0x6862             LDR      R2,[R4, #+4]
+   \       0x16   0x2301             MOVS     R3,#+1
+   \       0x18   0x7D09             LDRB     R1,[R1, #+20]
+   \       0x1A   0xFA03 0xF101      LSL      R1,R3,R1
+   \       0x1E   0x1E49             SUBS     R1,R1,#+1
+   \       0x20   0x4391             BICS     R1,R1,R2
+    255          
+    256            // Check if we have any available channels
+    257            if (available_channels == 0) {
+   \       0x22   0xD103             BNE.N    ??sl_dma_manager_allocate_channel_0
+    258              CORE_EXIT_ATOMIC();
+   \       0x24   0x.... 0x....      BL       CORE_ExitAtomic
+    259              return SL_STATUS_NO_MORE_RESOURCE;
+   \       0x28   0x201A             MOVS     R0,#+26
+   \       0x2A   0xBD32             POP      {R1,R4,R5,PC}
+    260            }
+    261          
+    262            // Find highest set bit (lowest priority channel = highest channel number)
+    263            uint8_t dma_channel_tmp = (uint8_t)(31U - __CLZ(available_channels));
+   \                     ??sl_dma_manager_allocate_channel_0: (+1)
+   \       0x2C   0xFAB1 0xF181      CLZ      R1,R1
+   \       0x30   0xF1C1 0x011F      RSB      R1,R1,#+31
+    264          
+    265            // Mark the channel as allocated
+    266            // This shift operation is safe because dma_channel_tmp is guaranteed to be less than 32
+    267            // with the previous check.
+    268            dma_handle->dma_channels_bitmap |= (1U << dma_channel_tmp);
+   \       0x34   0x408B             LSLS     R3,R3,R1
+   \       0x36   0x431A             ORRS     R2,R3,R2
+   \       0x38   0x6062             STR      R2,[R4, #+4]
+    269          
+    270            // Return channel value
+    271            *channel_nbr = dma_channel_tmp;
+   \       0x3A   0x7029             STRB     R1,[R5, #+0]
+    272          
+    273            CORE_EXIT_ATOMIC();
+   \       0x3C   0x....             B.N      ?Subroutine0
+    274          
+    275            return SL_STATUS_OK;
+    276          #else
+    277            return sl_dma_manager_allocate_channel_with_properties(dma_handle, 0, channel_nbr);
+    278          #endif
+    279          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0xB90C             CBNZ.N   R4,??Subroutine2_0
+   \        0x2   0x....             LDR.N    R0,??DataTable10
+   \        0x4   0x6884             LDR      R4,[R0, #+8]
+   \                     ??Subroutine2_0: (+1)
+   \        0x6   0x.... 0x....      B.W      CORE_EnterAtomic
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x.... 0x....      BL       CORE_ExitAtomic
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xBD32             POP      {R1,R4,R5,PC}
+    280          
+    281          /***************************************************************************//**
+    282           * Allocates a DMA channel. This function allows to describe desired properties
+    283           * and features for the allocated channel.
+    284           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    285          sl_status_t sl_dma_manager_allocate_channel_with_properties(sl_dma_handle_t *dma_handle,
+    286                                                                      uint32_t channel_properties,
+    287                                                                      uint8_t *channel_nbr)
+    288          {
+   \                     sl_dma_manager_allocate_channel_with_properties: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0xEA5F 0x0902      MOVS     R9,R2
+    289            CORE_DECLARE_IRQ_STATE;
+    290          
+    291            EFM_ASSERT(channel_nbr != NULL);
+   \        0xC   0x.... 0x....      LDR.W    R11,??DataTable10_1
+   \       0x10   0xD103             BNE.N    ??CrossCallReturnLabel_17
+   \       0x12   0xF240 0x1123      MOVW     R1,#+291
+   \       0x16   0x.... 0x....      BL       ?Subroutine5
+    292          
+    293            // Cannot have both High Priority and Round Robin properties
+    294            EFM_ASSERT(!((channel_properties & (SL_DMA_CHANNEL_HIGH_PRIORITY | SL_DMA_CHANNEL_USES_ROUND_ROBIN))
+    295                         == (SL_DMA_CHANNEL_HIGH_PRIORITY | SL_DMA_CHANNEL_USES_ROUND_ROBIN)));
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \       0x1A   0xF005 0x0203      AND      R2,R5,#0x3
+   \       0x1E   0x2A03             CMP      R2,#+3
+   \       0x20   0xD103             BNE.N    ??CrossCallReturnLabel_16
+   \       0x22   0xF240 0x1127      MOVW     R1,#+295
+   \       0x26   0x.... 0x....      BL       ?Subroutine5
+    296          
+    297          #if !defined(SL_CATALOG_DMA_MANAGER_ROUND_ROBIN_PRESENT)
+    298            // Assert if Round Robin channels are not enabled but requested
+    299            EFM_ASSERT((channel_properties & SL_DMA_CHANNEL_USES_ROUND_ROBIN) == 0);
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x2A   0x07A8             LSLS     R0,R5,#+30
+   \       0x2C   0xD503             BPL.N    ??CrossCallReturnLabel_15
+   \       0x2E   0xF240 0x112B      MOVW     R1,#+299
+   \       0x32   0x.... 0x....      BL       ?Subroutine5
+    300          #endif
+    301          
+    302            // Fall back on the default DMA instance if no handle is provided
+    303            if (dma_handle == NULL) {
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x36   0x.... 0x....      BL       ?Subroutine2
+    304              dma_handle = default_dma_handle;
+    305            }
+    306          
+    307            CORE_ENTER_ATOMIC();
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x3A   0x4680             MOV      R8,R0
+    308          
+    309            // The DMA Manager only supports up to 32 channels due to the use of a 32-bit bitmap.
+    310            // Add check here, before doing a bitshift operations on a 32-bit variable.
+    311            EFM_ASSERT((dma_handle->dma_peripheral->nbr_channel < 32));
+   \       0x3C   0x6820             LDR      R0,[R4, #+0]
+   \       0x3E   0x7D01             LDRB     R1,[R0, #+20]
+   \       0x40   0x2920             CMP      R1,#+32
+   \       0x42   0xDB03             BLT.N    ??CrossCallReturnLabel_14
+   \       0x44   0xF240 0x1137      MOVW     R1,#+311
+   \       0x48   0x.... 0x....      BL       ?Subroutine5
+    312          
+    313            // Retrieve the first available dma channel from the DMA bitmask.
+    314            // This will give us the available channel with the highest priority.
+    315            uint32_t dma_channel_nbr_channel_mask = (1 << dma_handle->dma_peripheral->nbr_channel) - 1;
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x4C   0x6820             LDR      R0,[R4, #+0]
+   \       0x4E   0x2601             MOVS     R6,#+1
+   \       0x50   0xF990 0x0014      LDRSB    R0,[R0, #+20]
+   \       0x54   0xFA06 0xF000      LSL      R0,R6,R0
+   \       0x58   0xF1A0 0x0A01      SUB      R10,R0,#+1
+    316            uint8_t dma_channel_tmp = (uint8_t)SL_CTZ(~(dma_handle->dma_channels_bitmap | ~dma_channel_nbr_channel_mask));
+   \       0x5C   0x6860             LDR      R0,[R4, #+4]
+   \       0x5E   0xEA2A 0x0000      BIC      R0,R10,R0
+   \       0x62   0x.... 0x....      BL       SL_CTZ
+    317          
+    318            // Check if we have any available channels
+    319            if (dma_channel_tmp >= dma_handle->dma_peripheral->nbr_channel) {
+   \       0x66   0x6822             LDR      R2,[R4, #+0]
+   \       0x68   0xB2C7             UXTB     R7,R0
+   \       0x6A   0x7D11             LDRB     R1,[R2, #+20]
+   \       0x6C   0x428F             CMP      R7,R1
+   \       0x6E   0xDA0F             BGE.N    ??sl_dma_manager_allocate_channel_with_properti_0
+    320              CORE_EXIT_ATOMIC();
+    321              return SL_STATUS_NO_MORE_RESOURCE;
+    322            }
+    323          
+    324            if ((channel_properties & SL_DMA_CHANNEL_SUPPORTS_INTERLEAVING)
+    325                && (SL_IS_BIT_CLEAR(dma_handle->dma_peripheral->rule_based_interleaving_map, SL_DEF_BIT(dma_channel_tmp)))) {
+   \       0x70   0xFA06 0xF007      LSL      R0,R6,R7
+   \       0x74   0x076B             LSLS     R3,R5,#+29
+   \       0x76   0xD504             BPL.N    ??sl_dma_manager_allocate_channel_with_properti_1
+   \       0x78   0x6913             LDR      R3,[R2, #+16]
+   \       0x7A   0x40FB             LSRS     R3,R3,R7
+   \       0x7C   0x07DB             LSLS     R3,R3,#+31
+   \       0x7E   0xD400             BMI.N    ??sl_dma_manager_allocate_channel_with_properti_1
+   \       0x80   0xB930             CBNZ.N   R0,??sl_dma_manager_allocate_channel_with_properti_0
+    326              // Return if no Interleaving channel is available
+    327              CORE_EXIT_ATOMIC();
+    328              return SL_STATUS_NO_MORE_RESOURCE;
+    329            }
+    330          
+    331            if ((channel_properties & SL_DMA_CHANNEL_SUPPORTS_DUAL_DESTINATION)
+    332                && (SL_IS_BIT_CLEAR(dma_handle->dma_peripheral->dual_destination_map, SL_DEF_BIT(dma_channel_tmp)))) {
+   \                     ??sl_dma_manager_allocate_channel_with_properti_1: (+1)
+   \       0x82   0x072B             LSLS     R3,R5,#+28
+   \       0x84   0xD508             BPL.N    ??sl_dma_manager_allocate_channel_with_properti_2
+   \       0x86   0x68D2             LDR      R2,[R2, #+12]
+   \       0x88   0x40FA             LSRS     R2,R2,R7
+   \       0x8A   0x07D3             LSLS     R3,R2,#+31
+   \       0x8C   0xD404             BMI.N    ??sl_dma_manager_allocate_channel_with_properti_2
+   \       0x8E   0xB118             CBZ.N    R0,??sl_dma_manager_allocate_channel_with_properti_2
+    333              // Return if no Dual Destination channel is available
+    334              CORE_EXIT_ATOMIC();
+   \                     ??sl_dma_manager_allocate_channel_with_properti_0: (+1)
+   \       0x90   0x.... 0x....      BL       ?Subroutine3
+    335              return SL_STATUS_NO_MORE_RESOURCE;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x94   0x201A             MOVS     R0,#+26
+   \       0x96   0xE03D             B.N      ??sl_dma_manager_allocate_channel_with_properti_3
+    336            }
+    337          
+    338            // Find an available Round Robin Channel if Round-Robin is requested
+    339            // or find the lowest priority channel available in case no Round Robin channels are available
+    340            // or no channel properties are specified
+    341            // If all channels are round-robin, we already found a good channel candidate and can skip this.
+    342            if ((channel_properties == 0
+    343                 || channel_properties & SL_DMA_CHANNEL_USES_ROUND_ROBIN)
+    344                && (dma_handle->dma_peripheral->nbr_channel != dma_handle->round_robin_channel_number)) {
+   \                     ??sl_dma_manager_allocate_channel_with_properti_2: (+1)
+   \       0x98   0xB10D             CBZ.N    R5,??sl_dma_manager_allocate_channel_with_properti_4
+   \       0x9A   0x07A8             LSLS     R0,R5,#+30
+   \       0x9C   0xD52A             BPL.N    ??sl_dma_manager_allocate_channel_with_properti_5
+   \                     ??sl_dma_manager_allocate_channel_with_properti_4: (+1)
+   \       0x9E   0x7B20             LDRB     R0,[R4, #+12]
+   \       0xA0   0x4281             CMP      R1,R0
+   \       0xA2   0xD027             BEQ.N    ??sl_dma_manager_allocate_channel_with_properti_5
+    345              // Get the lowest priority channel that is not Round-Robin
+    346              uint8_t lowest_priority_channel = (dma_handle->dma_peripheral->nbr_channel - dma_handle->round_robin_channel_number) - 1;
+   \       0xA4   0x1A09             SUBS     R1,R1,R0
+   \       0xA6   0x1E4A             SUBS     R2,R1,#+1
+   \       0xA8   0xB2D2             UXTB     R2,R2
+   \       0xAA   0x9201             STR      R2,[SP, #+4]
+    347              if (dma_channel_tmp <= lowest_priority_channel) {
+   \       0xAC   0x9B01             LDR      R3,[SP, #+4]
+   \       0xAE   0x42BB             CMP      R3,R7
+   \       0xB0   0xDB20             BLT.N    ??sl_dma_manager_allocate_channel_with_properti_5
+    348                uint32_t round_robin_channels_mask = ((1U << dma_handle->round_robin_channel_number) - 1U) << (dma_handle->dma_peripheral->nbr_channel - dma_handle->round_robin_channel_number);
+   \       0xB2   0xFA06 0xF200      LSL      R2,R6,R0
+   \       0xB6   0x1E52             SUBS     R2,R2,#+1
+   \       0xB8   0xFA02 0xF101      LSL      R1,R2,R1
+   \       0xBC   0x9100             STR      R1,[SP, #+0]
+    349                // If the current found channel is inside the priority range, we need to check if any channels are available in
+    350                // the round-robin range when round-robin channel is requested.
+    351                if ((channel_properties & SL_DMA_CHANNEL_USES_ROUND_ROBIN) != 0
+    352                    && (dma_handle->round_robin_channel_number != 0)) {
+   \       0xBE   0x07A9             LSLS     R1,R5,#+30
+   \       0xC0   0xD50C             BPL.N    ??sl_dma_manager_allocate_channel_with_properti_6
+   \       0xC2   0xB158             CBZ.N    R0,??sl_dma_manager_allocate_channel_with_properti_6
+    353                  // Find the first available Round-Robin channel
+    354                  uint8_t rr_channel = (uint8_t)SL_CTZ(~(dma_handle->dma_channels_bitmap | ~round_robin_channels_mask));
+   \       0xC4   0x6860             LDR      R0,[R4, #+4]
+   \       0xC6   0x9900             LDR      R1,[SP, #+0]
+   \       0xC8   0xEA21 0x0000      BIC      R0,R1,R0
+   \       0xCC   0x.... 0x....      BL       SL_CTZ
+    355                  if (rr_channel < dma_handle->dma_peripheral->nbr_channel) {
+   \       0xD0   0x6822             LDR      R2,[R4, #+0]
+   \       0xD2   0xB2C1             UXTB     R1,R0
+   \       0xD4   0x7D13             LDRB     R3,[R2, #+20]
+   \       0xD6   0x4299             CMP      R1,R3
+   \       0xD8   0xBF38             IT       CC
+   \       0xDA   0xB2C7             UXTBCC   R7,R0
+    356                    dma_channel_tmp = rr_channel;
+    357                  }
+    358                }
+    359                // If not round-robin channels are left or if no channel properties were specified,
+    360                // we need to find the lowest priority channel available.
+    361                if (dma_channel_tmp < lowest_priority_channel) {
+   \                     ??sl_dma_manager_allocate_channel_with_properti_6: (+1)
+   \       0xDC   0x9801             LDR      R0,[SP, #+4]
+   \       0xDE   0x4287             CMP      R7,R0
+   \       0xE0   0xDA08             BGE.N    ??sl_dma_manager_allocate_channel_with_properti_5
+    362                  dma_channel_tmp = 31 - __CLZ(~dma_handle->dma_channels_bitmap & (~round_robin_channels_mask & dma_channel_nbr_channel_mask));
+   \       0xE2   0x6861             LDR      R1,[R4, #+4]
+   \       0xE4   0x9800             LDR      R0,[SP, #+0]
+   \       0xE6   0x4301             ORRS     R1,R0,R1
+   \       0xE8   0xEA2A 0x0001      BIC      R0,R10,R1
+   \       0xEC   0xFAB0 0xF780      CLZ      R7,R0
+   \       0xF0   0xF1C7 0x071F      RSB      R7,R7,#+31
+    363                }
+    364              }
+    365            }
+    366          
+    367            // It should be guaranteed by the previous checks that dma_channel_tmp is less than 32.
+    368            // Add a check here to be sure.
+    369            EFM_ASSERT((dma_channel_tmp < 32));
+   \                     ??sl_dma_manager_allocate_channel_with_properti_5: (+1)
+   \       0xF4   0xB2F8             UXTB     R0,R7
+   \       0xF6   0x2820             CMP      R0,#+32
+   \       0xF8   0xDB03             BLT.N    ??CrossCallReturnLabel_13
+   \       0xFA   0xF240 0x1171      MOVW     R1,#+369
+   \       0xFE   0x.... 0x....      BL       ?Subroutine5
+    370          
+    371            // Mark the channel as allocated
+    372            // This shift operation is safe because dma_channel_tmp is guaranteed to be less than 32
+    373            // with the previous check.
+    374            dma_handle->dma_channels_bitmap |= (1U << dma_channel_tmp);
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \      0x102   0x6860             LDR      R0,[R4, #+4]
+   \      0x104   0x40BE             LSLS     R6,R6,R7
+   \      0x106   0x4306             ORRS     R6,R6,R0
+   \      0x108   0x6066             STR      R6,[R4, #+4]
+    375          
+    376            // Return channel value
+    377            *channel_nbr = dma_channel_tmp;
+   \      0x10A   0xF889 0x7000      STRB     R7,[R9, #+0]
+    378          
+    379            CORE_EXIT_ATOMIC();
+   \      0x10E   0x.... 0x....      BL       ?Subroutine3
+    380            return SL_STATUS_OK;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \      0x112   0x2000             MOVS     R0,#+0
+   \                     ??sl_dma_manager_allocate_channel_with_properti_3: (+1)
+   \      0x114   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    381          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x4658             MOV      R0,R11
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    382          
+    383          /***************************************************************************//**
+    384           * Reserves a specific channel.
+    385           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    386          sl_status_t sl_dma_manager_reserve_channel(sl_dma_handle_t *dma_handle,
+    387                                                     uint8_t channel_nbr)
+    388          {
+   \                     sl_dma_manager_reserve_channel: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    389            CORE_DECLARE_IRQ_STATE;
+    390          
+    391            // Fall back on the default DMA instance if no handle is provided
+    392            if (dma_handle == NULL) {
+   \        0x6   0xBF04             ITT      EQ
+   \        0x8   0x....             LDREQ.N  R0,??DataTable10
+   \        0xA   0x6884             LDREQ    R4,[R0, #+8]
+    393              dma_handle = default_dma_handle;
+    394            }
+    395          
+    396            // Check if the channel number is valid
+    397            if (channel_nbr >= dma_handle->dma_peripheral->nbr_channel) {
+   \        0xC   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x10   0xD301             BCC.N    ??sl_dma_manager_reserve_channel_0
+    398              return SL_STATUS_INVALID_PARAMETER;
+   \       0x12   0x2021             MOVS     R0,#+33
+   \       0x14   0xBD32             POP      {R1,R4,R5,PC}
+    399            }
+    400          
+    401            CORE_ENTER_ATOMIC();
+   \                     ??sl_dma_manager_reserve_channel_0: (+1)
+   \       0x16   0x.... 0x....      BL       CORE_EnterAtomic
+    402          
+    403            // Check if the channel is already reserved
+    404            if ((dma_handle->dma_channels_bitmap & (1U << channel_nbr)) != 0) {
+   \       0x1A   0x6861             LDR      R1,[R4, #+4]
+   \       0x1C   0xFA21 0xF205      LSR      R2,R1,R5
+   \       0x20   0x07D3             LSLS     R3,R2,#+31
+   \       0x22   0xD503             BPL.N    ??sl_dma_manager_reserve_channel_1
+    405              CORE_EXIT_ATOMIC();
+   \       0x24   0x.... 0x....      BL       CORE_ExitAtomic
+    406              return SL_STATUS_NOT_AVAILABLE;
+   \       0x28   0x200E             MOVS     R0,#+14
+   \       0x2A   0xBD32             POP      {R1,R4,R5,PC}
+    407            }
+    408          
+    409            // Mark the channel as reserved
+    410            dma_handle->dma_channels_bitmap |= (1U << channel_nbr);
+   \                     ??sl_dma_manager_reserve_channel_1: (+1)
+   \       0x2C   0x2201             MOVS     R2,#+1
+   \       0x2E   0xFA02 0xF505      LSL      R5,R2,R5
+   \       0x32   0x430D             ORRS     R5,R5,R1
+   \       0x34   0x6065             STR      R5,[R4, #+4]
+    411          
+    412            CORE_EXIT_ATOMIC();
+   \       0x36                      REQUIRE ?Subroutine0
+   \       0x36                      ; // Fall through to label ?Subroutine0
+    413            return SL_STATUS_OK;
+    414          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x6821             LDR      R1,[R4, #+0]
+   \        0x2   0x7D0A             LDRB     R2,[R1, #+20]
+   \        0x4   0x4295             CMP      R5,R2
+   \        0x6   0x4770             BX       LR
+    415          
+    416          /***************************************************************************//**
+    417           * Frees a previously allocated/reserved channel.
+    418           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    419          sl_status_t sl_dma_manager_free_channel(sl_dma_handle_t *dma_handle,
+    420                                                  uint8_t channel_nbr)
+    421          {
+   \                     sl_dma_manager_free_channel: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    422            CORE_DECLARE_IRQ_STATE;
+    423          
+    424            // Fall back on the default DMA instance if no handle is provided
+    425            if (dma_handle == NULL) {
+   \        0x6   0xBF04             ITT      EQ
+   \        0x8   0x....             LDREQ.N  R0,??DataTable10
+   \        0xA   0x6884             LDREQ    R4,[R0, #+8]
+    426              dma_handle = default_dma_handle;
+    427            }
+    428          
+    429            // Check if the channel number is valid
+    430            if (channel_nbr >= dma_handle->dma_peripheral->nbr_channel) {
+   \        0xC   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \       0x10   0xD301             BCC.N    ??sl_dma_manager_free_channel_0
+    431              return SL_STATUS_INVALID_PARAMETER;
+   \       0x12   0x2021             MOVS     R0,#+33
+   \       0x14   0xBD32             POP      {R1,R4,R5,PC}
+    432            }
+    433          
+    434            CORE_ENTER_ATOMIC();
+   \                     ??sl_dma_manager_free_channel_0: (+1)
+   \       0x16   0x.... 0x....      BL       CORE_EnterAtomic
+    435          
+    436            // Mark the channel as free
+    437            dma_handle->dma_channels_bitmap &= ~(1U << channel_nbr);
+   \       0x1A   0x6861             LDR      R1,[R4, #+4]
+   \       0x1C   0x2201             MOVS     R2,#+1
+   \       0x1E   0x40AA             LSLS     R2,R2,R5
+   \       0x20   0x4391             BICS     R1,R1,R2
+   \       0x22   0x6061             STR      R1,[R4, #+4]
+    438          
+    439            // Clear associated callback and user data
+    440            dma_handle->channel_irq_callbacks_table[channel_nbr] = NULL;
+   \       0x24   0x6921             LDR      R1,[R4, #+16]
+   \       0x26   0x2300             MOVS     R3,#+0
+   \       0x28   0xF841 0x3025      STR      R3,[R1, R5, LSL #+2]
+    441            dma_handle->channel_user_data_table[channel_nbr] = NULL;
+   \       0x2C   0x6961             LDR      R1,[R4, #+20]
+   \       0x2E   0xF841 0x3025      STR      R3,[R1, R5, LSL #+2]
+    442          
+    443            CORE_EXIT_ATOMIC();
+   \       0x32   0x....             B.N      ?Subroutine0
+    444            return SL_STATUS_OK;
+    445          }
+    446          
+    447          /***************************************************************************//**
+    448           * Allocates a SYNC bit/channel.
+    449           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    450          sl_status_t sl_dma_manager_allocate_sync(sl_dma_handle_t *dma_handle,
+    451                                                   uint8_t *sync_nbr)
+    452          {
+   \                     sl_dma_manager_allocate_sync: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    453            CORE_DECLARE_IRQ_STATE;
+    454          
+    455            EFM_ASSERT(sync_nbr != NULL);
+   \        0x6   0xD103             BNE.N    ??CrossCallReturnLabel_10
+   \        0x8   0xF240 0x11C7      MOVW     R1,#+455
+   \        0xC   0x.... 0x....      BL       ?Subroutine4
+    456          
+    457            // Fall back on the default DMA instance if no handle is provided
+    458            if (dma_handle == NULL) {
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x10   0x.... 0x....      BL       ?Subroutine2
+    459              dma_handle = default_dma_handle;
+    460            }
+    461          
+    462            CORE_ENTER_ATOMIC();
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x14   0x4606             MOV      R6,R0
+    463          
+    464            // Find first zero bit in bitmap (first available SYNC bit)
+    465            uint8_t sync_bit_tmp = (uint8_t)SL_CTZ(~dma_handle->sync_bit_bitmap);
+   \       0x16   0x68A0             LDR      R0,[R4, #+8]
+   \       0x18   0x43C0             MVNS     R0,R0
+   \       0x1A   0x.... 0x....      BL       SL_CTZ
+    466          
+    467            // Check if we have any available SYNC bit
+    468            if (sync_bit_tmp >= dma_handle->dma_peripheral->nbr_sync) {
+   \       0x1E   0x6822             LDR      R2,[R4, #+0]
+   \       0x20   0xB2C1             UXTB     R1,R0
+   \       0x22   0x7D53             LDRB     R3,[R2, #+21]
+   \       0x24   0x4299             CMP      R1,R3
+   \       0x26   0xD304             BCC.N    ??sl_dma_manager_allocate_sync_0
+    469              CORE_EXIT_ATOMIC();
+   \       0x28   0x4630             MOV      R0,R6
+   \       0x2A   0x.... 0x....      BL       CORE_ExitAtomic
+    470              return SL_STATUS_NO_MORE_RESOURCE;
+   \       0x2E   0x201A             MOVS     R0,#+26
+   \       0x30   0xBD70             POP      {R4-R6,PC}
+    471            }
+    472          
+    473            // Mark the SYNC bit as allocated
+    474            dma_handle->sync_bit_bitmap |= (1U << sync_bit_tmp);
+   \                     ??sl_dma_manager_allocate_sync_0: (+1)
+   \       0x32   0x68A1             LDR      R1,[R4, #+8]
+   \       0x34   0x2201             MOVS     R2,#+1
+   \       0x36   0x4082             LSLS     R2,R2,R0
+   \       0x38   0x4311             ORRS     R1,R2,R1
+   \       0x3A   0x60A1             STR      R1,[R4, #+8]
+    475          
+    476            *sync_nbr = sync_bit_tmp;
+   \       0x3C   0x7028             STRB     R0,[R5, #+0]
+    477          
+    478            CORE_EXIT_ATOMIC();
+   \       0x3E   0x4630             MOV      R0,R6
+   \       0x40   0x....             B.N      ??Subroutine1_0
+    479            return SL_STATUS_OK;
+    480          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xF841 0x6025      STR      R6,[R1, R5, LSL #+2]
+   \                     ??Subroutine1_0: (+1)
+   \        0x4   0x.... 0x....      BL       CORE_ExitAtomic
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0xBD70             POP      {R4-R6,PC}
+    481          
+    482          /***************************************************************************//**
+    483           * Frees a previously allocated SYNC bit/channel.
+    484           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    485          sl_status_t sl_dma_manager_free_sync(sl_dma_handle_t *dma_handle,
+    486                                               uint8_t sync_nbr)
+    487          {
+   \                     sl_dma_manager_free_sync: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    488            CORE_DECLARE_IRQ_STATE;
+    489          
+    490            // Fall back on the default DMA instance if no handle is provided
+    491            if (dma_handle == NULL) {
+   \        0x6   0xBF04             ITT      EQ
+   \        0x8   0x....             LDREQ.N  R0,??DataTable10
+   \        0xA   0x6884             LDREQ    R4,[R0, #+8]
+    492              dma_handle = default_dma_handle;
+    493            }
+    494          
+    495            if (sync_nbr >= dma_handle->dma_peripheral->nbr_sync) {
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+   \        0xE   0x7D4A             LDRB     R2,[R1, #+21]
+   \       0x10   0x4295             CMP      R5,R2
+   \       0x12   0xD301             BCC.N    ??sl_dma_manager_free_sync_0
+    496              return SL_STATUS_INVALID_PARAMETER;
+   \       0x14   0x2021             MOVS     R0,#+33
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}
+    497            }
+    498          
+    499            CORE_ENTER_ATOMIC();
+   \                     ??sl_dma_manager_free_sync_0: (+1)
+   \       0x18   0x.... 0x....      BL       CORE_EnterAtomic
+    500          
+    501            // Mark the SYNC bit as free
+    502            dma_handle->sync_bit_bitmap &= ~(1U << sync_nbr);
+   \       0x1C   0x68A1             LDR      R1,[R4, #+8]
+   \       0x1E   0x2201             MOVS     R2,#+1
+   \       0x20   0xFA02 0xF505      LSL      R5,R2,R5
+   \       0x24   0xEA21 0x0505      BIC      R5,R1,R5
+   \       0x28   0x60A5             STR      R5,[R4, #+8]
+    503          
+    504            CORE_EXIT_ATOMIC();
+   \       0x2A   0x....             B.N      ?Subroutine0
+    505            return SL_STATUS_OK;
+    506          }
+    507          
+    508          /***************************************************************************//**
+    509           * Registers an IRQ callback.
+    510           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    511          sl_status_t sl_dma_manager_register_channel_irq_callback(sl_dma_handle_t *dma_handle,
+    512                                                                   uint8_t channel_nbr,
+    513                                                                   sl_dma_manager_channel_irq_callback_t callback)
+    514          {
+   \                     sl_dma_manager_register_channel_irq_callback: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4616             MOV      R6,R2
+    515            CORE_DECLARE_IRQ_STATE;
+    516          
+    517            // Fall back on the default DMA instance if no handle is provided
+    518            if (dma_handle == NULL) {
+   \        0x8   0xBF04             ITT      EQ
+   \        0xA   0x....             LDREQ.N  R0,??DataTable10
+   \        0xC   0x6884             LDREQ    R4,[R0, #+8]
+    519              dma_handle = default_dma_handle;
+    520            }
+    521          
+    522            if (channel_nbr >= dma_handle->dma_peripheral->nbr_channel) {
+   \        0xE   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \       0x12   0xD301             BCC.N    ??sl_dma_manager_register_channel_irq_callback_0
+    523              return SL_STATUS_INVALID_PARAMETER;
+   \       0x14   0x2021             MOVS     R0,#+33
+   \       0x16   0xBD70             POP      {R4-R6,PC}
+    524            }
+    525          
+    526            CORE_ENTER_ATOMIC();
+   \                     ??sl_dma_manager_register_channel_irq_callback_0: (+1)
+   \       0x18   0x.... 0x....      BL       CORE_EnterAtomic
+    527          
+    528            // Store the callback
+    529            dma_handle->channel_irq_callbacks_table[channel_nbr] = callback;
+   \       0x1C   0x6921             LDR      R1,[R4, #+16]
+   \       0x1E   0x....             B.N      ?Subroutine1
+    530          
+    531          #if defined(_SILICON_LABS_32B_SERIES_3)
+    532            // Configure the IRQ for the channel in case we have an IRQ line per channel
+    533            if (callback != NULL) {
+    534              sli_dma_manager_hal_configure_channel_irq(channel_nbr);
+    535            }
+    536          #endif
+    537          
+    538            CORE_EXIT_ATOMIC();
+    539          
+    540            return SL_STATUS_OK;
+    541          }
+    542          
+    543          /***************************************************************************//**
+    544           * Registers user data for a specific DMA channel.
+    545           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    546          sl_status_t sl_dma_manager_register_channel_user_data(sl_dma_handle_t *dma_handle,
+    547                                                                uint8_t channel_nbr,
+    548                                                                void *user_data)
+    549          {
+   \                     sl_dma_manager_register_channel_user_data: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4616             MOV      R6,R2
+    550            CORE_DECLARE_IRQ_STATE;
+    551          
+    552            // Fall back on the default DMA instance if no handle is provided
+    553            if (dma_handle == NULL) {
+   \        0x8   0xBF04             ITT      EQ
+   \        0xA   0x....             LDREQ.N  R0,??DataTable10
+   \        0xC   0x6884             LDREQ    R4,[R0, #+8]
+    554              dma_handle = default_dma_handle;
+    555            }
+    556          
+    557            if (channel_nbr >= dma_handle->dma_peripheral->nbr_channel) {
+   \        0xE   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \       0x12   0xD301             BCC.N    ??sl_dma_manager_register_channel_user_data_0
+    558              return SL_STATUS_INVALID_PARAMETER;
+   \       0x14   0x2021             MOVS     R0,#+33
+   \       0x16   0xBD70             POP      {R4-R6,PC}
+    559            }
+    560          
+    561            CORE_ENTER_ATOMIC();
+   \                     ??sl_dma_manager_register_channel_user_data_0: (+1)
+   \       0x18   0x.... 0x....      BL       CORE_EnterAtomic
+    562          
+    563            dma_handle->channel_user_data_table[channel_nbr] = user_data;
+   \       0x1C   0x6961             LDR      R1,[R4, #+20]
+   \       0x1E                      REQUIRE ?Subroutine1
+   \       0x1E                      ; // Fall through to label ?Subroutine1
+    564          
+    565            CORE_EXIT_ATOMIC();
+    566          
+    567            return SL_STATUS_OK;
+    568          }
+    569          
+    570          /***************************************************************************//**
+    571           * Retrieves the user data and channel number for the DMA channel currently
+    572           * being serviced in the interrupt dispatch context.
+    573           ******************************************************************************/
+
+   \                                 In section text_dma_manager_dmachannelperf30495, align 4, keep-with-next
+    574          sl_status_t sl_dma_manager_retrieve_current_channel_user_data(uint8_t *channel_nbr,
+    575                                                                        void **user_data)
+    576          {
+    577            if (channel_nbr == NULL || user_data == NULL) {
+   \                     sl_dma_manager_retrieve_current_channel_user_data: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE
+   \        0x4   0x2900             CMPNE    R1,#+0
+   \        0x6   0xD101             BNE.N    ??sl_dma_manager_retrieve_current_channel_user__1
+    578              return SL_STATUS_INVALID_PARAMETER;
+   \        0x8   0x2021             MOVS     R0,#+33
+   \        0xA   0x4770             BX       LR
+    579            }
+    580          
+    581            if (current_irq_dma_handle == NULL) {
+   \                     ??sl_dma_manager_retrieve_current_channel_user__1: (+1)
+   \        0xC   0x4B06             LDR.N    R3,??sl_dma_manager_retrieve_current_channel_user__0
+   \        0xE   0x68DA             LDR      R2,[R3, #+12]
+   \       0x10   0xB90A             CBNZ.N   R2,??sl_dma_manager_retrieve_current_channel_user__2
+    582              return SL_STATUS_INVALID_STATE;
+   \       0x12   0x2002             MOVS     R0,#+2
+   \       0x14   0x4770             BX       LR
+    583            }
+    584          
+    585            *channel_nbr = current_irq_channel_nbr;
+   \                     ??sl_dma_manager_retrieve_current_channel_user__2: (+1)
+   \       0x16   0x781B             LDRB     R3,[R3, #+0]
+   \       0x18   0x7003             STRB     R3,[R0, #+0]
+    586            *user_data = current_irq_dma_handle->channel_user_data_table[current_irq_channel_nbr];
+   \       0x1A   0x6950             LDR      R0,[R2, #+20]
+   \       0x1C   0xF850 0x2023      LDR      R2,[R0, R3, LSL #+2]
+    587          
+    588            return SL_STATUS_OK;
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x600A             STR      R2,[R1, #+0]
+   \       0x24   0x4770             BX       LR
+   \       0x26   0xBF00             Nop
+   \                     ??sl_dma_manager_retrieve_current_channel_user__0:
+   \       0x28   0x....'....        DC32     current_irq_channel_nbr
+    589          }
+    590          
+    591          /***************************************************************************//**
+    592           * Interrupt handler to call channel IRQ callbacks.
+    593           ******************************************************************************/
+
+   \                                 In section text_dma_manager_dmachannelperf33104, align 4, keep-with-next
+    594          void sli_dma_manager_interrupt_handler(uint32_t peripheral_base_addr, uint8_t channel_nbr)
+    595          {
+   \                     sli_dma_manager_interrupt_handler: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x460F             MOV      R7,R1
+    596            CORE_DECLARE_IRQ_STATE;
+    597            sl_dma_handle_t const *dma_handle = NULL;
+    598            sl_dma_handle_t *handle;
+    599          
+    600            CORE_ENTER_ATOMIC();
+   \        0x8   0x.... 0x....      BL       CORE_EnterAtomic
+    601          
+    602            // Found the DMA Handle associated with the peripheral base address
+    603            SL_SLIST_FOR_EACH_ENTRY(dma_handle_list, handle, sl_dma_handle_t, node) {
+   \        0xC   0x4E11             LDR.N    R6,??sli_dma_manager_interrupt_handler_0
+   \        0xE   0x4605             MOV      R5,R0
+   \       0x10   0x6874             LDR      R4,[R6, #+4]
+   \       0x12   0xE000             B.N      ??sli_dma_manager_interrupt_handler_1
+   \                     ??sli_dma_manager_interrupt_handler_2: (+1)
+   \       0x14   0x69A4             LDR      R4,[R4, #+24]
+   \                     ??sli_dma_manager_interrupt_handler_1: (+1)
+   \       0x16   0x3C18             SUBS     R4,R4,#+24
+   \       0x18   0xF114 0x0F18      CMN      R4,#+24
+   \       0x1C   0xD015             BEQ.N    ??sli_dma_manager_interrupt_handler_3
+    604              if (handle->dma_peripheral->base == peripheral_base_addr) {
+   \       0x1E   0x6820             LDR      R0,[R4, #+0]
+   \       0x20   0x6801             LDR      R1,[R0, #+0]
+   \       0x22   0x4541             CMP      R1,R8
+   \       0x24   0xD1F6             BNE.N    ??sli_dma_manager_interrupt_handler_2
+    605                dma_handle = handle;
+    606                break;
+    607              }
+    608            }
+    609          
+    610            if (dma_handle == NULL) {
+   \       0x26   0xB184             CBZ.N    R4,??sli_dma_manager_interrupt_handler_3
+    611              // Handle error: DMA handle not found
+    612              CORE_EXIT_ATOMIC();
+    613              return;
+    614            }
+    615          
+    616            // Validate that the DMA channel number is valid
+    617            EFM_ASSERT(channel_nbr < dma_handle->dma_peripheral->nbr_channel);
+   \       0x28   0x7D02             LDRB     R2,[R0, #+20]
+   \       0x2A   0x4297             CMP      R7,R2
+   \       0x2C   0xD304             BCC.N    ??sli_dma_manager_interrupt_handler_4
+   \       0x2E   0xF240 0x2169      MOVW     R1,#+617
+   \       0x32   0x4809             LDR.N    R0,??sli_dma_manager_interrupt_handler_0+4
+   \       0x34   0x.... 0x....      BL       assertEFM
+    618          
+    619            // Set the current IRQ context so that the callback can retrieve
+    620            // the channel number and user data via
+    621            // sl_dma_manager_retrieve_current_channel_user_data().
+    622            current_irq_dma_handle = dma_handle;
+   \                     ??sli_dma_manager_interrupt_handler_4: (+1)
+   \       0x38   0x60F4             STR      R4,[R6, #+12]
+    623            current_irq_channel_nbr = channel_nbr;
+   \       0x3A   0x7037             STRB     R7,[R6, #+0]
+    624          
+    625            // Check if we have an interrupt callback for this DMA channel
+    626            // and call the function
+    627            if (dma_handle->channel_irq_callbacks_table[channel_nbr] != NULL) {
+   \       0x3C   0x6920             LDR      R0,[R4, #+16]
+   \       0x3E   0xF850 0x0027      LDR      R0,[R0, R7, LSL #+2]
+   \       0x42   0xB100             CBZ.N    R0,??sli_dma_manager_interrupt_handler_5
+    628              dma_handle->channel_irq_callbacks_table[channel_nbr]();
+   \       0x44   0x4780             BLX      R0
+    629            }
+    630          
+    631            current_irq_dma_handle = NULL;
+   \                     ??sli_dma_manager_interrupt_handler_5: (+1)
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x60F0             STR      R0,[R6, #+12]
+    632          
+    633            CORE_EXIT_ATOMIC();
+   \                     ??sli_dma_manager_interrupt_handler_3: (+1)
+   \       0x4A   0x4628             MOV      R0,R5
+   \       0x4C   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \       0x50   0x.... 0x....      B.W      CORE_ExitAtomic
+   \                     ??sli_dma_manager_interrupt_handler_0:
+   \       0x54   0x....'....        DC32     current_irq_channel_nbr
+   \       0x58   0x....'....        DC32     ?_0
+    634          }
+    635          
+    636          /***************************************************************************//**
+    637           *  Get the pending errors for the DMA manager.
+    638           *  This function retrieves the current pending errors.
+    639           ******************************************************************************/
+
+   \                                 In section text_dma_manager_dmachannelperf31507, align 2, keep-with-next
+    640          uint32_t sl_dma_manager_get_pending_errors(uint8_t channel_nbr)
+    641          {
+    642            return sli_dma_manager_hal_get_pending_errors(channel_nbr);
+   \                     sl_dma_manager_get_pending_errors: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_dma_manager_hal_get_pending_errors
+    643          }
+    644          
+    645          /***************************************************************************//**
+    646           *  Clear the pending errors for the DMA manager.
+    647           *  This function clears the pending error flag for the specified channel.
+    648           *  It is idempotent and safe to call multiple times.
+    649           *
+    650           * @param[in]  channel_nbr Channel number.
+    651           ******************************************************************************/
+
+   \                                 In section text_dma_manager_dmachannelperf32517, align 2, keep-with-next
+    652          void sl_dma_manager_clear_pending_errors(uint8_t channel_nbr)
+    653          {
+    654            sli_dma_manager_hal_clear_pending_errors(channel_nbr);
+   \                     sl_dma_manager_clear_pending_errors: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_dma_manager_hal_clear_pending_errors
+    655          }
+    656          
+    657          /***************************************************************************//**
+    658           *  Latch a pending error bitmap for the DMA manager.
+    659           *  Forwards to the HAL implementation.
+    660           ******************************************************************************/
+
+   \                                 In section text_dma_manager_dmachannelperf37148, align 2, keep-with-next
+    661          void sli_dma_manager_set_pending_errors(uint8_t channel_nbr, uint32_t errors)
+    662          {
+    663            sli_dma_manager_hal_set_pending_errors(channel_nbr, errors);
+   \                     sli_dma_manager_set_pending_errors: (+1)
+   \        0x0   0x.... 0x....      B.W      sli_dma_manager_hal_set_pending_errors
+    664          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x....'....        DC32     current_irq_channel_nbr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x73, 0x65, 0x72, 0x76, 0x69, 0x63
+   \              0x73 0x65    
+   \              0x72 0x76    
+   \              0x69 0x63
+   \       0x70   0x65 0x5C          DC8 0x65, 0x5C, 0x64, 0x6D, 0x61, 0x5F, 0x6D, 0x61
+   \              0x64 0x6D    
+   \              0x61 0x5F    
+   \              0x6D 0x61
+   \       0x78   0x6E 0x61          DC8 0x6E, 0x61, 0x67, 0x65, 0x72, 0x5C, 0x73, 0x72
+   \              0x67 0x65    
+   \              0x72 0x5C    
+   \              0x73 0x72
+   \       0x80   0x63 0x5C          DC8 0x63, 0x5C, 0x73, 0x6C, 0x5F, 0x64, 0x6D, 0x61
+   \              0x73 0x6C    
+   \              0x5F 0x64    
+   \              0x6D 0x61
+   \       0x88   0x5F 0x6D          DC8 0x5F, 0x6D, 0x61, 0x6E, 0x61, 0x67, 0x65, 0x72
+   \              0x61 0x6E    
+   \              0x61 0x67    
+   \              0x65 0x72
+   \       0x90   0x2E 0x63          DC8 0x2E, 0x63, 0
+   \              0x00
+   \       0x93                      DS8 1
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SL_CTZ
+      16   sl_dma_manager_allocate_channel
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+        16   -> assertEFM
+      48   sl_dma_manager_allocate_channel_with_properties
+        48   -> CORE_EnterAtomic
+        48   -> CORE_ExitAtomic
+        48   -> SL_CTZ
+        48   -> assertEFM
+      16   sl_dma_manager_allocate_sync
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+        16   -> SL_CTZ
+        16   -> assertEFM
+       0   sl_dma_manager_clear_pending_errors
+         0   -> sli_dma_manager_hal_clear_pending_errors
+      16   sl_dma_manager_free_channel
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      16   sl_dma_manager_free_sync
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+       0   sl_dma_manager_get_default_handle
+       0   sl_dma_manager_get_pending_errors
+         0   -> sli_dma_manager_hal_get_pending_errors
+      32   sl_dma_manager_init
+        32   -> CORE_EnterAtomic
+        32   -> CORE_ExitAtomic
+        32   -> assertEFM
+        32   -> sl_memory_alloc
+        32   -> sl_memory_calloc
+        32   -> sl_memory_free
+        32   -> sl_slist_push
+        32   -> sli_dma_manager_hal_get_dma_peripheral
+        32   -> sli_dma_manager_hal_init
+      16   sl_dma_manager_register_channel_irq_callback
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      16   sl_dma_manager_register_channel_user_data
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      16   sl_dma_manager_reserve_channel
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+       0   sl_dma_manager_retrieve_current_channel_user_data
+      24   sli_dma_manager_interrupt_handler
+        24   -- Indirect call
+        24   -> CORE_EnterAtomic
+         0   -> CORE_ExitAtomic
+        24   -> assertEFM
+       0   sli_dma_manager_set_pending_errors
+         0   -> sli_dma_manager_hal_set_pending_errors
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       8  ?Subroutine0
+      12  ?Subroutine1
+      10  ?Subroutine2
+       6  ?Subroutine3
+       6  ?Subroutine4
+       6  ?Subroutine5
+       8  ?Subroutine6
+     148  ?_0
+      10  SL_CTZ
+      16  current_irq_channel_nbr
+          dma_handle_list
+          default_dma_handle
+          current_irq_dma_handle
+      62  sl_dma_manager_allocate_channel
+     280  sl_dma_manager_allocate_channel_with_properties
+      66  sl_dma_manager_allocate_sync
+       4  sl_dma_manager_clear_pending_errors
+      52  sl_dma_manager_free_channel
+      44  sl_dma_manager_free_sync
+      16  sl_dma_manager_get_default_handle
+       4  sl_dma_manager_get_pending_errors
+     238  sl_dma_manager_init
+      32  sl_dma_manager_register_channel_irq_callback
+      30  sl_dma_manager_register_channel_user_data
+      54  sl_dma_manager_reserve_channel
+      44  sl_dma_manager_retrieve_current_channel_user_data
+      92  sli_dma_manager_interrupt_handler
+       4  sli_dma_manager_set_pending_errors
+
+ 
+  16 bytes in section .bss
+ 148 bytes in section .rodata
+ 948 bytes in section .text
+  44 bytes in section text_dma_manager_dmachannelperf30495
+   4 bytes in section text_dma_manager_dmachannelperf31507
+   4 bytes in section text_dma_manager_dmachannelperf32517
+  92 bytes in section text_dma_manager_dmachannelperf33104
+   4 bytes in section text_dma_manager_dmachannelperf37148
+ 
+ 1'096 bytes of CODE  memory
+   148 bytes of CONST memory
+    16 bytes of DATA  memory
+
+Errors: none
+Warnings: none

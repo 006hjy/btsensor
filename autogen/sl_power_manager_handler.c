@@ -2,6 +2,7 @@
 #include "sl_core.h"
 #include "sl_power_manager.h"
 #include "sl_sleeptimer.h"
+#include "sl_common.h"
 #include "uartdrv.h"
 
 /***************************************************************************//**
@@ -17,7 +18,7 @@
  *        re-enabled.
  ******************************************************************************/
   SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
-__WEAK bool app_is_ok_to_sleep(void)
+SL_WEAK bool app_is_ok_to_sleep(void)
 {
   return true;
 }
@@ -41,7 +42,7 @@ __WEAK bool app_is_ok_to_sleep(void)
  *        as a wireless stack, the application hook function won't be called.
  ******************************************************************************/
  SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
-__WEAK sl_power_manager_on_isr_exit_t app_sleep_on_isr_exit(void)
+SL_WEAK sl_power_manager_on_isr_exit_t app_sleep_on_isr_exit(void)
 {
   return SL_POWER_MANAGER_IGNORE;
 }

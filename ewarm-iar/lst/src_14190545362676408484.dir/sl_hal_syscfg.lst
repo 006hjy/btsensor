@@ -1,0 +1,996 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:05
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_syscfg.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_syscfg.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_syscfg.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14190545362676408484.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_syscfg.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_syscfg.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14190545362676408484.dir\sl_hal_syscfg.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_syscfg.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_syscfg.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief System Configuration (SYSCFG) peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          #include <stdbool.h>
+     31          #include <stddef.h>
+     32          #include "sl_hal_syscfg.h"
+     33          #include "sl_status.h"
+     34          #include "sl_hal_bus.h"
+     35          #include "sl_assert.h"
+     36          
+     37          /***************************************************************************//**
+     38           * @addtogroup system config
+     39           * @{
+     40           ******************************************************************************/
+     41          
+     42          /*******************************************************************************
+     43           ******************************      DEFINES      ******************************
+     44           ******************************************************************************/
+     45          #if defined(_SYSCFG_DMEM0ECCCTRL_MASK) \
+     46            || defined(_MPAHBRAM_CTRL_MASK)
+     47          
+     48          #if defined(_SILICON_LABS_32B_SERIES_2)
+     49          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+     50          
+     51          /// On Series 2 Config 1, aka EFR32XG21, ECC is supported for the
+     52          /// main DMEM RAM banks which is controlled with one ECC encoder/decoder.
+     53          #define ECC_RAM0_SYNDROMES_INIT (SYSCFG_DMEM0ECCCTRL_RAMECCEWEN)
+     54          #define ECC_RAM0_CORRECTION_EN  (SYSCFG_DMEM0ECCCTRL_RAMECCCHKEN)
+     55          
+     56          #elif (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) \
+     57            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_7)   \
+     58            || (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_9) && !defined(_MPAHBRAM_CTRL_MASK)) \
+     59            || (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_11) && !defined(_MPAHBRAM_CTRL_MASK)))
+     60          
+     61          /// On Series 2 Config 2, aka EFR32XG22, ECC is supported for the
+     62          /// main DMEM RAM banks which is controlled with one ECC encoder/decoder.
+     63          #define ECC_RAM0_SYNDROMES_INIT (SYSCFG_DMEM0ECCCTRL_RAMECCEN)
+     64          #define ECC_RAM0_CORRECTION_EN  (SYSCFG_DMEM0ECCCTRL_RAMECCEWEN)
+     65          
+     66          #define ECC_IF_REG         (SYSCFG->IF)
+     67          #define ECC_IF_1BIT_ERROR  (SYSCFG_IF_RAMERR1B)
+     68          
+     69          #elif defined(_MPAHBRAM_CTRL_MASK)
+     70          
+     71          /// From Series 2 Config 3, aka EFR32XG23, ECC is now standalone in the
+     72          /// MPAHBRAM module.
+     73          #define ECC_RAM0_SYNDROMES_INIT (MPAHBRAM_CTRL_ECCWEN)
+     74          #define ECC_RAM0_CORRECTION_EN  (MPAHBRAM_CTRL_ECCEN)
+     75          
+     76          #if defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+     77          #define ECC_RAM1_SYNDROMES_INIT (MPAHBRAM_CTRL_ECCWEN)
+     78          #define ECC_RAM1_CORRECTION_EN  (MPAHBRAM_CTRL_ECCEN)
+     79          #endif
+     80          
+     81          #define ECC_IF_REG         (DMEM->IF)
+     82          /// number of AHB ports is between 1 and 4.
+     83          #if defined(MPAHBRAM_IF_AHB3ERR1B)
+     84          #define ECC_IF_1BIT_ERROR       (MPAHBRAM_IF_AHB0ERR1B | MPAHBRAM_IF_AHB1ERR1B | MPAHBRAM_IF_AHB2ERR1B | MPAHBRAM_IF_AHB3ERR1B)
+     85          #elif defined(MPAHBRAM_IF_AHB2ERR1B)
+     86          #define ECC_IF_1BIT_ERROR       (MPAHBRAM_IF_AHB0ERR1B | MPAHBRAM_IF_AHB1ERR1B | MPAHBRAM_IF_AHB2ERR1B)
+     87          #elif defined(MPAHBRAM_IF_AHB1ERR1B)
+     88          #define ECC_IF_1BIT_ERROR       (MPAHBRAM_IF_AHB0ERR1B | MPAHBRAM_IF_AHB1ERR1B)
+     89          #else
+     90          #define ECC_IF_1BIT_ERROR       (MPAHBRAM_IF_AHB0ERR1B)
+     91          #endif
+     92          
+     93          #else
+     94          
+     95          #error "Unknown device"
+     96          
+     97          #endif /* #if defined(if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1) */
+     98          
+     99          #define ECC_RAM_SIZE_MAX   (RAM_MEM_SIZE)
+    100          
+    101          #if defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    102          
+    103          #define ECC_RAM0_MEM_BASE   (DMEM0_RAM0_RAM_MEM_BASE)
+    104          #define ECC_RAM0_MEM_SIZE   (DMEM0_RAM0_RAM_MEM_SIZE)
+    105          #define ECC_RAM1_MEM_BASE   (DMEM1_RAM0_RAM_MEM_BASE)
+    106          #define ECC_RAM1_MEM_SIZE   (DMEM1_RAM0_RAM_MEM_SIZE)
+    107          
+    108          #define ECC_CTRL0_REG       (DMEM0->CTRL)
+    109          #define ECC_CTRL1_REG       (DMEM1->CTRL)
+    110          
+    111          #define ECC_IFC0_REG        (DMEM0->IF_CLR)
+    112          #define ECC_IFC1_REG        (DMEM1->IF_CLR)
+    113          #define ECC_IFC_MASK        (_MPAHBRAM_IF_MASK)
+    114          
+    115          #define ECC_FAULT_CTRL0_REG (DMEM0->CTRL)
+    116          #define ECC_FAULT_CTRL1_REG (DMEM1->CTRL)
+    117          #define ECC_FAULT_EN        (MPAHBRAM_CTRL_ECCERRFAULTEN)
+    118          
+    119          #else
+    120          
+    121          #define ECC_RAM0_MEM_BASE  (SRAM_BASE)
+    122          #define ECC_RAM0_MEM_SIZE  (SRAM_SIZE)
+    123          
+    124          #if (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1) \
+    125            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) \
+    126            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_7) \
+    127            || (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_9) && !defined(_MPAHBRAM_CTRL_MASK))\
+    128            || (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_11) && !defined(_MPAHBRAM_CTRL_MASK)))
+    129          #define ECC_CTRL_REG       (SYSCFG->DMEM0ECCCTRL)
+    130          #define ECC_IFC_REG        (SYSCFG->IF_CLR)
+    131          #define ECC_IFC_MASK       (SYSCFG_IF_RAMERR1B | SYSCFG_IF_RAMERR2B)
+    132          #define ECC_FAULT_CTRL_REG (SYSCFG->CTRL)
+    133          #define ECC_FAULT_EN       (SYSCFG_CTRL_RAMECCERRFAULTEN)
+    134          
+    135          #elif defined(_MPAHBRAM_CTRL_MASK)
+    136          #define ECC_CTRL_REG       (DMEM->CTRL)
+    137          #define ECC_IFC_REG        (DMEM->IF_CLR)
+    138          #define ECC_IFC_MASK       (_MPAHBRAM_IF_MASK)
+    139          #define ECC_FAULT_CTRL_REG (DMEM->CTRL)
+    140          #define ECC_FAULT_EN       (MPAHBRAM_CTRL_ECCERRFAULTEN)
+    141          #endif
+    142          
+    143          #endif /* defined(DMEM_COUNT) && (DMEM_COUNT == 2) */
+    144          
+    145          #else
+    146          #error Unknown device.
+    147          #endif
+    148          
+    149          #define ECC_DMA_MAX_XFERCNT (_LDMA_CH_CTRL_XFERCNT_MASK \
+    150                                       >> _LDMA_CH_CTRL_XFERCNT_SHIFT)
+    151          #define ECC_DMA_DESC_SIZE   ((ECC_DMA_MAX_XFERCNT + 1) * 4)  // 4 bytes units.
+    152          
+    153          #define ECC_DMA_DESCS       (ECC_RAM_SIZE_MAX / ECC_DMA_DESC_SIZE)
+    154          
+    155          #endif /* #if defined(_SYSCFG_DMEM0ECCCTRL_MASK) || #if defined(_MPAHBRAM_CTRL_MASK) */
+    156          
+    157          /*******************************************************************************
+    158           *******************************   STRUCTS   ***********************************
+    159           ******************************************************************************/
+    160          
+    161          #if defined(_SYSCFG_DMEM0ECCCTRL_MASK) \
+    162            || defined(_MPAHBRAM_CTRL_MASK)
+    163          typedef struct {
+    164            uint32_t           init_syndrome_enable;
+    165            uint32_t           correction_enable;
+    166            uint32_t           base;
+    167            uint32_t           size;
+    168          } sli_hal_syscfg_ecc_bank_t;
+    169          #endif
+    170          
+    171          /*******************************************************************************
+    172           **************************   LOCAL VARIABLES   *******************************
+    173           ******************************************************************************/
+    174          
+    175          #if defined(_SYSCFG_DMEM0ECCCTRL_MASK) \
+    176            || defined(_MPAHBRAM_CTRL_MASK)
+
+   \                                 In section .text, align 4, keep-with-next
+    177          static const sli_hal_syscfg_ecc_bank_t ecc_bank_tbl[SL_HAL_SYSCFG_ECC_BANKS] =
+   \                     ecc_bank_tbl:
+   \        0x0   0x0000'0001        DC32 1, 2, 536'870'912, 32'768
+   \              0x0000'0002  
+   \              0x2000'0000  
+   \              0x0000'8000
+    178          {
+    179            {
+    180              ECC_RAM0_SYNDROMES_INIT, ECC_RAM0_CORRECTION_EN,
+    181              ECC_RAM0_MEM_BASE, ECC_RAM0_MEM_SIZE
+    182            },
+    183          #if SL_HAL_SYSCFG_ECC_BANKS > 1
+    184            {
+    185              ECC_RAM1_SYNDROMES_INIT, ECC_RAM1_CORRECTION_EN,
+    186              ECC_RAM1_MEM_BASE, ECC_RAM1_MEM_SIZE
+    187            },
+    188          #if SL_HAL_SYSCFG_ECC_BANKS > 2
+    189            {
+    190              ECC_RAM2_SYNDROMES_INIT, ECC_RAM2_CORRECTION_EN,
+    191              ECC_RAM2_MEM_BASE, ECC_RAM2_MEM_SIZE
+    192            },
+    193          #endif
+    194          #endif
+    195          };
+    196          #endif
+    197          
+    198          /*******************************************************************************
+    199           **************************   LOCAL FUNCTIONS   ********************************
+    200           ******************************************************************************/
+    201          
+    202          #if defined(_SYSCFG_DMEM0ECCCTRL_MASK) || defined(_MPAHBRAM_CTRL_MASK)
+    203          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)  \
+    204            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_7) \
+    205            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_9) \
+    206            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_11) \
+    207            || defined(_MPAHBRAM_CTRL_MASK)
+    208          
+    209          #if defined(__ICCARM__)
+    210          #define SL_ECC_ASM_NOINLINE __attribute__((noinline))
+    211          #else
+    212          #define SL_ECC_ASM_NOINLINE
+    213          #endif
+    214          
+    215          static void SL_ECC_ASM_NOINLINE sli_hal_syscfg_ecc_read_write_existing_pio(const sli_hal_syscfg_ecc_bank_t *ecc_bank);
+    216          #else
+    217          static void sli_hal_syscfg_ecc_read_write_existing_dma(uint32_t start,
+    218                                                                 uint32_t size,
+    219                                                                 const uint32_t channels[2]);
+    220          #endif
+    221          static void sli_hal_syscfg_ecc_init_bank(const sli_hal_syscfg_ecc_bank_t *ecc_bank,
+    222                                                   const uint32_t dma_channels[2]);
+    223          static void sli_hal_syscfg_ecc_disable_bank(const sli_hal_syscfg_ecc_bank_t *ecc_bank);
+    224          #endif
+    225          
+    226          /*******************************************************************************
+    227           **************************   GLOBAL FUNCTIONS   *******************************
+    228           ******************************************************************************/
+    229          #if !defined(SL_TRUSTZONE_NONSECURE)
+    230          #if defined(_SYSCFG_CHIPREV_FAMILY_MASK) || defined(_SYSCFG_CHIPREV_PARTNUMBER_MASK)
+    231          extern __INLINE uint32_t sl_hal_syscfg_read_chip_rev(void);
+    232          #endif
+    233          
+    234          #if defined(_SYSCFG_CFGSYSTIC_MASK)
+    235          extern __INLINE void sl_hal_syscfg_set_systicextclken_cfgsystic(void);
+    236          extern __INLINE void sl_hal_syscfg_clear_systicextclken_cfgsystic(void);
+    237          #endif
+    238          
+    239          #if defined(_SYSCFG_DMEM0RAMCTRL_RAMWSEN_MASK)
+    240          extern __INLINE void sl_hal_syscfg_set_dmem0ramctrl_ramwsen_bit(void);
+    241          extern __INLINE void sl_hal_syscfg_clear_dmem0ramctrl_ramwsen_bit(void);
+    242          extern __INLINE uint32_t sl_hal_syscfg_get_dmem0ramctrl_ramwsen_bit(void);
+    243          #endif
+    244          #if defined(_SYSCFG_DMEM0RETNCTRL_MASK)
+    245          extern __INLINE uint32_t sl_hal_syscfg_read_dmem0retnctrl(void);
+    246          extern __INLINE void sl_hal_syscfg_mask_dmem0retnctrl(uint32_t mask);
+    247          extern __INLINE void sl_hal_syscfg_zero_dmem0retnctrl(void);
+    248          #endif
+    249          #endif
+    250          
+    251          #if defined(_SYSCFG_DMEM0ECCCTRL_MASK) \
+    252            || defined(_MPAHBRAM_CTRL_MASK)
+    253          
+    254          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)  \
+    255            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_7) \
+    256            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_9) \
+    257            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_11) \
+    258            || defined(_MPAHBRAM_CTRL_MASK)
+    259          
+    260          /***************************************************************************//**
+    261           * Read and write existing values in RAM (for ECC initialization).
+    262           *
+    263           * @param[in] ecc_bank Pointer to ECC RAM bank (sli_hal_syscfg_ecc_bank_t)
+    264           *
+    265           * @details This function uses core to load and store the existing data
+    266           *    values in the given RAM bank.
+    267           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    268          static void SL_ECC_ASM_NOINLINE sli_hal_syscfg_ecc_read_write_existing_pio(const sli_hal_syscfg_ecc_bank_t *ecc_bank)
+    269          {
+   \                     sli_hal_syscfg_ecc_read_write_existing_pio: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    270            EFM_ASSERT(ecc_bank != NULL);
+   \        0x4   0x....             LDR.N    R5,??DataTable2
+   \        0x6   0xD103             BNE.N    ??CrossCallReturnLabel_3
+   \        0x8   0xF44F 0x7187      MOV      R1,#+270
+   \        0xC   0x.... 0x....      BL       ?Subroutine0
+    271            EFM_ASSERT(ecc_bank->base < (ecc_bank->base + ecc_bank->size));
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x10   0x68A0             LDR      R0,[R4, #+8]
+   \       0x12   0x68E1             LDR      R1,[R4, #+12]
+   \       0x14   0x1809             ADDS     R1,R1,R0
+   \       0x16   0x4288             CMP      R0,R1
+   \       0x18   0xD303             BCC.N    ??CrossCallReturnLabel_2
+   \       0x1A   0xF240 0x110F      MOVW     R1,#+271
+   \       0x1E   0x.... 0x....      BL       ?Subroutine0
+    272          
+    273            volatile const uint32_t *ram_ptr = (volatile const uint32_t *) ecc_bank->base;
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x22   0x68A2             LDR      R2,[R4, #+8]
+    274            const uint32_t *end_ptr = (const uint32_t *) (ecc_bank->base + ecc_bank->size);
+    275            volatile const uint32_t *ctrl_reg;
+    276            uint32_t enable_ecc;
+    277          
+    278          #if defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    279            if (ecc_bank->base == ECC_RAM0_MEM_BASE) {
+    280              ctrl_reg = &ECC_CTRL0_REG;
+    281            } else if (ecc_bank->base == ECC_RAM1_MEM_BASE) {
+    282              ctrl_reg = &ECC_CTRL1_REG;
+    283            } else {
+    284              EFM_ASSERT(0);
+    285              return;
+    286            }
+    287          #else
+    288            ctrl_reg = &ECC_CTRL_REG;
+    289          #endif /* defined(DMEM_COUNT) && (DMEM_COUNT == 2) */
+    290          
+    291          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)  \
+    292            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_7) \
+    293            || (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_9) && !defined(_MPAHBRAM_CTRL_MASK)) \
+    294            || (defined(_SILICON_LABS_32B_SERIES_2_CONFIG_11) && !defined(_MPAHBRAM_CTRL_MASK))
+    295            enable_ecc = ecc_bank->init_syndrome_enable;
+    296          #elif defined(_MPAHBRAM_CTRL_MASK)
+    297            // MPAHBRAM ECC requires both ECCEN and ECCWEN to be set for the syndromes
+    298            // to be written in ECC.
+    299            enable_ecc = ecc_bank->correction_enable;
+    300          
+    301          #if defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    302            // Enable ECC syndrome write.
+    303            if (ecc_bank->base == ECC_RAM0_MEM_BASE) {
+    304              ECC_CTRL0_REG |= ecc_bank->init_syndrome_enable;
+    305              ECC_IFC0_REG = ECC_IFC_MASK;
+    306            } else if (ecc_bank->base == ECC_RAM1_MEM_BASE) {
+    307              ECC_CTRL1_REG |= ecc_bank->init_syndrome_enable;
+    308              ECC_IFC1_REG = ECC_IFC_MASK;
+    309            }
+    310          #else
+    311            ECC_CTRL_REG |= ecc_bank->init_syndrome_enable;
+    312            ECC_IFC_REG = ECC_IFC_MASK;
+    313          #endif /* defined(DMEM_COUNT) && (DMEM_COUNT == 2) */
+    314          
+    315          #endif
+    316          
+    317          #ifndef __GNUC__
+    318          #define __asm__        asm
+    319          #endif
+    320          
+    321            // Performs a read and write of all RAM address to initialize
+    322            // ECC syndromes. ECC is initialized by reading a RAM address
+    323            // while ECC is disabled and write it back while ECC is enabled.
+    324            //
+    325            // HardFault could occur if we try to read values from RAM while ECC
+    326            // is enabled and not initialized. In this case, ECC tries to correct the
+    327            // value and ended giving the wrong value which could be sometimes an
+    328            // non-existing address.
+    329            //
+    330            // So for ECC initialization to work properly, this must ensures that while
+    331            // ECC is enabled, RAM will be accessed only through writes, no reads shall
+    332            // occur. It's hard to have such guarantee with C code, because the C
+    333            // compiler with optimization settings, can get in the way
+    334            // and do some unwanted reads while ECC is enabled. Assembly allows such
+    335            // guarantee and let ECC be initialized without triggering errors.
+    336          
+    337            __asm__ volatile (
+    338              "1:\n\t"                              // Define label 1.
+    339              "LDR r1, [%[ram_ptr]]\n\t"            // Load content of ram_ptr into R1, ECC
+    340                                                    //   is disabled to get a correct value.
+    341              "LDR r0, [%[ctrl_reg]]\n\t"           // Load ctrl_reg content into R0
+    342              "ORR r0, r0, %[enable_ecc]\n\t"       // OR R0 and enable_ecc, and store result
+    343                                                    //   in R0
+    344              "STR r0, [%[ctrl_reg]]\n\t"           // Write R0 into ctrl_reg, ECC is
+    345                                                    //   enabled from now on
+    346              "STR r1, [%[ram_ptr]]\n\t"            // Write back ram content where it was,
+    347                                                    //  syndrome will be written in ECC
+    348              "BIC r0, r0, %[enable_ecc]\n\t"       // Bit clear enable_ecc from R0, and store
+    349                                                    //   result in R0.
+    350              "STR r0, [%[ctrl_reg]]\n\t"           // Write R0 into ctrl_reg, ECC is
+    351                                                    //   disabled.
+    352              "ADDS %[ram_ptr], %[ram_ptr], #4\n\t" // Increment ram_ptr by 4 (size of
+    353                                                    //   a word).
+    354              "CMP %[ram_ptr], %[end_ptr]\n\t"      // Compare ram_ptr and end_ptr...
+    355              "BCC 1b\n\t"                          //... and jump back to label 1 if Carry.
+    356                                                    // Clear (meaning ram_ptr < end_ptr).
+    357              "ORR r0, r0, %[enable_ecc]\n\t"       // And re-enable ECC ASAP to be sure no.
+    358              "STR r0, [%[ctrl_reg]]\n\t"           // STR occurs with ECC disabled.
+    359              :[ram_ptr] "+r" (ram_ptr)
+    360              :[end_ptr] "r" (end_ptr),
+    361              [ctrl_reg] "r" (ctrl_reg),
+    362              [enable_ecc] "r" (enable_ecc)
+    363              : "r0", "r1",                         // R0 and R1 used as temporary registers.
+    364              "memory"                              // Memory pointed by ram_ptr is modified.
+    365              );
+   \       0x24   0x68E0             LDR      R0,[R4, #+12]
+   \       0x26   0x....             LDR.N    R5,??DataTable2_1
+   \       0x28   0x4613             MOV      R3,R2
+   \       0x2A   0x1882             ADDS     R2,R0,R2
+   \       0x2C   0x6824             LDR      R4,[R4, #+0]
+   \                     ?1_0: (+1)
+   \       0x2E   0x6819             LDR r1, [R3]
+   \       0x30   0x6828             LDR r0, [R5]
+   \       0x32   0xEA40 0x0004      ORR r0, r0, R4
+   \       0x36   0x6028             STR r0, [R5]
+   \       0x38   0x6019             STR r1, [R3]
+   \       0x3A   0xEA20 0x0004      BIC r0, r0, R4
+   \       0x3E   0x6028             STR r0, [R5]
+   \       0x40   0x1D1B             ADDS R3, R3, #4
+   \       0x42   0x4293             CMP R3, R2
+   \       0x44   0xD3F3             BCC ?1_0
+   \       0x46   0xEA40 0x0004      ORR r0, r0, R4
+   \       0x4A   0x6028             STR r0, [R5]
+    366          }
+   \       0x4C   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4628             MOV      R0,R5
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    367          
+    368          #else
+    369          
+    370          /***************************************************************************//**
+    371           * DMA read and write existing values (for ECC initialization).
+    372           *
+    373           * @param[in] start Start address of address range in RAM to read/write.
+    374           * @param[in] size Size of address range in RAM to read/write.
+    375           * @param[in] channels[2] Array of 2 DMA channels to use.
+    376           *
+    377           * @details This function uses DMA to read and write the existing data values in
+    378           *          the RAM region specified by start and size. The function will use the
+    379           *          2 DMA channels specified by the channels[2] array.
+    380           ******************************************************************************/
+    381          static void sli_hal_syscfg_ecc_read_write_existing_dma(uint32_t start,
+    382                                                                 uint32_t size,
+    383                                                                 const uint32_t channels[2])
+    384          {
+    385            // Assert that the 2 DMA channel numbers are different.
+    386            EFM_ASSERT(channels[0] != channels[1]);
+    387            // Make sure ECC_RAM_SIZE_MAX is a multiple of ECC_DMA_DESC_SIZE in order
+    388            // to match the total xfer size of the descriptor chain with the largest
+    389            // ECC RAM bank.
+    390            EFM_ASSERT((ECC_RAM_SIZE_MAX % ECC_DMA_DESC_SIZE) == 0);
+    391          
+    392            uint32_t desc_cnt = 0;
+    393            volatile uint32_t dma_desc[ECC_DMA_DESCS][4];
+    394            uint32_t ch_mask = (1 << channels[0]) | (1 << channels[1]);
+    395          
+    396            // Initialize LDMA descriptor chain.
+    397            do {
+    398              dma_desc[desc_cnt][0] = (LDMA_CH_CTRL_STRUCTTYPE_TRANSFER  // DMA desc CTRL word.
+    399                                       | LDMA_CH_CTRL_STRUCTREQ
+    400                                       | _LDMA_CH_CTRL_XFERCNT_MASK
+    401                                       | LDMA_CH_CTRL_BLOCKSIZE_ALL
+    402                                       | LDMA_CH_CTRL_REQMODE_ALL
+    403                                       | LDMA_CH_CTRL_SRCINC_ONE
+    404                                       | LDMA_CH_CTRL_SIZE_WORD
+    405                                       | LDMA_CH_CTRL_DSTINC_ONE);
+    406          
+    407              // source and destination address.
+    408              dma_desc[desc_cnt][1] = start;
+    409              dma_desc[desc_cnt][2] = start;
+    410              // link to next descriptor.
+    411              dma_desc[desc_cnt][3] = LDMA_CH_LINK_LINK
+    412                                      | (((uint32_t) &dma_desc[desc_cnt + 1][0])
+    413                                         & _LDMA_CH_LINK_LINKADDR_MASK);
+    414          
+    415              start += ECC_DMA_DESC_SIZE;
+    416              size  -= ECC_DMA_DESC_SIZE;
+    417              desc_cnt++;
+    418            } while (size);
+    419          
+    420            // Make sure desc_cnt is valid to avoid out-of-bounds access when writing to
+    421            // dma_desc array.
+    422            if ((desc_cnt < 2) || (desc_cnt > ECC_DMA_DESCS)) {
+    423              while (true) {
+    424                EFM_ASSERT(false);
+    425              }
+    426            }
+    427            // Now, divide the descriptor list in two parts, one for each channel,
+    428            // by setting the link bit and address 0 of the descriptor in the middle
+    429            // to 0.
+    430            dma_desc[(desc_cnt / 2) - 1][3] = 0;
+    431          
+    432            // Set last descriptor link bit and address to 0.
+    433            dma_desc[desc_cnt - 1][3] = 0;
+    434            // Round robin scheduling for all channels (0 = no fixed priority channels).
+    435            LDMA->CTRL    = 0 << _LDMA_CTRL_NUMFIXED_SHIFT;
+    436            LDMA->EN      = LDMA_EN_EN;
+    437            LDMA->CHEN    = 0;
+    438            LDMA->DBGHALT = 0;
+    439            LDMA->REQDIS  = 0;
+    440          
+    441            // Disable LDMA interrupts, and clear interrupt status.
+    442            LDMA->IEN = 0;
+    443            LDMA->IF_CLR = ch_mask;
+    444          
+    445            // Disable looping.
+    446            LDMA->CH[channels[0]].LOOP = 0;
+    447            LDMA->CH[channels[1]].LOOP = 0;
+    448          
+    449            // Set descriptor address for first channel.
+    450            LDMA->CH[channels[0]].LINK = ((uint32_t)&dma_desc[0][0])
+    451                                         & _LDMA_CH_LINK_LINKADDR_MASK;
+    452            // Set descriptor address for second channel.
+    453            LDMA->CH[channels[1]].LINK = ((uint32_t)&dma_desc[desc_cnt / 2][0])
+    454                                         & _LDMA_CH_LINK_LINKADDR_MASK;
+    455            // Clear the channel done flags.
+    456            sl_hal_bus_reg_clear_mask(&LDMA->CHDONE, ch_mask);
+    457          
+    458            // Start transfer by loading descriptors.
+    459            LDMA->LINKLOAD = ch_mask;
+    460            while (!(((LDMA->CHSTATUS & ch_mask) == 0)
+    461                     && ((LDMA->CHDONE & ch_mask) == ch_mask))) {
+    462              // Wait until finished.
+    463            }
+    464          }
+    465          #endif /* #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2) || defined(_MPAHBRAM_CTRL_MASK) */
+    466          
+    467          /***************************************************************************//**
+    468           * This function initializes ECC for a given memory bank which is specified
+    469           * with the sli_hal_syscfg_ecc_bank_t structure input parameter.
+    470           *
+    471           * @param[in] ecc_bank ECC memory bank device structure.
+    472           * @param[in] dma_channels Array of 2 DMA channels that may be used during ECC
+    473           *                         initialization.
+    474           ******************************************************************************/
+    475          static void sli_hal_syscfg_ecc_init_bank(const sli_hal_syscfg_ecc_bank_t *ecc_bank,
+    476                                                   const uint32_t dma_channels[2])
+    477          {
+    478            EFM_ASSERT(ecc_bank != NULL);
+    479            EFM_ASSERT(dma_channels[0] != dma_channels[1]);
+    480          
+    481            CORE_DECLARE_IRQ_STATE;
+    482            CORE_ENTER_CRITICAL();
+    483          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)  \
+    484            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_7) \
+    485            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_9) \
+    486            || defined(_SILICON_LABS_32B_SERIES_2_CONFIG_11) \
+    487            || defined(_MPAHBRAM_CTRL_MASK)
+    488          
+    489            (void) dma_channels;
+    490          #if !defined(_MPAHBRAM_CTRL_MASK)
+    491            // Disable ECC write.
+    492            ECC_CTRL_REG &= ~ecc_bank->init_syndrome_enable;
+    493          #endif
+    494            // Initialize ECC syndromes by using core cpu to load and store the existing
+    495            // data values in RAM.
+    496            sli_hal_syscfg_ecc_read_write_existing_pio(ecc_bank);
+    497          #else
+    498            // Enable ECC write.
+    499            ECC_CTRL_REG |= ecc_bank->init_syndrome_enable;
+    500            // Initialize ECC syndromes by using DMA to read and write the existing
+    501            // data values in RAM.
+    502            sli_hal_syscfg_ecc_read_write_existing_dma(ecc_bank->base, ecc_bank->size, dma_channels);
+    503          #endif
+    504          
+    505            // Clear any ECC errors that may have been reported before or during
+    506            // initialization.
+    507          #if defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    508            if (ecc_bank->base == ECC_RAM0_MEM_BASE) {
+    509              ECC_IFC0_REG = ECC_IFC_MASK;
+    510            } else if (ecc_bank->base == ECC_RAM1_MEM_BASE) {
+    511              ECC_IFC1_REG = ECC_IFC_MASK;
+    512            }
+    513          #else
+    514            ECC_IFC_REG = ECC_IFC_MASK;
+    515          #endif /* defined(DMEM_COUNT) && (DMEM_COUNT == 2) */
+    516          
+    517          #if !defined(_MPAHBRAM_CTRL_MASK)
+    518            // Enable ECC decoder to detect and report ECC errors.
+    519            ECC_CTRL_REG |= ecc_bank->correction_enable;
+    520          #endif
+    521          
+    522            CORE_EXIT_CRITICAL();
+    523          }
+    524          
+    525          /***************************************************************************//**
+    526           * Disable ECC for a given memory bank.
+    527           *
+    528           * @param[in] ecc_bank ECC memory bank device structure.
+    529           ******************************************************************************/
+    530          static void sli_hal_syscfg_ecc_disable_bank(const sli_hal_syscfg_ecc_bank_t *ecc_bank)
+    531          {
+    532            EFM_ASSERT(ecc_bank != NULL);
+    533          
+    534          #if defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    535            // Disable ECC write (encoder) and checking (decoder).
+    536            if (ecc_bank->base == ECC_RAM0_MEM_BASE) {
+    537              ECC_CTRL0_REG &= ~(ecc_bank->init_syndrome_enable | ecc_bank->correction_enable);
+    538            } else if (ecc_bank->base == ECC_RAM1_MEM_BASE) {
+    539              ECC_CTRL1_REG &= ~(ecc_bank->init_syndrome_enable | ecc_bank->correction_enable);
+    540            }
+    541          #else
+    542            ECC_CTRL_REG &= ~(ecc_bank->init_syndrome_enable | ecc_bank->correction_enable);
+    543          #endif /* defined(DMEM_COUNT) && (DMEM_COUNT == 2) */
+    544          }
+    545          
+    546          /***************************************************************************//**
+    547           * Configure Error Correcting Code (ECC).
+    548           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    549          void sl_hal_syscfg_ecc_set_config(const sl_hal_syscfg_ecc_config_t *ecc_config)
+    550          {
+   \                     sl_hal_syscfg_ecc_set_config: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    551            EFM_ASSERT(ecc_config != NULL);
+   \        0x4   0x....             LDR.N    R5,??DataTable2
+   \        0x6   0xD103             BNE.N    ??CrossCallReturnLabel_1
+   \        0x8   0xF240 0x2127      MOVW     R1,#+551
+   \        0xC   0x.... 0x....      BL       ?Subroutine0
+    552          
+    553          #if defined(ECC_FAULT_CTRL_REG)
+    554            uint32_t fault_ctrl_reg = ECC_FAULT_CTRL_REG;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x10   0x....             LDR.N    R6,??DataTable2_2
+   \       0x12   0x6830             LDR      R0,[R6, #+0]
+    555            // Disable ECC faults if ecc fault ctrl register is defined.
+    556            fault_ctrl_reg &= ~ECC_FAULT_EN;
+    557            ECC_FAULT_CTRL_REG = fault_ctrl_reg;
+   \       0x14   0xF020 0x0020      BIC      R0,R0,#0x20
+   \       0x18   0x6030             STR      R0,[R6, #+0]
+    558          #endif
+    559          
+    560            // Loop through the ECC banks array, enable or disable according to
+    561            // the ecc_config->enable_ecc_bank array.
+    562            for (uint32_t cnt = 0; cnt < SL_HAL_SYSCFG_ECC_BANKS; cnt++) {
+    563              if (ecc_config->enable_ecc_bank[cnt]) {
+   \       0x1A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x1C   0xB1F0             CBZ.N    R0,??sl_hal_syscfg_ecc_set_config_0
+    564                sli_hal_syscfg_ecc_init_bank(&ecc_bank_tbl[cnt], ecc_config->dma_channels);
+   \       0x1E   0x6860             LDR      R0,[R4, #+4]
+   \       0x20   0x68A1             LDR      R1,[R4, #+8]
+   \       0x22   0x4288             CMP      R0,R1
+   \       0x24   0xD103             BNE.N    ??CrossCallReturnLabel_0
+   \       0x26   0xF240 0x11DF      MOVW     R1,#+479
+   \       0x2A   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x2E   0x.... 0x....      BL       CORE_EnterCritical
+   \       0x32   0x4604             MOV      R4,R0
+   \       0x34   0x6970             LDR      R0,[R6, #+20]
+   \       0x36   0x0840             LSRS     R0,R0,#+1
+   \       0x38   0x0040             LSLS     R0,R0,#+1
+   \       0x3A   0x6170             STR      R0,[R6, #+20]
+   \       0x3C   0x....             ADR.N    R0,ecc_bank_tbl
+   \       0x3E   0x.... 0x....      BL       sli_hal_syscfg_ecc_read_write_existing_pio
+   \       0x42   0xF44F 0x3040      MOV      R0,#+196608
+   \       0x46   0x....             LDR.N    R1,??DataTable2_3
+   \       0x48   0x6008             STR      R0,[R1, #+0]
+   \       0x4A   0x6972             LDR      R2,[R6, #+20]
+   \       0x4C   0x4620             MOV      R0,R4
+   \       0x4E   0xF042 0x0202      ORR      R2,R2,#0x2
+   \       0x52   0x6172             STR      R2,[R6, #+20]
+   \       0x54   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x58   0x.... 0x....      B.W      CORE_ExitCritical
+    565              } else {
+    566                sli_hal_syscfg_ecc_disable_bank(&ecc_bank_tbl[cnt]);
+   \                     ??sl_hal_syscfg_ecc_set_config_0: (+1)
+   \       0x5C   0x6970             LDR      R0,[R6, #+20]
+   \       0x5E   0x0880             LSRS     R0,R0,#+2
+   \       0x60   0x0080             LSLS     R0,R0,#+2
+   \       0x62   0x6170             STR      R0,[R6, #+20]
+    567              }
+    568            }
+    569          }
+   \       0x64   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x5007'C214        DC32     0x5007c214
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x5007'C200        DC32     0x5007c200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x5007'E000        DC32     0x5007e000
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70, 0x68
+   \              0x70 0x65    
+   \              0x72 0x69    
+   \              0x70 0x68
+   \       0x70   0x65 0x72          DC8 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x73, 0x72, 0x63
+   \              0x61 0x6C    
+   \              0x5C 0x73    
+   \              0x72 0x63
+   \       0x78   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C, 0x5F
+   \              0x6C 0x5F    
+   \              0x68 0x61    
+   \              0x6C 0x5F
+   \       0x80   0x73 0x79          DC8 0x73, 0x79, 0x73, 0x63, 0x66, 0x67, 0x2E, 0x63
+   \              0x73 0x63    
+   \              0x66 0x67    
+   \              0x2E 0x63
+   \       0x88   0x00               DC8 0
+   \       0x89                      DS8 3
+    570          #endif /* #if defined(_SYSCFG_DMEM0ECCCTRL_MASK) || defined(_MPAHBRAM_CTRL_MASK) */
+    571          
+    572          #if defined(_SYSCFG_DMEM0PORTMAPSEL_MASK)
+    573          /***************************************************************************//**
+    574           * Set MPAHBRAM port to use to access DMEM.
+    575           ******************************************************************************/
+    576          void sl_hal_syscfg_set_dmem_port_map(sl_hal_syscfg_dmem_master_t master,
+    577                                               uint8_t port)
+    578          {
+    579            // make sure master is within the mask of port map that can be changed
+    580            // and make sure port is a sensible value.
+    581            EFM_ASSERT(((1 << master) & _SYSCFG_DMEM0PORTMAPSEL_MASK) != 0x0);
+    582          #if defined(DMEM_COUNT) && (DMEM_COUNT == 1)
+    583            EFM_ASSERT(port < DMEM_NUM_PORTS);
+    584          #elif defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    585            EFM_ASSERT(port < DMEM0_NUM_PORTS);
+    586          #endif
+    587          
+    588          #if defined(DMEM_COUNT) && (DMEM_COUNT == 1)
+    589            uint32_t bit_field_mask = DMEM_NUM_PORTS - 1;
+    590          #elif defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    591            uint32_t bit_field_mask = DMEM0_NUM_PORTS - 1;
+    592          #endif
+    593          
+    594            sl_hal_bus_reg_write_mask(&SYSCFG->DMEM0PORTMAPSEL,
+    595                                      bit_field_mask << master,
+    596                                      (uint32_t)port << master);
+    597          }
+    598          #endif
+    599          
+    600          #if defined(_MPAHBRAM_CTRL_AHBPORTPRIORITY_MASK)
+    601          /***************************************************************************//**
+    602           * Set MPAHBRAM port priority for arbitration when multiple concurrent
+    603           * transactions to DMEM.
+    604           ******************************************************************************/
+    605          void sl_hal_syscfg_set_port_priority(sl_hal_syscfg_port_priority_t port_priority)
+    606          {
+    607          #if defined(DMEM_COUNT) && (DMEM_COUNT == 1)
+    608            EFM_ASSERT(port_priority < ((DMEM_NUM_PORTS + 1) << _MPAHBRAM_CTRL_AHBPORTPRIORITY_SHIFT));
+    609          
+    610            sl_hal_bus_reg_write_mask(&DMEM->CTRL,
+    611                                      _MPAHBRAM_CTRL_AHBPORTPRIORITY_MASK,
+    612                                      (uint32_t)port_priority << _MPAHBRAM_CTRL_AHBPORTPRIORITY_SHIFT);
+    613          #elif defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    614            EFM_ASSERT(port_priority < ((DMEM0_NUM_PORTS + 1) << _MPAHBRAM_CTRL_AHBPORTPRIORITY_SHIFT));
+    615          
+    616            sl_hal_bus_reg_write_mask(&DMEM0->CTRL,
+    617                                      _MPAHBRAM_CTRL_AHBPORTPRIORITY_MASK,
+    618                                      (uint32_t)port_priority << _MPAHBRAM_CTRL_AHBPORTPRIORITY_SHIFT);
+    619            sl_hal_bus_reg_write_mask(&DMEM1->CTRL,
+    620                                      _MPAHBRAM_CTRL_AHBPORTPRIORITY_MASK,
+    621                                      (uint32_t)port_priority << _MPAHBRAM_CTRL_AHBPORTPRIORITY_SHIFT);
+    622          #endif
+    623          }
+    624          
+    625          /***************************************************************************//**
+    626           * Get MPAHBRAM port arbitration priority selection.
+    627           ******************************************************************************/
+    628          sl_hal_syscfg_port_priority_t sl_hal_syscfg_get_port_priority(void)
+    629          {
+    630            uint32_t port = 0;
+    631          
+    632          #if defined(DMEM_COUNT) && (DMEM_COUNT == 1)
+    633            port = sl_hal_bus_reg_read_mask(&DMEM->CTRL,
+    634                                            _MPAHBRAM_CTRL_AHBPORTPRIORITY_MASK);
+    635          #elif defined(DMEM_COUNT) && (DMEM_COUNT == 2)
+    636            port = sl_hal_bus_reg_read_mask(&DMEM0->CTRL,
+    637                                            _MPAHBRAM_CTRL_AHBPORTPRIORITY_MASK);
+    638          #endif
+    639          
+    640            return (sl_hal_syscfg_port_priority_t)(port >> _MPAHBRAM_CTRL_AHBPORTPRIORITY_SHIFT);
+    641          }
+    642          #endif /* if defined(_MPAHBRAM_CTRL_AHBPORTPRIORITY_MASK) */
+    643          
+    644          /** @} (end addtogroup system config) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   sl_hal_syscfg_ecc_set_config
+        16   -> CORE_EnterCritical
+         0   -> CORE_ExitCritical
+        16   -> assertEFM
+        16   -> sli_hal_syscfg_ecc_read_write_existing_pio
+      16   sli_hal_syscfg_ecc_read_write_existing_pio
+        16   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       6  ?Subroutine0
+     140  ?_0
+      16  ecc_bank_tbl
+     102  sl_hal_syscfg_ecc_set_config
+      78  sli_hal_syscfg_ecc_read_write_existing_pio
+
+ 
+ 140 bytes in section .rodata
+ 218 bytes in section .text
+ 
+ 218 bytes of CODE  memory
+ 140 bytes of CONST memory
+
+Errors: none
+Warnings: none

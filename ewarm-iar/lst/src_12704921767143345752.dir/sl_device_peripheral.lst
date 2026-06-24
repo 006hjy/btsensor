@@ -1,0 +1,2135 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:06
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_peripheral.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_peripheral.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_peripheral.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_12704921767143345752.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_peripheral.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_peripheral.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_12704921767143345752.dir\sl_device_peripheral.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12704921767143345752.dir\sl_device_peripheral.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\src\sl_device_peripheral.c
+      1          /**************************************************************************//**
+      2           * @file
+      3           * @brief Device Manager API Definition
+      4           ******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2024 Silicon Laboratories, Inc. www.silabs.com</b>
+      7           ******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           *****************************************************************************/
+     30          
+     31          #include <stddef.h>
+     32          #include "sl_device_peripheral.h"
+     33          #include "sl_device_clock.h"
+     34          #include "cmsis_compiler.h"
+     35          
+     36          /***************************************************************************//**
+     37           * Device Abstraction Peripheral default values.
+     38           ******************************************************************************/
+     39          
+     40          // Weak definition of peripheral ACMP0.
+
+   \                                 In section .rodata, align 4
+     41          __WEAK const sl_peripheral_val_t sl_peripheral_val_acmp0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_acmp0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     42                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     43                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+     44          
+     45          // Weak definition of peripheral ACMP1.
+
+   \                                 In section .rodata, align 4
+     46          __WEAK const sl_peripheral_val_t sl_peripheral_val_acmp1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_acmp1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     47                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     48                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+     49          
+     50          // Weak definition of peripheral ADC0.
+
+   \                                 In section .rodata, align 4
+     51          __WEAK const sl_peripheral_adc_val_t sl_peripheral_val_adc0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_adc0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+     52                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     53                                                                          .bus_clock = SL_BUS_CLOCK_INVALID,
+     54                                                                          .dma_signal_scan = SL_DMA_SIGNAL_NONE };
+     55          
+     56          // Weak definition of peripheral ADC1.
+
+   \                                 In section .rodata, align 4
+     57          __WEAK const sl_peripheral_adc_val_t sl_peripheral_val_adc1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_adc1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+     58                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     59                                                                      .bus_clock = SL_BUS_CLOCK_INVALID,
+     60                                                                      .dma_signal_scan = SL_DMA_SIGNAL_NONE };
+     61          
+     62          // Weak definition of peripheral AES.
+
+   \                                 In section .rodata, align 4
+     63          __WEAK const sl_peripheral_val_t sl_peripheral_val_aes = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_aes:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     64                                                                     .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     65                                                                     .bus_clock = SL_BUS_CLOCK_INVALID };
+     66          
+     67          // Weak definition of peripheral AMUXCP0.
+
+   \                                 In section .rodata, align 4
+     68          __WEAK const sl_peripheral_val_t sl_peripheral_val_amuxcp0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_amuxcp0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     69                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     70                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+     71          
+     72          // Weak definition of peripheral AMUXCP0.
+
+   \                                 In section .rodata, align 4
+     73          __WEAK const sl_peripheral_val_t sl_peripheral_val_amuxcp1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_amuxcp1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     74                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     75                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+     76          
+     77          // Weak definition of peripheral BUFC.
+
+   \                                 In section .rodata, align 4
+     78          __WEAK const sl_peripheral_val_t sl_peripheral_val_bufc = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_bufc:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     79                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     80                                                                      .bus_clock = SL_BUS_CLOCK_INVALID };
+     81          
+     82          // Weak definition of peripheral BURAM.
+
+   \                                 In section .rodata, align 4
+     83          __WEAK const sl_peripheral_val_t sl_peripheral_val_buram = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_buram:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     84                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     85                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+     86          
+     87          // Weak definition of peripheral BURTC.
+
+   \                                 In section .rodata, align 4
+     88          __WEAK const sl_peripheral_val_t sl_peripheral_val_burtc = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_burtc:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+     89                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     90                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+     91          
+     92          // Weak definition of peripheral CAN0.
+
+   \                                 In section .rodata, align 4
+     93          __WEAK const sl_peripheral_can_val_t sl_peripheral_val_can0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_can0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+     94                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+     95                                                                       .bus_clock = SL_BUS_CLOCK_INVALID,
+     96                                                                       .dma_signal_rxfl0 = SL_DMA_SIGNAL_NONE,
+     97                                                                       .dma_signal_rxfl1 = SL_DMA_SIGNAL_NONE,
+     98                                                                       .dma_signal_txfl0 = SL_DMA_SIGNAL_NONE,
+     99                                                                       .dma_signal_txfl1 = SL_DMA_SIGNAL_NONE };
+    100          
+    101          // Weak definition of peripheral CAN1.
+
+   \                                 In section .rodata, align 4
+    102          __WEAK const sl_peripheral_can_val_t sl_peripheral_val_can1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_can1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    103                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    104                                                                       .bus_clock = SL_BUS_CLOCK_INVALID,
+    105                                                                       .dma_signal_rxfl0 = SL_DMA_SIGNAL_NONE,
+    106                                                                       .dma_signal_rxfl1 = SL_DMA_SIGNAL_NONE,
+    107                                                                       .dma_signal_txfl0 = SL_DMA_SIGNAL_NONE,
+    108                                                                       .dma_signal_txfl1 = SL_DMA_SIGNAL_NONE };
+    109          
+    110          // Weak definition of peripheral CMU.
+
+   \                                 In section .rodata, align 4
+    111          __WEAK const sl_peripheral_val_t sl_peripheral_val_cmu = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_cmu:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    112                                                                     .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    113                                                                     .bus_clock = SL_BUS_CLOCK_INVALID };
+    114          
+    115          // Weak definition of peripheral CRYPTOACC.
+
+   \                                 In section .rodata, align 4
+    116          __WEAK const sl_peripheral_val_t sl_peripheral_val_cryptoacc = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_cryptoacc:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    117                                                                           .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    118                                                                           .bus_clock = SL_BUS_CLOCK_INVALID };
+    119          
+    120          // Weak definition of peripheral DCDC.
+
+   \                                 In section .rodata, align 4
+    121          __WEAK const sl_peripheral_val_t sl_peripheral_val_dcdc = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_dcdc:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    122                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    123                                                                      .bus_clock = SL_BUS_CLOCK_INVALID };
+    124          
+    125          // Weak definition of peripheral DEVINFO.
+
+   \                                 In section .rodata, align 4
+    126          __WEAK const sl_peripheral_val_t sl_peripheral_val_devinfo = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_devinfo:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    127                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    128                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    129          
+    130          // Weak definition of peripheral DMEM.
+
+   \                                 In section .rodata, align 4
+    131          __WEAK const sl_peripheral_val_t sl_peripheral_val_dmem = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_dmem:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    132                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    133                                                                      .bus_clock = SL_BUS_CLOCK_INVALID };
+    134          
+    135          // Weak definition of peripheral DMEM0.
+
+   \                                 In section .rodata, align 4
+    136          __WEAK const sl_peripheral_val_t sl_peripheral_val_dmem0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_dmem0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    137                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    138                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    139          
+    140          // Weak definition of peripheral DMEM1.
+
+   \                                 In section .rodata, align 4
+    141          __WEAK const sl_peripheral_val_t sl_peripheral_val_dmem1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_dmem1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    142                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    143                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    144          
+    145          // Weak definition of peripheral DPLL0.
+
+   \                                 In section .rodata, align 4
+    146          __WEAK const sl_peripheral_val_t sl_peripheral_val_dpll0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_dpll0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    147                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    148                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    149          
+    150          // Weak definition of peripheral EMU.
+
+   \                                 In section .rodata, align 4
+    151          __WEAK const sl_peripheral_val_t sl_peripheral_val_emu = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_emu:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    152                                                                     .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    153                                                                     .bus_clock = SL_BUS_CLOCK_INVALID };
+    154          
+    155          // Weak definition of peripheral ETAMPDET.
+
+   \                                 In section .rodata, align 4
+    156          __WEAK const sl_peripheral_val_t sl_peripheral_val_etampdet = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_etampdet:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    157                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    158                                                                          .bus_clock = SL_BUS_CLOCK_INVALID };
+    159          
+    160          // Weak definition of peripheral EUART0.
+
+   \                                 In section .rodata, align 4
+    161          __WEAK const sl_peripheral_euart_val_t sl_peripheral_val_euart0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_euart0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    162                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    163                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    164                                                                              .dma_signal_rxfl = SL_DMA_SIGNAL_NONE,
+    165                                                                              .dma_signal_txfl = SL_DMA_SIGNAL_NONE };
+    166          
+    167          // Weak definition of peripheral EUSART0.
+
+   \                                 In section .rodata, align 4
+    168          __WEAK const sl_peripheral_eusart_val_t sl_peripheral_val_eusart0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_eusart0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    169                                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    170                                                                                .bus_clock = SL_BUS_CLOCK_INVALID,
+    171                                                                                .dma_signal_rxfl = SL_DMA_SIGNAL_NONE,
+    172                                                                                .dma_signal_txfl = SL_DMA_SIGNAL_NONE };
+    173          
+    174          // Weak definition of peripheral EUSART1.
+
+   \                                 In section .rodata, align 4
+    175          __WEAK const sl_peripheral_eusart_val_t sl_peripheral_val_eusart1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_eusart1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    176                                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    177                                                                                .bus_clock = SL_BUS_CLOCK_INVALID,
+    178                                                                                .dma_signal_rxfl = SL_DMA_SIGNAL_NONE,
+    179                                                                                .dma_signal_txfl = SL_DMA_SIGNAL_NONE };
+    180          
+    181          // Weak definition of peripheral EUSART2.
+
+   \                                 In section .rodata, align 4
+    182          __WEAK const sl_peripheral_eusart_val_t sl_peripheral_val_eusart2 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_eusart2:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    183                                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    184                                                                                .bus_clock = SL_BUS_CLOCK_INVALID,
+    185                                                                                .dma_signal_rxfl = SL_DMA_SIGNAL_NONE,
+    186                                                                                .dma_signal_txfl = SL_DMA_SIGNAL_NONE };
+    187          
+    188          // Weak definition of peripheral EUSART3.
+
+   \                                 In section .rodata, align 4
+    189          __WEAK const sl_peripheral_eusart_val_t sl_peripheral_val_eusart3 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_eusart3:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    190                                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    191                                                                                .bus_clock = SL_BUS_CLOCK_INVALID,
+    192                                                                                .dma_signal_rxfl = SL_DMA_SIGNAL_NONE,
+    193                                                                                .dma_signal_txfl = SL_DMA_SIGNAL_NONE };
+    194          
+    195          // Weak definition of peripheral EUSART4.
+
+   \                                 In section .rodata, align 4
+    196          __WEAK const sl_peripheral_eusart_val_t sl_peripheral_val_eusart4 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_eusart4:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    197                                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    198                                                                                .bus_clock = SL_BUS_CLOCK_INVALID,
+    199                                                                                .dma_signal_rxfl = SL_DMA_SIGNAL_NONE,
+    200                                                                                .dma_signal_txfl = SL_DMA_SIGNAL_NONE };
+    201          
+    202          // Weak definition of peripheral FSRCO.
+
+   \                                 In section .rodata, align 4
+    203          __WEAK const sl_peripheral_val_t sl_peripheral_val_fsrco = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_fsrco:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    204                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    205                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    206          
+    207          // Weak definition of peripheral GPCRC0.
+
+   \                                 In section .rodata, align 4
+    208          __WEAK const sl_peripheral_val_t sl_peripheral_val_gpcrc0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_gpcrc0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    209                                                                        .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    210                                                                        .bus_clock = SL_BUS_CLOCK_INVALID };
+    211          
+    212          // Weak definition of peripheral GPIO.
+
+   \                                 In section .rodata, align 4
+    213          __WEAK const sl_peripheral_val_t sl_peripheral_val_gpio = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_gpio:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    214                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    215                                                                      .bus_clock = SL_BUS_CLOCK_INVALID };
+    216          
+    217          // Weak definition of peripheral HFRCO0.
+
+   \                                 In section .rodata, align 4
+    218          __WEAK const sl_peripheral_val_t sl_peripheral_val_hfrco0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_hfrco0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    219                                                                        .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    220                                                                        .bus_clock = SL_BUS_CLOCK_INVALID };
+    221          
+    222          // Weak definition of peripheral HFRCOEM23.
+
+   \                                 In section .rodata, align 4
+    223          __WEAK const sl_peripheral_val_t sl_peripheral_val_hfrcoem23 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_hfrcoem23:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    224                                                                           .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    225                                                                           .bus_clock = SL_BUS_CLOCK_INVALID };
+    226          
+    227          // Weak definition of peripheral HFXO0.
+
+   \                                 In section .rodata, align 4
+    228          __WEAK const sl_peripheral_val_t sl_peripheral_val_hfxo0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_hfxo0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    229                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    230                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    231          
+    232          // Weak definition of peripheral HOSTMAILBOX.
+
+   \                                 In section .rodata, align 4
+    233          __WEAK const sl_peripheral_val_t sl_peripheral_val_hostmailbox = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_hostmailbox:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    234                                                                             .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    235                                                                             .bus_clock = SL_BUS_CLOCK_INVALID };
+    236          
+    237          // Weak definition of peripheral HOSTPORTAL.
+
+   \                                 In section .rodata, align 4
+    238          __WEAK const sl_peripheral_val_t sl_peripheral_val_hostportal = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_hostportal:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    239                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    240                                                                            .bus_clock = SL_BUS_CLOCK_INVALID };
+    241          
+
+   \                                 In section .rodata, align 4
+    242          __WEAK const sl_peripheral_i2c_val_t sl_peripheral_val_i2c0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_i2c0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    243                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    244                                                                          .bus_clock = SL_BUS_CLOCK_INVALID,
+    245                                                                          .dma_signal_rxdatav = SL_DMA_SIGNAL_NONE,
+    246                                                                          .dma_signal_txbl = SL_DMA_SIGNAL_NONE };
+    247          
+    248          // Weak definition of peripheral I2C1.
+
+   \                                 In section .rodata, align 4
+    249          __WEAK const sl_peripheral_i2c_val_t sl_peripheral_val_i2c1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_i2c1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    250                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    251                                                                          .bus_clock = SL_BUS_CLOCK_INVALID,
+    252                                                                          .dma_signal_rxdatav = SL_DMA_SIGNAL_NONE,
+    253                                                                          .dma_signal_txbl = SL_DMA_SIGNAL_NONE };
+    254          
+    255          // Weak definition of peripheral I2C2.
+
+   \                                 In section .rodata, align 4
+    256          __WEAK const sl_peripheral_i2c_val_t sl_peripheral_val_i2c2 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_i2c2:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    257                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    258                                                                          .bus_clock = SL_BUS_CLOCK_INVALID,
+    259                                                                          .dma_signal_rxdatav = SL_DMA_SIGNAL_NONE,
+    260                                                                          .dma_signal_txbl = SL_DMA_SIGNAL_NONE };
+    261          
+    262          // Weak definition of peripheral I2C3.
+
+   \                                 In section .rodata, align 4
+    263          __WEAK const sl_peripheral_i2c_val_t sl_peripheral_val_i2c3 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_i2c3:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    264                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    265                                                                          .bus_clock = SL_BUS_CLOCK_INVALID,
+    266                                                                          .dma_signal_rxdatav = SL_DMA_SIGNAL_NONE,
+    267                                                                          .dma_signal_txbl = SL_DMA_SIGNAL_NONE };
+    268          
+    269          // Weak definition of peripheral IADC0.
+
+   \                                 In section .rodata, align 4
+    270          __WEAK const sl_peripheral_iadc_val_t sl_peripheral_val_iadc0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_iadc0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    271                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    272                                                                            .bus_clock = SL_BUS_CLOCK_INVALID,
+    273                                                                            .dma_signal_scan = SL_DMA_SIGNAL_NONE,
+    274                                                                            .dma_signal_single = SL_DMA_SIGNAL_NONE };
+    275          
+    276          // Weak definition of peripheral ICACHE0.
+
+   \                                 In section .rodata, align 4
+    277          __WEAK const sl_peripheral_val_t sl_peripheral_val_icache0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_icache0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    278                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    279                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    280          
+    281          // Weak definition of peripheral KEYSCAN.
+
+   \                                 In section .rodata, align 4
+    282          __WEAK const sl_peripheral_val_t sl_peripheral_val_keyscan = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_keyscan:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    283                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    284                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    285          
+    286          // Weak definition of peripheral L1ICACHE0.
+
+   \                                 In section .rodata, align 4
+    287          __WEAK const sl_peripheral_val_t sl_peripheral_val_l1icache0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_l1icache0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    288                                                                           .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    289                                                                           .bus_clock = SL_BUS_CLOCK_INVALID };
+    290          
+    291          // Weak definition of peripheral L2ICACHE0.
+
+   \                                 In section .rodata, align 4
+    292          __WEAK const sl_peripheral_val_t sl_peripheral_val_l2icache0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_l2icache0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    293                                                                           .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    294                                                                           .bus_clock = SL_BUS_CLOCK_INVALID };
+    295          
+    296          // Weak definition of peripheral LCD.
+
+   \                                 In section .rodata, align 4
+    297          __WEAK const sl_peripheral_lcd_val_t sl_peripheral_val_lcd = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lcd:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+    298                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    299                                                                         .bus_clock = SL_BUS_CLOCK_INVALID,
+    300                                                                         .dma_signal_lcd = SL_DMA_SIGNAL_NONE };
+    301          
+    302          // Weak definition of peripheral LCDRF.
+
+   \                                 In section .rodata, align 4
+    303          __WEAK const sl_peripheral_val_t sl_peripheral_val_lcdrf = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lcdrf:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    304                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    305                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    306          
+    307          // Weak definition of peripheral LDMAXBAR0.
+
+   \                                 In section .rodata, align 4
+    308          __WEAK const sl_peripheral_ldmaxbar_val_t sl_peripheral_val_ldmaxbar0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_ldmaxbar0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    309                                                                                    .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    310                                                                                    .bus_clock = SL_BUS_CLOCK_INVALID,
+    311                                                                                    .dma_signal_prsreq0 = SL_DMA_SIGNAL_NONE,
+    312                                                                                    .dma_signal_prsreq1 = SL_DMA_SIGNAL_NONE };
+    313          
+    314          // Weak definition of peripheral LEDSINK.
+
+   \                                 In section .rodata, align 4
+    315          __WEAK const sl_peripheral_val_t sl_peripheral_val_ledsink0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_ledsink0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    316                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    317                                                                          .bus_clock = SL_BUS_CLOCK_INVALID };
+    318          
+    319          // Weak definition of peripheral LEDDRV0.
+
+   \                                 In section .rodata, align 4
+    320          __WEAK const sl_peripheral_val_t sl_peripheral_val_leddrv0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_leddrv0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    321                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    322                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    323          
+    324          // Weak definition of peripheral LESENSE.
+
+   \                                 In section .rodata, align 4
+    325          __WEAK const sl_peripheral_lesense_val_t sl_peripheral_val_lesense = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lesense:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+    326                                                                                 .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    327                                                                                 .bus_clock = SL_BUS_CLOCK_INVALID,
+    328                                                                                 .dma_signal_fifo = SL_DMA_SIGNAL_NONE };
+    329          
+    330          // Weak definition of peripheral LETIMER0.
+
+   \                                 In section .rodata, align 4
+    331          __WEAK const sl_peripheral_val_t sl_peripheral_val_letimer0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_letimer0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    332                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    333                                                                          .bus_clock = SL_BUS_CLOCK_INVALID };
+    334          
+    335          // Weak definition of peripheral LFRCO.
+
+   \                                 In section .rodata, align 4
+    336          __WEAK const sl_peripheral_val_t sl_peripheral_val_lfrco = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lfrco:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    337                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    338                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    339          
+    340          // Weak definition of peripheral LFXO.
+
+   \                                 In section .rodata, align 4
+    341          __WEAK const sl_peripheral_val_t sl_peripheral_val_lfxo = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lfxo:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    342                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    343                                                                      .bus_clock = SL_BUS_CLOCK_INVALID };
+    344          
+    345          // Weak definition of peripheral LPWAES.
+
+   \                                 In section .rodata, align 4
+    346          __WEAK const sl_peripheral_val_t sl_peripheral_val_lpwaes = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lpwaes:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    347                                                                        .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    348                                                                        .bus_clock = SL_BUS_CLOCK_INVALID };
+    349          
+    350          // Weak definition of peripheral LPW0PORTAL.
+
+   \                                 In section .rodata, align 4
+    351          __WEAK const sl_peripheral_val_t sl_peripheral_val_lpw0portal = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lpw0portal:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    352                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    353                                                                            .bus_clock = SL_BUS_CLOCK_INVALID };
+    354          
+    355          // Weak definition of peripheral LVGD.
+
+   \                                 In section .rodata, align 4
+    356          __WEAK const sl_peripheral_val_t sl_peripheral_val_lvgd = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_lvgd:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    357                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    358                                                                      .bus_clock = SL_BUS_CLOCK_INVALID };
+    359          
+    360          // Weak definition of peripheral MSC.
+
+   \                                 In section .rodata, align 4
+    361          __WEAK const sl_peripheral_msc_val_t sl_peripheral_val_msc = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_msc:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+    362                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    363                                                                         .bus_clock = SL_BUS_CLOCK_INVALID,
+    364                                                                         .dma_signal_wdata = SL_DMA_SIGNAL_NONE };
+    365          
+    366          // Weak definition of peripheral MVP.
+
+   \                                 In section .rodata, align 4
+    367          __WEAK const sl_peripheral_mvp_val_t sl_peripheral_val_mvp = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_mvp:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+    368                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    369                                                                         .bus_clock = SL_BUS_CLOCK_INVALID,
+    370                                                                         .dma_signal_req = SL_DMA_SIGNAL_NONE };
+    371          
+    372          // Weak definition of peripheral PCNT0.
+
+   \                                 In section .rodata, align 4
+    373          __WEAK const sl_peripheral_val_t sl_peripheral_val_pcnt0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_pcnt0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    374                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    375                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    376          
+    377          // Weak definition of peripheral PDM.
+
+   \                                 In section .rodata, align 4
+    378          __WEAK const sl_peripheral_pdm_val_t sl_peripheral_val_pdm = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_pdm:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+    379                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    380                                                                         .bus_clock = SL_BUS_CLOCK_INVALID,
+    381                                                                         .dma_signal_rxdata = SL_DMA_SIGNAL_NONE };
+    382          
+    383          // Weak definition of peripheral PFMXPPRF.
+
+   \                                 In section .rodata, align 4
+    384          __WEAK const sl_peripheral_val_t sl_peripheral_val_pfmxpprf = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_pfmxpprf:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    385                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    386                                                                          .bus_clock = SL_BUS_CLOCK_INVALID };
+    387          
+    388          // Weak definition of peripheral PIXELRZ0.
+
+   \                                 In section .rodata, align 4
+    389          __WEAK const sl_peripheral_pixelrz_val_t sl_peripheral_val_pixelrz0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_pixelrz0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+    390                                                                                  .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    391                                                                                  .bus_clock = SL_BUS_CLOCK_INVALID,
+    392                                                                                  .dma_signal_txf = SL_DMA_SIGNAL_NONE };
+    393          
+    394          // Weak definition of peripheral PIXELRZ1.
+
+   \                                 In section .rodata, align 4
+    395          __WEAK const sl_peripheral_pixelrz_val_t sl_peripheral_val_pixelrz1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_pixelrz1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+    396                                                                                  .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    397                                                                                  .bus_clock = SL_BUS_CLOCK_INVALID,
+    398                                                                                  .dma_signal_txf = SL_DMA_SIGNAL_NONE };
+    399          
+    400          // Weak definition of peripheral PRORTC.
+
+   \                                 In section .rodata, align 4
+    401          __WEAK const sl_peripheral_val_t sl_peripheral_val_prortc = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_prortc:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    402                                                                        .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    403                                                                        .bus_clock = SL_BUS_CLOCK_INVALID };
+    404          
+    405          // Weak definition of peripheral PRS.
+
+   \                                 In section .rodata, align 4
+    406          __WEAK const sl_peripheral_val_t sl_peripheral_val_prs = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_prs:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    407                                                                     .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    408                                                                     .bus_clock = SL_BUS_CLOCK_INVALID };
+    409          
+    410          // Weak definition of peripheral RADIOAES.
+
+   \                                 In section .rodata, align 4
+    411          __WEAK const sl_peripheral_val_t sl_peripheral_val_radioaes = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_radioaes:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    412                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    413                                                                          .bus_clock = SL_BUS_CLOCK_INVALID };
+    414          
+    415          // Weak definition of peripheral RFFPLL0.
+
+   \                                 In section .rodata, align 4
+    416          __WEAK const sl_peripheral_val_t sl_peripheral_val_rffpll0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_rffpll0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    417                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    418                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    419          
+    420          // Weak definition of peripheral RPA.
+
+   \                                 In section .rodata, align 4
+    421          __WEAK const sl_peripheral_val_t sl_peripheral_val_rpa = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_rpa:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    422                                                                     .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    423                                                                     .bus_clock = SL_BUS_CLOCK_INVALID };
+    424          
+    425          // Weak definition of peripheral RTCC.
+
+   \                                 In section .rodata, align 4
+    426          __WEAK const sl_peripheral_val_t sl_peripheral_val_rtcc = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_rtcc:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    427                                                                      .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    428                                                                      .bus_clock = SL_BUS_CLOCK_INVALID };
+    429          
+    430          // Weak definition of peripheral SCRATCHPAD.
+
+   \                                 In section .rodata, align 4
+    431          __WEAK const sl_peripheral_val_t sl_peripheral_val_scratchpad = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_scratchpad:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    432                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    433                                                                            .bus_clock = SL_BUS_CLOCK_INVALID };
+    434          
+    435          // Weak definition of peripheral SEMAILBOX.
+
+   \                                 In section .rodata, align 4
+    436          __WEAK const sl_peripheral_val_t sl_peripheral_val_semailbox = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_semailbox:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    437                                                                           .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    438                                                                           .bus_clock = SL_BUS_CLOCK_INVALID };
+    439          
+    440          // Weak definition of peripheral SEMAPHORE0.
+
+   \                                 In section .rodata, align 4
+    441          __WEAK const sl_peripheral_val_t sl_peripheral_val_semaphore0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_semaphore0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    442                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    443                                                                            .bus_clock = SL_BUS_CLOCK_INVALID };
+    444          
+    445          // Weak definition of peripheral SEMAPHORE1.
+
+   \                                 In section .rodata, align 4
+    446          __WEAK const sl_peripheral_val_t sl_peripheral_val_semaphore1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_semaphore1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    447                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    448                                                                            .bus_clock = SL_BUS_CLOCK_INVALID };
+    449          
+    450          // Weak definition of peripheral SEPORTAL.
+
+   \                                 In section .rodata, align 4
+    451          __WEAK const sl_peripheral_val_t sl_peripheral_val_seportal = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_seportal:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    452                                                                          .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    453                                                                          .bus_clock = SL_BUS_CLOCK_INVALID };
+    454          
+    455          // Weak definition of peripheral SEPUF.
+
+   \                                 In section .rodata, align 4
+    456          __WEAK const sl_peripheral_val_t sl_peripheral_val_sepuf = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_sepuf:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    457                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    458                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    459          
+    460          // Weak definition of peripheral SMU.
+
+   \                                 In section .rodata, align 4
+    461          __WEAK const sl_peripheral_val_t sl_peripheral_val_smu = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_smu:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    462                                                                     .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    463                                                                     .bus_clock = SL_BUS_CLOCK_INVALID };
+    464          
+    465          // Weak definition of peripheral SOCPLL0.
+
+   \                                 In section .rodata, align 4
+    466          __WEAK const sl_peripheral_val_t sl_peripheral_val_socpll0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_socpll0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    467                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    468                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    469          
+    470          // Weak definition of peripheral SYMCRYPTO.
+
+   \                                 In section .rodata, align 4
+    471          __WEAK const sl_peripheral_val_t sl_peripheral_val_symcrypto = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_symcrypto:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    472                                                                           .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    473                                                                           .bus_clock = SL_BUS_CLOCK_INVALID };
+    474          
+    475          // Weak definition of peripheral SYSCFG.
+
+   \                                 In section .rodata, align 4
+    476          __WEAK const sl_peripheral_val_t sl_peripheral_val_syscfg = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_syscfg:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    477                                                                        .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    478                                                                        .bus_clock = SL_BUS_CLOCK_INVALID };
+    479          
+    480          // Weak definition of peripheral SYSRTC0.
+
+   \                                 In section .rodata, align 4
+    481          __WEAK const sl_peripheral_val_t sl_peripheral_val_sysrtc0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_sysrtc0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    482                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    483                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    484          
+    485          // Weak definition of peripheral TIMER0.
+
+   \                                 In section .rodata, align 4
+    486          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    487                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    488                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    489                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    490                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    491                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    492                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    493                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    494                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    495                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    496                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    497          
+    498          // Weak definition of peripheral TIMER1.
+
+   \                                 In section .rodata, align 4
+    499          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    500                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    501                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    502                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    503                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    504                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    505                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    506                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    507                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    508                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    509                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    510          
+    511          // Weak definition of peripheral TIMER2.
+
+   \                                 In section .rodata, align 4
+    512          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer2 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer2:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    513                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    514                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    515                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    516                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    517                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    518                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    519                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    520                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    521                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    522                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    523          
+    524          // Weak definition of peripheral TIMER3.
+
+   \                                 In section .rodata, align 4
+    525          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer3 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer3:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    526                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    527                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    528                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    529                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    530                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    531                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    532                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    533                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    534                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    535                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    536          
+    537          // Weak definition of peripheral TIMER4.
+
+   \                                 In section .rodata, align 4
+    538          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer4 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer4:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    539                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    540                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    541                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    542                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    543                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    544                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    545                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    546                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    547                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    548                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    549          
+    550          // Weak definition of peripheral TIMER5.
+
+   \                                 In section .rodata, align 4
+    551          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer5 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer5:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    552                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    553                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    554                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    555                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    556                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    557                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    558                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    559                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    560                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    561                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    562          
+    563          // Weak definition of peripheral TIMER6.
+
+   \                                 In section .rodata, align 4
+    564          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer6 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer6:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    565                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    566                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    567                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    568                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    569                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    570                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    571                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    572                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    573                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    574                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    575          
+    576          // Weak definition of peripheral TIMER7.
+
+   \                                 In section .rodata, align 4
+    577          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer7 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer7:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    578                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    579                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    580                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    581                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    582                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    583                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    584                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    585                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    586                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    587                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    588          
+    589          // Weak definition of peripheral TIMER8.
+
+   \                                 In section .rodata, align 4
+    590          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer8 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer8:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    591                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    592                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    593                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    594                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    595                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    596                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    597                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    598                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    599                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    600                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    601          
+    602          // Weak definition of peripheral TIMER9.
+
+   \                                 In section .rodata, align 4
+    603          __WEAK const sl_peripheral_timer_val_t sl_peripheral_val_timer9 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_timer9:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    604                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    605                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    606                                                                              .dma_signal_cc0 = SL_DMA_SIGNAL_NONE,
+    607                                                                              .dma_signal_cc1 = SL_DMA_SIGNAL_NONE,
+    608                                                                              .dma_signal_cc2 = SL_DMA_SIGNAL_NONE,
+    609                                                                              .dma_signal_cc3 = SL_DMA_SIGNAL_NONE,
+    610                                                                              .dma_signal_cc4 = SL_DMA_SIGNAL_NONE,
+    611                                                                              .dma_signal_cc5 = SL_DMA_SIGNAL_NONE,
+    612                                                                              .dma_signal_cc6 = SL_DMA_SIGNAL_NONE,
+    613                                                                              .dma_signal_ufof = SL_DMA_SIGNAL_NONE };
+    614          
+    615          // Weak definition of peripheral ULFRCO.
+
+   \                                 In section .rodata, align 4
+    616          __WEAK const sl_peripheral_val_t sl_peripheral_val_ulfrco = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_ulfrco:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    617                                                                        .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    618                                                                        .bus_clock = SL_BUS_CLOCK_INVALID };
+    619          
+    620          // Weak definition of peripheral USART0.
+
+   \                                 In section .rodata, align 4
+    621          __WEAK const sl_peripheral_usart_val_t sl_peripheral_val_usart0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_usart0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    622                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    623                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    624                                                                              .dma_signal_rxdatav = SL_DMA_SIGNAL_NONE,
+    625                                                                              .dma_signal_rxdatavright = SL_DMA_SIGNAL_NONE,
+    626                                                                              .dma_signal_txbl = SL_DMA_SIGNAL_NONE,
+    627                                                                              .dma_signal_txblright = SL_DMA_SIGNAL_NONE,
+    628                                                                              .dma_signal_txempty = SL_DMA_SIGNAL_NONE };
+    629          
+    630          // Weak definition of peripheral USART1.
+
+   \                                 In section .rodata, align 4
+    631          __WEAK const sl_peripheral_usart_val_t sl_peripheral_val_usart1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_usart1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    632                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    633                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    634                                                                              .dma_signal_rxdatav = SL_DMA_SIGNAL_NONE,
+    635                                                                              .dma_signal_rxdatavright = SL_DMA_SIGNAL_NONE,
+    636                                                                              .dma_signal_txbl = SL_DMA_SIGNAL_NONE,
+    637                                                                              .dma_signal_txblright = SL_DMA_SIGNAL_NONE,
+    638                                                                              .dma_signal_txempty = SL_DMA_SIGNAL_NONE };
+    639          
+    640          // Weak definition of peripheral USART2.
+
+   \                                 In section .rodata, align 4
+    641          __WEAK const sl_peripheral_usart_val_t sl_peripheral_val_usart2 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_usart2:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+    642                                                                              .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    643                                                                              .bus_clock = SL_BUS_CLOCK_INVALID,
+    644                                                                              .dma_signal_rxdatav = SL_DMA_SIGNAL_NONE,
+    645                                                                              .dma_signal_rxdatavright = SL_DMA_SIGNAL_NONE,
+    646                                                                              .dma_signal_txbl = SL_DMA_SIGNAL_NONE,
+    647                                                                              .dma_signal_txblright = SL_DMA_SIGNAL_NONE,
+    648                                                                              .dma_signal_txempty = SL_DMA_SIGNAL_NONE };
+    649          
+    650          // Weak definition of peripheral USB.
+
+   \                                 In section .rodata, align 4
+    651          __WEAK const sl_peripheral_val_t sl_peripheral_val_usb = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_usb:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    652                                                                     .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    653                                                                     .bus_clock = SL_BUS_CLOCK_INVALID };
+    654          
+    655          // Weak definition of peripheral USBAHB.
+
+   \                                 In section .rodata, align 4
+    656          __WEAK const sl_peripheral_val_t sl_peripheral_val_usbahb = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_usbahb:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    657                                                                        .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    658                                                                        .bus_clock = SL_BUS_CLOCK_INVALID };
+    659          
+    660          // Weak definition of peripheral USBPLL0.
+
+   \                                 In section .rodata, align 4
+    661          __WEAK const sl_peripheral_val_t sl_peripheral_val_usbpll0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_usbpll0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    662                                                                         .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    663                                                                         .bus_clock = SL_BUS_CLOCK_INVALID };
+    664          
+    665          // Weak definition of peripheral VDAC0.
+
+   \                                 In section .rodata, align 4
+    666          __WEAK const sl_peripheral_vdac_val_t sl_peripheral_val_vdac0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_vdac0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    667                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    668                                                                            .bus_clock = SL_BUS_CLOCK_INVALID,
+    669                                                                            .dma_signal_ch0req = SL_DMA_SIGNAL_NONE,
+    670                                                                            .dma_signal_ch1req = SL_DMA_SIGNAL_NONE };
+    671          
+    672          // Weak definition of peripheral VDAC1.
+
+   \                                 In section .rodata, align 4
+    673          __WEAK const sl_peripheral_vdac_val_t sl_peripheral_val_vdac1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_vdac1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000
+    674                                                                            .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    675                                                                            .bus_clock = SL_BUS_CLOCK_INVALID,
+    676                                                                            .dma_signal_ch0req = SL_DMA_SIGNAL_NONE,
+    677                                                                            .dma_signal_ch1req = SL_DMA_SIGNAL_NONE };// Weak definition of peripheral WDOG0.
+
+   \                                 In section .rodata, align 4
+    678          __WEAK const sl_peripheral_val_t sl_peripheral_val_wdog0 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_wdog0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    679                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    680                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    681          
+    682          // Weak definition of peripheral WDOG1.
+
+   \                                 In section .rodata, align 4
+    683          __WEAK const sl_peripheral_val_t sl_peripheral_val_wdog1 = { .base = 0xFFFFFFFF,
+   \                     sl_peripheral_val_wdog1:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0
+    684                                                                       .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    685                                                                       .bus_clock = SL_BUS_CLOCK_INVALID };
+    686          
+    687          // Weak definition of peripheral LDMA0.
+
+   \                                 In section .rodata, align 4
+    688          __WEAK const sl_peripheral_dma_val_t sl_peripheral_dma_val_ldma0 = {  .base = 0xFFFFFFFF,
+   \                     sl_peripheral_dma_val_ldma0:
+   \        0x0   0xFFFF'FFFF        DC32 4'294'967'295
+   \        0x4   0x2B               DC8 43
+   \        0x5                      DS8 3
+   \        0x8   0x0000'0000        DC32 0x0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x14   0x00 0x00          DC8 0, 0
+   \       0x16                      DS8 2
+    689                                                                                .clk_branch = SL_CLOCK_BRANCH_INVALID,
+    690                                                                                .bus_clock = SL_BUS_CLOCK_INVALID,
+    691                                                                                .nbr_channel = 0,
+    692                                                                                .nbr_sync = 0,
+    693                                                                                .dual_destination_map = 0x0,
+    694                                                                                .rule_based_interleaving_map = 0x0 };
+    695          
+    696          #if defined(__ICCARM__)
+    697          // Disable IAR multiple typedefs declaration warning.
+    698          #pragma diag_suppress=Pe301
+    699          #endif
+    700          
+    701          // External base address getter declaration for ACMP.
+    702          extern ACMP_TypeDef *sl_device_peripheral_acmp_get_base_addr(const sl_peripheral_t peripheral);
+    703          
+    704          // External base address getter declaration for ADC.
+    705          extern ADC_TypeDef *sl_device_peripheral_adc_get_base_addr(const sl_peripheral_t peripheral);
+    706          
+    707          // External base address getter declaration for AES.
+    708          extern AES_TypeDef *sl_device_peripheral_aes_get_base_addr(const sl_peripheral_t peripheral);
+    709          
+    710          // External base address getter declaration for AMUXCP.
+    711          extern AMUXCP_TypeDef *sl_device_peripheral_amuxcp_get_base_addr(const sl_peripheral_t peripheral);
+    712          
+    713          // External base address getter declaration for BUFC.
+    714          extern BUFC_TypeDef *sl_device_peripheral_bufc_get_base_addr(const sl_peripheral_t peripheral);
+    715          
+    716          // External base address getter declaration for BURAM.
+    717          extern BURAM_TypeDef *sl_device_peripheral_buram_get_base_addr(const sl_peripheral_t peripheral);
+    718          
+    719          // External base address getter declaration for BURTC.
+    720          extern BURTC_TypeDef *sl_device_peripheral_burtc_get_base_addr(const sl_peripheral_t peripheral);
+    721          
+    722          // External base address getter declaration for CMU.
+    723          extern CMU_TypeDef *sl_device_peripheral_cmu_get_base_addr(const sl_peripheral_t peripheral);
+    724          
+    725          // External base address getter declaration for CRYPTOACC.
+    726          extern CRYPTOACC_TypeDef *sl_device_peripheral_cryptoacc_get_base_addr(const sl_peripheral_t peripheral);
+    727          
+    728          // External base address getter declaration for CRYPTOACC_PKCTRL.
+    729          extern CRYPTOACC_PKCTRL_TypeDef *sl_device_peripheral_cryptoacc_pkctrl_get_base_addr(const sl_peripheral_t peripheral);
+    730          
+    731          // External base address getter declaration for CRYPTOACC_RNGCTRL.
+    732          extern CRYPTOACC_RNGCTRL_TypeDef *sl_device_peripheral_cryptoacc_rngctrl_get_base_addr(const sl_peripheral_t peripheral);
+    733          
+    734          // External base address getter declaration for DCDC.
+    735          extern DCDC_TypeDef *sl_device_peripheral_dcdc_get_base_addr(const sl_peripheral_t peripheral);
+    736          
+    737          // External base address getter declaration for DEVINFO.
+    738          extern DEVINFO_TypeDef *sl_device_peripheral_devinfo_get_base_addr(const sl_peripheral_t peripheral);
+    739          
+    740          // External base address getter declaration for DPLL.
+    741          extern DPLL_TypeDef *sl_device_peripheral_dpll_get_base_addr(const sl_peripheral_t peripheral);
+    742          
+    743          // External base address getter declaration for EMU.
+    744          extern EMU_TypeDef *sl_device_peripheral_emu_get_base_addr(const sl_peripheral_t peripheral);
+    745          
+    746          // External base address getter declaration for EMU_CFGNS.
+    747          extern EMU_CFGNS_TypeDef *sl_device_peripheral_emu_cfgns_get_base_addr(const sl_peripheral_t peripheral);
+    748          
+    749          // External base address getter declaration for ETAMPDET.
+    750          extern ETAMPDET_TypeDef *sl_device_peripheral_etampdet_get_base_addr(const sl_peripheral_t peripheral);
+    751          
+    752          // External base address getter declaration for EUSART.
+    753          extern EUSART_TypeDef *sl_device_peripheral_eusart_get_base_addr(const sl_peripheral_t peripheral);
+    754          
+    755          // External base address getter declaration for FSRCO.
+    756          extern FSRCO_TypeDef *sl_device_peripheral_fsrco_get_base_addr(const sl_peripheral_t peripheral);
+    757          
+    758          // External base address getter declaration for GPCRC.
+    759          extern GPCRC_TypeDef *sl_device_peripheral_gpcrc_get_base_addr(const sl_peripheral_t peripheral);
+    760          
+    761          // External base address getter declaration for GPIO.
+    762          extern GPIO_TypeDef *sl_device_peripheral_gpio_get_base_addr(const sl_peripheral_t peripheral);
+    763          
+    764          // External base address getter declaration for HFRCO.
+    765          extern HFRCO_TypeDef *sl_device_peripheral_hfrco_get_base_addr(const sl_peripheral_t peripheral);
+    766          
+    767          // External base address getter declaration for HFXO.
+    768          extern HFXO_TypeDef *sl_device_peripheral_hfxo_get_base_addr(const sl_peripheral_t peripheral);
+    769          
+    770          // External base address getter declaration for HOSTPORTAL.
+    771          extern HOSTPORTAL_TypeDef *sl_device_peripheral_hostportal_get_base_addr(const sl_peripheral_t peripheral);
+    772          
+    773          // External base address getter declaration for HYDRARAM.
+    774          extern HYDRARAM_TypeDef *sl_device_peripheral_hydraram_get_base_addr(const sl_peripheral_t peripheral);
+    775          
+    776          // External base address getter declaration for I2C.
+    777          extern I2C_TypeDef *sl_device_peripheral_i2c_get_base_addr(const sl_peripheral_t peripheral);
+    778          
+    779          // External base address getter declaration for IADC.
+    780          extern IADC_TypeDef *sl_device_peripheral_iadc_get_base_addr(const sl_peripheral_t peripheral);
+    781          
+    782          // External base address getter declaration for ICACHE.
+    783          extern ICACHE_TypeDef *sl_device_peripheral_icache_get_base_addr(const sl_peripheral_t peripheral);
+    784          
+    785          // External base address getter declaration for KEYSCAN.
+    786          extern KEYSCAN_TypeDef *sl_device_peripheral_keyscan_get_base_addr(const sl_peripheral_t peripheral);
+    787          
+    788          // External base address getter declaration for L2CACHE.
+    789          extern L2CACHE_TypeDef *sl_device_peripheral_l2cache_get_base_addr(const sl_peripheral_t peripheral);
+    790          
+    791          // External base address getter declaration for LCD.
+    792          extern LCD_TypeDef *sl_device_peripheral_lcd_get_base_addr(const sl_peripheral_t peripheral);
+    793          
+    794          // External base address getter declaration for LCDRF.
+    795          extern LCDRF_TypeDef *sl_device_peripheral_lcdrf_get_base_addr(const sl_peripheral_t peripheral);
+    796          
+    797          // External base address getter declaration for LDMA.
+    798          extern LDMA_TypeDef *sl_device_peripheral_ldma_get_base_addr(const sl_peripheral_t peripheral);
+    799          
+    800          // External base address getter declaration for LDMAXBAR.
+    801          extern LDMAXBAR_TypeDef *sl_device_peripheral_ldmaxbar_get_base_addr(const sl_peripheral_t peripheral);
+    802          
+    803          // External base address getter declaration for LEDDRV.
+    804          extern LEDDRV_TypeDef *sl_device_peripheral_leddrv_get_base_addr(const sl_peripheral_t peripheral);
+    805          
+    806          // External base address getter declaration for LESENSE.
+    807          extern LESENSE_TypeDef *sl_device_peripheral_lesense_get_base_addr(const sl_peripheral_t peripheral);
+    808          
+    809          // External base address getter declaration for LETIMER.
+    810          extern LETIMER_TypeDef *sl_device_peripheral_letimer_get_base_addr(const sl_peripheral_t peripheral);
+    811          
+    812          // External base address getter declaration for LFRCO.
+    813          extern LFRCO_TypeDef *sl_device_peripheral_lfrco_get_base_addr(const sl_peripheral_t peripheral);
+    814          
+    815          // External base address getter declaration for LFXO.
+    816          extern LFXO_TypeDef *sl_device_peripheral_lfxo_get_base_addr(const sl_peripheral_t peripheral);
+    817          
+    818          // External base address getter declaration for LPWAES.
+    819          extern LPWAES_TypeDef *sl_device_peripheral_lpwaes_get_base_addr(const sl_peripheral_t peripheral);
+    820          
+    821          // External base address getter declaration for LPW0PORTAL.
+    822          extern LPW0PORTAL_TypeDef *sl_device_peripheral_lpw0portal_get_base_addr(const sl_peripheral_t peripheral);
+    823          
+    824          // External base address getter declaration for LVGD.
+    825          extern LVGD_TypeDef *sl_device_peripheral_lvgd_get_base_addr(const sl_peripheral_t peripheral);
+    826          
+    827          // External base address getter declaration for MAILBOX.
+    828          extern MAILBOX_TypeDef *sl_device_peripheral_mailbox_get_base_addr(const sl_peripheral_t peripheral);
+    829          
+    830          // External base address getter declaration for MPAHBRAM.
+    831          extern MPAHBRAM_TypeDef *sl_device_peripheral_mpahbram_get_base_addr(const sl_peripheral_t peripheral);
+    832          
+    833          // External base address getter declaration for MSC.
+    834          extern MSC_TypeDef *sl_device_peripheral_msc_get_base_addr(const sl_peripheral_t peripheral);
+    835          
+    836          // External base address getter declaration for MVP.
+    837          extern MVP_TypeDef *sl_device_peripheral_mvp_get_base_addr(const sl_peripheral_t peripheral);
+    838          
+    839          // External base address getter declaration for PCNT.
+    840          extern PCNT_TypeDef *sl_device_peripheral_pcnt_get_base_addr(const sl_peripheral_t peripheral);
+    841          
+    842          // External base address getter declaration for PDM.
+    843          extern PDM_TypeDef *sl_device_peripheral_pdm_get_base_addr(const sl_peripheral_t peripheral);
+    844          
+    845          // External base address getter declaration for PFMXPPRF.
+    846          extern PFMXPPRF_TypeDef *sl_device_peripheral_pfmxpprf_get_base_addr(const sl_peripheral_t peripheral);
+    847          
+    848          // External base address getter declaration for PIXELRZ.
+    849          extern PIXELRZ_TypeDef *sl_device_peripheral_pixelrz_get_base_addr(const sl_peripheral_t peripheral);
+    850          
+    851          // External base address getter declaration for PRS.
+    852          extern PRS_TypeDef *sl_device_peripheral_prs_get_base_addr(const sl_peripheral_t peripheral);
+    853          
+    854          // External base address getter declaration for RFFPLL.
+    855          extern RFFPLL_TypeDef *sl_device_peripheral_rffpll_get_base_addr(const sl_peripheral_t peripheral);
+    856          
+    857          // External base address getter declaration for RPA.
+    858          extern RPA_TypeDef *sl_device_peripheral_rpa_get_base_addr(const sl_peripheral_t peripheral);
+    859          
+    860          // External base address getter declaration for RTCC.
+    861          extern RTCC_TypeDef *sl_device_peripheral_rtcc_get_base_addr(const sl_peripheral_t peripheral);
+    862          
+    863          // External base address getter declaration for SCRATCHPAD.
+    864          extern SCRATCHPAD_TypeDef *sl_device_peripheral_scratchpad_get_base_addr(const sl_peripheral_t peripheral);
+    865          
+    866          // External base address getter declaration for SEMAILBOX_AHBHOST.
+    867          extern SEMAILBOX_AHBHOST_TypeDef *sl_device_peripheral_semailbox_ahbhost_get_base_addr(const sl_peripheral_t peripheral);
+    868          
+    869          // External base address getter declaration for SEMAILBOX_HOST.
+    870          extern SEMAILBOX_HOST_TypeDef *sl_device_peripheral_semailbox_host_get_base_addr(const sl_peripheral_t peripheral);
+    871          
+    872          // External base address getter declaration for SEMAPHORE.
+    873          extern SEMAPHORE_TypeDef *sl_device_peripheral_semaphore_get_base_addr(const sl_peripheral_t peripheral);
+    874          
+    875          // External base address getter declaration for SEPORTAL.
+    876          extern SEPORTAL_TypeDef *sl_device_peripheral_seportal_get_base_addr(const sl_peripheral_t peripheral);
+    877          
+    878          // External base address getter declaration for SEPUF_APBCFG.
+    879          extern SEPUF_APBCFG_TypeDef *sl_device_peripheral_sepuf_apbcfg_get_base_addr(const sl_peripheral_t peripheral);
+    880          
+    881          // External base address getter declaration for SMU.
+    882          extern SMU_TypeDef *sl_device_peripheral_smu_get_base_addr(const sl_peripheral_t peripheral);
+    883          
+    884          // External base address getter declaration for SOCPLL.
+    885          extern SOCPLL_TypeDef *sl_device_peripheral_socpll_get_base_addr(const sl_peripheral_t peripheral);
+    886          
+    887          // External base address getter declaration for SYMCRYPTO.
+    888          extern SYMCRYPTO_TypeDef *sl_device_peripheral_symcrypto_get_base_addr(const sl_peripheral_t peripheral);
+    889          
+    890          // External base address getter declaration for SYSCFG.
+    891          extern SYSCFG_TypeDef *sl_device_peripheral_syscfg_get_base_addr(const sl_peripheral_t peripheral);
+    892          
+    893          // External base address getter declaration for SYSCFG_CFGNS.
+    894          extern SYSCFG_CFGNS_TypeDef *sl_device_peripheral_syscfg_cfgns_get_base_addr(const sl_peripheral_t peripheral);
+    895          
+    896          // External base address getter declaration for SYSRTC.
+    897          extern SYSRTC_TypeDef *sl_device_peripheral_sysrtc_get_base_addr(const sl_peripheral_t peripheral);
+    898          
+    899          // External base address getter declaration for TIMER.
+    900          extern TIMER_TypeDef *sl_device_peripheral_timer_get_base_addr(const sl_peripheral_t peripheral);
+    901          
+    902          // External base address getter declaration for ULFRCO.
+    903          extern ULFRCO_TypeDef *sl_device_peripheral_ulfrco_get_base_addr(const sl_peripheral_t peripheral);
+    904          
+    905          // External base address getter declaration for USART.
+    906          extern USART_TypeDef *sl_device_peripheral_usart_get_base_addr(const sl_peripheral_t peripheral);
+    907          
+    908          // External base address getter declaration for USBAHB_AHBS.
+    909          extern USBAHB_AHBS_TypeDef *sl_device_peripheral_usbahb_ahbs_get_base_addr(const sl_peripheral_t peripheral);
+    910          
+    911          // External base address getter declaration for USBPLL.
+    912          extern USBPLL_TypeDef *sl_device_peripheral_usbpll_get_base_addr(const sl_peripheral_t peripheral);
+    913          
+    914          // External base address getter declaration for USB_APBS.
+    915          extern USB_APBS_TypeDef *sl_device_peripheral_usb_apbs_get_base_addr(const sl_peripheral_t peripheral);
+    916          
+    917          // External base address getter declaration for VDAC.
+    918          extern VDAC_TypeDef *sl_device_peripheral_vdac_get_base_addr(const sl_peripheral_t peripheral);
+    919          
+    920          // External base address getter declaration for WDOG.
+    921          extern WDOG_TypeDef *sl_device_peripheral_wdog_get_base_addr(const sl_peripheral_t peripheral);
+    922          
+    923          // External clock branch getter declaration.
+    924          extern sl_clock_branch_t sl_device_peripheral_get_clock_branch(const sl_peripheral_t peripheral);
+    925          
+    926          // External bus clock getter declaration.
+    927          extern sl_bus_clock_t sl_device_peripheral_get_bus_clock(const sl_peripheral_t peripheral);
+    928          
+    929          // External DMA channel count getter declaration.
+    930          extern uint8_t sl_device_peripheral_get_dma_channel_count(const sl_peripheral_t peripheral);
+    931          
+    932          // External DMA SYNC count getter declaration.
+    933          extern uint8_t sl_device_peripheral_get_dma_sync_count(const sl_peripheral_t peripheral);
+    934          
+    935          // External DMA dual destination bitmap getter declaration.
+    936          extern uint32_t sl_device_peripheral_get_dma_dual_destination_bitmap(const sl_peripheral_t peripheral);
+    937          
+    938          // External DMA interleaving bitmap getter declaration.
+    939          extern uint32_t sl_device_peripheral_get_dma_interleaving_bitmap(const sl_peripheral_t peripheral);
+    940          
+    941          // External TXDAV signal getter declaration.
+    942          extern sl_dma_signal_t sl_device_peripheral_get_i2c_txdav_dma_signal(const sl_peripheral_t peripheral);
+    943          
+    944          // External RXDAV signal getter declaration.
+    945          extern sl_dma_signal_t sl_device_peripheral_get_i2c_rxdav_dma_signal(const sl_peripheral_t peripheral);
+    946          
+    947          // External TIMER signal getter declarations.
+    948          extern sl_dma_signal_t sl_device_peripheral_get_timer_cc0_dma_signal(const sl_peripheral_t peripheral);
+    949          extern sl_dma_signal_t sl_device_peripheral_get_timer_cc1_dma_signal(const sl_peripheral_t peripheral);
+    950          extern sl_dma_signal_t sl_device_peripheral_get_timer_cc2_dma_signal(const sl_peripheral_t peripheral);
+    951          extern sl_dma_signal_t sl_device_peripheral_get_timer_ufof_dma_signal(const sl_peripheral_t peripheral);
+    952          extern sl_dma_signal_t sl_device_peripheral_get_timer_cc3_dma_signal(const sl_peripheral_t peripheral);
+    953          extern sl_dma_signal_t sl_device_peripheral_get_timer_cc4_dma_signal(const sl_peripheral_t peripheral);
+    954          extern sl_dma_signal_t sl_device_peripheral_get_timer_cc5_dma_signal(const sl_peripheral_t peripheral);
+    955          extern sl_dma_signal_t sl_device_peripheral_get_timer_cc6_dma_signal(const sl_peripheral_t peripheral);
+    956          
+    957          // External PROTIMER signal getter declarations.
+    958          extern sl_dma_signal_t sl_device_peripheral_get_protimer_cc0_dma_signal(const sl_peripheral_t peripheral);
+    959          extern sl_dma_signal_t sl_device_peripheral_get_protimer_cc1_dma_signal(const sl_peripheral_t peripheral);
+    960          extern sl_dma_signal_t sl_device_peripheral_get_protimer_cc2_dma_signal(const sl_peripheral_t peripheral);
+    961          extern sl_dma_signal_t sl_device_peripheral_get_protimer_cc3_dma_signal(const sl_peripheral_t peripheral);
+    962          extern sl_dma_signal_t sl_device_peripheral_get_protimer_bof_dma_signal(const sl_peripheral_t peripheral);
+    963          extern sl_dma_signal_t sl_device_peripheral_get_protimer_pof_dma_signal(const sl_peripheral_t peripheral);
+    964          extern sl_dma_signal_t sl_device_peripheral_get_protimer_wof_dma_signal(const sl_peripheral_t peripheral);
+    965          
+    966          // External IADC signal getter declarations.
+    967          extern sl_dma_signal_t sl_device_peripheral_get_iadc_scan_dma_signal(const sl_peripheral_t peripheral);
+    968          extern sl_dma_signal_t sl_device_peripheral_get_iadc_single_dma_signal(const sl_peripheral_t peripheral);
+    969          
+    970          // External ADC signal getter declarations.
+    971          extern sl_dma_signal_t sl_device_peripheral_get_adc_scan_dma_signal(const sl_peripheral_t peripheral);
+    972          
+    973          // External EUSART signal getter declarations.
+    974          extern sl_dma_signal_t sl_device_peripheral_get_eusart_rxfl_dma_signal(const sl_peripheral_t peripheral);
+    975          extern sl_dma_signal_t sl_device_peripheral_get_eusart_txfl_dma_signal(const sl_peripheral_t peripheral);
+    976          
+    977          // External EUART signal getter declarations.
+    978          extern sl_dma_signal_t sl_device_peripheral_get_euart_rxfl_dma_signal(const sl_peripheral_t peripheral);
+    979          extern sl_dma_signal_t sl_device_peripheral_get_euart_txfl_dma_signal(const sl_peripheral_t peripheral);
+    980          
+    981          // External USART signal getter declarations.
+    982          extern sl_dma_signal_t sl_device_peripheral_get_usart_rxdatav_dma_signal(const sl_peripheral_t peripheral);
+    983          extern sl_dma_signal_t sl_device_peripheral_get_usart_rxdatavright_dma_signal(const sl_peripheral_t peripheral);
+    984          extern sl_dma_signal_t sl_device_peripheral_get_usart_txbl_dma_signal(const sl_peripheral_t peripheral);
+    985          extern sl_dma_signal_t sl_device_peripheral_get_usart_txblright_dma_signal(const sl_peripheral_t peripheral);
+    986          extern sl_dma_signal_t sl_device_peripheral_get_usart_txempty_dma_signal(const sl_peripheral_t peripheral);
+    987          
+    988          // External MSC signal getter declarations.
+    989          extern sl_dma_signal_t sl_device_peripheral_get_msc_wdata_dma_signal(const sl_peripheral_t peripheral);
+    990          
+    991          // External MVP signal getter declarations.
+    992          extern sl_dma_signal_t sl_device_peripheral_get_mvp_req_dma_signal(const sl_peripheral_t peripheral);
+    993          
+    994          // External PIXELRZ signal getter declarations.
+    995          extern sl_dma_signal_t sl_device_peripheral_get_pixelrz_txf_dma_signal(const sl_peripheral_t peripheral);
+    996          
+    997          // External PDM signal getter declarations.
+    998          extern sl_dma_signal_t sl_device_peripheral_get_pdm_rxdata_dma_signal(const sl_peripheral_t peripheral);
+    999          
+   1000          // External LCD signal getter declarations.
+   1001          extern sl_dma_signal_t sl_device_peripheral_get_lcd_lcd_dma_signal(const sl_peripheral_t peripheral);
+   1002          
+   1003          // External LESENSE signal getter declarations.
+   1004          extern sl_dma_signal_t sl_device_peripheral_get_lesense_fifo_dma_signal(const sl_peripheral_t peripheral);
+   1005          
+   1006          // External VDAC signal getter declarations.
+   1007          extern sl_dma_signal_t sl_device_peripheral_get_vdac_ch0req_dma_signal(const sl_peripheral_t peripheral);
+   1008          extern sl_dma_signal_t sl_device_peripheral_get_vdac_ch1req_dma_signal(const sl_peripheral_t peripheral);
+   1009          
+   1010          // External LDMAXBAR signal getter declarations.
+   1011          extern sl_dma_signal_t sl_device_peripheral_get_ldmaxbar_prsreq0_dma_signal(const sl_peripheral_t peripheral);
+   1012          extern sl_dma_signal_t sl_device_peripheral_get_ldmaxbar_prsreq1_dma_signal(const sl_peripheral_t peripheral);
+   1013          
+   1014          // External CAN signal getter declarations.
+   1015          extern sl_dma_signal_t sl_device_peripheral_get_can_rxfl0_dma_signal(const sl_peripheral_t peripheral);
+   1016          extern sl_dma_signal_t sl_device_peripheral_get_can_rxfl1_dma_signal(const sl_peripheral_t peripheral);
+   1017          extern sl_dma_signal_t sl_device_peripheral_get_can_txfl0_dma_signal(const sl_peripheral_t peripheral);
+   1018          extern sl_dma_signal_t sl_device_peripheral_get_can_txfl1_dma_signal(const sl_peripheral_t peripheral);
+   1019          
+   1020          #if defined(__ICCARM__)
+   1021          // Disable IAR multiple typedefs declaration warning.
+   1022          #pragma diag_default=Pe301
+   1023          #endif
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      24  sl_peripheral_dma_val_ldma0
+      12  sl_peripheral_val_acmp0
+      12  sl_peripheral_val_acmp1
+      16  sl_peripheral_val_adc0
+      16  sl_peripheral_val_adc1
+      12  sl_peripheral_val_aes
+      12  sl_peripheral_val_amuxcp0
+      12  sl_peripheral_val_amuxcp1
+      12  sl_peripheral_val_bufc
+      12  sl_peripheral_val_buram
+      12  sl_peripheral_val_burtc
+      28  sl_peripheral_val_can0
+      28  sl_peripheral_val_can1
+      12  sl_peripheral_val_cmu
+      12  sl_peripheral_val_cryptoacc
+      12  sl_peripheral_val_dcdc
+      12  sl_peripheral_val_devinfo
+      12  sl_peripheral_val_dmem
+      12  sl_peripheral_val_dmem0
+      12  sl_peripheral_val_dmem1
+      12  sl_peripheral_val_dpll0
+      12  sl_peripheral_val_emu
+      12  sl_peripheral_val_etampdet
+      20  sl_peripheral_val_euart0
+      20  sl_peripheral_val_eusart0
+      20  sl_peripheral_val_eusart1
+      20  sl_peripheral_val_eusart2
+      20  sl_peripheral_val_eusart3
+      20  sl_peripheral_val_eusart4
+      12  sl_peripheral_val_fsrco
+      12  sl_peripheral_val_gpcrc0
+      12  sl_peripheral_val_gpio
+      12  sl_peripheral_val_hfrco0
+      12  sl_peripheral_val_hfrcoem23
+      12  sl_peripheral_val_hfxo0
+      12  sl_peripheral_val_hostmailbox
+      12  sl_peripheral_val_hostportal
+      20  sl_peripheral_val_i2c0
+      20  sl_peripheral_val_i2c1
+      20  sl_peripheral_val_i2c2
+      20  sl_peripheral_val_i2c3
+      20  sl_peripheral_val_iadc0
+      12  sl_peripheral_val_icache0
+      12  sl_peripheral_val_keyscan
+      12  sl_peripheral_val_l1icache0
+      12  sl_peripheral_val_l2icache0
+      16  sl_peripheral_val_lcd
+      12  sl_peripheral_val_lcdrf
+      20  sl_peripheral_val_ldmaxbar0
+      12  sl_peripheral_val_leddrv0
+      12  sl_peripheral_val_ledsink0
+      16  sl_peripheral_val_lesense
+      12  sl_peripheral_val_letimer0
+      12  sl_peripheral_val_lfrco
+      12  sl_peripheral_val_lfxo
+      12  sl_peripheral_val_lpw0portal
+      12  sl_peripheral_val_lpwaes
+      12  sl_peripheral_val_lvgd
+      16  sl_peripheral_val_msc
+      16  sl_peripheral_val_mvp
+      12  sl_peripheral_val_pcnt0
+      16  sl_peripheral_val_pdm
+      12  sl_peripheral_val_pfmxpprf
+      16  sl_peripheral_val_pixelrz0
+      16  sl_peripheral_val_pixelrz1
+      12  sl_peripheral_val_prortc
+      12  sl_peripheral_val_prs
+      12  sl_peripheral_val_radioaes
+      12  sl_peripheral_val_rffpll0
+      12  sl_peripheral_val_rpa
+      12  sl_peripheral_val_rtcc
+      12  sl_peripheral_val_scratchpad
+      12  sl_peripheral_val_semailbox
+      12  sl_peripheral_val_semaphore0
+      12  sl_peripheral_val_semaphore1
+      12  sl_peripheral_val_seportal
+      12  sl_peripheral_val_sepuf
+      12  sl_peripheral_val_smu
+      12  sl_peripheral_val_socpll0
+      12  sl_peripheral_val_symcrypto
+      12  sl_peripheral_val_syscfg
+      12  sl_peripheral_val_sysrtc0
+      44  sl_peripheral_val_timer0
+      44  sl_peripheral_val_timer1
+      44  sl_peripheral_val_timer2
+      44  sl_peripheral_val_timer3
+      44  sl_peripheral_val_timer4
+      44  sl_peripheral_val_timer5
+      44  sl_peripheral_val_timer6
+      44  sl_peripheral_val_timer7
+      44  sl_peripheral_val_timer8
+      44  sl_peripheral_val_timer9
+      12  sl_peripheral_val_ulfrco
+      32  sl_peripheral_val_usart0
+      32  sl_peripheral_val_usart1
+      32  sl_peripheral_val_usart2
+      12  sl_peripheral_val_usb
+      12  sl_peripheral_val_usbahb
+      12  sl_peripheral_val_usbpll0
+      20  sl_peripheral_val_vdac0
+      20  sl_peripheral_val_vdac1
+      12  sl_peripheral_val_wdog0
+      12  sl_peripheral_val_wdog1
+
+ 
+ 1'808 bytes in section .rodata
+ 
+ 0 bytes of CONST memory (+ 1'808 bytes shared)
+
+Errors: none
+Warnings: none
