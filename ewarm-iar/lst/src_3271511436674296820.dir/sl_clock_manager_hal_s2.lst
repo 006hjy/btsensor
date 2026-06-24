@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:06
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  16:58:18
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -27,7 +27,8 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
+#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_3271511436674296820.dir
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_3271511436674296820.dir
@@ -71,6 +72,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
@@ -104,6 +107,8 @@
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
 #        -I

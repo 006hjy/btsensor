@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:02
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  16:58:14
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode          =  thumb
@@ -27,7 +27,8 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
+#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\Source_1284957418446755893.dir
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\Source_1284957418446755893.dir
@@ -71,6 +72,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
@@ -104,6 +107,8 @@
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
 #        -I
@@ -933,67 +938,67 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
       20  CopyMemory
        2  Reset_Handler
       20  Reset_Handler_C
-       2  SMU_NS_PRIVILEGED_IRQHandler
-          TIMER2_IRQHandler
-          CRYPTOACC_IRQHandler
-          EMU_IRQHandler
-          TIMER3_IRQHandler
-          DebugMon_Handler
-          TIMER4_IRQHandler
-          USART0_RX_IRQHandler
+       2  SecureFault_Handler
           HardFault_Handler
-          TIMER0_IRQHandler
-          BusFault_Handler
-          PKE_IRQHandler
-          SMU_SECURE_IRQHandler
-          TIMER1_IRQHandler
-          MemManage_Handler
-          SecureFault_Handler
-          RTCC_IRQHandler
-          NMI_Handler
-          UsageFault_Handler
-          SVC_Handler
-          PendSV_Handler
+          TIMER4_IRQHandler
           SysTick_Handler
           TRNG_IRQHandler
+          TIMER1_IRQHandler
+          USART1_TX_IRQHandler
+          MemManage_Handler
+          BusFault_Handler
+          BURTC_IRQHandler
+          ULFRCO_IRQHandler
+          LETIMER0_IRQHandler
+          GPIO_ODD_IRQHandler
+          RTCC_IRQHandler
+          LFXO_IRQHandler
+          GPIO_EVEN_IRQHandler
+          SVC_Handler
+          PendSV_Handler
+          CRYPTOACC_IRQHandler
+          TIMER0_IRQHandler
+          SMU_SECURE_IRQHandler
           SMU_S_PRIVILEGED_IRQHandler
-          sl_app_properties
-          Default_Handler
+          DebugMon_Handler
+          SMU_NS_PRIVILEGED_IRQHandler
+          TIMER2_IRQHandler
+          NMI_Handler
+          TIMER3_IRQHandler
+          USART0_RX_IRQHandler
+          ICACHE0_IRQHandler
+          LDMA_IRQHandler
+          EMU_IRQHandler
+          PKE_IRQHandler
+          USART0_TX_IRQHandler
+          USART1_RX_IRQHandler
+          SYSCFG_IRQHandler
+          UsageFault_Handler
+          LFRCO_IRQHandler
+          DPLL0_IRQHandler
+          I2C1_IRQHandler
+          PDM_IRQHandler
+          SW1_IRQHandler
+          EMUEFP_IRQHandler
+          EUART0_TX_IRQHandler
+          IADC_IRQHandler
+          SW2_IRQHandler
+          SW3_IRQHandler
+          HFRCO0_IRQHandler
+          KERNEL1_IRQHandler
+          WDOG0_IRQHandler
           KERNEL0_IRQHandler
+          SW0_IRQHandler
+          Default_Handler
+          I2C0_IRQHandler
+          HFXO0_IRQHandler
+          EMUSE_IRQHandler
+          EUART0_RX_IRQHandler
+          MSC_IRQHandler
+          CMU_IRQHandler
+          sl_app_properties
           DCDC_IRQHandler
           EMUDG_IRQHandler
-          SW1_IRQHandler
-          EUART0_RX_IRQHandler
-          I2C1_IRQHandler
-          SW2_IRQHandler
-          PDM_IRQHandler
-          LDMA_IRQHandler
-          MSC_IRQHandler
-          SW3_IRQHandler
-          EMUSE_IRQHandler
-          GPIO_ODD_IRQHandler
-          ULFRCO_IRQHandler
-          HFRCO0_IRQHandler
-          CMU_IRQHandler
-          LFXO_IRQHandler
-          USART1_RX_IRQHandler
-          I2C0_IRQHandler
-          GPIO_EVEN_IRQHandler
-          IADC_IRQHandler
-          DPLL0_IRQHandler
-          SW0_IRQHandler
-          WDOG0_IRQHandler
-          LETIMER0_IRQHandler
-          KERNEL1_IRQHandler
-          EUART0_TX_IRQHandler
-          USART1_TX_IRQHandler
-          BURTC_IRQHandler
-          HFXO0_IRQHandler
-          SYSCFG_IRQHandler
-          ICACHE0_IRQHandler
-          EMUEFP_IRQHandler
-          USART0_TX_IRQHandler
-          LFRCO_IRQHandler
      320  __vector_table
 
  

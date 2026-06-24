@@ -6,6 +6,7 @@
     <property object="EUART0" propertyId="ABPeripheral.included" value="true"/>
     <property object="I2C0" propertyId="ABModule.selectedRequirement" value="i2c%T%SL_I2CSPM_TMP1075%T%sl_i2cspm_tmp1075_config.h"/>
     <property object="I2C0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PA00" propertyId="ABModule.selectedRequirement" value="gpio%T%SL_HAL_GPIO_INIT_PA00%T%sl_hal_gpio_init_pa00_config.h"/>
     <property object="PA00" propertyId="pin.name" value=""/>
     <property object="PA00" propertyId="pin.reserve" value="Reserved"/>
     <property object="PA01" propertyId="pin.name" value=""/>
@@ -28,6 +29,17 @@
     <property object="PORTIO" propertyId="portio.iadc0.enable.scan1pos" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.iadc0.location.scan0pos" value="131"/>
     <property object="PORTIO" propertyId="portio.iadc0.location.scan1pos" value="132"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.clk" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.cs" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.rx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.tx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.clk" value="34"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.cs" value="35"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.rx" value="33"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.tx" value="32"/>
+    <property object="USART0" propertyId="ABModule.selectedRequirement" value="usart%T%SL_SPIDRV_TPL0501%T%sl_spidrv_TPL0501_config.h"/>
+    <property object="USART0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="USART1" propertyId="ABPeripheral.included" value="true"/>
   </mode>
   <modeTransition>
     <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>

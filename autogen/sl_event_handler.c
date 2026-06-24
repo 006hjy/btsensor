@@ -3,7 +3,9 @@
 #include "sl_clock_manager.h"
 #include "sl_dma_manager_instances.h"
 #include "sl_gpio.h"
+#include "sl_hal_gpio_simple_init.h"
 #include "sl_i2cspm_instances.h"
+#include "sl_spidrv_instances.h"
 #include "sl_uartdrv_instances.h"
 #include "nvm3_default.h"
 
@@ -37,7 +39,9 @@ void sli_internal_init_early(void)
 void sl_driver_init(void)
 {
   sl_gpio_init();
+  sl_hal_gpio_simple_init();
   sl_i2cspm_init_instances();
+  sl_spidrv_init_instances();
   sl_uartdrv_init_instances();
 }
 

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  10:59:02
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         24/Jun/2026  16:58:14
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -27,7 +27,8 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
+#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir
@@ -71,6 +72,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
@@ -105,6 +108,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
@@ -134,136 +139,142 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_event_hand
       3          #include "sl_clock_manager.h"
       4          #include "sl_dma_manager_instances.h"
       5          #include "sl_gpio.h"
-      6          #include "sl_i2cspm_instances.h"
-      7          #include "sl_uartdrv_instances.h"
-      8          #include "nvm3_default.h"
-      9          
+      6          #include "sl_hal_gpio_simple_init.h"
+      7          #include "sl_i2cspm_instances.h"
+      8          #include "sl_spidrv_instances.h"
+      9          #include "sl_uartdrv_instances.h"
+     10          #include "nvm3_default.h"
+     11          
 
    \                                 In section .text, align 2, keep-with-next
-     10          void sli_driver_permanent_allocation(void)
-     11          {
-     12          }
+     12          void sli_driver_permanent_allocation(void)
+     13          {
+     14          }
    \                     sli_driver_permanent_allocation: (+1)
    \        0x0   0x4770             BX       LR
-     13          
+     15          
 
    \                                 In section .text, align 2, keep-with-next
-     14          void sli_service_permanent_allocation(void)
-     15          {
-     16          }
+     16          void sli_service_permanent_allocation(void)
+     17          {
+     18          }
    \                     sli_service_permanent_allocation: (+1)
    \        0x0   0x4770             BX       LR
-     17          
+     19          
 
    \                                 In section .text, align 2, keep-with-next
-     18          void sli_stack_permanent_allocation(void)
-     19          {
-     20          }
+     20          void sli_stack_permanent_allocation(void)
+     21          {
+     22          }
    \                     sli_stack_permanent_allocation: (+1)
    \        0x0   0x4770             BX       LR
-     21          
+     23          
 
    \                                 In section .text, align 2, keep-with-next
-     22          void sli_internal_permanent_allocation(void)
-     23          {
-     24          }
+     24          void sli_internal_permanent_allocation(void)
+     25          {
+     26          }
    \                     sli_internal_permanent_allocation: (+1)
    \        0x0   0x4770             BX       LR
-     25          
+     27          
 
    \                                 In section .text, align 2, keep-with-next
-     26          void sl_platform_init(void)
-     27          {
+     28          void sl_platform_init(void)
+     29          {
    \                     sl_platform_init: (+1)
    \        0x0   0xB580             PUSH     {R7,LR}
-     28            sl_clock_manager_runtime_init();
+     30            sl_clock_manager_runtime_init();
    \        0x2   0x.... 0x....      BL       sl_clock_manager_runtime_init
-     29            sl_dma_manager_instances_init();
+     31            sl_dma_manager_instances_init();
    \        0x6   0x.... 0x....      BL       sl_dma_manager_instances_init
-     30            nvm3_initDefault();
+     32            nvm3_initDefault();
    \        0xA   0xE8BD 0x4001      POP      {R0,LR}
    \        0xE   0x.... 0x....      B.W      nvm3_initDefault
-     31          }
-     32          
+     33          }
+     34          
 
    \                                 In section .text, align 2, keep-with-next
-     33          void sli_internal_init_early(void)
-     34          {
-     35          }
+     35          void sli_internal_init_early(void)
+     36          {
+     37          }
    \                     sli_internal_init_early: (+1)
    \        0x0   0x4770             BX       LR
-     36          
+     38          
 
    \                                 In section .text, align 2, keep-with-next
-     37          void sl_driver_init(void)
-     38          {
+     39          void sl_driver_init(void)
+     40          {
    \                     sl_driver_init: (+1)
    \        0x0   0xB580             PUSH     {R7,LR}
-     39            sl_gpio_init();
+     41            sl_gpio_init();
    \        0x2   0x.... 0x....      BL       sl_gpio_init
-     40            sl_i2cspm_init_instances();
-   \        0x6   0x.... 0x....      BL       sl_i2cspm_init_instances
-     41            sl_uartdrv_init_instances();
-   \        0xA   0xE8BD 0x4001      POP      {R0,LR}
-   \        0xE   0x.... 0x....      B.W      sl_uartdrv_init_instances
-     42          }
-     43          
-
-   \                                 In section .text, align 2, keep-with-next
-     44          void sl_service_init(void)
-     45          {
+     42            sl_hal_gpio_simple_init();
+   \        0x6   0x.... 0x....      BL       sl_hal_gpio_simple_init
+     43            sl_i2cspm_init_instances();
+   \        0xA   0x.... 0x....      BL       sl_i2cspm_init_instances
+     44            sl_spidrv_init_instances();
+   \        0xE   0x.... 0x....      BL       sl_spidrv_init_instances
+     45            sl_uartdrv_init_instances();
+   \       0x12   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x16   0x.... 0x....      B.W      sl_uartdrv_init_instances
      46          }
-   \                     sl_service_init: (+1)
-   \        0x0   0x4770             BX       LR
      47          
 
    \                                 In section .text, align 2, keep-with-next
-     48          void sl_stack_init(void)
+     48          void sl_service_init(void)
      49          {
      50          }
-   \                     sl_stack_init: (+1)
+   \                     sl_service_init: (+1)
    \        0x0   0x4770             BX       LR
      51          
 
    \                                 In section .text, align 2, keep-with-next
-     52          void sl_internal_app_init(void)
+     52          void sl_stack_init(void)
      53          {
      54          }
-   \                     sl_internal_app_init: (+1)
+   \                     sl_stack_init: (+1)
    \        0x0   0x4770             BX       LR
      55          
 
    \                                 In section .text, align 2, keep-with-next
-     56          void sli_platform_process_action(void)
+     56          void sl_internal_app_init(void)
      57          {
      58          }
-   \                     sli_platform_process_action: (+1)
+   \                     sl_internal_app_init: (+1)
    \        0x0   0x4770             BX       LR
      59          
 
    \                                 In section .text, align 2, keep-with-next
-     60          void sli_service_process_action(void)
+     60          void sli_platform_process_action(void)
      61          {
      62          }
-   \                     sli_service_process_action: (+1)
+   \                     sli_platform_process_action: (+1)
    \        0x0   0x4770             BX       LR
      63          
 
    \                                 In section .text, align 2, keep-with-next
-     64          void sli_stack_process_action(void)
+     64          void sli_service_process_action(void)
      65          {
      66          }
-   \                     sli_stack_process_action: (+1)
+   \                     sli_service_process_action: (+1)
    \        0x0   0x4770             BX       LR
      67          
 
    \                                 In section .text, align 2, keep-with-next
-     68          void sli_internal_app_process_action(void)
+     68          void sli_stack_process_action(void)
      69          {
      70          }
-   \                     sli_internal_app_process_action: (+1)
+   \                     sli_stack_process_action: (+1)
    \        0x0   0x4770             BX       LR
      71          
+
+   \                                 In section .text, align 2, keep-with-next
+     72          void sli_internal_app_process_action(void)
+     73          {
+     74          }
+   \                     sli_internal_app_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+     75          
 
    Maximum stack usage in bytes:
 
@@ -271,7 +282,9 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_event_hand
    ------- --------
        8   sl_driver_init
          8   -> sl_gpio_init
+         8   -> sl_hal_gpio_simple_init
          8   -> sl_i2cspm_init_instances
+         8   -> sl_spidrv_init_instances
          0   -> sl_uartdrv_init_instances
        0   sl_internal_app_init
        8   sl_platform_init
@@ -295,7 +308,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_event_hand
 
    Bytes  Function/Label
    -----  --------------
-      18  sl_driver_init
+      26  sl_driver_init
        2  sl_internal_app_init
       18  sl_platform_init
        2  sl_service_init
@@ -311,9 +324,9 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_event_hand
        2  sli_stack_process_action
 
  
- 60 bytes in section .text
+ 68 bytes in section .text
  
- 60 bytes of CODE memory
+ 68 bytes of CODE memory
 
 Errors: none
 Warnings: none

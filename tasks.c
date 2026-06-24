@@ -3,6 +3,8 @@
 #include "adc.h"
 #include "env.h"
 #include "config.h"
+#include "tpl0501.h"
+#include "sl_gpio.h"
 #include <stdlib.h>
 #include <string.h>
 
@@ -25,6 +27,10 @@ void tasks(void)
         //update_and_store_config();
         
         update_temperature();
+        
+        tpl0501_set_wiper(0xEF);
+        
+        
 
 
     }

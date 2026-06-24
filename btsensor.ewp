@@ -250,6 +250,7 @@
                     <state>SL_CODE_COMPONENT_POWER_MANAGER=power_manager</state>
                     <state>SL_CODE_COMPONENT_CORE=core</state>
                     <state>SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer</state>
+                    <state>SL_CODE_COMPONENT_SPIDRV=spidrv</state>
                     <state>SL_CODE_COMPONENT_UARTDRV=uartdrv</state>
                 </option>
                 <option>
@@ -392,6 +393,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc</state>
@@ -409,6 +411,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc</state>
@@ -626,6 +629,7 @@
                     <state>SL_CODE_COMPONENT_POWER_MANAGER=power_manager</state>
                     <state>SL_CODE_COMPONENT_CORE=core</state>
                     <state>SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer</state>
+                    <state>SL_CODE_COMPONENT_SPIDRV=spidrv</state>
                     <state>SL_CODE_COMPONENT_UARTDRV=uartdrv</state>
                 </option>
                 <option>
@@ -739,6 +743,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc</state>
@@ -756,6 +761,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc</state>
@@ -1272,6 +1278,9 @@
                 <name>$PROJ_DIR$\autogen\sl_event_handler.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\autogen\sl_hal_gpio_simple_init.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\autogen\sl_i2cspm_init.c</name>
             </file>
             <file>
@@ -1279,6 +1288,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\autogen\sl_power_manager_handler.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_spidrv_init.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_spidrv_instances.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\autogen\sl_uartdrv_init.c</name>
@@ -1305,6 +1320,9 @@
                 <name>$PROJ_DIR$\config\sl_device_init_dcdc_config.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\config\sl_hal_gpio_init_pa00_config.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\config\sl_i2cspm_tmp1075_config.h</name>
             </file>
             <file>
@@ -1320,7 +1338,13 @@
                 <name>$PROJ_DIR$\config\sl_sleeptimer_config.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\config\sl_spidrv_TPL0501_config.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\config\sl_uartdrv_eusart_inst0_config.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\config\spidrv_config.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\config\tempdrv_config.h</name>
@@ -1731,6 +1755,21 @@
                             </group>
                         </group>
                         <group>
+                            <name>spidrv</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\spidrv.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\src\spidrv.c</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
                             <name>tempdrv</name>
                             <group>
                                 <name>inc</name>
@@ -1912,6 +1951,15 @@
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_system_generic.h</name>
                             </file>
+                        </group>
+                        <group>
+                            <name>init</name>
+                            <group>
+                                <name>gpio_simple</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple\sl_hal_gpio_simple_init.h</name>
+                                </file>
+                            </group>
                         </group>
                         <group>
                             <name>src</name>
@@ -2320,6 +2368,12 @@
     </file>
     <file>
         <name>$PROJ_DIR$\tmp1075.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\tpl0501.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\tpl0501.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\uart.c</name>
