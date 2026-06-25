@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:56
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  17:06:09
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -145,8 +145,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
      10          
 
    \                                 In section .text, align 4, keep-with-next
-     11          void tasks(void)
-     12          {
+     11          void tasks(void) {
    \                     tasks: (+1)
    \        0x0   0x4A08             LDR.N    R2,??tasks_0
    \        0x2   0x4909             LDR.N    R1,??tasks_0+4
@@ -158,40 +157,35 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
    \        0xE   0x4770             BX       LR
    \                     ??tasks_1: (+1)
    \       0x10   0xB580             PUSH     {R7,LR}
-     13              // 1. 使用 static 记录上一次成功发送的时间戳（局部静态变量，具备持久生命周期）
-     14              static uint32_t last_send_time = 0;
-     15              
-     16              // 使用减法判断时间差（天然防止定时器溢出翻转，且绝对不会重复触发或漏检）
-     17              if (system_uptime_100ms - last_send_time >= 10) {
-     18                  
-     19                  // 立刻更新时间戳，防止后续代码耗时导致重复进入
-     20                  last_send_time = system_uptime_100ms; 
+     12              // 1. 使用 static 记录上一次成功发送的时间戳（局部静态变量，具备持久生命周期）
+     13              static uint32_t last_send_time = 0;
+     14          
+     15              // 使用减法判断时间差（天然防止定时器溢出翻转，且绝对不会重复触发或漏检）
+     16              if (system_uptime_100ms - last_send_time >= 10) {
+     17                  // 立刻更新时间戳，防止后续代码耗时导致重复进入
+     18                  last_send_time = system_uptime_100ms;
    \       0x12   0x6812             LDR      R2,[R2, #+0]
    \       0x14   0x600A             STR      R2,[R1, #+0]
-     21          
-     22                  // 执行ADC扫描
-     23                  adc_scan();
+     19          
+     20                  // 执行ADC扫描
+     21                  adc_scan();
    \       0x16   0x.... 0x....      BL       adc_scan
+     22          
+     23                  // uart_action();  // 调用 UART 发送函数
      24          
-     25                  // uart_action();  // 调用 UART 发送函数
-     26                  
-     27                  //update_and_store_config();
-     28                  
-     29                  update_temperature();
+     25                  //update_and_store_config();
+     26          
+     27                  update_temperature();
    \       0x1A   0xE8BD 0x4001      POP      {R0,LR}
    \       0x1E   0x.... 0x....      B.W      update_temperature
    \       0x22   0xBF00             Nop
    \                     ??tasks_0:
    \       0x24   0x....'....        DC32     system_uptime_100ms
    \       0x28   0x....'....        DC32     `tasks::last_send_time`
-     30                  
-     31                  //tpl0501_set_wiper(0xEF);
-     32                  
-     33                  
-     34          
-     35          
-     36              }
-     37          }
+     28          
+     29                  //tpl0501_set_wiper(0xEF);
+     30              }
+     31          }
 
    \                                 In section .bss, align 4
    \                     `tasks::last_send_time`:

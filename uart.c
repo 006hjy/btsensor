@@ -1,5 +1,5 @@
-//#include "sl_iostream.h"          // IO Stream 核心 API
-//#include "sl_iostream_handles.h"  // 包含自动生成的实例句柄（如 sl_iostream_inst0_handle）
+#include "sl_iostream.h"          // IO Stream 核心 API
+#include "sl_iostream_handles.h"  // 包含自动生成的实例句柄（如 sl_iostream_inst0_handle）
 
 // #include "em_eusart.h"
 
@@ -8,6 +8,23 @@
 // uint8_t uart0_rx_buff_len = 0;
 // uint32_t wait_for_uart = 0x0;
 // uint8_t rx_data = 0;
+
+
+void uart_action() {
+    char rx_char;
+    size_t bytes_read = 0;
+
+    // 参数：句柄, 接收存入的指针, 期望读取的字节数, 实际读到的字节数指针
+    sl_status_t status = sl_iostream_read(sl_iostream_inst0_handle, &rx_char, 1, &bytes_read);
+
+    if (status == SL_STATUS_OK) {
+        // 成功读到了 1 个字节，数据在 rx_char 中
+        // 在这里处理你的业务逻辑...
+    } else if (status == SL_STATUS_EMPTY) {
+        // 当前环形缓冲区是空的，没有收到新数据
+    }
+}
+
 
 // void EUART0_RX_IRQHandler(void) {
 //   // 获取当前已使能且挂起的中断标志位

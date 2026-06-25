@@ -9,6 +9,6 @@
 #define UART_H_
 
 // void uart_init(void);
-// void uart_action(void);
+void uart_action(void);
 
 #endif /* UART_H_ */

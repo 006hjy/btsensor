@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:57
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  17:06:09
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -150,42 +150,42 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tpl0501.c
      13          int tpl0501_set_wiper(uint8_t wiper_val) {
    \                     tpl0501_set_wiper: (+1)
    \        0x0   0xB580             PUSH     {R7,LR}
-     14            Ecode_t ret;
-     15            uint8_t tx_data = wiper_val; // TPL0501 只需要 1 个字节数据
+     14              Ecode_t ret;
+     15              uint8_t tx_data = wiper_val; // TPL0501 只需要 1 个字节数据
    \        0x2   0xF88D 0x0000      STRB     R0,[SP, #+0]
      16          
-     17            /* * 情况 A：如果在 slcp 软件组件中，您将 CS Control 配置为了 "Auto"
-     18             * SPIDRV 会在发送时自动拉低和拉高 CS 引脚，无需手动操作 GPIO。
-     19             */
+     17              /* * 情况 A：如果在 slcp 软件组件中，您将 CS Control 配置为了 "Auto"
+     18               * SPIDRV 会在发送时自动拉低和拉高 CS 引脚，无需手动操作 GPIO。
+     19               */
      20          
-     21            /* * 情况 B：如果您的 CS 是通过普通 GPIO 手动控制的，请在发送前拉低：
-     22             * GPIO_PinOutClear(TPL0501_CS_PORT, TPL0501_CS_PIN);
-     23             */
+     21              /* * 情况 B：如果您的 CS 是通过普通 GPIO 手动控制的，请在发送前拉低：
+     22               * GPIO_PinOutClear(TPL0501_CS_PORT, TPL0501_CS_PIN);
+     23               */
      24          
-     25            // 调用 SPIDRV 的阻塞式主机发送函数发送 1 个字节
-     26            ret = SPIDRV_MTransmitB(sl_spidrv_tpl0501_handle, &tx_data, 1);
+     25              // 调用 SPIDRV 的阻塞式主机发送函数发送 1 个字节
+     26              ret = SPIDRV_MTransmitB(sl_spidrv_tpl0501_handle, &tx_data, 1);
      27          
-     28            /* * 如果是情况 B（手动控制 CS），发送完毕后必须拉高 CS 以锁存数据：
-     29             * GPIO_PinOutSet(TPL0501_CS_PORT, TPL0501_CS_PIN);
-     30             */
+     28              /* * 如果是情况 B（手动控制 CS），发送完毕后必须拉高 CS 以锁存数据：
+     29               * GPIO_PinOutSet(TPL0501_CS_PORT, TPL0501_CS_PIN);
+     30               */
      31          
-     32            if (ret == ECODE_EMDRV_SPIDRV_OK) {
+     32              if (ret == ECODE_EMDRV_SPIDRV_OK) {
    \        0x6   0x4B05             LDR.N    R3,??tpl0501_set_wiper_0
    \        0x8   0x6818             LDR      R0,[R3, #+0]
    \        0xA   0x2201             MOVS     R2,#+1
    \        0xC   0x4669             MOV      R1,SP
    \        0xE   0x.... 0x....      BL       SPIDRV_MTransmitB
    \       0x12   0xB108             CBZ.N    R0,??tpl0501_set_wiper_1
-     33              return 0;
-     34            } else {
-     35              return -1; // SPI 传输错误
+     33                  return 0;
+     34              } else {
+     35                  return -1; // SPI 传输错误
    \       0x14   0xF04F 0x30FF      MOV      R0,#+4294967295
    \                     ??tpl0501_set_wiper_1: (+1)
    \       0x18   0xBD02             POP      {R1,PC}
    \       0x1A   0xBF00             Nop
    \                     ??tpl0501_set_wiper_0:
    \       0x1C   0x....'....        DC32     sl_spidrv_tpl0501_handle
-     36            }
+     36              }
      37          }
 
    Maximum stack usage in bytes:

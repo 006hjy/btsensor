@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:56
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  17:06:08
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode          =  thumb
@@ -184,9 +184,10 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\app.c
    \                                 In section .text, align 2, keep-with-next
      37          void app_process_action(void)
      38          {
-     39          }
+     39            uart_action();
    \                     app_process_action: (+1)
-   \        0x0   0x4770             BX       LR
+   \        0x0   0x.... 0x....      B.W      uart_action
+     40          }
 
    Maximum stack usage in bytes:
 
@@ -196,6 +197,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\app.c
          0   -> config_init
          8   -> letimer_init
        0   app_process_action
+         0   -> uart_action
 
 
    Section sizes:
@@ -203,12 +205,12 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\app.c
    Bytes  Function/Label
    -----  --------------
       14  app_init
-       2  app_process_action
+       4  app_process_action
 
  
- 16 bytes in section .text
+ 18 bytes in section .text
  
- 16 bytes of CODE memory
+ 18 bytes of CODE memory
 
 Errors: none
 Warnings: none

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.70.4.588/W64 for ARM                  25/Jun/2026  15:26:57
+# IAR ELF Linker V9.70.4.588/W64 for ARM                  25/Jun/2026  17:06:09
 # Copyright 2007-2026 IAR Systems AB.
 #
 #    Output file                  =
@@ -198,8 +198,8 @@ No sections matched the following patterns:
 
   Section                 Kind         Address  Alignment    Size  Object
   -------                 ----         -------  ---------    ----  ------
-"application":                                             0xcdcc
-  application                              0x0             0xcc06  <Block>
+"application":                                             0xce24
+  application                              0x0             0xcc5a  <Block>
     .intvec               const            0x0        512   0x140  startup_efm32pg22.o [3]
     CODE                  ro code        0x140         16     0x8  sl_udelay_armv6m_iar.o [13]
     .rodata               const          0x148          4    0x28  adc.o [1]
@@ -570,128 +570,129 @@ No sections matched the following patterns:
     .text                 ro code       0xa9f8          4    0x88  sl_hal_letimer.o [17]
     .text                 ro code       0xaa80          4    0x40  sl_hal_system.o [17]
     .text                 ro code       0xaac0          4    0x1c  sl_i2cspm_init.o [4]
-    .text                 ro code       0xaadc          4    0x2c  sl_iostream.o [16]
-    .text                 ro code       0xab08          4   0x2e0  sl_iostream_dmadrv.o [16]
-    .text                 ro code       0xade8          4   0x3b8  sl_iostream_eusart.o [16]
-    .text                 ro code       0xb1a0          4   0xbe8  sl_iostream_uart.o [16]
+    .text                 ro code       0xaadc          4    0x5a  sl_iostream.o [16]
+    .text                 ro code       0xab38          4   0x2e0  sl_iostream_dmadrv.o [16]
+    .text                 ro code       0xae18          4   0x3b8  sl_iostream_eusart.o [16]
+    .text                 ro code       0xb1d0          4   0xbe8  sl_iostream_uart.o [16]
     text_clock_manager_timecritical3394
-                          ro code       0xbd88          2     0x6  sl_clock_manager.o [21]
+                          ro code       0xbdb8          2     0x6  sl_clock_manager.o [21]
     text_power_manager_timecritical60204
-                          ro code       0xbd8e          2    0x1c  sl_iostream_uart.o [16]
+                          ro code       0xbdbe          2    0x1c  sl_iostream_uart.o [16]
     text_dma_channel_timecritical5172
-                          ro code       0xbdac          4    0x3c  sl_iostream_dmadrv.o [16]
+                          ro code       0xbddc          4    0x3c  sl_iostream_dmadrv.o [16]
     text_power_manager_timecritical59186
-                          ro code       0xbde8          2    0x1c  sl_iostream_uart.o [16]
+                          ro code       0xbe18          2    0x1c  sl_iostream_uart.o [16]
     text_dma_channel_timecritical5274
-                          ro code       0xbe04          4    0x40  sl_iostream_dmadrv.o [16]
+                          ro code       0xbe34          4    0x40  sl_iostream_dmadrv.o [16]
     text_dma_channel_timecritical5376
-                          ro code       0xbe44          4    0x40  sl_iostream_dmadrv.o [16]
+                          ro code       0xbe74          4    0x40  sl_iostream_dmadrv.o [16]
     text_hal_ldma_timecritical302454
-                          ro code       0xbe84          4    0x3c  sl_hal_ldma.o [17]
-    .text                 ro code       0xbec0          4    0x18  sl_iostream_handles.o [4]
-    .text                 ro code       0xbed8          4   0x118  sl_iostream_init_eusart_instances.o [4]
-    .text                 ro code       0xbff0          4    0x28  sl_spidrv_init.o [4]
-    .text                 ro code       0xc018          4    0x4a  startup_efm32pg22.o [3]
-    .text                 ro code       0xc064          4    0x1e  cstartup_M.o [32]
-    .text                 ro code       0xc084          4    0x22  fpinit_M.o [31]
-    .text                 ro code       0xc0a8          4    0x22  cmain.o [32]
-    .text                 ro code       0xc0ca          2     0x4  low_level_init.o [30]
-    .text                 ro code       0xc0d0          4    0x28  data_init.o [32]
-    .text                 ro code       0xc0f8          2    0x18  main.o [2]
-    .text                 ro code       0xc110          2     0x4  exit.o [30]
-    .text                 ro code       0xc114          2    0x52  sl_main_init.o [29]
-    .text                 ro code       0xc166          2    0x10  app.o [2]
-    .text                 ro code       0xc176          2    0x16  sl_main_process_action.o [29]
+                          ro code       0xbeb4          4    0x3c  sl_hal_ldma.o [17]
+    .text                 ro code       0xbef0          4    0x18  sl_iostream_handles.o [4]
+    .text                 ro code       0xbf08          4   0x118  sl_iostream_init_eusart_instances.o [4]
+    .text                 ro code       0xc020          4    0x28  sl_spidrv_init.o [4]
+    .text                 ro code       0xc048          4    0x4a  startup_efm32pg22.o [3]
+    .text                 ro code       0xc094          4    0x1e  cstartup_M.o [32]
+    .text                 ro code       0xc0b4          4    0x22  fpinit_M.o [31]
+    .text                 ro code       0xc0d8          4    0x22  cmain.o [32]
+    .text                 ro code       0xc0fa          2     0x4  low_level_init.o [30]
+    .text                 ro code       0xc100          4    0x28  data_init.o [32]
+    .text                 ro code       0xc128          2    0x18  main.o [2]
+    .text                 ro code       0xc140          2     0x4  exit.o [30]
+    .text                 ro code       0xc144          2    0x52  sl_main_init.o [29]
+    .text                 ro code       0xc196          2    0x12  app.o [2]
+    .text                 ro code       0xc1a8          2    0x16  sl_main_process_action.o [29]
     text_power_manager_timecritical37177
-                          ro code       0xc18c          4   0x12c  sl_power_manager.o [9]
-    .text                 ro code       0xc2b8          4     0x4  cexit.o [32]
-    .text                 ro code       0xc2bc          2    0x4c  sl_event_handler.o [4]
-    .text                 ro code       0xc308          2     0x2  sl_main_init.o [29]
-    .text                 ro code       0xc30a          2     0x2  sl_main_init.o [29]
-    .text                 ro code       0xc30c          2     0x4  sl_clock_manager_init.o [21]
-    .text                 ro code       0xc310          2     0x2  sl_main_init.o [29]
-    .text                 ro code       0xc312          2    0x1a  sl_main_init_memory.o [29]
-    .text                 ro code       0xc32c          4    0xb8  timer.o [1]
+                          ro code       0xc1c0          4   0x12c  sl_power_manager.o [9]
+    .text                 ro code       0xc2ec          4     0x4  cexit.o [32]
+    .text                 ro code       0xc2f0          2    0x4c  sl_event_handler.o [4]
+    .text                 ro code       0xc33c          2     0x2  sl_main_init.o [29]
+    .text                 ro code       0xc33e          2     0x2  sl_main_init.o [29]
+    .text                 ro code       0xc340          2     0x4  sl_clock_manager_init.o [21]
+    .text                 ro code       0xc344          2     0x2  sl_main_init.o [29]
+    .text                 ro code       0xc346          2    0x1a  sl_main_init_memory.o [29]
+    .text                 ro code       0xc360          4    0xb8  timer.o [1]
+    .text                 ro code       0xc418          4    0x1c  uart.o [1]
     text_power_manager_timecritical93160
-                          ro code       0xc3e4          2     0x8  sl_power_manager.o [9]
+                          ro code       0xc434          2     0x8  sl_power_manager.o [9]
     text_power_manager_timecritical6556
-                          ro code       0xc3ec          2    0x10  sl_power_manager_handler.o [4]
+                          ro code       0xc43c          2    0x10  sl_power_manager_handler.o [4]
     text_power_manager_timecritical89145
-                          ro code       0xc3fc          4    0x70  sl_power_manager.o [9]
+                          ro code       0xc44c          4    0x70  sl_power_manager.o [9]
     text_power_manager_timecritical88142
-                          ro code       0xc46c          4    0x98  sl_power_manager.o [9]
+                          ro code       0xc4bc          4    0x98  sl_power_manager.o [9]
     text_power_manager_timecritical6592
-                          ro code       0xc504          4    0x20  sl_power_manager_hal_s2.o [9]
+                          ro code       0xc554          4    0x20  sl_power_manager_hal_s2.o [9]
     text_power_manager_timecritical6695
-                          ro code       0xc524          4     0xc  sl_power_manager_hal_s2.o [9]
+                          ro code       0xc574          4     0xc  sl_power_manager_hal_s2.o [9]
     text_power_manager_timecritical6486
-                          ro code       0xc530          4    0x78  sl_power_manager_hal_s2.o [9]
+                          ro code       0xc580          4    0x78  sl_power_manager_hal_s2.o [9]
     text_power_manager_timecritical95168
-                          ro code       0xc5a8          2     0xe  sl_power_manager.o [9]
+                          ro code       0xc5f8          2     0xe  sl_power_manager.o [9]
     text_power_manager_timecritical6672
-                          ro code       0xc5b6          2    0x32  sl_power_manager_handler.o [4]
+                          ro code       0xc606          2    0x32  sl_power_manager_handler.o [4]
     text_power_manager_timecritical94164
-                          ro code       0xc5e8          2     0xa  sl_power_manager.o [9]
-    .text                 ro code       0xc5f4          4     0xa  cexit_2.o [32]
-    .text                 ro code       0xc5fe          2     0x4  sl_clock_manager.o [21]
-    .text                 ro code       0xc602          2     0x2  sl_main_init_memory.o [29]
-    .text                 ro code       0xc604          4    0x24  timer.o [1]
-    .text                 ro code       0xc628          4    0x2c  tasks.o [1]
+                          ro code       0xc638          2     0xa  sl_power_manager.o [9]
+    .text                 ro code       0xc644          4     0xa  cexit_2.o [32]
+    .text                 ro code       0xc64e          2     0x4  sl_clock_manager.o [21]
+    .text                 ro code       0xc652          2     0x2  sl_main_init_memory.o [29]
+    .text                 ro code       0xc654          4    0x24  timer.o [1]
+    .text                 ro code       0xc678          4    0x2c  tasks.o [1]
     text_power_manager_timecritical6320
-                          ro code       0xc654          2     0x4  sl_power_manager_handler.o [4]
+                          ro code       0xc6a4          2     0x4  sl_power_manager_handler.o [4]
     text_sleeptimer_timecritical35310
-                          ro code       0xc658          4    0x5c  sl_sleeptimer.o [10]
+                          ro code       0xc6a8          4    0x5c  sl_sleeptimer.o [10]
     text_power_manager_timecritical70123
-                          ro code       0xc6b4          4     0xc  sl_power_manager_hal_s2.o [9]
+                          ro code       0xc704          4     0xc  sl_power_manager_hal_s2.o [9]
     text_sleeptimer_timecritical29195
-                          ro code       0xc6c0          2    0x38  sl_sleeptimer.o [10]
+                          ro code       0xc710          2    0x38  sl_sleeptimer.o [10]
     text_power_manager_timecritical40368
-                          ro code       0xc6f8          4    0x24  sl_power_manager.o [9]
+                          ro code       0xc748          4    0x24  sl_power_manager.o [9]
     text_power_manager_timecritical6444
-                          ro code       0xc71c          2     0x4  sl_power_manager_handler.o [4]
-    .text                 ro code       0xc720          4     0xc  XXexit.o [32]
+                          ro code       0xc76c          2     0x4  sl_power_manager_handler.o [4]
+    .text                 ro code       0xc770          4     0xc  XXexit.o [32]
     text_sleeptimer_timecritical87140
-                          ro code       0xc72c          4    0x70  sl_sleeptimer.o [10]
+                          ro code       0xc77c          4    0x70  sl_sleeptimer.o [10]
     text_sleeptimer_timecritical43755
-                          ro code       0xc79c          4    0x18  sl_sleeptimer.o [10]
-    .text                 ro code       0xc7b4          4   0x170  tempdrv.o [25]
+                          ro code       0xc7ec          4    0x18  sl_sleeptimer.o [10]
+    .text                 ro code       0xc804          4   0x170  tempdrv.o [25]
     text_dma_channel_dmachannelperf62168
-                          ro code       0xc924          4    0x30  sl_iostream_dmadrv.o [16]
+                          ro code       0xc974          4    0x30  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf621843
-                          ro code       0xc954          4    0x60  sl_dma_channel.o [28]
+                          ro code       0xc9a4          4    0x60  sl_dma_channel.o [28]
     text_dma_manager_dmachannelperf30495
-                          ro code       0xc9b4          4    0x2c  sl_dma_manager.o [18]
+                          ro code       0xca04          4    0x2c  sl_dma_manager.o [18]
     text_power_manager_timecritical90148
-                          ro code       0xc9e0          4    0x20  sl_power_manager.o [9]
-    Veneer                ro code       0xca00          4     0x8  - Linker created -
-    Veneer                ro code       0xca08          4     0x8  - Linker created -
-    .text                 ro code       0xca10          2    0xce  nvm3_hal_flash.o [19]
+                          ro code       0xca30          4    0x20  sl_power_manager.o [9]
+    Veneer                ro code       0xca50          4     0x8  - Linker created -
+    Veneer                ro code       0xca58          4     0x8  - Linker created -
+    .text                 ro code       0xca60          2    0xce  nvm3_hal_flash.o [19]
     text_dma_channel_dmachannelperf5474
-                          ro code       0xcade          2     0x6  sl_iostream_dmadrv.o [16]
+                          ro code       0xcb2e          2     0x6  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf5576
-                          ro code       0xcae4          2     0x6  sl_iostream_dmadrv.o [16]
+                          ro code       0xcb34          2     0x6  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf5678
-                          ro code       0xcaea          2     0x6  sl_iostream_dmadrv.o [16]
+                          ro code       0xcb3a          2     0x6  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf5780
-                          ro code       0xcaf0          2     0x6  sl_iostream_dmadrv.o [16]
+                          ro code       0xcb40          2     0x6  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf5882
-                          ro code       0xcaf6          2     0x6  sl_iostream_dmadrv.o [16]
+                          ro code       0xcb46          2     0x6  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf5984
-                          ro code       0xcafc          2     0x6  sl_iostream_dmadrv.o [16]
+                          ro code       0xcb4c          2     0x6  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf6086
-                          ro code       0xcb02          2     0x6  sl_iostream_dmadrv.o [16]
+                          ro code       0xcb52          2     0x6  sl_iostream_dmadrv.o [16]
     text_dma_channel_dmachannelperf6188
-                          ro code       0xcb08          2     0x6  sl_iostream_dmadrv.o [16]
-    .text                 ro code       0xcb0e          2    0x38  zero_init3.o [32]
-    .iar.init_table       const         0xcb48          4    0x20  - Linker created -
-    .rodata               const         0xcb68                0x0  zero_init3.o [32]
-    .rodata               const         0xcb68                0x0  packbits_init_single.o [32]
-    Initializer bytes     const         0xcb68               0x9e  <for rw-1>
-  text_ram_init                         0xcc08          8   0x1c4  <Block>
+                          ro code       0xcb58          2     0x6  sl_iostream_dmadrv.o [16]
+    .text                 ro code       0xcb5e          2    0x38  zero_init3.o [32]
+    .iar.init_table       const         0xcb98          4    0x20  - Linker created -
+    .rodata               const         0xcbb8                0x0  zero_init3.o [32]
+    .rodata               const         0xcbb8                0x0  packbits_init_single.o [32]
+    Initializer bytes     const         0xcbb8               0xa2  <for rw-1>
+  text_ram_init                         0xcc60          8   0x1c4  <Block>
     text_application_ram_init
-                                        0xcc08          8   0x1c4  <Block>
-      Initializer bytes   const         0xcc08          4   0x1c4  <for text_application_ram-1>
-                                      - 0xcdcc             0xcdcc
+                                        0xcc60          8   0x1c4  <Block>
+      Initializer bytes   const         0xcc60          4   0x1c4  <for text_application_ram-1>
+                                      - 0xce24             0xce24
 
 "storage_regions":                                         0xa000
   storage                             0x7'4000       8192     0x0  <Block>
@@ -703,7 +704,7 @@ No sections matched the following patterns:
   application_ram                  0x2000'0000             0x1fa0  <Block>
     CSTACK                         0x2000'0000          8  0x1000  <Block>
       .stack              uninit   0x2000'0000          4  0x1000  sl_memory_manager_region.o [23]
-    rw-1                           0x2000'1000              0x149  <Init block>
+    rw-1                           0x2000'1000              0x14d  <Init block>
       .data               inited   0x2000'1000          4     0x4  env.o [1]
       .data               inited   0x2000'1004          4     0x8  nvm3_default_common_linker.o [19]
       .data               inited   0x2000'100c          4    0x1c  nvm3_default_common_linker.o [19]
@@ -713,16 +714,17 @@ No sections matched the following patterns:
       .data               inited   0x2000'1054          4     0x8  sl_iostream_handles.o [4]
       .data               inited   0x2000'105c          4    0x10  sl_iostream_init_eusart_instances.o [4]
       .data               inited   0x2000'106c          4     0x4  sl_iostream_init_eusart_instances.o [4]
-      .data               inited   0x2000'1070          4    0x14  sl_iostream_init_eusart_instances.o [4]
-      .data               inited   0x2000'1084          4    0x10  sl_iostream_init_eusart_instances.o [4]
-      .data               inited   0x2000'1094          4    0x2c  sl_memory_manager.o [23]
-      .data               inited   0x2000'10c0          4    0x54  sl_power_manager_hal_s2.o [9]
-      .data               inited   0x2000'1114          4    0x24  sl_spidrv_init.o [4]
-      .data               inited   0x2000'1138          4     0x4  system_efm32pg22.o [3]
+      .data               inited   0x2000'1070          4     0x4  sl_iostream_init_eusart_instances.o [4]
+      .data               inited   0x2000'1074          4    0x14  sl_iostream_init_eusart_instances.o [4]
+      .data               inited   0x2000'1088          4    0x10  sl_iostream_init_eusart_instances.o [4]
+      .data               inited   0x2000'1098          4    0x2c  sl_memory_manager.o [23]
+      .data               inited   0x2000'10c4          4    0x54  sl_power_manager_hal_s2.o [9]
+      .data               inited   0x2000'1118          4    0x24  sl_spidrv_init.o [4]
       .data               inited   0x2000'113c          4     0x4  system_efm32pg22.o [3]
       .data               inited   0x2000'1140          4     0x4  system_efm32pg22.o [3]
       .data               inited   0x2000'1144          4     0x4  system_efm32pg22.o [3]
-      .data               inited   0x2000'1148                0x1  sl_sleeptimer_hal_rtcc.o [10]
+      .data               inited   0x2000'1148          4     0x4  system_efm32pg22.o [3]
+      .data               inited   0x2000'114c                0x1  sl_sleeptimer_hal_rtcc.o [10]
     .bss                  zero     0x2000'1150          8    0x68  nvm3_default_common_linker.o [19]
     .bss                  zero     0x2000'11b8          4    0x5c  adc.o [1]
     .bss                  zero     0x2000'1214          4     0x8  config.o [1]
@@ -802,10 +804,10 @@ Zero (__iar_zero_init3)
           0x2000'1150  0xe4e
 
 Copy/packbits (__iar_packbits_init_single3)
-    1 source range, total size 0x9e (48% of destination):
-               0xcb68   0x9e
-    1 destination range, total size 0x149:
-          0x2000'1000  0x149
+    1 source range, total size 0xa2 (48% of destination):
+               0xcbb8   0xa2
+    1 destination range, total size 0x14d:
+          0x2000'1000  0x14d
 
 
 
@@ -827,14 +829,15 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj: [1]
     timer.o                                   220               140        4
     tmp1075.o                                 108
     tpl0501.o                                  32
+    uart.o                                     28
     ------------------------------------------------------------------------
-    Total:                                    990               181      112
+    Total:                                  1'018               181      112
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\Simplicity Configurator_13668623889914588608.dir: [2]
-    app.o                                      16
+    app.o                                      18
     main.o                                     24
     ------------------------------------------------------------------------
-    Total:                                     40
+    Total:                                     42
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\Source_1284957418446755893.dir: [3]
     startup_efm32pg22.o                        74               320
@@ -846,13 +849,13 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen
     sl_dma_manager_instances.o                 16                         28
     sl_event_handler.o                         76
     sl_hal_gpio_simple_init.o                  34
-    sl_i2cspm_init.o                           28                11       24
+    sl_i2cspm_init.o                           28                12       24
     sl_iostream_handles.o                      24                 4        8
-    sl_iostream_init_eusart_instances.o       280               199      316
+    sl_iostream_init_eusart_instances.o       280               201      320
     sl_power_manager_handler.o                 74
     sl_spidrv_init.o                           40                17      212
     ------------------------------------------------------------------------
-    Total:                                    572               231      588
+    Total:                                    572               234      592
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\clocks_17057976963479099201.dir: [5]
     sl_device_clock_efr32xg22.o                                  44
@@ -877,9 +880,9 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\dma_127
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\sleep_loop_17362038477303012698.dir: [9]
     sl_power_manager.o                      1'172               164       60
-    sl_power_manager_hal_s2.o               1'010               212       85
+    sl_power_manager_hal_s2.o               1'010               213       85
     ------------------------------------------------------------------------
-    Total:                                  2'182               376      145
+    Total:                                  2'182               377      145
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_11444351278465186780.dir: [10]
     sl_sleeptimer.o                         1'270               148       24
@@ -913,12 +916,12 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_127
     Total:
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_1300024928006847153.dir: [16]
-    sl_iostream.o                              44                          4
+    sl_iostream.o                              90                          4
     sl_iostream_dmadrv.o                    1'020               180      392
-    sl_iostream_eusart.o                      952               158       20
+    sl_iostream_eusart.o                      952               157       20
     sl_iostream_uart.o                      3'104               148        1
     ------------------------------------------------------------------------
-    Total:                                  5'120               486      417
+    Total:                                  5'166               485      417
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir: [17]
     sl_hal_gpio.o                             458               272
@@ -968,11 +971,11 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_361
     Total:                                    186               128
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_3805666523351537575.dir: [23]
-    sl_memory_manager.o                     1'630               177       44
+    sl_memory_manager.o                     1'630               178       44
     sl_memory_manager_region.o                 40                      4'104
     sli_memory_manager_common.o               552               164
     ------------------------------------------------------------------------
-    Total:                                  2'222               341    4'148
+    Total:                                  2'222               342    4'148
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_4092573262637242981.dir: [24]
     sl_gpio.o                                 420               268      256
@@ -1049,10 +1052,10 @@ rt7M_tl.a: [32]
     ------------------------------------------------------------------------
     Total:                                    748
 
-    Gaps                                       55                 2        9
+    Gaps                                       59                 2        9
     Linker created                             24       16       48   24'216
 ----------------------------------------------------------------------------
-    Grand Total:                           44'273      452    8'409   73'272
+    Grand Total:                           44'353      452    8'413   73'276
 
 
 *******************************************************************************
@@ -1061,14 +1064,14 @@ rt7M_tl.a: [32]
 
 Entry                       Address    Size  Type      Object
 -----                       -------    ----  ----      ------
-.iar.init_table$$Base        0xcb48           --   Gb  - Linker created -
-.iar.init_table$$Limit       0xcb68           --   Gb  - Linker created -
-?main                        0xc0a9          Code  Gb  cmain.o [32]
-BURTC_IRQHandler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+.iar.init_table$$Base        0xcb98           --   Gb  - Linker created -
+.iar.init_table$$Limit       0xcbb8           --   Gb  - Linker created -
+?main                        0xc0d9          Code  Gb  cmain.o [32]
+BURTC_IRQHandler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 BUS_RegBitWrite              0x432d    0x2c  Code  Lc  sl_clock_manager_hal_s2.o [21]
 BUS_RegMaskedWrite           0x9461    0x30  Code  Lc  em_gpio.o [27]
 BlockingComplete             0x26b7     0xa  Code  Lc  spidrv.o [20]
-BusFault_Handler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+BusFault_Handler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 CMU_ClockDivGet              0x26d7    0x76  Code  Gb  em_cmu.o [27]
 CMU_ClockDivSet              0x274d    0xd8  Code  Gb  em_cmu.o [27]
 CMU_ClockEnable              0x201d    0x64  Code  Wk  em_cmu.o [27]
@@ -1076,26 +1079,26 @@ CMU_ClockFreqGet             0x2825   0x15c  Code  Gb  em_cmu.o [27]
 CMU_ClockSelectGet           0x2981    0xf8  Code  Gb  em_cmu.o [27]
 CMU_ClockSelectSet           0x2b01   0x356  Code  Gb  em_cmu.o [27]
 CMU_HFRCODPLLBandSet         0x2e65    0xf4  Code  Gb  em_cmu.o [27]
-CMU_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+CMU_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 CMU_LFRCOSetPrecision        0x2f99    0x6a  Code  Gb  em_cmu.o [27]
 CMU_UpdateWaitStates         0x3029     0xa  Code  Gb  em_cmu.o [27]
 CORE_EnterAtomic             0x4025     0xc  Code  Wk  sl_core_cortexm.o [22]
 CORE_EnterCritical           0x3a67     0x8  Code  Wk  sl_core_cortexm.o [22]
 CORE_ExitAtomic              0x4031     0xa  Code  Wk  sl_core_cortexm.o [22]
 CORE_ExitCritical            0x3a6f     0xa  Code  Wk  sl_core_cortexm.o [22]
-CRYPTOACC_IRQHandler         0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+CRYPTOACC_IRQHandler         0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 CSTACK$$Base            0x2000'0000          Data  Gb  - Linker created -
 CSTACK$$Limit           0x2000'1000          Data  Gb  - Linker created -
 ConfigGPIO                   0x6a03    0xe6  Code  Lc  spidrv.o [20]
-CopyFunctionsToRam           0xc02d     0xc  Code  Gb  startup_efm32pg22.o [3]
-CopyMemory                   0xc019    0x14  Code  Gb  startup_efm32pg22.o [3]
-DCDC_IRQHandler              0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-DPLL0_IRQHandler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-DebugMon_Handler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-Default_Handler              0xc061     0x2  Code  Gb  startup_efm32pg22.o [3]
-EMUDG_IRQHandler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-EMUEFP_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-EMUSE_IRQHandler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+CopyFunctionsToRam           0xc05d     0xc  Code  Gb  startup_efm32pg22.o [3]
+CopyMemory                   0xc049    0x14  Code  Gb  startup_efm32pg22.o [3]
+DCDC_IRQHandler              0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+DPLL0_IRQHandler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+DebugMon_Handler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+Default_Handler              0xc091     0x2  Code  Gb  startup_efm32pg22.o [3]
+EMUDG_IRQHandler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+EMUEFP_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+EMUSE_IRQHandler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 EMU_CallWFI                  0x3601     0xc  Code  Lc  em_emu.o [27]
 EMU_DCDCInit                 0x387d    0x68  Code  Gb  em_emu.o [27]
 EMU_DCDCModeSet              0x37f5    0x88  Code  Gb  em_emu.o [27]
@@ -1111,17 +1114,17 @@ EMU_EM23PostsleepHook        0x3b8d    0x50  Code  Gb  sl_power_manager_hal_s2.o
 EMU_EM23PresleepHook         0x3a1d    0x48  Code  Gb  sl_power_manager_hal_s2.o [9]
 EMU_EM4Init                  0x3729    0x12  Code  Gb  em_emu.o [27]
 EMU_EnterEM2                 0x36b3    0x42  Code  Gb  em_emu.o [27]
-EMU_IRQHandler               0xc7c5     0x2  Code  Gb  tempdrv.o [25]
-EMU_IntDisable               0xc7b5     0x6  Code  Lc  tempdrv.o [25]
-EMU_IntEnable                0xc7bb     0x6  Code  Lc  tempdrv.o [25]
+EMU_IRQHandler               0xc815     0x2  Code  Gb  tempdrv.o [25]
+EMU_IntDisable               0xc805     0x6  Code  Lc  tempdrv.o [25]
+EMU_IntEnable                0xc80b     0x6  Code  Lc  tempdrv.o [25]
 EMU_Restore                  0x3725     0x4  Code  Gb  em_emu.o [27]
 EMU_Save                     0x3721     0x4  Code  Gb  em_emu.o [27]
 EMU_TemperatureGet           0x38e5    0x1a  Code  Gb  em_emu.o [27]
 EMU_VScaleEM01               0x375f    0x96  Code  Gb  em_emu.o [27]
 EMU_VScaleEM01ByClock        0x373b    0x24  Code  Gb  em_emu.o [27]
 EMU_VScaleGet                0x26c1    0x16  Code  Lc  em_cmu.o [27]
-EUART0_RX_IRQHandler         0xbf61     0x2  Code  Gb  sl_iostream_init_eusart_instances.o [4]
-EUART0_TX_IRQHandler         0xbf5d     0x2  Code  Gb  sl_iostream_init_eusart_instances.o [4]
+EUART0_RX_IRQHandler         0xbf91     0x2  Code  Gb  sl_iostream_init_eusart_instances.o [4]
+EUART0_TX_IRQHandler         0xbf8d     0x2  Code  Gb  sl_iostream_init_eusart_instances.o [4]
 EUSART_AsyncInitCommon       0x92a3   0x152  Code  Lc  em_eusart.o [27]
 EUSART_BaudrateSet           0x917f    0xf6  Code  Gb  em_eusart.o [27]
 EUSART_ClockGet              0x928b    0x18  Code  Lc  em_eusart.o [27]
@@ -1136,15 +1139,15 @@ GPIO_ODD_IRQHandler          0x7889     0xc  Code  Gb  sl_gpio.o [24]
 GPIO_PinModeSet              0x9519    0x92  Code  Gb  em_gpio.o [27]
 GPIO_PinOutClear             0x9491    0x40  Code  Lc  em_gpio.o [27]
 GPIO_PinOutSet               0x94d1    0x3e  Code  Lc  em_gpio.o [27]
-HFRCO0_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+HFRCO0_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 HFRCODPLLDevinfoGet          0x3265    0xb8  Code  Lc  em_cmu.o [27]
-HFXO0_IRQHandler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-HardFault_Handler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+HFXO0_IRQHandler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+HardFault_Handler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 I2C0_IRQHandler              0xa341     0x4  Code  Gb  sl_i2c.o [11]
 I2C1_IRQHandler              0xa345     0x4  Code  Gb  sl_i2c.o [11]
 I2CSPM_Init                  0x96ad    0xa4  Code  Gb  sl_i2cspm.o [26]
 I2CSPM_Transfer              0x9751    0xc0  Code  Gb  sl_i2cspm.o [26]
-IADC_IRQHandler              0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+IADC_IRQHandler              0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 IADC_calcAdcClkPrescale
                              0x25d9    0x60  Code  Gb  em_iadc.o [27]
 IADC_calcSrcClkPrescale
@@ -1157,14 +1160,14 @@ IADC_init                    0x2091   0x2de  Code  Gb  em_iadc.o [27]
 IADC_initSingle              0x236f    0x6c  Code  Gb  em_iadc.o [27]
 IADC_reset                   0x2471    0xca  Code  Gb  em_iadc.o [27]
 IADC_updateSingleInput       0x23f9    0x4a  Code  Gb  em_iadc.o [27]
-ICACHE0_IRQHandler           0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-KERNEL0_IRQHandler           0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-KERNEL1_IRQHandler           0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+ICACHE0_IRQHandler           0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+KERNEL0_IRQHandler           0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+KERNEL1_IRQHandler           0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 LDMA_IRQHandler              0x7bd9    0x5a  Code  Gb  sl_dma_manager_hal_ldma.o [18]
-LDMA_IRQHandlerDefault       0xc925    0x30  Code  Lc  sl_iostream_dmadrv.o [16]
-LETIMER0_IRQHandler          0xc3b7    0x1c  Code  Gb  timer.o [1]
-LFRCO_IRQHandler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-LFXO_IRQHandler              0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+LDMA_IRQHandlerDefault       0xc975    0x30  Code  Lc  sl_iostream_dmadrv.o [16]
+LETIMER0_IRQHandler          0xc3eb    0x1c  Code  Gb  timer.o [1]
+LFRCO_IRQHandler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+LFXO_IRQHandler              0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 MEMORY_MANAGER_HEAP$$Base
                         0x2000'2168           --   Gb  - Linker created -
 MEMORY_MANAGER_HEAP$$Length
@@ -1173,14 +1176,14 @@ MEMORY_MANAGER_HEAP$$Limit
                         0x2000'8000           --   Gb  - Linker created -
 MSC_Deinit                   0x95e1    0x2a  Code  Gb  em_msc.o [27]
 MSC_ErasePage           0x2000'2065    0x58  Code  Gb  em_msc.o [27]
-MSC_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+MSC_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 MSC_Init                     0x95c9    0x18  Code  Gb  em_msc.o [27]
 MSC_WriteWord           0x2000'20bd    0x88  Code  Gb  em_msc.o [27]
-MemManage_Handler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-NMI_Handler                  0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-PDM_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-PKE_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-PendSV_Handler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+MemManage_Handler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+NMI_Handler                  0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+PDM_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+PKE_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+PendSV_Handler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 PrepareDMATransfer           0x6b41    0xd2  Code  Lc  spidrv.o [20]
 RTCC_ChannelInit             0x857b    0x3e  Code  Gb  em_rtcc.o [27]
 RTCC_Enable                  0x85b9    0x4e  Code  Gb  em_rtcc.o [27]
@@ -1188,10 +1191,10 @@ RTCC_IRQHandler              0x7b03    0x34  Code  Gb  sl_sleeptimer_hal_rtcc.o 
 RTCC_Init                    0x8607    0x54  Code  Gb  em_rtcc.o [27]
 RTCC_Stop                    0x856d     0xe  Code  Lc  em_rtcc.o [27]
 RTCC_SyncWait                0x855d    0x10  Code  Lc  em_rtcc.o [27]
-Region$$Table$$Base          0xcb48           --   Gb  - Linker created -
-Region$$Table$$Limit         0xcb68           --   Gb  - Linker created -
-Reset_Handler                0xc039     0x2  Code  Gb  startup_efm32pg22.o [3]
-Reset_Handler_C              0xc03b    0x14  Code  Gb  startup_efm32pg22.o [3]
+Region$$Table$$Base          0xcb98           --   Gb  - Linker created -
+Region$$Table$$Limit         0xcbb8           --   Gb  - Linker created -
+Reset_Handler                0xc069     0x2  Code  Gb  startup_efm32pg22.o [3]
+Reset_Handler_C              0xc06b    0x14  Code  Gb  startup_efm32pg22.o [3]
 RxDMAComplete                0x6afd    0x44  Code  Lc  spidrv.o [20]
 SL_BUS_CLOCK_EUART0_VALUE
                               0x9c4     0x4  Data  Gb  sl_device_clock_efr32xg22.o [5]
@@ -1252,26 +1255,26 @@ SL_DMA_SIGNAL_USART1_TXBL_VALUE
 SL_DMA_SIGNAL_USART1_TXEMPTY_VALUE
                               0xa2c     0x4  Data  Gb  sl_device_dma_s2.o [8]
 SMU_NS_PRIVILEGED_IRQHandler
-                             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-SMU_SECURE_IRQHandler        0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+                             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+SMU_SECURE_IRQHandler        0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 SMU_S_PRIVILEGED_IRQHandler
-                             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+                             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 SPIDRV_Init                  0x67ed   0x1d6  Code  Gb  spidrv.o [20]
 SPIDRV_MTransmitB            0x69cd    0x24  Code  Gb  spidrv.o [20]
-SVC_Handler                  0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-SW0_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-SW1_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-SW2_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-SW3_IRQHandler               0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-SYSCFG_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+SVC_Handler                  0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+SW0_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+SW1_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+SW2_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+SW3_IRQHandler               0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+SYSCFG_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 SYSTEM_ChipRevisionGet       0x3555    0x22  Code  Gb  em_system.o [27]
 SYSTEM_GetFlashPageSize
                              0x3577    0x12  Code  Gb  em_system.o [27]
-SecureFault_Handler          0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+SecureFault_Handler          0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 StartTransmitDMA             0x6c19    0x4e  Code  Lc  spidrv.o [20]
-SysTick_Handler              0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+SysTick_Handler              0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 SystemCLKIN0Get              0x39f5     0x8  Code  Gb  system_efm32pg22.o [3]
-SystemCoreClock         0x2000'1144     0x4  Data  Gb  system_efm32pg22.o [3]
+SystemCoreClock         0x2000'1148     0x4  Data  Gb  system_efm32pg22.o [3]
 SystemCoreClockGet           0x3595     0x4  Code  Lc  em_cmu.o [27]
 SystemCoreClockGet           0x4021     0x4  Code  Lc  em_emu.o [27]
 SystemCoreClockGet           0x403b     0x4  Code  Lc  sl_power_manager_hal_s2.o [9]
@@ -1280,41 +1283,41 @@ SystemCoreClockUpdate        0x3c0b     0x4  Code  Lc  em_emu.o [27]
 SystemCoreClockUpdate        0x3db9     0x4  Code  Lc  sl_power_manager_hal_s2.o [9]
 SystemFSRCOClockGet          0x39ed     0x8  Code  Gb  system_efm32pg22.o [3]
 SystemHCLKGet                0x35d5    0x24  Code  Gb  system_efm32pg22.o [3]
-SystemHFRCODPLLClock    0x2000'1140     0x4  Data  Lc  system_efm32pg22.o [3]
+SystemHFRCODPLLClock    0x2000'1144     0x4  Data  Lc  system_efm32pg22.o [3]
 SystemHFRCODPLLClockGet
                              0x3965     0xc  Code  Gb  system_efm32pg22.o [3]
 SystemHFRCODPLLClockSet
                              0x39bd     0x6  Code  Gb  system_efm32pg22.o [3]
-SystemHFXOClock         0x2000'1138     0x4  Data  Lc  system_efm32pg22.o [3]
+SystemHFXOClock         0x2000'113c     0x4  Data  Lc  system_efm32pg22.o [3]
 SystemHFXOClockGet           0x39e1     0xc  Code  Gb  system_efm32pg22.o [3]
 SystemInit                   0x3971    0x4c  Code  Gb  system_efm32pg22.o [3]
 SystemLFRCOClockGet          0x3a09     0x6  Code  Gb  system_efm32pg22.o [3]
-SystemLFXOClock         0x2000'113c     0x4  Data  Lc  system_efm32pg22.o [3]
+SystemLFXOClock         0x2000'1140     0x4  Data  Lc  system_efm32pg22.o [3]
 SystemLFXOClockGet           0x39fd     0xc  Code  Gb  system_efm32pg22.o [3]
 SystemMaxCoreClockGet        0x3a15     0x8  Code  Gb  system_efm32pg22.o [3]
 SystemSYSCLKGet              0x3599    0x3c  Code  Gb  system_efm32pg22.o [3]
 SystemULFRCOClockGet         0x3a0f     0x6  Code  Gb  system_efm32pg22.o [3]
-TEMPDRV_GetTemp              0xc8b1    0x4a  Code  Gb  tempdrv.o [25]
-TEMPDRV_IRQHandler           0xc7c7    0x46  Code  Gb  tempdrv.o [25]
+TEMPDRV_GetTemp              0xc901    0x4a  Code  Gb  tempdrv.o [25]
+TEMPDRV_IRQHandler           0xc817    0x46  Code  Gb  tempdrv.o [25]
 TEMPDRV_InitState       0x2000'1f2c     0x1  Data  Lc  tempdrv.o [25]
-TIMER0_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-TIMER1_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-TIMER2_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-TIMER3_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-TIMER4_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-TRNG_IRQHandler              0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+TIMER0_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+TIMER1_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+TIMER2_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+TIMER3_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+TIMER4_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+TRNG_IRQHandler              0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 TransferApiBlockingPrologue
                              0x6c8f    0x20  Code  Lc  spidrv.o [20]
-ULFRCO_IRQHandler            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-USART0_RX_IRQHandler         0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-USART0_TX_IRQHandler         0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-USART1_RX_IRQHandler         0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-USART1_TX_IRQHandler         0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+ULFRCO_IRQHandler            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+USART0_RX_IRQHandler         0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+USART0_TX_IRQHandler         0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+USART1_RX_IRQHandler         0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+USART1_TX_IRQHandler         0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 USART_BaudrateSyncSet        0x6dfb    0x3e  Code  Gb  em_usart.o [27]
 USART_InitSync               0x6e39    0x7e  Code  Gb  em_usart.o [27]
 USART_Reset                  0x6ef5    0x64  Code  Gb  em_usart.o [27]
-UsageFault_Handler           0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
-WDOG0_IRQHandler             0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+UsageFault_Handler           0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
+WDOG0_IRQHandler             0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 WaitForTransferCompletion
                              0x6d1f    0x26  Code  Lc  spidrv.o [20]
 __aeabi_errno_addr           0x8f8d     0xc  Code  Gb  errno.o [30]
@@ -1322,56 +1325,56 @@ __aeabi_ldiv0                0x40ed          Code  Gb  I64DivZer.o [32]
 __aeabi_llsr                 0xa815          Code  Gb  U64Shr.o [32]
 __aeabi_memclr               0x89bd          Code  Gb  ABImemclr.o [32]
 __aeabi_memclr4              0x66d5          Code  Gb  ABImemclr4.o [32]
-__cmain                      0xc0a9          Code  Gb  cmain.o [32]
-__exit                       0xc721          Code  Gb  XXexit.o [32]
-__get_write_ptr              0xbb1d    0x40  Code  Lc  sl_iostream_uart.o [16]
+__cmain                      0xc0d9          Code  Gb  cmain.o [32]
+__exit                       0xc771          Code  Gb  XXexit.o [32]
+__get_write_ptr              0xbb4d    0x40  Code  Lc  sl_iostream_uart.o [16]
 __iar_Errno             0x2000'1f94     0x4  Tls   Gb  errno.o [30]
 __iar_Memset4_word           0x6d7d          Code  Gb  ABImemset48.o [32]
 __iar_Memset8_word           0x6d7d          Code  Gb  ABImemset48.o [32]
 __iar_Memset_word            0x8e49          Code  Gb  ABImemset.o [32]
-__iar_data_init3             0xc0d1    0x28  Code  Gb  data_init.o [32]
-__iar_init_vfp               0xc085          Code  Gb  fpinit_M.o [31]
+__iar_data_init3             0xc101    0x28  Code  Gb  data_init.o [32]
+__iar_init_vfp               0xc0b5          Code  Gb  fpinit_M.o [31]
 __iar_nothread_read_tp       0x8fd1     0x4  Code  Gb  tp_nothreads.o [30]
 __iar_packbits_init_single3
                              0x351b    0x3a  Code  Gb  packbits_init_single.o [32]
-__iar_program_start          0xc065          Code  Gb  cstartup_M.o [32]
+__iar_program_start          0xc095          Code  Gb  cstartup_M.o [32]
 __iar_small_Memcpy           0x2009          Code  Gb  ABImemcpy_small.o [32]
 __iar_small_memcmp           0x665d          Code  Gb  memcmp_small.o [32]
 __iar_small_memcpy           0x2005          Code  Gb  ABImemcpy_small.o [32]
 __iar_small_memcpy4          0x2005          Code  Gb  ABImemcpy_small.o [32]
 __iar_small_memcpy8          0x2005          Code  Gb  ABImemcpy_small.o [32]
 __iar_small_uldivmod         0x3eb9          Code  Gb  I64DivMod_small.o [32]
-__iar_zero_init3             0xcb0f    0x38  Code  Gb  zero_init3.o [32]
-__low_level_init             0xc0cb     0x4  Code  Gb  low_level_init.o [30]
+__iar_zero_init3             0xcb5f    0x38  Code  Gb  zero_init3.o [32]
+__low_level_init             0xc0fb     0x4  Code  Gb  low_level_init.o [30]
 __ram_end__ {Abs}       0x2000'8000           --   Gb  <internal module>
-__rx_buffer_empty            0xbabb    0x2e  Code  Lc  sl_iostream_uart.o [16]
-__rx_buffer_full             0xba71    0x44  Code  Lc  sl_iostream_uart.o [16]
+__rx_buffer_empty            0xbaeb    0x2e  Code  Lc  sl_iostream_uart.o [16]
+__rx_buffer_full             0xbaa1    0x44  Code  Lc  sl_iostream_uart.o [16]
 __uart_async_rx_dma_callback
-                             0xbb5d    0x64  Code  Lc  sl_iostream_uart.o [16]
+                             0xbb8d    0x64  Code  Lc  sl_iostream_uart.o [16]
 __uart_async_start_write
-                             0xb6f9    0x8a  Code  Lc  sl_iostream_uart.o [16]
+                             0xb729    0x8a  Code  Lc  sl_iostream_uart.o [16]
 __uart_async_tx_dma_callback
-                             0xb6c1    0x38  Code  Lc  sl_iostream_uart.o [16]
+                             0xb6f1    0x38  Code  Lc  sl_iostream_uart.o [16]
 __vector_table                  0x0   0x140  Data  Gb  startup_efm32pg22.o [3]
-_call_main                   0xc0b5          Code  Gb  cmain.o [32]
-_exit                        0xc2b9          Code  Gb  cexit.o [32]
-_exit_2                      0xc5f5          Code  Gb  cexit_2.o [32]
+_call_main                   0xc0e5          Code  Gb  cmain.o [32]
+_exit                        0xc2ed          Code  Gb  cexit.o [32]
+_exit_2                      0xc645          Code  Gb  cexit_2.o [32]
 adc_channel             0x2000'11bc    0x50  Data  Lc  adc.o [1]
 adc_init                     0x1e5d    0xda  Code  Gb  adc.o [1]
 adc_last                0x2000'120c     0x8  Data  Lc  adc.o [1]
 adc_scan                     0x1fc1    0x14  Code  Gb  adc.o [1]
 adc_scan0                    0x1f39    0x88  Code  Gb  adc.o [1]
-app_init                     0xc167     0xe  Code  Gb  app.o [2]
-app_init_early               0xc311     0x2  Code  Wk  sl_main_init.o [29]
-app_init_post_platform       0xc309     0x2  Code  Wk  sl_main_init.o [29]
-app_init_pre_clock           0xc30b     0x2  Code  Wk  sl_main_init.o [29]
-app_is_ok_to_sleep           0xc655     0x4  Code  Wk  sl_power_manager_handler.o [4]
+app_init                     0xc197     0xe  Code  Gb  app.o [2]
+app_init_early               0xc345     0x2  Code  Wk  sl_main_init.o [29]
+app_init_post_platform       0xc33d     0x2  Code  Wk  sl_main_init.o [29]
+app_init_pre_clock           0xc33f     0x2  Code  Wk  sl_main_init.o [29]
+app_is_ok_to_sleep           0xc6a5     0x4  Code  Wk  sl_power_manager_handler.o [4]
 app_permanent_memory_alloc
-                             0xc603     0x2  Code  Wk  sl_main_init_memory.o [29]
-app_process_action           0xc175     0x2  Code  Gb  app.o [2]
-app_sleep_on_isr_exit        0xc71d     0x4  Code  Wk  sl_power_manager_handler.o [4]
+                             0xc653     0x2  Code  Wk  sl_main_init_memory.o [29]
+app_process_action           0xc1a5     0x4  Code  Gb  app.o [2]
+app_sleep_on_isr_exit        0xc76d     0x4  Code  Wk  sl_power_manager_handler.o [4]
 application$$Base               0x0           --   Gb  - Linker created -
-application$$Limit           0xcc06           --   Gb  - Linker created -
+application$$Limit           0xcc5a           --   Gb  - Linker created -
 application_heap$$Base  0x2000'2168           --   Gb  - Linker created -
 application_heap$$Limit
                         0x2000'8000           --   Gb  - Linker created -
@@ -1383,7 +1386,7 @@ bus_clock_get_register_info
 cacheUpdate                  0x57b9    0x1e  Code  Lc  nvm3.o [19]
 cacheUpdateCallback          0x57a7    0x12  Code  Lc  nvm3.o [19]
 calcAdr                      0x44a1     0x4  Code  Lc  nvm3.o [19]
-cc_disabled             0x2000'1148     0x1  Data  Lc  sl_sleeptimer_hal_rtcc.o [10]
+cc_disabled             0x2000'114c     0x1  Data  Lc  sl_sleeptimer_hal_rtcc.o [10]
 cfgEraseCnt             0x2000'1220     0x4  Data  Lc  nvm3.o [19]
 chTable                 0x2000'1b94    0x80  Data  Lc  sl_iostream_dmadrv.o [16]
 cleanup_allocated_descriptors
@@ -1393,22 +1396,22 @@ clock_restore_and_wait       0x8505    0x58  Code  Lc  sl_power_manager.o [9]
 clock_wakeup_timer_handle
                         0x2000'1e3c    0x20  Data  Lc  sl_power_manager.o [9]
 cmu_dpll_ref_clock_register
-                        0x2000'10d0     0x4  Data  Gb  sl_power_manager_hal_s2.o [9]
+                        0x2000'10d4     0x4  Data  Gb  sl_power_manager_hal_s2.o [9]
 cmu_em01_grpA_clock_register
-                        0x2000'10c8     0x4  Data  Gb  sl_power_manager_hal_s2.o [9]
-cmu_em01_grpB_clock_register
                         0x2000'10cc     0x4  Data  Gb  sl_power_manager_hal_s2.o [9]
-cmu_sys_clock_register  0x2000'10d4     0x4  Data  Gb  sl_power_manager_hal_s2.o [9]
+cmu_em01_grpB_clock_register
+                        0x2000'10d0     0x4  Data  Gb  sl_power_manager_hal_s2.o [9]
+cmu_sys_clock_register  0x2000'10d8     0x4  Data  Gb  sl_power_manager_hal_s2.o [9]
 config_init                  0x43ad    0x2c  Code  Gb  config.o [1]
 context_inst0           0x2000'1d3c    0xbc  Data  Lc  sl_iostream_init_eusart_instances.o [4]
 convertMscStatusToNvm3Status
-                             0xca11    0x10  Code  Lc  nvm3_hal_flash.o [19]
+                             0xca61    0x10  Code  Lc  nvm3_hal_flash.o [19]
 counterIdxToAdr              0x558b    0x56  Code  Lc  nvm3.o [19]
 counterIncFldGet             0x55f1    0x3e  Code  Lc  nvm3.o [19]
 counterMaxNumberOfInc        0x4615    0x10  Code  Lc  nvm3.o [19]
 counterNumberOfIncPrBase
                              0x4625    0x10  Code  Lc  nvm3.o [19]
-create_timer                 0xc72d    0x70  Code  Lc  sl_sleeptimer.o [10]
+create_timer                 0xc77d    0x70  Code  Lc  sl_sleeptimer.o [10]
 currIdx                 0x2000'11b8     0x1  Data  Lc  adc.o [1]
 current_em              0x2000'1e21     0x1  Data  Lc  sl_power_manager.o [9]
 current_irq_channel_nbr
@@ -1434,7 +1437,7 @@ em1RequestRemove             0x67b5    0x38  Code  Lc  spidrv.o [20]
 em23GrpaClkGet               0x3161    0x44  Code  Lc  em_cmu.o [27]
 em4GrpaClkGet                0x31bd    0x44  Code  Lc  em_cmu.o [27]
 enter_critical_with_primask
-                             0xc3e5     0x8  Code  Lc  sl_power_manager.o [9]
+                             0xc435     0x8  Code  Lc  sl_power_manager.o [9]
 entryGetGroup                0x63d1     0xc  Code  Lc  nvm3_cache.o [19]
 entrySetGroup                0x63ef    0x14  Code  Lc  nvm3_cache.o [19]
 entrySetKey                  0x63dd    0x12  Code  Lc  nvm3_cache.o [19]
@@ -1448,19 +1451,19 @@ eraseFirstPageScanCacheCallback
                              0x538f    0x22  Code  Lc  nvm3.o [19]
 erasePage                    0x536b    0x24  Code  Lc  nvm3.o [19]
 euart0ClkGet                 0x30a1    0x30  Code  Lc  em_cmu.o [27]
-eusart_deinit                0xb055    0x74  Code  Lc  sl_iostream_eusart.o [16]
-eusart_rx                    0xb03d    0x18  Code  Lc  sl_iostream_eusart.o [16]
+eusart_deinit                0xb085    0x74  Code  Lc  sl_iostream_eusart.o [16]
+eusart_rx                    0xb06d    0x18  Code  Lc  sl_iostream_eusart.o [16]
 eusart_stream_list      0x2000'1040     0x4  Data  Gb  sl_iostream_eusart.o [16]
 eusart_sync                  0x8fed     0x8  Code  Lc  em_eusart.o [27]
-eusart_tx                    0xb02d    0x10  Code  Lc  sl_iostream_eusart.o [16]
-eusart_tx_completed          0xb13d    0x22  Code  Lc  sl_iostream_eusart.o [16]
-evaluate_wakeup              0xc46d    0x98  Code  Lc  sl_power_manager.o [9]
+eusart_tx                    0xb05d    0x10  Code  Lc  sl_iostream_eusart.o [16]
+eusart_tx_completed          0xb16d    0x22  Code  Lc  sl_iostream_eusart.o [16]
+evaluate_wakeup              0xc4bd    0x98  Code  Lc  sl_power_manager.o [9]
 events_handle           0x2000'1064     0x8  Data  Lc  sl_iostream_init_eusart_instances.o [4]
-events_handler               0xbf71    0x24  Code  Lc  sl_iostream_init_eusart_instances.o [4]
+events_handler               0xbfa1    0x24  Code  Lc  sl_iostream_init_eusart_instances.o [4]
 events_info             0x2000'105c     0x8  Data  Lc  sl_iostream_init_eusart_instances.o [4]
-exit                         0xc111     0x4  Code  Gb  exit.o [30]
+exit                         0xc141     0x4  Code  Gb  exit.o [30]
 exit_critical_with_primask
-                             0xc5e9     0xa  Code  Lc  sl_power_manager.o [9]
+                             0xc639     0xa  Code  Lc  sl_power_manager.o [9]
 fifoReadObj                  0x4b87   0x14e  Code  Lc  nvm3.o [19]
 fifoScan                     0x5183    0x66  Code  Lc  nvm3.o [19]
 fifoWriteObj                 0x4667   0x46a  Code  Lc  nvm3.o [19]
@@ -1480,24 +1483,24 @@ getMemInfo                   0x5dd9    0x50  Code  Lc  nvm3.o [19]
 getNextObj                   0x4635    0x2c  Code  Lc  nvm3.o [19]
 getPageOfs                   0x451b     0x8  Code  Lc  nvm3.o [19]
 getPreviousGoodPage          0x44d1    0x36  Code  Lc  nvm3.o [19]
-get_auto_cr_lf               0xb44d     0x6  Code  Lc  sl_iostream_uart.o [16]
+get_auto_cr_lf               0xb47d     0x6  Code  Lc  sl_iostream_uart.o [16]
 get_current_time_ms          0x9fe1     0xe  Code  Lc  sl_i2c.o [11]
 get_lowest_em                0x84f5    0x10  Code  Lc  sl_power_manager.o [9]
 get_next_descriptor          0x8ef5    0x12  Code  Lc  sl_dma_channel.o [28]
 get_priority                 0x3d7b    0x1e  Code  Lc  sl_interrupt_manager_cortexm.o [12]
 get_rx_energy_mode_restriction
-                             0xb485     0x6  Code  Lc  sl_iostream_uart.o [16]
+                             0xb4b5     0x6  Code  Lc  sl_iostream_uart.o [16]
 gpio_interrupts         0x2000'1968   0x100  Data  Lc  sl_gpio.o [24]
 hdrIsLarge                   0x6211    0x12  Code  Lc  nvm3_object.o [19]
 hf_x_oscillator_wakeup_time_tc_inital
-                        0x2000'10e0     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
+                        0x2000'10e4     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
 hfrcoCalTable                 0x170   0x190  Data  Lc  em_cmu.o [27]
 hfxo_wakeup_time_sum_average
-                        0x2000'110c     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
-hfxo_wakeup_time_table  0x2000'10e4    0x28  Data  Lc  sl_power_manager_hal_s2.o [9]
+                        0x2000'1110     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
+hfxo_wakeup_time_table  0x2000'10e8    0x28  Data  Lc  sl_power_manager_hal_s2.o [9]
 hfxo_wakeup_time_table_index
-                        0x2000'10c4     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
-hfxo_wakeup_time_tick   0x2000'1110     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
+                        0x2000'10c8     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
+hfxo_wakeup_time_tick   0x2000'1114     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
 highCallback            0x2000'1f80     0x4  Data  Lc  tempdrv.o [25]
 high_frequency_min_offtime_tick
                         0x2000'1e34     0x4  Data  Gb  sl_power_manager.o [9]
@@ -1521,15 +1524,15 @@ irqState                0x2000'1868     0x4  Data  Gb  nvm3_lock.o [19]
 is_active_descriptor         0x8c9f    0x28  Code  Lc  sl_dma_channel.o [28]
 is_actively_waiting_for_clock_restore
                         0x2000'1e2a     0x1  Data  Lc  sl_power_manager.o [9]
-is_dpll_used            0x2000'10c2     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
+is_dpll_used            0x2000'10c6     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
 is_entering_deepsleep   0x2000'1f9c     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
-is_fast_wakeup_enabled  0x2000'10c0     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
+is_fast_wakeup_enabled  0x2000'10c4     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
 is_hf_x_oscillator_already_started
-                        0x2000'10c3     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
+                        0x2000'10c7     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
 is_hf_x_oscillator_not_preserved
                         0x2000'1e29     0x1  Data  Lc  sl_power_manager.o [9]
 is_hf_x_oscillator_used
-                        0x2000'10c1     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
+                        0x2000'10c5     0x1  Data  Lc  sl_power_manager_hal_s2.o [9]
 is_initialized          0x2000'1e20     0x1  Data  Lc  sl_power_manager.o [9]
 is_interrupt_manager_initialized
                         0x2000'1f9a     0x1  Data  Lc  sl_interrupt_manager_cortexm.o [12]
@@ -1547,25 +1550,25 @@ keyIsValid                   0x4605    0x10  Code  Lc  nvm3.o [19]
 last_delta_update_count
                         0x2000'1e70     0x4  Data  Lc  sl_sleeptimer.o [10]
 ldma_channel0_IRQ_handler
-                             0xcadf     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+                             0xcb2f     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
 ldma_channel1_IRQ_handler
-                             0xcae5     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+                             0xcb35     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
 ldma_channel2_IRQ_handler
-                             0xcaeb     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+                             0xcb3b     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
 ldma_channel3_IRQ_handler
-                             0xcaf1     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+                             0xcb41     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
 ldma_channel4_IRQ_handler
-                             0xcaf7     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+                             0xcb47     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
 ldma_channel5_IRQ_handler
-                             0xcafd     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+                             0xcb4d     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
 ldma_channel6_IRQ_handler
-                             0xcb03     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+                             0xcb53     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
 ldma_channel7_IRQ_handler
-                             0xcb09     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
-letimer_init                 0xc32d    0x8a  Code  Gb  timer.o [1]
+                             0xcb59     0x6  Code  Lc  sl_iostream_dmadrv.o [16]
+letimer_init                 0xc361    0x8a  Code  Gb  timer.o [1]
 link_descriptors             0x7735    0x22  Code  Lc  sl_dma_channel.o [28]
 lowCallback             0x2000'1f84     0x4  Data  Lc  tempdrv.o [25]
-main                         0xc0f9    0x18  Code  Gb  main.o [2]
+main                         0xc129    0x18  Code  Gb  main.o [2]
 max_millisecond_conversion
                         0x2000'1e74     0x4  Data  Lc  sl_sleeptimer.o [10]
 memory_manage_data_alignment
@@ -1592,15 +1595,15 @@ nvm3_default_storage       0x7'4000  0xa000  Data  Gb  nvm3_default_common_linke
 nvm3_enumDeletedObjects
                              0x5dc9     0x6  Code  Gb  nvm3.o [19]
 nvm3_enumObjects             0x5dc1     0x8  Code  Gb  nvm3.o [19]
-nvm3_halFlashAccess          0xca51     0x2  Code  Lc  nvm3_hal_flash.o [19]
-nvm3_halFlashClose           0xca2b     0x4  Code  Lc  nvm3_hal_flash.o [19]
-nvm3_halFlashGetInfo         0xca2f    0x22  Code  Lc  nvm3_hal_flash.o [19]
+nvm3_halFlashAccess          0xcaa1     0x2  Code  Lc  nvm3_hal_flash.o [19]
+nvm3_halFlashClose           0xca7b     0x4  Code  Lc  nvm3_hal_flash.o [19]
+nvm3_halFlashGetInfo         0xca7f    0x22  Code  Lc  nvm3_hal_flash.o [19]
 nvm3_halFlashHandle           0x880    0x1c  Data  Gb  nvm3_hal_flash.o [19]
-nvm3_halFlashOpen            0xca21     0xa  Code  Lc  nvm3_hal_flash.o [19]
-nvm3_halFlashPageErase       0xcaaf    0x30  Code  Lc  nvm3_hal_flash.o [19]
-nvm3_halFlashReadWords       0xca53    0x34  Code  Lc  nvm3_hal_flash.o [19]
+nvm3_halFlashOpen            0xca71     0xa  Code  Lc  nvm3_hal_flash.o [19]
+nvm3_halFlashPageErase       0xcaff    0x30  Code  Lc  nvm3_hal_flash.o [19]
+nvm3_halFlashReadWords       0xcaa3    0x34  Code  Lc  nvm3_hal_flash.o [19]
 nvm3_halFlashWriteWords
-                             0xca87    0x28  Code  Lc  nvm3_hal_flash.o [19]
+                             0xcad7    0x28  Code  Lc  nvm3_hal_flash.o [19]
 nvm3_initDefault             0xa83d     0xa  Code  Gb  nvm3_default_common_linker.o [19]
 nvm3_internalObjectHandleA
                         0x2000'186c    0x2c  Data  Gb  nvm3_lock.o [19]
@@ -1648,14 +1651,14 @@ nvm3_utilsComputeBergerCode
                              0x667b    0x3e  Code  Gb  nvm3_utils.o [19]
 nvm3_writeData               0x5b81    0x7c  Code  Gb  nvm3.o [19]
 on_clock_wakeup_timeout
-                             0xc9e1    0x20  Code  Lc  sl_power_manager.o [9]
-on_power_manager_event       0xb0d1    0x54  Code  Lc  sl_iostream_eusart.o [16]
+                             0xca31    0x20  Code  Lc  sl_power_manager.o [9]
+on_power_manager_event       0xb101    0x54  Code  Lc  sl_iostream_eusart.o [16]
 on_power_manager_event_handle
                         0x2000'1044     0x8  Data  Lc  sl_iostream_eusart.o [16]
 on_power_manager_event_info
                         0x2000'104c     0x8  Data  Lc  sl_iostream_eusart.o [16]
 overflow_counter        0x2000'1e64     0x4  Data  Lc  sl_sleeptimer.o [10]
-p2m                          0xadd8    0x10  Data  Lc  sl_iostream_dmadrv.o [16]
+p2m                          0xae08    0x10  Data  Lc  sl_iostream_dmadrv.o [16]
 pageAdrFromIdx               0x44a5     0xa  Code  Lc  nvm3.o [19]
 pageFreeSize                 0x4511     0xa  Code  Lc  nvm3.o [19]
 pageHdrCounterMake           0x5fdd    0x30  Code  Lc  nvm3_page.o [19]
@@ -1675,7 +1678,7 @@ process_descriptor           0x8c69    0x36  Code  Lc  sl_dma_channel.o [28]
 process_expired_timer        0x8cd1    0xb4  Code  Lc  sl_sleeptimer.o [10]
 process_timer_irq            0x8679    0x8c  Code  Gb  sl_sleeptimer.o [10]
 process_wakeup_overhead_tick
-                        0x2000'10dc     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
+                        0x2000'10e0     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
 prsRxInput                   0x6dcd    0x26  Code  Lc  em_usart.o [27]
 ramWFI                  0x2000'1fa9    0x24  Code  Lc  em_emu.o [27]
 readCounter                  0x562f   0x162  Code  Lc  nvm3.o [19]
@@ -1693,29 +1696,29 @@ requirement_high_accuracy_hf_clock_counter
 requirement_on_em1_added
                         0x2000'1e28     0x1  Data  Gb  sl_power_manager.o [9]
 reserve_no_retention_first
-                        0x2000'1094     0x1  Data  Gb  sl_memory_manager.o [23]
+                        0x2000'1098     0x1  Data  Gb  sl_memory_manager.o [23]
 rtccClkGet                   0x339d    0x46  Code  Lc  em_cmu.o [27]
-rx_buffer_empty              0xbae9    0x2e  Code  Lc  sl_iostream_uart.o [16]
+rx_buffer_empty              0xbb19    0x2e  Code  Lc  sl_iostream_uart.o [16]
 rx_buffer_inst0         0x2000'1df8    0x20  Data  Lc  sl_iostream_init_eusart_instances.o [4]
 samePage                     0x44bb    0x16  Code  Lc  nvm3.o [19]
 scanPage                     0x45cd    0x38  Code  Lc  nvm3.o [19]
 setInvalid                   0x640d    0x12  Code  Lc  nvm3_cache.o [19]
-set_auto_cr_lf               0xb445     0x6  Code  Lc  sl_iostream_uart.o [16]
+set_auto_cr_lf               0xb475     0x6  Code  Lc  sl_iostream_uart.o [16]
 set_comparator_for_next_timer
                              0x83c9    0x3c  Code  Lc  sl_sleeptimer.o [10]
-set_new_data_detect          0xbbc1   0x14c  Code  Lc  sl_iostream_uart.o [16]
+set_new_data_detect          0xbbf1   0x14c  Code  Lc  sl_iostream_uart.o [16]
 set_rx_energy_mode_restriction
-                             0xb455    0x30  Code  Lc  sl_iostream_uart.o [16]
-sl_app_properties            0xc061     0x2  Code  Wk  startup_efm32pg22.o [3]
+                             0xb485    0x30  Code  Lc  sl_iostream_uart.o [16]
+sl_app_properties            0xc091     0x2  Code  Wk  startup_efm32pg22.o [3]
 sl_clock_manager_disable_bus_clock
-                             0xbd89     0x6  Code  Gb  sl_clock_manager.o [21]
+                             0xbdb9     0x6  Code  Gb  sl_clock_manager.o [21]
 sl_clock_manager_enable_bus_clock
                              0x403f     0x6  Code  Gb  sl_clock_manager.o [21]
 sl_clock_manager_get_clock_branch_frequency
                              0x8709     0xc  Code  Gb  sl_clock_manager.o [21]
-sl_clock_manager_init        0xc30d     0x4  Code  Gb  sl_clock_manager_init.o [21]
+sl_clock_manager_init        0xc341     0x4  Code  Gb  sl_clock_manager_init.o [21]
 sl_clock_manager_runtime_init
-                             0xc5ff     0x4  Code  Gb  sl_clock_manager.o [21]
+                             0xc64f     0x4  Code  Gb  sl_clock_manager.o [21]
 sl_device_init_dcdc          0xa931    0x18  Code  Gb  sl_device_init_dcdc_s2.o [14]
 sl_device_peripheral_get_clock_branch
                              0xa399     0x4  Code  Lc  sl_i2c.o [11]
@@ -1730,7 +1733,7 @@ sl_device_peripheral_ldma_get_base_addr
 sl_device_peripheral_ldma_get_base_addr
                              0xa7f1     0x4  Code  Lc  sl_i2c.o [11]
 sl_dma_channel_common_irq_handler
-                             0xc955    0x60  Code  Lc  sl_dma_channel.o [28]
+                             0xc9a5    0x60  Code  Lc  sl_dma_channel.o [28]
 sl_dma_channel_descriptor_alloc
                              0x71b1    0x48  Code  Gb  sl_dma_channel.o [28]
 sl_dma_channel_descriptor_free
@@ -1767,8 +1770,8 @@ sl_dma_manager_register_channel_irq_callback
 sl_dma_manager_register_channel_user_data
                              0x717f    0x1e  Code  Gb  sl_dma_manager.o [18]
 sl_dma_manager_retrieve_current_channel_user_data
-                             0xc9b5    0x2c  Code  Gb  sl_dma_manager.o [18]
-sl_driver_init               0xc2d9    0x16  Code  Gb  sl_event_handler.o [4]
+                             0xca05    0x2c  Code  Gb  sl_dma_manager.o [18]
+sl_driver_init               0xc30d    0x16  Code  Gb  sl_event_handler.o [4]
 sl_free                      0x8ec9    0x20  Code  Gb  sl_memory_manager.o [23]
 sl_gpio_dispatch_interrupt
                              0x7843    0x38  Code  Lc  sl_gpio.o [24]
@@ -1826,9 +1829,9 @@ sl_hal_ldma_stop_transfer
 sl_hal_ldma_transfer_is_done
                              0x8121    0x30  Code  Gb  sl_hal_ldma.o [17]
 sl_hal_ldma_transfer_remaining_count
-                             0xbe85    0x3c  Code  Gb  sl_hal_ldma.o [17]
+                             0xbeb5    0x3c  Code  Gb  sl_hal_ldma.o [17]
 sl_hal_letimer_clear_interrupts
-                             0xc605    0x24  Code  Wk  timer.o [1]
+                             0xc655    0x24  Code  Wk  timer.o [1]
 sl_hal_letimer_disable       0xa9ad    0x28  Code  Wk  sl_hal_letimer.o [17]
 sl_hal_letimer_enable        0xa985    0x28  Code  Wk  sl_hal_letimer.o [17]
 sl_hal_letimer_init          0xa9f9    0x78  Code  Gb  sl_hal_letimer.o [17]
@@ -1845,7 +1848,7 @@ sl_i2c_leader_transfer_blocking
 sl_i2cspm_init_instances
                              0xaac1    0x1c  Code  Gb  sl_i2cspm_init.o [4]
 sl_i2cspm_tmp1075       0x2000'1028     0x4  Data  Gb  sl_i2cspm_init.o [4]
-sl_internal_app_init         0xc2ff     0x2  Code  Gb  sl_event_handler.o [4]
+sl_internal_app_init         0xc333     0x2  Code  Gb  sl_event_handler.o [4]
 sl_interrupt_manager_clear_irq_pending
                              0x3d1f    0x16  Code  Gb  sl_interrupt_manager_cortexm.o [12]
 sl_interrupt_manager_disable_irq
@@ -1861,38 +1864,41 @@ sl_interrupt_manager_is_irq_disabled
 sl_interrupt_manager_set_irq_priority
                              0x3d35    0x46  Code  Gb  sl_interrupt_manager_cortexm.o [12]
 sl_iostream_eusart_init
-                             0xade9   0x20e  Code  Gb  sl_iostream_eusart.o [16]
+                             0xae19   0x20e  Code  Gb  sl_iostream_eusart.o [16]
 sl_iostream_eusart_init_inst0
-                             0xbed9    0x72  Code  Gb  sl_iostream_init_eusart_instances.o [4]
+                             0xbf09    0x72  Code  Gb  sl_iostream_init_eusart_instances.o [4]
 sl_iostream_eusart_init_instances
-                             0xbf4b    0x12  Code  Gb  sl_iostream_init_eusart_instances.o [4]
+                             0xbf7b    0x12  Code  Gb  sl_iostream_init_eusart_instances.o [4]
 sl_iostream_eusart_inst0_sleep_on_isr_exit
-                             0xbf69     0x8  Code  Gb  sl_iostream_init_eusart_instances.o [4]
+                             0xbf99     0x8  Code  Gb  sl_iostream_init_eusart_instances.o [4]
 sl_iostream_eusart_irq_handler
-                             0xaff7    0x36  Code  Gb  sl_iostream_eusart.o [16]
+                             0xb027    0x36  Code  Gb  sl_iostream_eusart.o [16]
 sl_iostream_get_default
                              0xaaf1    0x12  Code  Gb  sl_iostream.o [16]
 sl_iostream_inst0       0x2000'1d14    0x28  Data  Lc  sl_iostream_init_eusart_instances.o [4]
+sl_iostream_inst0_handle
+                        0x2000'106c     0x4  Data  Gb  sl_iostream_init_eusart_instances.o [4]
 sl_iostream_instance_inst0_info
-                        0x2000'1084    0x10  Data  Gb  sl_iostream_init_eusart_instances.o [4]
+                        0x2000'1088    0x10  Data  Gb  sl_iostream_init_eusart_instances.o [4]
 sl_iostream_instances_info
                         0x2000'1054     0x4  Data  Gb  sl_iostream_handles.o [4]
+sl_iostream_read             0xab09    0x2e  Code  Gb  sl_iostream.o [16]
 sl_iostream_recommended_console_stream
                         0x2000'1058     0x4  Data  Gb  sl_iostream_handles.o [4]
 sl_iostream_set_console_instance
-                             0xbec1    0x12  Code  Gb  sl_iostream_handles.o [4]
+                             0xbef1    0x12  Code  Gb  sl_iostream_handles.o [4]
 sl_iostream_set_default
                              0xaadd    0x14  Code  Gb  sl_iostream.o [16]
 sl_iostream_uart_inst0_handle
-                        0x2000'106c     0x4  Data  Gb  sl_iostream_init_eusart_instances.o [4]
+                        0x2000'1070     0x4  Data  Gb  sl_iostream_init_eusart_instances.o [4]
 sl_iostream_uart_prepare_for_sleep
-                             0xb35b     0x6  Code  Gb  sl_iostream_uart.o [16]
+                             0xb38b     0x6  Code  Gb  sl_iostream_uart.o [16]
 sl_iostream_uart_wakeup
-                             0xb361    0x70  Code  Gb  sl_iostream_uart.o [16]
-sl_main_init                 0xc133    0x34  Code  Gb  sl_main_init.o [29]
-sl_main_process_action       0xc177    0x16  Code  Gb  sl_main_process_action.o [29]
+                             0xb391    0x70  Code  Gb  sl_iostream_uart.o [16]
+sl_main_init                 0xc163    0x34  Code  Gb  sl_main_init.o [29]
+sl_main_process_action       0xc1a9    0x16  Code  Gb  sl_main_process_action.o [29]
 sl_main_second_stage_init
-                             0xc115    0x1e  Code  Gb  sl_main_init.o [29]
+                             0xc145    0x1e  Code  Gb  sl_main_init.o [29]
 sl_memory_alloc              0x7c77     0xc  Code  Gb  sl_memory_manager.o [23]
 sl_memory_calloc             0x7c83     0xc  Code  Gb  sl_memory_manager.o [23]
 sl_memory_free               0x807b     0x8  Code  Gb  sl_memory_manager.o [23]
@@ -1917,39 +1923,39 @@ sl_peripheral_val_usart0
                               0xa94    0x20  Data  Gb  sl_device_peripheral_hal_efr32xg22.o [7]
 sl_peripheral_val_usart1
                               0xab4    0x20  Data  Gb  sl_device_peripheral_hal_efr32xg22.o [7]
-sl_platform_init             0xc2c5    0x12  Code  Gb  sl_event_handler.o [4]
+sl_platform_init             0xc2f9    0x12  Code  Gb  sl_event_handler.o [4]
 sl_power_manager_add_em_requirement
-                             0xbde9    0x1c  Code  Lc  sl_iostream_uart.o [16]
+                             0xbe19    0x1c  Code  Lc  sl_iostream_uart.o [16]
 sl_power_manager_add_em_requirement
                              0x790d    0x1c  Code  Lc  spidrv.o [20]
 sl_power_manager_init        0x3e31    0x4c  Code  Gb  sl_power_manager.o [9]
 sl_power_manager_is_latest_wakeup_internal
-                             0xc6f9    0x24  Code  Gb  sl_power_manager.o [9]
+                             0xc749    0x24  Code  Gb  sl_power_manager.o [9]
 sl_power_manager_is_ok_to_sleep
-                             0xc3ed    0x10  Code  Gb  sl_power_manager_handler.o [4]
+                             0xc43d    0x10  Code  Gb  sl_power_manager_handler.o [4]
 sl_power_manager_remove_em_requirement
-                             0xbd8f    0x1c  Code  Lc  sl_iostream_uart.o [16]
+                             0xbdbf    0x1c  Code  Lc  sl_iostream_uart.o [16]
 sl_power_manager_remove_em_requirement
                              0x6daf    0x1c  Code  Lc  spidrv.o [20]
-sl_power_manager_sleep       0xc18d   0x12c  Code  Gb  sl_power_manager.o [9]
+sl_power_manager_sleep       0xc1c1   0x12c  Code  Gb  sl_power_manager.o [9]
 sl_power_manager_sleep_on_isr_exit
-                             0xc5b7    0x32  Code  Gb  sl_power_manager_handler.o [4]
+                             0xc607    0x32  Code  Gb  sl_power_manager_handler.o [4]
 sl_power_manager_subscribe_em_transition_event
                              0x4045    0x14  Code  Gb  sl_power_manager_common.o [6]
 sl_power_manager_unsubscribe_em_transition_event
                              0x4063    0x14  Code  Gb  sl_power_manager_common.o [6]
-sl_service_init              0xc2ef     0xe  Code  Gb  sl_event_handler.o [4]
+sl_service_init              0xc323     0xe  Code  Gb  sl_event_handler.o [4]
 sl_sleeptimer_get_remaining_time_of_first_timer
-                             0xc659    0x5c  Code  Gb  sl_sleeptimer.o [10]
+                             0xc6a9    0x5c  Code  Gb  sl_sleeptimer.o [10]
 sl_sleeptimer_get_tick_count
                              0x4009    0x18  Code  Gb  sl_sleeptimer.o [10]
 sl_sleeptimer_get_timer_frequency
                              0x4089     0xc  Code  Gb  sl_sleeptimer.o [10]
 sl_sleeptimer_init           0x6f71    0x50  Code  Gb  sl_sleeptimer.o [10]
 sl_sleeptimer_is_power_manager_early_restore_timer_latest_to_expire
-                             0xc79d    0x18  Code  Gb  sl_sleeptimer.o [10]
+                             0xc7ed    0x18  Code  Gb  sl_sleeptimer.o [10]
 sl_sleeptimer_restart_timer
-                             0xc6c1    0x38  Code  Gb  sl_sleeptimer.o [10]
+                             0xc711    0x38  Code  Gb  sl_sleeptimer.o [10]
 sl_sleeptimer_stop_timer
                              0x78b9    0x54  Code  Gb  sl_sleeptimer.o [10]
 sl_sleeptimer_tick_to_ms
@@ -1960,17 +1966,17 @@ sl_slist_push                0x4127    0x1a  Code  Gb  sl_slist.o [22]
 sl_slist_push_back           0x4141    0x22  Code  Gb  sl_slist.o [22]
 sl_slist_remove              0x4189    0x28  Code  Gb  sl_slist.o [22]
 sl_spidrv_init_instances
-                             0xbff1    0x12  Code  Gb  sl_spidrv_init.o [4]
-sl_spidrv_init_tpl0501  0x2000'1118    0x20  Data  Gb  sl_spidrv_init.o [4]
-sl_spidrv_set_default        0xc003     0xe  Code  Gb  sl_spidrv_init.o [4]
+                             0xc021    0x12  Code  Gb  sl_spidrv_init.o [4]
+sl_spidrv_init_tpl0501  0x2000'111c    0x20  Data  Gb  sl_spidrv_init.o [4]
+sl_spidrv_set_default        0xc033     0xe  Code  Gb  sl_spidrv_init.o [4]
 sl_spidrv_tpl0501_handle
-                        0x2000'1114     0x4  Data  Gb  sl_spidrv_init.o [4]
+                        0x2000'1118     0x4  Data  Gb  sl_spidrv_init.o [4]
 sl_spidrv_tpl0501_handle_data
                         0x2000'1e78    0xac  Data  Gb  sl_spidrv_init.o [4]
 sl_stack                0x2000'0000  0x1000  Data  Gb  sl_memory_manager_region.o [23]
-sl_stack_init                0xc2fd     0x2  Code  Gb  sl_event_handler.o [4]
+sl_stack_init                0xc331     0x2  Code  Gb  sl_event_handler.o [4]
 sl_udelay_wait               0xa349    0x50  Code  Gb  sl_udelay.o [13]
-sleep_on_isr_exit            0xb3d5    0x5e  Code  Lc  sl_iostream_uart.o [16]
+sleep_on_isr_exit            0xb405    0x5e  Code  Lc  sl_iostream_uart.o [16]
 sleep_on_isr_exit       0x2000'1e62     0x1  Data  Lc  sl_sleeptimer.o [10]
 sleeptimer_frequency    0x2000'1e30     0x4  Data  Lc  sl_power_manager.o [9]
 sleeptimer_hal_disable_int
@@ -1991,7 +1997,7 @@ sleeptimer_hal_set_compare
                              0x8bb5    0x68  Code  Gb  sl_sleeptimer_hal_rtcc.o [10]
 sleeptimer_hal_set_int       0x8c1d    0x10  Code  Gb  sl_sleeptimer_hal_rtcc.o [10]
 sli_allocate_permanent_memory
-                             0xc313    0x1a  Code  Gb  sl_main_init_memory.o [29]
+                             0xc347    0x1a  Code  Gb  sl_main_init_memory.o [29]
 sli_block_len_dword_decode
                              0x89a5     0x4  Code  Wk  sl_memory_manager.o [23]
 sli_block_len_dword_encode
@@ -2034,7 +2040,7 @@ sli_dma_manager_pending_errors
 sli_dma_manager_set_pending_errors
                              0x844b     0x4  Code  Gb  sl_dma_manager.o [18]
 sli_driver_permanent_allocation
-                             0xc2bd     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc2f1     0x2  Code  Gb  sl_event_handler.o [4]
 sli_em_cmu_SYSCLKInitPostClockSelect
                              0x2a9d    0x34  Code  Gb  em_cmu.o [27]
 sli_em_cmu_SYSCLKInitPreClockSelect
@@ -2042,7 +2048,7 @@ sli_em_cmu_SYSCLKInitPreClockSelect
 sli_em_cmu_SYSTICEXTCLKENClear
                              0x2ad9    0x28  Code  Gb  em_cmu.o [27]
 sli_general_purpose_heap
-                        0x2000'1098    0x28  Data  Gb  sl_memory_manager.o [23]
+                        0x2000'109c    0x28  Data  Gb  sl_memory_manager.o [23]
 sli_i2c_follower_dispatch_interrupt
                              0x9ce5   0x124  Code  Gb  sl_i2c.o [11]
 sli_i2c_init_core            0x9b1d    0xa0  Code  Gb  sl_i2c.o [11]
@@ -2051,38 +2057,38 @@ sli_i2c_leader_dispatch_interrupt
 sli_i2c_leader_write_no_stop_blocking
                              0x9e21   0x1aa  Code  Gb  sl_i2c.o [11]
 sli_internal_app_process_action
-                             0xc307     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc33b     0x2  Code  Gb  sl_event_handler.o [4]
 sli_internal_init_early
-                             0xc2d7     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc30b     0x2  Code  Gb  sl_event_handler.o [4]
 sli_internal_permanent_allocation
-                             0xc2c3     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc2f7     0x2  Code  Gb  sl_event_handler.o [4]
 sli_iostream_default    0x2000'1b88     0x4  Data  Lc  sl_iostream.o [16]
 sli_iostream_dmadrv_allocate_channel
-                             0xab09    0x40  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xab39    0x40  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_deinit
-                             0xab49    0x28  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xab79    0x28  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_free_channel
-                             0xab71    0x2c  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xaba1    0x2c  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_init
-                             0xaba5    0x5e  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xabd5    0x5e  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_ldma_start_transfer
-                             0xac03    0x62  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xac33    0x62  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_pause_transfer
-                             0xad51    0x2a  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xad81    0x2a  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_peripheral_memory
-                             0xac65    0xec  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xac95    0xec  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_resume_transfer
-                             0xad7b    0x2a  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xadab    0x2a  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_stop_transfer
-                             0xbdad    0x3c  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xbddd    0x3c  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_transfer_done
-                             0xbe05    0x40  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xbe35    0x40  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_dmadrv_transfer_remaining_count
-                             0xbe45    0x40  Code  Gb  sl_iostream_dmadrv.o [16]
+                             0xbe75    0x40  Code  Gb  sl_iostream_dmadrv.o [16]
 sli_iostream_uart_context_init
-                             0xb1a1   0x19e  Code  Gb  sl_iostream_uart.o [16]
+                             0xb1d1   0x19e  Code  Gb  sl_iostream_uart.o [16]
 sli_iostream_uart_unsubscribe_to_new_data
-                             0xb33f    0x1c  Code  Gb  sl_iostream_uart.o [16]
+                             0xb36f    0x1c  Code  Gb  sl_iostream_uart.o [16]
 sli_memory_create_heap       0x8939    0x60  Code  Gb  sli_memory_manager_common.o [23]
 sli_memory_find_free_block
                              0x87a3    0xdc  Code  Gb  sli_memory_manager_common.o [23]
@@ -2095,11 +2101,11 @@ sli_memory_initialize_heap_region
                              0x8783     0xc  Code  Gb  sl_memory_manager_region.o [23]
 sli_memory_metadata_init
                              0x879d     0x6  Code  Gb  sli_memory_manager_common.o [23]
-sli_mm_initialized      0x2000'1095     0x1  Data  Gb  sl_memory_manager.o [23]
+sli_mm_initialized      0x2000'1099     0x1  Data  Gb  sl_memory_manager.o [23]
 sli_platform_process_action
-                             0xc301     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc335     0x2  Code  Gb  sl_event_handler.o [4]
 sli_power_manager_apply_em
-                             0xc531    0x78  Code  Gb  sl_power_manager_hal_s2.o [9]
+                             0xc581    0x78  Code  Gb  sl_power_manager_hal_s2.o [9]
 sli_power_manager_convert_delay_us_to_tick
                              0x3e93    0x12  Code  Gb  sl_power_manager.o [9]
 sli_power_manager_em23_voltage_scaling_enable_fast_wakeup
@@ -2113,7 +2119,7 @@ sli_power_manager_get_restore_delay
 sli_power_manager_get_wakeup_process_time_overhead
                              0x8fd5    0x18  Code  Gb  sl_power_manager_hal_s2.o [9]
 sli_power_manager_handle_pre_deepsleep_operations
-                             0xc525     0xc  Code  Gb  sl_power_manager_hal_s2.o [9]
+                             0xc575     0xc  Code  Gb  sl_power_manager_hal_s2.o [9]
 sli_power_manager_init_em4
                              0x4095    0x12  Code  Gb  sl_power_manager_em4.o [6]
 sli_power_manager_init_hardware
@@ -2123,7 +2129,7 @@ sli_power_manager_initiate_restore
 sli_power_manager_is_high_freq_accuracy_clk_ready
                              0x4231     0x4  Code  Gb  sl_power_manager_hal_s2.o [9]
 sli_power_manager_is_high_freq_accuracy_clk_used
-                             0xc6b5     0xc  Code  Gb  sl_power_manager_hal_s2.o [9]
+                             0xc705     0xc  Code  Gb  sl_power_manager_hal_s2.o [9]
 sli_power_manager_notify_em_transition
                              0x4289    0x78  Code  Gb  sl_power_manager_common.o [6]
 sli_power_manager_restore_high_freq_accuracy_clk
@@ -2133,13 +2139,13 @@ sli_power_manager_restore_states
 sli_power_manager_save_oscillators_usage
                              0x3dbd    0x74  Code  Gb  sl_power_manager_hal_s2.o [9]
 sli_power_manager_save_states
-                             0xc505    0x20  Code  Gb  sl_power_manager_hal_s2.o [9]
+                             0xc555    0x20  Code  Gb  sl_power_manager_hal_s2.o [9]
 sli_power_manager_update_em_requirement
                              0x79b9    0x98  Code  Gb  sl_power_manager.o [9]
 sli_service_permanent_allocation
-                             0xc2bf     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc2f3     0x2  Code  Gb  sl_event_handler.o [4]
 sli_service_process_action
-                             0xc303     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc337     0x2  Code  Gb  sl_event_handler.o [4]
 sli_sleeptimer_hal_is_int_status_set
                              0x3fc1    0x24  Code  Gb  sl_sleeptimer_hal_rtcc.o [10]
 sli_sleeptimer_is_power_manager_timer_next_to_expire
@@ -2149,10 +2155,10 @@ sli_sleeptimer_set_pm_em_requirement
 sli_spidrv_default_handle
                         0x2000'1f24     0x4  Data  Lc  sl_spidrv_init.o [4]
 sli_stack_permanent_allocation
-                             0xc2c1     0x2  Code  Gb  sl_event_handler.o [4]
+                             0xc2f5     0x2  Code  Gb  sl_event_handler.o [4]
 sli_stack_process_action
-                             0xc305     0x2  Code  Gb  sl_event_handler.o [4]
-sli_uart_txc                 0xb48b    0x38  Code  Gb  sl_iostream_uart.o [16]
+                             0xc339     0x2  Code  Gb  sl_event_handler.o [4]
+sli_uart_txc                 0xb4bb    0x38  Code  Gb  sl_iostream_uart.o [16]
 sli_update_free_list_heads
                              0x88e5    0x54  Code  Gb  sli_memory_manager_common.o [23]
 spidrvIsInitialized     0x2000'1f9d     0x1  Data  Lc  spidrv.o [20]
@@ -2162,9 +2168,9 @@ storage$$Base              0x7'4000           --   Gb  - Linker created -
 storage$$Limit             0x7'4000           --   Gb  - Linker created -
 sysTickClkGet                0x3445    0x34  Code  Lc  em_cmu.o [27]
 sysclk_prescalers_value
-                        0x2000'10d8     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
+                        0x2000'10dc     0x4  Data  Lc  sl_power_manager_hal_s2.o [9]
 system_uptime_100ms     0x2000'1f90     0x4  Data  Gb  timer.o [1]
-tasks                        0xc629    0x2c  Code  Gb  tasks.o [1]
+tasks                        0xc679    0x2c  Code  Gb  tasks.o [1]
 tasks::last_send_time   0x2000'1f28     0x4  Data  Lc  tasks.o [1]
 tempdrvHighCallbacks    0x2000'1f30    0x28  Data  Lc  tempdrv.o [25]
 tempdrvLowCallbacks     0x2000'1f58    0x28  Data  Lc  tempdrv.o [25]
@@ -2174,14 +2180,14 @@ text_application_ram$$Base
 text_application_ram$$Limit
                         0x2000'2164           --   Gb  - Linker created -
 text_application_ram_init$$Base
-                             0xcc08           --   Gb  - Linker created -
+                             0xcc60           --   Gb  - Linker created -
 text_application_ram_init$$Limit
-                             0xcdcc           --   Gb  - Linker created -
+                             0xce24           --   Gb  - Linker created -
 text_ram$$Base          0x2000'1fa0           --   Gb  - Linker created -
 text_ram$$Length              0x1c4           --   Gb  - Linker created -
 text_ram$$Limit         0x2000'2164           --   Gb  - Linker created -
-text_ram_init$$Base          0xcc08           --   Gb  - Linker created -
-text_ram_init$$Limit         0xcdcc           --   Gb  - Linker created -
+text_ram_init$$Base          0xcc60           --   Gb  - Linker created -
+text_ram_init$$Limit         0xce24           --   Gb  - Linker created -
 thrHard                      0x4411    0x34  Code  Lc  nvm3.o [19]
 thrSize                      0x4469     0xa  Code  Lc  nvm3.o [19]
 thrSoftUser                  0x4445    0x24  Code  Lc  nvm3.o [19]
@@ -2190,14 +2196,15 @@ timer_head              0x2000'1e6c     0x4  Data  Lc  sl_sleeptimer.o [10]
 tmp1075_get_temperature
                              0x9641    0x6c  Code  Gb  tmp1075.o [1]
 tpl0501_set_wiper            0x5fb1    0x20  Code  Gb  tpl0501.o [1]
-uart_deinit                  0xb4cd    0xa2  Code  Lc  sl_iostream_uart.o [16]
-uart_periph_inst0       0x2000'1070    0x14  Data  Lc  sl_iostream_init_eusart_instances.o [4]
-uart_read                    0xb7cd   0x29e  Code  Lc  sl_iostream_uart.o [16]
-uart_write                   0xb575   0x146  Code  Lc  sl_iostream_uart.o [16]
-uart_write_async             0xb785    0x48  Code  Lc  sl_iostream_uart.o [16]
-updateInterrupts             0xc815    0x9a  Code  Lc  tempdrv.o [25]
+uart_action                  0xc419    0x1c  Code  Gb  uart.o [1]
+uart_deinit                  0xb4fd    0xa2  Code  Lc  sl_iostream_uart.o [16]
+uart_periph_inst0       0x2000'1074    0x14  Data  Lc  sl_iostream_init_eusart_instances.o [4]
+uart_read                    0xb7fd   0x29e  Code  Lc  sl_iostream_uart.o [16]
+uart_write                   0xb5a5   0x146  Code  Lc  sl_iostream_uart.o [16]
+uart_write_async             0xb7b5    0x48  Code  Lc  sl_iostream_uart.o [16]
+updateInterrupts             0xc865    0x9a  Code  Lc  tempdrv.o [25]
 update_delta_list            0x8359    0x34  Code  Lc  sl_sleeptimer.o [10]
-update_em1_requirement       0xc3fd    0x70  Code  Lc  sl_power_manager.o [9]
+update_em1_requirement       0xc44d    0x70  Code  Lc  sl_power_manager.o [9]
 update_next_timer_to_expire_is_power_manager
                              0x8c2d    0x30  Code  Lc  sl_sleeptimer.o [10]
 update_temperature           0x9621    0x20  Code  Gb  env.o [1]
@@ -2217,7 +2224,7 @@ writeFullAllowed             0x4473    0x18  Code  Lc  nvm3.o [19]
 writeHardAllowed             0x448b     0xa  Code  Lc  nvm3.o [19]
 write_config                 0x4393    0x18  Code  Gb  config.o [1]
 yield_critical_with_primask
-                             0xc5a9     0xe  Code  Lc  sl_power_manager.o [9]
+                             0xc5f9     0xe  Code  Lc  sl_power_manager.o [9]
 
 
 [1] = C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj
@@ -2253,10 +2260,10 @@ yield_critical_with_primask
 [31] = m7M_tls.a
 [32] = rt7M_tl.a
 
-  44'273 bytes of readonly  code memory
+  44'353 bytes of readonly  code memory
      452 bytes of readwrite code memory
-   8'409 bytes of readonly  data memory
-  73'272 bytes of readwrite data memory
+   8'413 bytes of readonly  data memory
+  73'276 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
