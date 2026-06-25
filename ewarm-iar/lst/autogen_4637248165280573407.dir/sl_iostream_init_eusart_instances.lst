@@ -1,0 +1,722 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:51
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_iostream_init_eusart_instances.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_iostream_init_eusart_instances.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_iostream_init_eusart_instances.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_iostream_init_eusart_instances.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_iostream_init_eusart_instances.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir\sl_iostream_init_eusart_instances.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir\sl_iostream_init_eusart_instances.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_iostream_init_eusart_instances.c
+      1          #include "sl_iostream.h"
+      2          #include "sl_iostream_uart.h"
+      3          #include "sl_iostream_eusart.h"
+      4          #include "sl_common.h"
+      5          #include "sl_device_peripheral.h"
+      6          #include "sl_clock_manager.h"
+      7          #include "sl_hal_eusart.h"
+      8          #include "sl_hal_gpio.h"
+      9          
+     10          
+     11          #include "sl_clock_manager_tree_config.h"
+     12           
+     13          
+     14           
+     15          // Include instance config 
+     16           #include "sl_iostream_eusart_inst0_config.h"
+     17          
+     18          // MACROs for generating name and IRQ handler function  
+     19          #if defined(EUART_COUNT) && (EUART_COUNT > 0) 
+     20          #define SL_IOSTREAM_EUSART_TX_IRQ_NUMBER(periph_nbr)     SL_CONCAT_PASTER_3(EUART, periph_nbr, _TX_IRQn)   
+     21          #define SL_IOSTREAM_EUSART_RX_IRQ_NUMBER(periph_nbr)     SL_CONCAT_PASTER_3(EUART, periph_nbr, _RX_IRQn)   
+     22          #define SL_IOSTREAM_EUSART_TX_IRQ_HANDLER(periph_nbr)    SL_CONCAT_PASTER_3(EUART, periph_nbr, _TX_IRQHandler)   
+     23          #define SL_IOSTREAM_EUSART_RX_IRQ_HANDLER(periph_nbr)    SL_CONCAT_PASTER_3(EUART, periph_nbr, _RX_IRQHandler)   
+     24          #define SL_IOSTREAM_EUSART_RX_DMA_SIGNAL(periph_nbr)     SL_CONCAT_PASTER_3(SL_DMA_SIGNAL_EUART, periph_nbr, _RXFL)
+     25          #define SL_IOSTREAM_EUSART_TX_DMA_SIGNAL(periph_nbr)     SL_CONCAT_PASTER_3(SL_DMA_SIGNAL_EUART, periph_nbr, _TXFL)
+     26          #define SL_IOSTREAM_EUSART_CLOCK_REF(periph_nbr)         SL_CONCAT_PASTER_2(SL_BUS_CLOCK_EUART, periph_nbr)  
+     27          #define SL_IOSTREAM_EUSART_PERIPHERAL(periph_nbr)        SL_CONCAT_PASTER_2(SL_PERIPHERAL_EUART, periph_nbr) 
+     28          #else
+     29          #define SL_IOSTREAM_EUSART_TX_IRQ_NUMBER(periph_nbr)     SL_CONCAT_PASTER_3(EUSART, periph_nbr, _TX_IRQn)   
+     30          #define SL_IOSTREAM_EUSART_RX_IRQ_NUMBER(periph_nbr)     SL_CONCAT_PASTER_3(EUSART, periph_nbr, _RX_IRQn)   
+     31          #define SL_IOSTREAM_EUSART_TX_IRQ_HANDLER(periph_nbr)    SL_CONCAT_PASTER_3(EUSART, periph_nbr, _TX_IRQHandler)   
+     32          #define SL_IOSTREAM_EUSART_RX_IRQ_HANDLER(periph_nbr)    SL_CONCAT_PASTER_3(EUSART, periph_nbr, _RX_IRQHandler)   
+     33          #define SL_IOSTREAM_EUSART_RX_DMA_SIGNAL(periph_nbr)     SL_CONCAT_PASTER_3(SL_DMA_SIGNAL_EUSART, periph_nbr, _RXFL)
+     34          #define SL_IOSTREAM_EUSART_TX_DMA_SIGNAL(periph_nbr)     SL_CONCAT_PASTER_3(SL_DMA_SIGNAL_EUSART, periph_nbr, _TXFL)
+     35          #define SL_IOSTREAM_EUSART_CLOCK_REF(periph_nbr)         SL_CONCAT_PASTER_2(SL_BUS_CLOCK_EUSART, periph_nbr)  
+     36          #define SL_IOSTREAM_EUSART_PERIPHERAL(periph_nbr)        SL_CONCAT_PASTER_2(SL_PERIPHERAL_EUSART, periph_nbr) 
+     37          #endif
+     38          
+     39          
+     40          #if defined(EUART_COUNT) && (EUART_COUNT > 0)
+     41          #define SL_IOSTREAM_EUSART_CLOCK_SOURCE(periph_nbr)      SL_CLOCK_MANAGER_EUART0CLK_SOURCE
+     42          #define SL_IOSTREAM_EUSART_HF_CLOCK_SOURCE               CMU_EUART0CLKCTRL_CLKSEL_EM01GRPACLK
+     43          #define SL_IOSTREAM_EUSART_DISABLED_CLOCK_SOURCE         CMU_EUART0CLKCTRL_CLKSEL_DISABLED
+     44          #else
+     45          #define SL_IOSTREAM_EUSART_CLOCK_SOURCE(periph_nbr)      SL_CLOCK_MANAGER_EUSART0CLK_SOURCE
+     46          #if defined(CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPCCLK)
+     47          #define SL_IOSTREAM_EUSART_HF_CLOCK_SOURCE               CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPCCLK
+     48          #elif defined(CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPACLK)
+     49          #define SL_IOSTREAM_EUSART_HF_CLOCK_SOURCE               CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPACLK
+     50          #endif
+     51          #define SL_IOSTREAM_EUSART_DISABLED_CLOCK_SOURCE         CMU_EUSART0CLKCTRL_CLKSEL_DISABLED
+     52          #endif
+     53          
+     54          // Check clock configuration
+     55           
+     56          #if (SL_IOSTREAM_EUSART_CLOCK_SOURCE(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO) == \
+     57              SL_IOSTREAM_EUSART_DISABLED_CLOCK_SOURCE)
+     58            #error Peripheral clock is disabled for INST0. Modify sl_clock_manager_tree_config.h \
+     59            to enable the peripheral clock
+     60          #else
+     61          #define _SL_IOSTREAM_EUSART_INST0_ENABLE_HIGH_FREQUENCY \
+     62                    SL_IOSTREAM_EUSART_CLOCK_SOURCE(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO) == \
+     63                    SL_IOSTREAM_EUSART_HF_CLOCK_SOURCE
+     64          
+     65          #if defined(SL_IOSTREAM_EUSART_INST0_ENABLE_HIGH_FREQUENCY) && \
+     66            (_SL_IOSTREAM_EUSART_INST0_ENABLE_HIGH_FREQUENCY != \
+     67            SL_IOSTREAM_EUSART_INST0_ENABLE_HIGH_FREQUENCY)
+     68          #if SL_IOSTREAM_EUSART_INST0_ENABLE_HIGH_FREQUENCY
+     69          #warning Configuration mismatch for IOStream EUSART INST0. \
+     70           IOStream was configured in high-frequency, but peripheral uses a low-frequency \
+     71           oscillator in sl_clock_manager_tree_config.h.
+     72          #else 
+     73          #warning Configuration mismatch for IOStream EUSART INST0. \
+     74           IOStream was configured in low-frequency, but peripheral uses a high-frequency \
+     75           oscillator in sl_clock_manager_tree_config.h.
+     76          #endif // SL_IOSTREAM_EUSART_INST0_ENABLE_HIGH_FREQUENCY
+     77          #endif // Config mismatch
+     78          #endif // SL_IOSTREAM_EUSART_DISABLED_CLOCK_SOURCE
+     79          
+     80          
+     81           
+     82          
+     83          
+     84          // EM Events
+     85          #define SLEEP_EM_EVENT_MASK      (SL_POWER_MANAGER_EVENT_TRANSITION_ENTERING_EM0 \
+     86                                            | SL_POWER_MANAGER_EVENT_TRANSITION_LEAVING_EM0)
+     87          static void events_handler(sl_power_manager_em_t from,
+     88                                     sl_power_manager_em_t to);
+
+   \                                 In section .data, align 4
+     89          static sl_power_manager_em_transition_event_info_t events_info =
+   \                     events_info:
+   \        0x0   0x0000'0003        DC32 3, events_handler
+   \              0x....'....
+   \        0x8   0x0000'0000        DC32 0x0, 0x0
+   \              0x0000'0000
+   \       0x10                      DS8 0
+     90          {
+     91            .event_mask = SLEEP_EM_EVENT_MASK,
+     92            .on_event = events_handler,
+     93          };
+     94          static sl_power_manager_em_transition_event_handle_t events_handle;
+     95           
+     96          
+     97          
+     98          sl_status_t sl_iostream_eusart_init_inst0(void);
+     99          
+    100          
+    101          // Instance(s) handle and context variable 
+    102          static sl_iostream_uart_t sl_iostream_inst0;
+
+   \                                 In section .data, align 4
+    103          sl_iostream_t *sl_iostream_inst0_handle = &sl_iostream_inst0.stream;
+   \                     sl_iostream_inst0_handle:
+   \        0x0   0x....'....        DC32 sl_iostream_inst0
+    104          
+
+   \                                 In section .data, align 4
+    105          sl_iostream_uart_t *sl_iostream_uart_inst0_handle = &sl_iostream_inst0;
+   \                     sl_iostream_uart_inst0_handle:
+   \        0x0   0x....'....        DC32 sl_iostream_inst0
+
+   \                                 In section .bss, align 4
+   \                     sl_iostream_inst0:
+   \        0x0                      DS8 40
+   \       0x28                      DS8 188
+    106          static sl_iostream_eusart_context_t  context_inst0;
+    107          
+
+   \                                 In section .bss, align 4
+    108          static uint8_t  rx_buffer_inst0[SL_IOSTREAM_EUSART_INST0_RX_BUFFER_SIZE];
+   \                     rx_buffer_inst0:
+   \        0x0                      DS8 32
+    109          
+
+   \                                 In section .data, align 4
+    110          static sli_iostream_uart_periph_t uart_periph_inst0 = {
+   \                     uart_periph_inst0:
+   \        0x0   0x0000'0000        DC32 0x0, 0x0, 0x0, 0x0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x10   0x3E 0x3F          DC8 62, 63
+   \       0x12                      DS8 2
+    111            .rx_irq_number = SL_IOSTREAM_EUSART_RX_IRQ_NUMBER(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO),
+    112          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)  
+    113            .tx_irq_number = SL_IOSTREAM_EUSART_TX_IRQ_NUMBER(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO),
+    114          #endif
+    115          };
+    116          
+
+   \                                 In section .data, align 4
+    117          sl_iostream_instance_info_t sl_iostream_instance_inst0_info = {
+   \                     sl_iostream_instance_inst0_info:
+   \        0x0   0x....'....        DC32 sl_iostream_inst0, ?_0
+   \              0x....'....
+   \        0x8   0x02 0x00          DC8 2, 0
+   \        0xA                      DS8 2
+   \        0xC   0x....'....        DC32 sl_iostream_eusart_init_inst0
+    118            .handle = &sl_iostream_inst0.stream,
+    119            .name = "inst0",
+    120            .type = SL_IOSTREAM_TYPE_UART,
+    121            .periph_id = SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO,
+    122            .init = sl_iostream_eusart_init_inst0,
+    123          };
+    124          
+    125          
+    126          
+
+   \                                 In section .text, align 4, keep-with-next
+    127          sl_status_t sl_iostream_eusart_init_inst0(void)
+    128          {
+   \                     sl_iostream_eusart_init_inst0: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB096             SUB      SP,SP,#+88
+    129            sl_status_t status;
+    130          
+    131            sl_iostream_eusart_config_t config_inst0 = { 
+    132              .eusart = SL_IOSTREAM_EUSART_PERIPHERAL(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO),
+    133              .eusart_nbr = SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO,
+    134              .bus_clock = SL_IOSTREAM_EUSART_CLOCK_REF(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO),
+    135              .baudrate = SL_IOSTREAM_EUSART_INST0_BAUDRATE,
+    136              .parity = SL_IOSTREAM_EUSART_INST0_PARITY,
+    137              .flow_control = SL_IOSTREAM_EUSART_INST0_FLOW_CONTROL_TYPE,
+    138              .stop_bits = SL_IOSTREAM_EUSART_INST0_STOP_BITS,
+    139          #if defined(EUSART_COUNT) && (EUSART_COUNT > 1)
+    140              .port_index = SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO,
+    141          #endif
+    142              .tx_port = SL_IOSTREAM_EUSART_INST0_TX_PORT,
+    143              .tx_pin = SL_IOSTREAM_EUSART_INST0_TX_PIN,
+    144              .rx_port = SL_IOSTREAM_EUSART_INST0_RX_PORT,
+    145              .rx_pin = SL_IOSTREAM_EUSART_INST0_RX_PIN,
+    146          #if defined(SL_IOSTREAM_EUSART_INST0_CTS_PORT)
+    147              .cts_port = SL_IOSTREAM_EUSART_INST0_CTS_PORT,
+    148              .cts_pin = SL_IOSTREAM_EUSART_INST0_CTS_PIN,
+    149          #endif
+    150          #if defined(SL_IOSTREAM_EUSART_INST0_RTS_PORT)
+    151              .rts_port = SL_IOSTREAM_EUSART_INST0_RTS_PORT,
+    152              .rts_pin = SL_IOSTREAM_EUSART_INST0_RTS_PIN,
+    153          #endif
+    154            };
+   \        0x4   0xF10D 0x003C      ADD.W    R0,SP,#+60
+   \        0x8   0x....             ADR.N    R1,?_3
+   \        0xA   0x221C             MOVS     R2,#+28
+   \        0xC   0x.... 0x....      BL       __aeabi_memcpy4
+    155          
+    156            sl_iostream_dma_config_t rx_dma_config_inst0 = {.src = (uint8_t *)&SL_IOSTREAM_EUSART_INST0_PERIPHERAL->RXDATA,
+    157                                                                  .xfer_cfg = SL_HAL_LDMA_TRANSFER_CFG_PERIPHERAL(*(SL_IOSTREAM_EUSART_RX_DMA_SIGNAL(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO)))};
+    158          
+    159            sl_iostream_dma_config_t tx_dma_config_inst0 = {.dst = (uint8_t *)&SL_IOSTREAM_EUSART_INST0_PERIPHERAL->TXDATA,
+    160                                                                  .xfer_cfg = SL_HAL_LDMA_TRANSFER_CFG_PERIPHERAL(*(SL_IOSTREAM_EUSART_TX_DMA_SIGNAL(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO)))};
+    161          
+    162            sl_iostream_uart_config_t uart_config_inst0 = {
+    163              .rx_dma_cfg = rx_dma_config_inst0,
+    164              .tx_dma_cfg = tx_dma_config_inst0,
+    165              .rx_buffer = rx_buffer_inst0,
+    166              .rx_buffer_length = SL_IOSTREAM_EUSART_INST0_RX_BUFFER_SIZE,
+    167              .enable_high_frequency = _SL_IOSTREAM_EUSART_INST0_ENABLE_HIGH_FREQUENCY, 
+    168              .lf_to_crlf = SL_IOSTREAM_EUSART_INST0_CONVERT_BY_DEFAULT_LF_TO_CRLF,
+    169              .rx_when_sleeping = SL_IOSTREAM_EUSART_INST0_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION,
+    170              .uart_periph = &uart_periph_inst0
+    171            };
+   \       0x10   0x....             LDR.N    R5,??DataTable7
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x4629             MOV      R1,R5
+   \       0x16   0x223C             MOVS     R2,#+60
+   \       0x18   0x.... 0x....      BL       __aeabi_memcpy4
+   \       0x1C   0x....             LDR.N    R4,??DataTable7_1
+   \       0x1E   0x6820             LDR      R0,[R4, #+0]
+   \       0x20   0x2100             MOVS     R1,#+0
+   \       0x22   0x9101             STR      R1,[SP, #+4]
+   \       0x24   0x9102             STR      R1,[SP, #+8]
+   \       0x26   0xF8AD 0x100C      STRH     R1,[SP, #+12]
+   \       0x2A   0x9000             STR      R0,[SP, #+0]
+   \       0x2C   0x....             ADR.N    R1,?_4
+   \       0x2E   0x6908             LDR      R0,[R1, #+16]
+   \       0x30   0x....             LDR.N    R1,??DataTable7_2
+   \       0x32   0x2200             MOVS     R2,#+0
+   \       0x34   0x9004             STR      R0,[SP, #+16]
+   \       0x36   0x6808             LDR      R0,[R1, #+0]
+   \       0x38   0x....             ADR.N    R1,?_5
+   \       0x3A   0x9206             STR      R2,[SP, #+24]
+   \       0x3C   0x9005             STR      R0,[SP, #+20]
+   \       0x3E   0x6908             LDR      R0,[R1, #+16]
+   \       0x40   0x9207             STR      R2,[SP, #+28]
+   \       0x42   0xF8AD 0x2020      STRH     R2,[SP, #+32]
+   \       0x46   0x9009             STR      R0,[SP, #+36]
+    172            uart_config_inst0.sw_flow_control = SL_IOSTREAM_EUSART_INST0_FLOW_CONTROL_TYPE == SL_IOSTREAM_EUSART_UART_FLOW_CTRL_SOFT;
+   \       0x48   0xF10D 0x0021      ADD      R0,SP,#+33
+   \       0x4C   0x7482             STRB     R2,[R0, #+18]
+    173          #if defined(SL_IOSTREAM_EUSART_INST0_ASYNC_TX)
+    174            uart_config_inst0.async_tx_enabled = SL_IOSTREAM_EUSART_INST0_ASYNC_TX;
+    175          #else
+    176            uart_config_inst0.async_tx_enabled = false;
+   \       0x4E   0x74C2             STRB     R2,[R0, #+19]
+    177          #endif
+    178            // Instantiate eusart instance 
+    179            status = sl_iostream_eusart_init(&sl_iostream_inst0,
+    180                                            &uart_config_inst0,
+    181                                            &config_inst0,
+    182                                            &context_inst0);
+   \       0x50   0x....             LDR.N    R0,??DataTable7_3
+   \       0x52   0xF100 0x0328      ADD      R3,R0,#+40
+   \       0x56   0xAA0F             ADD      R2,SP,#+60
+   \       0x58   0x4669             MOV      R1,SP
+   \       0x5A   0x.... 0x....      BL       sl_iostream_eusart_init
+   \       0x5E   0x0004             MOVS     R4,R0
+    183            EFM_ASSERT(status == SL_STATUS_OK);
+   \       0x60   0xD004             BEQ.N    ??sl_iostream_eusart_init_inst0_0
+   \       0x62   0x21B7             MOVS     R1,#+183
+   \       0x64   0xF105 0x003C      ADD      R0,R5,#+60
+   \       0x68   0x.... 0x....      BL       assertEFM
+    184          
+    185             
+    186          
+    187            return status;
+   \                     ??sl_iostream_eusart_init_inst0_0: (+1)
+   \       0x6C   0x4620             MOV      R0,R4
+   \       0x6E   0xB017             ADD      SP,SP,#+92
+   \       0x70   0xBD30             POP      {R4,R5,PC}
+    188          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x....'....        DC32 sl_peripheral_val_euart0
+   \        0x4   0x00               DC8 0
+   \        0x5                      DS8 3
+   \        0x8   0x0000'2580        DC32 9'600
+   \        0xC   0x00 0x02          DC8 0, 2, 0
+   \              0x00
+   \        0xF                      DS8 1
+   \       0x10   0x....'....        DC32 SL_BUS_CLOCK_EUART0_VALUE
+   \       0x14   0x00 0x05          DC8 0, 5, 0, 6
+   \              0x00 0x06
+   \       0x18                      DS8 4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00
+   \        0xE                      DS8 2
+   \       0x10   0x5A03'0034        DC32 0x5a03'0034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_5:
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00
+   \        0xE                      DS8 2
+   \       0x10   0x5A03'003C        DC32 0x5a03'003c
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0                      DS8 20
+   \       0x14                      DS8 20
+   \       0x28   0x....'....        DC32 rx_buffer_inst0, 32
+   \              0x0000'0020
+   \       0x30   0x00 0x00          DC8 0, 0, 1, 0, 0
+   \              0x01 0x00    
+   \              0x00
+   \       0x35                      DS8 3
+   \       0x38   0x....'....        DC32 uart_periph_inst0
+   \       0x3C   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \       0x44   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x4C   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x54   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x5C   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x64   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x6C   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x74   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x61, 0x75, 0x74, 0x6F, 0x67
+   \              0x5C 0x61    
+   \              0x75 0x74    
+   \              0x6F 0x67
+   \       0x7C   0x65 0x6E          DC8 0x65, 0x6E, 0x5C, 0x73, 0x6C, 0x5F, 0x69, 0x6F
+   \              0x5C 0x73    
+   \              0x6C 0x5F    
+   \              0x69 0x6F
+   \       0x84   0x73 0x74          DC8 0x73, 0x74, 0x72, 0x65, 0x61, 0x6D, 0x5F, 0x69
+   \              0x72 0x65    
+   \              0x61 0x6D    
+   \              0x5F 0x69
+   \       0x8C   0x6E 0x69          DC8 0x6E, 0x69, 0x74, 0x5F, 0x65, 0x75, 0x73, 0x61
+   \              0x74 0x5F    
+   \              0x65 0x75    
+   \              0x73 0x61
+   \       0x94   0x72 0x74          DC8 0x72, 0x74, 0x5F, 0x69, 0x6E, 0x73, 0x74, 0x61
+   \              0x5F 0x69    
+   \              0x6E 0x73    
+   \              0x74 0x61
+   \       0x9C   0x6E 0x63          DC8 0x6E, 0x63, 0x65, 0x73, 0x2E, 0x63, 0
+   \              0x65 0x73    
+   \              0x2E 0x63    
+   \              0x00
+   \       0xA3                      DS8 1
+    189          
+    190          
+    191          
+
+   \                                 In section .text, align 2, keep-with-next
+    192          void sl_iostream_eusart_init_instances(void)
+    193          {
+    194            
+    195            // Enable power manager notifications
+    196            sl_power_manager_subscribe_em_transition_event(&events_handle, &events_info);
+   \                     sl_iostream_eusart_init_instances: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable7_4
+   \        0x2   0xB580             PUSH     {R7,LR}
+   \        0x4   0xF101 0x0008      ADD      R0,R1,#+8
+   \        0x8   0x.... 0x....      BL       sl_power_manager_subscribe_em_transition_event
+    197             
+    198            // Instantiate eusart instance(s) 
+    199            
+    200            sl_iostream_eusart_init_inst0();
+   \        0xC   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x10   0x....             B.N      sl_iostream_eusart_init_inst0
+    201            
+    202          }
+    203          
+    204          
+
+   \                                 In section .text, align 2, keep-with-next
+    205          void SL_IOSTREAM_EUSART_TX_IRQ_HANDLER(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO)(void)
+    206          {
+    207            sl_iostream_eusart_irq_handler(&sl_iostream_inst0);
+   \                     EUART0_TX_IRQHandler: (+1)
+   \        0x0   0x....             B.N      ?Subroutine0
+    208          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable7_3
+   \        0x2   0x.... 0x....      B.W      sl_iostream_eusart_irq_handler
+    209          
+
+   \                                 In section .text, align 4, keep-with-next
+    210          void SL_IOSTREAM_EUSART_RX_IRQ_HANDLER(SL_IOSTREAM_EUSART_INST0_PERIPHERAL_NO)(void)
+    211          {
+    212            sl_iostream_eusart_irq_handler(&sl_iostream_inst0);
+   \                     EUART0_RX_IRQHandler: (+1)
+   \        0x0   0xBF00             Nop
+   \        0x2                      REQUIRE ?Subroutine0
+   \        0x2                      ; // Fall through to label ?Subroutine0
+    213          }
+    214          
+    215          
+    216          
+    217           
+
+   \                                 In section .text, align 2, keep-with-next
+    218          sl_power_manager_on_isr_exit_t sl_iostream_eusart_inst0_sleep_on_isr_exit(void)
+    219          {
+    220            return sl_iostream_uart_sleep_on_isr_exit(&sl_iostream_inst0);
+   \                     sl_iostream_eusart_inst0_sleep_on_isr_exit: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable7_3
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0x6A49             LDR      R1,[R1, #+36]
+   \        0x6   0x4708             BX       R1
+    221          }
+    222          
+    223           
+
+   \                                 In section .text, align 2, keep-with-next
+    224          static void events_handler(sl_power_manager_em_t from,
+    225                                     sl_power_manager_em_t to)
+    226          {
+    227            (void) from;
+    228            if (to == SL_POWER_MANAGER_EM0) {
+   \                     events_handler: (+1)
+   \        0x0   0x0008             MOVS     R0,R1
+   \        0x2   0xD105             BNE.N    ??events_handler_0
+    229              
+    230              if (sl_iostream_uart_inst0_handle->stream.context != NULL) {
+   \        0x4   0x....             LDR.N    R0,??DataTable7_5
+   \        0x6   0x6800             LDR      R0,[R0, #+0]
+   \        0x8   0x6801             LDR      R1,[R0, #+0]
+   \        0xA   0xB151             CBZ.N    R1,??events_handler_1
+    231                sl_iostream_uart_wakeup(sl_iostream_uart_inst0_handle);
+   \        0xC   0x.... 0x....      B.W      sl_iostream_uart_wakeup
+    232              }
+    233              
+    234            } else if (to < SL_POWER_MANAGER_EM2){
+   \                     ??events_handler_0: (+1)
+   \       0x10   0x2902             CMP      R1,#+2
+   \       0x12   0xDA06             BGE.N    ??events_handler_1
+    235              // Only prepare for sleep to EM2 or less
+    236              
+    237              if (sl_iostream_uart_inst0_handle->stream.context != NULL) {
+   \       0x14   0x....             LDR.N    R0,??DataTable7_5
+   \       0x16   0x6800             LDR      R0,[R0, #+0]
+   \       0x18   0x6801             LDR      R1,[R0, #+0]
+   \       0x1A   0x2900             CMP      R1,#+0
+   \       0x1C   0xBF18             IT       NE
+    238                sl_iostream_uart_prepare_for_sleep(sl_iostream_uart_inst0_handle);
+   \       0x1E   0x.... 0x....      BNE.W    sl_iostream_uart_prepare_for_sleep
+    239              }
+    240              
+    241            }
+    242          }
+   \                     ??events_handler_1: (+1)
+   \       0x22   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x....'....        DC32     SL_DMA_SIGNAL_EUART0_RXFL_VALUE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x....'....        DC32     SL_DMA_SIGNAL_EUART0_TXFL_VALUE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x....'....        DC32     sl_iostream_inst0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x....'....        DC32     events_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x....'....        DC32     sl_iostream_uart_inst0_handle
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x69 0x6E          DC8 "inst0"
+   \              0x73 0x74    
+   \              0x30 0x00
+   \        0x6                      DS8 2
+    243          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   EUART0_RX_IRQHandler
+         0   -> sl_iostream_eusart_irq_handler
+       0   EUART0_TX_IRQHandler
+         0   -> sl_iostream_eusart_irq_handler
+       0   events_handler
+         0   -> sl_iostream_uart_prepare_for_sleep
+         0   -> sl_iostream_uart_wakeup
+     104   sl_iostream_eusart_init_inst0
+       104   -> __aeabi_memcpy4
+       104   -> assertEFM
+       104   -> sl_iostream_eusart_init
+       8   sl_iostream_eusart_init_instances
+         0   -> sl_iostream_eusart_init_inst0
+         8   -> sl_power_manager_subscribe_em_transition_event
+       0   sl_iostream_eusart_inst0_sleep_on_isr_exit
+         0   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       6  ?Subroutine0
+       8  ?_0
+     164  ?_1
+      28  ?_3
+      20  ?_4
+      20  ?_5
+       2  EUART0_RX_IRQHandler
+       2  EUART0_TX_IRQHandler
+      36  events_handler
+      16  events_info
+          events_handle
+      32  rx_buffer_inst0
+     114  sl_iostream_eusart_init_inst0
+      18  sl_iostream_eusart_init_instances
+       8  sl_iostream_eusart_inst0_sleep_on_isr_exit
+     228  sl_iostream_inst0
+          context_inst0
+       4  sl_iostream_inst0_handle
+      16  sl_iostream_instance_inst0_info
+       4  sl_iostream_uart_inst0_handle
+      20  uart_periph_inst0
+
+ 
+ 260 bytes in section .bss
+  60 bytes in section .data
+ 172 bytes in section .rodata
+ 278 bytes in section .text
+ 
+ 278 bytes of CODE  memory
+ 172 bytes of CONST memory
+ 320 bytes of DATA  memory
+
+Errors: none
+Warnings: none

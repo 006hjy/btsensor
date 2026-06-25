@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  09:24:50
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:51
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -27,8 +27,7 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
-#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir
@@ -86,6 +85,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
@@ -112,8 +113,6 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
 #        -I
-#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
-#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
 #        --dependencies=n
@@ -139,13 +138,13 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_spidrv_ini
       3          #include "sl_assert.h"
       4          
       5          
-      6          #include "sl_spidrv_TPL0501_config.h"
+      6          #include "sl_spidrv_tpl0501_config.h"
 
    \                                 In section .bss, align 4
-      7          SPIDRV_HandleData_t sl_spidrv_TPL0501_handle_data;
-   \                     sl_spidrv_TPL0501_handle_data:
+      7          SPIDRV_HandleData_t sl_spidrv_tpl0501_handle_data;
+   \                     sl_spidrv_tpl0501_handle_data:
    \        0x0                      DS8 172
-      8          SPIDRV_Handle_t sl_spidrv_TPL0501_handle = &sl_spidrv_TPL0501_handle_data;
+      8          SPIDRV_Handle_t sl_spidrv_tpl0501_handle = &sl_spidrv_tpl0501_handle_data;
       9          
 
    \                                 In section .bss, align 4
@@ -154,10 +153,10 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_spidrv_ini
    \        0x0                      DS8 4
 
    \                                 In section .data, align 4
-   \                     sl_spidrv_TPL0501_handle:
-   \        0x0   0x....'....        DC32 sl_spidrv_TPL0501_handle_data
-     11          SPIDRV_Init_t sl_spidrv_init_TPL0501 = {
-   \                     sl_spidrv_init_TPL0501:
+   \                     sl_spidrv_tpl0501_handle:
+   \        0x0   0x....'....        DC32 sl_spidrv_tpl0501_handle_data
+     11          SPIDRV_Init_t sl_spidrv_init_tpl0501 = {
+   \                     sl_spidrv_init_tpl0501:
    \        0x4   0x5005'C000        DC32 0x5005'c000
    \        0x8   0x02 0x02          DC8 2, 2, 2, 2, 0, 1, 2, 3
    \              0x02 0x02    
@@ -209,12 +208,12 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_spidrv_ini
      46          void sl_spidrv_init_instances(void) {
    \                     sl_spidrv_init_instances: (+1)
    \        0x0   0xB510             PUSH     {R4,LR}
-     47            SPIDRV_Init(sl_spidrv_TPL0501_handle, &sl_spidrv_init_TPL0501); 
+     47            SPIDRV_Init(sl_spidrv_tpl0501_handle, &sl_spidrv_init_tpl0501); 
    \        0x2   0x....             LDR.N    R4,??DataTable1
    \        0x4   0x6820             LDR      R0,[R4, #+0]
    \        0x6   0x1D21             ADDS     R1,R4,#+4
    \        0x8   0x.... 0x....      BL       SPIDRV_Init
-     48            sl_spidrv_set_default(sl_spidrv_TPL0501_handle);
+     48            sl_spidrv_set_default(sl_spidrv_tpl0501_handle);
    \        0xC   0x6820             LDR      R0,[R4, #+0]
    \        0xE   0xE8BD 0x4010      POP      {R4,LR}
    \       0x12                      REQUIRE sl_spidrv_set_default
@@ -259,7 +258,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_spidrv_ini
 
    \                                 In section .text, align 4, keep-with-next
    \                     ??DataTable1:
-   \        0x0   0x....'....        DC32     sl_spidrv_TPL0501_handle
+   \        0x0   0x....'....        DC32     sl_spidrv_tpl0501_handle
 
    \                                 In section .text, align 4, keep-with-next
    \                     ??DataTable1_1:
@@ -283,12 +282,12 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_spidrv_ini
    -----  --------------
        4  ??DataTable1
        4  ??DataTable1_1
-      36  sl_spidrv_TPL0501_handle
-          sl_spidrv_init_TPL0501
-     172  sl_spidrv_TPL0501_handle_data
        6  sl_spidrv_get_default
       18  sl_spidrv_init_instances
       14  sl_spidrv_set_default
+      36  sl_spidrv_tpl0501_handle
+          sl_spidrv_init_tpl0501
+     172  sl_spidrv_tpl0501_handle_data
        4  sli_spidrv_default_handle
 
  

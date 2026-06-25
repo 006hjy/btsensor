@@ -10,7 +10,7 @@ referenced in this SBOM.)
 -->
 <bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1">
   <metadata>
-    <timestamp>2026-06-24T08:29:09Z</timestamp>
+    <timestamp>2026-06-25T07:15:17Z</timestamp>
     <authors>
       <author>
         <name>Silicon Laboratories, Inc.</name>
@@ -65,6 +65,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init" type="library">
+          <name>GPIO Init</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_iadc" type="library">
           <name>IADC</name>
           <version>2026.6.0</version>
@@ -87,6 +97,16 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:i2cspm" type="library">
           <name>I2CSPM</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:iostream_eusart" type="library">
+          <name>IO Stream: EUSART</name>
           <version>2026.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -127,16 +147,6 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:tempdrv" type="library">
           <name>TEMPDRV</name>
-          <version>2026.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="silabs.simplicity_sdk:2026.6.0:uartdrv_eusart" type="library">
-          <name>UARTDRV EUSART</name>
           <version>2026.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -565,16 +575,6 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
-        <component bom-ref="silabs.simplicity_sdk:2026.6.0:emlib_usart" type="library">
-          <name>USART</name>
-          <version>2026.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:enum" type="library">
           <name>Enumerations</name>
           <version>2026.6.0</version>
@@ -625,8 +625,28 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_eusart" type="library">
+          <name>EUSART</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_gpio" type="library">
           <name>GPIO</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init_common" type="library">
+          <name>GPIO Init Core</name>
           <version>2026.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -647,6 +667,26 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_ldma" type="library">
           <name>LDMA</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_prs" type="library">
+          <name>PRS</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_prs_impl" type="library">
+          <name>PRS_IMPL</name>
           <version>2026.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -727,6 +767,36 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:interrupt_manager_cortexm" type="library">
           <name>Interrupt Manager Cortex-M</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:iostream" type="library">
+          <name>IO Stream</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:iostream_eusart_core" type="library">
+          <name>IO Stream: EUSART Core</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:iostream_uart_common" type="library">
+          <name>IO Stream: Common code for UART-type streams</name>
           <version>2026.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -965,6 +1035,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:sl_string" type="library">
+          <name>String Functions</name>
+          <version>2026.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:sleeptimer" type="library">
           <name>Sleep Timer</name>
           <version>2026.6.0</version>
@@ -997,16 +1077,6 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="silabs.simplicity_sdk:2026.6.0:status" type="library">
           <name>Status Codes Definitions</name>
-          <version>2026.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="silabs.simplicity_sdk:2026.6.0:uartdrv_core" type="library">
-          <name>UARTDRV Core</name>
           <version>2026.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -1055,18 +1125,8 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
-        <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init" type="library">
-          <name>GPIO Init</name>
-          <version>2026.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init_common" type="library">
-          <name>GPIO Init Core</name>
+        <component bom-ref="silabs.simplicity_sdk:2026.6.0:emlib_usart" type="library">
+          <name>USART</name>
           <version>2026.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>

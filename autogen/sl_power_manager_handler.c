@@ -3,7 +3,7 @@
 #include "sl_power_manager.h"
 #include "sl_sleeptimer.h"
 #include "sl_common.h"
-#include "uartdrv.h"
+#include "sl_iostream_init_eusart_instances.h"
 
 /***************************************************************************//**
  * Check if the MCU can sleep at that time. This function is called when the system
@@ -82,7 +82,7 @@ bool sl_power_manager_sleep_on_isr_exit(void)
   // Most of the time we want to get back to sleep until the next event occurs.
   sleep = sl_power_manager_is_latest_wakeup_internal();
 
-  answer = sl_uartdrv_sleep_on_isr_exit();
+  answer = sl_iostream_eusart_inst0_sleep_on_isr_exit();
   if (answer == SL_POWER_MANAGER_WAKEUP) {
     force_wakeup = true;
   } else if (answer == SL_POWER_MANAGER_SLEEP) {

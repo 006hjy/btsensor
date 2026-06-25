@@ -7,7 +7,7 @@ extern "C" {
 
 #include "sl_status.h"
 #include "spidrv.h"
-extern SPIDRV_Handle_t sl_spidrv_TPL0501_handle;
+extern SPIDRV_Handle_t sl_spidrv_tpl0501_handle;
 
 void sl_spidrv_init_instances(void);
 

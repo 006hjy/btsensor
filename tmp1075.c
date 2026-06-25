@@ -12,8 +12,7 @@
  * @brief 从 TMP1075 传感器获取当前摄氏温度值
  * @return float 返回当前温度值（摄氏度）；若 I2C 通信失败则返回 -999.0f
  */
-float tmp1075_get_temperature(void)
-{
+float tmp1075_get_temperature(void) {
     uint8_t reg_pointer = TMP1075_REG_TEMP;
     uint8_t read_buffer[2] = {0, 0};
 
@@ -35,15 +34,14 @@ float tmp1075_get_temperature(void)
     // 2. 执行阻塞式 I2C 传输
     ret = I2CSPM_Transfer(sl_i2cspm_tmp1075, &seq);
 
-    if (ret != i2cTransferDone)
-    {
+    if (ret != i2cTransferDone) {
         // 如果通信失败，返回一个超出芯片量程的异常值作为错误标识
         return -999.0f;
     }
 
     // 3. 数据解析与转换（大端序转为有符号 16 位整数）
     volatile int16_t raw_data = (int16_t)((read_buffer[0] << 8) | read_buffer[1]);
-    
+
     // 直接返回浮点计算后的温度值
-    return (float)raw_data / 256.0f;
+    return (float) raw_data / 256.0f;
 }

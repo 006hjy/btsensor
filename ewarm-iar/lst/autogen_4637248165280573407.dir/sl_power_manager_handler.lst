@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  09:24:50
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:51
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -27,8 +27,7 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
-#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\autogen_4637248165280573407.dir
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\autogen_4637248165280573407.dir
@@ -86,6 +85,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
@@ -112,8 +113,6 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
 #        -I
-#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
-#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
 #        --dependencies=n
@@ -139,7 +138,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
       3          #include "sl_power_manager.h"
       4          #include "sl_sleeptimer.h"
       5          #include "sl_common.h"
-      6          #include "uartdrv.h"
+      6          #include "sl_iostream_init_eusart_instances.h"
       7          
       8          /***************************************************************************//**
       9           * Check if the MCU can sleep at that time. This function is called when the system
@@ -155,7 +154,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
      19           ******************************************************************************/
      20            SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
 
-   \                                 In section text_power_manager_timecritical7020, align 2
+   \                                 In section text_power_manager_timecritical6320, align 2
      21          SL_WEAK bool app_is_ok_to_sleep(void)
      22          {
      23            return true;
@@ -184,7 +183,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
      43           ******************************************************************************/
      44           SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
 
-   \                                 In section text_power_manager_timecritical7144, align 2
+   \                                 In section text_power_manager_timecritical6444, align 2
      45          SL_WEAK sl_power_manager_on_isr_exit_t app_sleep_on_isr_exit(void)
      46          {
      47            return SL_POWER_MANAGER_IGNORE;
@@ -201,7 +200,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
      55           ******************************************************************************/
      56           SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
 
-   \                                 In section text_power_manager_timecritical7256, align 2, keep-with-next
+   \                                 In section text_power_manager_timecritical6556, align 2, keep-with-next
      57          bool sl_power_manager_is_ok_to_sleep(void)
      58          {
    \                     sl_power_manager_is_ok_to_sleep: (+1)
@@ -228,7 +227,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
      71           ******************************************************************************/
      72           SL_CODE_CLASSIFY(SL_CODE_COMPONENT_POWER_MANAGER, SL_CODE_CLASS_TIME_CRITICAL)
 
-   \                                 In section text_power_manager_timecritical7372, align 2, keep-with-next
+   \                                 In section text_power_manager_timecritical6672, align 2, keep-with-next
      73          bool sl_power_manager_sleep_on_isr_exit(void)
      74          {
    \                     sl_power_manager_sleep_on_isr_exit: (+1)
@@ -246,8 +245,8 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
    \        0x6   0x4605             MOV      R5,R0
    \        0x8   0x2400             MOVS     R4,#+0
      84          
-     85            answer = sl_uartdrv_sleep_on_isr_exit();
-   \        0xA   0x.... 0x....      BL       sl_uartdrv_sleep_on_isr_exit
+     85            answer = sl_iostream_eusart_inst0_sleep_on_isr_exit();
+   \        0xA   0x.... 0x....      BL       sl_iostream_eusart_inst0_sleep_on_isr_exit
      86            if (answer == SL_POWER_MANAGER_WAKEUP) {
    \        0xE   0x2804             CMP      R0,#+4
    \       0x10   0xBF08             IT       EQ
@@ -299,8 +298,8 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
          8   -> app_is_ok_to_sleep
       16   sl_power_manager_sleep_on_isr_exit
         16   -> app_sleep_on_isr_exit
+        16   -> sl_iostream_eusart_inst0_sleep_on_isr_exit
         16   -> sl_power_manager_is_latest_wakeup_internal
-        16   -> sl_uartdrv_sleep_on_isr_exit
 
 
    Section sizes:
@@ -313,10 +312,10 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_power_mana
       50  sl_power_manager_sleep_on_isr_exit
 
  
-  4 bytes in section text_power_manager_timecritical7020
-  4 bytes in section text_power_manager_timecritical7144
- 16 bytes in section text_power_manager_timecritical7256
- 50 bytes in section text_power_manager_timecritical7372
+  4 bytes in section text_power_manager_timecritical6320
+  4 bytes in section text_power_manager_timecritical6444
+ 16 bytes in section text_power_manager_timecritical6556
+ 50 bytes in section text_power_manager_timecritical6672
  
  66 bytes of CODE memory (+ 8 bytes shared)
 

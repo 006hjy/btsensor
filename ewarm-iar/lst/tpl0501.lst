@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  09:24:55
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:57
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -27,8 +27,7 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
-#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\
@@ -86,6 +85,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
@@ -111,8 +112,6 @@
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
-#        -I
-#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
@@ -164,7 +163,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tpl0501.c
      23             */
      24          
      25            // 调用 SPIDRV 的阻塞式主机发送函数发送 1 个字节
-     26            ret = SPIDRV_MTransmitB(sl_spidrv_TPL0501_handle, &tx_data, 1);
+     26            ret = SPIDRV_MTransmitB(sl_spidrv_tpl0501_handle, &tx_data, 1);
      27          
      28            /* * 如果是情况 B（手动控制 CS），发送完毕后必须拉高 CS 以锁存数据：
      29             * GPIO_PinOutSet(TPL0501_CS_PORT, TPL0501_CS_PIN);
@@ -185,7 +184,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tpl0501.c
    \       0x18   0xBD02             POP      {R1,PC}
    \       0x1A   0xBF00             Nop
    \                     ??tpl0501_set_wiper_0:
-   \       0x1C   0x....'....        DC32     sl_spidrv_TPL0501_handle
+   \       0x1C   0x....'....        DC32     sl_spidrv_tpl0501_handle
      36            }
      37          }
 

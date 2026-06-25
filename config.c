@@ -5,6 +5,7 @@
 #include <config.h>
 #include <stdlib.h>
 #include <string.h>
+#include "tpl0501.h"
 
 Config_t my_config = {0};
 
@@ -23,9 +24,9 @@ uint8_t read_config(void) {
   // 如果是首次运行（Flash 里无此 Key），赋初始默认值
   if (status == ECODE_NVM3_ERR_KEY_NOT_FOUND) {
     my_config.boot_count = 0;
-    my_config.alarm_threshold = 500;
     my_config.selfset = 0x01;
     my_config.temp_way = 0x00;
+    my_config.gain = 0xCF;
 
     // 【可选】首次初始化时直接将默认值固化到 Flash
     // nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_CONFIG, &my_config,
@@ -53,13 +54,22 @@ uint8_t write_config(void) {
 }
 
 void config_init(void) {
+
   // 1. 读取配置（若首次运行会自动加载默认值）
   read_config();
+
   // 设置selfset引脚状态
+  my_config.selfset = 0x00;
   sl_hal_gpio_set_pin_mode(&(sl_gpio_t){.port = SL_HAL_GPIO_INIT_PA00_PORT,
                                         .pin = SL_HAL_GPIO_INIT_PA00_PIN},
                            SL_HAL_GPIO_INIT_PA00_MODE,
                            my_config.selfset);
+
+  // 设置gain阻值
+  my_config.gain=0xCF;
+  tpl0501_set_wiper(my_config.gain);
+
+  write_config();
 }
 
 /**

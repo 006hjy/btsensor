@@ -13,7 +13,7 @@ DocumentNamespace: https://silabs.com
 
 ## Creation Information
 Creator: Organization: Silicon Laboratories, Inc.
-Created: 2026-06-24T08:29:09Z
+Created: 2026-06-25T07:15:17Z
 ## Relationships
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-silabs.simplicity_sdk-2026.6.0
 
@@ -29,14 +29,15 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.sim
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-clock_manager
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-device_init
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_eusart
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_iadc
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_letimer
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-i2cspm
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-nvm3_source
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-power_manager
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_main
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-tempdrv
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_eusart
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-agents_md
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-atomic
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-bit
@@ -77,15 +78,18 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.sim
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_syscfg
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_system
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_timer
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-enum
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-errno_error_codes
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-event_handler
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-gpio
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_common
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_eusart
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_i2c
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_ldma
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs_impl
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_syscfg
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_syscfg_impl
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_system
@@ -94,6 +98,9 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.sim
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-i2cspm_core
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-interrupt_manager
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-interrupt_manager_cortexm
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart_core
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_uart_common
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-memory_manager
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-memory_manager_pool
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-memory_manager_pool_common
@@ -117,17 +124,16 @@ Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.sim
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_main_init
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_main_memory_init
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_main_process_action
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_string
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-sleeptimer
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-sleeptimer_cortexm
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-slist
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-status
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_core
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-udelay
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-udelay_cortexm
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-spidrv
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-spidrv_core
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0 CONTAINS SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart
 
 ## Package Information
 PackageName: EFM32PG22C200F512IM32
@@ -174,6 +180,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_eusart CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
+PackageName: GPIO Init
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
 PackageName: IADC
 SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_iadc
 PackageVersion: 2026.6.0
@@ -205,6 +222,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-i2cspm CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
+PackageName: IO Stream: EUSART
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
 PackageName: NVM3 Core (source)
@@ -249,17 +277,6 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-tempdrv CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
-
-## Package Information
-PackageName: UARTDRV EUSART
-SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_eusart
-PackageVersion: 2026.6.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_eusart CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
 PackageName: AGENTS.md
@@ -717,17 +734,6 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_timer CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
-PackageName: USART
-SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart
-PackageVersion: 2026.6.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
-
-## Package Information
 PackageName: Enumerations
 SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-enum
 PackageVersion: 2026.6.0
@@ -783,6 +789,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_common CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
+PackageName: EUSART
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_eusart
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_eusart CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
 PackageName: GPIO
 SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio
 PackageVersion: 2026.6.0
@@ -792,6 +809,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
+PackageName: GPIO Init Core
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
 PackageName: I2C
@@ -814,6 +842,28 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_ldma CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
+PackageName: PRS
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
+PackageName: PRS_IMPL
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs_impl
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs_impl CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
 PackageName: SYSCFG
@@ -902,6 +952,39 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-interrupt_manager_cortexm CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
+PackageName: IO Stream
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
+PackageName: IO Stream: EUSART Core
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart_core
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart_core CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
+PackageName: IO Stream: Common code for UART-type streams
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_uart_common
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_uart_common CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
 PackageName: Memory Manager
@@ -1157,6 +1240,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_main_process_action CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
+PackageName: String Functions
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_string
+PackageVersion: 2026.6.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_string CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+
+## Package Information
 PackageName: Sleep Timer
 SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-sleeptimer
 PackageVersion: 2026.6.0
@@ -1199,17 +1293,6 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-status CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
-
-## Package Information
-PackageName: UARTDRV Core
-SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_core
-PackageVersion: 2026.6.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_core CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
 PackageName: Microsecond Delay
@@ -1256,23 +1339,12 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-spidrv_core CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
 
 ## Package Information
-PackageName: GPIO Init
-SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init
+PackageName: USART
+SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart
 PackageVersion: 2026.6.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
 PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
-
-## Package Information
-PackageName: GPIO Init Core
-SPDXID: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common
-PackageVersion: 2026.6.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0
+Relationship: SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart CONTAINED_BY SPDXRef-silabs.simplicity_sdk-2026.6.0

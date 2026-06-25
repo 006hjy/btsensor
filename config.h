@@ -4,10 +4,10 @@
 #include <stdint.h>
 
 typedef struct {
-    uint32_t boot_count;      // 启动次数 (4字节)
-    uint16_t alarm_threshold; // 报警阈值 (2字节)
-    uint8_t  selfset;         // selfset引脚输出电平 (1字节)
-    uint8_t  temp_way;        // 预留字节，用于内存对齐 (1字节)
+    uint32_t boot_count;
+    uint8_t  selfset;
+    uint8_t  temp_way;
+    uint8_t  gain;
 } Config_t;
 
 #define STORAGE_KEY_CONFIG 0x00022

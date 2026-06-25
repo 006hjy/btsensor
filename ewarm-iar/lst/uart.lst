@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  09:24:55
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:56
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode          =  thumb
@@ -27,8 +27,7 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
-#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\
@@ -86,6 +85,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
@@ -112,8 +113,6 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
 #        -I
-#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
-#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
 #        --dependencies=n
@@ -128,185 +127,83 @@
 #    Runtime model:       
 #      __CPP_Runtime   =  1
 #      __SystemLibrary =  DLib
-#      __dlib_version  =  6
 #
 ###############################################################################
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\uart.c
-      1          #include "em_eusart.h"
-      2          
-      3          #define UART0_RX_BUFF_MAX_LEN 128
-
-   \                                 In section .bss, align 4
-      4          uint8_t uart0_rx_buff[UART0_RX_BUFF_MAX_LEN];
-   \                     uart0_rx_buff:
-   \        0x0                      DS8 128
-
-   \                                 In section .bss, align 1
-      5          uint8_t uart0_rx_buff_len = 0;
-   \                     uart0_rx_buff_len:
-   \        0x0                      DS8 1
-
-   \                                 In section .bss, align 4
-      6          uint32_t wait_for_uart = 0x0;
-   \                     wait_for_uart:
-   \        0x0                      DS8 4
-
-   \                                 In section .bss, align 1
-      7          uint8_t rx_data = 0;
-   \                     rx_data:
-   \        0x0                      DS8 1
-      8          
-      9          
-
-   \                                 In section .text, align 2, keep-with-next
-     10          void EUART0_RX_IRQHandler(void)
-     11          {
-   \                     EUART0_RX_IRQHandler: (+1)
-   \        0x0   0xB510             PUSH     {R4,LR}
-     12              // 1. 读取当前已经触发、且被使能了的中断标志位
-     13              uint32_t flags = EUSART_IntGetEnabled(EUART0);
-   \        0x2   0x....             LDR.N    R4,??DataTable2
-   \        0x4   0x6CA0             LDR      R0,[R4, #+72]
-   \        0x6   0x6C61             LDR      R1,[R4, #+68]
-     14          
-     15              // 2. 检查是否是 RXFL（接收 FIFO 达到阈值）引发的中断
-     16              if (flags & EUSART_IF_RXFL) {
-   \        0x8   0x4008             ANDS     R0,R0,R1
-   \        0xA   0x0740             LSLS     R0,R0,#+29
-   \        0xC   0xD509             BPL.N    ??EUART0_RX_IRQHandler_0
-     17                  
-     18                  // 3. 从硬件中取出这个字节（由于已经进中断，此时读取绝对不会发生死等阻塞）
-     19                  uint8_t received_byte = EUSART_Rx(EUART0);
-   \        0xE   0x4620             MOV      R0,R4
-   \       0x10   0x.... 0x....      BL       EUSART_Rx
-     20                  // 回显测试
-     21                  EUSART_Tx(EUART0, received_byte);
-   \       0x14   0x4601             MOV      R1,R0
-   \       0x16   0x4620             MOV      R0,R4
-   \       0x18   0x.... 0x....      BL       EUSART_Tx
-     22          
-     23                  // 5. 【非常重要】显式清除中断标志位，否则程序会卡死在中断里出不来
-     24                  EUSART_IntClear(EUART0, EUSART_IF_RXFLIF);
-   \       0x1C   0x2004             MOVS     R0,#+4
-   \       0x1E   0x....             LDR.N    R1,??DataTable2_1
-   \       0x20   0x6008             STR      R0,[R1, #+0]
-     25              }
-     26          }
-   \                     ??EUART0_RX_IRQHandler_0: (+1)
-   \       0x22   0xBD10             POP      {R4,PC}
+      1          //#include "sl_iostream.h"          // IO Stream 核心 API
+      2          //#include "sl_iostream_handles.h"  // 包含自动生成的实例句柄（如 sl_iostream_inst0_handle）
+      3          
+      4          // #include "em_eusart.h"
+      5          
+      6          // #define UART0_RX_BUFF_MAX_LEN 128
+      7          // uint8_t uart0_rx_buff[UART0_RX_BUFF_MAX_LEN];
+      8          // uint8_t uart0_rx_buff_len = 0;
+      9          // uint32_t wait_for_uart = 0x0;
+     10          // uint8_t rx_data = 0;
+     11          
+     12          // void EUART0_RX_IRQHandler(void) {
+     13          //   // 获取当前已使能且挂起的中断标志位
+     14          //   uint32_t flags = EUSART_IntGetEnabled(EUART0);
+     15          
+     16          //   if (flags & EUSART_IF_RXFL) {
+     17          //     // 读取接收到的数据
+     18          //     // 注意：调用 EUSART_Rx() 将数据移出 FIFO 后，硬件会自动清除 RXFL
+     19          //     // 中断标志，无需手动 Clear
+     20          //     uint8_t receivedData = EUSART_Rx(EUART0);
+     21          
+     22          //     // 在这里处理你接收到的数据，此时 MCU 已经被唤醒回到了 EM0 模式
+     23          //     // 回显测试
+     24          //     EUSART_Tx(EUART0, receivedData);
+     25          //   }
+     26          // }
      27          
-     28          
-
-   \                                 In section .text, align 2, keep-with-next
-     29          void uart_init(void)
-     30          {
-   \                     uart_init: (+1)
-   \        0x0   0xB580             PUSH     {R7,LR}
-     31            sl_interrupt_manager_clear_irq_pending(EUART0_RX_IRQn);
-   \        0x2   0x203E             MOVS     R0,#+62
-   \        0x4   0x.... 0x....      BL       sl_interrupt_manager_clear_irq_pending
-     32            sl_interrupt_manager_enable_irq(EUART0_RX_IRQn);
-   \        0x8   0x203E             MOVS     R0,#+62
-   \        0xA   0x.... 0x....      BL       sl_interrupt_manager_enable_irq
-     33            EUSART_IntEnable(EUART0, EUSART_IEN_RXFLIEN);
-   \        0xE   0x2004             MOVS     R0,#+4
-   \       0x10   0x....             LDR.N    R1,??DataTable2_2
-   \       0x12   0x6008             STR      R0,[R1, #+0]
-     34          }
-   \       0x14   0xBD01             POP      {R0,PC}
-     35          
-     36          // void eusart_init(void)
-     37          // {
-     38          //   sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_EUSART0);
-     39          
-     40          //   EUSART_UartInit_TypeDef init = EUSART_UART_INIT_DEFAULT_LF;
-     41          //   EUSART_AdvancedInit_TypeDef advance_init = EUSART_ADVANCED_INIT_DEFAULT;
-     42          
-     43          //   init.baudrate = BAUDRATE;
-     44          //   init.advancedSettings = &advance_init;
-     45          
-     46          //   // 使能 DMA 在 RX 时唤醒系统
-     47          //   init.advancedSettings->dmaWakeUpOnRx = true;
-     48          //   init.advancedSettings->dmaHaltOnError = true;
-     49          
-     50          //   // 配置 RX FIFO 水位线
-     51          //   advance_init.RxFifoWatermark = (EUSART_RxFifoWatermark_TypeDef)
-     52          //       ((BUFLEN - 1) << _EUSART_CFG1_RXFIW_SHIFT);
-     53          
-     54          //   // 以低频模式初始化 EUART0
-     55          //   EUSART_UartInitLf(EUART0, &init);
-     56          
-     57          //   // 清除并使能发送完成中断
-     58          //   EUSART_IntClear(EUART0, EUSART_IF_TXC);
-     59          //   EUSART_IntEnable(EUART0, EUSART_IEN_TXC);
-     60          
-     61          //   // 使能 RX 和 TX 中断
-     62          //   sl_interrupt_manager_clear_irq_pending(EUART0_RX_IRQn);
-     63          //   sl_interrupt_manager_enable_irq(EUART0_RX_IRQn);
-     64          
-     65          //   sl_interrupt_manager_clear_irq_pending(EUART0_TX_IRQn);
-     66          //   sl_interrupt_manager_enable_irq(EUART0_TX_IRQn);
-     67          // }
+     28          // void uart_init(void) {
+     29          //   sl_interrupt_manager_clear_irq_pending(EUART0_RX_IRQn);
+     30          //   sl_interrupt_manager_enable_irq(EUART0_RX_IRQn);
+     31          //   EUSART_IntEnable(EUART0, EUSART_IEN_RXFLIEN);
+     32          // }
+     33          
+     34          // // void eusart_init(void)
+     35          // // {
+     36          // //   sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_EUSART0);
+     37          
+     38          // //   EUSART_UartInit_TypeDef init = EUSART_UART_INIT_DEFAULT_LF;
+     39          // //   EUSART_AdvancedInit_TypeDef advance_init = EUSART_ADVANCED_INIT_DEFAULT;
+     40          
+     41          // //   init.baudrate = BAUDRATE;
+     42          // //   init.advancedSettings = &advance_init;
+     43          
+     44          // //   // 使能 DMA 在 RX 时唤醒系统
+     45          // //   init.advancedSettings->dmaWakeUpOnRx = true;
+     46          // //   init.advancedSettings->dmaHaltOnError = true;
+     47          
+     48          // //   // 配置 RX FIFO 水位线
+     49          // //   advance_init.RxFifoWatermark = (EUSART_RxFifoWatermark_TypeDef)
+     50          // //       ((BUFLEN - 1) << _EUSART_CFG1_RXFIW_SHIFT);
+     51          
+     52          // //   // 以低频模式初始化 EUART0
+     53          // //   EUSART_UartInitLf(EUART0, &init);
+     54          
+     55          // //   // 清除并使能发送完成中断
+     56          // //   EUSART_IntClear(EUART0, EUSART_IF_TXC);
+     57          // //   EUSART_IntEnable(EUART0, EUSART_IEN_TXC);
+     58          
+     59          // //   // 使能 RX 和 TX 中断
+     60          // //   sl_interrupt_manager_clear_irq_pending(EUART0_RX_IRQn);
+     61          // //   sl_interrupt_manager_enable_irq(EUART0_RX_IRQn);
+     62          
+     63          // //   sl_interrupt_manager_clear_irq_pending(EUART0_TX_IRQn);
+     64          // //   sl_interrupt_manager_enable_irq(EUART0_TX_IRQn);
+     65          // // }
+     66          
+     67          // void uart_action(void) { EUSART_Tx(EUART0, 0xAB); }
      68          
 
-   \                                 In section .text, align 2, keep-with-next
-     69          void uart_action(void)
-     70          {
-     71            EUSART_Tx(EUART0, 0xAB);
-   \                     uart_action: (+1)
-   \        0x0   0x21AB             MOVS     R1,#+171
-   \        0x2   0x....             LDR.N    R0,??DataTable2
-   \        0x4   0x.... 0x....      B.W      EUSART_Tx
-     72          }
-
-   \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2:
-   \        0x0   0x5A03'0000        DC32     0x5a030000
-
-   \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_1:
-   \        0x0   0x5A03'2044        DC32     0x5a032044
-
-   \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_2:
-   \        0x0   0x5A03'1048        DC32     0x5a031048
-
-   Maximum stack usage in bytes:
-
-   .cstack Function
-   ------- --------
-       8   EUART0_RX_IRQHandler
-         8   -> EUSART_Rx
-         8   -> EUSART_Tx
-       0   uart_action
-         0   -> EUSART_Tx
-       8   uart_init
-         8   -> sl_interrupt_manager_clear_irq_pending
-         8   -> sl_interrupt_manager_enable_irq
-
-
-   Section sizes:
-
-   Bytes  Function/Label
-   -----  --------------
-       4  ??DataTable2
-       4  ??DataTable2_1
-       4  ??DataTable2_2
-      36  EUART0_RX_IRQHandler
-       1  rx_data
-     128  uart0_rx_buff
-       1  uart0_rx_buff_len
-       8  uart_action
-      22  uart_init
-       4  wait_for_uart
 
  
- 134 bytes in section .bss
-  78 bytes in section .text
  
-  78 bytes of CODE memory
- 134 bytes of DATA memory
+ 0 bytes of memory
 
 Errors: none
 Warnings: none

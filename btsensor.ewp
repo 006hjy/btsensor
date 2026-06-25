@@ -251,7 +251,6 @@
                     <state>SL_CODE_COMPONENT_CORE=core</state>
                     <state>SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer</state>
                     <state>SL_CODE_COMPONENT_SPIDRV=spidrv</state>
-                    <state>SL_CODE_COMPONENT_UARTDRV=uartdrv</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -400,6 +399,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc</state>
@@ -413,7 +413,6 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc</state>
                 </option>
                 <option>
@@ -630,7 +629,6 @@
                     <state>SL_CODE_COMPONENT_CORE=core</state>
                     <state>SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer</state>
                     <state>SL_CODE_COMPONENT_SPIDRV=spidrv</state>
-                    <state>SL_CODE_COMPONENT_UARTDRV=uartdrv</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -750,6 +748,7 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm</state>
+                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc</state>
@@ -763,7 +762,6 @@
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc</state>
-                    <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc</state>
                     <state>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc</state>
                 </option>
                 <option>
@@ -1237,7 +1235,10 @@
         <settings>
             <name>BUILDACTION</name>
             <archiveVersion>2</archiveVersion>
-            <data />
+            <data>
+                <prebuild></prebuild>
+                <postbuild></postbuild>
+            </data>
         </settings>
     </configuration>
     <group>
@@ -1287,6 +1288,21 @@
                 <name>$PROJ_DIR$\autogen\sl_i2cspm_instances.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\autogen\sl_iostream_handles.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_iostream_handles.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_iostream_init_eusart_instances.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_iostream_init_eusart_instances.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\autogen\sl_iostream_init_instances.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\autogen\sl_power_manager_handler.c</name>
             </file>
             <file>
@@ -1294,12 +1310,6 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\autogen\sl_spidrv_instances.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\autogen\sl_uartdrv_init.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\autogen\sl_uartdrv_instances.h</name>
             </file>
         </group>
         <group>
@@ -1326,6 +1336,9 @@
                 <name>$PROJ_DIR$\config\sl_i2cspm_tmp1075_config.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\config\sl_iostream_eusart_inst0_config.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\config\sl_memory_manager_config.h</name>
             </file>
             <file>
@@ -1341,16 +1354,10 @@
                 <name>$PROJ_DIR$\config\sl_spidrv_TPL0501_config.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\config\sl_uartdrv_eusart_inst0_config.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\config\spidrv_config.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\config\tempdrv_config.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\config\uartdrv_config.h</name>
             </file>
         </group>
         <group>
@@ -1439,6 +1446,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_status.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sl_string.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\sli_code_classification.h</name>
                             </file>
                         </group>
@@ -1452,6 +1462,9 @@
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\src\sl_slist.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\common\src\sl_string.c</name>
                             </file>
                         </group>
                     </group>
@@ -1784,21 +1797,6 @@
                                 </file>
                             </group>
                         </group>
-                        <group>
-                            <name>uartdrv</name>
-                            <group>
-                                <name>inc</name>
-                                <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\uartdrv.h</name>
-                                </file>
-                            </group>
-                            <group>
-                                <name>src</name>
-                                <file>
-                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\src\uartdrv.c</name>
-                                </file>
-                            </group>
-                        </group>
                     </group>
                     <group>
                         <name>emlib</name>
@@ -1928,6 +1926,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_bus.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_eusart.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_gpio.h</name>
                             </file>
                             <file>
@@ -1941,6 +1942,12 @@
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_letimer.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_prs.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_prs_enums.h</name>
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_syscfg.h</name>
@@ -1964,6 +1971,9 @@
                         <group>
                             <name>src</name>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_eusart.c</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpio.c</name>
                             </file>
                             <file>
@@ -1977,6 +1987,9 @@
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_letimer.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_prs.c</name>
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_syscfg.c</name>
@@ -2138,6 +2151,45 @@
                                 </file>
                                 <file>
                                     <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\sli_interrupt_manager.h</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>iostream</name>
+                            <group>
+                                <name>inc</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\sl_iostream.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\sl_iostream_eusart.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\sl_iostream_uart.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\sli_iostream.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\sli_iostream_dmadrv.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\sli_iostream_uart.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>src</name>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\src\sl_iostream.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\src\sl_iostream_dmadrv.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\src\sl_iostream_eusart.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\src\sl_iostream_uart.c</name>
                                 </file>
                             </group>
                         </group>
@@ -2312,6 +2364,27 @@
         </group>
         <file>
             <name>$PROJ_DIR$\AGENTS.md</name>
+            <excluded>
+                <configuration>Default</configuration>
+            </excluded>
+            <excluded>
+                <configuration>Default</configuration>
+            </excluded>
+            <excluded>
+                <configuration>Default</configuration>
+            </excluded>
+            <excluded>
+                <configuration>Default</configuration>
+            </excluded>
+            <excluded>
+                <configuration>Default</configuration>
+            </excluded>
+            <excluded>
+                <configuration>Default</configuration>
+            </excluded>
+            <excluded>
+                <configuration>Default</configuration>
+            </excluded>
             <excluded>
                 <configuration>Default</configuration>
             </excluded>

@@ -37,7 +37,7 @@
     <property object="PORTIO" propertyId="portio.usart0.location.cs" value="35"/>
     <property object="PORTIO" propertyId="portio.usart0.location.rx" value="33"/>
     <property object="PORTIO" propertyId="portio.usart0.location.tx" value="32"/>
-    <property object="USART0" propertyId="ABModule.selectedRequirement" value="usart%T%SL_SPIDRV_TPL0501%T%sl_spidrv_TPL0501_config.h"/>
+    <property object="USART0" propertyId="ABModule.selectedRequirement" value="usart%T%SL_SPIDRV_TPL0501%T%sl_spidrv_tpl0501_config.h"/>
     <property object="USART0" propertyId="ABPeripheral.included" value="true"/>
     <property object="USART1" propertyId="ABPeripheral.included" value="true"/>
   </mode>

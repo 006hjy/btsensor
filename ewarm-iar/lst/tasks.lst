@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  09:24:55
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:56
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -27,8 +27,7 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
-#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\
 #        --diag_suppress Pa050 -o
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\
@@ -86,6 +85,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
@@ -111,8 +112,6 @@
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
-#        -I
-#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
@@ -149,8 +148,8 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
      11          void tasks(void)
      12          {
    \                     tasks: (+1)
-   \        0x0   0x4A0A             LDR.N    R2,??tasks_0
-   \        0x2   0x490B             LDR.N    R1,??tasks_0+4
+   \        0x0   0x4A08             LDR.N    R2,??tasks_0
+   \        0x2   0x4909             LDR.N    R1,??tasks_0+4
    \        0x4   0x6813             LDR      R3,[R2, #+0]
    \        0x6   0x6808             LDR      R0,[R1, #+0]
    \        0x8   0x1A1B             SUBS     R3,R3,R0
@@ -174,21 +173,19 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
      23                  adc_scan();
    \       0x16   0x.... 0x....      BL       adc_scan
      24          
-     25                  uart_action();  // 调用 UART 发送函数
-   \       0x1A   0x.... 0x....      BL       uart_action
+     25                  // uart_action();  // 调用 UART 发送函数
      26                  
      27                  //update_and_store_config();
      28                  
      29                  update_temperature();
-   \       0x1E   0x.... 0x....      BL       update_temperature
-     30                  
-     31                  tpl0501_set_wiper(0xEF);
-   \       0x22   0x20EF             MOVS     R0,#+239
-   \       0x24   0xE8BD 0x4002      POP      {R1,LR}
-   \       0x28   0x.... 0x....      B.W      tpl0501_set_wiper
+   \       0x1A   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x1E   0x.... 0x....      B.W      update_temperature
+   \       0x22   0xBF00             Nop
    \                     ??tasks_0:
-   \       0x2C   0x....'....        DC32     system_uptime_100ms
-   \       0x30   0x....'....        DC32     `tasks::last_send_time`
+   \       0x24   0x....'....        DC32     system_uptime_100ms
+   \       0x28   0x....'....        DC32     `tasks::last_send_time`
+     30                  
+     31                  //tpl0501_set_wiper(0xEF);
      32                  
      33                  
      34          
@@ -206,9 +203,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
    ------- --------
        8   tasks
          8   -> adc_scan
-         0   -> tpl0501_set_wiper
-         8   -> uart_action
-         8   -> update_temperature
+         0   -> update_temperature
 
 
    Section sizes:
@@ -216,13 +211,13 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
    Bytes  Function/Label
    -----  --------------
        4  last_send_time
-      52  tasks
+      44  tasks
 
  
   4 bytes in section .bss
- 52 bytes in section .text
+ 44 bytes in section .text
  
- 52 bytes of CODE memory
+ 44 bytes of CODE memory
   4 bytes of DATA memory
 
 Errors: none

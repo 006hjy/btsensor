@@ -5,7 +5,7 @@
   "name" : "Silicon-Laboratories",
   "documentNamespace" : "https://silabs.com",
   "creationInfo" : {
-    "created" : "2026-06-24T08:29:09Z",
+    "created" : "2026-06-25T07:15:17Z",
     "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
   },
   "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
@@ -50,6 +50,14 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init",
+    "name" : "GPIO Init",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_iadc",
     "name" : "IADC",
     "versionInfo" : "2026.6.0",
@@ -68,6 +76,14 @@
   }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-i2cspm",
     "name" : "I2CSPM",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart",
+    "name" : "IO Stream: EUSART",
     "versionInfo" : "2026.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -100,14 +116,6 @@
   }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-tempdrv",
     "name" : "TEMPDRV",
-    "versionInfo" : "2026.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_eusart",
-    "name" : "UARTDRV EUSART",
     "versionInfo" : "2026.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -449,14 +457,6 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart",
-    "name" : "USART",
-    "versionInfo" : "2026.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-enum",
     "name" : "Enumerations",
     "versionInfo" : "2026.6.0",
@@ -497,8 +497,24 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_eusart",
+    "name" : "EUSART",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio",
     "name" : "GPIO",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common",
+    "name" : "GPIO Init Core",
     "versionInfo" : "2026.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -515,6 +531,22 @@
   }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_ldma",
     "name" : "LDMA",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs",
+    "name" : "PRS",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs_impl",
+    "name" : "PRS_IMPL",
     "versionInfo" : "2026.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -579,6 +611,30 @@
   }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-interrupt_manager_cortexm",
     "name" : "Interrupt Manager Cortex-M",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream",
+    "name" : "IO Stream",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart_core",
+    "name" : "IO Stream: EUSART Core",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_uart_common",
+    "name" : "IO Stream: Common code for UART-type streams",
     "versionInfo" : "2026.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -769,6 +825,14 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_string",
+    "name" : "String Functions",
+    "versionInfo" : "2026.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-sleeptimer",
     "name" : "Sleep Timer",
     "versionInfo" : "2026.6.0",
@@ -795,14 +859,6 @@
   }, {
     "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-status",
     "name" : "Status Codes Definitions",
-    "versionInfo" : "2026.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_core",
-    "name" : "UARTDRV Core",
     "versionInfo" : "2026.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -841,16 +897,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init",
-    "name" : "GPIO Init",
-    "versionInfo" : "2026.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common",
-    "name" : "GPIO Init Core",
+    "SPDXID" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart",
+    "name" : "USART",
     "versionInfo" : "2026.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -879,6 +927,10 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_iadc",
     "relationshipType" : "CONTAINS"
   }, {
@@ -888,6 +940,10 @@
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-i2cspm",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
@@ -904,10 +960,6 @@
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-tempdrv",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_eusart",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
@@ -1075,10 +1127,6 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-enum",
     "relationshipType" : "CONTAINS"
   }, {
@@ -1099,7 +1147,15 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_eusart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
@@ -1108,6 +1164,14 @@
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_ldma",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_prs_impl",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
@@ -1140,6 +1204,18 @@
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-interrupt_manager_cortexm",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_eusart_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-iostream_uart_common",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
@@ -1235,6 +1311,10 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-sl_string",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-sleeptimer",
     "relationshipType" : "CONTAINS"
   }, {
@@ -1248,10 +1328,6 @@
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
     "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-status",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-uartdrv_core",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
@@ -1271,11 +1347,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-silabs.simplicity_sdk-2026.6.0",
-    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-hal_gpio_simple_init_common",
+    "relatedSpdxElement" : "SPDXRef-silabs.simplicity_sdk-2026.6.0-emlib_usart",
     "relationshipType" : "CONTAINS"
   } ]
 }

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  09:24:55
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  15:26:56
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode          =  thumb
@@ -28,8 +28,7 @@
 #        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
 #        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
 #        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
-#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -D
-#        SL_CODE_COMPONENT_UARTDRV=uartdrv -lC
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
 #        "C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\Simplicity
 #        Configurator_13668623889914588608.dir" --diag_suppress Pa050 -o
 #        "C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\Simplicity
@@ -88,6 +87,8 @@
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
 #        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
@@ -113,8 +114,6 @@
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
-#        -I
-#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\
 #        -I
 #        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
 #        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
@@ -170,11 +169,10 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\app.c
    \        0x0   0xB580             PUSH     {R7,LR}
      27            letimer_init();
    \        0x2   0x.... 0x....      BL       letimer_init
-     28            uart_init();
-   \        0x6   0x.... 0x....      BL       uart_init
+     28            // uart_init();
      29            config_init();
-   \        0xA   0xE8BD 0x4001      POP      {R0,LR}
-   \        0xE   0x.... 0x....      B.W      config_init
+   \        0x6   0xE8BD 0x4001      POP      {R0,LR}
+   \        0xA   0x.... 0x....      B.W      config_init
      30            //EUSART_Enable(EUART0, eusartEnable);
      31          //   EUSART_UartInitLf(EUART0, &sl_uartdrv_eusart_inst0_config.uartInit);
      32          }
@@ -197,7 +195,6 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\app.c
        8   app_init
          0   -> config_init
          8   -> letimer_init
-         8   -> uart_init
        0   app_process_action
 
 
@@ -205,13 +202,13 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\app.c
 
    Bytes  Function/Label
    -----  --------------
-      18  app_init
+      14  app_init
        2  app_process_action
 
  
- 20 bytes in section .text
+ 16 bytes in section .text
  
- 20 bytes of CODE memory
+ 16 bytes of CODE memory
 
 Errors: none
 Warnings: none

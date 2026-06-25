@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-#     IAR Assembler V9.70.4.588/W64 for ARM 25/Jun/2026  09:24:55             #
+#     IAR Assembler V9.70.4.588/W64 for ARM 25/Jun/2026  15:26:56             #
 #     Copyright 1999-2026 IAR Systems AB.                                     #
 #                                                                             #
 #           Source file   =  C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\src\sl_udelay_armv6m_iar.s#
@@ -30,7 +30,6 @@
 #                            -DSL_CODE_COMPONENT_CORE=core                    #
 #                            -DSL_CODE_COMPONENT_SLEEPTIMER=sleeptimer        #
 #                            -DSL_CODE_COMPONENT_SPIDRV=spidrv                #
-#                            -DSL_CODE_COMPONENT_UARTDRV=uartdrv              #
 #                            -LC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_12471876197766715931.dir #
 #                            -t2 --cpu Cortex-M33 --cmse --fpu VFPv5_sp       #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\src\ #
@@ -61,6 +60,7 @@
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\ #
+#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\ #
@@ -74,7 +74,6 @@
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\ #
-#                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\uartdrv\inc\ #
 #                            -IC:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\) #
 #                            --diagnostics_format=sarif_stdout -y             #
 #                            C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_12471876197766715931.dir\sl_udelay_armv6m_iar.o.iar_deps #

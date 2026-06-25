@@ -3,7 +3,7 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2026-06-24T08:29:09Z",
+    "timestamp" : "2026-06-25T07:15:17Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
     } ],
@@ -72,6 +72,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init",
+      "name" : "GPIO Init",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_iadc",
       "name" : "IADC",
       "version" : "2026.6.0",
@@ -98,6 +110,18 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:i2cspm",
       "name" : "I2CSPM",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:iostream_eusart",
+      "name" : "IO Stream: EUSART",
       "version" : "2026.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -146,18 +170,6 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:tempdrv",
       "name" : "TEMPDRV",
-      "version" : "2026.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:uartdrv_eusart",
-      "name" : "UARTDRV EUSART",
       "version" : "2026.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -668,18 +680,6 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:emlib_usart",
-      "name" : "USART",
-      "version" : "2026.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:enum",
       "name" : "Enumerations",
       "version" : "2026.6.0",
@@ -740,8 +740,32 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_eusart",
+      "name" : "EUSART",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_gpio",
       "name" : "GPIO",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init_common",
+      "name" : "GPIO Init Core",
       "version" : "2026.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -766,6 +790,30 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_ldma",
       "name" : "LDMA",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_prs",
+      "name" : "PRS",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_prs_impl",
+      "name" : "PRS_IMPL",
       "version" : "2026.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -862,6 +910,42 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:interrupt_manager_cortexm",
       "name" : "Interrupt Manager Cortex-M",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:iostream",
+      "name" : "IO Stream",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:iostream_eusart_core",
+      "name" : "IO Stream: EUSART Core",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:iostream_uart_common",
+      "name" : "IO Stream: Common code for UART-type streams",
       "version" : "2026.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -1148,6 +1232,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:sl_string",
+      "name" : "String Functions",
+      "version" : "2026.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:sleeptimer",
       "name" : "Sleep Timer",
       "version" : "2026.6.0",
@@ -1186,18 +1282,6 @@
       "type" : "library",
       "bom-ref" : "silabs.simplicity_sdk:2026.6.0:status",
       "name" : "Status Codes Definitions",
-      "version" : "2026.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:uartdrv_core",
-      "name" : "UARTDRV Core",
       "version" : "2026.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -1256,20 +1340,8 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init",
-      "name" : "GPIO Init",
-      "version" : "2026.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:hal_gpio_simple_init_common",
-      "name" : "GPIO Init Core",
+      "bom-ref" : "silabs.simplicity_sdk:2026.6.0:emlib_usart",
+      "name" : "USART",
       "version" : "2026.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."

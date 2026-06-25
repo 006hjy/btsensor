@@ -3,12 +3,12 @@
 #include "sl_assert.h"
 
 
-#include "sl_spidrv_TPL0501_config.h"
-SPIDRV_HandleData_t sl_spidrv_TPL0501_handle_data;
-SPIDRV_Handle_t sl_spidrv_TPL0501_handle = &sl_spidrv_TPL0501_handle_data;
+#include "sl_spidrv_tpl0501_config.h"
+SPIDRV_HandleData_t sl_spidrv_tpl0501_handle_data;
+SPIDRV_Handle_t sl_spidrv_tpl0501_handle = &sl_spidrv_tpl0501_handle_data;
 
 static SPIDRV_Handle_t sli_spidrv_default_handle = NULL;
-SPIDRV_Init_t sl_spidrv_init_TPL0501 = {
+SPIDRV_Init_t sl_spidrv_init_tpl0501 = {
   .port = SL_SPIDRV_TPL0501_PERIPHERAL,
 #if defined(_USART_ROUTELOC0_MASK)
   .portLocationTx = SL_SPIDRV_TPL0501_TX_LOC,
@@ -44,8 +44,8 @@ SPIDRV_Init_t sl_spidrv_init_TPL0501 = {
 };
 
 void sl_spidrv_init_instances(void) {
-  SPIDRV_Init(sl_spidrv_TPL0501_handle, &sl_spidrv_init_TPL0501); 
-  sl_spidrv_set_default(sl_spidrv_TPL0501_handle);
+  SPIDRV_Init(sl_spidrv_tpl0501_handle, &sl_spidrv_init_tpl0501); 
+  sl_spidrv_set_default(sl_spidrv_tpl0501_handle);
 
 }
 

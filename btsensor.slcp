@@ -60,6 +60,11 @@ component:
   vendor: silabs
   id: i2cspm
 - package: simplicity_sdk
+  instance:
+  - inst0
+  vendor: silabs
+  id: iostream_eusart
+- package: simplicity_sdk
   vendor: silabs
   id: nvm3_source
 - package: simplicity_sdk
@@ -70,17 +75,12 @@ component:
   id: sl_main
 - package: simplicity_sdk
   instance:
-  - TPL0501
+  - tpl0501
   vendor: silabs
   id: spidrv
 - package: simplicity_sdk
   vendor: silabs
   id: tempdrv
-- package: simplicity_sdk
-  instance:
-  - inst0
-  vendor: silabs
-  id: uartdrv_eusart
 autoselected_components:
 - package: simplicity_sdk
   vendor: silabs
@@ -222,6 +222,9 @@ autoselected_components:
   id: hal_common
 - package: simplicity_sdk
   vendor: silabs
+  id: hal_eusart
+- package: simplicity_sdk
+  vendor: silabs
   id: hal_gpio
 - package: simplicity_sdk
   vendor: silabs
@@ -232,6 +235,12 @@ autoselected_components:
 - package: simplicity_sdk
   vendor: silabs
   id: hal_ldma
+- package: simplicity_sdk
+  vendor: silabs
+  id: hal_prs
+- package: simplicity_sdk
+  vendor: silabs
+  id: hal_prs_impl
 - package: simplicity_sdk
   vendor: silabs
   id: hal_syscfg
@@ -256,6 +265,15 @@ autoselected_components:
 - package: simplicity_sdk
   vendor: silabs
   id: interrupt_manager_cortexm
+- package: simplicity_sdk
+  vendor: silabs
+  id: iostream
+- package: simplicity_sdk
+  vendor: silabs
+  id: iostream_eusart_core
+- package: simplicity_sdk
+  vendor: silabs
+  id: iostream_uart_common
 - package: simplicity_sdk
   vendor: silabs
   id: memory_manager
@@ -327,6 +345,9 @@ autoselected_components:
   id: sl_main_process_action
 - package: simplicity_sdk
   vendor: silabs
+  id: sl_string
+- package: simplicity_sdk
+  vendor: silabs
   id: sleeptimer
 - package: simplicity_sdk
   vendor: silabs
@@ -340,9 +361,6 @@ autoselected_components:
 - package: simplicity_sdk
   vendor: silabs
   id: status
-- package: simplicity_sdk
-  vendor: silabs
-  id: uartdrv_core
 - package: simplicity_sdk
   vendor: silabs
   id: udelay
