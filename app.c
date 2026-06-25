@@ -15,8 +15,9 @@
  *
  ******************************************************************************/
 #include <stdint.h>
-#include <timer.h>
+#include "timer.h"
 #include "uart.h"
+#include "config.h"
 //#include "em_device.h"
 /***************************************************************************//**
  * Initialize application.
@@ -25,6 +26,7 @@ void app_init(void)
 {
   letimer_init();
   uart_init();
+  config_init();
   //EUSART_Enable(EUART0, eusartEnable);
 //   EUSART_UartInitLf(EUART0, &sl_uartdrv_eusart_inst0_config.uartInit);
 }

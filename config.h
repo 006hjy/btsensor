@@ -6,7 +6,7 @@
 typedef struct {
     uint32_t boot_count;      // 启动次数 (4字节)
     uint16_t alarm_threshold; // 报警阈值 (2字节)
-    uint8_t  device_mode;     // 设备工作模式 (1字节)
+    uint8_t  selfset;         // selfset引脚输出电平 (1字节)
     uint8_t  temp_way;        // 预留字节，用于内存对齐 (1字节)
 } Config_t;
 
@@ -17,7 +17,7 @@ extern Config_t my_config;
 
 uint8_t write_config(void);
 uint8_t read_config(void);
+void config_init(void);
 void update_and_store_config(void);
-
 
 #endif /* CONFIG_H_ */
