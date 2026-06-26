@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         25/Jun/2026  17:06:04
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         26/Jun/2026  15:45:09
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode          =  thumb
@@ -935,69 +935,69 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
        4  ??DataTable2_3
       12  CopyFunctionsToRam
       20  CopyMemory
-       2  Reset_Handler
-      20  Reset_Handler_C
-       2  TRNG_IRQHandler
-          USART1_RX_IRQHandler
-          SYSCFG_IRQHandler
-          USART1_TX_IRQHandler
-          LETIMER0_IRQHandler
-          LDMA_IRQHandler
-          SysTick_Handler
-          PendSV_Handler
-          RTCC_IRQHandler
-          LFXO_IRQHandler
-          GPIO_ODD_IRQHandler
-          BusFault_Handler
+       2  LFXO_IRQHandler
           DebugMon_Handler
+          GPIO_ODD_IRQHandler
+          PendSV_Handler
+          USART1_RX_IRQHandler
+          GPIO_EVEN_IRQHandler
+          RTCC_IRQHandler
+          TIMER0_IRQHandler
+          TIMER3_IRQHandler
+          TIMER4_IRQHandler
+          USART0_TX_IRQHandler
+          BURTC_IRQHandler
+          LETIMER0_IRQHandler
+          TIMER2_IRQHandler
+          SVC_Handler
+          TRNG_IRQHandler
+          ICACHE0_IRQHandler
+          SYSCFG_IRQHandler
+          PKE_IRQHandler
+          NMI_Handler
+          HardFault_Handler
+          MemManage_Handler
+          SecureFault_Handler
           CRYPTOACC_IRQHandler
+          BusFault_Handler
           SMU_NS_PRIVILEGED_IRQHandler
           EMU_IRQHandler
           USART0_RX_IRQHandler
-          SMU_SECURE_IRQHandler
-          TIMER1_IRQHandler
-          TIMER2_IRQHandler
-          HardFault_Handler
           UsageFault_Handler
-          TIMER4_IRQHandler
-          USART0_TX_IRQHandler
-          ICACHE0_IRQHandler
-          BURTC_IRQHandler
+          USART1_TX_IRQHandler
+          LDMA_IRQHandler
           LFRCO_IRQHandler
-          NMI_Handler
           ULFRCO_IRQHandler
-          GPIO_EVEN_IRQHandler
+          SMU_SECURE_IRQHandler
+          SysTick_Handler
           SMU_S_PRIVILEGED_IRQHandler
-          SVC_Handler
-          PKE_IRQHandler
-          MemManage_Handler
-          SecureFault_Handler
-          TIMER0_IRQHandler
-          TIMER3_IRQHandler
-          I2C1_IRQHandler
-          PDM_IRQHandler
-          EMUDG_IRQHandler
+          TIMER1_IRQHandler
+          CMU_IRQHandler
+          EMUSE_IRQHandler
+          IADC_IRQHandler
           WDOG0_IRQHandler
-          EMUEFP_IRQHandler
-          SW1_IRQHandler
+          HFXO0_IRQHandler
+          KERNEL1_IRQHandler
+          Default_Handler
           SW3_IRQHandler
           KERNEL0_IRQHandler
-          KERNEL1_IRQHandler
-          DPLL0_IRQHandler
-          EMUSE_IRQHandler
-          MSC_IRQHandler
-          IADC_IRQHandler
-          EUART0_TX_IRQHandler
-          SW2_IRQHandler
-          EUART0_RX_IRQHandler
-          DCDC_IRQHandler
-          CMU_IRQHandler
-          Default_Handler
-          sl_app_properties
-          I2C0_IRQHandler
-          SW0_IRQHandler
+          EMUEFP_IRQHandler
+          SW1_IRQHandler
+          EMUDG_IRQHandler
+          I2C1_IRQHandler
+          PDM_IRQHandler
           HFRCO0_IRQHandler
-          HFXO0_IRQHandler
+          EUART0_TX_IRQHandler
+          DCDC_IRQHandler
+          SW0_IRQHandler
+          SW2_IRQHandler
+          MSC_IRQHandler
+          DPLL0_IRQHandler
+          sl_app_properties
+          EUART0_RX_IRQHandler
+          I2C0_IRQHandler
+       2  Reset_Handler
+      20  Reset_Handler_C
      320  __vector_table
 
  
