@@ -8,12 +8,12 @@ typedef struct {
     uint8_t  selfset;
     uint8_t  temp_way;
     uint8_t  gain;
-} Config_t;
+} Sensor_config_t;
 
 #define STORAGE_KEY_CONFIG 0x00022
 
 // 只声明，不赋值
-extern Config_t my_config;
+extern Sensor_config_t sensor1_config;
 
 uint8_t write_config(void);
 uint8_t read_config(void);

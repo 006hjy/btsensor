@@ -1,0 +1,383 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         29/Jun/2026  16:39:44
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpcrc.c
+#    Command line      =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpcrc.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpcrc.c
+#        -D DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14190545362676408484.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\
+#        -I C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpcrc.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpcrc.o.iar_dynout
+#    Locale            =  C
+#    List file         =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\src_14190545362676408484.dir\sl_hal_gpcrc.lst
+#    Object file       =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\src_14190545362676408484.dir\sl_hal_gpcrc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpcrc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief General Purpose Cyclic Redundancy Check (GPCRC) API.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2023 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_hal_gpcrc.h"
+     32          #if defined(GPCRC_PRESENT) && (GPCRC_COUNT > 0)
+     33          
+     34          #include "sl_common.h"
+     35          
+     36          /*******************************************************************************
+     37           ***************************   GLOBAL FUNCTIONS   ******************************
+     38           ******************************************************************************/
+     39          
+     40          extern __INLINE void sl_hal_gpcrc_reset(GPCRC_TypeDef *gpcrc);
+     41          extern __INLINE void sl_hal_gpcrc_enable(GPCRC_TypeDef *gpcrc);
+     42          extern __INLINE void sl_hal_gpcrc_disable(GPCRC_TypeDef *gpcrc);
+     43          extern __INLINE void sl_hal_gpcrc_start(GPCRC_TypeDef *gpcrc);
+     44          extern __INLINE void sl_hal_gpcrc_set_init_value(GPCRC_TypeDef *gpcrc,
+     45                                                           uint32_t init_value);
+     46          extern __INLINE void sl_hal_gpcrc_write_input_32bit(GPCRC_TypeDef *gpcrc,
+     47                                                              uint32_t data);
+     48          extern __INLINE void sl_hal_gpcrc_write_input_16bit(GPCRC_TypeDef *gpcrc,
+     49                                                              uint16_t data);
+     50          extern __INLINE void sl_hal_gpcrc_write_input_8bit(GPCRC_TypeDef *gpcrc,
+     51                                                             uint8_t data);
+     52          extern __INLINE uint32_t sl_hal_gpcrc_read_data(GPCRC_TypeDef *gpcrc);
+     53          extern __INLINE uint32_t sl_hal_gpcrc_read_data_bit_reversed(GPCRC_TypeDef *gpcrc);
+     54          extern __INLINE uint32_t sl_hal_gpcrc_read_data_byte_reversed(GPCRC_TypeDef *gpcrc);
+     55          
+     56          /***************************************************************************//**
+     57           * Initialize the General Purpose Cyclic Redundancy Check (GPCRC) module.
+     58           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     59          void sl_hal_gpcrc_init(GPCRC_TypeDef *gpcrc,
+     60                                 const sl_hal_gpcrc_init_t *init)
+     61          {
+   \                     sl_hal_gpcrc_init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4605             MOV      R5,R0
+     62            // Make sure the module exists on the selected chip.
+     63            EFM_ASSERT(SL_HAL_GPCRC_REF_VALID(gpcrc));
+   \        0x4   0x4A19             LDR.N    R2,??sl_hal_gpcrc_init_0
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0x4E19             LDR.N    R6,??sl_hal_gpcrc_init_0+4
+   \        0xA   0x4295             CMP      R5,R2
+   \        0xC   0xD003             BEQ.N    ??sl_hal_gpcrc_init_1
+   \        0xE   0x213F             MOVS     R1,#+63
+   \       0x10   0x4630             MOV      R0,R6
+   \       0x12   0x.... 0x....      BL       assertEFM
+     64            // Init structure must be provided.
+     65            EFM_ASSERT(init);
+   \                     ??sl_hal_gpcrc_init_1: (+1)
+   \       0x16   0xB91C             CBNZ.N   R4,??sl_hal_gpcrc_init_2
+   \       0x18   0x2141             MOVS     R1,#+65
+   \       0x1A   0x4630             MOV      R0,R6
+   \       0x1C   0x.... 0x....      BL       assertEFM
+     66          
+     67            uint32_t poly_select;
+     68            uint32_t rev_poly = 0;
+     69          
+     70            if (init->crc_poly == SL_HAL_GPCRC_COMMON_32_BIT_POLY) {
+   \                     ??sl_hal_gpcrc_init_2: (+1)
+   \       0x20   0x6860             LDR      R0,[R4, #+4]
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0x4A13             LDR.N    R2,??sl_hal_gpcrc_init_0+8
+   \       0x26   0x4290             CMP      R0,R2
+   \       0x28   0xBF08             IT       EQ
+   \       0x2A   0x2000             MOVEQ    R0,#+0
+     71              poly_select = GPCRC_CTRL_POLYSEL_CRC32;
+   \       0x2C   0xD00B             BEQ.N    ??sl_hal_gpcrc_init_3
+     72            } else {
+     73              // If not using the fixed CRC-32 polynomial, use 16-bit.
+     74              EFM_ASSERT((init->crc_poly & 0xFFFF0000UL) == 0U);
+   \       0x2E   0x0C00             LSRS     R0,R0,#+16
+   \       0x30   0x0400             LSLS     R0,R0,#+16
+   \       0x32   0xD003             BEQ.N    ??sl_hal_gpcrc_init_4
+   \       0x34   0x214A             MOVS     R1,#+74
+   \       0x36   0x4630             MOV      R0,R6
+   \       0x38   0x.... 0x....      BL       assertEFM
+     75          
+     76              poly_select = GPCRC_CTRL_POLYSEL_CRC16;
+     77              rev_poly = (uint32_t)SL_RBIT16((uint16_t)init->crc_poly);
+   \                     ??sl_hal_gpcrc_init_4: (+1)
+   \       0x3C   0x88A1             LDRH     R1,[R4, #+4]
+   \       0x3E   0x2010             MOVS     R0,#+16
+   \       0x40   0xFA91 0xF1A1      RBIT     R1,R1
+   \       0x44   0x0C09             LSRS     R1,R1,#+16
+     78            }
+     79          
+     80            gpcrc->CTRL = (((uint32_t)init->auto_init << _GPCRC_CTRL_AUTOINIT_SHIFT)
+     81                           | ((uint32_t)init->reverse_byte_order << _GPCRC_CTRL_BYTEREVERSE_SHIFT)
+     82                           | ((uint32_t)init->reverse_bits << _GPCRC_CTRL_BITREVERSE_SHIFT)
+     83                           | ((uint32_t)init->enable_byte_mode << _GPCRC_CTRL_BYTEMODE_SHIFT)
+     84                           | poly_select);
+   \                     ??sl_hal_gpcrc_init_3: (+1)
+   \       0x46   0x7823             LDRB     R3,[R4, #+0]
+   \       0x48   0x78E2             LDRB     R2,[R4, #+3]
+   \       0x4A   0x78A6             LDRB     R6,[R4, #+2]
+   \       0x4C   0x029B             LSLS     R3,R3,#+10
+   \       0x4E   0xEA43 0x3342      ORR      R3,R3,R2, LSL #+13
+   \       0x52   0x7862             LDRB     R2,[R4, #+1]
+   \       0x54   0xEA43 0x2342      ORR      R3,R3,R2, LSL #+9
+   \       0x58   0xEA43 0x2306      ORR      R3,R3,R6, LSL #+8
+   \       0x5C   0x4303             ORRS     R3,R0,R3
+   \       0x5E   0x60AB             STR      R3,[R5, #+8]
+     85          
+     86            if (poly_select == GPCRC_CTRL_POLYSEL_CRC16) {
+   \       0x60   0x2810             CMP      R0,#+16
+   \       0x62   0xBF08             IT       EQ
+   \       0x64   0x6169             STREQ    R1,[R5, #+20]
+     87              // Set the CRC polynomial value.
+     88              gpcrc->POLY = rev_poly & _GPCRC_POLY_POLY_MASK;
+     89            }
+     90          
+     91            // Load the CRC initialization value to GPCRC_INIT.
+     92            gpcrc->INIT = init->init_value;
+   \       0x66   0x68A0             LDR      R0,[R4, #+8]
+   \       0x68   0x6128             STR      R0,[R5, #+16]
+     93          }
+   \       0x6A   0xBD70             POP      {R4-R6,PC}
+   \                     ??sl_hal_gpcrc_init_0:
+   \       0x6C   0x5008'8000        DC32     0x50088000
+   \       0x70   0x....'....        DC32     ?_0
+   \       0x74   0x04C1'1DB7        DC32     0x4c11db7
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x4A          DC8 0x5C, 0x4A, 0x75, 0x6E, 0x79, 0x69, 0x48, 0x75
+   \              0x75 0x6E    
+   \              0x79 0x69    
+   \              0x48 0x75
+   \       0x10   0x61 0x6E          DC8 0x61, 0x6E, 0x67, 0x5C, 0x53, 0x69, 0x6D, 0x70
+   \              0x67 0x5C    
+   \              0x53 0x69    
+   \              0x6D 0x70
+   \       0x18   0x6C 0x69          DC8 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79, 0x53, 0x74
+   \              0x63 0x69    
+   \              0x74 0x79    
+   \              0x53 0x74
+   \       0x20   0x75 0x64          DC8 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76, 0x36, 0x5F
+   \              0x69 0x6F    
+   \              0x5C 0x76    
+   \              0x36 0x5F
+   \       0x28   0x77 0x6F          DC8 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70, 0x61, 0x63
+   \              0x72 0x6B    
+   \              0x73 0x70    
+   \              0x61 0x63
+   \       0x30   0x65 0x5C          DC8 0x65, 0x5C, 0x62, 0x74, 0x73, 0x65, 0x6E, 0x73
+   \              0x62 0x74    
+   \              0x73 0x65    
+   \              0x6E 0x73
+   \       0x38   0x6F 0x72          DC8 0x6F, 0x72, 0x5C, 0x73, 0x69, 0x6D, 0x70, 0x6C
+   \              0x5C 0x73    
+   \              0x69 0x6D    
+   \              0x70 0x6C
+   \       0x40   0x69 0x63          DC8 0x69, 0x63, 0x69, 0x74, 0x79, 0x5F, 0x73, 0x64
+   \              0x69 0x74    
+   \              0x79 0x5F    
+   \              0x73 0x64
+   \       0x48   0x6B 0x5F          DC8 0x6B, 0x5F, 0x32, 0x30, 0x32, 0x36, 0x2E, 0x36
+   \              0x32 0x30    
+   \              0x32 0x36    
+   \              0x2E 0x36
+   \       0x50   0x2E 0x30          DC8 0x2E, 0x30, 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66
+   \              0x5C 0x70    
+   \              0x6C 0x61    
+   \              0x74 0x66
+   \       0x58   0x6F 0x72          DC8 0x6F, 0x72, 0x6D, 0x5F, 0x63, 0x6F, 0x72, 0x65
+   \              0x6D 0x5F    
+   \              0x63 0x6F    
+   \              0x72 0x65
+   \       0x60   0x5C 0x70          DC8 0x5C, 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72
+   \              0x6C 0x61    
+   \              0x74 0x66    
+   \              0x6F 0x72
+   \       0x68   0x6D 0x5C          DC8 0x6D, 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70, 0x68
+   \              0x70 0x65    
+   \              0x72 0x69    
+   \              0x70 0x68
+   \       0x70   0x65 0x72          DC8 0x65, 0x72, 0x61, 0x6C, 0x5C, 0x73, 0x72, 0x63
+   \              0x61 0x6C    
+   \              0x5C 0x73    
+   \              0x72 0x63
+   \       0x78   0x5C 0x73          DC8 0x5C, 0x73, 0x6C, 0x5F, 0x68, 0x61, 0x6C, 0x5F
+   \              0x6C 0x5F    
+   \              0x68 0x61    
+   \              0x6C 0x5F
+   \       0x80   0x67 0x70          DC8 0x67, 0x70, 0x63, 0x72, 0x63, 0x2E, 0x63, 0
+   \              0x63 0x72    
+   \              0x63 0x2E    
+   \              0x63 0x00
+     94          
+     95          #endif // defined(GPCRC_COUNT) && (GPCRC_COUNT > 0)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   sl_hal_gpcrc_init
+        16   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     136  ?_0
+     120  sl_hal_gpcrc_init
+
+ 
+ 136 bytes in section .rodata
+ 120 bytes in section .text
+ 
+ 120 bytes of CODE  memory
+ 136 bytes of CONST memory
+
+Errors: none
+Warnings: none

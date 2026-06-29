@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         26/Jun/2026  15:45:12
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         29/Jun/2026  16:39:45
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -1020,7 +1020,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
     883          sl_status_t sli_clock_manager_hal_init(void)
     884          {
    \                     sli_clock_manager_hal_init: (+1)
-   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x0   0xB510             PUSH     {R4,LR}
     885          #if defined(SYSRTC_PRESENT)
     886            sl_status_t status;
     887          
@@ -1061,7 +1061,8 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
    \       0x16   0x.... 0x....      BL       assertEFM
    \                     ??sli_clock_manager_hal_init_1: (+1)
    \       0x1A   0x2000             MOVS     R0,#+0
-   \       0x1C   0x.... 0x....      BL       CMU_LFRCOSetPrecision
+   \       0x1C   0x4C2B             LDR.N    R4,??sli_clock_manager_hal_init_0+12
+   \       0x1E   0x.... 0x....      BL       CMU_LFRCOSetPrecision
     915          #endif
     916          
     917          #if defined(RFFPLL_PRESENT) \
@@ -1076,18 +1077,17 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
     926          
     927            // Initialize Clock branches
     928            init_clock_branches();
-   \       0x20   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPreClockSelect
-   \       0x24   0x4D29             LDR.N    R5,??sli_clock_manager_hal_init_0+12
-   \       0x26   0x6828             LDR      R0,[R5, #+0]
-   \       0x28   0x2402             MOVS     R4,#+2
-   \       0x2A   0xF364 0x0002      BFI      R0,R4,#+0,#+3
-   \       0x2E   0x6028             STR      R0,[R5, #+0]
+   \       0x22   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPreClockSelect
+   \       0x26   0x6821             LDR      R1,[R4, #+0]
+   \       0x28   0x2002             MOVS     R0,#+2
+   \       0x2A   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x2E   0x6021             STR      R1,[R4, #+0]
    \       0x30   0x2000             MOVS     R0,#+0
    \       0x32   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPostClockSelect
-   \       0x36   0x6828             LDR      R0,[R5, #+0]
+   \       0x36   0x6820             LDR      R0,[R4, #+0]
    \       0x38   0xF420 0x4074      BIC      R0,R0,#0xF400
    \       0x3C   0xF440 0x6080      ORR      R0,R0,#0x400
-   \       0x40   0x6028             STR      R0,[R5, #+0]
+   \       0x40   0x6020             STR      R0,[R4, #+0]
    \       0x42   0x4823             LDR.N    R0,??sli_clock_manager_hal_init_0+16
    \       0x44   0x6801             LDR      R1,[R0, #+0]
    \       0x46   0x0E09             LSRS     R1,R1,#+24
@@ -1129,9 +1129,9 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
    \       0x9C   0x6802             LDR      R2,[R0, #+0]
    \       0x9E   0xF361 0x0202      BFI      R2,R1,#+0,#+3
    \       0xA2   0x6002             STR      R2,[R0, #+0]
-   \       0xA4   0x6A01             LDR      R1,[R0, #+32]
-   \       0xA6   0xF364 0x0101      BFI      R1,R4,#+0,#+2
-   \       0xAA   0x6201             STR      R1,[R0, #+32]
+   \       0xA4   0x6A02             LDR      R2,[R0, #+32]
+   \       0xA6   0xF361 0x0201      BFI      R2,R1,#+0,#+2
+   \       0xAA   0x6202             STR      R2,[R0, #+32]
    \       0xAC   0x.... 0x....      BL       sli_em_cmu_SYSTICEXTCLKENClear
    \       0xB0   0x480B             LDR.N    R0,??sli_clock_manager_hal_init_0+32
    \       0xB2   0x6801             LDR      R1,[R0, #+0]
@@ -1140,7 +1140,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
     929          
     930            return SL_STATUS_OK;
    \       0xBA   0x2000             MOVS     R0,#+0
-   \       0xBC   0xBD32             POP      {R1,R4,R5,PC}
+   \       0xBC   0xBD10             POP      {R4,PC}
    \       0xBE   0xBF00             Nop
    \                     ??sli_clock_manager_hal_init_0:
    \       0xC0   0x04C4'B400        DC32     0x4c4b400
@@ -1244,14 +1244,14 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
 
    .cstack Function
    ------- --------
-      16   sli_clock_manager_hal_init
-        16   -> CMU_HFRCODPLLBandSet
-        16   -> CMU_LFRCOSetPrecision
-        16   -> assertEFM
-        16   -> sl_clock_manager_enable_bus_clock
-        16   -> sli_em_cmu_SYSCLKInitPostClockSelect
-        16   -> sli_em_cmu_SYSCLKInitPreClockSelect
-        16   -> sli_em_cmu_SYSTICEXTCLKENClear
+       8   sli_clock_manager_hal_init
+         8   -> CMU_HFRCODPLLBandSet
+         8   -> CMU_LFRCOSetPrecision
+         8   -> assertEFM
+         8   -> sl_clock_manager_enable_bus_clock
+         8   -> sli_em_cmu_SYSCLKInitPostClockSelect
+         8   -> sli_em_cmu_SYSCLKInitPreClockSelect
+         8   -> sli_em_cmu_SYSTICEXTCLKENClear
 
 
    Section sizes:

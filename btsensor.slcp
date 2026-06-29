@@ -44,6 +44,9 @@ component:
   vendor: silabs
   id: emlib_eusart
 - package: simplicity_sdk
+  vendor: silabs
+  id: hal_gpcrc
+- package: simplicity_sdk
   instance:
   - pa00
   vendor: silabs

@@ -1902,7 +1902,7 @@
                 <name>$PROJ_DIR$\config\sl_sleeptimer_config.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\config\sl_spidrv_TPL0501_config.h</name>
+                <name>$PROJ_DIR$\config\sl_spidrv_tpl0501_config.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\config\spidrv_config.h</name>
@@ -2480,6 +2480,9 @@
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_eusart.h</name>
                             </file>
                             <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_gpcrc.h</name>
+                            </file>
+                            <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\sl_hal_gpio.h</name>
                             </file>
                             <file>
@@ -2523,6 +2526,9 @@
                             <name>src</name>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_eusart.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpcrc.c</name>
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\src\sl_hal_gpio.c</name>
@@ -2937,6 +2943,12 @@
     </file>
     <file>
         <name>$PROJ_DIR$\btsensor.ipcf</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\comm.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\comm.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\config.c</name>

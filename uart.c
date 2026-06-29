@@ -1,6 +1,6 @@
 #include "sl_iostream.h"          // IO Stream 核心 API
 #include "sl_iostream_handles.h"  // 包含自动生成的实例句柄（如 sl_iostream_inst0_handle）
-
+#include "comm.h"
 // #include "em_eusart.h"
 
 // #define UART0_RX_BUFF_MAX_LEN 128
@@ -18,7 +18,8 @@ void uart_action() {
         sl_status_t status = sl_iostream_read(sl_iostream_inst0_handle, &rx_char, 1, &bytes_read);
 
         if (status == SL_STATUS_OK) {
-            sl_iostream_write(sl_iostream_inst0_handle, &rx_char, 1);
+            // sl_iostream_write(sl_iostream_inst0_handle, &rx_char, 1);
+            receive((uint8_t)rx_char);
             // 成功读到了 1 个字节，数据在 rx_char 中
             // 在这里处理你的业务逻辑...
             continue;

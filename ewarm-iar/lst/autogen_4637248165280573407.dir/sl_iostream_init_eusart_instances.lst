@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         26/Jun/2026  15:45:08
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         29/Jun/2026  16:39:41
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -420,7 +420,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_iostream_i
    \        0x0   0x....'....        DC32 sl_peripheral_val_euart0
    \        0x4   0x00               DC8 0
    \        0x5                      DS8 3
-   \        0x8   0x0000'2580        DC32 9'600
+   \        0x8   0x0001'C200        DC32 115'200
    \        0xC   0x00 0x02          DC8 0, 2, 0
    \              0x00
    \        0xF                      DS8 1
@@ -457,7 +457,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\sl_iostream_i
    \       0x14                      DS8 20
    \       0x28   0x....'....        DC32 rx_buffer_inst0, 32
    \              0x0000'0020
-   \       0x30   0x00 0x00          DC8 0, 0, 1, 0, 0
+   \       0x30   0x00 0x01          DC8 0, 1, 1, 0, 0
    \              0x01 0x00    
    \              0x00
    \       0x35                      DS8 3
