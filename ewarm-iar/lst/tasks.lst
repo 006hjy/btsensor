@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         29/Jun/2026  16:39:48
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         30/Jun/2026  17:26:27
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -147,48 +147,44 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
    \                                 In section .text, align 4, keep-with-next
      11          void tasks(void) {
    \                     tasks: (+1)
-   \        0x0   0x4A08             LDR.N    R2,??tasks_0
-   \        0x2   0x4909             LDR.N    R1,??tasks_0+4
-   \        0x4   0x6813             LDR      R3,[R2, #+0]
-   \        0x6   0x6808             LDR      R0,[R1, #+0]
-   \        0x8   0x1A1B             SUBS     R3,R3,R0
-   \        0xA   0x2B0A             CMP      R3,#+10
-   \        0xC   0xD200             BCS.N    ??tasks_1
-   \        0xE   0x4770             BX       LR
+   \        0x0   0xB510             PUSH     {R4,LR}
+     12              //
+     13              static uint32_t task_100ms_cnt = 0;
+     14              // 0.8秒执行一次
+     15              if (task_100ms_cnt % 8 == 0) {
+   \        0x2   0x4C0A             LDR.N    R4,??tasks_0
+   \        0x4   0x7820             LDRB     R0,[R4, #+0]
+   \        0x6   0xF010 0x0F07      TST      R0,#0x7
+   \        0xA   0xBF08             IT       EQ
+     16                  adc_scan();
+   \        0xC   0x.... 0x....      BLEQ     adc_scan
+     17              }
+     18              // 10秒执行一次
+     19              if (task_100ms_cnt % 100 == 0) {
+   \       0x10   0x6820             LDR      R0,[R4, #+0]
+   \       0x12   0x2264             MOVS     R2,#+100
+   \       0x14   0x2164             MOVS     R1,#+100
+   \       0x16   0xFBB0 0xF2F2      UDIV     R2,R0,R2
+   \       0x1A   0xFB01 0x0012      MLS      R0,R1,R2,R0
+   \       0x1E   0xB908             CBNZ.N   R0,??tasks_1
+     20                  update_temperature();
+   \       0x20   0x.... 0x....      BL       update_temperature
+     21              }
+     22              
+     23              
+     24              
+     25              task_100ms_cnt++;
    \                     ??tasks_1: (+1)
-   \       0x10   0xB580             PUSH     {R7,LR}
-     12              // 1. 使用 static 记录上一次成功发送的时间戳（局部静态变量，具备持久生命周期）
-     13              static uint32_t last_send_time = 0;
-     14          
-     15              // 使用减法判断时间差（天然防止定时器溢出翻转，且绝对不会重复触发或漏检）
-     16              if (system_uptime_100ms - last_send_time >= 10) {
-     17                  // 立刻更新时间戳，防止后续代码耗时导致重复进入
-     18                  last_send_time = system_uptime_100ms;
-   \       0x12   0x6812             LDR      R2,[R2, #+0]
-   \       0x14   0x600A             STR      R2,[R1, #+0]
-     19          
-     20                  // 执行ADC扫描
-     21                  adc_scan();
-   \       0x16   0x.... 0x....      BL       adc_scan
-     22          
-     23                  // uart_action();  // 调用 UART 发送函数
-     24          
-     25                  //update_and_store_config();
-     26          
-     27                  update_temperature();
-   \       0x1A   0xE8BD 0x4001      POP      {R0,LR}
-   \       0x1E   0x.... 0x....      B.W      update_temperature
-   \       0x22   0xBF00             Nop
+   \       0x24   0x6820             LDR      R0,[R4, #+0]
+   \       0x26   0x1C40             ADDS     R0,R0,#+1
+   \       0x28   0x6020             STR      R0,[R4, #+0]
+     26          }
+   \       0x2A   0xBD10             POP      {R4,PC}
    \                     ??tasks_0:
-   \       0x24   0x....'....        DC32     system_uptime_100ms
-   \       0x28   0x....'....        DC32     `tasks::last_send_time`
-     28          
-     29                  //tpl0501_set_wiper(0xEF);
-     30              }
-     31          }
+   \       0x2C   0x....'....        DC32     `tasks::task_100ms_cnt`
 
    \                                 In section .bss, align 4
-   \                     `tasks::last_send_time`:
+   \                     `tasks::task_100ms_cnt`:
    \        0x0                      DS8 4
 
    Maximum stack usage in bytes:
@@ -197,21 +193,21 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
    ------- --------
        8   tasks
          8   -> adc_scan
-         0   -> update_temperature
+         8   -> update_temperature
 
 
    Section sizes:
 
    Bytes  Function/Label
    -----  --------------
-       4  last_send_time
-      44  tasks
+       4  task_100ms_cnt
+      48  tasks
 
  
   4 bytes in section .bss
- 44 bytes in section .text
+ 48 bytes in section .text
  
- 44 bytes of CODE memory
+ 48 bytes of CODE memory
   4 bytes of DATA memory
 
 Errors: none

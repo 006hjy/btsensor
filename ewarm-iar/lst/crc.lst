@@ -1,0 +1,418 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         30/Jun/2026  17:26:27
+# Copyright 1999-2026 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\crc.c
+#    Command line                 =
+#        -f
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\crc.o.rsp
+#        (C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\crc.c -D
+#        DEBUG_EFM=1 -D EFM32PG22C200F512IM32=1 -D
+#        SL_CODE_COMPONENT_SYSTEM=system -D
+#        SL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_CODE_COMPONENT_DEVICE_PERIPHERAL=device_peripheral -D
+#        SL_CODE_COMPONENT_DMA_CHANNEL=dma_channel -D
+#        SL_CODE_COMPONENT_DMA_MANAGER=dma_manager -D
+#        SL_CODE_COMPONENT_GPIO=gpio -D SL_CODE_COMPONENT_HAL_COMMON=hal_common
+#        -D SL_CODE_COMPONENT_HAL_GPIO=hal_gpio -D
+#        SL_CODE_COMPONENT_HAL_LDMA=hal_ldma -D
+#        SL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager -D
+#        CMSIS_NVIC_VIRTUAL=1 -D
+#        "CMSIS_NVIC_VIRTUAL_HEADER_FILE=\"cmsis_nvic_virtual.h\"" -D
+#        SL_CODE_COMPONENT_MEMORY_MANAGER=memory_manager -D
+#        SL_CODE_COMPONENT_POWER_MANAGER=power_manager -D
+#        SL_CODE_COMPONENT_CORE=core -D SL_CODE_COMPONENT_SLEEPTIMER=sleeptimer
+#        -D SL_CODE_COMPONENT_SPIDRV=spidrv -lC
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse --fpu=VFPv5_sp
+#        --dlib_config C:\iar\ewarm-9.70.4\arm\inc\c\DLib_Config_Normal.h -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\autogen\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\.\ -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\Device\SiliconLabs\EFM32PG22\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\clock_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\m-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\cmsis\Core\Include\a-profile\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\device_init\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\dma_channel\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\dma_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emlib\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\common\errno_error_codes\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\gpio\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\peripheral\init\gpio_simple\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2c\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\driver\i2cspm\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\interrupt_manager\inc\arm\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\iostream\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\memory_manager\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\nvm3\config\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\common\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\power_manager\src\sleep_loop\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sl_main\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\sleeptimer\src\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\spidrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\emdrv\tempdrv\inc\
+#        -I
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6.0\platform_core\platform\service\udelay\inc\
+#        -Ohz --use_c++_inline -e) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\crc.o.iar_deps
+#        --dynamic_output
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\crc.o.iar_dynout
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\lst\crc.lst
+#    Object file                  =
+#        C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\ewarm-iar\obj\crc.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\crc.c
+      1          #include "sl_hal_gpcrc.h"
+      2          #include "sl_clock_manager.h"
+      3          #include <stdint.h>
+      4          #include <stddef.h>
+      5          
+
+   \                                 In section .text, align 4, keep-with-next
+      6          uint16_t crc16modbus(const uint8_t *data, size_t length) {
+   \                     crc16modbus: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+      7              // Enable bus clock for GPCRC0
+      8              sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_GPCRC0);
+   \        0x6   0x....             LDR.N    R0,??DataTable1
+   \        0x8   0x.... 0x....      BL       sl_clock_manager_enable_bus_clock
+      9              sl_hal_gpcrc_enable(GPCRC);
+   \        0xC   0x....             LDR.N    R6,??DataTable1_1
+   \        0xE   0xF04F 0x0C01      MOV      R12,#+1
+   \       0x12   0xF8C6 0xC000      STR      R12,[R6, #+0]
+     10          
+     11              // Initialize GPCRC with CRC-16/Modbus parameters:
+     12              // Polynomial: 0x8005, Init value: 0xFFFF
+     13              // Modbus CRC requires bit reversal on input and output
+     14              sl_hal_gpcrc_init_t init = SL_HAL_GPCRC_INIT_DEFAULT;
+   \       0x16   0xBF00             Nop
+   \       0x18   0x....             ADR.N    R1,?_0
+   \       0x1A   0xE891 0x008C      LDM      R1,{R2,R3,R7}
+   \       0x1E   0x4668             MOV      R0,SP
+     15              init.crc_poly = 0x8005;
+     16              init.init_value = 0xFFFF;
+   \       0x20   0xF64F 0x71FF      MOVW     R1,#+65535
+   \       0x24   0xE880 0x008C      STM      R0,{R2,R3,R7}
+   \       0x28   0xF248 0x0005      MOVW     R0,#+32773
+   \       0x2C   0x9001             STR      R0,[SP, #+4]
+   \       0x2E   0x9102             STR      R1,[SP, #+8]
+     17              // Enable bit reversal if supported by your SDK version:
+     18              init.reverse_byte_order = false;
+   \       0x30   0x2200             MOVS     R2,#+0
+     19              init.reverse_bits = true;
+     20              sl_hal_gpcrc_init(GPCRC, &init);
+   \       0x32   0x....             LDR.N    R7,??DataTable1_2
+   \       0x34   0xF88D 0x2000      STRB     R2,[SP, #+0]
+   \       0x38   0xF88D 0xC001      STRB     R12,[SP, #+1]
+   \       0x3C   0x4669             MOV      R1,SP
+   \       0x3E   0x4638             MOV      R0,R7
+   \       0x40   0x.... 0x....      BL       sl_hal_gpcrc_init
+     21          
+     22              sl_hal_gpcrc_start(GPCRC);
+   \       0x44   0x2001             MOVS     R0,#+1
+   \       0x46   0x60B0             STR      R0,[R6, #+8]
+     23          
+     24              for (size_t i = 0; i < length; i++) {
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0xE002             B.N      ??crc16modbus_0
+     25                  sl_hal_gpcrc_write_input_8bit(GPCRC, data[i]);
+   \                     ??crc16modbus_1: (+1)
+   \       0x4C   0x5C21             LDRB     R1,[R4, R0]
+     26              }
+   \       0x4E   0x1C40             ADDS     R0,R0,#+1
+   \       0x50   0x6239             STR      R1,[R7, #+32]
+   \                     ??crc16modbus_0: (+1)
+   \       0x52   0x42A8             CMP      R0,R5
+   \       0x54   0xD3FA             BCC.N    ??crc16modbus_1
+     27          
+     28              return (uint16_t) sl_hal_gpcrc_read_data(GPCRC);
+   \       0x56   0x6A78             LDR      R0,[R7, #+36]
+   \       0x58   0xB280             UXTH     R0,R0
+   \       0x5A   0xBDFE             POP      {R1-R7,PC}
+     29          }
+     30          
+
+   \                                 In section .text, align 2, keep-with-next
+     31          uint8_t calc_checksum(const uint8_t *data, size_t length) {
+   \                     calc_checksum: (+1)
+   \        0x0   0x4602             MOV      R2,R0
+   \        0x2   0xB510             PUSH     {R4,LR}
+     32              uint8_t sum = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+     33              for (size_t i = 0; i < length; i++) { sum += data[i]; }
+   \        0x6   0x2300             MOVS     R3,#+0
+   \        0x8   0xE002             B.N      ??calc_checksum_0
+   \                     ??calc_checksum_1: (+1)
+   \        0xA   0x5CD4             LDRB     R4,[R2, R3]
+   \        0xC   0x1C5B             ADDS     R3,R3,#+1
+   \        0xE   0x1900             ADDS     R0,R0,R4
+   \                     ??calc_checksum_0: (+1)
+   \       0x10   0x428B             CMP      R3,R1
+   \       0x12   0xD3FA             BCC.N    ??calc_checksum_1
+     34              return sum;
+   \       0x14   0xB2C0             UXTB     R0,R0
+   \       0x16   0xBD10             POP      {R4,PC}
+     35          }
+     36          
+
+   \                                 In section .text, align 2, keep-with-next
+     37          uint16_t crc16modbus_s(const uint8_t *data, size_t length) {
+   \                     crc16modbus_s: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x4603             MOV      R3,R0
+     38              uint16_t crc = 0xFFFF; // Modbus ��ʼֵΪ 0xFFFF
+   \        0x4   0xF64F 0x70FF      MOVW     R0,#+65535
+     39              
+     40              for (size_t i = 0; i < length; i++) {
+   \        0x8   0x2400             MOVS     R4,#+0
+   \        0xA   0xE000             B.N      ??crc16modbus_s_0
+   \                     ??crc16modbus_s_1: (+1)
+   \        0xC   0x1C64             ADDS     R4,R4,#+1
+   \                     ??crc16modbus_s_0: (+1)
+   \        0xE   0x428C             CMP      R4,R1
+   \       0x10   0xD20D             BCS.N    ??crc16modbus_s_2
+     41                  crc ^= (uint16_t)data[i]; // ����ǰ�ֽ��� CRC �Ĵ����ĵ� 8 λ���
+   \       0x12   0x5D1A             LDRB     R2,[R3, R4]
+   \       0x14   0x4050             EORS     R0,R2,R0
+     42                  
+     43                  for (int j = 0; j < 8; j++) {
+   \       0x16   0x2208             MOVS     R2,#+8
+     44                      if (crc & 0x0001) {   // ������λΪ 1
+   \                     ??crc16modbus_s_3: (+1)
+   \       0x18   0x0845             LSRS     R5,R0,#+1
+   \       0x1A   0x07C0             LSLS     R0,R0,#+31
+   \       0x1C   0xBF52             ITEE     PL
+   \       0x1E   0x4628             MOVPL    R0,R5
+   \       0x20   0xF485 0x4020      EORMI    R0,R5,#0xA000
+   \       0x24   0xF080 0x0001      EORMI    R0,R0,#0x1
+     45                          crc = (crc >> 1) ^ 0xA001; // ����һλ��������ʽ
+     46                      } else {
+     47                          crc >>= 1;        // ����ֱ������һλ
+     48                      }
+     49                  }
+   \       0x28   0x1E52             SUBS     R2,R2,#+1
+   \       0x2A   0xD1F5             BNE.N    ??crc16modbus_s_3
+   \       0x2C   0xE7EE             B.N      ??crc16modbus_s_1
+     50              }
+     51              return crc;
+   \                     ??crc16modbus_s_2: (+1)
+   \       0x2E   0xBD30             POP      {R4,R5,PC}
+     52          }
+     53          
+     54          /**
+     55           * 验证 data 数组最后两字节是否等于前面数据的 CRC16-Modbus 校验值
+     56           *
+     57           * @param data   包含数据和尾部 CRC 的字节数组
+     58           * @param length 数组总长度（含末尾 2 字节 CRC）
+     59           * @return 1 = CRC 校验通过，0 = 校验失败或参数无效
+     60           *
+     61           * 数据帧格式：[ data[0] ... data[length-3] | CRC_Hi | CRC_Lo ]
+     62           *                                      ↑                 ↑
+     63           *                              参与 CRC 计算         不参与计算，用于比对
+     64           */
+
+   \                                 In section .text, align 2, keep-with-next
+     65          uint8_t verify_crc16modbus(const uint8_t *data, size_t length) {
+   \                     verify_crc16modbus: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+     66              /* 至少需要 1 字节数据 + 2 字节 CRC */
+     67              if (data == NULL || length < 3) {
+   \        0x6   0xD00E             BEQ.N    ??verify_crc16modbus_0
+   \        0x8   0x2D03             CMP      R5,#+3
+   \        0xA   0xD30C             BCC.N    ??verify_crc16modbus_0
+     68                  return 0;
+     69              }
+     70          
+     71              /* 对前 length-2 字节计算 CRC */
+     72              uint16_t crc_calc = crc16modbus_s(data, length - 2);
+   \        0xC   0x1EA9             SUBS     R1,R5,#+2
+   \        0xE   0x.... 0x....      BL       crc16modbus_s
+     73          
+     74              /* 大端序：先高字节，再低字节 */
+     75              uint16_t crc_recv = (uint16_t)data[length - 1]          /* CRC 高字节 */
+     76                                | ((uint16_t)data[length - 2] << 8);  /* CRC 低字节 */
+     77          
+     78              return (crc_calc == crc_recv) ? 1 : 0;
+   \       0x12   0x1961             ADDS     R1,R4,R5
+   \       0x14   0x1E89             SUBS     R1,R1,#+2
+   \       0x16   0x784A             LDRB     R2,[R1, #+1]
+   \       0x18   0x7809             LDRB     R1,[R1, #+0]
+   \       0x1A   0xEA42 0x2201      ORR      R2,R2,R1, LSL #+8
+   \       0x1E   0x4290             CMP      R0,R2
+   \       0x20   0xD101             BNE.N    ??verify_crc16modbus_0
+   \       0x22   0x2001             MOVS     R0,#+1
+   \       0x24   0xBD32             POP      {R1,R4,R5,PC}
+   \                     ??verify_crc16modbus_0: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0xBD32             POP      {R1,R4,R5,PC}
+     79          }
+     80          
+     81          /**
+     82           * 计算 data 前 length-2 字节的 CRC16-Modbus，
+     83           * 将结果以 高字节在前、低字节在后 的方式写入最后两位
+     84           *
+     85           * @param data   字节数组（前 length-2 字节为数据，最后 2 字节将被覆盖为 CRC）
+     86           * @param length 数组总长度（含末尾 2 字节 CRC 占位）
+     87           *
+     88           * 数据帧格式：[ data[0] ... data[length-3] | CRC_Hi | CRC_Lo ]
+     89           */
+
+   \                                 In section .text, align 2, keep-with-next
+     90          void fill_crc16modbus(uint8_t *data, size_t length) {
+   \                     fill_crc16modbus: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+     91              if (data == NULL || length < 3) {
+   \        0x6   0xD009             BEQ.N    ??fill_crc16modbus_0
+   \        0x8   0x2D03             CMP      R5,#+3
+   \        0xA   0xD307             BCC.N    ??fill_crc16modbus_0
+     92                  return;
+     93              }
+     94          
+     95              /* 对前 length-2 字节计算 CRC */
+     96              uint16_t crc_calc = crc16modbus_s(data, length - 2);
+   \        0xC   0x1EA9             SUBS     R1,R5,#+2
+   \        0xE   0x.... 0x....      BL       crc16modbus_s
+     97          
+     98              /* 大端序：高字节在前，低字节在后 */
+     99              data[length - 2] = (uint8_t)(crc_calc >> 8);    /* CRC 高字节 */
+   \       0x12   0x1961             ADDS     R1,R4,R5
+   \       0x14   0x0A02             LSRS     R2,R0,#+8
+   \       0x16   0xF801 0x2D02      STRB     R2,[R1, #-2]!
+    100              data[length - 1] = (uint8_t)(crc_calc & 0xFF);   /* CRC 低字节 */
+   \       0x1A   0x7048             STRB     R0,[R1, #+1]
+    101          }
+   \                     ??fill_crc16modbus_0: (+1)
+   \       0x1C   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     SL_BUS_CLOCK_GPCRC0_VALUE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x5008'9004        DC32     0x50089004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x5008'8000        DC32     0x50088000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_0:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00
+   \        0x4   0x04C1'1DB7        DC32 79'764'919, 0
+   \              0x0000'0000
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   calc_checksum
+      32   crc16modbus
+        32   -> sl_clock_manager_enable_bus_clock
+        32   -> sl_hal_gpcrc_init
+      12   crc16modbus_s
+      16   fill_crc16modbus
+        16   -> crc16modbus_s
+      16   verify_crc16modbus
+        16   -> crc16modbus_s
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+      12  ?_0
+      24  calc_checksum
+      92  crc16modbus
+      48  crc16modbus_s
+      30  fill_crc16modbus
+      42  verify_crc16modbus
+
+ 
+ 260 bytes in section .text
+ 
+ 260 bytes of CODE memory
+
+Errors: none
+Warnings: none

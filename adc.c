@@ -2,26 +2,13 @@
 #include "em_cmu.h"
 #include "em_iadc.h"
 
-#define REF_VOLTAGE_MV 2500UL
-#define SAMPLES_TO_AVERAGE 10
-#define CLK_SRC_ADC_FREQ 20000000
-#define CLK_ADC_FREQ 10000000
-#define MAX_SIGNAL_NBR 2
 
-#define IADC_INPUT_0_PORT_PIN iadcPosInputPortAPin3
-#define IADC_INPUT_0_BUS ABUSALLOC
-#define IADC_INPUT_0_BUSALLOC GPIO_ABUSALLOC_AODD0_ADC0
+uint32_t adc_pa03 = 0;
+uint32_t adc_pa04 = 0;
 
-#define IADC_INPUT_1_PORT_PIN iadcPosInputPortAPin4
-#define IADC_INPUT_1_BUS ABUSALLOC
-#define IADC_INPUT_1_BUSALLOC GPIO_ABUSALLOC_AEVEN0_ADC0
-
-volatile uint32_t adc_pa03 = 0;
-volatile uint32_t adc_pa04 = 0;
-
-static uint32_t adc_channel[MAX_SIGNAL_NBR][SAMPLES_TO_AVERAGE];
-static uint32_t adc_last[MAX_SIGNAL_NBR];
-static uint8_t currIdx = 0;
+uint32_t adc_channel[MAX_SIGNAL_NBR][SAMPLES_TO_AVERAGE]={0};
+uint32_t adc_last[MAX_SIGNAL_NBR]={0};
+uint8_t currIdx = 0;
 
 bool adc_init(void) {
     // 声明初始化结构体

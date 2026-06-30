@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         29/Jun/2026  16:39:48
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         30/Jun/2026  17:26:27
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -137,69 +137,269 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\comm.c
       2          #include "sl_iostream_handles.h"  // 包含自动生成的实例句柄（如 sl_iostream_inst0_handle）
       3          #include <stdint.h>
       4          #include <string.h>
-      5          
-      6          /* 接收缓冲区，最大长度64字节 */
+      5          #include "timer.h"
+      6          #include "adc.h"
+      7          #include "config.h"
+      8          #include "crc.h"
+      9          #include "env.h"
+     10          
+     11          /* 接收缓冲区，最大长度64字节 */
 
    \                                 In section .bss, align 4
-      7          uint8_t comm_rx_buf[64];
-      8          
-      9          /* 当前缓冲区中已接收数据的有效长度 */
-     10          uint8_t comm_rx_len = 0;
-   \                     comm_rx_len:
-   \        0x0                      DS8 1
-   \        0x1                      DS8 3
+     12          uint8_t comm_rx_buf[64];
    \                     comm_rx_buf:
-   \        0x4                      DS8 64
-     11          
-     12          /**
-     13           * @brief 接收1字节数据并追加到缓冲区
-     14           * @param data 要接收的1字节数据
-     15           * @return 0: 追加成功; -1: 缓冲区已满，无法追加
-     16           */
+   \        0x0                      DS8 64
+     13          
+     14          /* 当前缓冲区中已接收数据的有效长度 */
+     15          uint8_t comm_rx_len = 0;
+   \                     comm_rx_len:
+   \       0x40                      DS8 1
+   \       0x41                      DS8 3
+     16          // 上次接收完成的时刻
+     17          uint32_t last_rx_tick = 0;
+   \                     last_rx_tick:
+   \       0x44                      DS8 4
+     18          
+     19          /**
+     20           * @brief 接收1字节数据并追加到缓冲区
+     21           * @param data 要接收的1字节数据
+     22           * @return 0: 追加成功; -1: 缓冲区已满，无法追加
+     23           */
 
    \                                 In section .text, align 4, keep-with-next
-     17          int8_t receive(uint8_t data)
-     18          {
+     24          int8_t receive(uint8_t data) {
    \                     receive: (+1)
-   \        0x0   0xB580             PUSH     {R7,LR}
-     19              if (comm_rx_len >= sizeof(comm_rx_buf)) {
-   \        0x2   0x....             LDR.N    R1,??DataTable1
-   \        0x4   0x780A             LDRB     R2,[R1, #+0]
-   \        0x6   0x2A40             CMP      R2,#+64
-   \        0x8   0xD308             BCC.N    ??receive_0
-     20                  /* 缓冲区已满，拒绝写入 */
-     21                  char *temp = "RX buffer full\r\n";
-     22                  sl_iostream_write(sl_iostream_inst0_handle, temp, strlen(temp));
-   \        0xA   0x....             LDR.N    R3,??DataTable1_1
-   \        0xC   0x6818             LDR      R0,[R3, #+0]
-   \        0xE   0x2210             MOVS     R2,#+16
-   \       0x10   0x....             ADR.N    R1,?_0
-   \       0x12   0x.... 0x....      BL       sl_iostream_write
-     23                  return -1;
-   \       0x16   0xF04F 0x30FF      MOV      R0,#+4294967295
-   \       0x1A   0xBD02             POP      {R1,PC}
-     24              }
-     25          
-     26              comm_rx_buf[comm_rx_len] = data;
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+     25              /* 超时重置：如果距离上次接收超过100ms(差值>1)，则视为新帧，清空缓冲区 */
+     26              if ((system_uptime_100ms - last_rx_tick) > 1) {
+   \        0x4   0x....             LDR.N    R2,??DataTable2_2
+   \        0x6   0x....             LDR.N    R3,??DataTable2_3
+   \        0x8   0xF102 0x0440      ADD      R4,R2,#+64
+   \        0xC   0x681D             LDR      R5,[R3, #+0]
+   \        0xE   0x6861             LDR      R1,[R4, #+4]
+   \       0x10   0x1A6D             SUBS     R5,R5,R1
+   \       0x12   0x2D02             CMP      R5,#+2
+   \       0x14   0xBF24             ITT      CS
+   \       0x16   0x2500             MOVCS    R5,#+0
+   \       0x18   0x7025             STRBCS   R5,[R4, #+0]
+     27                  comm_rx_len = 0;
+     28              }
+     29              // 更新上次接收时间戳
+     30              last_rx_tick = system_uptime_100ms;
+   \       0x1A   0x681B             LDR      R3,[R3, #+0]
+     31              // 将最新字节加入comm_rx_buf
+     32              if (comm_rx_len >= sizeof(comm_rx_buf)) {
+   \       0x1C   0x....             LDR.N    R5,??DataTable2_4
+   \       0x1E   0x6063             STR      R3,[R4, #+4]
+   \       0x20   0x7823             LDRB     R3,[R4, #+0]
+   \       0x22   0x2B40             CMP      R3,#+64
+   \       0x24   0xD30A             BCC.N    ??receive_0
+     33                  /* 缓冲区已满，拒绝写入 */
+     34                  char *temp = "RX buffer full\r\n";
+     35                  sl_iostream_write(sl_iostream_inst0_handle, temp, strlen(temp));
+   \       0x26   0x6828             LDR      R0,[R5, #+0]
+   \       0x28   0xF05F 0x0210      MOVS.W   R2,#+16
+   \       0x2C   0x....             ADR.N    R1,?_0
+   \       0x2E   0x.... 0x....      BL       sl_iostream_write
+     36                  comm_rx_len = 0;
+   \       0x32   0x2100             MOVS     R1,#+0
+   \       0x34   0x7021             STRB     R1,[R4, #+0]
+     37                  return -1;
+   \       0x36   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x3A   0xE06F             B.N      ??receive_1
+     38              }
+     39              comm_rx_buf[comm_rx_len] = data;
    \                     ??receive_0: (+1)
-   \       0x1C   0x188B             ADDS     R3,R1,R2
-   \       0x1E   0x7118             STRB     R0,[R3, #+4]
-     27              comm_rx_len++;
-   \       0x20   0x1C52             ADDS     R2,R2,#+1
-   \       0x22   0x700A             STRB     R2,[R1, #+0]
-     28          
-     29              return 0;
-   \       0x24   0x2000             MOVS     R0,#+0
-   \       0x26   0xBD02             POP      {R1,PC}
-     30          }
+   \       0x3C   0x54D0             STRB     R0,[R2, R3]
+     40              comm_rx_len++;
+   \       0x3E   0x1C5B             ADDS     R3,R3,#+1
+     41          
+     42              // 开始处理指令
+     43              // 兼容读取命令
+     44              if (comm_rx_len > 10 && comm_rx_buf[0] == 0x02 && comm_rx_buf[1] == 0x31 && comm_rx_buf[8] == 0x30) {
+   \       0x40   0xB2D8             UXTB     R0,R3
+   \       0x42   0x7023             STRB     R3,[R4, #+0]
+   \       0x44   0x7811             LDRB     R1,[R2, #+0]
+   \       0x46   0x280A             CMP      R0,#+10
+   \       0x48   0xDD5A             BLE.N    ??receive_2
+   \       0x4A   0x2902             CMP      R1,#+2
+   \       0x4C   0xD158             BNE.N    ??receive_2
+   \       0x4E   0x7850             LDRB     R0,[R2, #+1]
+   \       0x50   0x2831             CMP      R0,#+49
+   \       0x52   0xBF04             ITT      EQ
+   \       0x54   0x7A10             LDRBEQ   R0,[R2, #+8]
+   \       0x56   0x2830             CMPEQ    R0,#+48
+   \       0x58   0xD15F             BNE.N    ??receive_3
+     45                  uint8_t temp[23];
+     46                  // TODO: 对temp数组的操作省略
+     47                  // 1. 前9个字节固定头部
+     48                  const uint8_t header[9] = {0x02, 0x31, 0x13, 0x7b, 0x59, 0x10, 0x00, 0x00, 0x30};
+     49                  memcpy(temp, header, 9);
+   \       0x5A   0x2209             MOVS     R2,#+9
+   \       0x5C   0x....             ADR.N    R1,`receive{4}{5}::header`
+   \       0x5E   0x4668             MOV      R0,SP
+   \       0x60   0x.... 0x....      BL       __aeabi_memcpy4
+     50                  // 2. 接下来4字节：大端整数 (float * 100)
+     51                  int32_t reading_val = (int32_t)(get_reading(0) * 100.0f);
+   \       0x64   0x2000             MOVS     R0,#+0
+   \       0x66   0x.... 0x....      BL       get_reading
+   \       0x6A   0xEDDF 0x....      VLDR.W   S1,??DataTable2
+   \       0x6E   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \       0x72   0xEEBD 0x0AC0      VCVT.S32.F32 S0,S0
+   \       0x76   0xEE10 0x1A10      VMOV     R1,S0
+     52                  temp[9] = (uint8_t)((reading_val >> 24) & 0xFF);
+     53                  temp[10] = (uint8_t)((reading_val >> 16) & 0xFF);
+     54                  temp[11] = (uint8_t)((reading_val >> 8) & 0xFF);
+     55                  temp[12] = (uint8_t)(reading_val & 0xFF);
+   \       0x7A   0xF88D 0x100C      STRB     R1,[SP, #+12]
+   \       0x7E   0x140A             ASRS     R2,R1,#+16
+   \       0x80   0x1608             ASRS     R0,R1,#+24
+   \       0x82   0xF88D 0x200A      STRB     R2,[SP, #+10]
+   \       0x86   0xF88D 0x0009      STRB     R0,[SP, #+9]
+   \       0x8A   0x1208             ASRS     R0,R1,#+8
+     56                  temp[13] = 0x02;
+   \       0x8C   0x2102             MOVS     R1,#+2
+   \       0x8E   0xF88D 0x100D      STRB     R1,[SP, #+13]
+     57                  // 3. 接下来2字节：大端整数 adc_last[0]
+     58                  temp[14] = (uint8_t)((adc_last[0] >> 8) & 0xFF);
+   \       0x92   0x....             LDR.N    R1,??DataTable2_5
+   \       0x94   0x680A             LDR      R2,[R1, #+0]
+   \       0x96   0xF88D 0x000B      STRB     R0,[SP, #+11]
+     59                  temp[15] = (uint8_t)(adc_last[0] & 0xFF);
+     60                  // 4. 接下来2字节：大端整数 adc_last[1]
+     61                  temp[16] = (uint8_t)((adc_last[1] >> 8) & 0xFF);
+     62                  temp[17] = (uint8_t)(adc_last[1] & 0xFF);
+     63                  // 5. 接下来1字节：温度 (温度值 + 127)
+     64                  temp[18] = (uint8_t)((int16_t)(temperature + 127.0f));
+   \       0x9A   0xEDDF 0x....      VLDR.W   S1,??DataTable2_1
+   \       0x9E   0x0A10             LSRS     R0,R2,#+8
+   \       0xA0   0xF88D 0x000E      STRB     R0,[SP, #+14]
+   \       0xA4   0x6848             LDR      R0,[R1, #+4]
+   \       0xA6   0xF88D 0x200F      STRB     R2,[SP, #+15]
+   \       0xAA   0x0A01             LSRS     R1,R0,#+8
+   \       0xAC   0xF88D 0x1010      STRB     R1,[SP, #+16]
+   \       0xB0   0x....             LDR.N    R1,??DataTable2_6
+   \       0xB2   0xF88D 0x0011      STRB     R0,[SP, #+17]
+   \       0xB6   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \       0xBA   0xEE70 0x0A20      VADD.F32 S1,S0,S1
+   \       0xBE   0xEEFD 0x0AE0      VCVT.S32.F32 S1,S1
+   \       0xC2   0xEE10 0x0A90      VMOV     R0,S1
+   \       0xC6   0xF88D 0x0012      STRB     R0,[SP, #+18]
+     65                  // 6. 接下来2字节：CRC16 Modbus
+     66                  uint16_t crc = crc16modbus_s(&temp[3], 16);
+   \       0xCA   0x2110             MOVS     R1,#+16
+   \       0xCC   0xF10D 0x0003      ADD      R0,SP,#+3
+   \       0xD0   0x.... 0x....      BL       crc16modbus_s
+     67                  temp[19] = (uint8_t)((crc >> 8) & 0xFF); // CRC 高字节（原低字节位置）
+     68                  temp[20] = (uint8_t)(crc & 0xFF); // CRC 低字节（原高字节位置）
+   \       0xD4   0xF88D 0x0014      STRB     R0,[SP, #+20]
+   \       0xD8   0x0A01             LSRS     R1,R0,#+8
+     69                  temp[21] = 0x7d;
+   \       0xDA   0x207D             MOVS     R0,#+125
+   \       0xDC   0xF88D 0x1013      STRB     R1,[SP, #+19]
+   \       0xE0   0xF88D 0x0015      STRB     R0,[SP, #+21]
+     70                  // 7. 校验和
+     71                  temp[22] = calc_checksum(temp, 22);
+   \       0xE4   0x2116             MOVS     R1,#+22
+   \       0xE6   0x4668             MOV      R0,SP
+   \       0xE8   0x.... 0x....      BL       calc_checksum
+   \       0xEC   0xF88D 0x0016      STRB     R0,[SP, #+22]
+     72          
+     73                  sl_iostream_write(sl_iostream_inst0_handle, temp, sizeof(temp));
+   \       0xF0   0x6828             LDR      R0,[R5, #+0]
+   \       0xF2   0x2217             MOVS     R2,#+23
+   \       0xF4   0x4669             MOV      R1,SP
+   \       0xF6   0x.... 0x....      BL       sl_iostream_write
+     74                  comm_rx_len = 0;
+   \       0xFA   0x2000             MOVS     R0,#+0
+   \       0xFC   0x7020             STRB     R0,[R4, #+0]
+     75                  return 0;
+   \       0xFE   0xE00D             B.N      ??receive_1
+     76              }
+     77              // 私有指令
+     78              if (comm_rx_buf[0] == 0xAA && comm_rx_len > 2) {
+   \                     ??receive_2: (+1)
+   \      0x100   0x29AA             CMP      R1,#+170
+   \      0x102   0xD10A             BNE.N    ??receive_3
+   \      0x104   0x2803             CMP      R0,#+3
+   \      0x106   0xDB08             BLT.N    ??receive_3
+     79                  // 长度满足命令要求后开始处理命令
+     80                  if (comm_rx_len == comm_rx_buf[1]) {
+   \      0x108   0x7851             LDRB     R1,[R2, #+1]
+   \      0x10A   0xB2DB             UXTB     R3,R3
+   \      0x10C   0x428B             CMP      R3,R1
+   \      0x10E   0xD104             BNE.N    ??receive_3
+     81                      // 校验
+     82                      if (verify_crc16modbus(comm_rx_buf, comm_rx_buf[1])) {
+   \      0x110   0x4610             MOV      R0,R2
+   \      0x112   0x.... 0x....      BL       verify_crc16modbus
+     83                          switch (comm_rx_buf[2]) {
+     84                              // 读取标定校准信息
+     85                              case 0x00: {
+     86          
+     87                              }
+     88                              break;
+     89                              case 0x01:
+     90                                  // 语句块 2
+     91                                  break;
+     92                              // ... 可以有任意数量的 case
+     93                              default:
+     94                                  // 默认语句块（当所有 case 都不匹配时执行）
+     95                                  break;
+     96                          }
+     97                      }
+     98                      comm_rx_len = 0;
+   \      0x116   0x2000             MOVS     R0,#+0
+   \      0x118   0x7020             STRB     R0,[R4, #+0]
+     99                  }
+    100              }
+    101          
+    102          
+    103              return 0;
+   \                     ??receive_3: (+1)
+   \      0x11A   0x2000             MOVS     R0,#+0
+   \                     ??receive_1: (+1)
+   \      0x11C   0xB007             ADD      SP,SP,#+28
+   \      0x11E   0xBD30             POP      {R4,R5,PC}
+    104          }
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable1:
-   \        0x0   0x....'....        DC32     comm_rx_len
+   \                     `receive{4}{5}::header`:
+   \        0x0   0x02 0x31          DC8 2, 49, 19, 123, 89, 16, 0, 0, 48
+   \              0x13 0x7B    
+   \              0x59 0x10    
+   \              0x00 0x00    
+   \              0x30
+   \        0x9                      DS8 3
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable1_1:
+   \                     ??DataTable2:
+   \        0x0   0x42C8'0000        DC32     0x42c80000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x42FE'0000        DC32     0x42fe0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     comm_rx_buf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x....'....        DC32     system_uptime_100ms
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
    \        0x0   0x....'....        DC32     sl_iostream_inst0_handle
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x....'....        DC32     adc_last
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \        0x0   0x....'....        DC32     temperature
 
    \                                 In section .text, align 4, keep-with-next
    \                     ?_0:
@@ -218,27 +418,39 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\comm.c
 
    .cstack Function
    ------- --------
-       8   receive
-         8   -> sl_iostream_write
+      40   receive
+        40   -> __aeabi_memcpy4
+        40   -> calc_checksum
+        40   -> crc16modbus_s
+        40   -> get_reading
+        40   -> sl_iostream_write
+        40   -> verify_crc16modbus
 
 
    Section sizes:
 
    Bytes  Function/Label
    -----  --------------
-       4  ??DataTable1
-       4  ??DataTable1_1
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
       20  ?_0
-      68  comm_rx_len
-          comm_rx_buf
-      40  receive
+      72  comm_rx_buf
+          comm_rx_len
+          last_rx_tick
+      12  header
+     288  receive
 
  
- 68 bytes in section .bss
- 68 bytes in section .text
+  72 bytes in section .bss
+ 348 bytes in section .text
  
- 68 bytes of CODE memory
- 68 bytes of DATA memory
+ 348 bytes of CODE memory
+  72 bytes of DATA memory
 
 Errors: none
 Warnings: none

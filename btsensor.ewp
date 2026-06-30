@@ -2407,6 +2407,12 @@
         <name>$PROJ_DIR$\config.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\crc.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\crc.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\env.c</name>
     </file>
     <file>

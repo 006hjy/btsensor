@@ -6,12 +6,12 @@
 uint8_t temp_way = 0;
 // 温度
 float temperature = 24.0;
-void update_temperature(void)
-{
-    if (temp_way == 0)
-    {
+
+void update_temperature(void) {
+    if (temp_way == 0) {
         // 获取当前温度（单位：°C）
-        // temperature = (float)TEMPDRV_GetTemp();
+        temperature = (float) TEMPDRV_GetTemp();
+    } else if (temp_way == 1) {
         temperature = tmp1075_get_temperature();
     }
 }
