@@ -231,7 +231,7 @@ void self_cmd() {
             }
             break;
         }
-        /*读取selfset temp_way gain factory_time last_maintain_time*/
+        /* 读取selfset temp_way gain factory_time last_maintain_time */
         case 0x02:
         case 0x12: {
             Board_config *target_config =
@@ -299,7 +299,7 @@ void self_cmd() {
             sl_iostream_write(sl_iostream_inst0_handle, tx, tx_len);
             break;
         }
-        /*写入selfset temp_way gain factory_time last_maintain_time*/
+        /* 写入selfset temp_way gain factory_time last_maintain_time */
         case 0x03:
         case 0x13: {
             Board_config *target_config =
@@ -343,11 +343,12 @@ void self_cmd() {
             }
 
             if (valid && !save_config(save_type)) {
+                config_init();
                 sl_iostream_write(sl_iostream_inst0_handle, comm_rx_buf, comm_rx_len);
             }
             break;
         }
-        /*读取gas[16];board_sn[32];sensor_sn[32];info[32];*/
+        /* 读取gas[16];board_sn[32];sensor_sn[32];info[32]; */
         case 0x04:
         case 0x14: {
             Board_config *target_config =
@@ -397,7 +398,7 @@ void self_cmd() {
             sl_iostream_write(sl_iostream_inst0_handle, tx, tx_len);
             break;
         }
-        /*写入gas[16];board_sn[32];sensor_sn[32];info[32];*/
+        /* 写入gas[16];board_sn[32];sensor_sn[32];info[32]; */
         case 0x05:
         case 0x15: {
             Board_config *target_config =
@@ -437,8 +438,8 @@ void self_cmd() {
             if (dst == NULL) {
                 break;
             }
-
-            if (comm_rx_len != (uint8_t)(7 + data_len)) {
+            /* 防止包太短：数据不完整导致写脏数据 */
+            if (comm_rx_len < (uint8_t)(7 + data_len)) {
                 break;
             }
 
@@ -447,6 +448,13 @@ void self_cmd() {
             valid = 1;
 
             if (valid && !save_config(save_type)) {
+                sl_iostream_write(sl_iostream_inst0_handle, comm_rx_buf, comm_rx_len);
+            }
+            break;
+        }
+        /* 恢复工厂配置 */
+        case 0xF0: {
+            if (!restore_factory_config()) {
                 sl_iostream_write(sl_iostream_inst0_handle, comm_rx_buf, comm_rx_len);
             }
             break;

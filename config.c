@@ -111,7 +111,6 @@ void config_init(void) {
     ;
 
     // 设置gain阻值
-    user_config.gain = 0xFF;
     tpl0501_set_wiper(user_config.gain);
 
     // 设置温度通道
