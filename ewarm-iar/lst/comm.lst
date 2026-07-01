@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         30/Jun/2026  17:26:27
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         01/Jul/2026  17:05:05
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -151,255 +151,1260 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\comm.c
    \        0x0                      DS8 64
      13          
      14          /* 当前缓冲区中已接收数据的有效长度 */
+
+   \                                 In section .bss, align 4
      15          uint8_t comm_rx_len = 0;
    \                     comm_rx_len:
-   \       0x40                      DS8 1
-   \       0x41                      DS8 3
+   \        0x0                      DS8 1
+   \        0x1                      DS8 3
      16          // 上次接收完成的时刻
      17          uint32_t last_rx_tick = 0;
    \                     last_rx_tick:
-   \       0x44                      DS8 4
+   \        0x4                      DS8 4
      18          
-     19          /**
-     20           * @brief 接收1字节数据并追加到缓冲区
-     21           * @param data 要接收的1字节数据
-     22           * @return 0: 追加成功; -1: 缓冲区已满，无法追加
-     23           */
+     19          /* 私有协议
+     20           * 第1位前导字符 0xAA
+     21           * 第2位为当前指令的完整长度(包含第一位0xAA和尾部的校验码)
+     22           * 第3位comm_rx_buf[2]为指令位决定操作类型
+     23           * 0x00代表读，0x01代表写
+     24           * 第4位开始为参数位
+     25           * 最后2位为校验位
+     26           */
 
    \                                 In section .text, align 4, keep-with-next
-     24          int8_t receive(uint8_t data) {
-   \                     receive: (+1)
-   \        0x0   0xB538             PUSH     {R3-R5,LR}
-   \        0x2   0xB086             SUB      SP,SP,#+24
-     25              /* 超时重置：如果距离上次接收超过100ms(差值>1)，则视为新帧，清空缓冲区 */
-     26              if ((system_uptime_100ms - last_rx_tick) > 1) {
-   \        0x4   0x....             LDR.N    R2,??DataTable2_2
-   \        0x6   0x....             LDR.N    R3,??DataTable2_3
-   \        0x8   0xF102 0x0440      ADD      R4,R2,#+64
-   \        0xC   0x681D             LDR      R5,[R3, #+0]
-   \        0xE   0x6861             LDR      R1,[R4, #+4]
-   \       0x10   0x1A6D             SUBS     R5,R5,R1
-   \       0x12   0x2D02             CMP      R5,#+2
-   \       0x14   0xBF24             ITT      CS
-   \       0x16   0x2500             MOVCS    R5,#+0
-   \       0x18   0x7025             STRBCS   R5,[R4, #+0]
-     27                  comm_rx_len = 0;
-     28              }
-     29              // 更新上次接收时间戳
-     30              last_rx_tick = system_uptime_100ms;
-   \       0x1A   0x681B             LDR      R3,[R3, #+0]
-     31              // 将最新字节加入comm_rx_buf
-     32              if (comm_rx_len >= sizeof(comm_rx_buf)) {
-   \       0x1C   0x....             LDR.N    R5,??DataTable2_4
-   \       0x1E   0x6063             STR      R3,[R4, #+4]
-   \       0x20   0x7823             LDRB     R3,[R4, #+0]
-   \       0x22   0x2B40             CMP      R3,#+64
-   \       0x24   0xD30A             BCC.N    ??receive_0
-     33                  /* 缓冲区已满，拒绝写入 */
-     34                  char *temp = "RX buffer full\r\n";
-     35                  sl_iostream_write(sl_iostream_inst0_handle, temp, strlen(temp));
-   \       0x26   0x6828             LDR      R0,[R5, #+0]
-   \       0x28   0xF05F 0x0210      MOVS.W   R2,#+16
-   \       0x2C   0x....             ADR.N    R1,?_0
-   \       0x2E   0x.... 0x....      BL       sl_iostream_write
-     36                  comm_rx_len = 0;
-   \       0x32   0x2100             MOVS     R1,#+0
-   \       0x34   0x7021             STRB     R1,[R4, #+0]
-     37                  return -1;
-   \       0x36   0xF04F 0x30FF      MOV      R0,#+4294967295
-   \       0x3A   0xE06F             B.N      ??receive_1
-     38              }
-     39              comm_rx_buf[comm_rx_len] = data;
-   \                     ??receive_0: (+1)
-   \       0x3C   0x54D0             STRB     R0,[R2, R3]
-     40              comm_rx_len++;
-   \       0x3E   0x1C5B             ADDS     R3,R3,#+1
-     41          
-     42              // 开始处理指令
-     43              // 兼容读取命令
-     44              if (comm_rx_len > 10 && comm_rx_buf[0] == 0x02 && comm_rx_buf[1] == 0x31 && comm_rx_buf[8] == 0x30) {
-   \       0x40   0xB2D8             UXTB     R0,R3
-   \       0x42   0x7023             STRB     R3,[R4, #+0]
-   \       0x44   0x7811             LDRB     R1,[R2, #+0]
-   \       0x46   0x280A             CMP      R0,#+10
-   \       0x48   0xDD5A             BLE.N    ??receive_2
-   \       0x4A   0x2902             CMP      R1,#+2
-   \       0x4C   0xD158             BNE.N    ??receive_2
-   \       0x4E   0x7850             LDRB     R0,[R2, #+1]
-   \       0x50   0x2831             CMP      R0,#+49
-   \       0x52   0xBF04             ITT      EQ
-   \       0x54   0x7A10             LDRBEQ   R0,[R2, #+8]
-   \       0x56   0x2830             CMPEQ    R0,#+48
-   \       0x58   0xD15F             BNE.N    ??receive_3
-     45                  uint8_t temp[23];
-     46                  // TODO: 对temp数组的操作省略
-     47                  // 1. 前9个字节固定头部
-     48                  const uint8_t header[9] = {0x02, 0x31, 0x13, 0x7b, 0x59, 0x10, 0x00, 0x00, 0x30};
-     49                  memcpy(temp, header, 9);
-   \       0x5A   0x2209             MOVS     R2,#+9
-   \       0x5C   0x....             ADR.N    R1,`receive{4}{5}::header`
-   \       0x5E   0x4668             MOV      R0,SP
-   \       0x60   0x.... 0x....      BL       __aeabi_memcpy4
-     50                  // 2. 接下来4字节：大端整数 (float * 100)
-     51                  int32_t reading_val = (int32_t)(get_reading(0) * 100.0f);
-   \       0x64   0x2000             MOVS     R0,#+0
-   \       0x66   0x.... 0x....      BL       get_reading
-   \       0x6A   0xEDDF 0x....      VLDR.W   S1,??DataTable2
-   \       0x6E   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
-   \       0x72   0xEEBD 0x0AC0      VCVT.S32.F32 S0,S0
-   \       0x76   0xEE10 0x1A10      VMOV     R1,S0
-     52                  temp[9] = (uint8_t)((reading_val >> 24) & 0xFF);
-     53                  temp[10] = (uint8_t)((reading_val >> 16) & 0xFF);
-     54                  temp[11] = (uint8_t)((reading_val >> 8) & 0xFF);
-     55                  temp[12] = (uint8_t)(reading_val & 0xFF);
-   \       0x7A   0xF88D 0x100C      STRB     R1,[SP, #+12]
-   \       0x7E   0x140A             ASRS     R2,R1,#+16
-   \       0x80   0x1608             ASRS     R0,R1,#+24
-   \       0x82   0xF88D 0x200A      STRB     R2,[SP, #+10]
-   \       0x86   0xF88D 0x0009      STRB     R0,[SP, #+9]
-   \       0x8A   0x1208             ASRS     R0,R1,#+8
-     56                  temp[13] = 0x02;
-   \       0x8C   0x2102             MOVS     R1,#+2
-   \       0x8E   0xF88D 0x100D      STRB     R1,[SP, #+13]
-     57                  // 3. 接下来2字节：大端整数 adc_last[0]
-     58                  temp[14] = (uint8_t)((adc_last[0] >> 8) & 0xFF);
-   \       0x92   0x....             LDR.N    R1,??DataTable2_5
-   \       0x94   0x680A             LDR      R2,[R1, #+0]
-   \       0x96   0xF88D 0x000B      STRB     R0,[SP, #+11]
-     59                  temp[15] = (uint8_t)(adc_last[0] & 0xFF);
-     60                  // 4. 接下来2字节：大端整数 adc_last[1]
-     61                  temp[16] = (uint8_t)((adc_last[1] >> 8) & 0xFF);
-     62                  temp[17] = (uint8_t)(adc_last[1] & 0xFF);
-     63                  // 5. 接下来1字节：温度 (温度值 + 127)
-     64                  temp[18] = (uint8_t)((int16_t)(temperature + 127.0f));
-   \       0x9A   0xEDDF 0x....      VLDR.W   S1,??DataTable2_1
-   \       0x9E   0x0A10             LSRS     R0,R2,#+8
-   \       0xA0   0xF88D 0x000E      STRB     R0,[SP, #+14]
-   \       0xA4   0x6848             LDR      R0,[R1, #+4]
-   \       0xA6   0xF88D 0x200F      STRB     R2,[SP, #+15]
-   \       0xAA   0x0A01             LSRS     R1,R0,#+8
-   \       0xAC   0xF88D 0x1010      STRB     R1,[SP, #+16]
-   \       0xB0   0x....             LDR.N    R1,??DataTable2_6
-   \       0xB2   0xF88D 0x0011      STRB     R0,[SP, #+17]
-   \       0xB6   0xED91 0x0A00      VLDR     S0,[R1, #0]
-   \       0xBA   0xEE70 0x0A20      VADD.F32 S1,S0,S1
-   \       0xBE   0xEEFD 0x0AE0      VCVT.S32.F32 S1,S1
-   \       0xC2   0xEE10 0x0A90      VMOV     R0,S1
-   \       0xC6   0xF88D 0x0012      STRB     R0,[SP, #+18]
-     65                  // 6. 接下来2字节：CRC16 Modbus
-     66                  uint16_t crc = crc16modbus_s(&temp[3], 16);
-   \       0xCA   0x2110             MOVS     R1,#+16
-   \       0xCC   0xF10D 0x0003      ADD      R0,SP,#+3
-   \       0xD0   0x.... 0x....      BL       crc16modbus_s
-     67                  temp[19] = (uint8_t)((crc >> 8) & 0xFF); // CRC 高字节（原低字节位置）
-     68                  temp[20] = (uint8_t)(crc & 0xFF); // CRC 低字节（原高字节位置）
-   \       0xD4   0xF88D 0x0014      STRB     R0,[SP, #+20]
-   \       0xD8   0x0A01             LSRS     R1,R0,#+8
-     69                  temp[21] = 0x7d;
-   \       0xDA   0x207D             MOVS     R0,#+125
-   \       0xDC   0xF88D 0x1013      STRB     R1,[SP, #+19]
-   \       0xE0   0xF88D 0x0015      STRB     R0,[SP, #+21]
-     70                  // 7. 校验和
-     71                  temp[22] = calc_checksum(temp, 22);
-   \       0xE4   0x2116             MOVS     R1,#+22
-   \       0xE6   0x4668             MOV      R0,SP
-   \       0xE8   0x.... 0x....      BL       calc_checksum
-   \       0xEC   0xF88D 0x0016      STRB     R0,[SP, #+22]
-     72          
-     73                  sl_iostream_write(sl_iostream_inst0_handle, temp, sizeof(temp));
-   \       0xF0   0x6828             LDR      R0,[R5, #+0]
-   \       0xF2   0x2217             MOVS     R2,#+23
-   \       0xF4   0x4669             MOV      R1,SP
-   \       0xF6   0x.... 0x....      BL       sl_iostream_write
-     74                  comm_rx_len = 0;
-   \       0xFA   0x2000             MOVS     R0,#+0
-   \       0xFC   0x7020             STRB     R0,[R4, #+0]
-     75                  return 0;
-   \       0xFE   0xE00D             B.N      ??receive_1
-     76              }
-     77              // 私有指令
-     78              if (comm_rx_buf[0] == 0xAA && comm_rx_len > 2) {
-   \                     ??receive_2: (+1)
-   \      0x100   0x29AA             CMP      R1,#+170
-   \      0x102   0xD10A             BNE.N    ??receive_3
-   \      0x104   0x2803             CMP      R0,#+3
-   \      0x106   0xDB08             BLT.N    ??receive_3
-     79                  // 长度满足命令要求后开始处理命令
-     80                  if (comm_rx_len == comm_rx_buf[1]) {
-   \      0x108   0x7851             LDRB     R1,[R2, #+1]
-   \      0x10A   0xB2DB             UXTB     R3,R3
-   \      0x10C   0x428B             CMP      R3,R1
-   \      0x10E   0xD104             BNE.N    ??receive_3
-     81                      // 校验
-     82                      if (verify_crc16modbus(comm_rx_buf, comm_rx_buf[1])) {
-   \      0x110   0x4610             MOV      R0,R2
-   \      0x112   0x.... 0x....      BL       verify_crc16modbus
-     83                          switch (comm_rx_buf[2]) {
-     84                              // 读取标定校准信息
-     85                              case 0x00: {
-     86          
-     87                              }
-     88                              break;
-     89                              case 0x01:
-     90                                  // 语句块 2
-     91                                  break;
-     92                              // ... 可以有任意数量的 case
-     93                              default:
-     94                                  // 默认语句块（当所有 case 都不匹配时执行）
-     95                                  break;
-     96                          }
-     97                      }
-     98                      comm_rx_len = 0;
-   \      0x116   0x2000             MOVS     R0,#+0
-   \      0x118   0x7020             STRB     R0,[R4, #+0]
-     99                  }
-    100              }
-    101          
-    102          
-    103              return 0;
-   \                     ??receive_3: (+1)
-   \      0x11A   0x2000             MOVS     R0,#+0
-   \                     ??receive_1: (+1)
-   \      0x11C   0xB007             ADD      SP,SP,#+28
-   \      0x11E   0xBD30             POP      {R4,R5,PC}
-    104          }
+     27          void self_cmd() {
+   \                     self_cmd: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+     28              switch (comm_rx_buf[2]) {
+   \        0x4   0x.... 0x....      LDR.W    R10,??DataTable5_2
+   \        0x8   0xF89A 0x6000      LDRB     R6,[R10, #+0]
+   \        0xC   0xB09A             SUB      SP,SP,#+104
+   \        0xE   0x.... 0x....      LDR.W    R5,??DataTable5_3
+   \       0x12   0x796C             LDRB     R4,[R5, #+5]
+   \       0x14   0x4637             MOV      R7,R6
+   \       0x16   0x1D39             ADDS     R1,R7,#+4
+   \       0x18   0x1EBA             SUBS     R2,R7,#+2
+   \       0x1A   0x200C             MOVS     R0,#+12
+   \       0x1C   0x9105             STR      R1,[SP, #+20]
+   \       0x1E   0x9201             STR      R2,[SP, #+4]
+   \       0x20   0xFB10 0xF004      SMULBB   R0,R0,R4
+   \       0x24   0x78E9             LDRB     R1,[R5, #+3]
+   \       0x26   0x1D32             ADDS     R2,R6,#+4
+   \       0x28   0xB2D2             UXTB     R2,R2
+   \       0x2A   0xF895 0xC002      LDRB     R12,[R5, #+2]
+   \       0x2E   0x9203             STR      R2,[SP, #+12]
+   \       0x30   0x9006             STR      R0,[SP, #+24]
+   \       0x32   0x9104             STR      R1,[SP, #+16]
+   \       0x34   0x1FB2             SUBS     R2,R6,#+6
+   \       0x36   0x1EB3             SUBS     R3,R6,#+2
+   \       0x38   0xF895 0xB006      LDRB     R11,[R5, #+6]
+   \       0x3C   0xB2D2             UXTB     R2,R2
+   \       0x3E   0xFA5F 0xF983      UXTB     R9,R3
+   \       0x42   0xF895 0x8004      LDRB     R8,[R5, #+4]
+   \       0x46   0x.... 0x....      LDR.W    R0,??DataTable5_4
+   \       0x4A   0x.... 0x....      LDR.W    R1,??DataTable5_5
+   \       0x4E   0xF1BC 0x0F00      CMP      R12,#+0
+   \       0x52   0xD026             BEQ.N    ??self_cmd_6
+   \       0x54   0xF1BC 0x0F01      CMP      R12,#+1
+   \       0x58   0xD010             BEQ.N    ??self_cmd_7
+   \       0x5A   0xF1BC 0x0F02      CMP      R12,#+2
+   \       0x5E   0xD011             BEQ.N    ??self_cmd_8
+   \       0x60   0xF1BC 0x0F03      CMP      R12,#+3
+   \       0x64   0xD012             BEQ.N    ??self_cmd_9
+   \       0x66   0xF1BC 0x0F04      CMP      R12,#+4
+   \       0x6A   0xD013             BEQ.N    ??self_cmd_10
+   \       0x6C   0xF1BC 0x0F05      CMP      R12,#+5
+   \       0x70   0xD014             BEQ.N    ??self_cmd_11
+   \       0x72   0xF1BC 0x0F10      CMP      R12,#+16
+   \       0x76   0xD014             BEQ.N    ??self_cmd_6
+   \       0x78   0xF1BC 0x0F11      CMP      R12,#+17
+   \                     ??self_cmd_7: (+1)
+   \       0x7C   0xF000 0x80A4      BEQ.W    ??self_cmd_12
+   \       0x80   0xF1BC 0x0F12      CMP      R12,#+18
+   \                     ??self_cmd_8: (+1)
+   \       0x84   0xF000 0x8109      BEQ.W    ??self_cmd_13
+   \       0x88   0xF1BC 0x0F13      CMP      R12,#+19
+   \                     ??self_cmd_9: (+1)
+   \       0x8C   0xF000 0x8155      BEQ.W    ??self_cmd_14
+   \       0x90   0xF1BC 0x0F14      CMP      R12,#+20
+   \                     ??self_cmd_10: (+1)
+   \       0x94   0xF000 0x8178      BEQ.W    ??self_cmd_15
+   \       0x98   0xF1BC 0x0F15      CMP      R12,#+21
+   \                     ??self_cmd_11: (+1)
+   \       0x9C   0xF000 0x81B9      BEQ.W    ??self_cmd_16
+   \                     ??self_cmd_17: (+1)
+   \       0xA0   0xE1F0             B.N      ??self_cmd_18
+     29                  /*读取标定校准信息*/
+     30                  case 0x00:
+     31                  case 0x10: {
+     32                      Board_config *target_config =
+     33                              (comm_rx_buf[2] == 0x10) ? &factory_config : &user_config;
+   \                     ??self_cmd_6: (+1)
+   \       0xA2   0xF1BC 0x0F10      CMP      R12,#+16
+   \       0xA6   0xBF0C             ITE      EQ
+   \       0xA8   0x9102             STREQ    R1,[SP, #+8]
+   \       0xAA   0x9002             STRNE    R0,[SP, #+8]
+   \       0xAC   0x2120             MOVS     R1,#+32
+   \       0xAE   0xA807             ADD      R0,SP,#+28
+   \       0xB0   0x.... 0x....      BL       __aeabi_memclr4
+     34                      uint8_t tx[32] = {0};
+     35                      float value = 0.0f;
+   \       0xB4   0x2100             MOVS     R1,#+0
+     36                      uint8_t value_u8 = 0;
+     37                      uint8_t is_u8 = 0;
+   \       0xB6   0x2600             MOVS     R6,#+0
+   \       0xB8   0x9100             STR      R1,[SP, #+0]
+   \       0xBA   0x468A             MOV      R10,R1
+     38                      uint8_t valid = 0;
+     39          
+     40                      // 指令长度至少需要包含 sensor_id 与 field_id
+     41                      if (comm_rx_len < 7 || comm_rx_len + 4 > sizeof(tx)) {
+   \       0xBC   0x2F06             CMP      R7,#+6
+   \       0xBE   0xDDEF             BLE.N    ??self_cmd_17
+   \       0xC0   0x9805             LDR      R0,[SP, #+20]
+   \       0xC2   0x2820             CMP      R0,#+32
+   \       0xC4   0xD8EC             BHI.N    ??self_cmd_17
+     42                          break;
+     43                      }
+     44          
+     45                      uint8_t sensor_id = comm_rx_buf[3];
+   \       0xC6   0x9904             LDR      R1,[SP, #+16]
+     46                      uint8_t field_id = comm_rx_buf[4];
+     47          
+     48                      if (sensor_id < 2) {
+   \       0xC8   0x2902             CMP      R1,#+2
+   \       0xCA   0xDAE9             BGE.N    ??self_cmd_17
+     49                          Sensor_calibration_config *cal = &target_config->cal_sen[sensor_id];
+   \       0xCC   0xF44F 0x7098      MOV      R0,#+304
+   \       0xD0   0x9A02             LDR      R2,[SP, #+8]
+   \       0xD2   0x4341             MULS     R1,R0,R1
+   \       0xD4   0x1850             ADDS     R0,R2,R1
+   \       0xD6   0x307C             ADDS     R0,R0,#+124
+     50          
+     51                          switch (field_id) {
+   \       0xD8   0xEB00 0x0184      ADD      R1,R0,R4, LSL #+2
+   \       0xDC   0xF101 0x02A0      ADD      R2,R1,#+160
+   \       0xE0   0xF500 0x7396      ADD      R3,R0,#+300
+   \       0xE4   0xF1B8 0x0F09      CMP      R8,#+9
+   \       0xE8   0xD8DA             BHI.N    ??self_cmd_17
+   \       0xEA   0xE8DF 0xF018      TBH      [PC, R8, LSL #+1]
+   \                     ??self_cmd_0:
+   \       0xEE   0x000A 0x0010      DC16     0xA,0x10,0x16,0x1C
+   \               0x0016 0x001
+   \              C
+   \       0xF6   0x0022 0x0028      DC16     0x22,0x28,0x2F,0x3E
+   \               0x002F 0x003
+   \              E
+   \       0xFE   0x0041 0x0044      DC16     0x41,0x44
+     52                              case 0x00:
+     53                                  if (comm_rx_len >= 8 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_19: (+1)
+   \      0x102   0x2F08             CMP      R7,#+8
+   \      0x104   0xDBCC             BLT.N    ??self_cmd_17
+   \      0x106   0x2C09             CMP      R4,#+9
+   \      0x108   0xDCCA             BGT.N    ??self_cmd_17
+     54                                      value = cal->biaoding_x_raw[comm_rx_buf[5]];
+   \      0x10A   0x6808             LDR      R0,[R1, #+0]
+   \      0x10C   0xE01C             B.N      ??self_cmd_20
+     55                                      valid = 1;
+     56                                  }
+     57                                  break;
+     58                              case 0x01:
+     59                                  if (comm_rx_len >= 8 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_21: (+1)
+   \      0x10E   0x2F08             CMP      R7,#+8
+   \      0x110   0xDBC6             BLT.N    ??self_cmd_17
+   \      0x112   0x2C09             CMP      R4,#+9
+   \      0x114   0xDCC4             BGT.N    ??self_cmd_17
+     60                                      value = cal->biaoding_y_read[comm_rx_buf[5]];
+   \      0x116   0x6A88             LDR      R0,[R1, #+40]
+   \      0x118   0xE016             B.N      ??self_cmd_20
+     61                                      valid = 1;
+     62                                  }
+     63                                  break;
+     64                              case 0x02:
+     65                                  if (comm_rx_len >= 8 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_22: (+1)
+   \      0x11A   0x2F08             CMP      R7,#+8
+   \      0x11C   0xDBC0             BLT.N    ??self_cmd_17
+   \      0x11E   0x2C09             CMP      R4,#+9
+   \      0x120   0xDCBE             BGT.N    ??self_cmd_17
+     66                                      value = cal->xianxingbuchang_x[comm_rx_buf[5]];
+   \      0x122   0x6D08             LDR      R0,[R1, #+80]
+   \      0x124   0xE010             B.N      ??self_cmd_20
+     67                                      valid = 1;
+     68                                  }
+     69                                  break;
+     70                              case 0x03:
+     71                                  if (comm_rx_len >= 8 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_23: (+1)
+   \      0x126   0x2F08             CMP      R7,#+8
+   \      0x128   0xDBBA             BLT.N    ??self_cmd_17
+   \      0x12A   0x2C09             CMP      R4,#+9
+   \      0x12C   0xDCB8             BGT.N    ??self_cmd_17
+     72                                      value = cal->xianxingbuchang_y[comm_rx_buf[5]];
+   \      0x12E   0x6F88             LDR      R0,[R1, #+120]
+   \      0x130   0xE00A             B.N      ??self_cmd_20
+     73                                      valid = 1;
+     74                                  }
+     75                                  break;
+     76                              case 0x04:
+     77                                  if (comm_rx_len >= 8 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_24: (+1)
+   \      0x132   0x2F08             CMP      R7,#+8
+   \      0x134   0xDBB4             BLT.N    ??self_cmd_17
+   \      0x136   0x2C09             CMP      R4,#+9
+   \      0x138   0xDCB2             BGT.N    ??self_cmd_17
+     78                                      value = cal->wendubuchang_x[comm_rx_buf[5]];
+   \      0x13A   0x6810             LDR      R0,[R2, #+0]
+   \      0x13C   0xE004             B.N      ??self_cmd_20
+     79                                      valid = 1;
+     80                                  }
+     81                                  break;
+     82                              case 0x05:
+     83                                  if (comm_rx_len >= 8 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_25: (+1)
+   \      0x13E   0x2F08             CMP      R7,#+8
+   \      0x140   0xDBAE             BLT.N    ??self_cmd_17
+   \      0x142   0x2C09             CMP      R4,#+9
+   \      0x144   0xDCAC             BGT.N    ??self_cmd_17
+     84                                      value = cal->wendubuchang_y[comm_rx_buf[5]];
+   \      0x146   0x6A90             LDR      R0,[R2, #+40]
+   \                     ??self_cmd_20: (+1)
+   \      0x148   0x9000             STR      R0,[SP, #+0]
+     85                                      valid = 1;
+   \      0x14A   0xE017             B.N      ??self_cmd_26
+     86                                  }
+     87                                  break;
+     88                              case 0x06:
+     89                                  if (comm_rx_len >= 9 && comm_rx_buf[5] < 5 && comm_rx_buf[6] < 3) {
+   \                     ??self_cmd_27: (+1)
+   \      0x14C   0x2F08             CMP      R7,#+8
+   \      0x14E   0xDDA7             BLE.N    ??self_cmd_17
+   \      0x150   0x2C05             CMP      R4,#+5
+   \      0x152   0xDAA5             BGE.N    ??self_cmd_17
+   \      0x154   0xF1BB 0x0F02      CMP      R11,#+2
+   \      0x158   0xDCA2             BGT.N    ??self_cmd_17
+     90                                      value = cal->deadband[comm_rx_buf[5]][comm_rx_buf[6]];
+   \      0x15A   0x9906             LDR      R1,[SP, #+24]
+   \      0x15C   0x1840             ADDS     R0,R0,R1
+   \      0x15E   0xEB00 0x038B      ADD      R3,R0,R11, LSL #+2
+   \      0x162   0xF8D3 0x20F0      LDR      R2,[R3, #+240]
+   \      0x166   0x9200             STR      R2,[SP, #+0]
+     91                                      valid = 1;
+   \      0x168   0xE008             B.N      ??self_cmd_26
+     92                                  }
+     93                                  break;
+     94                              case 0x07:
+     95                                  value_u8 = cal->xianxingbuchang_sw;
+   \                     ??self_cmd_28: (+1)
+   \      0x16A   0xF893 0xA000      LDRB     R10,[R3, #+0]
+     96                                  is_u8 = 1;
+   \      0x16E   0xE004             B.N      ??self_cmd_29
+     97                                  valid = 1;
+     98                                  break;
+     99                              case 0x08:
+    100                                  value_u8 = cal->wendubuchang_sw;
+   \                     ??self_cmd_30: (+1)
+   \      0x170   0xF893 0xA001      LDRB     R10,[R3, #+1]
+    101                                  is_u8 = 1;
+   \      0x174   0xE001             B.N      ??self_cmd_29
+    102                                  valid = 1;
+    103                                  break;
+    104                              case 0x09:
+    105                                  value_u8 = cal->deadband_sw;
+   \                     ??self_cmd_31: (+1)
+   \      0x176   0xF893 0xA002      LDRB     R10,[R3, #+2]
+    106                                  is_u8 = 1;
+   \                     ??self_cmd_29: (+1)
+   \      0x17A   0x2601             MOVS     R6,#+1
+    107                                  valid = 1;
+    108                                  break;
+    109                              default:
+    110                                  break;
+    111                          }
+    112                      }
+    113          
+    114                      if (!valid) {
+    115                          break;
+    116                      }
+    117          
+    118                      // 回包 = 原始指令去掉末尾2字节CRC + 4字节数据 + 新CRC
+    119                      uint8_t tx_len = comm_rx_len + 4;
+    120                      uint8_t payload_pos = comm_rx_len - 2;
+    121          
+    122                      memcpy(tx, comm_rx_buf, comm_rx_len - 2);
+   \                     ??self_cmd_26: (+1)
+   \      0x17C   0x9A01             LDR      R2,[SP, #+4]
+   \      0x17E   0x9F03             LDR      R7,[SP, #+12]
+   \      0x180   0x4629             MOV      R1,R5
+   \      0x182   0xA807             ADD      R0,SP,#+28
+   \      0x184   0x.... 0x....      BL       __aeabi_memcpy4
+    123                      tx[1] = tx_len;
+    124          
+    125                      if (is_u8) {
+   \      0x188   0xA807             ADD      R0,SP,#+28
+   \      0x18A   0xF88D 0x701D      STRB     R7,[SP, #+29]
+   \      0x18E   0x4448             ADD      R0,R0,R9
+   \      0x190   0xB18E             CBZ.N    R6,??self_cmd_32
+    126                          tx[payload_pos] = value_u8;
+   \      0x192   0xF880 0xA000      STRB     R10,[R0, #+0]
+    127                          tx[payload_pos + 1] = 0x00;
+   \      0x196   0x2100             MOVS     R1,#+0
+   \      0x198   0xF10D 0x001D      ADD      R0,SP,#+29
+   \      0x19C   0xF800 0x1009      STRB     R1,[R0, R9]
+    128                          tx[payload_pos + 2] = 0x00;
+   \      0x1A0   0x2200             MOVS     R2,#+0
+   \      0x1A2   0xF10D 0x011E      ADD      R1,SP,#+30
+   \      0x1A6   0xF801 0x2009      STRB     R2,[R1, R9]
+    129                          tx[payload_pos + 3] = 0x00;
+   \      0x1AA   0x2000             MOVS     R0,#+0
+   \      0x1AC   0xF10D 0x021F      ADD      R2,SP,#+31
+   \      0x1B0   0xF802 0x0009      STRB     R0,[R2, R9]
+   \      0x1B4   0xE001             B.N      ??self_cmd_33
+    130                      } else {
+    131                          memcpy(&tx[payload_pos], &value, sizeof(float));
+   \                     ??self_cmd_32: (+1)
+   \      0x1B6   0x9A00             LDR      R2,[SP, #+0]
+   \      0x1B8   0x6002             STR      R2,[R0, #+0]
+    132                      }
+    133          
+    134                      fill_crc16modbus(tx, tx_len);
+   \                     ??self_cmd_33: (+1)
+   \      0x1BA   0x4639             MOV      R1,R7
+   \      0x1BC   0xA807             ADD      R0,SP,#+28
+   \      0x1BE   0x.... 0x....      BL       fill_crc16modbus
+    135                      sl_iostream_write(sl_iostream_inst0_handle, tx, tx_len);
+   \      0x1C2   0x463A             MOV      R2,R7
+   \      0x1C4   0xA907             ADD      R1,SP,#+28
+   \      0x1C6   0xE11F             B.N      ??self_cmd_34
+    136                      break;
+    137                  }
+    138                  // 写入标定信息
+    139                  case 0x01:
+    140                  case 0x11: {
+    141                      Board_config *target_config =
+    142                              (comm_rx_buf[2] == 0x11) ? &factory_config : &user_config;
+   \                     ??self_cmd_12: (+1)
+   \      0x1C8   0xF1BC 0x0F11      CMP      R12,#+17
+   \      0x1CC   0xBF06             ITTE     EQ
+   \      0x1CE   0x4608             MOVEQ    R0,R1
+   \      0x1D0   0x2101             MOVEQ    R1,#+1
+   \      0x1D2   0x2102             MOVNE    R1,#+2
+    143                      uint8_t save_type = (comm_rx_buf[2] == 0x11) ? 1 : 2;
+    144                      float value = 0.0f;
+   \      0x1D4   0x2300             MOVS     R3,#+0
+   \      0x1D6   0x9300             STR      R3,[SP, #+0]
+    145                      uint8_t valid = 0;
+    146          
+    147                      // 写命令最小长度：AA LEN CMD sensor field idx data[4] crc[2]
+    148                      if (comm_rx_len < 11) {
+   \      0x1D8   0x2F0A             CMP      R7,#+10
+   \      0x1DA   0xDD6B             BLE.N    ??self_cmd_35
+    149                          break;
+    150                      }
+    151          
+    152                      uint8_t sensor_id = comm_rx_buf[3];
+   \      0x1DC   0x9E04             LDR      R6,[SP, #+16]
+    153                      uint8_t field_id = comm_rx_buf[4];
+    154                      uint8_t payload_pos = comm_rx_len - 6; // 末尾4字节数据的起始位置
+    155          
+    156                      if (sensor_id >= 2) {
+   \      0x1DE   0x2E02             CMP      R6,#+2
+   \      0x1E0   0xDA43             BGE.N    ??self_cmd_36
+    157                          break;
+    158                      }
+    159          
+    160                      Sensor_calibration_config *cal = &target_config->cal_sen[sensor_id];
+   \      0x1E2   0xF44F 0x7398      MOV      R3,#+304
+   \      0x1E6   0x435E             MULS     R6,R3,R6
+   \      0x1E8   0x1980             ADDS     R0,R0,R6
+   \      0x1EA   0x307C             ADDS     R0,R0,#+124
+    161          
+    162                      switch (field_id) {
+   \      0x1EC   0xF500 0x7396      ADD      R3,R0,#+300
+   \      0x1F0   0xF1B8 0x0F09      CMP      R8,#+9
+   \      0x1F4   0xD865             BHI.N    ??self_cmd_37
+   \      0x1F6   0xE8DF 0xF018      TBH      [PC, R8, LSL #+1]
+   \                     ??self_cmd_1:
+   \      0x1FA   0x000A 0x0011      DC16     0xA,0x11,0x17,0x1D
+   \               0x0017 0x001
+   \              D
+   \      0x202   0x0023 0x002A      DC16     0x23,0x2A,0x35,0x46
+   \               0x0035 0x004
+   \              6
+   \      0x20A   0x0049 0x004C      DC16     0x49,0x4C
+    163                          case 0x00:
+    164                              if (comm_rx_len >= 11 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_38: (+1)
+   \      0x20E   0x2C09             CMP      R4,#+9
+   \      0x210   0xDC2B             BGT.N    ??self_cmd_36
+    165                                  memcpy(&value, &comm_rx_buf[payload_pos], sizeof(float));
+   \      0x212   0x58AE             LDR      R6,[R5, R2]
+   \      0x214   0x9600             STR      R6,[SP, #+0]
+    166                                  cal->biaoding_x_raw[comm_rx_buf[5]] = value;
+   \      0x216   0xF840 0x6024      STR      R6,[R0, R4, LSL #+2]
+    167                                  valid = 1;
+   \      0x21A   0xE03C             B.N      ??self_cmd_39
+    168                              }
+    169                              break;
+    170                          case 0x01:
+    171                              if (comm_rx_len >= 11 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_40: (+1)
+   \      0x21C   0x2C09             CMP      R4,#+9
+   \      0x21E   0xDC24             BGT.N    ??self_cmd_36
+    172                                  memcpy(&value, &comm_rx_buf[payload_pos], sizeof(float));
+   \      0x220   0x.... 0x....      BL       ?Subroutine0
+    173                                  cal->biaoding_y_read[comm_rx_buf[5]] = value;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \      0x224   0x6286             STR      R6,[R0, #+40]
+    174                                  valid = 1;
+   \      0x226   0xE036             B.N      ??self_cmd_39
+    175                              }
+    176                              break;
+    177                          case 0x02:
+    178                              if (comm_rx_len >= 11 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_41: (+1)
+   \      0x228   0x2C09             CMP      R4,#+9
+   \      0x22A   0xDC1E             BGT.N    ??self_cmd_36
+    179                                  memcpy(&value, &comm_rx_buf[payload_pos], sizeof(float));
+   \      0x22C   0x.... 0x....      BL       ?Subroutine0
+    180                                  cal->xianxingbuchang_x[comm_rx_buf[5]] = value;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \      0x230   0x6506             STR      R6,[R0, #+80]
+    181                                  valid = 1;
+   \      0x232   0xE030             B.N      ??self_cmd_39
+    182                              }
+    183                              break;
+    184                          case 0x03:
+    185                              if (comm_rx_len >= 11 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_42: (+1)
+   \      0x234   0x2C09             CMP      R4,#+9
+   \      0x236   0xDC18             BGT.N    ??self_cmd_36
+    186                                  memcpy(&value, &comm_rx_buf[payload_pos], sizeof(float));
+   \      0x238   0x.... 0x....      BL       ?Subroutine0
+    187                                  cal->xianxingbuchang_y[comm_rx_buf[5]] = value;
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \      0x23C   0x6786             STR      R6,[R0, #+120]
+    188                                  valid = 1;
+   \      0x23E   0xE02A             B.N      ??self_cmd_39
+    189                              }
+    190                              break;
+    191                          case 0x04:
+    192                              if (comm_rx_len >= 11 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_43: (+1)
+   \      0x240   0x2C09             CMP      R4,#+9
+   \      0x242   0xDC12             BGT.N    ??self_cmd_36
+    193                                  memcpy(&value, &comm_rx_buf[payload_pos], sizeof(float));
+   \      0x244   0x.... 0x....      BL       ?Subroutine0
+    194                                  cal->wendubuchang_x[comm_rx_buf[5]] = value;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \      0x248   0xF8C0 0x60A0      STR      R6,[R0, #+160]
+    195                                  valid = 1;
+   \      0x24C   0xE023             B.N      ??self_cmd_39
+    196                              }
+    197                              break;
+    198                          case 0x05:
+    199                              if (comm_rx_len >= 11 && comm_rx_buf[5] < 10) {
+   \                     ??self_cmd_44: (+1)
+   \      0x24E   0x2C09             CMP      R4,#+9
+   \      0x250   0xDC0B             BGT.N    ??self_cmd_36
+    200                                  memcpy(&value, &comm_rx_buf[payload_pos], sizeof(float));
+   \      0x252   0x58AE             LDR      R6,[R5, R2]
+   \      0x254   0x9600             STR      R6,[SP, #+0]
+    201                                  cal->wendubuchang_y[comm_rx_buf[5]] = value;
+   \      0x256   0x9A00             LDR      R2,[SP, #+0]
+   \      0x258   0xEB00 0x0684      ADD      R6,R0,R4, LSL #+2
+   \      0x25C   0xF106 0x00A0      ADD      R0,R6,#+160
+   \      0x260   0x6282             STR      R2,[R0, #+40]
+    202                                  valid = 1;
+   \      0x262   0xE018             B.N      ??self_cmd_39
+    203                              }
+    204                              break;
+    205                          case 0x06:
+    206                              if (comm_rx_len >= 13 && comm_rx_buf[5] < 5 && comm_rx_buf[6] < 3) {
+   \                     ??self_cmd_45: (+1)
+   \      0x264   0x2F0C             CMP      R7,#+12
+   \      0x266   0xDD25             BLE.N    ??self_cmd_35
+   \      0x268   0x2C05             CMP      R4,#+5
+   \                     ??self_cmd_36: (+1)
+   \      0x26A   0xF280 0x810B      BGE.W    ??self_cmd_18
+   \      0x26E   0xF1BB 0x0F02      CMP      R11,#+2
+   \      0x272   0xDCFA             BGT.N    ??self_cmd_36
+    207                                  memcpy(&value, &comm_rx_buf[payload_pos], sizeof(float));
+   \      0x274   0x58AE             LDR      R6,[R5, R2]
+    208                                  cal->deadband[comm_rx_buf[5]][comm_rx_buf[6]] = value;
+   \      0x276   0x9A06             LDR      R2,[SP, #+24]
+   \      0x278   0x1880             ADDS     R0,R0,R2
+   \      0x27A   0x9600             STR      R6,[SP, #+0]
+   \      0x27C   0xEB00 0x038B      ADD      R3,R0,R11, LSL #+2
+   \      0x280   0xF8C3 0x60F0      STR      R6,[R3, #+240]
+    209                                  valid = 1;
+   \      0x284   0xE007             B.N      ??self_cmd_39
+    210                              }
+    211                              break;
+    212                          case 0x07:
+    213                              cal->xianxingbuchang_sw = comm_rx_buf[payload_pos];
+   \                     ??self_cmd_46: (+1)
+   \      0x286   0x5CAA             LDRB     R2,[R5, R2]
+   \      0x288   0x701A             STRB     R2,[R3, #+0]
+    214                              valid = 1;
+    215                              break;
+   \      0x28A   0xE004             B.N      ??self_cmd_39
+    216                          case 0x08:
+    217                              cal->wendubuchang_sw = comm_rx_buf[payload_pos];
+   \                     ??self_cmd_47: (+1)
+   \      0x28C   0x5CA8             LDRB     R0,[R5, R2]
+   \      0x28E   0x7058             STRB     R0,[R3, #+1]
+    218                              valid = 1;
+    219                              break;
+   \      0x290   0xE001             B.N      ??self_cmd_39
+    220                          case 0x09:
+    221                              cal->deadband_sw = comm_rx_buf[payload_pos];
+   \                     ??self_cmd_48: (+1)
+   \      0x292   0x5CAA             LDRB     R2,[R5, R2]
+   \      0x294   0x709A             STRB     R2,[R3, #+2]
+    222                              valid = 1;
+    223                              break;
+   \                     ??self_cmd_39: (+1)
+   \      0x296   0x4608             MOV      R0,R1
+   \      0x298   0xE071             B.N      ??self_cmd_49
+    224                          default:
+    225                              break;
+    226                      }
+    227          
+    228                      if (valid && !save_config(save_type)) {
+    229                          // 写成功回显：原样回发接收到的完整指令
+    230                          sl_iostream_write(sl_iostream_inst0_handle, comm_rx_buf, comm_rx_len);
+    231                      }
+    232                      break;
+    233                  }
+    234                  /*读取selfset temp_way gain factory_time last_maintain_time*/
+    235                  case 0x02:
+    236                  case 0x12: {
+    237                      Board_config *target_config =
+    238                              (comm_rx_buf[2] == 0x12) ? &factory_config : &user_config;
+   \                     ??self_cmd_13: (+1)
+   \      0x29A   0xF1BC 0x0F12      CMP      R12,#+18
+   \      0x29E   0xBF0C             ITE      EQ
+   \      0x2A0   0x468A             MOVEQ    R10,R1
+   \      0x2A2   0x4682             MOVNE    R10,R0
+   \      0x2A4   0x2120             MOVS     R1,#+32
+   \      0x2A6   0xA806             ADD      R0,SP,#+24
+   \      0x2A8   0x.... 0x....      BL       __aeabi_memclr4
+    239                      uint8_t tx[32] = {0};
+    240                      uint8_t value_u8 = 0;
+   \      0x2AC   0x2600             MOVS     R6,#+0
+    241                      uint32_t value_u32 = 0;
+    242                      uint8_t is_u8 = 0;
+   \      0x2AE   0x2400             MOVS     R4,#+0
+   \      0x2B0   0x9600             STR      R6,[SP, #+0]
+    243                      uint8_t valid = 0;
+    244          
+    245                      if (comm_rx_len < 7 || comm_rx_len + 4 > sizeof(tx)) {
+   \      0x2B2   0x2F06             CMP      R7,#+6
+   \                     ??self_cmd_35: (+1)
+   \      0x2B4   0xF340 0x80E6      BLE.W    ??self_cmd_18
+   \      0x2B8   0x9805             LDR      R0,[SP, #+20]
+   \      0x2BA   0x2820             CMP      R0,#+32
+   \      0x2BC   0xBF98             IT       LS
+   \      0x2BE   0xF1B8 0x0F04      CMPLS    R8,#+4
+    246                          break;
+    247                      }
+    248          
+    249                      uint8_t field_id = comm_rx_buf[4];
+    250          
+    251                      switch (field_id) {
+   \                     ??self_cmd_37: (+1)
+   \      0x2C2   0xF200 0x80DF      BHI.W    ??self_cmd_18
+   \      0x2C6   0xE8DF 0xF008      TBB      [PC, R8]
+   \                     ??self_cmd_2:
+   \      0x2CA   0x03 0x06          DC8      0x3,0x6,0x9,0xD
+   \              0x09 0x0D
+   \      0x2CE   0x10 0x00          DC8      0x10,0x0
+    252                          case 0x00:
+    253                              value_u8 = target_config->selfset;
+   \                     ??self_cmd_50: (+1)
+   \      0x2D0   0xF89A 0x6000      LDRB     R6,[R10, #+0]
+    254                              is_u8 = 1;
+   \      0x2D4   0xE004             B.N      ??self_cmd_51
+    255                              valid = 1;
+    256                              break;
+    257                          case 0x01:
+    258                              value_u8 = target_config->temp_way;
+   \                     ??self_cmd_52: (+1)
+   \      0x2D6   0xF89A 0x6001      LDRB     R6,[R10, #+1]
+    259                              is_u8 = 1;
+   \      0x2DA   0xE001             B.N      ??self_cmd_51
+    260                              valid = 1;
+    261                              break;
+    262                          case 0x02:
+    263                              value_u8 = target_config->gain;
+   \                     ??self_cmd_53: (+1)
+   \      0x2DC   0xF89A 0x6002      LDRB     R6,[R10, #+2]
+    264                              is_u8 = 1;
+   \                     ??self_cmd_51: (+1)
+   \      0x2E0   0x2401             MOVS     R4,#+1
+    265                              valid = 1;
+    266                              break;
+   \      0x2E2   0xE005             B.N      ??self_cmd_54
+    267                          case 0x03:
+    268                              value_u32 = target_config->factory_time;
+   \                     ??self_cmd_55: (+1)
+   \      0x2E4   0xF8DA 0x0004      LDR      R0,[R10, #+4]
+   \      0x2E8   0xE001             B.N      ??self_cmd_56
+    269                              valid = 1;
+    270                              break;
+    271                          case 0x04:
+    272                              value_u32 = target_config->last_maintain_time;
+   \                     ??self_cmd_57: (+1)
+   \      0x2EA   0xF8DA 0x0008      LDR      R0,[R10, #+8]
+   \                     ??self_cmd_56: (+1)
+   \      0x2EE   0x9000             STR      R0,[SP, #+0]
+    273                              valid = 1;
+    274                              break;
+    275                          default:
+    276                              break;
+    277                      }
+    278          
+    279                      if (!valid) {
+    280                          break;
+    281                      }
+    282          
+    283                      uint8_t tx_len = comm_rx_len + 4;
+    284                      uint8_t payload_pos = comm_rx_len - 2;
+    285          
+    286                      memcpy(tx, comm_rx_buf, comm_rx_len - 2);
+   \                     ??self_cmd_54: (+1)
+   \      0x2F0   0x9A01             LDR      R2,[SP, #+4]
+   \      0x2F2   0x9F03             LDR      R7,[SP, #+12]
+   \      0x2F4   0x4629             MOV      R1,R5
+   \      0x2F6   0xA806             ADD      R0,SP,#+24
+   \      0x2F8   0x.... 0x....      BL       __aeabi_memcpy4
+    287                      tx[1] = tx_len;
+    288          
+    289                      if (is_u8) {
+   \      0x2FC   0xA806             ADD      R0,SP,#+24
+   \      0x2FE   0xF88D 0x7019      STRB     R7,[SP, #+25]
+   \      0x302   0x4448             ADD      R0,R0,R9
+   \      0x304   0xB184             CBZ.N    R4,??self_cmd_58
+    290                          tx[payload_pos] = value_u8;
+   \      0x306   0x7006             STRB     R6,[R0, #+0]
+    291                          tx[payload_pos + 1] = 0x00;
+   \      0x308   0x2100             MOVS     R1,#+0
+   \      0x30A   0xF10D 0x0019      ADD      R0,SP,#+25
+   \      0x30E   0xF800 0x1009      STRB     R1,[R0, R9]
+    292                          tx[payload_pos + 2] = 0x00;
+   \      0x312   0x2200             MOVS     R2,#+0
+   \      0x314   0xF10D 0x011A      ADD      R1,SP,#+26
+   \      0x318   0xF801 0x2009      STRB     R2,[R1, R9]
+    293                          tx[payload_pos + 3] = 0x00;
+   \      0x31C   0x2000             MOVS     R0,#+0
+   \      0x31E   0xF10D 0x021B      ADD      R2,SP,#+27
+   \      0x322   0xF802 0x0009      STRB     R0,[R2, R9]
+   \      0x326   0xE001             B.N      ??self_cmd_59
+    294                      } else {
+    295                          memcpy(&tx[payload_pos], &value_u32, sizeof(uint32_t));
+   \                     ??self_cmd_58: (+1)
+   \      0x328   0x9A00             LDR      R2,[SP, #+0]
+   \      0x32A   0x6002             STR      R2,[R0, #+0]
+    296                      }
+    297          
+    298                      fill_crc16modbus(tx, tx_len);
+   \                     ??self_cmd_59: (+1)
+   \      0x32C   0x4639             MOV      R1,R7
+   \      0x32E   0xA806             ADD      R0,SP,#+24
+   \      0x330   0x.... 0x....      BL       fill_crc16modbus
+    299                      sl_iostream_write(sl_iostream_inst0_handle, tx, tx_len);
+   \      0x334   0x463A             MOV      R2,R7
+   \      0x336   0xA906             ADD      R1,SP,#+24
+   \      0x338   0xE066             B.N      ??self_cmd_34
+    300                      break;
+    301                  }
+    302                  /*写入selfset temp_way gain factory_time last_maintain_time*/
+    303                  case 0x03:
+    304                  case 0x13: {
+    305                      Board_config *target_config =
+    306                              (comm_rx_buf[2] == 0x13) ? &factory_config : &user_config;
+   \                     ??self_cmd_14: (+1)
+   \      0x33A   0xF1BC 0x0F13      CMP      R12,#+19
+   \      0x33E   0xBF0E             ITEE     EQ
+   \      0x340   0x2001             MOVEQ    R0,#+1
+   \      0x342   0x4601             MOVNE    R1,R0
+   \      0x344   0x2002             MOVNE    R0,#+2
+    307                      uint8_t save_type = (comm_rx_buf[2] == 0x13) ? 1 : 2;
+    308                      uint32_t value_u32 = 0;
+   \      0x346   0x2300             MOVS     R3,#+0
+   \      0x348   0x9300             STR      R3,[SP, #+0]
+    309                      uint8_t valid = 0;
+    310          
+    311                      if (comm_rx_len < 11) {
+   \      0x34A   0x2F0A             CMP      R7,#+10
+   \      0x34C   0xDD29             BLE.N    ??self_cmd_60
+    312                          break;
+    313                      }
+    314          
+    315                      uint8_t field_id = comm_rx_buf[4];
+    316                      uint8_t payload_pos = comm_rx_len - 6;
+    317          
+    318                      switch (field_id) {
+   \      0x34E   0xF1B8 0x0F04      CMP      R8,#+4
+   \      0x352   0xD843             BHI.N    ??self_cmd_61
+   \      0x354   0xE8DF 0xF008      TBB      [PC, R8]
+   \                     ??self_cmd_3:
+   \      0x358   0x03 0x06          DC8      0x3,0x6,0x9,0xC
+   \              0x09 0x0C
+   \      0x35C   0x10 0x00          DC8      0x10,0x0
+    319                          case 0x00:
+    320                              target_config->selfset = comm_rx_buf[payload_pos];
+   \                     ??self_cmd_62: (+1)
+   \      0x35E   0x5CAA             LDRB     R2,[R5, R2]
+   \      0x360   0x700A             STRB     R2,[R1, #+0]
+    321                              valid = 1;
+    322                              break;
+   \      0x362   0xE00C             B.N      ??self_cmd_49
+    323                          case 0x01:
+    324                              target_config->temp_way = comm_rx_buf[payload_pos];
+   \                     ??self_cmd_63: (+1)
+   \      0x364   0x5CAB             LDRB     R3,[R5, R2]
+   \      0x366   0x704B             STRB     R3,[R1, #+1]
+    325                              valid = 1;
+    326                              break;
+   \      0x368   0xE009             B.N      ??self_cmd_49
+    327                          case 0x02:
+    328                              target_config->gain = comm_rx_buf[payload_pos];
+   \                     ??self_cmd_64: (+1)
+   \      0x36A   0x5CAE             LDRB     R6,[R5, R2]
+   \      0x36C   0x708E             STRB     R6,[R1, #+2]
+    329                              valid = 1;
+    330                              break;
+   \      0x36E   0xE006             B.N      ??self_cmd_49
+    331                          case 0x03:
+    332                              memcpy(&value_u32, &comm_rx_buf[payload_pos], sizeof(uint32_t));
+   \                     ??self_cmd_65: (+1)
+   \      0x370   0x58AE             LDR      R6,[R5, R2]
+   \      0x372   0x9600             STR      R6,[SP, #+0]
+    333                              target_config->factory_time = value_u32;
+   \      0x374   0x604E             STR      R6,[R1, #+4]
+    334                              valid = 1;
+    335                              break;
+   \      0x376   0xE002             B.N      ??self_cmd_49
+    336                          case 0x04:
+    337                              memcpy(&value_u32, &comm_rx_buf[payload_pos], sizeof(uint32_t));
+   \                     ??self_cmd_66: (+1)
+   \      0x378   0x58AE             LDR      R6,[R5, R2]
+   \      0x37A   0x9600             STR      R6,[SP, #+0]
+    338                              target_config->last_maintain_time = value_u32;
+   \      0x37C   0x608E             STR      R6,[R1, #+8]
+    339                              valid = 1;
+    340                              break;
+   \                     ??self_cmd_49: (+1)
+   \      0x37E   0x.... 0x....      BL       save_config
+   \      0x382   0x2800             CMP      R0,#+0
+   \      0x384   0xD144             BNE.N    ??self_cmd_67
+   \      0x386   0xE076             B.N      ??self_cmd_68
+    341                          default:
+    342                              break;
+    343                      }
+    344          
+    345                      if (valid && !save_config(save_type)) {
+    346                          sl_iostream_write(sl_iostream_inst0_handle, comm_rx_buf, comm_rx_len);
+    347                      }
+    348                      break;
+    349                  }
+    350                  /*读取gas[16];board_sn[32];sensor_sn[32];info[32];*/
+    351                  case 0x04:
+    352                  case 0x14: {
+    353                      Board_config *target_config =
+    354                              (comm_rx_buf[2] == 0x14) ? &factory_config : &user_config;
+   \                     ??self_cmd_15: (+1)
+   \      0x388   0xF1BC 0x0F14      CMP      R12,#+20
+   \      0x38C   0xBF0C             ITE      EQ
+   \      0x38E   0x460C             MOVEQ    R4,R1
+   \      0x390   0x4604             MOVNE    R4,R0
+   \      0x392   0x2160             MOVS     R1,#+96
+   \      0x394   0xA802             ADD      R0,SP,#+8
+   \      0x396   0x.... 0x....      BL       __aeabi_memclr4
+    355                      uint8_t tx[96] = {0};
+    356                      uint8_t field_id = comm_rx_buf[4];
+    357                      const uint8_t *src = NULL;
+   \      0x39A   0xF04F 0x0A00      MOV      R10,#+0
+    358                      uint8_t data_len = 0;
+   \      0x39E   0x46D3             MOV      R11,R10
+    359          
+    360                      if (comm_rx_len < 7) {
+   \      0x3A0   0x2F06             CMP      R7,#+6
+   \                     ??self_cmd_60: (+1)
+   \      0x3A2   0xDD6F             BLE.N    ??self_cmd_18
+    361                          break;
+    362                      }
+    363          
+    364                      switch (field_id) {
+   \      0x3A4   0xF1B8 0x0F03      CMP      R8,#+3
+   \      0x3A8   0xD812             BHI.N    ??self_cmd_69
+   \      0x3AA   0xE8DF 0xF008      TBB      [PC, R8]
+   \                     ??self_cmd_4:
+   \      0x3AE   0x02 0x07          DC8      0x2,0x7,0xA,0xD
+   \              0x0A 0x0D
+    365                          case 0x00:
+    366                              src = target_config->gas;
+   \                     ??self_cmd_70: (+1)
+   \      0x3B2   0xF104 0x0A0C      ADD      R10,R4,#+12
+    367                              data_len = sizeof(target_config->gas);
+   \      0x3B6   0xF04F 0x0B10      MOV      R11,#+16
+    368                              break;
+   \      0x3BA   0xE009             B.N      ??self_cmd_69
+    369                          case 0x01:
+    370                              src = target_config->board_sn;
+   \                     ??self_cmd_71: (+1)
+   \      0x3BC   0xF104 0x0A1C      ADD      R10,R4,#+28
+    371                              data_len = sizeof(target_config->board_sn);
+   \      0x3C0   0xE004             B.N      ??self_cmd_72
+    372                              break;
+    373                          case 0x02:
+    374                              src = target_config->sensor_sn;
+   \                     ??self_cmd_73: (+1)
+   \      0x3C2   0xF104 0x0A3C      ADD      R10,R4,#+60
+    375                              data_len = sizeof(target_config->sensor_sn);
+   \      0x3C6   0xE001             B.N      ??self_cmd_72
+    376                              break;
+    377                          case 0x03:
+    378                              src = target_config->info;
+   \                     ??self_cmd_74: (+1)
+   \      0x3C8   0xF104 0x0A5C      ADD      R10,R4,#+92
+    379                              data_len = sizeof(target_config->info);
+   \                     ??self_cmd_72: (+1)
+   \      0x3CC   0xF04F 0x0B20      MOV      R11,#+32
+    380                              break;
+    381                          default:
+    382                              break;
+    383                      }
+    384          
+    385                      if (src == NULL || comm_rx_len + data_len > sizeof(tx)) {
+   \                     ??self_cmd_69: (+1)
+   \      0x3D0   0xF1BA 0x0F00      CMP      R10,#+0
+   \      0x3D4   0xD056             BEQ.N    ??self_cmd_18
+   \      0x3D6   0xEB07 0x000B      ADD      R0,R7,R11
+   \      0x3DA   0x2860             CMP      R0,#+96
+   \                     ??self_cmd_61: (+1)
+   \      0x3DC   0xD852             BHI.N    ??self_cmd_18
+    386                          break;
+    387                      }
+    388          
+    389                      uint8_t tx_len = comm_rx_len + data_len;
+    390                      uint8_t payload_pos = comm_rx_len - 2;
+    391          
+    392                      memcpy(tx, comm_rx_buf, comm_rx_len - 2);
+   \      0x3DE   0x9A01             LDR      R2,[SP, #+4]
+   \      0x3E0   0x445E             ADD      R6,R11,R6
+   \      0x3E2   0x4629             MOV      R1,R5
+   \      0x3E4   0xA802             ADD      R0,SP,#+8
+   \      0x3E6   0xB2F6             UXTB     R6,R6
+   \      0x3E8   0x.... 0x....      BL       __aeabi_memcpy4
+    393                      tx[1] = tx_len;
+    394                      memcpy(&tx[payload_pos], src, data_len);
+   \      0x3EC   0xA802             ADD      R0,SP,#+8
+   \      0x3EE   0xF88D 0x6009      STRB     R6,[SP, #+9]
+   \      0x3F2   0x465A             MOV      R2,R11
+   \      0x3F4   0x4651             MOV      R1,R10
+   \      0x3F6   0x4448             ADD      R0,R0,R9
+   \      0x3F8   0x.... 0x....      BL       __aeabi_memcpy
+    395          
+    396                      fill_crc16modbus(tx, tx_len);
+   \      0x3FC   0x4631             MOV      R1,R6
+   \      0x3FE   0xA802             ADD      R0,SP,#+8
+   \      0x400   0x.... 0x....      BL       fill_crc16modbus
+    397                      sl_iostream_write(sl_iostream_inst0_handle, tx, tx_len);
+   \      0x404   0x4632             MOV      R2,R6
+   \      0x406   0xA902             ADD      R1,SP,#+8
+   \                     ??self_cmd_34: (+1)
+   \      0x408   0x....             LDR.N    R0,??DataTable5_6
+   \      0x40A   0x6800             LDR      R0,[R0, #+0]
+   \      0x40C   0x.... 0x....      BL       sl_iostream_write
+    398                      break;
+   \                     ??self_cmd_67: (+1)
+   \      0x410   0xE038             B.N      ??self_cmd_18
+    399                  }
+    400                  /*写入gas[16];board_sn[32];sensor_sn[32];info[32];*/
+    401                  case 0x05:
+    402                  case 0x15: {
+    403                      Board_config *target_config =
+    404                              (comm_rx_buf[2] == 0x15) ? &factory_config : &user_config;
+   \                     ??self_cmd_16: (+1)
+   \      0x412   0xF1BC 0x0F15      CMP      R12,#+21
+   \      0x416   0xBF0E             ITEE     EQ
+   \      0x418   0xF04F 0x0901      MOVEQ    R9,#+1
+   \      0x41C   0x4601             MOVNE    R1,R0
+   \      0x41E   0xF04F 0x0902      MOVNE    R9,#+2
+    405                      uint8_t save_type = (comm_rx_buf[2] == 0x15) ? 1 : 2;
+    406                      uint8_t field_id = comm_rx_buf[4];
+    407                      uint8_t *dst = NULL;
+   \      0x422   0x2000             MOVS     R0,#+0
+    408                      uint8_t data_len = 0;
+   \      0x424   0x4686             MOV      LR,R0
+    409                      uint8_t valid = 0;
+    410                      uint8_t payload_pos = 0;
+    411          
+    412                      if (comm_rx_len < 23) {
+   \      0x426   0x2F17             CMP      R7,#+23
+   \      0x428   0xDB2C             BLT.N    ??self_cmd_18
+    413                          break;
+    414                      }
+    415          
+    416                      switch (field_id) {
+   \      0x42A   0xF1B8 0x0F03      CMP      R8,#+3
+   \      0x42E   0xD812             BHI.N    ??self_cmd_75
+   \      0x430   0xE8DF 0xF008      TBB      [PC, R8]
+   \                     ??self_cmd_5:
+   \      0x434   0x02 0x07          DC8      0x2,0x7,0xA,0xD
+   \              0x0A 0x0D
+    417                          case 0x00:
+    418                              dst = target_config->gas;
+   \                     ??self_cmd_76: (+1)
+   \      0x438   0xF101 0x000C      ADD      R0,R1,#+12
+    419                              data_len = sizeof(target_config->gas);
+   \      0x43C   0xF04F 0x0E10      MOV      LR,#+16
+    420                              break;
+   \      0x440   0xE009             B.N      ??self_cmd_75
+    421                          case 0x01:
+    422                              dst = target_config->board_sn;
+   \                     ??self_cmd_77: (+1)
+   \      0x442   0xF101 0x001C      ADD      R0,R1,#+28
+    423                              data_len = sizeof(target_config->board_sn);
+   \      0x446   0xE004             B.N      ??self_cmd_78
+    424                              break;
+    425                          case 0x02:
+    426                              dst = target_config->sensor_sn;
+   \                     ??self_cmd_79: (+1)
+   \      0x448   0xF101 0x003C      ADD      R0,R1,#+60
+    427                              data_len = sizeof(target_config->sensor_sn);
+   \      0x44C   0xE001             B.N      ??self_cmd_78
+    428                              break;
+    429                          case 0x03:
+    430                              dst = target_config->info;
+   \                     ??self_cmd_80: (+1)
+   \      0x44E   0xF101 0x005C      ADD      R0,R1,#+92
+    431                              data_len = sizeof(target_config->info);
+   \                     ??self_cmd_78: (+1)
+   \      0x452   0xF04F 0x0E20      MOV      LR,#+32
+    432                              break;
+    433                          default:
+    434                              break;
+    435                      }
+    436          
+    437                      if (dst == NULL) {
+   \                     ??self_cmd_75: (+1)
+   \      0x456   0xB1A8             CBZ.N    R0,??self_cmd_18
+    438                          break;
+    439                      }
+    440          
+    441                      if (comm_rx_len != (uint8_t)(7 + data_len)) {
+   \      0x458   0x1FF1             SUBS     R1,R6,#+7
+   \      0x45A   0x4672             MOV      R2,LR
+   \      0x45C   0xB2C9             UXTB     R1,R1
+   \      0x45E   0x4291             CMP      R1,R2
+   \      0x460   0xD110             BNE.N    ??self_cmd_18
+    442                          break;
+    443                      }
+    444          
+    445                      payload_pos = comm_rx_len - 2 - data_len;
+    446                      memcpy(dst, &comm_rx_buf[payload_pos], data_len);
+   \      0x462   0xEBA3 0x030E      SUB      R3,R3,LR
+   \      0x466   0xB2DB             UXTB     R3,R3
+   \      0x468   0x18E9             ADDS     R1,R5,R3
+   \      0x46A   0x.... 0x....      BL       __aeabi_memcpy
+    447                      valid = 1;
+    448          
+    449                      if (valid && !save_config(save_type)) {
+   \      0x46E   0x4648             MOV      R0,R9
+   \      0x470   0x.... 0x....      BL       save_config
+   \      0x474   0xB930             CBNZ.N   R0,??self_cmd_18
+    450                          sl_iostream_write(sl_iostream_inst0_handle, comm_rx_buf, comm_rx_len);
+   \                     ??self_cmd_68: (+1)
+   \      0x476   0x....             LDR.N    R0,??DataTable5_6
+   \      0x478   0xF89A 0x2000      LDRB     R2,[R10, #+0]
+   \      0x47C   0x6800             LDR      R0,[R0, #+0]
+   \      0x47E   0x4629             MOV      R1,R5
+   \      0x480   0x.... 0x....      BL       sl_iostream_write
+    451                      }
+    452                      break;
+    453                  }
+    454                  // ... 可以有任意数量的 case
+    455                  default: {
+    456                      // 默认语句块（当所有 case 都不匹配时执行）
+    457                      break;
+    458                  }
+    459              }
+    460          }
+   \                     ??self_cmd_18: (+1)
+   \      0x484   0xB01B             ADD      SP,SP,#+108
+   \      0x486   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x58AE             LDR      R6,[R5, R2]
+   \        0x2   0xEB00 0x0084      ADD      R0,R0,R4, LSL #+2
+   \        0x6   0x9600             STR      R6,[SP, #+0]
+   \        0x8   0x4770             BX       LR
+    461          
+    462          
+    463          // 兼容第三方协议
 
    \                                 In section .text, align 4, keep-with-next
-   \                     `receive{4}{5}::header`:
+    464          void compatible_cmd() {
+   \                     compatible_cmd: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    465              // 兼容读取命令
+    466              if (comm_rx_len > 10 && comm_rx_buf[0] == 0x02 && comm_rx_buf[1] == 0x31 && comm_rx_buf[8] == 0x30) {
+   \        0x2   0x....             LDR.N    R4,??DataTable5_2
+   \        0x4   0x7820             LDRB     R0,[R4, #+0]
+   \        0x6   0xB086             SUB      SP,SP,#+24
+   \        0x8   0x280A             CMP      R0,#+10
+   \        0xA   0xDD5B             BLE.N    ??compatible_cmd_0
+   \        0xC   0x....             LDR.N    R0,??DataTable5_3
+   \        0xE   0x7801             LDRB     R1,[R0, #+0]
+   \       0x10   0x2902             CMP      R1,#+2
+   \       0x12   0xBF01             ITTTT    EQ
+   \       0x14   0x7841             LDRBEQ   R1,[R0, #+1]
+   \       0x16   0x2931             CMPEQ    R1,#+49
+   \       0x18   0x7A00             LDRBEQ   R0,[R0, #+8]
+   \       0x1A   0x2830             CMPEQ    R0,#+48
+   \       0x1C   0xD152             BNE.N    ??compatible_cmd_0
+    467                  uint8_t temp[23];
+    468                  // TODO: 对temp数组的操作省略
+    469                  // 1. 前9个字节固定头部
+    470                  const uint8_t header[9] = {0x02, 0x31, 0x13, 0x7b, 0x59, 0x10, 0x00, 0x00, 0x30};
+    471                  memcpy(temp, header, 9);
+   \       0x1E   0x2209             MOVS     R2,#+9
+   \       0x20   0x....             ADR.N    R1,`compatible_cmd{1}{2}::header`
+   \       0x22   0x4668             MOV      R0,SP
+   \       0x24   0x.... 0x....      BL       __aeabi_memcpy4
+    472                  // 2. 接下来4字节：大端整数 (float * 100)
+    473                  int32_t reading_val = (int32_t)(get_reading(0) * 100.0f);
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x.... 0x....      BL       get_reading
+   \       0x2E   0xEDDF 0x....      VLDR.W   S1,??DataTable5
+   \       0x32   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \       0x36   0xEEBD 0x0AC0      VCVT.S32.F32 S0,S0
+   \       0x3A   0xEE10 0x1A10      VMOV     R1,S0
+    474                  temp[9] = (uint8_t)((reading_val >> 24) & 0xFF);
+    475                  temp[10] = (uint8_t)((reading_val >> 16) & 0xFF);
+    476                  temp[11] = (uint8_t)((reading_val >> 8) & 0xFF);
+    477                  temp[12] = (uint8_t)(reading_val & 0xFF);
+   \       0x3E   0xF88D 0x100C      STRB     R1,[SP, #+12]
+   \       0x42   0x140A             ASRS     R2,R1,#+16
+   \       0x44   0x1608             ASRS     R0,R1,#+24
+   \       0x46   0xF88D 0x200A      STRB     R2,[SP, #+10]
+   \       0x4A   0xF88D 0x0009      STRB     R0,[SP, #+9]
+   \       0x4E   0x1208             ASRS     R0,R1,#+8
+    478                  temp[13] = 0x02;
+   \       0x50   0x2102             MOVS     R1,#+2
+   \       0x52   0xF88D 0x100D      STRB     R1,[SP, #+13]
+    479                  // 3. 接下来2字节：大端整数 adc_last[0]
+    480                  temp[14] = (uint8_t)((adc_last[0] >> 8) & 0xFF);
+   \       0x56   0x....             LDR.N    R1,??DataTable5_7
+   \       0x58   0x680A             LDR      R2,[R1, #+0]
+   \       0x5A   0xF88D 0x000B      STRB     R0,[SP, #+11]
+    481                  temp[15] = (uint8_t)(adc_last[0] & 0xFF);
+    482                  // 4. 接下来2字节：大端整数 adc_last[1]
+    483                  temp[16] = (uint8_t)((adc_last[1] >> 8) & 0xFF);
+    484                  temp[17] = (uint8_t)(adc_last[1] & 0xFF);
+    485                  // 5. 接下来1字节：温度 (温度值 + 127)
+    486                  temp[18] = (uint8_t)((int16_t)(temperature + 127.0f));
+   \       0x5E   0xEDDF 0x....      VLDR.W   S1,??DataTable5_1
+   \       0x62   0x0A10             LSRS     R0,R2,#+8
+   \       0x64   0xF88D 0x000E      STRB     R0,[SP, #+14]
+   \       0x68   0x6848             LDR      R0,[R1, #+4]
+   \       0x6A   0xF88D 0x200F      STRB     R2,[SP, #+15]
+   \       0x6E   0x0A01             LSRS     R1,R0,#+8
+   \       0x70   0xF88D 0x1010      STRB     R1,[SP, #+16]
+   \       0x74   0x....             LDR.N    R1,??DataTable5_8
+   \       0x76   0xF88D 0x0011      STRB     R0,[SP, #+17]
+   \       0x7A   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \       0x7E   0xEE70 0x0A20      VADD.F32 S1,S0,S1
+   \       0x82   0xEEFD 0x0AE0      VCVT.S32.F32 S1,S1
+   \       0x86   0xEE10 0x0A90      VMOV     R0,S1
+   \       0x8A   0xF88D 0x0012      STRB     R0,[SP, #+18]
+    487                  // 6. 接下来2字节：CRC16 Modbus
+    488                  uint16_t crc = crc16modbus_s(&temp[3], 16);
+   \       0x8E   0x2110             MOVS     R1,#+16
+   \       0x90   0xF10D 0x0003      ADD      R0,SP,#+3
+   \       0x94   0x.... 0x....      BL       crc16modbus_s
+    489                  temp[19] = (uint8_t)((crc >> 8) & 0xFF); // CRC 高字节（原低字节位置）
+    490                  temp[20] = (uint8_t)(crc & 0xFF); // CRC 低字节（原高字节位置）
+   \       0x98   0xF88D 0x0014      STRB     R0,[SP, #+20]
+   \       0x9C   0x0A01             LSRS     R1,R0,#+8
+    491                  temp[21] = 0x7d;
+   \       0x9E   0x207D             MOVS     R0,#+125
+   \       0xA0   0xF88D 0x1013      STRB     R1,[SP, #+19]
+   \       0xA4   0xF88D 0x0015      STRB     R0,[SP, #+21]
+    492                  // 7. 校验和
+    493                  temp[22] = calc_checksum(temp, 22);
+   \       0xA8   0x2116             MOVS     R1,#+22
+   \       0xAA   0x4668             MOV      R0,SP
+   \       0xAC   0x.... 0x....      BL       calc_checksum
+   \       0xB0   0xF88D 0x0016      STRB     R0,[SP, #+22]
+    494          
+    495                  sl_iostream_write(sl_iostream_inst0_handle, temp, sizeof(temp));
+   \       0xB4   0x....             LDR.N    R0,??DataTable5_6
+   \       0xB6   0x6800             LDR      R0,[R0, #+0]
+   \       0xB8   0x2217             MOVS     R2,#+23
+   \       0xBA   0x4669             MOV      R1,SP
+   \       0xBC   0x.... 0x....      BL       sl_iostream_write
+    496                  comm_rx_len = 0;
+   \       0xC0   0x2000             MOVS     R0,#+0
+   \       0xC2   0x7020             STRB     R0,[R4, #+0]
+    497                  return;
+    498              }
+    499          }
+   \                     ??compatible_cmd_0: (+1)
+   \       0xC4   0xB006             ADD      SP,SP,#+24
+   \       0xC6   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `compatible_cmd{1}{2}::header`:
    \        0x0   0x02 0x31          DC8 2, 49, 19, 123, 89, 16, 0, 0, 48
    \              0x13 0x7B    
    \              0x59 0x10    
    \              0x00 0x00    
    \              0x30
    \        0x9                      DS8 3
+    500          
+
+   \                                 In section .text, align 2, keep-with-next
+    501          void comm_process() {
+   \                     comm_process: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    502              compatible_cmd();
+   \        0x2   0x.... 0x....      BL       compatible_cmd
+    503              // 满足私有指令格式后进行处理
+    504              if (comm_rx_buf[0] == 0xAA && comm_rx_len > 3 && comm_rx_len == comm_rx_buf[1]) {
+   \        0x6   0x....             LDR.N    R0,??DataTable5_3
+   \        0x8   0x7801             LDRB     R1,[R0, #+0]
+   \        0xA   0x29AA             CMP      R1,#+170
+   \        0xC   0xD10D             BNE.N    ??comm_process_0
+   \        0xE   0x....             LDR.N    R4,??DataTable5_2
+   \       0x10   0x7822             LDRB     R2,[R4, #+0]
+   \       0x12   0x2A04             CMP      R2,#+4
+   \       0x14   0xDB09             BLT.N    ??comm_process_0
+   \       0x16   0x7841             LDRB     R1,[R0, #+1]
+   \       0x18   0x428A             CMP      R2,R1
+   \       0x1A   0xD106             BNE.N    ??comm_process_0
+    505                  if (verify_crc16modbus(comm_rx_buf, comm_rx_buf[1])) {
+   \       0x1C   0x.... 0x....      BL       verify_crc16modbus
+   \       0x20   0xB108             CBZ.N    R0,??comm_process_1
+    506                      self_cmd();
+   \       0x22   0x.... 0x....      BL       self_cmd
+    507                  }
+    508                  comm_rx_len = 0;
+   \                     ??comm_process_1: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x7020             STRB     R0,[R4, #+0]
+    509              }
+    510          }
+   \                     ??comm_process_0: (+1)
+   \       0x2A   0xBD10             POP      {R4,PC}
+    511          
+    512          /**
+    513           * @brief 接收1字节数据并追加到缓冲区
+    514           * @param data 要接收的1字节数据
+    515           * @return 0: 追加成功; -1: 缓冲区已满，无法追加
+    516           */
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2:
+    517          int8_t receive(uint8_t data) {
+   \                     receive: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    518              /* 超时重置：如果距离上次接收超过100ms(差值>1)，则视为新帧，清空缓冲区 */
+    519              if ((system_uptime_100ms - last_rx_tick) > 1) {
+   \        0x2   0x....             LDR.N    R2,??DataTable5_9
+   \        0x4   0x....             LDR.N    R4,??DataTable5_2
+   \        0x6   0x6813             LDR      R3,[R2, #+0]
+   \        0x8   0x6861             LDR      R1,[R4, #+4]
+   \        0xA   0x1A5B             SUBS     R3,R3,R1
+   \        0xC   0x2B02             CMP      R3,#+2
+   \        0xE   0xBF24             ITT      CS
+   \       0x10   0x2300             MOVCS    R3,#+0
+   \       0x12   0x7023             STRBCS   R3,[R4, #+0]
+    520                  comm_rx_len = 0;
+    521              }
+    522              // 更新上次接收时间戳
+    523              last_rx_tick = system_uptime_100ms;
+   \       0x14   0x6811             LDR      R1,[R2, #+0]
+   \       0x16   0x6061             STR      R1,[R4, #+4]
+    524              // 将最新字节加入comm_rx_buf
+    525              if (comm_rx_len >= sizeof(comm_rx_buf)) {
+   \       0x18   0x7821             LDRB     R1,[R4, #+0]
+   \       0x1A   0x2940             CMP      R1,#+64
+   \       0x1C   0xD30A             BCC.N    ??receive_0
+    526                  /* 缓冲区已满，拒绝写入 */
+    527                  char *temp = "RX buffer full\r\n";
+    528                  sl_iostream_write(sl_iostream_inst0_handle, temp, strlen(temp));
+   \       0x1E   0x....             LDR.N    R3,??DataTable5_6
+   \       0x20   0x6818             LDR      R0,[R3, #+0]
+   \       0x22   0x2210             MOVS     R2,#+16
+   \       0x24   0x....             ADR.N    R1,?_0
+   \       0x26   0x.... 0x....      BL       sl_iostream_write
+    529                  comm_rx_len = 0;
+   \       0x2A   0x2100             MOVS     R1,#+0
+   \       0x2C   0x7021             STRB     R1,[R4, #+0]
+    530                  return -1;
+   \       0x2E   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x32   0xBD10             POP      {R4,PC}
+    531              }
+    532              comm_rx_buf[comm_rx_len] = data;
+   \                     ??receive_0: (+1)
+   \       0x34   0x....             LDR.N    R2,??DataTable5_3
+   \       0x36   0x5450             STRB     R0,[R2, R1]
+    533              comm_rx_len++;
+   \       0x38   0x1C49             ADDS     R1,R1,#+1
+   \       0x3A   0x7021             STRB     R1,[R4, #+0]
+    534              comm_process(); //处理指令
+   \       0x3C   0x.... 0x....      BL       comm_process
+    535              return 0;
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0xBD10             POP      {R4,PC}
+    536          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
    \        0x0   0x42C8'0000        DC32     0x42c80000
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_1:
+   \                     ??DataTable5_1:
    \        0x0   0x42FE'0000        DC32     0x42fe0000
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_2:
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     comm_rx_len
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
    \        0x0   0x....'....        DC32     comm_rx_buf
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_3:
-   \        0x0   0x....'....        DC32     system_uptime_100ms
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     user_config
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_4:
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     factory_config
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
    \        0x0   0x....'....        DC32     sl_iostream_inst0_handle
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_5:
+   \                     ??DataTable5_7:
    \        0x0   0x....'....        DC32     adc_last
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable2_6:
+   \                     ??DataTable5_8:
    \        0x0   0x....'....        DC32     temperature
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_9:
+   \        0x0   0x....'....        DC32     system_uptime_100ms
 
    \                                 In section .text, align 4, keep-with-next
    \                     ?_0:
@@ -418,39 +1423,59 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\comm.c
 
    .cstack Function
    ------- --------
-      40   receive
-        40   -> __aeabi_memcpy4
-        40   -> calc_checksum
-        40   -> crc16modbus_s
-        40   -> get_reading
-        40   -> sl_iostream_write
-        40   -> verify_crc16modbus
+       8   comm_process
+         8   -> compatible_cmd
+         8   -> self_cmd
+         8   -> verify_crc16modbus
+      32   compatible_cmd
+        32   -> __aeabi_memcpy4
+        32   -> calc_checksum
+        32   -> crc16modbus_s
+        32   -> get_reading
+        32   -> sl_iostream_write
+       8   receive
+         8   -> comm_process
+         8   -> sl_iostream_write
+     144   self_cmd
+       144   -> __aeabi_memclr4
+       144   -> __aeabi_memcpy
+       144   -> __aeabi_memcpy4
+       144   -> fill_crc16modbus
+       144   -> save_config
+       144   -> sl_iostream_write
 
 
    Section sizes:
 
    Bytes  Function/Label
    -----  --------------
-       4  ??DataTable2
-       4  ??DataTable2_1
-       4  ??DataTable2_2
-       4  ??DataTable2_3
-       4  ??DataTable2_4
-       4  ??DataTable2_5
-       4  ??DataTable2_6
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  ??DataTable5_9
+      10  ?Subroutine0
       20  ?_0
-      72  comm_rx_buf
-          comm_rx_len
+      44  comm_process
+      64  comm_rx_buf
+       8  comm_rx_len
           last_rx_tick
+     200  compatible_cmd
       12  header
-     288  receive
+      68  receive
+   1'162  self_cmd
 
  
-  72 bytes in section .bss
- 348 bytes in section .text
+    72 bytes in section .bss
+ 1'556 bytes in section .text
  
- 348 bytes of CODE memory
-  72 bytes of DATA memory
+ 1'556 bytes of CODE memory
+    72 bytes of DATA memory
 
 Errors: none
 Warnings: none

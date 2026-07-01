@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         30/Jun/2026  17:26:27
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         01/Jul/2026  17:05:05
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -148,40 +148,50 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
      11          void tasks(void) {
    \                     tasks: (+1)
    \        0x0   0xB510             PUSH     {R4,LR}
-     12              //
-     13              static uint32_t task_100ms_cnt = 0;
-     14              // 0.8秒执行一次
-     15              if (task_100ms_cnt % 8 == 0) {
-   \        0x2   0x4C0A             LDR.N    R4,??tasks_0
+     12              static uint32_t task_100ms_cnt = 0;
+     13              // 0.8秒执行一次
+     14              if (task_100ms_cnt % 8 == 0) {
+   \        0x2   0x4C10             LDR.N    R4,??tasks_0
    \        0x4   0x7820             LDRB     R0,[R4, #+0]
    \        0x6   0xF010 0x0F07      TST      R0,#0x7
    \        0xA   0xBF08             IT       EQ
-     16                  adc_scan();
+     15                  adc_scan();
    \        0xC   0x.... 0x....      BLEQ     adc_scan
-     17              }
-     18              // 10秒执行一次
-     19              if (task_100ms_cnt % 100 == 0) {
+     16              }
+     17              // 10秒执行一次
+     18              if (task_100ms_cnt % 100 == 0) {
    \       0x10   0x6820             LDR      R0,[R4, #+0]
    \       0x12   0x2264             MOVS     R2,#+100
    \       0x14   0x2164             MOVS     R1,#+100
    \       0x16   0xFBB0 0xF2F2      UDIV     R2,R0,R2
    \       0x1A   0xFB01 0x0012      MLS      R0,R1,R2,R0
    \       0x1E   0xB908             CBNZ.N   R0,??tasks_1
-     20                  update_temperature();
+     19                  update_temperature();
    \       0x20   0x.... 0x....      BL       update_temperature
-     21              }
-     22              
-     23              
-     24              
-     25              task_100ms_cnt++;
+     20              }
+     21              // 60秒执行一次
+     22              if (task_100ms_cnt % 600 == 0) {
    \                     ??tasks_1: (+1)
    \       0x24   0x6820             LDR      R0,[R4, #+0]
-   \       0x26   0x1C40             ADDS     R0,R0,#+1
-   \       0x28   0x6020             STR      R0,[R4, #+0]
-     26          }
-   \       0x2A   0xBD10             POP      {R4,PC}
+   \       0x26   0xF44F 0x7216      MOV      R2,#+600
+   \       0x2A   0xF44F 0x7116      MOV      R1,#+600
+   \       0x2E   0xFBB0 0xF2F2      UDIV     R2,R0,R2
+   \       0x32   0xFB01 0x0012      MLS      R0,R1,R2,R0
+   \       0x36   0xB908             CBNZ.N   R0,??tasks_2
+     23                  increment_run_time_and_save();
+   \       0x38   0x.... 0x....      BL       increment_run_time_and_save
+     24              }
+     25          
+     26          
+     27              task_100ms_cnt++;
+   \                     ??tasks_2: (+1)
+   \       0x3C   0x6820             LDR      R0,[R4, #+0]
+   \       0x3E   0x1C40             ADDS     R0,R0,#+1
+   \       0x40   0x6020             STR      R0,[R4, #+0]
+     28          }
+   \       0x42   0xBD10             POP      {R4,PC}
    \                     ??tasks_0:
-   \       0x2C   0x....'....        DC32     `tasks::task_100ms_cnt`
+   \       0x44   0x....'....        DC32     `tasks::task_100ms_cnt`
 
    \                                 In section .bss, align 4
    \                     `tasks::task_100ms_cnt`:
@@ -193,6 +203,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
    ------- --------
        8   tasks
          8   -> adc_scan
+         8   -> increment_run_time_and_save
          8   -> update_temperature
 
 
@@ -201,13 +212,13 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\tasks.c
    Bytes  Function/Label
    -----  --------------
        4  task_100ms_cnt
-      48  tasks
+      72  tasks
 
  
   4 bytes in section .bss
- 48 bytes in section .text
+ 72 bytes in section .text
  
- 48 bytes of CODE memory
+ 72 bytes of CODE memory
   4 bytes of DATA memory
 
 Errors: none

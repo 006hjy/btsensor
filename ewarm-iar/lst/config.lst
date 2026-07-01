@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         30/Jun/2026  17:26:27
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         01/Jul/2026  17:05:05
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -133,167 +133,235 @@
 ###############################################################################
 
 C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config.c
-      1          #include "nvm3.h"
-      2          #include "nvm3_default.h"
-      3          #include "sl_hal_gpio.h"
-      4          #include "sl_hal_gpio_init_pa00_config.h"
-      5          #include <config.h>
-      6          #include <float.h>
-      7          #include <string.h>
-      8          #include <stdlib.h>
-      9          #include "tpl0501.h"
-     10          #include "env.h"
-     11          #include "adc.h"
-     12          
+      1          #include "adc.h"
+      2          #include "env.h"
+      3          #include "nvm3.h"
+      4          #include "nvm3_default.h"
+      5          #include "sl_hal_gpio.h"
+      6          #include "sl_hal_gpio_init_pa00_config.h"
+      7          #include "tpl0501.h"
+      8          #include <config.h>
+      9          #include <float.h>
+     10          #include <stdint.h>
+     11          #include <stdlib.h>
+     12          #include <string.h>
+     13          
+     14          
 
    \                                 In section .bss, align 4
-     13          Board_config_container board_config = {0};
-   \                     board_config:
-   \        0x0                      DS8 756
-     14          Sensor_calibration_container sensor_cal = {0};
-   \                     sensor_cal:
-   \      0x2F4                      DS8 628
-     15          
-     16          /**
-     17           * @brief 从 Flash 中读取配置到全局变量 board_config
-     18           * @note  如果是首次运行（Flash 中无此 Key），会自动赋默认值
-     19           * @return uint8_t 0: 成功, 非0: 失败
-     20           */
+     15          Board_config factory_config = {0};
+   \                     factory_config:
+   \        0x0                      DS8 428
+
+   \                                 In section .bss, align 4
+     16          Board_config user_config = {0};
+   \                     user_config:
+   \        0x0                      DS8 428
+
+   \                                 In section .bss, align 4
+     17          uint32_t run_time = 0;
+   \                     run_time:
+   \        0x0                      DS8 4
+     18          
+     19          /**
+     20           * @brief 从 Flash 中读取配置到全局变量 factory_config 与 user_config
+     21           * @note  如果是首次运行（Flash 中无此 Key），会自动赋默认值
+     22           * @return uint8_t 0: 成功, 非0: 失败
+     23           */
 
    \                                 In section .text, align 2, keep-with-next
-     21          uint8_t read_config(void) {
+     24          uint8_t read_config(void) {
    \                     read_config: (+1)
-   \        0x0   0xB538             PUSH     {R3-R5,LR}
-     22              Ecode_t status;
-     23          
-     24              // 从 Flash 中整体读取结构体
-     25              // 读取并初始化board_config
-     26              status = nvm3_readData(nvm3_defaultHandle, STORAGE_KEY_BOARD_CFG, &board_config,
-     27                                     sizeof(Board_config_container));
-   \        0x2   0x.... 0x....      BL       ?Subroutine0
-   \                     ??CrossCallReturnLabel_0: (+1)
-   \        0x6   0x.... 0x....      BL       nvm3_readData
-     28              // 如果是首次运行（Flash 里无此 Key），赋初始默认值
-     29              if (status == ECODE_NVM3_ERR_KEY_NOT_FOUND) {
-   \        0xA   0x282D             CMP      R0,#+45
-   \        0xC   0xD106             BNE.N    ??read_config_0
-     30                  board_config.data.selfset = 0x00;
-   \        0xE   0x2000             MOVS     R0,#+0
-     31                  board_config.data.temp_way = 0x01;
-   \       0x10   0x2101             MOVS     R1,#+1
-     32                  board_config.data.gain = 0xFF;
-   \       0x12   0x22FF             MOVS     R2,#+255
-   \       0x14   0x7028             STRB     R0,[R5, #+0]
-   \       0x16   0x7069             STRB     R1,[R5, #+1]
-   \       0x18   0x70AA             STRB     R2,[R5, #+2]
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+     25              Ecode_t status;
+     26          
+     27              // 读取并初始化runtime
+     28              status = nvm3_readData(nvm3_defaultHandle, STORAGE_KEY_RUNTIME, &run_time,
+     29                                     sizeof(run_time));
+   \        0x2   0x....             LDR.N    R5,??DataTable8_2
+   \        0x4   0x6828             LDR      R0,[R5, #+0]
+   \        0x6   0x....             LDR.N    R4,??DataTable8_3
+   \        0x8   0x2304             MOVS     R3,#+4
+   \        0xA   0x4622             MOV      R2,R4
+   \        0xC   0x2121             MOVS     R1,#+33
+   \        0xE   0x.... 0x....      BL       nvm3_readData
+     30              // 如果是首次运行（Flash 里无此 Key），赋初始默认值
+     31              if (status == ECODE_NVM3_ERR_KEY_NOT_FOUND) {
+   \       0x12   0x282D             CMP      R0,#+45
+   \       0x14   0xD102             BNE.N    ??read_config_0
+     32                  run_time = 0;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x6020             STR      R0,[R4, #+0]
    \       0x1A   0xE000             B.N      ??read_config_1
-     33              } else if (status != ECODE_OK) { return 1; }
+     33              } else if (status != ECODE_OK) {
    \                     ??read_config_0: (+1)
-   \       0x1C   0xB938             CBNZ.N   R0,??read_config_2
-     34          
-     35              // 读取并初始化sensor1_cal
-     36              status = nvm3_readData(nvm3_defaultHandle, STORAGE_KEY_SENSOR1_CAL, &sensor_cal,
-     37                                     sizeof(Sensor_calibration_container));
+   \       0x1C   0xBB18             CBNZ.N   R0,??read_config_2
+     34                  return 1;
+     35              }
+     36          
+     37              // 从 Flash 中整体读取结构体
+     38              // 读取并初始化factory_config
+     39              status = nvm3_readData(nvm3_defaultHandle, STORAGE_KEY_FACTORY_CFG,
+     40                                     &factory_config, sizeof(Board_config));
    \                     ??read_config_1: (+1)
-   \       0x1E   0x.... 0x....      BL       ?Subroutine1
-   \                     ??CrossCallReturnLabel_2: (+1)
-   \       0x22   0x.... 0x....      BL       nvm3_readData
-     38              // 如果是首次运行（Flash 里无此 Key），赋初始默认值
-     39              if (status == ECODE_NVM3_ERR_KEY_NOT_FOUND) {
-   \       0x26   0x282D             CMP      R0,#+45
-   \       0x28   0xBF18             IT       NE
-   \       0x2A   0x2800             CMPNE    R0,#+0
-     40              } else if (status != ECODE_OK) { return 1; }
-   \       0x2C   0xD001             BEQ.N    ??read_config_3
-   \                     ??read_config_2: (+1)
-   \       0x2E   0x2001             MOVS     R0,#+1
-   \       0x30   0xBD32             POP      {R1,R4,R5,PC}
-     41          
-     42              return 0;
-   \                     ??read_config_3: (+1)
+   \       0x1E   0x6828             LDR      R0,[R5, #+0]
+   \       0x20   0x....             LDR.N    R4,??DataTable8_4
+   \       0x22   0xF44F 0x73D6      MOV      R3,#+428
+   \       0x26   0x4622             MOV      R2,R4
+   \       0x28   0x2122             MOVS     R1,#+34
+   \       0x2A   0x.... 0x....      BL       nvm3_readData
+     41              // 如果是首次运行（Flash 里无此 Key），赋初始默认值
+     42              if (status == ECODE_NVM3_ERR_KEY_NOT_FOUND) {
+   \       0x2E   0x282D             CMP      R0,#+45
+   \       0x30   0xD106             BNE.N    ??read_config_3
+     43                  factory_config.selfset = 0x00;
    \       0x32   0x2000             MOVS     R0,#+0
-   \       0x34   0xBD32             POP      {R1,R4,R5,PC}
-     43          }
+     44                  factory_config.temp_way = 0x01;
+   \       0x34   0x2101             MOVS     R1,#+1
+     45                  factory_config.gain = 0xFF;
+   \       0x36   0x22FF             MOVS     R2,#+255
+   \       0x38   0x7020             STRB     R0,[R4, #+0]
+   \       0x3A   0x7061             STRB     R1,[R4, #+1]
+   \       0x3C   0x70A2             STRB     R2,[R4, #+2]
+   \       0x3E   0xE000             B.N      ??read_config_4
+     46              } else if (status != ECODE_OK) {
+   \                     ??read_config_3: (+1)
+   \       0x40   0xB988             CBNZ.N   R0,??read_config_2
+     47                  return 1;
+     48              }
+     49          
+     50              // 读取并初始化user_config
+     51              status = nvm3_readData(nvm3_defaultHandle, STORAGE_KEY_USER_CFG,
+     52                                     &user_config, sizeof(Board_config));
+   \                     ??read_config_4: (+1)
+   \       0x42   0x6828             LDR      R0,[R5, #+0]
+   \       0x44   0x....             LDR.N    R6,??DataTable8_5
+   \       0x46   0xF44F 0x73D6      MOV      R3,#+428
+   \       0x4A   0x4632             MOV      R2,R6
+   \       0x4C   0x2123             MOVS     R1,#+35
+   \       0x4E   0x.... 0x....      BL       nvm3_readData
+     53              // 如果是首次运行（Flash 里无此 Key），赋初始默认值
+     54              if (status == ECODE_NVM3_ERR_KEY_NOT_FOUND) {
+   \       0x52   0x282D             CMP      R0,#+45
+   \       0x54   0xD105             BNE.N    ??read_config_5
+     55                  user_config = factory_config;
+   \       0x56   0x4630             MOV      R0,R6
+   \       0x58   0x4621             MOV      R1,R4
+   \       0x5A   0x.... 0x....      BL       ?Subroutine1
+     56              } else if (status != ECODE_OK) {
+     57                  return 1;
+     58              }
+     59          
+     60              return 0;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x5E   0x2000             MOVS     R0,#+0
+   \       0x60   0xBD70             POP      {R4-R6,PC}
+   \                     ??read_config_5: (+1)
+   \       0x62   0x2800             CMP      R0,#+0
+   \       0x64   0xD0FB             BEQ.N    ??CrossCallReturnLabel_0
+   \                     ??read_config_2: (+1)
+   \       0x66   0x2001             MOVS     R0,#+1
+   \       0x68   0xBD70             POP      {R4-R6,PC}
+     61          }
 
    \                                 In section .text, align 2, keep-with-next
    \                     ?Subroutine1: (+1)
-   \        0x0   0x6820             LDR      R0,[R4, #+0]
-   \        0x2   0xF44F 0x731D      MOV      R3,#+628
-   \        0x6   0xF505 0x723D      ADD      R2,R5,#+756
-   \        0xA   0x2123             MOVS     R1,#+35
-   \        0xC   0x4770             BX       LR
+   \        0x0   0xF44F 0x72D6      MOV      R2,#+428
+   \        0x4   0x.... 0x....      B.W      __aeabi_memcpy4
+     62          
+     63          /**
+     64           * @brief 按类型将对应配置保存到 Flash 中
+     65           * @param type 保存类型：0=STORAGE_KEY_RUNTIME, 1=STORAGE_KEY_FACTORY_CFG,
+     66           *             2=STORAGE_KEY_USER_CFG
+     67           * @return uint8_t 0: 成功, 非0: 失败
+     68           */
 
    \                                 In section .text, align 2, keep-with-next
-   \                     ?Subroutine0: (+1)
-   \        0x0   0x....             LDR.N    R4,??DataTable5_2
-   \        0x2   0x6820             LDR      R0,[R4, #+0]
-   \        0x4   0x....             LDR.N    R5,??DataTable5_3
-   \        0x6   0xF44F 0x733D      MOV      R3,#+756
-   \        0xA   0x462A             MOV      R2,R5
-   \        0xC   0x2122             MOVS     R1,#+34
-   \        0xE   0x4770             BX       LR
-     44          
-     45          /**
-     46           * @brief 将全局变量 board_config 保存到 Flash 中
-     47           * @return uint8_t 0: 成功, 非0: 失败
-     48           */
-
-   \                                 In section .text, align 2, keep-with-next
-     49          uint8_t save_config(void) {
+     69          uint8_t save_config(uint8_t type) {
    \                     save_config: (+1)
-   \        0x0   0xB538             PUSH     {R3-R5,LR}
-     50              Ecode_t status;
-     51          
-     52              status = nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_BOARD_CFG, &board_config,
-     53                                      sizeof(Board_config_container));
-     54              if (status != ECODE_OK) { return 1; }
-   \        0x2   0x.... 0x....      BL       ?Subroutine0
-   \                     ??CrossCallReturnLabel_1: (+1)
-   \        0x6   0x.... 0x....      BL       nvm3_writeData
-   \        0xA   0xB108             CBZ.N    R0,??save_config_0
-   \        0xC   0x2001             MOVS     R0,#+1
-   \        0xE   0xBD32             POP      {R1,R4,R5,PC}
-     55              status = nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_SENSOR1_CAL, &sensor_cal,
-     56                                      sizeof(Sensor_calibration_container));
-     57              if (status != ECODE_OK) { return 1; }
+   \        0x0   0xB510             PUSH     {R4,LR}
+     70              Ecode_t status;
+     71          
+     72              switch (type) {
+   \        0x2   0x....             LDR.N    R1,??DataTable8_2
+   \        0x4   0x680C             LDR      R4,[R1, #+0]
+   \        0x6   0xB118             CBZ.N    R0,??save_config_0
+   \        0x8   0x2802             CMP      R0,#+2
+   \        0xA   0xD010             BEQ.N    ??save_config_1
+   \        0xC   0xD30A             BCC.N    ??save_config_2
+   \        0xE   0xE013             B.N      ??save_config_3
+     73                  case 0: {
+     74                      status = nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_RUNTIME, &run_time,
+     75                                              sizeof(run_time));
    \                     ??save_config_0: (+1)
-   \       0x10   0x.... 0x....      BL       ?Subroutine1
-   \                     ??CrossCallReturnLabel_3: (+1)
-   \       0x14   0x.... 0x....      BL       nvm3_writeData
-   \       0x18   0xB100             CBZ.N    R0,??save_config_1
-   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x10   0x2304             MOVS     R3,#+4
+   \       0x12   0x....             LDR.N    R2,??DataTable8_3
+   \       0x14   0x2121             MOVS     R1,#+33
+   \                     ??save_config_4: (+1)
+   \       0x16   0x4620             MOV      R0,R4
+   \       0x18   0x.... 0x....      BL       nvm3_writeData
+     76                      break;
+     77                  }
+     78                  case 1: {
+     79                      status = nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_FACTORY_CFG,
+     80                                              &factory_config, sizeof(Board_config));
+     81                      break;
+     82                  }
+     83                  case 2: {
+     84                      status = nvm3_writeData(nvm3_defaultHandle, STORAGE_KEY_USER_CFG,
+     85                                              &user_config, sizeof(Board_config));
+     86                      break;
+     87                  }
+     88                  default:
+     89                      return 1;
+     90              }
+     91              return (status == ECODE_OK) ? 0 : 1;
+   \       0x1C   0xB100             CBZ.N    R0,??save_config_5
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \                     ??save_config_5: (+1)
+   \       0x20   0xB2C0             UXTB     R0,R0
+   \       0x22   0xBD10             POP      {R4,PC}
+   \                     ??save_config_2: (+1)
+   \       0x24   0xF44F 0x73D6      MOV      R3,#+428
+   \       0x28   0x....             LDR.N    R2,??DataTable8_4
+   \       0x2A   0x2122             MOVS     R1,#+34
+   \       0x2C   0xE7F3             B.N      ??save_config_4
    \                     ??save_config_1: (+1)
-   \       0x1C   0xB2C0             UXTB     R0,R0
-   \       0x1E   0xBD32             POP      {R1,R4,R5,PC}
-     58              return 0;
-     59          }
-     60          
+   \       0x2E   0xF44F 0x73D6      MOV      R3,#+428
+   \       0x32   0x....             LDR.N    R2,??DataTable8_5
+   \       0x34   0x2123             MOVS     R1,#+35
+   \       0x36   0xE7EE             B.N      ??save_config_4
+   \                     ??save_config_3: (+1)
+   \       0x38   0x2001             MOVS     R0,#+1
+   \       0x3A   0xBD10             POP      {R4,PC}
+     92          }
+     93          
 
    \                                 In section .text, align 4, keep-with-next
-     61          void config_init(void) {
+     94          void config_init(void) {
    \                     config_init: (+1)
    \        0x0   0xB51C             PUSH     {R2-R4,LR}
-     62              // 1. 读取配置（若首次运行会自动加载默认值）
-     63              read_config();
+     95              // 1. 读取配置（若首次运行会自动加载默认值）
+     96              read_config();
    \        0x2   0x.... 0x....      BL       read_config
-     64          
-     65              // 设置selfset引脚状态
-     66              board_config.data.selfset = 0x00;
-   \        0x6   0x....             LDR.N    R4,??DataTable5_3
+     97          
+     98              // 设置selfset引脚状态
+     99              user_config.selfset = 0x00;
+   \        0x6   0x....             LDR.N    R4,??DataTable8_5
    \        0x8   0x2100             MOVS     R1,#+0
    \        0xA   0x7021             STRB     R1,[R4, #+0]
-     67              sl_hal_gpio_set_pin_mode(&(sl_gpio_t)
-     68              {
-     69                  .
-     70                  port = SL_HAL_GPIO_INIT_PA00_PORT,
-     71                  .
-     72                  pin = SL_HAL_GPIO_INIT_PA00_PIN
-     73              }
-     74              ,
-     75              SL_HAL_GPIO_INIT_PA00_MODE,
-     76                      board_config.data.selfset
-     77              )
-     78              ;
+    100              sl_hal_gpio_set_pin_mode(&(sl_gpio_t)
+    101              {
+    102                  .
+    103                  port = SL_HAL_GPIO_INIT_PA00_PORT,
+    104                  .
+    105                  pin = SL_HAL_GPIO_INIT_PA00_PIN
+    106              }
+    107              ,
+    108              SL_HAL_GPIO_INIT_PA00_MODE,
+    109                      user_config.selfset
+    110              )
+    111              ;
    \        0xC   0x....             ADR.N    R2,?_0
    \        0xE   0x8810             LDRH     R0,[R2, #+0]
    \       0x10   0x2200             MOVS     R2,#+0
@@ -301,81 +369,157 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config.c
    \       0x14   0xF8AD 0x0000      STRH     R0,[SP, #+0]
    \       0x18   0x4668             MOV      R0,SP
    \       0x1A   0x.... 0x....      BL       sl_hal_gpio_set_pin_mode
-     79          
-     80              // 设置gain阻值
-     81              board_config.data.gain = 0xFF;
+    112          
+    113              // 设置gain阻值
+    114              user_config.gain = 0xFF;
    \       0x1E   0x20FF             MOVS     R0,#+255
    \       0x20   0x70A0             STRB     R0,[R4, #+2]
-     82              tpl0501_set_wiper(board_config.data.gain);
+    115              tpl0501_set_wiper(user_config.gain);
    \       0x22   0x.... 0x....      BL       tpl0501_set_wiper
-     83          
-     84              // 设置温度通道
-     85              temp_way = board_config.data.temp_way;
+    116          
+    117              // 设置温度通道
+    118              temp_way = user_config.temp_way;
    \       0x26   0x7860             LDRB     R0,[R4, #+1]
-   \       0x28   0x....             LDR.N    R1,??DataTable5_4
+   \       0x28   0x....             LDR.N    R1,??DataTable8_6
    \       0x2A   0x7008             STRB     R0,[R1, #+0]
-     86          
-     87          
-     88              save_config();
-   \       0x2C   0x.... 0x....      BL       save_config
-     89          }
-   \       0x30   0xBD13             POP      {R0,R1,R4,PC}
-     90          
-     91          /**
-     92           * @brief 读取结构体配置，修改其中数据，然后整体写回 Flash
-     93           */
+    119          
+    120              save_config(0);
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \       0x2E   0x.... 0x....      BL       save_config
+    121              save_config(1);
+   \       0x32   0x2001             MOVS     R0,#+1
+   \       0x34   0x.... 0x....      BL       save_config
+    122              save_config(2);
+   \       0x38   0x2002             MOVS     R0,#+2
+   \       0x3A   0x.... 0x....      BL       save_config
+    123          }
+   \       0x3E   0xBD13             POP      {R0,R1,R4,PC}
+    124          
+    125          /**
+    126           * @brief 读取结构体配置，修改其中数据，然后整体写回 Flash
+    127           */
 
    \                                 In section .text, align 2, keep-with-next
-     94          void update_and_store_config(void) {
+    128          void update_and_store_config(void) {
    \                     update_and_store_config: (+1)
    \        0x0   0xB580             PUSH     {R7,LR}
-     95              // 1. 读取配置（若首次运行会自动加载默认值）
-     96              read_config();
+    129              // 1. 读取配置（若首次运行会自动加载默认值）
+    130              read_config();
    \        0x2   0x.... 0x....      BL       read_config
-     97              // 3. 保存回 Flash
-     98              save_config();
-   \        0x6   0xE8BD 0x4001      POP      {R0,LR}
+    131              // 3. 保存回 Flash
+    132              save_config(0);
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x.... 0x....      BL       save_config
+    133              save_config(1);
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x.... 0x....      BL       save_config
+    134              save_config(2);
+   \       0x12   0x....             B.N      ?Subroutine0
+    135          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \                     ??Subroutine0_0: (+1)
+   \        0x2   0xE8BD 0x4002      POP      {R1,LR}
+   \        0x6   0x....             B.N      save_config
+    136          
+    137          /**
+    138           * @brief 恢复工厂配置：将当前用户配置覆盖为工厂配置并保存
+    139           * @return uint8_t 0: 成功, 非0: 失败
+    140           */
+
+   \                                 In section .text, align 2, keep-with-next
+    141          uint8_t restore_factory_config(void) {
+   \                     restore_factory_config: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    142              user_config = factory_config;
+   \        0x2   0x....             LDR.N    R0,??DataTable8_5
+   \        0x4   0x....             LDR.N    R1,??DataTable8_4
+   \        0x6   0x.... 0x....      BL       ?Subroutine1
+    143              return save_config(2);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0xA                      REQUIRE ?Subroutine0
+   \        0xA                      ; // Fall through to label ?Subroutine0
+    144          }
+    145          
+    146          /**
+    147           * @brief 将当前配置保存为工厂配置并写入 Flash
+    148           * @return uint8_t 0: 成功, 非0: 失败
+    149           */
+
+   \                                 In section .text, align 2, keep-with-next
+    150          uint8_t save_current_as_factory_config(void) {
+   \                     save_current_as_factory_config: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    151              factory_config = user_config;
+   \        0x2   0x....             LDR.N    R0,??DataTable8_4
+   \        0x4   0x....             LDR.N    R1,??DataTable8_5
+   \        0x6   0x.... 0x....      BL       ?Subroutine1
+    152              return save_config(1);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0x....             B.N      ??Subroutine0_0
+    153          }
+    154          
+    155          /**
+    156           * @brief 运行时间自增 1，并立即保存到 Flash
+    157           * @return uint8_t 0: 成功, 非0: 失败
+    158           */
+
+   \                                 In section .text, align 2, keep-with-next
+    159          uint8_t increment_run_time_and_save(void) {
+    160              run_time += 1;
+   \                     increment_run_time_and_save: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable8_3
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x1C49             ADDS     R1,R1,#+1
+   \        0x6   0x6001             STR      R1,[R0, #+0]
+    161              return save_config(0);
+   \        0x8   0x2000             MOVS     R0,#+0
    \        0xA   0x....             B.N      save_config
-     99          }
-    100          
-    101          
-    102          #define EPSILON 1e-6f  // 浮点数比较容差
-    103          /**
-    104           * 单调递增数组的线性插值（二分查找优化版）
-    105           * 前提：数组 x 必须保证单调递增
-    106           * @return 插值结果。如果数组无效，返回-FLT_MAX
-    107           */
+    162          }
+    163          
+    164          #define EPSILON 1e-6f // 浮点数比较容差
+    165          /**
+    166           * 单调递增数组的线性插值（二分查找优化版）
+    167           * 前提：数组 x 必须保证单调递增
+    168           * @return 插值结果。如果数组无效，返回-FLT_MAX
+    169           */
 
    \                                 In section .text, align 4, keep-with-next
-    108          float linearInterpolate(const float x[], const float y[], int n, float x0) {
+    170          float linearInterpolate(const float x[], const float y[], int n, float x0) {
    \                     linearInterpolate: (+1)
    \        0x0   0xB530             PUSH     {R4,R5,LR}
-    109              if (n <= 0 || x == NULL || y == NULL) return -FLT_MAX;
+    171              if (n <= 0 || x == NULL || y == NULL)
    \        0x2   0x2A00             CMP      R2,#+0
    \        0x4   0xDD03             BLE.N    ??linearInterpolate_0
    \        0x6   0x2800             CMP      R0,#+0
    \        0x8   0xBF18             IT       NE
    \        0xA   0x2900             CMPNE    R1,#+0
    \        0xC   0xD102             BNE.N    ??linearInterpolate_1
+    172                  return -FLT_MAX;
    \                     ??linearInterpolate_0: (+1)
-   \        0xE   0xED9F 0x....      VLDR.W   S0,??DataTable5
+   \        0xE   0xED9F 0x....      VLDR.W   S0,??DataTable8
    \       0x12   0xBD30             POP      {R4,R5,PC}
-    110              if (n == 1) return y[0]; // 只有一个元素，直接返回
+    173              if (n == 1)
    \                     ??linearInterpolate_1: (+1)
    \       0x14   0x2A01             CMP      R2,#+1
    \       0x16   0xD006             BEQ.N    ??linearInterpolate_2
-    111          
-    112              // 1. 边界与端点处理 (O(1))
-    113              // 因为单调递增，x[0] 就是全局最小，x[n-1] 就是全局最大
-    114              if (x0 <= x[0]) return y[0]; // 包含：x0小于所有数、x0精确等于x[0]
+    174                  return y[0]; // 只有一个元素，直接返回
+    175          
+    176              // 1. 边界与端点处理 (O(1))
+    177              // 因为单调递增，x[0] 就是全局最小，x[n-1] 就是全局最大
+    178              if (x0 <= x[0])
    \       0x18   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
    \       0x1C   0xEEF4 0x0A40      VCMP.F32 S1,S0
    \       0x20   0xEEF1 0xFA10      FMSTAT
    \       0x24   0xDB02             BLT.N    ??linearInterpolate_3
+    179                  return y[0]; // 包含：x0小于所有数、x0精确等于x[0]
    \                     ??linearInterpolate_2: (+1)
    \       0x26   0xED91 0x0A00      VLDR     S0,[R1, #0]
    \       0x2A   0xBD30             POP      {R4,R5,PC}
-    115              if (x0 >= x[n - 1]) return y[n - 1]; // 包含：x0大于所有数、x0精确等于x[n-1]
+    180              if (x0 >= x[n - 1])
    \                     ??linearInterpolate_3: (+1)
    \       0x2C   0xEB00 0x0382      ADD      R3,R0,R2, LSL #+2
    \       0x30   0x1F1C             SUBS     R4,R3,#+4
@@ -383,29 +527,30 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config.c
    \       0x36   0xEEB4 0x0A60      VCMP.F32 S0,S1
    \       0x3A   0xEEF1 0xFA10      FMSTAT
    \       0x3E   0xDB03             BLT.N    ??linearInterpolate_4
+    181                  return y[n - 1]; // 包含：x0大于所有数、x0精确等于x[n-1]
    \       0x40   0xEB01 0x0082      ADD      R0,R1,R2, LSL #+2
    \       0x44   0x1F01             SUBS     R1,R0,#+4
    \       0x46   0xE7EE             B.N      ??linearInterpolate_2
-    116          
-    117              // 2. 二分查找区间 (O(log n))
-    118              // 此时保证 x[0] < x0 < x[n-1]，必然存在一个区间 [left, right] 包含 x0
-    119              int left = 0;
+    182          
+    183              // 2. 二分查找区间 (O(log n))
+    184              // 此时保证 x[0] < x0 < x[n-1]，必然存在一个区间 [left, right] 包含 x0
+    185              int left = 0;
    \                     ??linearInterpolate_4: (+1)
    \       0x48   0x2300             MOVS     R3,#+0
-    120              int right = n - 1;
+    186              int right = n - 1;
    \       0x4A   0x1E52             SUBS     R2,R2,#+1
-    121          
-    122              while (right - left > 1) {
+    187          
+    188              while (right - left > 1) {
    \                     ??linearInterpolate_5: (+1)
    \       0x4C   0x1AD4             SUBS     R4,R2,R3
    \       0x4E   0x2C01             CMP      R4,#+1
    \       0x50   0xDD1F             BLE.N    ??linearInterpolate_6
-    123                  int mid = left + (right - left) / 2;
+    189                  int mid = left + (right - left) / 2;
    \       0x52   0xEB04 0x74D4      ADD      R4,R4,R4, LSR #+31
-    124          
-    125                  // 精确匹配内部节点（带容差）
-    126                  if (fabsf(x[mid] - x0) < EPSILON) {
-   \       0x56   0xEDDF 0x....      VLDR.W   S3,??DataTable5_1
+    190          
+    191                  // 精确匹配内部节点（带容差）
+    192                  if (fabsf(x[mid] - x0) < EPSILON) {
+   \       0x56   0xEDDF 0x....      VLDR.W   S3,??DataTable8_1
    \       0x5A   0xEB03 0x0464      ADD      R4,R3,R4, ASR #+1
    \       0x5E   0xEB00 0x0584      ADD      R5,R0,R4, LSL #+2
    \       0x62   0xEDD5 0x0A00      VLDR     S1,[R5, #0]
@@ -414,32 +559,32 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config.c
    \       0x6E   0xEEB4 0x1A61      VCMP.F32 S2,S3
    \       0x72   0xEEF1 0xFA10      FMSTAT
    \       0x76   0xD504             BPL.N    ??linearInterpolate_7
-    127                      return y[mid];
+    193                      return y[mid];
    \       0x78   0xEB01 0x0084      ADD      R0,R1,R4, LSL #+2
    \       0x7C   0xED90 0x0A00      VLDR     S0,[R0, #0]
    \       0x80   0xBD30             POP      {R4,R5,PC}
-    128                  }
-    129          
-    130                  if (x[mid] < x0) {
+    194                  }
+    195          
+    196                  if (x[mid] < x0) {
    \                     ??linearInterpolate_7: (+1)
    \       0x82   0xEEF4 0x0A40      VCMP.F32 S1,S0
    \       0x86   0xEEF1 0xFA10      FMSTAT
    \       0x8A   0xBF54             ITE      PL
    \       0x8C   0x4622             MOVPL    R2,R4
    \       0x8E   0x4623             MOVMI    R3,R4
-    131                      left = mid; // x0 在右半区，更新下界
-    132                  } else {
-    133                      right = mid; // x0 在左半区，更新上界
+    197                      left = mid; // x0 在右半区，更新下界
+    198                  } else {
+    199                      right = mid; // x0 在左半区，更新上界
    \       0x90   0xE7DC             B.N      ??linearInterpolate_5
-    134                  }
-    135              }
-    136          
-    137              // 3. 线性插值 (O(1))
-    138              // 循环结束时，left 和 right 就是紧邻 x0 的两个下标，且 right = left + 1
-    139              int p = left;
-    140              int q = right;
-    141          
-    142              return y[p] + (y[q] - y[p]) * (x0 - x[p]) / (x[q] - x[p]);
+    200                  }
+    201              }
+    202          
+    203              // 3. 线性插值 (O(1))
+    204              // 循环结束时，left 和 right 就是紧邻 x0 的两个下标，且 right = left + 1
+    205              int p = left;
+    206              int q = right;
+    207          
+    208              return y[p] + (y[q] - y[p]) * (x0 - x[p]) / (x[q] - x[p]);
    \                     ??linearInterpolate_6: (+1)
    \       0x92   0xEB00 0x0483      ADD      R4,R0,R3, LSL #+2
    \       0x96   0xEB01 0x0383      ADD      R3,R1,R3, LSL #+2
@@ -456,51 +601,140 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config.c
    \       0xC2   0xEEC0 0x0A20      VDIV.F32 S1,S0,S1
    \       0xC6   0xEE30 0x0A81      VADD.F32 S0,S1,S2
    \       0xCA   0xBD30             POP      {R4,R5,PC}
-    143          }
-    144          
+    209          }
+    210          
+    211          // 根据raw计算读数，进行补偿和死区处理
 
    \                                 In section .text, align 2, keep-with-next
-    145          float get_reading(uint8_t i) {
-    146              uint32_t raw = adc_last[i];
-    147              float reading = linearInterpolate(sensor_cal.sensor[0].biaoding_x_raw, sensor_cal.sensor[0].biaoding_y_read, 10, raw);
-    148              // if () {
-    149              // }
-    150              return reading;
+    212          float get_reading(uint8_t i) {
+    213              // 读取原始adc值raw
+    214              uint32_t raw = adc_last[i];
+    215              // 计算原始reading
+    216              float reading = linearInterpolate(user_config.cal_sen[i].biaoding_x_raw,
+    217                                                user_config.cal_sen[i].biaoding_y_read,
+    218                                                10, raw);
    \                     get_reading: (+1)
-   \        0x0   0x....             LDR.N    R1,??DataTable5_5
-   \        0x2   0xEB01 0x0080      ADD      R0,R1,R0, LSL #+2
-   \        0x6   0x....             LDR.N    R3,??DataTable5_3
-   \        0x8   0xED90 0x0A00      VLDR     S0,[R0, #0]
-   \        0xC   0xEEB8 0x0A40      VCVT.F32.U32 S0,S0
-   \       0x10   0x220A             MOVS     R2,#+10
-   \       0x12   0xF503 0x7147      ADD      R1,R3,#+796
-   \       0x16   0xF503 0x703D      ADD      R0,R3,#+756
-   \       0x1A   0x....             B.N      linearInterpolate
-    151          }
+   \        0x0   0xF44F 0x7298      MOV      R2,#+304
+   \        0x4   0xB538             PUSH     {R3-R5,LR}
+   \        0x6   0xFB12 0xF200      SMULBB   R2,R2,R0
+   \        0xA   0x....             LDR.N    R3,??DataTable8_7
+   \        0xC   0xEB03 0x0080      ADD      R0,R3,R0, LSL #+2
+   \       0x10   0xED2D 0x8B02      VPUSH    {D8}
+   \       0x14   0x....             LDR.N    R1,??DataTable8_5
+   \       0x16   0x188C             ADDS     R4,R1,R2
+   \       0x18   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \       0x1C   0xF504 0x75D4      ADD      R5,R4,#+424
+   \       0x20   0xEEB8 0x0A40      VCVT.F32.U32 S0,S0
+   \       0x24   0x220A             MOVS     R2,#+10
+   \       0x26   0xF104 0x01A4      ADD      R1,R4,#+164
+   \       0x2A   0xF104 0x007C      ADD      R0,R4,#+124
+   \       0x2E   0x.... 0x....      BL       linearInterpolate
+    219              // 温度补偿
+    220              if (user_config.cal_sen[i].wendubuchang_sw) {
+   \       0x32   0x7868             LDRB     R0,[R5, #+1]
+   \       0x34   0xEEB0 0x8A40      VMOV.F32 S16,S0
+   \       0x38   0xB158             CBZ.N    R0,??get_reading_0
+    221                  reading = reading + linearInterpolate(user_config.cal_sen[i].wendubuchang_x,
+    222                                                        user_config.cal_sen[i].wendubuchang_y,
+    223                                                        10, temperature);
+   \       0x3A   0x....             LDR.N    R1,??DataTable8_8
+   \       0x3C   0x220A             MOVS     R2,#+10
+   \       0x3E   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \       0x42   0xF504 0x71A2      ADD      R1,R4,#+324
+   \       0x46   0xF504 0x708E      ADD      R0,R4,#+284
+   \       0x4A   0x.... 0x....      BL       linearInterpolate
+   \       0x4E   0xEE30 0x8A08      VADD.F32 S16,S0,S16
+    224              }
+    225              // 线性补偿
+    226              if (user_config.cal_sen[i].xianxingbuchang_sw) {
+   \                     ??get_reading_0: (+1)
+   \       0x52   0x7828             LDRB     R0,[R5, #+0]
+   \       0x54   0xB150             CBZ.N    R0,??get_reading_1
+    227                  reading = reading + linearInterpolate(user_config.cal_sen[i].xianxingbuchang_x,
+    228                                                        user_config.cal_sen[i].xianxingbuchang_y,
+    229                                                        10, reading);
+   \       0x56   0xEEB0 0x0A48      VMOV.F32 S0,S16
+   \       0x5A   0x220A             MOVS     R2,#+10
+   \       0x5C   0xF104 0x01F4      ADD      R1,R4,#+244
+   \       0x60   0xF104 0x00CC      ADD      R0,R4,#+204
+   \       0x64   0x.... 0x....      BL       linearInterpolate
+   \       0x68   0xEE30 0x8A08      VADD.F32 S16,S0,S16
+    230              }
+    231              // 死区处理
+    232              if (user_config.cal_sen[i].deadband_sw) {
+   \                     ??get_reading_1: (+1)
+   \       0x6C   0x78A8             LDRB     R0,[R5, #+2]
+   \       0x6E   0xB1C8             CBZ.N    R0,??get_reading_2
+    233                  for (uint8_t j = 0; j < 5; j++) {
+   \       0x70   0x2000             MOVS     R0,#+0
+    234                      if (reading >= user_config.cal_sen[i].deadband[j][0] && reading <= user_config.cal_sen[i].deadband
+    235                          [j][1]) {
+   \                     ??get_reading_3: (+1)
+   \       0x72   0x210C             MOVS     R1,#+12
+   \       0x74   0x4341             MULS     R1,R1,R0
+   \       0x76   0x1861             ADDS     R1,R4,R1
+   \       0x78   0xF501 0x71B6      ADD      R1,R1,#+364
+   \       0x7C   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \       0x80   0xEEB4 0x8A40      VCMP.F32 S16,S0
+   \       0x84   0xEEF1 0xFA10      FMSTAT
+   \       0x88   0xBFA2             ITTT     GE
+   \       0x8A   0xEDD1 0x0A01      VLDRGE   S1,[R1, #+4]
+   \       0x8E   0xEEF4 0x0A48      VCMPGE.F32 S1,S16
+   \       0x92   0xEEF1 0xFA10      FMSTATGE
+   \       0x96   0xDA03             BGE.N    ??get_reading_4
+   \       0x98   0x1C40             ADDS     R0,R0,#+1
+   \       0x9A   0x2805             CMP      R0,#+5
+   \       0x9C   0xDBE9             BLT.N    ??get_reading_3
+   \       0x9E   0xE001             B.N      ??get_reading_2
+    236                          reading = user_config.cal_sen[i].deadband[j][2];
+   \                     ??get_reading_4: (+1)
+   \       0xA0   0xED91 0x8A02      VLDR     S16,[R1, #+8]
+    237                          break;
+    238                      }
+    239                  }
+    240              }
+    241              return reading;
+   \                     ??get_reading_2: (+1)
+   \       0xA4   0xEEB0 0x0A48      VMOV.F32 S0,S16
+   \       0xA8   0xECBD 0x8B02      VPOP     {D8}
+   \       0xAC   0xBD31             POP      {R0,R4,R5,PC}
+    242          }
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5:
+   \                     ??DataTable8:
    \        0x0   0xFF7F'FFFF        DC32     0xff7fffff
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5_1:
+   \                     ??DataTable8_1:
    \        0x0   0x3586'37BD        DC32     0x358637bd
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5_2:
+   \                     ??DataTable8_2:
    \        0x0   0x....'....        DC32     nvm3_defaultHandle
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5_3:
-   \        0x0   0x....'....        DC32     board_config
+   \                     ??DataTable8_3:
+   \        0x0   0x....'....        DC32     run_time
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5_4:
+   \                     ??DataTable8_4:
+   \        0x0   0x....'....        DC32     factory_config
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \        0x0   0x....'....        DC32     user_config
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
    \        0x0   0x....'....        DC32     temp_way
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5_5:
+   \                     ??DataTable8_7:
    \        0x0   0x....'....        DC32     adc_last
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \        0x0   0x....'....        DC32     temperature
 
    Maximum stack usage in bytes:
 
@@ -511,46 +745,63 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\config.c
         16   -> save_config
         16   -> sl_hal_gpio_set_pin_mode
         16   -> tpl0501_set_wiper
-       0   get_reading
-         0   -> linearInterpolate
+      24   get_reading
+        24   -> linearInterpolate
+       0   increment_run_time_and_save
+         0   -> save_config
       12   linearInterpolate
       16   read_config
+        16   -> __aeabi_memcpy4
         16   -> nvm3_readData
-      16   save_config
-        16   -> nvm3_writeData
+       8   restore_factory_config
+         8   -> __aeabi_memcpy4
+         0   -> save_config
+       8   save_config
+         8   -> nvm3_writeData
+       8   save_current_as_factory_config
+         8   -> __aeabi_memcpy4
+         0   -> save_config
        8   update_and_store_config
          8   -> read_config
          0   -> save_config
+         8   -> save_config
 
 
    Section sizes:
 
    Bytes  Function/Label
    -----  --------------
-       4  ??DataTable5
-       4  ??DataTable5_1
-       4  ??DataTable5_2
-       4  ??DataTable5_3
-       4  ??DataTable5_4
-       4  ??DataTable5_5
-      16  ?Subroutine0
-      14  ?Subroutine1
-   1'384  board_config
-          sensor_cal
-      50  config_init
-      28  get_reading
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+       8  ?Subroutine0
+       8  ?Subroutine1
+      64  config_init
+     428  factory_config
+     174  get_reading
+      12  increment_run_time_and_save
      204  linearInterpolate
-      54  read_config
-      32  save_config
-      12  update_and_store_config
+     106  read_config
+      10  restore_factory_config
+       4  run_time
+      60  save_config
+      14  save_current_as_factory_config
+      20  update_and_store_config
+     428  user_config
        2  -- Other
 
  
- 1'384 bytes in section .bss
-   436 bytes in section .text
+ 860 bytes in section .bss
+ 718 bytes in section .text
  
-   436 bytes of CODE memory
- 1'384 bytes of DATA memory
+ 718 bytes of CODE memory
+ 860 bytes of DATA memory
 
 Errors: none
 Warnings: none

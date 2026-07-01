@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         30/Jun/2026  17:26:20
+# IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM         01/Jul/2026  17:04:59
 # Copyright 1999-2026 IAR Systems AB.
 #
 #    Cpu mode                     =  thumb
@@ -205,7 +205,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
    \                                 In section .bss, align 4
      61          static nvm3_CacheEntry_t defaultCache[NVM3_DEFAULT_CACHE_SIZE];
    \                     defaultCache:
-   \        0x0                      DS8 1'600
+   \        0x0                      DS8 240
 
    \                                 In section .data, align 4
    \                     nvm3_defaultHandle:
@@ -244,11 +244,11 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
 
    \                                 In section .data, align 4
    \                     nvm3_defaultInitData:
-   \        0x0   0x....'....        DC32 nvm3_default_storage, 40'960, defaultCache, 200, 254, 0
+   \        0x0   0x....'....        DC32 nvm3_default_storage, 40'960, defaultCache, 30, 1'024, 0
    \              0x0000'A000  
    \              0x....'....  
-   \              0x0000'00C8  
-   \              0x0000'00FE  
+   \              0x0000'001E  
+   \              0x0000'0400  
    \              0x0000'0000
    \       0x18   0x....'....        DC32 nvm3_halFlashHandle
      91          
@@ -294,7 +294,7 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
    Bytes   Function/Label
    -----   --------------
         4  ??DataTable1
-    1'600  defaultCache
+      240  defaultCache
         8  nvm3_defaultHandle
            nvm3_defaultInit
       104  nvm3_defaultHandleData
@@ -304,13 +304,13 @@ C:\Users\JunyiHuang\SimplicityStudio\v6_workspace\btsensor\simplicity_sdk_2026.6
        10  nvm3_initDefault
 
  
-  1'704 bytes in section .bss
+    344 bytes in section .bss
      36 bytes in section .data
      22 bytes in section .text
  40'960 bytes in section SIMEE
  
      22 bytes of CODE memory
- 42'700 bytes of DATA memory
+ 41'340 bytes of DATA memory
 
 Errors: none
 Warnings: none
